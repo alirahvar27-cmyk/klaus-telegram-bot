@@ -1,6 +1,8 @@
 name: KLAUS Scheduler
 
 on:
+  schedule:
+    - cron: "30 5,11,17 * * *"
   workflow_dispatch:
 
 jobs:
