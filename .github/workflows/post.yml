@@ -2,19 +2,9 @@ name: KLAUS Scheduler
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0,30 * * * *"
 
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install -r requirements.txt
-      - run: python main.py
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - run: echo "KLAUS workflow is ready"
