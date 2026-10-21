@@ -58,6 +58,7 @@ def clean_caption(text, source_user):
     for username in SOURCE_TARGETS:
         text = re.sub(rf"(?i)(?:https?://)?t\.me/{re.escape(username)}(?:/\d+)?", "", text)
         text = re.sub(rf"(?i)@{re.escape(username)}\b", "", text)
+        text = re.sub(rf"(?i)(?<!\w){re.escape(username)}(?!\w)", "", text)
     lines = []
     source_names = tuple(name.casefold() for name in SOURCE_TARGETS)
     for line in text.splitlines():
