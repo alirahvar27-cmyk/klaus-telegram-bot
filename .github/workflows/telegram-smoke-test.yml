@@ -11,14 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
-      - name: Send exactly one test message
+      - name: Send exactly one test message to TechNamaFa
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_TEST_CHAT_ID: ${{ secrets.TELEGRAM_TEST_CHAT_ID }}
+          TELEGRAM_TEST_CHAT_ID: "@TechNamaFa"
         run: |
           set -euo pipefail
-          if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_TEST_CHAT_ID:-}" ]; then
-            echo "Missing TELEGRAM_BOT_TOKEN or TELEGRAM_TEST_CHAT_ID repository secret."
+          if [ -z "${TELEGRAM_BOT_TOKEN:-}" ]; then
+            echo "Missing TELEGRAM_BOT_TOKEN repository secret."
             exit 1
           fi
           response="$(curl --silent --show-error --fail-with-body \
