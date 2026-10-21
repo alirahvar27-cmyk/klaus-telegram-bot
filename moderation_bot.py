@@ -127,12 +127,21 @@ def relay_channel_post(message: dict) -> None:
             if is_text_post:
                 api("sendMessage", {"chat_id": target, "text": text_body, "disable_web_page_preview": True})
             else:
-                api("copyMessage", {
+                payload = {
                     "chat_id": target,
                     "from_chat_id": chat.get("id"),
                     "message_id": message_id,
-                    "caption": caption,
-                })
+                }
+                # Telegram only permits caption overrides for caption-capable media.
+                if any(key in message for key in ("photo", "video", "document", "audio", "animation")):
+                    payload["caption"] = caption
+                api("copyMessage", payload)
+                if not any(key in message for key in ("photo", "video", "document", "audio", "animation")):
+                    api("sendMessage", {
+                        "chat_id": target,
+                        "text": f"{BRAND_TAG} · Source: {source_url}" if BRAND_TAG else f"Source: {source_url}",
+                        "disable_web_page_preview": True,
+                    })
             LOG.info("Copied @%s/%s to %s (source link retained)", username, message_id, target)
         except Exception as exc:
             LOG.warning("Could not copy @%s/%s to %s: %s", username, message_id, target, exc)
