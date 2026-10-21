@@ -5,6 +5,8 @@ KLAUS is intended to use one source-ingestion pipeline with platform-specific ad
 ## Current status
 
 - Implemented: configurable RSS/Atom ingestion through `KLAUS_SOURCE_FEEDS`.
+- Implemented: shared normalized source-item schema (`source_id`, platform, source name, canonical URL, publication time, media type, video URL, and rights status).
+- Implemented: unit tests for schema normalization, stable IDs, and URL validation.
 - Implemented: direct video enclosure detection from RSS/Atom and guarded temporary downloads, subject to source configuration and rights.
 - Not implemented yet: dedicated authenticated API adapters for YouTube, Instagram, TikTok, Facebook, X, Reddit API, and other social platforms.
 - Safety: `DRY_RUN` must remain `true` until the user explicitly authorizes live posting.
