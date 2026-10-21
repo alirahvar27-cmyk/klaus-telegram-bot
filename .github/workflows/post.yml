@@ -56,8 +56,8 @@ jobs:
           CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
           KLAUS_AI_ORDER: ${{ vars.KLAUS_AI_ORDER }}
           KLAUS_SOURCE_FEEDS: ${{ vars.KLAUS_SOURCE_FEEDS }}
-          KLAUS_VIDEO_DOWNLOAD_ENABLED: ${{ vars.KLAUS_VIDEO_DOWNLOAD_ENABLED }}
-          KLAUS_VIDEO_MAX_BYTES: ${{ vars.KLAUS_VIDEO_MAX_BYTES }}
+          KLAUS_VIDEO_DOWNLOAD_ENABLED: "true"
+          KLAUS_VIDEO_MAX_BYTES: "50000000"
           PYTHONUNBUFFERED: "1"
         run: python main.py
 
