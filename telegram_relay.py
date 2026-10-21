@@ -134,8 +134,7 @@ async def main_async():
                 last_id = int(state.get(source, 0) or 0)
                 if newest_id <= last_id:
                     continue
-                messages = await client.get_messages(entity, limit=100, min_id=last_id)
-                for message in sorted(messages, key=lambda item: item.id):
+                async for message in client.iter_messages(entity, min_id=last_id, reverse=True):
                     await relay_one(client, source, target, message, state)
             except Exception as exc:
                 LOG.warning("Source unavailable @%s: %s", source, exc)
