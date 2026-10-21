@@ -739,10 +739,12 @@ def telegram_upload_video(channel, video_path, caption):
         return
     if not TELEGRAM_API or not TELEGRAM_TOKEN:
         raise RuntimeError("Telegram token is missing")
+    full_caption = str(caption or "").strip()
+    send_full_text_separately = len(full_caption) > 1024
     with open(video_path, "rb") as video_file:
         response = HTTP.post(
             f"{TELEGRAM_API}/sendVideo",
-            data={"chat_id": channel, "caption": caption[:1024], "supports_streaming": "true"},
+            data={"chat_id": channel, "caption": (full_caption[:900].rsplit(" ", 1)[0] + "…") if send_full_text_separately else full_caption, "supports_streaming": "true"},
             files={"video": (Path(video_path).name, video_file, "video/mp4")},
             timeout=120,
         )
@@ -750,6 +752,8 @@ def telegram_upload_video(channel, video_path, caption):
     result = response.json()
     if not result.get("ok"):
         raise RuntimeError(f"Telegram video upload rejected: {result}")
+    if send_full_text_separately:
+        telegram("sendMessage", {"chat_id": channel, "text": full_caption})
     return result.get("result")
 
 
@@ -850,10 +854,12 @@ def telegram_upload_audio(channel, audio_path, caption):
         return
     if not TELEGRAM_API or not TELEGRAM_TOKEN:
         raise RuntimeError("Telegram token is missing")
+    full_caption = str(caption or "").strip()
+    send_full_text_separately = len(full_caption) > 1024
     with open(audio_path, "rb") as audio_file:
         response = HTTP.post(
             f"{TELEGRAM_API}/sendAudio",
-            data={"chat_id": channel, "caption": caption[:1024], "title": Path(audio_path).stem[:64]},
+            data={"chat_id": channel, "caption": (full_caption[:900].rsplit(" ", 1)[0] + "…") if send_full_text_separately else full_caption, "title": Path(audio_path).stem[:64]},
             files={"audio": (Path(audio_path).name, audio_file)},
             timeout=120,
         )
@@ -861,6 +867,8 @@ def telegram_upload_audio(channel, audio_path, caption):
     result = response.json()
     if not result.get("ok"):
         raise RuntimeError(f"Telegram audio upload rejected: {result}")
+    if send_full_text_separately:
+        telegram("sendMessage", {"chat_id": channel, "text": full_caption})
     return result.get("result")
 
 
