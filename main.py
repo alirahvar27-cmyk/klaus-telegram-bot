@@ -284,27 +284,21 @@ def load_source_items():
                     continue
                 seen_links.add(link)
                 video_url = ""
-                # Only accept explicit direct video enclosures supplied by the feed.
+                audio_url = ""
+                # Use only media explicitly exposed by the publisher's feed.
                 # Never scrape platform pages or bypass DRM/login controls.
-                for enclosure in entry.get("enclosures", []) or []:
+                enclosures = list(entry.get("enclosures", []) or [])
+                enclosures.extend(entry.get("media_content", []) or [])
+                for enclosure in enclosures:
                     candidate = str(enclosure.get("href", enclosure.get("url", "")) or "").strip()
                     media_type = str(enclosure.get("type", "") or "").lower()
-                    if candidate.startswith("https://") and (
-                        media_type.startswith("video/")
-                        or urlparse(candidate).path.lower().endswith((".mp4", ".webm", ".mov", ".m4v"))
-                    ):
+                    suffix = urlparse(candidate).path.lower()
+                    if not candidate.startswith("https://"):
+                        continue
+                    if not video_url and (media_type.startswith("video/") or suffix.endswith((".mp4", ".webm", ".mov", ".m4v"))):
                         video_url = candidate
-                        break
-                if not video_url:
-                    for media in entry.get("media_content", []) or []:
-                        candidate = str(media.get("url", "") or "").strip()
-                        media_type = str(media.get("type", "") or "").lower()
-                        if candidate.startswith("https://") and (
-                            media_type.startswith("video/")
-                            or urlparse(candidate).path.lower().endswith((".mp4", ".webm", ".mov", ".m4v"))
-                        ):
-                            video_url = candidate
-                            break
+                    if not audio_url and (media_type.startswith("audio/") or suffix.endswith((".mp3", ".m4a", ".ogg", ".opus", ".wav"))):
+                        audio_url = candidate
                 items.append(normalize_source_item(
                     platform=category,
                     source_name=feed_title,
@@ -314,8 +308,8 @@ def load_source_items():
                     published=str(entry.get("published", entry.get("updated", "")) or ""),
                     video_url=video_url,
                     source_id=str(entry.get("id", entry.get("guid", "")) or ""),
-                    media_type="video" if video_url else "link",
-                ))
+                    media_type="video" if video_url else ("audio" if audio_url else "link"),
+                ) | {"audio_url": audio_url})
                 if len(items) >= 100:
                     break
             LOG.info("Source loaded: category=%s entries=%d feed=%s", category, len(parsed.entries), feed_title)
@@ -364,7 +358,7 @@ def source_context_for_topic(items, topic, limit=5):
 # AI content generation
 # =========================================================
 
-def build_prompt(channel, name, topic, source_context=""):
+def build_prompt(channel, name, topic, source_context="", content_type="mixed"):
     special_rules = ""
 
     if channel == "@NbzeKhabar":
@@ -406,6 +400,7 @@ def build_prompt(channel, name, topic, source_context=""):
 
     return f"""
 برای کانال فارسی «{name}» با موضوع «{topic}» یک پست تهیه کن.
+نوع محتوای این نوبت: {content_type}
 {source_instructions}
 
 قواعد:
@@ -416,12 +411,17 @@ def build_prompt(channel, name, topic, source_context=""):
 - خبر، آمار، نقل‌قول، قیمت و لینک ساختگی نساز.
 - اگر اطلاعات زنده و تأییدشده نداری، محتوای آموزشی یا عمومی بنویس.
 - از تکرار و عنوان گمراه‌کننده خودداری کن.
+- برای نوع «app» یک اپلیکیشن یا ابزار واقعی و مرتبط را معرفی کن؛ اگر مطمئن نیستی نام یا لینک نساز.
+- برای نوع «audio» یا «music» فقط از فایل صوتی دارای مجوز روشن یا منبع رسمی استفاده کن؛ متن معرفی را آماده کن.
+- برای نوع «video» اگر ویدئوی مجاز موجود نیست، محتوای ویدئویی را ادعا نکن و به متن جایگزین اشاره کن.
+- نوع انتخاب‌شده را در فیلد content_type برگردان.
 {special_rules}
 
 فقط یک شیء JSON معتبر برگردان، بدون Markdown:
 {{
   "title": "عنوان فارسی",
   "text": "متن کامل پست",
+  "content_type": "{content_type}",
   "image_query": "short English image search phrase",
   "poll_question": "",
   "poll_options": []
@@ -480,8 +480,8 @@ def _openai_compatible_generate(provider, api_key, model, endpoint, prompt, extr
     return text
 
 
-def generate_content(channel, name, topic, source_context=""):
-    prompt = build_prompt(channel, name, topic, source_context)
+def generate_content(channel, name, topic, source_context="", content_type="mixed"):
+    prompt = build_prompt(channel, name, topic, source_context, content_type)
     providers = {
         "gemini": (
             bool(GEMINI_API_KEY),
@@ -745,6 +745,148 @@ def telegram_upload_video(channel, video_path, caption):
     return result.get("result")
 
 
+
+
+CONTENT_TYPES = ("text", "image", "video", "audio", "app", "poll")
+CONTENT_ROTATION_FILE = Path("content_rotation.json")
+REACTIONS = [
+    {"type": "emoji", "emoji": "👍"},
+    {"type": "emoji", "emoji": "❤️"},
+    {"type": "emoji", "emoji": "🔥"},
+    {"type": "emoji", "emoji": "👏"},
+    {"type": "emoji", "emoji": "😁"},
+]
+
+
+def load_content_rotation():
+    try:
+        value = json.loads(CONTENT_ROTATION_FILE.read_text(encoding="utf-8"))
+        return value if isinstance(value, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def choose_content_type(channel, items):
+    """Rotate post formats per channel; gracefully avoid unavailable media types."""
+    history = load_content_rotation()
+    previous = history.get(channel, [])
+    if not isinstance(previous, list):
+        previous = []
+    available = set(CONTENT_TYPES)
+    if not any(item.get("video_url") for item in items):
+        available.discard("video")
+    if not any(item.get("audio_url") for item in items):
+        available.discard("audio")
+    # Keep app introductions and polls available as generated text interactions.
+    candidates = [kind for kind in CONTENT_TYPES if kind in available and kind not in previous[-2:]]
+    if not candidates:
+        candidates = [kind for kind in CONTENT_TYPES if kind in available]
+    chosen = random.choice(candidates or ["text"])
+    history[channel] = (previous + [chosen])[-6:]
+    CONTENT_ROTATION_FILE.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
+    return chosen
+
+
+def choose_audio_source(items, topic):
+    candidates = [item for item in items if item.get("audio_url", "").startswith("https://")]
+    if not candidates:
+        return None
+    words = {token.casefold() for token in re.findall(r"[\\wآ-ی]+", topic, flags=re.UNICODE) if len(token) > 2}
+    def relevance(item):
+        haystack = (item.get("title", "") + " " + item.get("summary", "")).casefold()
+        return sum(1 for word in words if word in haystack)
+    candidates.sort(key=relevance, reverse=True)
+    return candidates[0] if not words or relevance(candidates[0]) > 0 else None
+
+
+def configure_channel_reactions():
+    """Enable a small set of Telegram reactions when live mode is explicitly enabled."""
+    if DRY_RUN:
+        LOG.info("DRY RUN: channel reaction settings unchanged")
+        return
+    if not TELEGRAM_API:
+        LOG.warning("Cannot configure reactions: Telegram token missing")
+        return
+    for channel in CHANNELS:
+        try:
+            telegram("setChatAvailableReactions", {
+                "chat_id": channel,
+                "available_reactions": REACTIONS,
+            })
+            LOG.info("Enabled reactions for %s", channel)
+        except Exception as exc:
+            # The bot must be an administrator with permission to change channel settings.
+            LOG.warning("Could not configure reactions for %s: %s", channel, exc)
+
+
+def telegram_upload_audio(channel, audio_path, caption):
+    """Upload a permitted audio file; never callable in DRY_RUN."""
+    if DRY_RUN:
+        LOG.info("DRY RUN: skipped audio upload for %s", channel)
+        return
+    if not TELEGRAM_API or not TELEGRAM_TOKEN:
+        raise RuntimeError("Telegram token is missing")
+    with open(audio_path, "rb") as audio_file:
+        response = HTTP.post(
+            f"{TELEGRAM_API}/sendAudio",
+            data={"chat_id": channel, "caption": caption[:1024], "title": Path(audio_path).stem[:64]},
+            files={"audio": (Path(audio_path).name, audio_file)},
+            timeout=120,
+        )
+    response.raise_for_status()
+    result = response.json()
+    if not result.get("ok"):
+        raise RuntimeError(f"Telegram audio upload rejected: {result}")
+    return result.get("result")
+
+
+def download_audio(source, target_dir):
+    """Download only explicit HTTPS audio enclosures from feeds, with a strict size limit."""
+    if not source:
+        return None
+    url = str(source.get("audio_url", "")).strip()
+    parsed = urlparse(url)
+    if parsed.scheme != "https" or not parsed.hostname:
+        return None
+    host = parsed.hostname.lower()
+    if any(domain in host for domain in ("youtube.com", "youtu.be", "instagram.com", "tiktok.com", "reddit.com", "facebook.com")):
+        return None
+    max_bytes = min(max(int(os.getenv("KLAUS_AUDIO_MAX_BYTES", "20000000")), 1_000_000), 20_000_000)
+    try:
+        with HTTP.get(url, stream=True, timeout=30, allow_redirects=False) as response:
+            response.raise_for_status()
+            content_type = response.headers.get("Content-Type", "").split(";", 1)[0].lower()
+            if not content_type.startswith("audio/"):
+                LOG.info("Audio skipped: URL did not return audio content.")
+                return None
+            length = int(response.headers.get("Content-Length", "0") or "0")
+            if length > max_bytes:
+                return None
+            suffix = Path(parsed.path).suffix.lower()
+            if suffix not in {".mp3", ".m4a", ".ogg", ".opus", ".wav"}:
+                suffix = ".mp3" if content_type in {"audio/mpeg", "audio/mp3"} else ".audio"
+            target = Path(target_dir) / ("klaus_audio" + suffix)
+            written = 0
+            with target.open("wb") as output:
+                for chunk in response.iter_content(chunk_size=256 * 1024):
+                    if not chunk:
+                        continue
+                    written += len(chunk)
+                    if written > max_bytes:
+                        output.close()
+                        target.unlink(missing_ok=True)
+                        return None
+                    output.write(chunk)
+            if written < 1024:
+                target.unlink(missing_ok=True)
+                return None
+            LOG.info("Audio downloaded and validated: bytes=%d", written)
+            return target
+    except Exception as exc:
+        LOG.warning("Audio download failed: %s", exc)
+        return None
+
+
 # =========================================================
 # Publishing
 # =========================================================
@@ -838,6 +980,9 @@ def main():
     LOG.info("Configured Gemini model: %s", GEMINI_MODEL)
     LOG.info("DRY_RUN=%s", DRY_RUN)
 
+    if not DRY_RUN:
+        configure_channel_reactions()
+
     # Fetch configured public feeds once per run to reduce requests and quota use.
     source_items = load_source_items()
     LOG.info("Video download enabled=%s; maximum size=%d bytes", VIDEO_DOWNLOAD_ENABLED, VIDEO_MAX_BYTES)
@@ -848,15 +993,22 @@ def main():
     for channel, (name, topic) in CHANNELS.items():
         try:
             source_context = source_context_for_topic(source_items, topic)
-            post, data, digest = generate_content(channel, name, topic, source_context)
-            video_source = choose_video_source(source_items, topic)
+            content_type = choose_content_type(channel, source_items)
+            post, data, digest = generate_content(channel, name, topic, source_context, content_type)
+            video_source = choose_video_source(source_items, topic) if content_type == "video" else None
+            audio_source = choose_audio_source(source_items, topic) if content_type == "audio" else None
 
             image_query = str(data.get("image_query", "")).strip()
-            image = find_image(image_query) if image_query else None
+            image = find_image(image_query) if content_type == "image" or (content_type == "mixed" and image_query) else None
 
             if DRY_RUN:
-                LOG.info("DRY RUN PREVIEW — channel: %s", channel)
+                LOG.info("DRY RUN PREVIEW — channel: %s | content_type=%s", channel, content_type)
                 LOG.info("POST:\n%s", post)
+                if audio_source:
+                    LOG.info("Audio candidate: %s | source: %s", audio_source.get("title", ""), audio_source.get("link", ""))
+                    with tempfile.TemporaryDirectory(prefix="klaus-audio-") as temp_dir:
+                        preview_audio = download_audio(audio_source, temp_dir)
+                        LOG.info("Audio download preview successful: %s", bool(preview_audio))
                 if video_source:
                     LOG.info("Video candidate: %s | source: %s", video_source.get("title", ""), video_source.get("link", ""))
                     with tempfile.TemporaryDirectory(prefix="klaus-video-") as temp_dir:
@@ -878,6 +1030,13 @@ def main():
                     video_path = download_video(video_source, temp_dir)
                     if video_path:
                         telegram_upload_video(channel, video_path, post)
+                    else:
+                        publish_post(channel, post, image)
+            elif audio_source:
+                with tempfile.TemporaryDirectory(prefix="klaus-audio-") as temp_dir:
+                    audio_path = download_audio(audio_source, temp_dir)
+                    if audio_path:
+                        telegram_upload_audio(channel, audio_path, post)
                     else:
                         publish_post(channel, post, image)
             else:
