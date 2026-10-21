@@ -4,4 +4,5 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY moderation_bot.py .
+COPY DRY_RUN .
 CMD ["python", "moderation_bot.py"]
