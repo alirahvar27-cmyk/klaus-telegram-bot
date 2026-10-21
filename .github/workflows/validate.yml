@@ -21,8 +21,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: Check Python syntax
-        run: python -m compileall -q main.py
+        run: python -m compileall -q main.py source_adapters.py tests
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
       - name: Check source parsing library
         run: python -c "import feedparser; print('feedparser import OK')"
+      - name: Run source adapter tests
+        run: pytest -q
