@@ -2,6 +2,9 @@ name: Persian topic-specific test posts to 14 channels
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/telegram-smoke-test.yml"
 
 permissions:
   contents: read
