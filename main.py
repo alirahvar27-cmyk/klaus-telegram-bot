@@ -54,16 +54,18 @@ LOG = logging.getLogger("KLAUS")
 # AI providers are optional individually; KLAUS uses whichever valid keys are configured.
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY", "").strip()
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini").strip()
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip()
+MISTRAL_MODEL = os.getenv("MISTRAL_MODEL", "mistral-small-latest").strip()
 AI_ORDER = [
     item.strip().lower()
-    for item in os.getenv("KLAUS_AI_ORDER", "gemini,openai,groq").split(",")
-    if item.strip().lower() in {"gemini", "openai", "groq"}
+    for item in os.getenv("KLAUS_AI_ORDER", "gemini,mistral,groq,openai").split(",")
+    if item.strip().lower() in {"gemini", "mistral", "openai", "groq"}
 ]
 AI = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
 
-if not any([GEMINI_API_KEY, OPENAI_API_KEY, GROQ_API_KEY]):
+if not any([GEMINI_API_KEY, OPENAI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY]):
     raise RuntimeError(
         "No AI provider configured. Add at least one of GEMINI_API_KEY, "
         "OPENAI_API_KEY, or GROQ_API_KEY in GitHub Secrets."
@@ -332,6 +334,13 @@ def generate_content(channel, name, topic):
             lambda: _openai_compatible_generate(
                 "Groq", GROQ_API_KEY, GROQ_MODEL,
                 "https://api.groq.com/openai/v1/chat/completions", prompt
+            ),
+        ),
+        "mistral": (
+            bool(MISTRAL_API_KEY),
+            lambda: _openai_compatible_generate(
+                "Mistral", MISTRAL_API_KEY, MISTRAL_MODEL,
+                "https://api.mistral.ai/v1/chat/completions", prompt
             ),
         ),
     }
