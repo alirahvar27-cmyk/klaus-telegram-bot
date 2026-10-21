@@ -7,6 +7,7 @@ import logging
 import html
 import random
 import re
+import tempfile
 from pathlib import Path
 from urllib.parse import quote, urlparse
 
@@ -280,12 +281,35 @@ def load_source_items():
                 if not title or not link.startswith(("https://", "http://")) or link in seen_links:
                     continue
                 seen_links.add(link)
+                video_url = ""
+                # Only accept explicit direct video enclosures supplied by the feed.
+                # Never scrape platform pages or bypass DRM/login controls.
+                for enclosure in entry.get("enclosures", []) or []:
+                    candidate = str(enclosure.get("href", enclosure.get("url", "")) or "").strip()
+                    media_type = str(enclosure.get("type", "") or "").lower()
+                    if candidate.startswith("https://") and (
+                        media_type.startswith("video/")
+                        or urlparse(candidate).path.lower().endswith((".mp4", ".webm", ".mov", ".m4v"))
+                    ):
+                        video_url = candidate
+                        break
+                if not video_url:
+                    for media in entry.get("media_content", []) or []:
+                        candidate = str(media.get("url", "") or "").strip()
+                        media_type = str(media.get("type", "") or "").lower()
+                        if candidate.startswith("https://") and (
+                            media_type.startswith("video/")
+                            or urlparse(candidate).path.lower().endswith((".mp4", ".webm", ".mov", ".m4v"))
+                        ):
+                            video_url = candidate
+                            break
                 items.append({
                     "category": category,
                     "feed": feed_title,
                     "title": title[:240],
                     "summary": summary[:700],
                     "link": link[:1000],
+                    "video_url": video_url[:1500],
                     "published": str(entry.get("published", entry.get("updated", "")) or "")[:80],
                 })
                 if len(items) >= 100:
@@ -620,6 +644,99 @@ def image_attribution(image):
     return "\n\n" + "\n".join(parts) if parts else ""
 
 
+
+
+# =========================================================
+# Safe video download and Telegram upload
+# =========================================================
+VIDEO_DOWNLOAD_ENABLED = os.getenv("KLAUS_VIDEO_DOWNLOAD_ENABLED", "true").strip().lower() == "true"
+VIDEO_MAX_BYTES = min(max(int(os.getenv("KLAUS_VIDEO_MAX_BYTES", "50000000")), 1_000_000), 50_000_000)
+
+
+def choose_video_source(items, topic):
+    """Choose a direct video enclosure only; platform page URLs are not download URLs."""
+    candidates = [item for item in items if item.get("video_url", "").startswith("https://")]
+    if not candidates:
+        return None
+    words = {token.casefold() for token in re.findall(r"[\\wآ-ی]+", topic, flags=re.UNICODE) if len(token) > 2}
+    candidates.sort(key=lambda item: sum(
+        1 for word in words if word in (item.get("title", "") + " " + item.get("summary", "")).casefold()
+    ), reverse=True)
+    return candidates[0]
+
+
+def download_video(source, target_dir):
+    """Download a direct HTTPS video enclosure with strict size/type checks."""
+    if not VIDEO_DOWNLOAD_ENABLED or not source:
+        return None
+    url = str(source.get("video_url", "")).strip()
+    parsed = urlparse(url)
+    if parsed.scheme != "https" or not parsed.hostname:
+        LOG.warning("Video skipped: only HTTPS direct media URLs are accepted.")
+        return None
+    host = parsed.hostname.lower()
+    if any(domain in host for domain in ("youtube.com", "youtu.be", "instagram.com", "tiktok.com", "reddit.com", "facebook.com")):
+        LOG.info("Video download skipped for platform page host %s; use an authorized direct media URL.", host)
+        return None
+    try:
+        with HTTP.get(url, stream=True, timeout=30, allow_redirects=False) as response:
+            response.raise_for_status()
+            content_type = response.headers.get("Content-Type", "").split(";", 1)[0].lower()
+            if not content_type.startswith("video/"):
+                LOG.info("Video skipped: URL did not return video content.")
+                return None
+            length = int(response.headers.get("Content-Length", "0") or "0")
+            if length > VIDEO_MAX_BYTES:
+                LOG.warning("Video skipped: file exceeds size limit.")
+                return None
+            suffix = Path(parsed.path).suffix.lower()
+            if suffix not in {".mp4", ".webm", ".mov", ".m4v"}:
+                suffix = ".mp4" if content_type == "video/mp4" else ".video"
+            target = Path(target_dir) / ("klaus_video" + suffix)
+            written = 0
+            with target.open("wb") as output:
+                for chunk in response.iter_content(chunk_size=256 * 1024):
+                    if not chunk:
+                        continue
+                    written += len(chunk)
+                    if written > VIDEO_MAX_BYTES:
+                        output.close()
+                        target.unlink(missing_ok=True)
+                        LOG.warning("Video skipped: streamed file exceeded size limit.")
+                        return None
+                    output.write(chunk)
+            if written < 1024:
+                target.unlink(missing_ok=True)
+                LOG.warning("Video skipped: file too small.")
+                return None
+            LOG.info("Video downloaded and validated: bytes=%d source=%s", written, source.get("link", ""))
+            return target
+    except Exception as exc:
+        LOG.warning("Video download failed: %s", exc)
+        return None
+
+
+def telegram_upload_video(channel, video_path, caption):
+    """Multipart upload to Telegram; never callable in DRY_RUN."""
+    if DRY_RUN:
+        LOG.info("DRY RUN: skipped video upload for %s", channel)
+        return
+    if not TELEGRAM_API or not TELEGRAM_TOKEN:
+        raise RuntimeError("Telegram token is missing")
+    with open(video_path, "rb") as video_file:
+        response = HTTP.post(
+            f"{TELEGRAM_API}/sendVideo",
+            data={"chat_id": channel, "caption": caption[:1024], "supports_streaming": "true"},
+            files={"video": (Path(video_path).name, video_file, "video/mp4")},
+            timeout=120,
+        )
+    response.raise_for_status()
+    result = response.json()
+    if not result.get("ok"):
+        raise RuntimeError(f"Telegram video upload rejected: {result}")
+    return result.get("result")
+
+
 # =========================================================
 # Publishing
 # =========================================================
@@ -715,6 +832,7 @@ def main():
 
     # Fetch configured public feeds once per run to reduce requests and quota use.
     source_items = load_source_items()
+    LOG.info("Video download enabled=%s; maximum size=%d bytes", VIDEO_DOWNLOAD_ENABLED, VIDEO_MAX_BYTES)
 
     if DRY_RUN:
         LOG.info("SAFE TEST MODE: no Telegram posts or polls will be sent.")
@@ -723,6 +841,7 @@ def main():
         try:
             source_context = source_context_for_topic(source_items, topic)
             post, data, digest = generate_content(channel, name, topic, source_context)
+            video_source = choose_video_source(source_items, topic)
 
             image_query = str(data.get("image_query", "")).strip()
             image = find_image(image_query) if image_query else None
@@ -730,6 +849,11 @@ def main():
             if DRY_RUN:
                 LOG.info("DRY RUN PREVIEW — channel: %s", channel)
                 LOG.info("POST:\n%s", post)
+                if video_source:
+                    LOG.info("Video candidate: %s | source: %s", video_source.get("title", ""), video_source.get("link", ""))
+                    with tempfile.TemporaryDirectory(prefix="klaus-video-") as temp_dir:
+                        preview_video = download_video(video_source, temp_dir)
+                        LOG.info("Video download preview successful: %s", bool(preview_video))
                 LOG.info(
                     "Image found: %s",
                     bool(image),
@@ -741,7 +865,15 @@ def main():
                 # Do not save preview content as already published.
                 continue
 
-            publish_post(channel, post, image)
+            if video_source:
+                with tempfile.TemporaryDirectory(prefix="klaus-video-") as temp_dir:
+                    video_path = download_video(video_source, temp_dir)
+                    if video_path:
+                        telegram_upload_video(channel, video_path, post)
+                    else:
+                        publish_post(channel, post, image)
+            else:
+                publish_post(channel, post, image)
 
             # Save only after the main post succeeds.
             STATE.append(digest)
