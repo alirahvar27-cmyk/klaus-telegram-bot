@@ -36,6 +36,9 @@ jobs:
             echo "{}" > telegram_relay_state.json
           fi
 
+      - name: Validate relay scripts
+        run: python -m py_compile telegram_relay.py generate_telegram_session.py
+
       - name: Poll authorized Telegram sources
         env:
           TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
