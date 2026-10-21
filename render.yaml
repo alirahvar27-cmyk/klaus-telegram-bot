@@ -1,0 +1,16 @@
+services:
+  - type: worker
+    name: klaus-discussion-moderator
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: starter
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: KLAUS_DISCUSSION_CHAT_ID
+        sync: false
+      - key: KLAUS_MOD_BLOCK_LINKS
+        value: "true"
+      - key: KLAUS_MOD_MAX_PER_MINUTE
+        value: "12"
