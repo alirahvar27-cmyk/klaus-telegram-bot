@@ -7,6 +7,10 @@
 - A source being listed does not mean its claims are verified. KLAUS is instructed to treat feed content as untrusted input, not copy it, and include a source link when using a specific news item.
 - With no configured feeds, KLAUS continues with its existing evergreen prompt behavior.
 - Real posting remains guarded by the root `DRY_RUN` file. Keep its contents as `true`.
+- The video pipeline only recognizes explicit HTTPS video enclosures in configured feeds (RSS `enclosures` / Media RSS `media_content`). It does not scrape platform pages, bypass login/DRM, or use third-party downloader sites.
+- Video downloads are limited to 50 MB maximum and require an HTTP `Content-Type` beginning with `video/`. In dry-run mode, a matching direct video can be downloaded into a temporary directory for validation, logged, and then deleted; Telegram uploads are skipped.
+- YouTube links are used as source context, not downloaded as video files. YouTube's API policies prohibit downloading/storing audiovisual content without prior written approval. Instagram/TikTok/Reddit platform page URLs are also not treated as direct file URLs; authorized direct media enclosures may work if a feed provides them.
+- Optional workflow variables: `KLAUS_VIDEO_DOWNLOAD_ENABLED` (default true) and `KLAUS_VIDEO_MAX_BYTES` (bounded to 50,000,000 bytes). No new API keys are needed for this feed-enclosure approach.
 
 ## Configure feeds
 
