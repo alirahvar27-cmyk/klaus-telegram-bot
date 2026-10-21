@@ -507,22 +507,21 @@ def _openai_compatible_generate(provider, api_key, model, endpoint, prompt, extr
 def clean_post_text(value):
     """Remove raw HTML and source/asset metadata from every channel post."""
     text = html.unescape(str(value or ""))
-    text = re.sub(r"(?is)<(script|style)[^>]*>.*?</\\1>", " ", text)
-    text = re.sub(r"(?i)<br\\s*/?>|</p\\s*>|</div\\s*>|</li\\s*>", "\\n", text)
+    text = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", text)
+    text = re.sub(r"(?i)<br\s*/?>|</p\s*>|</div\s*>|</li\s*>", "\n", text)
     text = re.sub(r"(?s)<[^>]+>", " ", text)
     text = re.sub(r"(?i)&(?:nbsp|amp|quot|lt|gt|#39);", " ", text)
-    blocked = re.compile(r"(?i)^\\s*(?:پدیدآورنده|عکاس|عکس از|مجوز|license|licence|author|artist|منبع تصویر|منبع عکس|منبع رسانه|تصویر از|wikimedia|wikimedia commons|commons):")
+    blocked = re.compile(r"(?i)^\s*(?:پدیدآورنده|عکاس|عکس از|مجوز|license|licence|author|artist|منبع تصویر|منبع عکس|منبع رسانه|تصویر از|wikimedia|wikimedia commons|commons):")
     lines = []
     for line in text.splitlines():
-        line = re.sub(r"[ \\t]+", " ", line).strip()
+        line = re.sub(r"[ \t]+", " ", line).strip()
         if not line or blocked.search(line):
             continue
-        if re.search(r"(?i)</?a\\b|rel=|href=|<\\s*/?\\w+[^>]*>", line):
+        if re.search(r"(?i)</?a\b|rel=|href=|<\s*/?\w+[^>]*>", line):
             continue
         lines.append(line)
-    text = "\\n".join(lines)
-    return re.sub(r"\\n{3,}", "\\n\\n", text).strip()
-
+    text = "\n".join(lines)
+    return re.sub(r"\n{3,}", "\n\n", text).strip()
 
 def generate_content(channel, name, topic, source_context="", content_type="mixed"):
     prompt = build_prompt(channel, name, topic, source_context, content_type)
