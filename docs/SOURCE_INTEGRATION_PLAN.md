@@ -52,3 +52,6 @@ Treat this as a roadmap, not a claim that all integrations are active.
 4. Verify Telegram destination credentials and permissions.
 5. Run dry-run tests and review logs.
 6. Enable live publishing only after explicit user approval.
+
+
+See also [KLAUS final setup checklist](FINAL_SETUP.md) for current implementation boundaries, required credentials, and deployment steps.
