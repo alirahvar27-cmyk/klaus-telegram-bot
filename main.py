@@ -659,9 +659,13 @@ def choose_video_source(items, topic):
     if not candidates:
         return None
     words = {token.casefold() for token in re.findall(r"[\\wآ-ی]+", topic, flags=re.UNICODE) if len(token) > 2}
-    candidates.sort(key=lambda item: sum(
-        1 for word in words if word in (item.get("title", "") + " " + item.get("summary", "")).casefold()
-    ), reverse=True)
+    def relevance(item):
+        haystack = (item.get("title", "") + " " + item.get("summary", "")).casefold()
+        return sum(1 for word in words if word in haystack)
+    candidates.sort(key=relevance, reverse=True)
+    # Avoid sending an unrelated clip to every channel when no topic matches.
+    if words and relevance(candidates[0]) == 0:
+        return None
     return candidates[0]
 
 
