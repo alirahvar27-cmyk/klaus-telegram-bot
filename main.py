@@ -51,11 +51,23 @@ logging.basicConfig(
 )
 LOG = logging.getLogger("KLAUS")
 
-# AI is used for content generation in both test and live modes.
-if not GEMINI_API_KEY:
-    raise RuntimeError("Missing GitHub Secret: GEMINI_API_KEY")
+# AI providers are optional individually; KLAUS uses whichever valid keys are configured.
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini").strip()
+GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip()
+AI_ORDER = [
+    item.strip().lower()
+    for item in os.getenv("KLAUS_AI_ORDER", "gemini,openai,groq").split(",")
+    if item.strip().lower() in {"gemini", "openai", "groq"}
+]
+AI = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
 
-AI = genai.Client(api_key=GEMINI_API_KEY)
+if not any([GEMINI_API_KEY, OPENAI_API_KEY, GROQ_API_KEY]):
+    raise RuntimeError(
+        "No AI provider configured. Add at least one of GEMINI_API_KEY, "
+        "OPENAI_API_KEY, or GROQ_API_KEY in GitHub Secrets."
+    )
 
 # A Telegram token is required only when real publishing is enabled.
 if not DRY_RUN and not TELEGRAM_TOKEN:
@@ -252,94 +264,110 @@ def build_prompt(channel, name, topic):
 """
 
 
-# Gemini free-tier requests can be tightly rate-limited. Keep requests
-# at least 15 seconds apart, and retry transient 429/503/server errors.
+# AI provider fallback. A quota failure on one provider immediately moves to the next.
 GEMINI_MIN_INTERVAL = max(15, int(os.getenv("GEMINI_MIN_INTERVAL", "15")))
-GEMINI_MAX_ATTEMPTS = 4
 _last_gemini_request_at = 0.0
 
 
-def generate_content(channel, name, topic):
+def _gemini_generate(prompt, channel):
     global _last_gemini_request_at
-    last_error = None
+    if AI is None:
+        raise RuntimeError("Gemini is not configured")
+    elapsed = time.monotonic() - _last_gemini_request_at
+    wait_for = GEMINI_MIN_INTERVAL - elapsed
+    if wait_for > 0:
+        LOG.info("Gemini pacing: waiting %.1f seconds before %s", wait_for, channel)
+        time.sleep(wait_for)
+    _last_gemini_request_at = time.monotonic()
+    response = AI.models.generate_content(
+        model=GEMINI_MODEL,
+        contents=prompt,
+        config={"response_mime_type": "application/json", "temperature": 0.8},
+    )
+    if not response.text:
+        raise RuntimeError("Gemini returned an empty response")
+    return response.text
 
-    for attempt in range(GEMINI_MAX_ATTEMPTS):
-        elapsed = time.monotonic() - _last_gemini_request_at
-        wait_for = GEMINI_MIN_INTERVAL - elapsed
-        if wait_for > 0:
-            LOG.info(
-                "Gemini pacing: waiting %.1f seconds before request for %s",
-                wait_for,
-                channel,
-            )
-            time.sleep(wait_for)
 
+def _openai_compatible_generate(provider, api_key, model, endpoint, prompt):
+    response = HTTP.post(
+        endpoint,
+        headers={"Authorization": f"Bearer {api_key}"},
+        json={
+            "model": model,
+            "messages": [
+                {"role": "system", "content": "Return only valid JSON. Write natural Persian."},
+                {"role": "user", "content": prompt},
+            ],
+            "temperature": 0.8,
+            "response_format": {"type": "json_object"},
+        },
+        timeout=90,
+    )
+    if response.status_code >= 400:
+        raise RuntimeError(f"{provider} API HTTP {response.status_code}: {response.text[:700]}")
+    result = response.json()
+    text = result["choices"][0]["message"]["content"]
+    if not text:
+        raise RuntimeError(f"{provider} returned an empty response")
+    return text
+
+
+def generate_content(channel, name, topic):
+    prompt = build_prompt(channel, name, topic)
+    providers = {
+        "gemini": (
+            bool(GEMINI_API_KEY),
+            lambda: _gemini_generate(prompt, channel),
+        ),
+        "openai": (
+            bool(OPENAI_API_KEY),
+            lambda: _openai_compatible_generate(
+                "OpenAI", OPENAI_API_KEY, OPENAI_MODEL,
+                "https://api.openai.com/v1/chat/completions", prompt
+            ),
+        ),
+        "groq": (
+            bool(GROQ_API_KEY),
+            lambda: _openai_compatible_generate(
+                "Groq", GROQ_API_KEY, GROQ_MODEL,
+                "https://api.groq.com/openai/v1/chat/completions", prompt
+            ),
+        ),
+    }
+    errors = []
+    order = AI_ORDER or ["gemini", "openai", "groq"]
+
+    for provider in order:
+        configured, call = providers[provider]
+        if not configured:
+            LOG.info("AI provider %s skipped: API key not configured", provider)
+            continue
         try:
-            _last_gemini_request_at = time.monotonic()
-            response = AI.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=build_prompt(channel, name, topic),
-                config={
-                    "response_mime_type": "application/json",
-                    "temperature": 0.8,
-                },
-            )
-            if not response.text:
-                raise RuntimeError("Gemini returned an empty response")
-            break
+            LOG.info("Generating content for %s using %s", channel, provider)
+            raw = call()
+            data = json.loads(raw)
+            if not isinstance(data, dict):
+                raise RuntimeError(f"{provider} response is not a JSON object")
+            title = str(data.get("title", "")).strip()
+            body = str(data.get("text", "")).strip()
+            if not title or not body:
+                raise RuntimeError(f"{provider} generated an empty title or body")
+            post = f"{title}\n\n{body}"
+            if len(post) > 3900:
+                post = post[:3890].rsplit(" ", 1)[0] + "…"
+            digest = content_hash(channel, post)
+            if digest in STATE:
+                raise RuntimeError("Duplicate content detected; skipped")
+            return post, data, digest
         except Exception as exc:
-            last_error = exc
-            error_text = str(exc).lower()
-            transient = (
-                "429" in error_text
-                or "resource_exhausted" in error_text
-                or "503" in error_text
-                or "unavailable" in error_text
-                or "500" in error_text
-                or "internal" in error_text
-                or "deadline" in error_text
-                or "timeout" in error_text
-            )
-            if not transient or attempt >= GEMINI_MAX_ATTEMPTS - 1:
-                raise
-            delay = min(60, 15 * (2 ** attempt))
-            LOG.warning(
-                "Gemini temporary error for %s (attempt %d/%d); retrying in %d seconds: %s",
-                channel,
-                attempt + 1,
-                GEMINI_MAX_ATTEMPTS,
-                delay,
-                exc,
-            )
-            time.sleep(delay)
-    else:
-        raise RuntimeError(f"Gemini failed after retries: {last_error}")
+            errors.append(f"{provider}: {exc}")
+            LOG.warning("AI provider %s failed for %s: %s", provider, channel, exc)
+            # Do not waste repeated calls when the provider explicitly reports quota exhaustion.
+            # Move directly to the next configured provider.
+            continue
 
-    try:
-        data = json.loads(response.text)
-    except json.JSONDecodeError as exc:
-        raise RuntimeError("Gemini returned invalid JSON") from exc
-
-    if not isinstance(data, dict):
-        raise RuntimeError("Gemini response is not a JSON object")
-
-    title = str(data.get("title", "")).strip()
-    body = str(data.get("text", "")).strip()
-
-    if not title or not body:
-        raise RuntimeError("Generated title or text is empty")
-
-    post = f"{title}\n\n{body}"
-
-    if len(post) > 3900:
-        post = post[:3890].rsplit(" ", 1)[0] + "…"
-
-    digest = content_hash(channel, post)
-
-    if digest in STATE:
-        raise RuntimeError("Duplicate content detected; skipped")
-
-    return post, data, digest
+    raise RuntimeError("All configured AI providers failed: " + " | ".join(errors))
 
 
 # =========================================================
