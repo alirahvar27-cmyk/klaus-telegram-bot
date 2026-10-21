@@ -1,4 +1,4 @@
-name: Telegram 14-channel Persian smoke test
+name: Persian topic-specific test posts to 14 channels
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Send one Persian test message to each configured channel
+      - name: Send one topic-specific Persian test post to each channel
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
@@ -21,41 +21,40 @@ jobs:
             exit 1
           fi
 
-          channels=(
-            "@TechNamaFa"
-            "@NbzeKhabar"
-            "@Khndedoon"
-            "@RazKehann"
-            "@FilmGardFa"
-            "@MazeKhoooneh"
-            "@HaleKhoobDaiily"
-            "@SafarkadehFa"
-            "@ZehnAgahh"
-            "@PoolBalad"
-            "@LevelUpFa"
-            "@NimeShabHorror"
-            "@TradePulseFa"
-            "@NetPlusFa"
-          )
-
           failures=0
-          for channel in "${channels[@]}"; do
-            echo "در حال آزمایش: $channel"
+          send_test() {
+            channel="$1"
+            message="$2"
+            echo "در حال ارسال به $channel"
             response="$(curl --silent --show-error --request POST \
               --url "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
               --data-urlencode "chat_id=$channel" \
-              --data-urlencode "text=تست فنی کلاوس: ارسال پیام به این کانال بررسی شد. این فقط یک پیام آزمایشی است.")" || response='{"ok":false,"description":"درخواست HTTP ناموفق بود"}'
-
+              --data-urlencode "text=$message")" || response='{"ok":false,"description":"درخواست HTTP ناموفق بود"}'
             if echo "$response" | python -c 'import json,sys; d=json.load(sys.stdin); sys.exit(0 if d.get("ok") else 1)'; then
-              message_id="$(echo "$response" | python -c 'import json,sys; print(json.load(sys.stdin).get("result",{}).get("message_id","?"))')"
-              echo "موفق: $channel | message_id=$message_id"
+              id="$(echo "$response" | python -c 'import json,sys; print(json.load(sys.stdin).get("result",{}).get("message_id","?"))')"
+              echo "موفق: $channel | message_id=$id"
             else
-              description="$(echo "$response" | python -c 'import json,sys; d=json.load(sys.stdin); print(d.get("description","پاسخ نامعتبر تلگرام"))' 2>/dev/null || echo 'پاسخ نامعتبر تلگرام')"
-              echo "ناموفق: $channel | $description"
+              err="$(echo "$response" | python -c 'import json,sys; print(json.load(sys.stdin).get("description","پاسخ نامعتبر"))' 2>/dev/null || echo 'پاسخ نامعتبر')"
+              echo "ناموفق: $channel | $err"
               failures=$((failures + 1))
             fi
             sleep 1
-          done
+          }
 
-          echo "نتیجه: ${#channels[@]} کانال بررسی شد؛ ${failures} مورد ناموفق."
+          send_test "@TechNamaFa" "🧪 تست کلاوس | تک‌نما\n\nموضوع: فناوری و گوشی هوشمند\n\nنکتهٔ تستی: قبل از خرید گوشی، فقط به عدد مگاپیکسل دوربین نگاه نکن؛ اندازهٔ حسگر، پردازش تصویر، لرزش‌گیر و کیفیت عکس در نور کم هم مهم‌اند. این پیام صرفاً برای آزمایش ارسال ربات است."
+          send_test "@NbzeKhabar" "🧪 تست کلاوس | نبض خبر\n\nموضوع: سواد خبری و راستی‌آزمایی\n\nنکتهٔ تستی: پیش از بازنشر یک خبر، تاریخ انتشار، منبع اولیه و تأیید آن در رسانه‌های معتبر دیگر را بررسی کنید. تیتر هیجانی به‌تنهایی مدرک صحت خبر نیست. این پیام صرفاً برای آزمایش ارسال ربات است."
+          send_test "@Khndedoon" "🧪 تست کلاوس | خنده‌دون\n\nموضوع: طنز و حیوانات بامزه\n\nلبخند روز: گربه‌ای روی کیبورد نشست و گفت «نگران نباش، دارم برایت ایمیلِ میو می‌فرستم!» 😹 این پیام کوتاه فقط برای آزمایش ارسال ربات است."
+          send_test "@RazKehann" "🧪 تست کلاوس | راز کیهان\n\nموضوع: نجوم و کیهان\n\nدانستنی: نور خورشید حدود ۸ دقیقه و ۲۰ ثانیه در راه است تا به زمین برسد؛ پس وقتی به خورشید نگاه می‌کنیم، آن را کمی در گذشته می‌بینیم. این پیام صرفاً برای آزمایش ارسال ربات است."
+          send_test "@FilmGardFa" "🧪 تست کلاوس | فیلم‌گرد\n\nموضوع: فیلم و سینما\n\nنکتهٔ سینمایی: نورپردازی، رنگ و قاب‌بندی می‌توانند بدون حتی یک دیالوگ، حس اضطراب یا آرامش را به بیننده منتقل کنند. دفعهٔ بعد هنگام تماشای فیلم به نور صحنه دقت کنید. این پیام صرفاً برای آزمایش ارسال ربات است."
+          send_test "@MazeKhoooneh" "🧪 تست کلاوس | مزه‌خونه\n\nموضوع: آشپزی و غذا\n\nترفند آشپزی: برای پخت یکنواخت سبزیجات در تابه، آن‌ها را خیلی فشرده نچینید؛ فضای کافی کمک می‌کند بخار جمع نشود و بهتر برشته شوند. این پیام صرفاً برای آزمایش ارسال ربات است."
+          send_test "@HaleKhoobDaiily" "🧪 تست کلاوس | حال خوب\n\nموضوع: آرامش و عادت‌های سالم\n\nتمرین کوتاه: یک دقیقه مکث کنید، شانه‌ها را رها کنید و چند نفس آرام و طبیعی بکشید. لازم نیست همهٔ کارها را همین لحظه تمام کنید؛ قدم بعدی را انتخاب کنید. این پیام صرفاً برای آزمایش ارسال ربات است."
+          send_test "@SafarkadehFa" "🧪 تست کلاوس | سفرکده\n\nموضوع: سفر و گردشگری\n\nنکتهٔ سفر: پیش از حرکت، ساعت کاری جاذبه‌ها، شرایط آب‌وهوا و قوانین حمل‌ونقل مقصد را از منابع رسمی بررسی کنید و یک نسخهٔ آفلاین از نشانی محل اقامت داشته باشید. این پیام صرفاً برای آزمایش ارسال ربات است."
+          send_test "@ZehnAgahh" "🧪 تست کلاوس | ذهن‌آگاه\n\nموضوع: ذهن‌آگاهی و تمرکز\n\nتمرین تمرکز: برای ۱۰ دقیقه فقط یک کار کوچک را انجام دهید؛ اعلان‌ها را خاموش کنید و هر بار حواس‌تان پرت شد، آرام به همان کار برگردید. این پیام صرفاً برای آزمایش ارسال ربات است."
+          send_test "@PoolBalad" "🧪 تست کلاوس | پول‌بلد\n\nموضوع: سواد مالی و بودجه‌بندی\n\nنکتهٔ مالی: هزینه‌های ثابت، ضروری و اختیاری را جدا ثبت کنید. همین دسته‌بندی ساده کمک می‌کند بفهمید کدام هزینه قابل‌کاهش است؛ این پیام توصیهٔ سرمایه‌گذاری نیست و فقط برای آزمایش ارسال ربات است."
+          send_test "@LevelUpFa" "🧪 تست کلاوس | لِوِل‌آپ\n\nموضوع: رشد فردی و یادگیری\n\nروش یادگیری: به‌جای چند بار فقط خواندن، کتاب را ببندید و نکته‌ها را با زبان خودتان توضیح دهید. بازیابی فعال معمولاً نشان می‌دهد کدام بخش را واقعاً یاد گرفته‌اید. این پیام صرفاً برای آزمایش ارسال ربات است."
+          send_test "@NimeShabHorror" "🧪 تست کلاوس | نیمه‌شب\n\nموضوع: داستان ترسناک خیالی\n\nداستانک: ساعت سه بامداد، گوشی خاموش روی میز روشن شد. پیامی روی صفحه آمد: «چراغ راهرو را روشن نکن.» از انتهای راهرو، صدای کلید برق بلند شد… این داستان کاملاً خیالی است و این پیام برای آزمایش ارسال ربات است."
+          send_test "@TradePulseFa" "🧪 تست کلاوس | تریدپالس\n\nموضوع: آموزش بازار و مدیریت ریسک\n\nنکتهٔ آموزشی: پیش از هر معامله، مقدار زیان قابل‌تحمل و نقطهٔ خروج را مشخص کنید. اندازهٔ موقعیت باید با ریسک از پیش تعیین‌شده هماهنگ باشد؛ هیچ روشی سود را تضمین نمی‌کند. این پیام صرفاً برای آزمایش ارسال ربات است."
+          send_test "@NetPlusFa" "🧪 تست کلاوس | نت‌پلاس\n\nموضوع: شبکه، DNS و امنیت سایبری\n\nنکتهٔ امنیتی: برای حساب‌های مهم، رمز یکتا و احراز هویت دومرحله‌ای فعال کنید. هرگز کد ورود یک‌بارمصرف را برای دیگران نفرستید؛ حتی اگر پیام ظاهراً از پشتیبانی باشد. این پیام صرفاً برای آزمایش ارسال ربات است."
+
+          echo "نتیجه: 14 کانال بررسی شد؛ ${failures} مورد ناموفق."
           [ "$failures" -eq 0 ]
