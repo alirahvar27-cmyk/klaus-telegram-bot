@@ -71,7 +71,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add sent.json content_rotation.json
+          git add sent.json
+          if [ -f content_rotation.json ]; then git add content_rotation.json; fi
 
           if ! git diff --cached --quiet; then
             git commit -m "Update KLAUS posting state"
