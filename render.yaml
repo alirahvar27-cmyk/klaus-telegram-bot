@@ -10,6 +10,10 @@ services:
         sync: false
       - key: KLAUS_DISCUSSION_CHAT_ID
         sync: false
+      - key: KLAUS_SOURCE_CHANNELS
+        sync: false
+      - key: KLAUS_RELAY_TARGETS
+        sync: false
       - key: KLAUS_MOD_BLOCK_LINKS
         value: "true"
       - key: KLAUS_MOD_MAX_PER_MINUTE
