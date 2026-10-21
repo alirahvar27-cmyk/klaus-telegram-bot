@@ -15,7 +15,7 @@ SOURCE_TARGETS = {
     "proxymtprotoir": "@NetPlusFa", "iRoProxy": "@NetPlusFa", "MobhamV2ray": "@NetPlusFa",
     "vpnplanB": "@NetPlusFa", "diamondproxy": "@NetPlusFa", "myconfig": "@NetPlusFa",
     "CinemaBoxOrg": "@FilmGardFa", "sinema_city": "@FilmGardFa", "CinemaBoxNow": "@FilmGardFa",
-    "MobhamMoviess": "@FilmGardFa", "lmdbtv": "@FilmGardFa", "Editday100": "@FilmGardFa",
+    "MobhamMoviess": "@FilmGardFa", "lmdbtv": "@FilmGardFa", "Editday100": "@FilmGardFa", "PromptChat_GPT": "@TechNamaFa",
     "web3nabu": "@TradePulseFa", "tofan_signal": "@TradePulseFa", "CryptoSignal2018": "@TradePulseFa",
     "signalshah0": "@TradePulseFa", "forextrder1": "@TradePulseFa", "YeganeCrypto": "@TradePulseFa",
     "the_signal_24": "@TradePulseFa", "noxtrade": "@TradePulseFa", "signal_tx": "@TradePulseFa",
@@ -54,12 +54,18 @@ def save_state(state):
 
 def clean_caption(text, source_user):
     text = str(text or "")
-    text = re.sub(rf"(?i)(?:https?://)?t\.me/{re.escape(source_user)}(?:/\d+)?", "", text)
-    text = re.sub(rf"(?i)@{re.escape(source_user)}\b", "", text)
+    # Strip references to any channel in the supplied source list, not just this sender.
+    for username in SOURCE_TARGETS:
+        text = re.sub(rf"(?i)(?:https?://)?t\.me/{re.escape(username)}(?:/\d+)?", "", text)
+        text = re.sub(rf"(?i)@{re.escape(username)}\b", "", text)
     lines = []
+    source_names = tuple(name.casefold() for name in SOURCE_TARGETS)
     for line in text.splitlines():
         line = line.strip()
+        lowered = line.casefold()
         if re.search(r"(?i)(?:منبع|کانال اصلی|ادامه مطلب|source|join us|عضویت)\s*[:：-]?.*(?:t\.me/|telegram\.me/|@[\w]+)", line):
+            continue
+        if any(name in lowered for name in source_names) and re.search(r"(?i)(?:منبع|کانال|عضویت|join|follow|ادامه|لینک)", lowered):
             continue
         lines.append(line)
     return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
