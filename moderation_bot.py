@@ -78,10 +78,12 @@ def main():
         raise SystemExit("Missing TELEGRAM_BOT_TOKEN environment variable.")
     if not CHAT_ID:
         raise SystemExit("Missing KLAUS_DISCUSSION_CHAT_ID environment variable.")
-    try:
-        api("deleteWebhook", {"drop_pending_updates": False})
-    except Exception as exc:
-        LOG.warning("Could not clear webhook before long polling: %s", exc)
+    webhook = api("getWebhookInfo", {})
+    if webhook.get("url"):
+        raise SystemExit(
+            "A Telegram webhook is configured for this bot. Disable it deliberately "
+            "before running the long-polling moderator; this process will not change it automatically."
+        )
     offset = 0
     LOG.info("KLAUS moderator started for configured discussion group.")
     while True:
