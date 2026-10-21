@@ -941,20 +941,26 @@ def publish_post(channel, post, image):
         return
 
     attribution = image_attribution(image)
-    caption = post
-
-    if attribution:
-        room = 1000 - len(attribution) - 1
-        if room >= 100:
-            caption = post[:room].rstrip() + attribution
-        else:
-            caption = post[:1000]
+    signature = f"📌 {channel}" if str(channel).startswith("@") else ""
+    # Keep both the channel handle and image credit inside Telegram's caption limit.
+    footer_parts = [part for part in (attribution, signature) if part]
+    footer = "\n\n".join(footer_parts)
+    body_limit = max(100, 1024 - len(footer) - 2)
+    body = str(post).strip()
+    # The signature is already appended by add_channel_signature; remove it before
+    # rebuilding the bounded caption so it is never clipped off the end.
+    if signature and body.endswith(signature):
+        body = body[:-len(signature)].rstrip()
+    caption = body[:body_limit].rstrip()
+    if footer:
+        caption = f"{caption}\n\n{footer}" if caption else footer
+    caption = caption[:1024]
 
     try:
         telegram("sendPhoto", {
             "chat_id": channel,
             "photo": image["url"],
-            "caption": caption[:1000],
+            "caption": caption,
         })
 
     except Exception as exc:
