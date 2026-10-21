@@ -252,18 +252,68 @@ def build_prompt(channel, name, topic):
 """
 
 
-def generate_content(channel, name, topic):
-    response = AI.models.generate_content(
-        model=GEMINI_MODEL,
-        contents=build_prompt(channel, name, topic),
-        config={
-            "response_mime_type": "application/json",
-            "temperature": 0.8,
-        },
-    )
+# Gemini free-tier requests can be tightly rate-limited. Keep requests
+# at least 15 seconds apart, and retry transient 429/503/server errors.
+GEMINI_MIN_INTERVAL = max(15, int(os.getenv("GEMINI_MIN_INTERVAL", "15")))
+GEMINI_MAX_ATTEMPTS = 4
+_last_gemini_request_at = 0.0
 
-    if not response.text:
-        raise RuntimeError("Gemini returned an empty response")
+
+def generate_content(channel, name, topic):
+    global _last_gemini_request_at
+    last_error = None
+
+    for attempt in range(GEMINI_MAX_ATTEMPTS):
+        elapsed = time.monotonic() - _last_gemini_request_at
+        wait_for = GEMINI_MIN_INTERVAL - elapsed
+        if wait_for > 0:
+            LOG.info(
+                "Gemini pacing: waiting %.1f seconds before request for %s",
+                wait_for,
+                channel,
+            )
+            time.sleep(wait_for)
+
+        try:
+            _last_gemini_request_at = time.monotonic()
+            response = AI.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=build_prompt(channel, name, topic),
+                config={
+                    "response_mime_type": "application/json",
+                    "temperature": 0.8,
+                },
+            )
+            if not response.text:
+                raise RuntimeError("Gemini returned an empty response")
+            break
+        except Exception as exc:
+            last_error = exc
+            error_text = str(exc).lower()
+            transient = (
+                "429" in error_text
+                or "resource_exhausted" in error_text
+                or "503" in error_text
+                or "unavailable" in error_text
+                or "500" in error_text
+                or "internal" in error_text
+                or "deadline" in error_text
+                or "timeout" in error_text
+            )
+            if not transient or attempt >= GEMINI_MAX_ATTEMPTS - 1:
+                raise
+            delay = min(60, 15 * (2 ** attempt))
+            LOG.warning(
+                "Gemini temporary error for %s (attempt %d/%d); retrying in %d seconds: %s",
+                channel,
+                attempt + 1,
+                GEMINI_MAX_ATTEMPTS,
+                delay,
+                exc,
+            )
+            time.sleep(delay)
+    else:
+        raise RuntimeError(f"Gemini failed after retries: {last_error}")
 
     try:
         data = json.loads(response.text)
