@@ -1,4 +1,4 @@
-name: Telegram one-message smoke test
+name: Telegram 14-channel Persian smoke test
 
 on:
   workflow_dispatch:
@@ -7,23 +7,55 @@ permissions:
   contents: read
 
 jobs:
-  send-test-message:
+  test-channels:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 5
     steps:
-      - name: Send exactly one test message to TechNamaFa
+      - name: Send one Persian test message to each configured channel
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_TEST_CHAT_ID: "@TechNamaFa"
         run: |
-          set -euo pipefail
+          set -u
           if [ -z "${TELEGRAM_BOT_TOKEN:-}" ]; then
-            echo "Missing TELEGRAM_BOT_TOKEN repository secret."
+            echo "خطا: سکرت TELEGRAM_BOT_TOKEN تنظیم نشده است."
             exit 1
           fi
-          response="$(curl --silent --show-error --fail-with-body \
-            --request POST \
-            --url "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${TELEGRAM_TEST_CHAT_ID}" \
-            --data-urlencode "text=KLAUS test: GitHub Actions can send Telegram messages. This is a one-time smoke test.")"
-          echo "$response" | python -c 'import json,sys; d=json.load(sys.stdin); print("Telegram API ok:", d.get("ok")); print("Message ID:", d.get("result",{}).get("message_id")); sys.exit(0 if d.get("ok") else 1)'
+
+          channels=(
+            "@TechNamaFa"
+            "@NbzeKhabar"
+            "@Khndedoon"
+            "@RazKehann"
+            "@FilmGardFa"
+            "@MazeKhoooneh"
+            "@HaleKhoobDaiily"
+            "@SafarkadehFa"
+            "@ZehnAgahh"
+            "@PoolBalad"
+            "@LevelUpFa"
+            "@NimeShabHorror"
+            "@TradePulseFa"
+            "@NetPlusFa"
+          )
+
+          failures=0
+          for channel in "${channels[@]}"; do
+            echo "در حال آزمایش: $channel"
+            response="$(curl --silent --show-error --request POST \
+              --url "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+              --data-urlencode "chat_id=$channel" \
+              --data-urlencode "text=تست فنی کلاوس: ارسال پیام به این کانال بررسی شد. این فقط یک پیام آزمایشی است.")" || response='{"ok":false,"description":"درخواست HTTP ناموفق بود"}'
+
+            if echo "$response" | python -c 'import json,sys; d=json.load(sys.stdin); sys.exit(0 if d.get("ok") else 1)'; then
+              message_id="$(echo "$response" | python -c 'import json,sys; print(json.load(sys.stdin).get("result",{}).get("message_id","?"))')"
+              echo "موفق: $channel | message_id=$message_id"
+            else
+              description="$(echo "$response" | python -c 'import json,sys; d=json.load(sys.stdin); print(d.get("description","پاسخ نامعتبر تلگرام"))' 2>/dev/null || echo 'پاسخ نامعتبر تلگرام')"
+              echo "ناموفق: $channel | $description"
+              failures=$((failures + 1))
+            fi
+            sleep 1
+          done
+
+          echo "نتیجه: ${#channels[@]} کانال بررسی شد؛ ${failures} مورد ناموفق."
+          [ "$failures" -eq 0 ]
