@@ -773,21 +773,37 @@ def load_content_rotation():
 
 
 def choose_content_type(channel, items):
-    """Rotate post formats per channel; gracefully avoid unavailable media types."""
+    """Prefer a real image for each post; use video/audio only when a direct licensed feed file exists."""
     history = load_content_rotation()
     previous = history.get(channel, [])
     if not isinstance(previous, list):
         previous = []
-    available = set(CONTENT_TYPES)
-    if not any(item.get("video_url") for item in items):
-        available.discard("video")
-    if not any(item.get("audio_url") for item in items):
-        available.discard("audio")
-    # Keep app introductions and polls available as generated text interactions.
-    candidates = [kind for kind in CONTENT_TYPES if kind in available and kind not in previous[-2:]]
-    if not candidates:
-        candidates = [kind for kind in CONTENT_TYPES if kind in available]
-    chosen = random.choice(candidates or ["text"])
+
+    has_video = any(item.get("video_url") for item in items)
+    has_audio = any(item.get("audio_url") for item in items)
+
+    # Media-first default: the publisher tries an attributed Wikimedia image for
+    # every channel post. Direct video/audio are selected only when feeds expose
+    # actual media files; social-platform pages are never downloaded as videos.
+    media_mode = os.getenv("KLAUS_MEDIA_MODE", "image_first").strip().lower()
+    if media_mode != "mixed":
+        if has_video and random.random() < 0.25:
+            chosen = "video"
+        elif has_audio and random.random() < 0.05:
+            chosen = "audio"
+        else:
+            chosen = "image"
+    else:
+        available = set(CONTENT_TYPES)
+        if not has_video:
+            available.discard("video")
+        if not has_audio:
+            available.discard("audio")
+        candidates = [kind for kind in CONTENT_TYPES if kind in available and kind not in previous[-2:]]
+        if not candidates:
+            candidates = [kind for kind in CONTENT_TYPES if kind in available]
+        chosen = random.choice(candidates or ["text"])
+
     history[channel] = (previous + [chosen])[-6:]
     CONTENT_ROTATION_FILE.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
     return chosen
