@@ -1,67 +1,66 @@
+
 name: KLAUS Scheduler
 
 on:
-schedule:
-- cron: "0 */2 * * *"
-workflow_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */2 * * *"
 
 permissions:
-contents: write
+  contents: write
 
 concurrency:
-group: klaus-publisher
-cancel-in-progress: false
+  group: klaus-publisher
+  cancel-in-progress: false
 
 jobs:
-run:
-runs-on: ubuntu-latest
-timeout-minutes: 20
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
 
-```
-steps:
-  - name: Checkout repository
-    uses: actions/checkout@v4
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-  - name: Set up Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: "3.12"
-      cache: pip
-      cache-dependency-path: requirements.txt
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
 
-  - name: Install dependencies
-    run: python -m pip install -r requirements.txt
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
 
-  - name: Initialize posting state
-    run: |
-      if [ ! -f sent.json ]; then
-        echo "[]" > sent.json
-      fi
+      - name: Initialize posting state
+        run: |
+          if [ ! -f sent.json ]; then
+            echo "[]" > sent.json
+          fi
 
-  - name: Run KLAUS
-    env:
-      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
-      PYTHONUNBUFFERED: "1"
-    run: python main.py
+      - name: Run KLAUS
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          PYTHONUNBUFFERED: "1"
+        run: python main.py
 
-  - name: Save duplicate-prevention state
-    if: always()
-    run: |
-      if [ ! -f sent.json ]; then
-        echo "[]" > sent.json
-      fi
+      - name: Save duplicate-prevention state
+        if: always()
+        run: |
+          if [ ! -f sent.json ]; then
+            echo "[]" > sent.json
+          fi
 
-      git config user.name "github-actions[bot]"
-      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      git add sent.json
+          git add sent.json
 
-      if ! git diff --cached --quiet; then
-        git commit -m "Update KLAUS posting state"
-        git push
-      else
-        echo "No state changes to save."
-      fi
-```
+          if ! git diff --cached --quiet; then
+            git commit -m "Update KLAUS posting state"
+            git push
+          else
+            echo "No state changes to save."
+          fi
