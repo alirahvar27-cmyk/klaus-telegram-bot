@@ -55,20 +55,25 @@ LOG = logging.getLogger("KLAUS")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY", "").strip()
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini").strip()
-GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip()
-MISTRAL_MODEL = os.getenv("MISTRAL_MODEL", "mistral-small-latest").strip()
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini").strip() or "gpt-4o-mini"
+GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip() or "llama-3.3-70b-versatile"
+MISTRAL_MODEL = os.getenv("MISTRAL_MODEL", "mistral-small-latest").strip() or "mistral-small-latest"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
+OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "openrouter/free").strip() or "openrouter/free"
+CLOUDFLARE_API_TOKEN = os.getenv("CLOUDFLARE_API_TOKEN", "").strip()
+CLOUDFLARE_ACCOUNT_ID = os.getenv("CLOUDFLARE_ACCOUNT_ID", "").strip()
+CLOUDFLARE_MODEL = os.getenv("CLOUDFLARE_MODEL", "@cf/meta/llama-3.3-70b-instruct-fp8-fast").strip() or "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
 AI_ORDER = [
     item.strip().lower()
-    for item in os.getenv("KLAUS_AI_ORDER", "gemini,mistral,groq,openai").split(",")
-    if item.strip().lower() in {"gemini", "mistral", "openai", "groq"}
+    for item in os.getenv("KLAUS_AI_ORDER", "gemini,mistral,groq,openrouter,cloudflare,openai").split(",")
+    if item.strip().lower() in {"gemini", "mistral", "openai", "groq", "openrouter", "cloudflare"}
 ]
 AI = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
 
-if not any([GEMINI_API_KEY, OPENAI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY]):
+if not any([GEMINI_API_KEY, OPENAI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY, (CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID)]):
     raise RuntimeError(
         "No AI provider configured. Add at least one of GEMINI_API_KEY, "
-        "OPENAI_API_KEY, or GROQ_API_KEY in GitHub Secrets."
+        "OPENAI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY, or both CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID in GitHub Secrets."
     )
 
 # A Telegram token is required only when real publishing is enabled.
@@ -291,10 +296,10 @@ def _gemini_generate(prompt, channel):
     return response.text
 
 
-def _openai_compatible_generate(provider, api_key, model, endpoint, prompt):
+def _openai_compatible_generate(provider, api_key, model, endpoint, prompt, extra_headers=None, json_mode=True):
     response = HTTP.post(
         endpoint,
-        headers={"Authorization": f"Bearer {api_key}"},
+        headers={"Authorization": f"Bearer {api_key}", **(extra_headers or {})},
         json={
             "model": model,
             "messages": [
@@ -302,7 +307,7 @@ def _openai_compatible_generate(provider, api_key, model, endpoint, prompt):
                 {"role": "user", "content": prompt},
             ],
             "temperature": 0.8,
-            "response_format": {"type": "json_object"},
+            **({"response_format": {"type": "json_object"}} if json_mode else {}),
         },
         timeout=90,
     )
@@ -343,9 +348,26 @@ def generate_content(channel, name, topic):
                 "https://api.mistral.ai/v1/chat/completions", prompt
             ),
         ),
+        "openrouter": (
+            bool(OPENROUTER_API_KEY),
+            lambda: _openai_compatible_generate(
+                "OpenRouter", OPENROUTER_API_KEY, OPENROUTER_MODEL,
+                "https://openrouter.ai/api/v1/chat/completions", prompt,
+                extra_headers={"HTTP-Referer": "https://github.com/alirahvar27-cmyk/klaus-telegram-bot", "X-Title": "KLAUS"},
+                json_mode=False,
+            ),
+        ),
+        "cloudflare": (
+            bool(CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID),
+            lambda: _openai_compatible_generate(
+                "Cloudflare Workers AI", CLOUDFLARE_API_TOKEN, CLOUDFLARE_MODEL,
+                f"https://api.cloudflare.com/client/v4/accounts/{CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions", prompt,
+                json_mode=False,
+            ),
+        ),
     }
     errors = []
-    order = AI_ORDER or ["gemini", "openai", "groq"]
+    order = AI_ORDER or ["gemini", "mistral", "groq", "openrouter", "cloudflare", "openai"]
 
     for provider in order:
         configured, call = providers[provider]
