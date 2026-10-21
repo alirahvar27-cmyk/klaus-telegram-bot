@@ -55,6 +55,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
           KLAUS_AI_ORDER: ${{ vars.KLAUS_AI_ORDER }}
+          KLAUS_SOURCE_FEEDS: ${{ vars.KLAUS_SOURCE_FEEDS }}
           PYTHONUNBUFFERED: "1"
         run: python main.py
 
