@@ -367,16 +367,22 @@ def build_prompt(channel, name, topic, source_context="", content_type="mixed"):
 در نبود اطلاعات زنده، درباره سواد خبری و راستی‌آزمایی بنویس.
 """
 
-    elif channel in ("@PoolBalad", "@TradePulseFa"):
+    elif channel == "@TradePulseFa":
         special_rules = """
-محتوا آموزشی باشد، نه توصیه شخصی سرمایه‌گذاری.
-سود تضمینی، سیگنال خریدوفروش یا قیمت لحظه‌ای ساختگی ارائه نکن.
+مخاطب این کانال معامله‌گر فارسی‌زبان فیوچرز است. محتوای هر پست باید یکی از این قالب‌ها را داشته باشد:
+۱) اگر در منبع عمومیِ ورودی، دادهٔ بازارِ تازه با نماد، زمان و قیمت قابل‌بررسی وجود دارد، سناریوی مشروط شامل جهت، محدودهٔ ورود، نقطهٔ ابطال/حدضرر، اهداف احتمالی و نسبت ریسک به بازده را فقط با ذکر زمان و منبع بنویس.
+۲) اگر دادهٔ زندهٔ قابل‌راستی‌آزمایی وجود ندارد، صریحاً بنویس «سناریوی آموزشی؛ سیگنال زنده نیست» و از قیمت، ورود، خروج یا اهرم ساختگی خودداری کن.
+هر بار ریسک معامله، نوسان لیکوییدشدن در فیوچرز و نبود تضمین سود را یادآوری کن. سیگنال قطعی یا سود تضمینی نده.
+"""
+
+    elif channel == "@PoolBalad":
+        special_rules = """
+موضوع این کانال سواد مالی و راه‌های درآمدی واقع‌بینانه است. برای راه درآمدی، مراحل شروع، مهارت لازم، هزینهٔ شروع (اگر قابل‌تأیید است)، روش یافتن مشتری، زمان‌بندی واقع‌بینانه و ریسک‌ها را توضیح بده. از درآمد تضمینی، طرح هرمی، وعدهٔ ثروتمندشدن سریع و اعداد درآمدی بی‌منبع پرهیز کن. محتوا آموزشی است و توصیهٔ شخصی سرمایه‌گذاری نیست.
 """
 
     elif channel == "@NetPlusFa":
         special_rules = """
-روی امنیت دفاعی، حریم خصوصی و تنظیمات امن تمرکز کن.
-روش نفوذ به حساب دیگران آموزش نده.
+موضوعات اصلی: تفاوت VPN و Proxy، DNS امن، تنظیم VPN روی دستگاه، انتخاب ارائه‌دهندهٔ معتبر، نشتی DNS/IP، امنیت وای‌فای و عیب‌یابی اتصال. در هر پست یک مسئلهٔ مشخص را با مراحل قابل‌اجرا توضیح بده؛ مزایا، محدودیت‌ها و خطرات حریم خصوصی را روشن کن. هیچ VPN یا پروکسی را «کاملاً ناشناس» یا تضمینی معرفی نکن، سرویس/لینک ساختگی نساز و روش نفوذ به حساب دیگران آموزش نده.
 """
 
     elif channel == "@NimeShabHorror":
@@ -891,6 +897,20 @@ def download_audio(source, target_dir):
 # Publishing
 # =========================================================
 
+def add_channel_signature(channel, post):
+    """Append the destination channel handle to every main post exactly once."""
+    handle = str(channel or "").strip()
+    text = str(post or "").strip()
+    if not handle.startswith("@") or not text:
+        return text
+    # Remove an existing identical footer to prevent duplicated signatures.
+    lines = text.splitlines()
+    while lines and lines[-1].strip() in {handle, f"کانال: {handle}", f"منبع و ادامه: {handle}"}:
+        lines.pop()
+    text = "\n".join(lines).rstrip()
+    return f"{text}\n\n📌 {handle}"
+
+
 def publish_post(channel, post, image):
     # Defense in depth: never send while testing.
     if DRY_RUN:
@@ -995,6 +1015,7 @@ def main():
             source_context = source_context_for_topic(source_items, topic)
             content_type = choose_content_type(channel, source_items)
             post, data, digest = generate_content(channel, name, topic, source_context, content_type)
+            post = add_channel_signature(channel, post)
             video_source = choose_video_source(source_items, topic) if content_type == "video" else None
             audio_source = choose_audio_source(source_items, topic) if content_type == "audio" else None
 
