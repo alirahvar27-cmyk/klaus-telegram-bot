@@ -56,7 +56,7 @@ def clean_caption(text, source_user):
     text = str(text or "")
     # Strip references to any channel in the supplied source list, not just this sender.
     for username in SOURCE_TARGETS:
-        text = re.sub(rf"(?i)(?:https?://)?t\.me/{re.escape(username)}(?:/\d+)?", "", text)
+        text = re.sub(rf"(?i)(?:https?://)?(?:t\.me|telegram\.me)/{re.escape(username)}(?:/\d+)?", "", text)
         text = re.sub(rf"(?i)@{re.escape(username)}\b", "", text)
         text = re.sub(rf"(?i)(?<!\w){re.escape(username)}(?!\w)", "", text)
     lines = []
