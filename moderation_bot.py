@@ -1,4 +1,4 @@
-""""Optional Telegram moderator and authorized, attributed channel relay.
+"""Optional Telegram moderator and authorized, attributed channel relay.
 
 Relay creates a new destination post (copyMessage/sendMessage), not a Telegram
 forward. Source links are retained in the copied post caption/text.
@@ -21,11 +21,11 @@ MAX_MESSAGES_PER_MINUTE = max(5, int(os.getenv("KLAUS_MOD_MAX_PER_MINUTE", "12")
 BRAND_TAG = os.getenv("KLAUS_BRAND_TAG", "@KLAUS").strip()
 SOURCE_CHANNELS = {
     item.strip().lstrip("@").lower()
-    for item in re.split(r"[,;\\n]+", os.getenv("KLAUS_SOURCE_CHANNELS", ""))
+    for item in re.split(r"[,;\n]+", os.getenv("KLAUS_SOURCE_CHANNELS", ""))
     if item.strip()
 }
 RELAY_TARGETS = [
-    item.strip() for item in re.split(r"[,;\\n]+", os.getenv("KLAUS_RELAY_TARGETS", ""))
+    item.strip() for item in re.split(r"[,;\n]+", os.getenv("KLAUS_RELAY_TARGETS", ""))
     if item.strip()
 ]
 DRY_RUN_FILE = Path(os.getenv("KLAUS_DRY_RUN_FILE", "DRY_RUN"))
@@ -34,7 +34,7 @@ HTTP = requests.Session()
 HTTP.headers.update({"User-Agent": "KLAUS-Discussion-Moderator/1.0"})
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 LOG = logging.getLogger("KLAUS-MOD")
-LINK_RE = re.compile(r"(https?://|www\\.|t\\.me/|telegram\\.me/|[\\w.-]+\\.[a-z]{2,}/)", re.I)
+LINK_RE = re.compile(r"(https?://|www\.|t\.me/|telegram\.me/|[\w.-]+\.[a-z]{2,}/)", re.I)
 message_times: dict[int, deque[float]] = defaultdict(deque)
 
 
@@ -107,16 +107,16 @@ def relay_channel_post(message: dict) -> None:
         return
     source_url = source_post_url(username, message_id)
     original_text = str(message.get("text") or message.get("caption") or "").strip()
-    branded_suffix = f"\\n\\n{BRAND_TAG} · Source: {source_url}" if BRAND_TAG else f"\\n\\nSource: {source_url}"
+    branded_suffix = f"\n\n{BRAND_TAG} · Source: {source_url}" if BRAND_TAG else f"\n\nSource: {source_url}"
     is_text_post = bool(message.get("text")) and not any(
         key in message for key in ("photo", "video", "document", "audio", "animation", "voice", "video_note", "sticker")
     )
     caption = (original_text + branded_suffix).strip()
     if len(caption) > 1024 and not is_text_post:
-        caption = caption[:1000].rstrip() + "…\\n" + source_url
+        caption = caption[:1000].rstrip() + "…\n" + source_url
     text_body = (original_text + branded_suffix).strip()
     if len(text_body) > 4096:
-        text_body = text_body[:4000].rstrip() + "…\\n" + source_url
+        text_body = text_body[:4000].rstrip() + "…\n" + source_url
     if not live_enabled():
         LOG.info("DRY RUN: eligible post @%s/%s would be copied to %d target(s)", username, message_id, len(RELAY_TARGETS))
         return
