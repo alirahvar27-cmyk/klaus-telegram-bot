@@ -1,0 +1,29 @@
+name: Telegram one-message smoke test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  send-test-message:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Send exactly one test message
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_TEST_CHAT_ID: ${{ secrets.TELEGRAM_TEST_CHAT_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_TEST_CHAT_ID:-}" ]; then
+            echo "Missing TELEGRAM_BOT_TOKEN or TELEGRAM_TEST_CHAT_ID repository secret."
+            exit 1
+          fi
+          response="$(curl --silent --show-error --fail-with-body \
+            --request POST \
+            --url "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_TEST_CHAT_ID}" \
+            --data-urlencode "text=KLAUS test: GitHub Actions can send Telegram messages. This is a one-time smoke test.")"
+          echo "$response" | python -c 'import json,sys; d=json.load(sys.stdin); print("Telegram API ok:", d.get("ok")); print("Message ID:", d.get("result",{}).get("message_id")); sys.exit(0 if d.get("ok") else 1)'
