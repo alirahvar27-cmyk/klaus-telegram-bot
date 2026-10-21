@@ -102,7 +102,7 @@ CHANNELS = {
     "@SafarkadehFa": ("سفرکده", "سفر و گردشگری"),
     "@ZehnAgahh": ("ذهن‌آگاه", "ذهن‌آگاهی و تمرکز"),
     "@PoolBalad": ("پول‌بلد", "سواد مالی و بودجه‌بندی"),
-    "@LevelUpFa": ("لِوِل‌آپ", "رشد فردی و یادگیری"),
+    "@LevelUpFa": ("لِوِل‌آپ", "بازی‌های ویدیویی، اخبار گیم، معرفی و نقد بازی، راهنما و صنعت بازی"),
     "@NimeShabHorror": ("نیمه‌شب", "داستان ترسناک خیالی"),
     "@TradePulseFa": ("تریدپالس", "آموزش بازار و مدیریت ریسک"),
     "@NetPlusFa": ("نت‌پلاس", "شبکه، DNS و امنیت سایبری"),
@@ -385,6 +385,21 @@ def build_prompt(channel, name, topic, source_context="", content_type="mixed"):
 موضوعات اصلی: تفاوت VPN و Proxy، DNS امن، تنظیم VPN روی دستگاه، انتخاب ارائه‌دهندهٔ معتبر، نشتی DNS/IP، امنیت وای‌فای و عیب‌یابی اتصال. در هر پست یک مسئلهٔ مشخص را با مراحل قابل‌اجرا توضیح بده؛ مزایا، محدودیت‌ها و خطرات حریم خصوصی را روشن کن. هیچ VPN یا پروکسی را «کاملاً ناشناس» یا تضمینی معرفی نکن، سرویس/لینک ساختگی نساز و روش نفوذ به حساب دیگران آموزش نده.
 """
 
+    elif channel == "@LevelUpFa":
+        special_rules = """
+موضوع این کانال فقط دنیای بازی‌های ویدیویی است: اخبار و به‌روزرسانی بازی‌ها، معرفی و نقد بازی، راهنما و ترفند، بازی‌های PC و کنسول و موبایل، استودیوها و صنعت گیم. درباره رشد فردی یا آموزش عمومی ننویس.
+"""
+
+    elif channel == "@SafarkadehFa":
+        special_rules = """
+موضوع فقط سفر و گردشگری است. درباره مقصد واقعی، جاذبه، مسیر، فصل مناسب و نکته‌های کاربردی سفر بنویس. تصویر باید دقیقاً همان مقصد یا موضوع سفر را نشان دهد؛ اگر تصویر مرتبط و قابل‌اعتماد پیدا نشد، بدون تصویر منتشر شود.
+"""
+
+    elif channel == "@HaleKhoobDaiily":
+        special_rules = """
+موضوع آرامش و عادت‌های سالم است. از ادعاهای درمانی قطعی خودداری کن. تصویر باید آرامش، طبیعت یا فعالیت سالمِ مرتبط را واقعاً نشان دهد؛ از تصاویر بافت، برچسب، بارکد یا صفحات تصادفی استفاده نکن.
+"""
+
     elif channel == "@NimeShabHorror":
         special_rules = """
 داستان ترسناک را تخیلی بنویس و آن را خبر واقعی معرفی نکن.
@@ -411,6 +426,9 @@ def build_prompt(channel, name, topic, source_context="", content_type="mixed"):
 
 قواعد:
 - فارسی روان و طبیعی بنویس.
+- متن کامل و مستقل باشد؛ جمله را نیمه‌کاره رها نکن و از HTML خام، تگ‌هایی مثل <a>، entityهایی مثل &amp; یا قطعه‌کد HTML استفاده نکن.
+- در فیلد text هیچ اطلاعات انتساب تصویر یا منبع رسانه‌ای مثل پدیدآورنده، مجوز، Wikimedia یا Commons قرار نده. لینک منبع خبر فقط وقتی لازم است که خود پست درباره خبر مشخص باشد.
+- image_query باید عبارت انگلیسی دقیق و مشخص برای تصویر مرتبط با همین پست باشد، نه کلمات عمومی یا بافت تزئینی.
 - عنوان جذاب و متن حدود 100 تا 150 کلمه داشته باش.
 - متن برای تلفن همراه مناسب باشد.
 - از ایموجی محدود استفاده کن.
@@ -486,6 +504,26 @@ def _openai_compatible_generate(provider, api_key, model, endpoint, prompt, extr
     return text
 
 
+def clean_post_text(value):
+    """Remove raw HTML and source/asset metadata from every channel post."""
+    text = html.unescape(str(value or ""))
+    text = re.sub(r"(?is)<(script|style)[^>]*>.*?</\\1>", " ", text)
+    text = re.sub(r"(?i)<br\\s*/?>|</p\\s*>|</div\\s*>|</li\\s*>", "\\n", text)
+    text = re.sub(r"(?s)<[^>]+>", " ", text)
+    text = re.sub(r"(?i)&(?:nbsp|amp|quot|lt|gt|#39);", " ", text)
+    blocked = re.compile(r"(?i)^\\s*(?:پدیدآورنده|عکاس|عکس از|مجوز|license|licence|author|artist|منبع تصویر|منبع عکس|منبع رسانه|تصویر از|wikimedia|wikimedia commons|commons):")
+    lines = []
+    for line in text.splitlines():
+        line = re.sub(r"[ \\t]+", " ", line).strip()
+        if not line or blocked.search(line):
+            continue
+        if re.search(r"(?i)</?a\\b|rel=|href=|<\\s*/?\\w+[^>]*>", line):
+            continue
+        lines.append(line)
+    text = "\\n".join(lines)
+    return re.sub(r"\\n{3,}", "\\n\\n", text).strip()
+
+
 def generate_content(channel, name, topic, source_context="", content_type="mixed"):
     prompt = build_prompt(channel, name, topic, source_context, content_type)
     providers = {
@@ -550,9 +588,9 @@ def generate_content(channel, name, topic, source_context="", content_type="mixe
             body = str(data.get("text", "")).strip()
             if not title or not body:
                 raise RuntimeError(f"{provider} generated an empty title or body")
-            post = f"{title}\n\n{body}"
+            post = clean_post_text(f"{title}\n\n{body}")
             if len(post) > 3900:
-                post = post[:3890].rsplit(" ", 1)[0] + "…"
+                post = post[:3890].rsplit(" ", 1)[0].rstrip() + "…"
             digest = content_hash(channel, post)
             if digest in STATE:
                 raise RuntimeError("Duplicate content detected; skipped")
@@ -572,87 +610,52 @@ def generate_content(channel, name, topic, source_context="", content_type="mixe
 # =========================================================
 
 def find_image(query):
+    """Return an image only when its Commons title clearly matches the post query."""
     if not query:
         return None
-
+    query_words = {
+        word.casefold() for word in re.findall(r"[a-zA-Z0-9]+", query)
+        if len(word) >= 4 and word.casefold() not in {"photo", "image", "picture", "beautiful"}
+    }
+    if not query_words:
+        return None
+    reject_words = {"texture", "barcode", "label", "paper", "bookpage", "book-page", "scan", "document", "specimen", "archive", "archival", "pattern", "background", "watermark", "logo", "icon", "diagram", "poster", "screenshot"}
     try:
         response = HTTP.get(
             "https://commons.wikimedia.org/w/api.php",
-            params={
-                "action": "query",
-                "generator": "search",
-                "gsrsearch": query,
-                "gsrnamespace": 6,
-                "gsrlimit": 10,
-                "prop": "imageinfo",
-                "iiprop": "url|extmetadata",
-                "iiurlwidth": 1200,
-                "format": "json",
-            },
+            params={"action":"query","generator":"search","gsrsearch":query,"gsrnamespace":6,"gsrlimit":15,"prop":"imageinfo","iiprop":"url|extmetadata","iiurlwidth":1200,"format":"json"},
             timeout=25,
         )
         response.raise_for_status()
-
         pages = response.json().get("query", {}).get("pages", {})
         candidates = []
-
         for page in pages.values():
+            title = str(page.get("title", "")).replace("File:", "").replace("_", " ")
+            normalized = title.casefold().replace(" ", "")
+            if any(bad in normalized for bad in reject_words):
+                continue
+            title_words = {w.casefold() for w in re.findall(r"[a-zA-Z0-9]+", title) if len(w) >= 3}
+            overlap = query_words & title_words
+            if not overlap or len(overlap) / len(query_words) < 0.34:
+                continue
             info = (page.get("imageinfo") or [{}])[0]
             url = info.get("thumburl") or info.get("url")
-
-            if not url or not url.startswith("https://"):
+            if not url or not url.startswith("https://") or not url.split("?")[0].lower().endswith((".jpg",".jpeg",".png",".webp")):
                 continue
-
-            clean_url = url.split("?")[0].lower()
-            if not clean_url.endswith((".jpg", ".jpeg", ".png", ".webp")):
-                continue
-
-            metadata = info.get("extmetadata", {})
-
-            def meta_value(key):
-                value = metadata.get(key, {}).get("value", "")
-                return html.unescape(str(value)).strip()
-
-            title = page.get("title", "")
-            candidates.append({
-                "url": url,
-                "title": title,
-                "artist": meta_value("Artist"),
-                "license": meta_value("LicenseShortName"),
-                "source": (
-                    "https://commons.wikimedia.org/wiki/"
-                    + quote(title.replace(" ", "_"), safe=":/()")
-                ),
-            })
-
-        return random.choice(candidates) if candidates else None
-
-    except (
-        requests.RequestException,
-        ValueError,
-        TypeError,
-    ) as exc:
-        LOG.warning("Image search failed: %s", exc)
+            candidates.append({"url":url,"title":title,"score":len(overlap)})
+        if not candidates:
+            LOG.info("No sufficiently relevant image found; publishing text only. query=%s", query)
+            return None
+        best_score = max(item["score"] for item in candidates)
+        return random.choice([item for item in candidates if item["score"] == best_score])
+    except (requests.RequestException, ValueError, TypeError) as exc:
+        LOG.warning("Image search failed; falling back to text only: %s", exc)
         return None
 
 
 def image_attribution(image):
-    if not image:
-        return ""
-
-    parts = []
-
-    if image.get("artist"):
-        parts.append(f"پدیدآورنده: {image['artist'][:180]}")
-
-    if image.get("license"):
-        parts.append(f"مجوز: {image['license'][:80]}")
-
-    if image.get("source"):
-        parts.append(f"منبع: {image['source']}")
-
-    return "\n\n" + "\n".join(parts) if parts else ""
-
+    # Media metadata is never appended to visible Telegram text or captions.
+    return ""
 
 
 
@@ -940,28 +943,14 @@ def publish_post(channel, post, image):
         })
         return
 
-    attribution = image_attribution(image)
-    signature = f"📌 {channel}" if str(channel).startswith("@") else ""
-    # Keep both the channel handle and image credit inside Telegram's caption limit.
-    footer_parts = [part for part in (attribution, signature) if part]
-    footer = "\n\n".join(footer_parts)
-    body_limit = max(100, 1024 - len(footer) - 2)
-    body = str(post).strip()
-    # The signature is already appended by add_channel_signature; remove it before
-    # rebuilding the bounded caption so it is never clipped off the end.
-    if signature and body.endswith(signature):
-        body = body[:-len(signature)].rstrip()
-    caption = body[:body_limit].rstrip()
-    if footer:
-        caption = f"{caption}\n\n{footer}" if caption else footer
-    caption = caption[:1024]
-
+    # Telegram photo captions are limited to 1024 characters. Never truncate a post:
+    # send the relevant image first, then the complete text as a separate message.
     try:
-        telegram("sendPhoto", {
-            "chat_id": channel,
-            "photo": image["url"],
-            "caption": caption,
-        })
+        if len(post) <= 1024:
+            telegram("sendPhoto", {"chat_id": channel, "photo": image["url"], "caption": post})
+        else:
+            telegram("sendPhoto", {"chat_id": channel, "photo": image["url"]})
+            telegram("sendMessage", {"chat_id": channel, "text": post})
 
     except Exception as exc:
         LOG.warning(
