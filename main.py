@@ -13,6 +13,8 @@ from urllib.parse import quote, urlparse
 
 import feedparser
 
+from source_adapters import normalize_source_item
+
 import requests
 from google import genai
 
@@ -303,15 +305,17 @@ def load_source_items():
                         ):
                             video_url = candidate
                             break
-                items.append({
-                    "category": category,
-                    "feed": feed_title,
-                    "title": title[:240],
-                    "summary": summary[:700],
-                    "link": link[:1000],
-                    "video_url": video_url[:1500],
-                    "published": str(entry.get("published", entry.get("updated", "")) or "")[:80],
-                })
+                items.append(normalize_source_item(
+                    platform=category,
+                    source_name=feed_title,
+                    title=title,
+                    summary=summary,
+                    url=link,
+                    published=str(entry.get("published", entry.get("updated", "")) or ""),
+                    video_url=video_url,
+                    source_id=str(entry.get("id", entry.get("guid", "")) or ""),
+                    media_type="video" if video_url else "link",
+                ))
                 if len(items) >= 100:
                     break
             LOG.info("Source loaded: category=%s entries=%d feed=%s", category, len(parsed.entries), feed_title)
