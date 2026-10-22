@@ -200,6 +200,8 @@ def _send_album(chat_id, media_items, caption_parts=None):
 
           # A media list is valid input to detect_channel and draft storage.
           s = s.replace('    channel = detect_channel(content["text"], content["media"]["type"] if content["media"] else "")', '    media_for_channel = content["media"][0] if isinstance(content["media"], list) else content["media"]\n    channel = detect_channel(content["text"], media_for_channel["type"] if media_for_channel else "")')
+          # Also repair older revisions that already use the list-safe variable name.
+          s = s.replace('    channel = detect_channel(content["text"], content["media"]["type"] if content["media"] else "")', '    media_value = content.get("media")\n    if isinstance(media_value, list):\n        media_type = next((item.get("type", "") for item in media_value if isinstance(item, dict) and item.get("type")), "")\n    elif isinstance(media_value, dict):\n        media_type = media_value.get("type", "")\n    else:\n        media_type = ""\n    channel = detect_channel(content["text"], media_type)')
 
           p.write_text(s, encoding='utf-8')
           PY
