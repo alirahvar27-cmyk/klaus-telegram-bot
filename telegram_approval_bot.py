@@ -275,14 +275,18 @@ def extract_message(msg):
     entities = msg.get("entities") or msg.get("caption_entities") or []
     text, clean_entities = clean_text_and_entities(raw_text, entities)
     media = None
+    # Handle standard Telegram media, including forwarded photo+caption posts.
     for kind in ("photo", "video", "audio", "voice", "document", "animation", "video_note", "sticker"):
         value = msg.get(kind)
-        if value:
-            if kind == "photo":
-                value = value[-1]
-            media = {"type": kind, "file_id": value.get("file_id")}
+        if not value:
+            continue
+        if kind == "photo":
+            value = value[-1] if isinstance(value, list) else value
+        if isinstance(value, dict) and value.get("file_id"):
+            media = {"type": kind, "file_id": value["file_id"]}
             break
-    if raw_text.strip() and not text.strip() and not media:
+    # Preserve original caption/text if filtering removed everything.
+    if raw_text.strip() and not text.strip():
         text = raw_text.strip()
         clean_entities = []
     return {"text": text, "entities": clean_entities, "media": media}
@@ -499,7 +503,11 @@ def handle_update(update):
         return
     content = extract_message(msg)
     if not content["text"] and not content["media"]:
-        send_text(chat_id, "لطفاً متن یا یک فایل/رسانه بفرست.")
+        # Diagnostic reply prevents guessing when Telegram sends an unsupported
+        # message shape; include only field names, never message contents.
+        keys = ", ".join(sorted(k for k in msg.keys() if k not in {"text", "caption", "entities", "caption_entities"}))
+        log.warning("Unsupported/empty message payload keys=%s", keys)
+        send_text(chat_id, "این نوع پیام هنوز شناسایی نشده.\nفیلدهای دریافتی تلگرام: " + (keys or "بدون فیلد قابل‌شناسایی") + "\nلطفاً همین پیام را دوباره بفرست؛ این گزارش کمک می‌کند نوع رسانه را اضافه کنم.")
         return
     draft_id = str(update["update_id"])
     channel = detect_channel(content["text"], content["media"]["type"] if content["media"] else "")
