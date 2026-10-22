@@ -513,9 +513,22 @@ def main():
             updates = api("getUpdates", {"offset": int(STATE.get("offset", 0)), "timeout": 20, "allowed_updates": ["message", "callback_query"]}, timeout=30)
             for update in updates:
                 try:
+                    message = update.get("message") or {}
+                    callback = update.get("callback_query") or {}
+                    sender = message.get("from") or callback.get("from") or {}
+                    log.info("Received update=%s type=%s sender=%s", update.get("update_id"), "callback_query" if callback else ("message" if message else "other"), sender.get("id", "unknown"))
                     handle_update(update)
-                except Exception:
+                except Exception as exc:
                     log.exception("Update %s failed", update.get("update_id"))
+                    message = update.get("message") or {}
+                    callback = update.get("callback_query") or {}
+                    chat_id = message.get("chat", {}).get("id") or callback.get("message", {}).get("chat", {}).get("id")
+                    sender = message.get("from") or callback.get("from") or {}
+                    if chat_id and is_admin(sender.get("id")):
+                        try:
+                            send_text(chat_id, "⚠️ پیام دریافت شد اما پردازش آن خطا داد. دوباره بفرست یا نوع فایل را عوض کن.\nجزئیات: " + str(exc)[:250])
+                        except Exception:
+                            log.exception("Could not notify admin about update failure")
                 STATE["offset"] = max(int(STATE.get("offset", 0)), int(update["update_id"]) + 1)
             save_state()
         except Exception:
