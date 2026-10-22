@@ -73,6 +73,20 @@ def send_text(chat_id, text, keyboard=None, entities=None):
         payload["entities"] = entities
     return api("sendMessage", payload)
 
+def delete_private_message(chat_id, message_id):
+    """Delete only a message in the private bot chat; never target channel posts."""
+    try:
+        api("deleteMessage", {"chat_id": chat_id, "message_id": message_id})
+    except Exception as exc:
+        log.warning("Could not delete private chat message %s: %s", message_id, exc)
+
+def cleanup_draft_messages(draft):
+    chat_id = draft.get("chat_id")
+    if not chat_id:
+        return
+    for message_id in dict.fromkeys(draft.get("cleanup_message_ids", [])):
+        delete_private_message(chat_id, message_id)
+
 def utf16_len(text):
     return len(text.encode("utf-16-le")) // 2
 
@@ -249,6 +263,7 @@ def preview(chat_id, draft_id):
     media = draft.get("media")
     caption, preview_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=3900)
     try:
+        draft.setdefault("cleanup_message_ids", [])
         if media:
             kind = media["type"]
             method = {
@@ -258,10 +273,12 @@ def preview(chat_id, draft_id):
                 "sticker": "sendSticker",
             }[kind]
             field = "sticker" if kind == "sticker" else kind
-            api(method, {"chat_id": chat_id, field: media["file_id"]})
+            sent_media = api(method, {"chat_id": chat_id, field: media["file_id"]})
+            draft["cleanup_message_ids"].append(sent_media["message_id"])
         if caption:
             # A separate text preview keeps all media types and long captions manageable.
-            send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in preview_entities])
+            sent_caption = send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in preview_entities])
+            draft["cleanup_message_ids"].append(sent_caption["message_id"])
         elif not media:
             send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
         controls = [
@@ -270,7 +287,9 @@ def preview(chat_id, draft_id):
              {"text": "🔄 تغییر کانال", "callback_data": f"channels:{draft_id}"}],
             [{"text": "❌ لغو", "callback_data": f"cancel:{draft_id}"}],
         ]
-        send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})\nموضوع: {topic}\n\nاگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
+        sent_controls = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})\nموضوع: {topic}\n\nاگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
+        draft["cleanup_message_ids"].append(sent_controls["message_id"])
+        save_state()
     except Exception as exc:
         log.exception("Preview failed: %s", exc)
         send_text(chat_id, "⚠️ پیش‌نمایش ارسال نشد. دوباره تلاش کن یا فایل کوچک‌تری بفرست.")
@@ -321,6 +340,7 @@ def handle_callback(query):
     if action == "approve":
         try:
             publish(draft)
+            cleanup_draft_messages(draft)
             STATE["pending"].pop(draft_id, None)
             STATE["edit_mode"].pop(str(user["id"]), None)
             save_state()
@@ -329,6 +349,7 @@ def handle_callback(query):
             log.exception("Publish failed: %s", exc)
             send_text(chat_id, f"❌ انتشار انجام نشد: {str(exc)[:700]}")
     elif action == "cancel":
+        cleanup_draft_messages(draft)
         STATE["pending"].pop(draft_id, None)
         save_state()
         send_text(chat_id, "پیش‌نویس لغو شد و چیزی منتشر نشد.")
@@ -381,6 +402,7 @@ def handle_update(update):
         elif action == "approve":
             try:
                 publish(draft)
+                cleanup_draft_messages(draft)
                 STATE["pending"].pop(draft_id, None)
                 save_state()
                 send_text(chat_id, f"✅ منتشر شد در {draft['channel']}")
@@ -388,6 +410,7 @@ def handle_update(update):
                 log.exception("Publish failed")
                 send_text(chat_id, f"❌ انتشار انجام نشد: {str(exc)[:700]}")
         elif action == "cancel":
+            cleanup_draft_messages(draft)
             STATE["pending"].pop(draft_id, None)
             save_state()
             send_text(chat_id, "پیش‌نویس لغو شد و چیزی منتشر نشد.")
@@ -411,6 +434,7 @@ def handle_update(update):
         draft_id = STATE["edit_mode"].pop(user_key)
         draft = STATE["pending"].get(draft_id)
         if draft:
+            draft.setdefault("cleanup_message_ids", []).append(msg["message_id"])
             new_text = clean_text(msg.get("text") or msg.get("caption") or "")
             draft["text"] = new_text
             draft["entities"] = []
@@ -430,7 +454,7 @@ def handle_update(update):
         return
     draft_id = str(update["update_id"])
     channel = detect_channel(content["text"], content["media"]["type"] if content["media"] else "")
-    STATE["pending"][draft_id] = {"chat_id": chat_id, "text": content["text"], "entities": content.get("entities", []), "media": content["media"], "channel": channel}
+    STATE["pending"][draft_id] = {"chat_id": chat_id, "text": content["text"], "entities": content.get("entities", []), "media": content["media"], "channel": channel, "cleanup_message_ids": [msg["message_id"]]}
     save_state()
     preview(chat_id, draft_id)
 
