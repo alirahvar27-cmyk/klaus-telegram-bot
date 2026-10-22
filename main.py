@@ -30,14 +30,19 @@ DRY_RUN_FILE = Path("DRY_RUN")
 MAX_HISTORY = 2000
 
 # SAFE BY DEFAULT:
-# Publishing is disabled unless DRY_RUN contains exactly "false".
-try:
-    DRY_RUN = (
-        DRY_RUN_FILE.read_text(encoding="utf-8").strip().lower()
-        != "false"
-    )
-except OSError:
-    DRY_RUN = True
+# An explicit DRY_RUN environment variable takes precedence; otherwise use the
+# repository file. Publishing stays disabled if neither explicitly says false.
+dry_run_env = os.getenv("DRY_RUN")
+if dry_run_env is not None:
+    DRY_RUN = dry_run_env.strip().lower() != "false"
+else:
+    try:
+        DRY_RUN = (
+            DRY_RUN_FILE.read_text(encoding="utf-8").strip().lower()
+            != "false"
+        )
+    except OSError:
+        DRY_RUN = True
 
 TELEGRAM_API = (
     f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
