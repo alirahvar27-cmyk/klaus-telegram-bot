@@ -822,7 +822,14 @@ def handle_update(update):
         send_text(chat_id, "این نوع پیام هنوز شناسایی نشده.\nفیلدهای دریافتی تلگرام: " + (keys or "بدون فیلد قابل‌شناسایی") + "\nلطفاً همین پیام را دوباره بفرست؛ این گزارش کمک می‌کند نوع رسانه را اضافه کنم.")
         return
     draft_id = str(update["update_id"])
-    channel = detect_channel(content["text"], content["media"]["type"] if content["media"] else "")
+    media_value = content.get("media")
+    if isinstance(media_value, list):
+        media_type = next((item.get("type", "") for item in media_value if isinstance(item, dict) and item.get("type")), "")
+    elif isinstance(media_value, dict):
+        media_type = media_value.get("type", "")
+    else:
+        media_type = ""
+    channel = detect_channel(content["text"], media_type)
     STATE["pending"][draft_id] = {
         "chat_id": chat_id,
         "text": content["text"],
