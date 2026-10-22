@@ -668,13 +668,20 @@ def handle_update(update):
         elif action == "approve":
             try:
                 publish(draft)
-                cleanup_draft_messages(draft)
-                STATE["pending"].pop(draft_id, None)
-                STATE["edit_mode"].pop(str(user["id"]), None)
-                save_state()
             except Exception as exc:
                 log.exception("Publish failed")
                 send_text(chat_id, f"❌ انتشار انجام نشد: {str(exc)[:700]}")
+                return
+            # Publishing succeeded. Remove the draft and explicitly confirm it;
+            # otherwise the preview disappears and the user cannot tell what happened.
+            cleanup_draft_messages(draft)
+            STATE["pending"].pop(draft_id, None)
+            STATE["edit_mode"].pop(str(user["id"]), None)
+            save_state()
+            try:
+                send_text(chat_id, f"✅ پست با موفقیت در {draft['channel']} منتشر شد.")
+            except Exception:
+                log.exception("Post was published, but success confirmation could not be sent")
         elif action == "cancel":
             cleanup_draft_messages(draft)
             STATE["pending"].pop(draft_id, None)
