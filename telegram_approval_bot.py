@@ -331,26 +331,21 @@ def extract_message(msg):
     rich = msg.get("rich_message")
 
     def collect_rich_text(value):
+        """Collect visible text fragments in payload order, including formatted runs."""
+        parts = []
         if isinstance(value, list):
-            parts = []
             for item in value:
                 parts.extend(collect_rich_text(item))
-            return parts
-        if not isinstance(value, dict):
-            return []
-        child_parts = []
-        for key, child in value.items():
-            if key in {"text", "caption", "entities", "caption_entities", "file_id"}:
-                continue
-            if isinstance(child, (dict, list)):
-                child_parts.extend(collect_rich_text(child))
-        if child_parts:
-            return child_parts
-        for key in ("text", "caption"):
-            candidate = value.get(key)
-            if isinstance(candidate, str) and candidate:
-                return [candidate]
-        return []
+        elif isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"text", "caption"}:
+                    if isinstance(child, str) and child:
+                        parts.append(child)
+                elif key in {"entities", "caption_entities", "file_id"}:
+                    continue
+                elif isinstance(child, (dict, list)):
+                    parts.extend(collect_rich_text(child))
+        return parts
 
     if rich:
         rich_parts = collect_rich_text(rich)
