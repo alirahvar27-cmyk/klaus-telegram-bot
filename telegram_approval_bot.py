@@ -98,7 +98,7 @@ def add_channel_branding(text, entities, channel, limit=None):
     footer = "@" + username
     # Avoid duplicate branding if the destination channel is already linked in the post.
     if not re.search(r"(?<![A-Za-z0-9_])@" + re.escape(username) + r"(?![A-Za-z0-9_])", text, re.IGNORECASE):
-        separator = "\\n\\n" if text else ""
+        separator = "\n\n" if text else ""
         offset = utf16_len(text + separator)
         text = text + separator + footer
         entities.append({"type": "text_link", "offset": offset, "length": utf16_len(footer), "url": "https://t.me/" + username})
