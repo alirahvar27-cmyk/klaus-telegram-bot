@@ -28,8 +28,6 @@ jobs:
           if marker in s:
               print('Already patched')
               raise SystemExit(0)
-
-          # Helpers: Telegram captions max 1024 UTF-16 units; media groups max 10 items.
           anchor = 'def utf16_len(text):\n    return len(text.encode("utf-16-le")) // 2\n'
           helpers = r'''
 
@@ -74,16 +72,13 @@ def _split_utf16_text(text, entities=None, limit=4096):
             pos += 1
     return chunks
 
-
 def _split_caption(text, entities):
     return _split_utf16_text(text, entities, 1024)
-
 
 def _media_items(media):
     if not isinstance(media, list):
         return [media] if media else []
     return [m for m in media if isinstance(m, dict) and m.get("type") and m.get("file_id")]
-
 
 def _send_album(chat_id, media_items, caption_parts=None):
     caption_parts = caption_parts or []
@@ -102,19 +97,13 @@ def _send_album(chat_id, media_items, caption_parts=None):
                     obj["caption"] = cap
                     obj["caption_entities"] = ents
             payload_media.append(obj)
-        sent = api("sendMediaGroup", {"chat_id": chat_id, "media": payload_media})
-        results.extend(sent)
+        results.extend(api("sendMediaGroup", {"chat_id": chat_id, "media": payload_media}))
     return results
 '''
-          if anchor not in s:
-              raise SystemExit('utf16 anchor not found')
+          if anchor not in s: raise SystemExit('utf16 anchor not found')
           s = s.replace(anchor, anchor + helpers, 1)
-
-          # Preserve the existing rich-message extractor, but wrap it so a Telegram
-          # media_group is represented as one logical draft with many media items.
           m = re.search(r'def (\w+)\(msg\):\n    """Extract ordinary Bot API messages and Telegram\'s rich_message forward payload\."""', s)
-          if not m:
-              raise SystemExit('extractor not found')
+          if not m: raise SystemExit('extractor not found')
           old_name = m.group(1)
           s = s[:m.start()] + s[m.start():].replace(f'def {old_name}(msg):', f'def _single_{old_name}(msg):', 1)
           wrapper = f'''
@@ -123,75 +112,46 @@ def _send_album(chat_id, media_items, caption_parts=None):
     if not album:
         return _single_{old_name}(msg)
     parsed = [_single_{old_name}(item) for item in album]
-    media = []
-    text = ""
-    entities = []
+    media, text, entities = [], "", []
     for item in parsed:
         one = item.get("media")
-        if one:
-            if isinstance(one, list):
-                media.extend(one)
-            else:
-                media.append(one)
+        if one: media.extend(one if isinstance(one, list) else [one])
         if not text and item.get("text"):
-            text = item.get("text") or ""
-            entities = item.get("entities") or []
+            text, entities = item.get("text") or "", item.get("entities") or []
     return {{"text": text, "entities": entities, "media": media}}
 '''
           s = s.replace('\ndef preview(chat_id, draft_id):', wrapper + '\ndef preview(chat_id, draft_id):', 1)
-
-          # Group all messages sharing Telegram's media_group_id before the existing
-          # message handler sees them. Different forwarded albums remain isolated.
           loop_anchor = '            for update in updates:\n'
           loop_patch = '''            grouped_updates = []\n            album_buckets = {}\n            for incoming in updates:\n                imsg = incoming.get("message") or {}\n                gid = imsg.get("media_group_id")\n                if gid:\n                    bucket = album_buckets.setdefault(str(gid), {"first": incoming, "items": []})\n                    bucket["items"].append(imsg)\n                else:\n                    grouped_updates.append(incoming)\n            for bucket in album_buckets.values():\n                first = dict(bucket["first"])\n                first_msg = dict(first.get("message") or {})\n                first_msg["album_items"] = bucket["items"]\n                first["message"] = first_msg\n                grouped_updates.append(first)\n            grouped_updates.sort(key=lambda u: int(u.get("update_id", 0)))\n            for update in grouped_updates:\n'''
-          if loop_anchor not in s:
-              raise SystemExit('update loop not found')
+          if loop_anchor not in s: raise SystemExit('update loop not found')
           s = s.replace(loop_anchor, loop_patch, 1)
-
-          # Replace publish with album-aware publishing and correct long-caption behavior.
           pub = re.search(r'def publish\(draft\):.*?(?=\ndef \w+\()', s, re.S)
-          if not pub:
-              raise SystemExit('publish function not found')
+          if not pub: raise SystemExit('publish function not found')
           new_publish = r'''def publish(draft):
     channel = draft["channel"]
     media = draft.get("media")
     text, post_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096)
     items = _media_items(media)
     if not items:
-        if not text:
-            raise ValueError("پست خالی است")
+        if not text: raise ValueError("پست خالی است")
         return api("sendMessage", {"chat_id": channel, "text": text, "entities": post_entities, "disable_web_page_preview": False})
     if len(items) > 1:
-        caption_parts = _split_caption(text, post_entities) if text else []
-        sent = _send_album(channel, items, caption_parts)
-        for extra_text, extra_entities in caption_parts[1:]:
-            send_text(channel, extra_text, entities=extra_entities)
+        parts = _split_caption(text, post_entities) if text else []
+        sent = _send_album(channel, items, parts)
+        for extra_text, extra_entities in parts[1:]: send_text(channel, extra_text, entities=extra_entities)
         return sent
     media = items[0]
     kind = media["type"]
-    method = {
-        "photo": "sendPhoto", "video": "sendVideo", "audio": "sendAudio", "voice": "sendVoice",
-        "document": "sendDocument", "animation": "sendAnimation", "video_note": "sendVideoNote",
-        "sticker": "sendSticker",
-    }[kind]
+    method = {"photo":"sendPhoto","video":"sendVideo","audio":"sendAudio","voice":"sendVoice","document":"sendDocument","animation":"sendAnimation","video_note":"sendVideoNote","sticker":"sendSticker"}[kind]
     field = "sticker" if kind == "sticker" else kind
     payload = {"chat_id": channel, field: media["file_id"]}
-    if text and kind not in {"sticker", "video_note"}:
-        caption_parts = _split_caption(text, post_entities)
-        first_caption, first_entities = caption_parts[0]
-        payload["caption"] = first_caption
-        payload["caption_entities"] = first_entities
-    else:
-        caption_parts = [("", [])]
+    parts = _split_caption(text, post_entities) if text and kind not in {"sticker","video_note"} else [("", [])]
+    if parts[0][0]: payload["caption"], payload["caption_entities"] = parts[0]
     result = api(method, payload)
-    for extra_text, extra_entities in caption_parts[1:]:
-        send_text(channel, extra_text, entities=extra_entities)
+    for extra_text, extra_entities in parts[1:]: send_text(channel, extra_text, entities=extra_entities)
     return result
 '''
           s = s[:pub.start()] + new_publish + s[pub.end():]
-
-          # Make preview album-aware by intercepting the media-list case immediately
-          # after the existing media assignment; the existing controls remain unchanged.
           preview_anchor = '    media = draft.get("media")\n'
           preview_branch = r'''    media = draft.get("media")
     if isinstance(media, list) and len(media) > 1:
@@ -202,31 +162,23 @@ def _send_album(chat_id, media_items, caption_parts=None):
             draft["cleanup_message_ids"].append(msg["message_id"])
             draft["preview_message_ids"].append(msg["message_id"])
         for extra_text, extra_entities in parts[1:]:
-            msg = send_text(chat_id, "📝 ادامه متن پیش‌نمایش:\n\n" + extra_text,
-                            entities=[dict(e, offset=e["offset"] + utf16_len("📝 ادامه متن پیش‌نمایش:\n\n")) for e in extra_entities])
+            msg = send_text(chat_id, "📝 ادامه متن پیش‌نمایش:\n\n" + extra_text, entities=[dict(e, offset=e["offset"] + utf16_len("📝 ادامه متن پیش‌نمایش:\n\n")) for e in extra_entities])
             draft["cleanup_message_ids"].append(msg["message_id"])
             draft["preview_message_ids"].append(msg["message_id"])
-        controls = [
-            [{"text": "✅ تأیید و انتشار", "callback_data": f"approve:{draft_id}"}],
-            [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"}, {"text": "🔄 تغییر کانال", "callback_data": f"channels:{draft_id}"}],
-            [{"text": "❌ لغو", "callback_data": f"cancel:{draft_id}"}],
-        ]
+        controls = [[{"text":"✅ تأیید و انتشار","callback_data":f"approve:{draft_id}"}], [{"text":"✏️ ویرایش متن","callback_data":f"edit:{draft_id}"},{"text":"🔄 تغییر کانال","callback_data":f"channels:{draft_id}"}], [{"text":"❌ لغو","callback_data":f"cancel:{draft_id}"}]]
         controls_msg = send_text(chat_id, f"📌 مقصد: {channel}\n{title} — {topic}", keyboard=controls)
         draft["cleanup_message_ids"].append(controls_msg["message_id"])
         draft["preview_message_ids"].append(controls_msg["message_id"])
         save_state()
         return
 '''
-          if preview_anchor not in s:
-              raise SystemExit('preview media anchor not found')
+          if preview_anchor not in s: raise SystemExit('preview media anchor not found')
           s = s.replace(preview_anchor, preview_branch, 1)
-
           p.write_text(s, encoding='utf-8')
-          print('Patched', p)
           PY
-
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add telegram_approval_bot.py
           git commit -m 'Fix forwarded media groups and long captions'
           git push
+# trigger 1
