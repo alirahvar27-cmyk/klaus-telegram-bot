@@ -226,7 +226,7 @@ jobs:
               draft["preview_message_ids"].append(controls_msg["message_id"])
               save_state()
           ''')
-          s = re.sub(r'def preview\\(chat_id, draft_id\\):.*?(?=\\ndef publish\\()', preview + "\\n", s, count=1, flags=re.S)
+          s = re.sub(r'def preview\(chat_id, draft_id\):.*?(?=\ndef publish\()', preview + "\\n", s, count=1, flags=re.S)
           p.write_text(s, encoding="utf-8")
           compile(p.read_text(encoding="utf-8"), str(p), "exec")
           PY
