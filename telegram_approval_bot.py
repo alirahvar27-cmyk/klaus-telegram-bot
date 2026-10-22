@@ -91,12 +91,21 @@ def utf16_len(text):
     return len(text.encode("utf-16-le")) // 2
 
 def add_channel_branding(text, entities, channel, limit=None):
-    """Keep post text and entities exactly as received; add no extra branding."""
+    """Preserve cleaned post content and append the destination channel link."""
     text = text or ""
+    entities = [dict(e) for e in (entities or [])]
+    username = channel.lstrip("@")
+    footer = "@" + username
+    # Avoid duplicate branding if the destination channel is already linked in the post.
+    if not re.search(r"(?<![A-Za-z0-9_])@" + re.escape(username) + r"(?![A-Za-z0-9_])", text, re.IGNORECASE):
+        separator = "\\n\\n" if text else ""
+        offset = utf16_len(text + separator)
+        text = text + separator + footer
+        entities.append({"type": "text_link", "offset": offset, "length": utf16_len(footer), "url": "https://t.me/" + username})
     max_text_len = limit if limit is not None else 4096
     if utf16_len(text) > max_text_len:
         raise ValueError("متن از محدودیت تلگرام طولانی‌تر است؛ برای حفظ متن، انتشار متوقف شد.")
-    return text, [dict(e) for e in (entities or [])]
+    return text, entities
 
 def clean_text_and_entities(text, entities):
     """Remove source ads while preserving Telegram text_link entities on their visible labels."""
@@ -396,8 +405,9 @@ def extract_message(msg):
             entities = []
         walk_rich(rich)
 
-    # Preserve the post's original visible text and formatting. Non-allowlisted links
-    # are rejected as a whole in handle_update before extraction.
+    # Remove promotional lines and non-allowlisted URLs/handles, while preserving
+    # the useful post text and genuine allowlisted Telegram proxy links.
+    raw_text, entities = clean_text_and_entities(raw_text, entities)
     return {"text": raw_text, "entities": entities, "media": media}
 
 def preview(chat_id, draft_id):
@@ -594,13 +604,8 @@ def handle_update(update):
         if chat_id:
             send_text(chat_id, "⛔ این بات خصوصی است و فقط مدیر می‌تواند از آن استفاده کند.")
         return
-    # Reject the entire incoming message if it contains any non-allowlisted link.
-    # Do this before extraction/cleanup so no partial post can be published.
-    if message_has_disallowed_link(msg):
-        log.info("Rejected whole incoming message %s: contains a non-allowlisted link", msg.get("message_id"))
-        delete_private_message(chat_id, msg["message_id"])
-        send_text(chat_id, "🚫 کل پیام به‌دلیل داشتن لینک غیرمجاز رد شد. فقط لینک کانال‌های خودمان و لینک پروکسی واقعی مجاز است.")
-        return
+    # Clean the incoming post instead of rejecting the whole post:
+    # remove promotional/external channel lines while retaining real Telegram proxy links.
 
     user_key = str(user["id"])
     if user_key in STATE["edit_mode"]:
