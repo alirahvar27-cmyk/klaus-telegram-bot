@@ -73,7 +73,8 @@ def send_text(chat_id, text, keyboard=None):
 
 def clean_text(text):
     text = text or ""
-    text = re.sub(r"(?i)\b(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/[A-Za-z0-9_+/=?%-]+", "", text)
+    # Keep Telegram proxy/SOCKS links, while removing ordinary source-channel links.
+    text = re.sub(r"(?i)\b(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/(?!proxy(?:[/?#]|$)|socks(?:[/?#]|$))[A-Za-z0-9_+/=?%-]+", "", text)
     text = re.sub(r"(?i)@[A-Za-z0-9_]{4,}", "", text)
     lines = []
     for line in text.splitlines():
@@ -107,8 +108,40 @@ def detect_channel(text, media_type):
         return "@Khndedoon"
     return "@NbzeKhabar" if len(t) > 180 else "@Khndedoon"
 
+def append_proxy_entity_links(text, entities):
+    """Expose hidden Telegram text-link URLs for proxy/SOCKS links so they survive reposting."""
+    if not text or not entities:
+        return text
+
+    # Telegram entity offsets use UTF-16 code units, not Python character indexes.
+    def py_index(offset):
+        units = 0
+        for i, char in enumerate(text):
+            if units >= offset:
+                return i
+            units += len(char.encode("utf-16-le")) // 2
+        return len(text)
+
+    replacements = []
+    for entity in entities:
+        if entity.get("type") != "text_link" or not entity.get("url"):
+            continue
+        url = entity["url"].strip()
+        if not re.search(r"(?i)(?:t\.me|telegram\.me)/(?:proxy|socks)(?:[/?#]|$)|tg://proxy(?:[/?#]|$)", url):
+            continue
+        start = py_index(int(entity.get("offset", 0)))
+        end = py_index(int(entity.get("offset", 0)) + int(entity.get("length", 0)))
+        if start < end and url not in text[start:end]:
+            replacements.append((start, end, text[start:end] + " (" + url + ")"))
+    for start, end, replacement in sorted(replacements, reverse=True):
+        text = text[:start] + replacement + text[end:]
+    return text
+
 def extract_message(msg):
-    text = clean_text(msg.get("text") or msg.get("caption") or "")
+    raw_text = msg.get("text") or msg.get("caption") or ""
+    entities = msg.get("entities") or msg.get("caption_entities") or []
+    raw_text = append_proxy_entity_links(raw_text, entities)
+    text = clean_text(raw_text)
     media = None
     for kind in ("photo", "video", "audio", "voice", "document", "animation", "video_note", "sticker"):
         value = msg.get(kind)
