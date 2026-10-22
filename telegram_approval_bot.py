@@ -155,6 +155,13 @@ def clean_text_and_entities(text, entities):
     for raw_line in text.splitlines(keepends=True):
         line = raw_line.rstrip("\r\n")
         line_end = old_pos + len(line)
+        # Remove the specified slogan wherever it appears, case-insensitively,
+        # even if it is embedded within a longer line.
+        line = re.sub(r"اینترنت\\s*آزاد\\s*برای\\s*همه\\s*یا\\s*هیچکس", "", line, flags=re.IGNORECASE)
+        line = re.sub(r"\\s{2,}", " ", line).strip()
+        if not line:
+            old_pos += len(raw_line)
+            continue
         line_links = [(a, b, e) for a, b, e in spans if a < line_end and b > old_pos and e.get("type") == "text_link"]
         stripped = line.strip()
         is_promo = bool(promo_line.search(stripped))
