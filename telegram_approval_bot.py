@@ -561,11 +561,17 @@ def publish(draft):
     # Publish the cleaned draft rather than native-copying the source message,
     # which bypasses link/ad cleanup and can reintroduce unwanted source links.
     media = draft.get("media")
-    text, post_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096 if not media else 1024)
+    # Telegram captions are limited to 1024 UTF-16 units, but the post text
+    # can be longer. Never truncate or reject long media posts: publish the media
+    # first and send the complete text as a separate message instead.
+    text, post_entities = add_channel_branding(
+        draft.get("text", ""), draft.get("entities", []), channel,
+        limit=4096 if not media else None
+    )
     if not media:
         if not text:
             raise ValueError("پست خالی است")
-        return api("sendMessage", {"chat_id": channel, "text": text[:4096], "entities": post_entities, "disable_web_page_preview": False})
+        return api("sendMessage", {"chat_id": channel, "text": text, "entities": post_entities, "disable_web_page_preview": False})
     kind = media["type"]
     method = {
         "photo": "sendPhoto", "video": "sendVideo", "audio": "sendAudio",
@@ -575,11 +581,12 @@ def publish(draft):
     }[kind]
     field = "sticker" if kind == "sticker" else kind
     payload = {"chat_id": channel, field: media["file_id"]}
-    if text and kind not in {"sticker", "video_note"}:
-        payload["caption"] = text[:1024]
-        payload["caption_entities"] = [e for e in post_entities if e["offset"] + e["length"] <= utf16_len(text[:1024])]
+    text_fits_caption = utf16_len(text) <= 1024
+    if text and text_fits_caption and kind not in {"sticker", "video_note"}:
+        payload["caption"] = text
+        payload["caption_entities"] = post_entities
     result = api(method, payload)
-    if text and kind in {"sticker", "video_note"}:
+    if text and (kind in {"sticker", "video_note"} or not text_fits_caption):
         send_text(channel, text, entities=post_entities)
     return result
 
