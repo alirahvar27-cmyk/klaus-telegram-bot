@@ -40,6 +40,7 @@ jobs:
 
       - name: Run KLAUS
         env:
+          DRY_RUN: "false"
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
