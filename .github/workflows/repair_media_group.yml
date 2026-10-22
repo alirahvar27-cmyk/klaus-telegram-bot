@@ -174,6 +174,59 @@ jobs:
                           for update in grouped_updates:
               '''), 1)
 
+          preview = textwrap.dedent(r'''
+          def preview(chat_id, draft_id):
+              draft = STATE["pending"].get(draft_id)
+              if not draft:
+                  return
+              for message_id in dict.fromkeys(draft.get("preview_message_ids", [])):
+                  delete_private_message(chat_id, message_id)
+              draft["preview_message_ids"] = []
+              draft.setdefault("cleanup_message_ids", [])
+              channel = draft["channel"]
+              title, topic = CHANNELS[channel]
+              text, entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096)
+              media = draft.get("media")
+              items = _media_items(media)
+              sent = []
+              if len(items) > 1:
+                  parts = _split_caption(text, entities) if text else []
+                  sent = _send_album(chat_id, items, parts)
+                  for extra_text, extra_entities in parts[1:]:
+                      prefix = "📝 ادامه متن پیش‌نمایش:\n\n"
+                      sent.append(send_text(chat_id, prefix + extra_text, entities=[dict(e, offset=e["offset"] + utf16_len(prefix)) for e in extra_entities]))
+              elif items:
+                  item = items[0]
+                  kind = item["type"]
+                  methods = {"photo":"sendPhoto", "video":"sendVideo", "audio":"sendAudio", "voice":"sendVoice", "document":"sendDocument", "animation":"sendAnimation", "video_note":"sendVideoNote", "sticker":"sendSticker"}
+                  payload = {"chat_id": chat_id, ("sticker" if kind == "sticker" else kind): item["file_id"]}
+                  parts = _split_caption(text, entities) if text and kind not in {"sticker", "video_note"} else [("", [])]
+                  if parts[0][0]:
+                      payload["caption"], payload["caption_entities"] = parts[0]
+                  sent.append(api(methods[kind], payload))
+                  for extra_text, extra_entities in parts[1:]:
+                      prefix = "📝 ادامه متن پیش‌نمایش:\n\n"
+                      sent.append(send_text(chat_id, prefix + extra_text, entities=[dict(e, offset=e["offset"] + utf16_len(prefix)) for e in extra_entities]))
+              elif text:
+                  sent.append(send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + text, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in entities]))
+              else:
+                  sent.append(send_text(chat_id, "پست خالی است؛ متن را ویرایش کن یا لغو کن."))
+              for item in sent:
+                  mid = item.get("message_id")
+                  if mid:
+                      draft["cleanup_message_ids"].append(mid)
+                      draft["preview_message_ids"].append(mid)
+              controls = [
+                  [{"text": "✅ تأیید و انتشار", "callback_data": f"approve:{draft_id}"}],
+                  [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"}, {"text": "🔄 تغییر کانال", "callback_data": f"channels:{draft_id}"}],
+                  [{"text": "❌ لغو", "callback_data": f"cancel:{draft_id}"}],
+              ]
+              controls_msg = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})\nموضوع: {topic}\n\nاگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
+              draft["cleanup_message_ids"].append(controls_msg["message_id"])
+              draft["preview_message_ids"].append(controls_msg["message_id"])
+              save_state()
+          ''')
+          s = re.sub(r'def preview\\(chat_id, draft_id\\):.*?(?=\\ndef publish\\()', preview + "\\n", s, count=1, flags=re.S)
           p.write_text(s, encoding="utf-8")
           compile(p.read_text(encoding="utf-8"), str(p), "exec")
           PY
