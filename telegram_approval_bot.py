@@ -330,23 +330,29 @@ def extract_message(msg):
     # Collect all leaf text runs in order rather than accepting only the first run.
     rich = msg.get("rich_message")
 
-    def collect_rich_text(value):
-        """Collect all visible text, including text runs nested under text/caption keys."""
+    def collect_rich_text(value, parent_key=""):
+        """Collect post body text, excluding buttons/link menus and other metadata."""
         parts = []
+        ignored_keys = {
+            "entities", "caption_entities", "file_id", "reply_markup",
+            "inline_keyboard", "keyboard", "buttons", "button", "url",
+            "link", "links", "button_url", "web_app", "login_url",
+            "switch_inline_query", "callback_data", "reply_to_markup",
+        }
         if isinstance(value, list):
             for item in value:
-                parts.extend(collect_rich_text(item))
+                parts.extend(collect_rich_text(item, parent_key))
         elif isinstance(value, dict):
             for key, child in value.items():
-                if key in {"entities", "caption_entities", "file_id"}:
+                normalized_key = str(key).casefold()
+                if normalized_key in ignored_keys:
                     continue
                 if key in {"text", "caption"} and isinstance(child, str):
                     if child:
                         parts.append(child)
                 elif isinstance(child, (dict, list)):
-                    # Some Telegram wrappers encode formatted text as a list of
-                    # nested runs inside the "text" field. Recurse into those too.
-                    parts.extend(collect_rich_text(child))
+                    # Recurse into nested text runs, but never into link/button metadata.
+                    parts.extend(collect_rich_text(child, key))
         return parts
 
     if rich:
