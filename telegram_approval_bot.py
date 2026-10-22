@@ -411,7 +411,8 @@ def extract_message(msg):
             # Formatting runs are contiguous pieces of the same visible post;
             # keep their original whitespace/newlines and concatenate verbatim.
             raw_text = "".join(rich_parts)
-            entities = []
+        # Keep entities discovered from rich text runs. Clearing them here
+        # turns visible proxy labels into plain text and discards their URLs.
         walk_rich(rich)
 
     # Remove promotional lines and non-allowlisted URLs/handles, while preserving
