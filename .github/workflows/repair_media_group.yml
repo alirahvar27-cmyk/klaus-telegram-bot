@@ -221,7 +221,7 @@ jobs:
                   [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"}, {"text": "🔄 تغییر کانال", "callback_data": f"channels:{draft_id}"}],
                   [{"text": "❌ لغو", "callback_data": f"cancel:{draft_id}"}],
               ]
-              controls_msg = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})\nموضوع: {topic}\n\nاگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
+              controls_msg = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})" + chr(10) + f"موضوع: {topic}" + chr(10) * 2 + "اگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
               draft["cleanup_message_ids"].append(controls_msg["message_id"])
               draft["preview_message_ids"].append(controls_msg["message_id"])
               save_state()
