@@ -16,7 +16,7 @@ permissions:
 
 concurrency:
   group: klaus-approval-bot
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   approval-bot:
