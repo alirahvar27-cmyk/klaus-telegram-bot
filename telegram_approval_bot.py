@@ -429,8 +429,8 @@ def preview(chat_id, draft_id):
                 draft["cleanup_message_ids"].append(sent_caption["message_id"])
                 draft["preview_message_ids"].append(sent_caption["message_id"])
             elif not media:
-            warning = send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
-            draft["cleanup_message_ids"].append(warning["message_id"])
+                warning = send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
+                draft["cleanup_message_ids"].append(warning["message_id"])
         controls = [
             [{"text": "✅ تأیید و انتشار", "callback_data": f"approve:{draft_id}"}],
             [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"},
