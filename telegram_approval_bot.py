@@ -91,51 +91,12 @@ def utf16_len(text):
     return len(text.encode("utf-16-le")) // 2
 
 def add_channel_branding(text, entities, channel, limit=None):
-    """Add destination channel name above the untouched post and its clickable link below."""
+    """Keep post text and entities exactly as received; add no extra branding."""
     text = text or ""
-    entities = [dict(e) for e in (entities or [])]
-    username = str(channel or "").lstrip("@")
-    if not username:
-        if utf16_len(text) > (limit if limit is not None else 4096):
-            raise ValueError("متن از محدودیت طول تلگرام بیشتر است.")
-        return text, entities
-
-    title = CHANNELS.get("@" + username, (username, ""))[0]
-    header = f"📌 {title}"
-    footer = f"📣 @{username}"
-    channel_url = f"https://t.me/{username}"
-
-    # The draft body itself stays untouched; only shift existing entity offsets
-    # when adding the visible header.
-    body = text
-    body_entities = entities
-    header_prefix = header + ("\n\n" if body else "\n\n")
-    if body.startswith(header + "\n\n"):
-        header_prefix = ""
-    else:
-        body_entities = [
-            dict(e, offset=int(e.get("offset", 0)) + utf16_len(header_prefix))
-            for e in body_entities
-        ]
-
-    if body.rstrip().endswith(footer):
-        final_text = header_prefix + body
-        final_entities = body_entities
-    else:
-        separator = "\n\n" if body else ""
-        final_text = header_prefix + body + separator + footer
-        footer_start = utf16_len(header_prefix + body + separator + "📣 ")
-        final_entities = body_entities + [{
-            "type": "text_link",
-            "offset": footer_start,
-            "length": utf16_len("@" + username),
-            "url": channel_url,
-        }]
-
     max_text_len = limit if limit is not None else 4096
-    if utf16_len(final_text) > max_text_len:
-        raise ValueError("متن همراه سربرگ و لینک کانال از محدودیت تلگرام طولانی‌تر است؛ برای حفظ متن، انتشار متوقف شد.")
-    return final_text, final_entities
+    if utf16_len(text) > max_text_len:
+        raise ValueError("متن از محدودیت تلگرام طولانی‌تر است؛ برای حفظ متن، انتشار متوقف شد.")
+    return text, [dict(e) for e in (entities or [])]
 
 def clean_text_and_entities(text, entities):
     """Remove source ads while preserving Telegram text_link entities on their visible labels."""
