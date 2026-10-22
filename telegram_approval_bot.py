@@ -312,7 +312,8 @@ def preview(chat_id, draft_id):
             draft["cleanup_message_ids"].append(sent_caption["message_id"])
             draft["preview_message_ids"].append(sent_caption["message_id"])
         elif not media:
-            send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
+            warning = send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
+            draft["cleanup_message_ids"].append(warning["message_id"])
         controls = [
             [{"text": "✅ تأیید و انتشار", "callback_data": f"approve:{draft_id}"}],
             [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"},
@@ -325,7 +326,9 @@ def preview(chat_id, draft_id):
         save_state()
     except Exception as exc:
         log.exception("Preview failed: %s", exc)
-        send_text(chat_id, "⚠️ پیش‌نمایش ارسال نشد. دوباره تلاش کن یا فایل کوچک‌تری بفرست.")
+        error_message = send_text(chat_id, "⚠️ پیش‌نمایش ارسال نشد. دوباره تلاش کن یا فایل کوچک‌تری بفرست.")
+        draft.setdefault("cleanup_message_ids", []).append(error_message["message_id"])
+        save_state()
 
 def publish(draft):
     channel = draft["channel"]
@@ -431,7 +434,9 @@ def handle_update(update):
                 if len(row) == 2:
                     rows.append(row); row = []
             if row: rows.append(row)
-            send_text(chat_id, "کانال مقصد جدید را انتخاب کن:", rows)
+            picker = send_text(chat_id, "کانال مقصد جدید را انتخاب کن:", rows)
+            draft.setdefault("cleanup_message_ids", []).append(picker["message_id"])
+            save_state()
         elif action == "approve":
             try:
                 publish(draft)
