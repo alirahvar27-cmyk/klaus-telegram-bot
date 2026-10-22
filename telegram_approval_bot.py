@@ -171,14 +171,25 @@ def clean_text_and_entities(text, entities):
             for a, b, _ in line_links
         )
         label_only = bool(re.fullmatch(r"[\s•|·،,ـ]*(?:همراه|پروکسی)(?:[\s•|·،,ـ]*(?:همراه|پروکسی))*[\s•|·،,ـ]*", stripped, re.IGNORECASE))
-        # Drop source-channel links even when Telegram hides the URL behind a label.
-        has_source_channel_link = any(
-            re.search(r"(?i)(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/", str(ent.get("url", "")))
-            and not re.search(r"(?i)(?:t\.me|telegram\.me)/(?:proxy|socks)(?:[/?#]|$)", str(ent.get("url", "")))
+        # Remove any line containing a non-proxy URL, including hidden Telegram text links.
+        # Proxy links (Telegram proxy/socks URLs or clearly labelled proxy links) are preserved.
+        def is_proxy_url(url):
+            return bool(re.search(
+                r"(?i)(?:t\.me|telegram\.me)/(?:proxy|socks)(?:[/?#]|$)|"
+                r"(?:https?://)?(?:www\.)?[^\s]*\b(?:proxy|socks)\b[^\s]*",
+                str(url or "")
+            ))
+
+        has_nonproxy_hidden_link = any(
+            not is_proxy_url(ent.get("url", ""))
             for _, _, ent in line_links
         )
-        has_visible_url = bool(re.search(r"(?i)(?:https?://|www\.|t\.me/|telegram\.me/)[^\s]+", stripped))
-        if is_promo or is_handle_footer or has_source_channel_link or (ad_words and (line_links or has_visible_url)) or (label_only and not has_proxy_link):
+        visible_urls = re.findall(
+            r"(?i)(?:https?://|www\.|t\.me/|telegram\.me/)[^\s<>]+",
+            stripped
+        )
+        has_nonproxy_visible_link = any(not is_proxy_url(url) for url in visible_urls)
+        if is_promo or is_handle_footer or has_nonproxy_hidden_link or has_nonproxy_visible_link or (ad_words and (line_links or visible_urls)) or (label_only and not has_proxy_link):
             old_pos += len(raw_line)
             continue
         if re.search(r"(?i)(منبع|source|forwarded from|ارسالی از|کانال اصلی|عضویت در کانال)", stripped):
