@@ -49,7 +49,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           ADMIN_USER_ID: ${{ secrets.ADMIN_USER_ID }}
-          POLL_SECONDS: "180"
+          POLL_SECONDS: "270"
           PYTHONUNBUFFERED: "1"
         run: python telegram_approval_bot.py
 
