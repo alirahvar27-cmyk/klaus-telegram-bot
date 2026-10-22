@@ -265,6 +265,9 @@ def build_prompt(channel, name, topic):
 - خبر، آمار، نقل‌قول، قیمت و لینک ساختگی نساز.
 - اگر اطلاعات زنده و تأییدشده نداری، محتوای آموزشی یا عمومی بنویس.
 - از تکرار و عنوان گمراه‌کننده خودداری کن.
+- image_query باید یک عبارت انگلیسی دقیق برای عکس واقعی، زیبا، باکیفیت و مرتبط مستقیم با موضوع همین پست باشد؛ نه عبارت عمومی مثل "man using smartphone outdoors".
+- تصویر باید حس عکس تحریریه‌ای حرفه‌ای، نور طبیعی و ترکیب‌بندی تمیز داشته باشد.
+- از عکس‌های بی‌ربط، آدم‌های تصادفی، عکس‌های کم‌کیفیت، اسکرین‌شات، پوستر متنی، لوگو، واترمارک و تصاویر تکراری دوری کن.
 {special_rules}
 
 فقط یک شیء JSON معتبر برگردان، بدون Markdown:
@@ -419,6 +422,10 @@ def find_image(query):
         pages = response.json().get("query", {}).get("pages", {})
         candidates = []
 
+        query_words = {
+            word.casefold() for word in re.findall(r"[a-zA-Z]{3,}", query)
+            if word.casefold() not in {"photo", "image", "beautiful", "high", "quality", "professional", "editorial"}
+        }
         for page in pages.values():
             info = (page.get("imageinfo") or [{}])[0]
             url = info.get("thumburl") or info.get("url")
@@ -434,21 +441,39 @@ def find_image(query):
 
             def meta_value(key):
                 value = metadata.get(key, {}).get("value", "")
-                return html.unescape(str(value)).strip()
+                value = html.unescape(str(value)).strip()
+                return re.sub(r"<[^>]+>", "", value).strip()
 
             title = page.get("title", "")
+            title_words = set(re.findall(r"[a-zA-Z]{3,}", title.casefold()))
+            overlap = len(query_words & title_words)
+            # Skip tiny thumbnails and weakly related results when dimensions exist.
+            width = int(info.get("width") or 0)
+            height = int(info.get("height") or 0)
+            if width and height and (width < 700 or height < 450):
+                continue
+            if query_words and overlap == 0:
+                continue
             candidates.append({
                 "url": url,
-                "title": title,
+                "title": title.removeprefix("File:"),
                 "artist": meta_value("Artist"),
                 "license": meta_value("LicenseShortName"),
                 "source": (
                     "https://commons.wikimedia.org/wiki/"
                     + quote(title.replace(" ", "_"), safe=":/()")
                 ),
+                "score": overlap,
+                "resolution": width * height,
             })
 
-        return random.choice(candidates) if candidates else None
+        if not candidates:
+            return None
+        candidates.sort(key=lambda item: (item["score"], item["resolution"]), reverse=True)
+        # Choose among the strongest matches, not a random image from all results.
+        best_score = candidates[0]["score"]
+        best = [item for item in candidates if item["score"] >= best_score and item["score"] > 0]
+        return random.choice(best[:3]) if best else None
 
     except (
         requests.RequestException,
@@ -460,26 +485,28 @@ def find_image(query):
 
 
 def image_attribution(image):
+    """Compact, readable credit for the image's author/license/source."""
     if not image:
         return ""
-
     parts = []
-
     if image.get("artist"):
-        parts.append(f"پدیدآورنده: {image['artist'][:180]}")
-
+        artist = re.sub(r"\\s+", " ", image["artist"]).strip()
+        parts.append(f"عکس: {artist[:70]}")
     if image.get("license"):
-        parts.append(f"مجوز: {image['license'][:80]}")
-
+        parts.append(image["license"][:40])
     if image.get("source"):
-        parts.append(f"منبع: {image['source']}")
-
-    return "\n\n" + "\n".join(parts) if parts else ""
+        parts.append(image["source"])
+    return " | ".join(parts)
 
 
 # =========================================================
 # Publishing
 # =========================================================
+
+def channel_footer(channel):
+    username = channel.lstrip("@")
+    return f"\\n\\n📣 مطالب بیشتر: https://t.me/{username}"
+
 
 def publish_post(channel, post, image):
     # Defense in depth: never send while testing.
@@ -487,28 +514,28 @@ def publish_post(channel, post, image):
         LOG.info("DRY RUN: skipped post for %s", channel)
         return
 
+    footer = channel_footer(channel)
     if not image:
         telegram("sendMessage", {
             "chat_id": channel,
-            "text": post,
+            "text": post[:3900] + footer,
+            "disable_web_page_preview": True,
         })
         return
 
     attribution = image_attribution(image)
+    # Keep the channel link intact and put image credit at the very end.
+    suffix = footer + (f"\\n\\n📷 {attribution}" if attribution else "")
     caption = post
-
-    if attribution:
-        room = 1000 - len(attribution) - 1
-        if room >= 100:
-            caption = post[:room].rstrip() + attribution
-        else:
-            caption = post[:1000]
+    if len(caption) + len(suffix) > 1024:
+        caption = caption[:max(100, 1024 - len(suffix) - 1)].rstrip() + "…"
+    caption += suffix
 
     try:
         telegram("sendPhoto", {
             "chat_id": channel,
             "photo": image["url"],
-            "caption": caption[:1000],
+            "caption": caption[:1024],
         })
 
     except Exception as exc:
@@ -519,7 +546,8 @@ def publish_post(channel, post, image):
         )
         telegram("sendMessage", {
             "chat_id": channel,
-            "text": post,
+            "text": post[:3900] + footer,
+            "disable_web_page_preview": True,
         })
 
 
