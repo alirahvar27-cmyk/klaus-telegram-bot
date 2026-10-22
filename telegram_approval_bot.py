@@ -267,6 +267,10 @@ def detect_channel(text, media_type):
     return "@NbzeKhabar" if len(t) > 180 else "@Khndedoon"
 
 def extract_message(msg):
+    # Telegram forwards may contain text/captions whose links or source lines
+    # are all removed by the cleanup filter. Never reject a non-empty post
+    # solely because cleanup removed every character; retain the original
+    # visible text as a safe fallback when there is no cleaned text.
     raw_text = msg.get("text") or msg.get("caption") or ""
     entities = msg.get("entities") or msg.get("caption_entities") or []
     text, clean_entities = clean_text_and_entities(raw_text, entities)
@@ -278,6 +282,9 @@ def extract_message(msg):
                 value = value[-1]
             media = {"type": kind, "file_id": value.get("file_id")}
             break
+    if raw_text.strip() and not text.strip() and not media:
+        text = raw_text.strip()
+        clean_entities = []
     return {"text": text, "entities": clean_entities, "media": media}
 
 def preview(chat_id, draft_id):
