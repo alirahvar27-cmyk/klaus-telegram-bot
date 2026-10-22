@@ -241,6 +241,44 @@ def clean_text_and_entities(text, entities):
 def clean_text(text):
     return clean_text_and_entities(text, [])[0]
 
+
+def is_allowed_link(url):
+    """Only proxy links and links to our own Telegram channels are allowed."""
+    value = str(url or "").strip().rstrip(".,!?،؛:)]}»")
+    if not value:
+        return True
+    if re.search(r"(?i)(?:https?://)?(?:www\\.)?(?:t\\.me|telegram\\.me)/(?:proxy|socks)(?:[/?#]|$)", value):
+        return True
+    if re.search(r"(?i)\\b(?:proxy|socks)\\b", value):
+        return True
+    match = re.search(r"(?i)(?:https?://)?(?:www\\.)?(?:t\\.me|telegram\\.me)/([A-Za-z0-9_]+)", value)
+    return bool(match and ("@" + match.group(1)).casefold() in {name.casefold() for name in CHANNELS})
+
+
+def message_has_disallowed_link(message):
+    """Reject the whole post if it contains any visible or hidden non-allowlisted link."""
+    urls = []
+    url_pattern = re.compile(r"(?i)(?:https?://|www\\.|t\\.me/|telegram\\.me/)[^\\s<>]+")
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if str(key).casefold() in {"url", "button_url", "web_url"} and isinstance(child, str):
+                    if child.strip():
+                        urls.append(child)
+                elif isinstance(child, str) and key in {"text", "caption"}:
+                    urls.extend(url_pattern.findall(child))
+                elif isinstance(child, (dict, list)):
+                    walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+    walk(message)
+    for key in ("entities", "caption_entities"):
+        for entity in message.get(key, []) or []:
+            if entity.get("type") == "text_link" and entity.get("url"):
+                urls.append(entity["url"])
+    return any(not is_allowed_link(url) for url in urls)
+
 def detect_channel(text, media_type):
     t = (text or "").casefold()
     rules = [
@@ -601,6 +639,11 @@ def handle_update(update):
         return
     if msg.get("text") == "/cancel":
         send_text(chat_id, "برای لغو، دکمه «لغو» زیر پیش‌نویس را بزن.")
+        return
+    if message_has_disallowed_link(msg):
+        log.info("Rejected whole incoming message %s: contains a non-allowlisted link", msg.get("message_id"))
+        delete_private_message(chat_id, msg["message_id"])
+        send_text(chat_id, "🚫 پیام رد شد؛ فقط لینک کانال‌های خودمان و لینک‌های پروکسی مجازند. کل پیام دارای لینک دیگر حذف می‌شود.")
         return
     content = extract_message(msg)
     if not content["text"] and not content["media"]:
