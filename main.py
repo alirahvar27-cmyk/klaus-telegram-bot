@@ -280,45 +280,115 @@ def build_prompt(channel, name, topic):
 """
 
 
-def generate_content(channel, name, topic):
-    response = AI.models.generate_content(
-        model=GEMINI_MODEL,
-        contents=build_prompt(channel, name, topic),
-        config={
-            "response_mime_type": "application/json",
-            "temperature": 0.8,
-        },
-    )
+def generate_ai_response(prompt):
+    """Try configured AI providers in order and return generated text."""
+    errors = []
+    providers = {
+        "gemini": bool(GEMINI_API_KEY),
+        "mistral": bool(MISTRAL_API_KEY),
+        "groq": bool(GROQ_API_KEY),
+        "openrouter": bool(OPENROUTER_API_KEY),
+        "cloudflare": bool(CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID),
+        "openai": bool(OPENAI_API_KEY),
+    }
 
-    if not response.text:
-        raise RuntimeError("Gemini returned an empty response")
+    for provider in AI_ORDER:
+        if not providers.get(provider):
+            continue
+        try:
+            if provider == "gemini":
+                response = AI.models.generate_content(
+                    model=GEMINI_MODEL,
+                    contents=prompt,
+                    config={
+                        "response_mime_type": "application/json",
+                        "temperature": 0.8,
+                    },
+                )
+                text = (response.text or "").strip()
+            else:
+                configs = {
+                    "mistral": (
+                        "https://api.mistral.ai/v1/chat/completions",
+                        MISTRAL_API_KEY, MISTRAL_MODEL,
+                    ),
+                    "groq": (
+                        "https://api.groq.com/openai/v1/chat/completions",
+                        GROQ_API_KEY, GROQ_MODEL,
+                    ),
+                    "openrouter": (
+                        "https://openrouter.ai/api/v1/chat/completions",
+                        OPENROUTER_API_KEY, OPENROUTER_MODEL,
+                    ),
+                    "cloudflare": (
+                        f"https://api.cloudflare.com/client/v4/accounts/{CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions",
+                        CLOUDFLARE_API_TOKEN, CLOUDFLARE_MODEL,
+                    ),
+                    "openai": (
+                        "https://api.openai.com/v1/chat/completions",
+                        OPENAI_API_KEY, OPENAI_MODEL,
+                    ),
+                }
+                endpoint, api_key, model = configs[provider]
+                response = HTTP.post(
+                    endpoint,
+                    headers={"Authorization": f"Bearer {api_key}"},
+                    json={
+                        "model": model,
+                        "messages": [
+                            {"role": "system", "content": "Return only one valid JSON object. No Markdown."},
+                            {"role": "user", "content": prompt},
+                        ],
+                        "temperature": 0.8,
+                        "response_format": {"type": "json_object"},
+                    },
+                    timeout=90,
+                )
+                response.raise_for_status()
+                payload = response.json()
+                text = str(
+                    payload.get("choices", [{}])[0]
+                    .get("message", {}).get("content", "")
+                ).strip()
+
+            if text:
+                LOG.info("AI provider succeeded: %s", provider)
+                return text
+            raise RuntimeError("Provider returned empty content")
+        except Exception as exc:
+            LOG.warning("AI provider %s failed: %s", provider, exc)
+            errors.append(f"{provider}: {exc}")
+
+    raise RuntimeError("All configured AI providers failed: " + "; ".join(errors))
+
+
+def generate_content(channel, name, topic):
+    raw = generate_ai_response(build_prompt(channel, name, topic))
+    if raw.startswith("```"):
+        raw = re.sub(r"^\`\`\`(?:json)?\s*|\s*\`\`\`$", "", raw, flags=re.IGNORECASE)
 
     try:
-        data = json.loads(response.text)
+        data = json.loads(raw)
     except json.JSONDecodeError as exc:
-        raise RuntimeError("Gemini returned invalid JSON") from exc
+        raise RuntimeError("AI provider returned invalid JSON") from exc
 
     if not isinstance(data, dict):
-        raise RuntimeError("Gemini response is not a JSON object")
+        raise RuntimeError("AI response is not a JSON object")
 
     title = str(data.get("title", "")).strip()
     body = str(data.get("text", "")).strip()
-
     if not title or not body:
         raise RuntimeError("Generated title or text is empty")
 
     post = f"{title}\n\n{body}"
-
     if len(post) > 3900:
         post = post[:3890].rsplit(" ", 1)[0] + "…"
 
     digest = content_hash(channel, post)
-
     if digest in STATE:
         raise RuntimeError("Duplicate content detected; skipped")
 
     return post, data, digest
-
 
 # =========================================================
 # Wikimedia Commons image search
