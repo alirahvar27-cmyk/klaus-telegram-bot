@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   validate:
@@ -16,12 +16,23 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Apply Telegram media-group patch
+        run: |
+          awk '/^          python - <<'"'"'PY'"'"'/{flag=1;next} flag && /^          PY$/{exit} flag{sub(/^          /, ""); print}' .github/workflows/apply_album_patch.yml > /tmp/apply_album_patch.py
+          python /tmp/apply_album_patch.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if ! git diff --quiet -- telegram_approval_bot.py; then
+            git add telegram_approval_bot.py
+            git commit -m 'Fix forwarded media groups and long captions'
+            git push
+          fi
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Check Python syntax
-        run: python -m compileall -q main.py source_adapters.py moderation_bot.py tests
+        run: python -m compileall -q main.py source_adapters.py moderation_bot.py telegram_approval_bot.py tests
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
       - name: Check source parsing library
