@@ -258,6 +258,10 @@ def preview(chat_id, draft_id):
     draft = STATE["pending"].get(draft_id)
     if not draft:
         return
+    # Remove stale previews when editing text or changing the destination.
+    for message_id in dict.fromkeys(draft.get("preview_message_ids", [])):
+        delete_private_message(chat_id, message_id)
+    draft["preview_message_ids"] = []
     channel = draft["channel"]
     title, topic = CHANNELS[channel]
     media = draft.get("media")
@@ -275,10 +279,12 @@ def preview(chat_id, draft_id):
             field = "sticker" if kind == "sticker" else kind
             sent_media = api(method, {"chat_id": chat_id, field: media["file_id"]})
             draft["cleanup_message_ids"].append(sent_media["message_id"])
+            draft["preview_message_ids"].append(sent_media["message_id"])
         if caption:
             # A separate text preview keeps all media types and long captions manageable.
             sent_caption = send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in preview_entities])
             draft["cleanup_message_ids"].append(sent_caption["message_id"])
+            draft["preview_message_ids"].append(sent_caption["message_id"])
         elif not media:
             send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
         controls = [
@@ -289,6 +295,7 @@ def preview(chat_id, draft_id):
         ]
         sent_controls = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})\nموضوع: {topic}\n\nاگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
         draft["cleanup_message_ids"].append(sent_controls["message_id"])
+        draft["preview_message_ids"].append(sent_controls["message_id"])
         save_state()
     except Exception as exc:
         log.exception("Preview failed: %s", exc)
