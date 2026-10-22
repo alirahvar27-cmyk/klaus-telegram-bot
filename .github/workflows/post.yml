@@ -55,11 +55,13 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_MODEL: ${{ vars.CLOUDFLARE_MODEL }}
-          KLAUS_AI_ORDER: ${{ vars.KLAUS_AI_ORDER }}
+          # Prefer providers that may offer free tiers; never fall back to OpenAI billing.
+          KLAUS_AI_ORDER: "gemini,groq,openrouter"
           KLAUS_SOURCE_FEEDS: ${{ vars.KLAUS_SOURCE_FEEDS }}
           KLAUS_VIDEO_DOWNLOAD_ENABLED: "true"
           KLAUS_VIDEO_MAX_BYTES: "50000000"
           PYTHONUNBUFFERED: "1"
+        continue-on-error: true
         run: python main.py
 
       - name: Save duplicate-prevention state
