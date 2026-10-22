@@ -351,7 +351,6 @@ def handle_callback(query):
             STATE["pending"].pop(draft_id, None)
             STATE["edit_mode"].pop(str(user["id"]), None)
             save_state()
-            send_text(chat_id, f"✅ منتشر شد در {draft['channel']}")
         except Exception as exc:
             log.exception("Publish failed: %s", exc)
             send_text(chat_id, f"❌ انتشار انجام نشد: {str(exc)[:700]}")
@@ -359,10 +358,11 @@ def handle_callback(query):
         cleanup_draft_messages(draft)
         STATE["pending"].pop(draft_id, None)
         save_state()
-        send_text(chat_id, "پیش‌نویس لغو شد و چیزی منتشر نشد.")
     elif action == "edit":
         STATE["edit_mode"][str(user["id"])] = draft_id
-        send_text(chat_id, "متن یا کپشن جدید را در یک پیام بفرست. برای پست متنی، این متن جایگزین کامل می‌شود.")
+        prompt = send_text(chat_id, "متن یا کپشن جدید را در یک پیام بفرست. برای پست متنی، این متن جایگزین کامل می‌شود.")
+        draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
+        save_state()
     elif action == "channels":
         rows, row = [], []
         for target, (name, _) in CHANNELS.items():
