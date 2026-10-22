@@ -91,40 +91,13 @@ def utf16_len(text):
     return len(text.encode("utf-16-le")) // 2
 
 def add_channel_branding(text, entities, channel, limit=None):
-    """Add clickable Persian channel name above and clickable username below every post."""
-    username = channel.lstrip("@")
-    title = CHANNELS.get(channel, (username, ""))[0]
-    header = f"📣 {title}"
-    footer = f"📌 @{username}"
-    middle = "\n\n" if text else "\n\n"
+    """Preserve the source post verbatim; do not inject channel headers or footers."""
+    text = text or ""
     max_text_len = limit if limit is not None else 4096
-    fixed_len = utf16_len(header + middle + "\n\n" + footer)
-    room = max(0, max_text_len - fixed_len)
-    base = ""
-    units = 0
-    for char in (text or ""):
-        char_units = utf16_len(char)
-        if units + char_units > room:
-            break
-        base += char
-        units += char_units
-    body = header + middle + base + ("\n\n" if base else "") + footer
-    header_offset = utf16_len("📣 ")
-    footer_offset = utf16_len(header + middle + base + ("\n\n" if base else "") + "📌 ")
-    result_entities = []
-    body_start = utf16_len(header + middle)
-    for entity in (entities or []):
-        e = dict(entity)
-        begin = int(e.get("offset", 0))
-        finish = begin + int(e.get("length", 0))
-        if finish <= utf16_len(base):
-            e["offset"] = body_start + begin
-            result_entities.append(e)
-    result_entities.extend([
-        {"type": "text_link", "offset": header_offset, "length": utf16_len(title), "url": f"https://t.me/{username}"},
-        {"type": "text_link", "offset": footer_offset, "length": utf16_len("@" + username), "url": f"https://t.me/{username}"},
-    ])
-    return body, sorted(result_entities, key=lambda e: e["offset"])
+    # Telegram limits count UTF-16 code units. Avoid silently truncating the post.
+    if utf16_len(text) > max_text_len:
+        raise ValueError("متن از محدودیت تلگرام طولانی‌تر است؛ برای حفظ متن، انتشار متوقف شد.")
+    return text, list(entities or [])
 
 def clean_text_and_entities(text, entities):
     """Remove source ads while preserving Telegram text_link entities on their visible labels."""
@@ -243,29 +216,33 @@ def clean_text(text):
 
 
 def is_allowed_link(url):
-    """Only proxy links and links to our own Telegram channels are allowed."""
+    """Allow only our own Telegram channels and actual Telegram proxy links."""
     value = str(url or "").strip().rstrip(".,!?،؛:)]}»")
     if not value:
         return True
-    if re.search(r"(?i)(?:https?://)?(?:www\\.)?(?:t\\.me|telegram\\.me)/(?:proxy|socks)(?:[/?#]|$)", value):
+    if re.match(r"(?i)^(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/(?:proxy|socks)(?:[/?#]|$)", value):
         return True
-    if re.search(r"(?i)\\b(?:proxy|socks)\\b", value):
+    if re.match(r"(?i)^tg://(?:proxy|socks)(?:[/?#]|$)", value):
         return True
-    match = re.search(r"(?i)(?:https?://)?(?:www\\.)?(?:t\\.me|telegram\\.me)/([A-Za-z0-9_]+)", value)
+    match = re.match(r"(?i)^(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/([A-Za-z0-9_]+)(?:[/?#].*)?$", value)
     return bool(match and ("@" + match.group(1)).casefold() in {name.casefold() for name in CHANNELS})
 
 
 def message_has_disallowed_link(message):
-    """Reject the whole post if it contains any visible or hidden non-allowlisted link."""
+    """Detect visible URLs, hidden text links, and button URLs."""
     urls = []
-    url_pattern = re.compile(r"(?i)(?:https?://|www\\.|t\\.me/|telegram\\.me/)[^\\s<>]+|(?<![@\\w.-])(?:[a-z0-9-]+\\.)+(?:com|net|org|ir|io|co|me|info|biz|app|dev|xyz|site|online|shop|live|pro|tv|gg|ly|ru|cn|uk|de|fr|us)(?:/[^\\s<>]*)?")
+    url_pattern = re.compile(
+        r"(?i)(?:https?://|www\.|t\.me/|telegram\.me/)[^\s<>]+|"
+        r"(?<![@\w.-])(?:[a-z0-9-]+\.)+(?:com|net|org|ir|io|co|me|info|biz|app|dev|xyz|site|online|shop|live|pro|tv|gg|ly|ru|cn|uk|de|fr|us)(?:/[^\s<>]*)?"
+    )
     def walk(value):
         if isinstance(value, dict):
             for key, child in value.items():
-                if str(key).casefold() in {"url", "button_url", "web_url"} and isinstance(child, str):
+                normalized = str(key).casefold()
+                if normalized in {"url", "button_url", "web_url"} and isinstance(child, str):
                     if child.strip():
                         urls.append(child)
-                elif isinstance(child, str) and key in {"text", "caption"}:
+                elif isinstance(child, str) and normalized in {"text", "caption"}:
                     urls.extend(url_pattern.findall(child))
                 elif isinstance(child, (dict, list)):
                     walk(child)
