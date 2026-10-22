@@ -313,6 +313,8 @@ def main():
         raise SystemExit("Missing TELEGRAM_BOT_TOKEN secret.")
     if not ADMIN_ID.isdigit():
         raise SystemExit("Set ADMIN_USER_ID to your numeric Telegram user ID in GitHub Actions secrets or variables.")
+    # Polling requires webhook mode to be disabled; preserve queued updates.
+    api("deleteWebhook", {"drop_pending_updates": False})
     started = time.time()
     while time.time() - started < POLL_SECONDS:
         try:
