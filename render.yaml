@@ -18,3 +18,23 @@ services:
         value: "true"
       - key: KLAUS_MOD_MAX_PER_MINUTE
         value: "12"
+
+  - type: worker
+    name: klaus-approval-bot
+    runtime: docker
+    dockerfilePath: ./Dockerfile.approval
+    dockerContext: .
+    plan: starter
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: ADMIN_USER_ID
+        sync: false
+      - key: POLL_SECONDS
+        value: "315360000"
+      - key: STATE_PATH
+        value: "/var/data/telegram_approval_state.json"
+    disk:
+      name: klaus-approval-state
+      mountPath: /var/data
+      sizeGB: 1
