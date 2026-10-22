@@ -76,25 +76,41 @@ def send_text(chat_id, text, keyboard=None, entities=None):
 def utf16_len(text):
     return len(text.encode("utf-16-le")) // 2
 
-def add_channel_footer(text, entities, channel, limit=None):
-    """Append a clickable destination-channel link at the bottom of a post."""
+def add_channel_branding(text, entities, channel, limit=None):
+    """Add clickable Persian channel name above and clickable username below every post."""
     username = channel.lstrip("@")
-    footer = f"📣 کانال: @{username}"
-    separator = "\n\n" if text else ""
-    base = text or ""
+    title = CHANNELS.get(channel, (username, ""))[0]
+    header = f"📣 {title}"
+    footer = f"📌 @{username}"
+    middle = "\n\n" if text else "\n\n"
     max_text_len = limit if limit is not None else 4096
-    room = max(0, max_text_len - utf16_len(separator + footer))
-    # Avoid cutting a UTF-16 entity in half when limiting text.
-    base = base[:room]
-    combined = base + separator + footer
-    result_entities = [dict(e) for e in (entities or []) if e.get("offset", 0) + e.get("length", 0) <= utf16_len(base)]
-    result_entities.append({
-        "type": "text_link",
-        "offset": utf16_len(base + separator),
-        "length": utf16_len("@" + username),
-        "url": f"https://t.me/{username}",
-    })
-    return combined, result_entities
+    fixed_len = utf16_len(header + middle + "\n\n" + footer)
+    room = max(0, max_text_len - fixed_len)
+    base = ""
+    units = 0
+    for char in (text or ""):
+        char_units = utf16_len(char)
+        if units + char_units > room:
+            break
+        base += char
+        units += char_units
+    body = header + middle + base + ("\n\n" if base else "") + footer
+    header_offset = utf16_len("📣 ")
+    footer_offset = utf16_len(header + middle + base + ("\n\n" if base else "") + "📌 ")
+    result_entities = []
+    body_start = utf16_len(header + middle)
+    for entity in (entities or []):
+        e = dict(entity)
+        begin = int(e.get("offset", 0))
+        finish = begin + int(e.get("length", 0))
+        if finish <= utf16_len(base):
+            e["offset"] = body_start + begin
+            result_entities.append(e)
+    result_entities.extend([
+        {"type": "text_link", "offset": header_offset, "length": utf16_len(title), "url": f"https://t.me/{username}"},
+        {"type": "text_link", "offset": footer_offset, "length": utf16_len("@" + username), "url": f"https://t.me/{username}"},
+    ])
+    return body, sorted(result_entities, key=lambda e: e["offset"])
 
 def clean_text_and_entities(text, entities):
     """Remove source ads while preserving Telegram text_link entities on their visible labels."""
@@ -231,7 +247,7 @@ def preview(chat_id, draft_id):
     channel = draft["channel"]
     title, topic = CHANNELS[channel]
     media = draft.get("media")
-    caption, preview_entities = add_channel_footer(draft.get("text", ""), draft.get("entities", []), channel, limit=3900)
+    caption, preview_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=3900)
     try:
         if media:
             kind = media["type"]
@@ -262,7 +278,7 @@ def preview(chat_id, draft_id):
 def publish(draft):
     channel = draft["channel"]
     media = draft.get("media")
-    text, post_entities = add_channel_footer(draft.get("text", ""), draft.get("entities", []), channel, limit=4096 if not media else 1024)
+    text, post_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096 if not media else 1024)
     if not media:
         if not text:
             raise ValueError("پست خالی است")
@@ -279,7 +295,10 @@ def publish(draft):
     if text and kind not in {"sticker", "video_note"}:
         payload["caption"] = text[:1024]
         payload["caption_entities"] = [e for e in post_entities if e["offset"] + e["length"] <= utf16_len(text[:1024])]
-    return api(method, payload)
+    result = api(method, payload)
+    if text and kind in {"sticker", "video_note"}:
+        send_text(channel, text, entities=post_entities)
+    return result
 
 def handle_callback(query):
     user = query.get("from", {})
