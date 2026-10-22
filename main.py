@@ -1,4 +1,3 @@
-
 import os
 import json
 import time
@@ -218,8 +217,6 @@ def telegram(method, payload, attempts=3):
 
 
 # =========================================================
-
-# =========================================================
 # AI content generation
 # =========================================================
 
@@ -368,7 +365,7 @@ def generate_ai_response(prompt):
 def generate_content(channel, name, topic):
     raw = generate_ai_response(build_prompt(channel, name, topic))
     if raw.startswith("```"):
-        raw = re.sub(r"^\`\`\`(?:json)?\s*|\s*\`\`\`$", "", raw, flags=re.IGNORECASE)
+        raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.IGNORECASE)
 
     try:
         data = json.loads(raw)
@@ -444,10 +441,22 @@ def find_image(query):
                 value = html.unescape(str(value)).strip()
                 return re.sub(r"<[^>]+>", "", value).strip()
 
+            # Keep only public-domain/CC0 images so captions need no visible credit line.
+            license_name = meta_value("LicenseShortName").casefold().replace(" ", "")
+            usage_terms = meta_value("UsageTerms").casefold().replace(" ", "")
+            allowed_license = (
+                "publicdomain" in license_name
+                or "publicdomain" in usage_terms
+                or license_name == "cc0"
+                or usage_terms == "cc0"
+                or "creativecommonszero" in license_name
+            )
+            if not allowed_license:
+                continue
+
             title = page.get("title", "")
             title_words = set(re.findall(r"[a-zA-Z]{3,}", title.casefold()))
             overlap = len(query_words & title_words)
-            # Skip tiny thumbnails and weakly related results when dimensions exist.
             width = int(info.get("width") or 0)
             height = int(info.get("height") or 0)
             if width and height and (width < 700 or height < 450):
@@ -470,7 +479,6 @@ def find_image(query):
         if not candidates:
             return None
         candidates.sort(key=lambda item: (item["score"], item["resolution"]), reverse=True)
-        # Choose among the strongest matches, not a random image from all results.
         best_score = candidates[0]["score"]
         best = [item for item in candidates if item["score"] >= best_score and item["score"] > 0]
         return random.choice(best[:3]) if best else None
@@ -485,18 +493,8 @@ def find_image(query):
 
 
 def image_attribution(image):
-    """Compact, readable credit for the image's author/license/source."""
-    if not image:
-        return ""
-    parts = []
-    if image.get("artist"):
-        artist = re.sub(r"\s+", " ", image["artist"]).strip()
-        parts.append(f"عکس: {artist[:70]}")
-    if image.get("license"):
-        parts.append(image["license"][:40])
-    if image.get("source"):
-        parts.append(image["source"])
-    return " | ".join(parts)
+    """Image credits are intentionally not appended to captions."""
+    return ""
 
 
 # =========================================================
@@ -504,12 +502,11 @@ def image_attribution(image):
 # =========================================================
 
 def channel_footer(channel):
-    username = channel.lstrip("@")
-    return f"\n\n📣 مطالب بیشتر: https://t.me/{username}"
+    # Plain channel username, exactly as requested.
+    return f"\n\n{channel}"
 
 
 def publish_post(channel, post, image):
-    # Defense in depth: never send while testing.
     if DRY_RUN:
         LOG.info("DRY RUN: skipped post for %s", channel)
         return
@@ -523,13 +520,11 @@ def publish_post(channel, post, image):
         })
         return
 
-    attribution = image_attribution(image)
-    # Keep the channel link intact and put image credit at the very end.
-    suffix = footer + (f"\n\n📷 {attribution}" if attribution else "")
+    # No image title, author, license, or Wikimedia URL is appended to the post.
     caption = post
-    if len(caption) + len(suffix) > 1024:
-        caption = caption[:max(100, 1024 - len(suffix) - 1)].rstrip() + "…"
-    caption += suffix
+    if len(caption) + len(footer) > 1024:
+        caption = caption[:max(100, 1024 - len(footer) - 1)].rstrip() + "…"
+    caption += footer
 
     try:
         telegram("sendPhoto", {
@@ -611,20 +606,12 @@ def main():
             if DRY_RUN:
                 LOG.info("DRY RUN PREVIEW — channel: %s", channel)
                 LOG.info("POST:\n%s", post)
-                LOG.info(
-                    "Image found: %s",
-                    bool(image),
-                )
-                LOG.info(
-                    "Poll proposed: %s",
-                    bool(str(data.get("poll_question", "")).strip()),
-                )
-                # Do not save preview content as already published.
+                LOG.info("Image found: %s", bool(image))
+                LOG.info("Poll proposed: %s", bool(str(data.get("poll_question", "")).strip()))
                 continue
 
             publish_post(channel, post, image)
 
-            # Save only after the main post succeeds.
             STATE.append(digest)
             del STATE[:-MAX_HISTORY]
             save_state()
