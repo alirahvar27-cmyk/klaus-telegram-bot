@@ -1,6 +1,6 @@
 """Authorized Telegram channel relay. Requires a Telegram user session and permission to republish sources."""
 from __future__ import annotations
-import asyncio, json, logging, os, re, tempfile
+import asyncio, difflib, json, logging, os, re, tempfile
 from pathlib import Path
 from telethon import TelegramClient
 from telethon.sessions import StringSession
@@ -71,11 +71,58 @@ def clean_caption(text, source_user):
         lines.append(line)
     return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
 
+
+def clean_caption_with_entities(text, source_user, entities):
+    """Clean caption text while remapping Telegram formatting entities by UTF-16 offsets."""
+    original = str(text or "")
+    cleaned = clean_caption(original, source_user)
+    if not cleaned or not entities:
+        return cleaned, []
+
+    def char_at_utf16(value, offset):
+        units = 0
+        for index, char in enumerate(value):
+            if units >= offset:
+                return index
+            units += len(char.encode("utf-16-le")) // 2
+        return len(value)
+
+    # Build a character mapping only for unchanged portions of the source.
+    matcher = difflib.SequenceMatcher(a=original, b=cleaned, autojunk=False)
+    mapping = {}
+    for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+        if tag == "equal":
+            for delta in range(i2 - i1):
+                mapping[i1 + delta] = j1 + delta
+
+    def utf16_offset(value, char_index):
+        return len(value[:char_index].encode("utf-16-le")) // 2
+
+    preserved = []
+    for entity in entities or []:
+        try:
+            start = char_at_utf16(original, int(entity.offset))
+            end = char_at_utf16(original, int(entity.offset) + int(entity.length))
+        except (AttributeError, TypeError, ValueError):
+            continue
+        if end <= start or any(index not in mapping for index in range(start, end)):
+            continue
+        mapped = [mapping[index] for index in range(start, end)]
+        if mapped != list(range(mapped[0], mapped[0] + len(mapped))):
+            continue
+        clone = dict(entity.to_dict()) if hasattr(entity, "to_dict") else {
+            key: value for key, value in vars(entity).items() if not key.startswith("_")
+        }
+        clone["offset"] = utf16_offset(cleaned, mapped[0])
+        clone["length"] = utf16_offset(cleaned, mapped[-1] + 1) - clone["offset"]
+        preserved.append(clone)
+    return cleaned, preserved
+
 async def relay_one(client, source, target, message, state):
     source_key = source.lstrip("@")
     if message.id <= int(state.get(source_key, 0) or 0):
         return False
-    caption = clean_caption(message.message or "", source_key)
+    caption, caption_entities = clean_caption_with_entities(message.message or "", source_key, message.entities or [])
     if message.media is not None:
         size = getattr(message.file, "size", None)
         if size and size > MAX_MEDIA_BYTES:
@@ -89,7 +136,7 @@ async def relay_one(client, source, target, message, state):
                 if not path:
                     LOG.warning("Media download empty @%s/%s", source_key, message.id)
                     return False
-                kwargs = {"caption": caption or None}
+                kwargs = {"caption": caption or None, "formatting_entities": caption_entities or None}
                 if getattr(message, "voice", False):
                     kwargs["voice_note"] = True
                 elif getattr(message, "video", False):
@@ -100,7 +147,7 @@ async def relay_one(client, source, target, message, state):
                 return False
     elif caption:
         try:
-            await client.send_message(target, caption, link_preview=False)
+            await client.send_message(target, caption, formatting_entities=caption_entities or None, link_preview=False)
         except Exception:
             LOG.exception("Text relay failed @%s/%s", source_key, message.id)
             return False
