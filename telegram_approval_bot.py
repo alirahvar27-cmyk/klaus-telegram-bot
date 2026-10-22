@@ -91,53 +91,49 @@ def utf16_len(text):
     return len(text.encode("utf-16-le")) // 2
 
 
-# MEDIA_GROUP_FIX_V2
 
+# MEDIA_GROUP_FIX_V2
 def _split_utf16_text(text, entities=None, limit=4096):
     text = text or ""
     entities = [dict(e) for e in (entities or [])]
-    if not text:
-        return [("", [])]
     chunks = []
     pos = 0
     while pos < len(text):
-        units = 0
-        end = pos
+        end, units = pos, 0
         while end < len(text):
-  u = utf16_len(text[end])
-  if units + u > limit:
-      break
-  units += u
-  end += 1
+            u = utf16_len(text[end])
+            if units + u > limit:
+                break
+            units += u
+            end += 1
         if end <= pos:
-  end = pos + 1
+            end = pos + 1
         if end < len(text):
-  cut = max(text.rfind("\n", pos, end), text.rfind(" ", pos, end))
-  if cut > pos + 20:
-      end = cut
+            cut = max(text.rfind("\\n", pos, end), text.rfind(" ", pos, end))
+            if cut > pos + 20:
+                end = cut
         chunk = text[pos:end]
-        base = utf16_len(text[:pos])
-        chunk_end = base + utf16_len(chunk)
+        base, chunk_end = utf16_len(text[:pos]), utf16_len(text[:pos]) + utf16_len(chunk)
         chunk_entities = []
         for ent in entities:
-  a = int(ent.get("offset", 0))
-  b = a + int(ent.get("length", 0))
-  if a >= base and b <= chunk_end:
-      e = dict(ent)
-      e["offset"] = a - base
-      chunk_entities.append(e)
+            a = int(ent.get("offset", 0))
+            b = a + int(ent.get("length", 0))
+            if a >= base and b <= chunk_end:
+                e = dict(ent)
+                e["offset"] = a - base
+                chunk_entities.append(e)
         chunks.append((chunk, chunk_entities))
         pos = end
-        while pos < len(text) and text[pos] == "\n" and end < len(text):
-  pos += 1
-    return chunks
+        while pos < len(text) and text[pos] == "\\n":
+            pos += 1
+    return chunks or [("", [])]
 
 def _split_caption(text, entities):
     return _split_utf16_text(text, entities, 1024)
 
 def _media_items(media):
     if not isinstance(media, list):
-        return [media] if media else []
+        return [media] if isinstance(media, dict) and media.get("file_id") else []
     return [m for m in media if isinstance(m, dict) and m.get("type") and m.get("file_id")]
 
 def _send_album(chat_id, media_items, caption_parts=None):
@@ -147,18 +143,16 @@ def _send_album(chat_id, media_items, caption_parts=None):
         batch = media_items[start:start + 10]
         payload_media = []
         for idx, item in enumerate(batch):
-  kind = item["type"]
-  if kind not in {"photo", "video", "document", "audio"}:
-      raise ValueError(f"Unsupported media-group type: {kind}")
-  obj = {"type": kind, "media": item["file_id"]}
-  if start == 0 and idx == 0 and caption_parts:
-      cap, ents = caption_parts[0]
-      if cap:
-          obj["caption"] = cap
-          obj["caption_entities"] = ents
-  payload_media.append(obj)
+            kind = item["type"]
+            if kind not in {"photo", "video", "document", "audio"}:
+                raise ValueError(f"Unsupported media-group type: {kind}")
+            obj = {"type": kind, "media": item["file_id"]}
+            if start == 0 and idx == 0 and caption_parts and caption_parts[0][0]:
+                obj["caption"], obj["caption_entities"] = caption_parts[0]
+            payload_media.append(obj)
         results.extend(api("sendMediaGroup", {"chat_id": chat_id, "media": payload_media}))
     return results
+
 
 def add_channel_branding(text, entities, channel, limit=None):
     """Preserve cleaned post content and append the destination channel link."""
@@ -574,6 +568,7 @@ def _single_extract_message(msg):
     return {"text": raw_text, "entities": entities, "media": media}
 
 
+
 def extract_message(msg):
     album = msg.get("album_items") if isinstance(msg, dict) else None
     if not album:
@@ -582,83 +577,66 @@ def extract_message(msg):
     media, text, entities = [], "", []
     for item in parsed:
         one = item.get("media")
-        if one: media.extend(one if isinstance(one, list) else [one])
+        if one:
+            media.extend(one if isinstance(one, list) else [one])
         if not text and item.get("text"):
-  text, entities = item.get("text") or "", item.get("entities") or []
+            text = item.get("text") or ""
+            entities = item.get("entities") or []
     return {"text": text, "entities": entities, "media": media}
+
+
 
 def preview(chat_id, draft_id):
     draft = STATE["pending"].get(draft_id)
     if not draft:
         return
-    # Remove stale previews when editing text or changing the destination.
     for message_id in dict.fromkeys(draft.get("preview_message_ids", [])):
         delete_private_message(chat_id, message_id)
     draft["preview_message_ids"] = []
+    draft.setdefault("cleanup_message_ids", [])
     channel = draft["channel"]
     title, topic = CHANNELS[channel]
+    text, entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096)
     media = draft.get("media")
-    if isinstance(media, list) and len(media) > 1:
-        caption, preview_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096)
-        parts = _split_caption(caption, preview_entities) if caption else []
-        sent = _send_album(chat_id, _media_items(media), parts)
-        for msg in sent:
-  draft["cleanup_message_ids"].append(msg["message_id"])
-  draft["preview_message_ids"].append(msg["message_id"])
+    items = _media_items(media)
+    sent = []
+    if len(items) > 1:
+        parts = _split_caption(text, entities) if text else []
+        sent = _send_album(chat_id, items, parts)
         for extra_text, extra_entities in parts[1:]:
-  msg = send_text(chat_id, "📝 ادامه متن پیش‌نمایش:\n\n" + extra_text, entities=[dict(e, offset=e["offset"] + utf16_len("📝 ادامه متن پیش‌نمایش:\n\n")) for e in extra_entities])
-  draft["cleanup_message_ids"].append(msg["message_id"])
-  draft["preview_message_ids"].append(msg["message_id"])
-        controls = [[{"text":"✅ تأیید و انتشار","callback_data":f"approve:{draft_id}"}], [{"text":"✏️ ویرایش متن","callback_data":f"edit:{draft_id}"},{"text":"🔄 تغییر کانال","callback_data":f"channels:{draft_id}"}], [{"text":"❌ لغو","callback_data":f"cancel:{draft_id}"}]]
-        controls_msg = send_text(chat_id, f"📌 مقصد: {channel}\n{title} — {topic}", keyboard=controls)
-        draft["cleanup_message_ids"].append(controls_msg["message_id"])
-        draft["preview_message_ids"].append(controls_msg["message_id"])
-        save_state()
-        return
-    # Preview is a normal private-chat text message, not a media caption.
-    # Use Telegram's message limit here; the 1024-unit caption limit applies
-    # only when attaching text directly to media in the destination channel.
-    caption, preview_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096)
-    try:
-        draft.setdefault("cleanup_message_ids", [])
-        # Always preview the cleaned extracted content. Native copyMessage bypasses
-        # clean_text_and_entities and can reintroduce unwanted source links/ads.
-        source_chat_id = draft.get("source_chat_id")
-        source_message_id = draft.get("source_message_id")
-        if media:
-            kind = media["type"]
-            method = {
-                "photo": "sendPhoto", "video": "sendVideo", "audio": "sendAudio",
-                "voice": "sendVoice", "document": "sendDocument",
-                "animation": "sendAnimation", "video_note": "sendVideoNote",
-                "sticker": "sendSticker",
-            }[kind]
-            field = "sticker" if kind == "sticker" else kind
-            sent_media = api(method, {"chat_id": chat_id, field: media["file_id"]})
-            draft["cleanup_message_ids"].append(sent_media["message_id"])
-            draft["preview_message_ids"].append(sent_media["message_id"])
-        if caption:
-            sent_caption = send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in preview_entities])
-            draft["cleanup_message_ids"].append(sent_caption["message_id"])
-            draft["preview_message_ids"].append(sent_caption["message_id"])
-        elif not media:
-            warning = send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
-            draft["cleanup_message_ids"].append(warning["message_id"])
-        controls = [
-            [{"text": "✅ تأیید و انتشار", "callback_data": f"approve:{draft_id}"}],
-            [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"},
-             {"text": "🔄 تغییر کانال", "callback_data": f"channels:{draft_id}"}],
-            [{"text": "❌ لغو", "callback_data": f"cancel:{draft_id}"}],
-        ]
-        sent_controls = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})\nموضوع: {topic}\n\nاگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
-        draft["cleanup_message_ids"].append(sent_controls["message_id"])
-        draft["preview_message_ids"].append(sent_controls["message_id"])
-        save_state()
-    except Exception as exc:
-        log.exception("Preview failed: %s", exc)
-        error_message = send_text(chat_id, "⚠️ پیش‌نمایش ارسال نشد. دوباره تلاش کن یا فایل کوچک‌تری بفرست.")
-        draft.setdefault("cleanup_message_ids", []).append(error_message["message_id"])
-        save_state()
+            prefix = "📝 ادامه متن پیش‌نمایش:" + chr(10) * 2
+            sent.append(send_text(chat_id, prefix + extra_text, entities=[dict(e, offset=e["offset"] + utf16_len(prefix)) for e in extra_entities]))
+    elif items:
+        item = items[0]
+        kind = item["type"]
+        methods = {"photo":"sendPhoto", "video":"sendVideo", "audio":"sendAudio", "voice":"sendVoice", "document":"sendDocument", "animation":"sendAnimation", "video_note":"sendVideoNote", "sticker":"sendSticker"}
+        payload = {"chat_id": chat_id, ("sticker" if kind == "sticker" else kind): item["file_id"]}
+        parts = _split_caption(text, entities) if text and kind not in {"sticker", "video_note"} else [("", [])]
+        if parts[0][0]:
+            payload["caption"], payload["caption_entities"] = parts[0]
+        sent.append(api(methods[kind], payload))
+        for extra_text, extra_entities in parts[1:]:
+            prefix = "📝 ادامه متن پیش‌نمایش:" + chr(10) * 2
+            sent.append(send_text(chat_id, prefix + extra_text, entities=[dict(e, offset=e["offset"] + utf16_len(prefix)) for e in extra_entities]))
+    elif text:
+        sent.append(send_text(chat_id, "📝 پیش‌نمایش متن:" + chr(10) * 2 + text, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:" + chr(10) * 2)) for e in entities]))
+    else:
+        sent.append(send_text(chat_id, "پست خالی است؛ متن را ویرایش کن یا لغو کن."))
+    for item in sent:
+        mid = item.get("message_id")
+        if mid:
+            draft["cleanup_message_ids"].append(mid)
+            draft["preview_message_ids"].append(mid)
+    controls = [
+        [{"text": "✅ تأیید و انتشار", "callback_data": f"approve:{draft_id}"}],
+        [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"}, {"text": "🔄 تغییر کانال", "callback_data": f"channels:{draft_id}"}],
+        [{"text": "❌ لغو", "callback_data": f"cancel:{draft_id}"}],
+    ]
+    controls_msg = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})" + chr(10) + f"موضوع: {topic}" + chr(10) * 2 + "اگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
+    draft["cleanup_message_ids"].append(controls_msg["message_id"])
+    draft["preview_message_ids"].append(controls_msg["message_id"])
+    save_state()
+
 
 def publish(draft):
     channel = draft["channel"]
@@ -666,23 +644,27 @@ def publish(draft):
     text, post_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096)
     items = _media_items(media)
     if not items:
-        if not text: raise ValueError("پست خالی است")
+        if not text:
+            raise ValueError("پست خالی است")
         return api("sendMessage", {"chat_id": channel, "text": text, "entities": post_entities, "disable_web_page_preview": False})
     if len(items) > 1:
         parts = _split_caption(text, post_entities) if text else []
         sent = _send_album(channel, items, parts)
-        for extra_text, extra_entities in parts[1:]: send_text(channel, extra_text, entities=extra_entities)
+        for extra_text, extra_entities in parts[1:]:
+            send_text(channel, extra_text, entities=extra_entities)
         return sent
-    media = items[0]
-    kind = media["type"]
-    method = {"photo":"sendPhoto","video":"sendVideo","audio":"sendAudio","voice":"sendVoice","document":"sendDocument","animation":"sendAnimation","video_note":"sendVideoNote","sticker":"sendSticker"}[kind]
-    field = "sticker" if kind == "sticker" else kind
-    payload = {"chat_id": channel, field: media["file_id"]}
-    parts = _split_caption(text, post_entities) if text and kind not in {"sticker","video_note"} else [("", [])]
-    if parts[0][0]: payload["caption"], payload["caption_entities"] = parts[0]
-    result = api(method, payload)
-    for extra_text, extra_entities in parts[1:]: send_text(channel, extra_text, entities=extra_entities)
+    item = items[0]
+    kind = item["type"]
+    methods = {"photo":"sendPhoto", "video":"sendVideo", "audio":"sendAudio", "voice":"sendVoice", "document":"sendDocument", "animation":"sendAnimation", "video_note":"sendVideoNote", "sticker":"sendSticker"}
+    payload = {"chat_id": channel, ("sticker" if kind == "sticker" else kind): item["file_id"]}
+    parts = _split_caption(text, post_entities) if text and kind not in {"sticker", "video_note"} else [("", [])]
+    if parts[0][0]:
+        payload["caption"], payload["caption_entities"] = parts[0]
+    result = api(methods[kind], payload)
+    for extra_text, extra_entities in parts[1:]:
+        send_text(channel, extra_text, entities=extra_entities)
     return result
+
 
 def handle_callback(query):
     user = query.get("from", {})
