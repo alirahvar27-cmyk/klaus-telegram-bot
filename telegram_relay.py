@@ -4,6 +4,7 @@ import asyncio, difflib, json, logging, os, re, tempfile
 from pathlib import Path
 from telethon import TelegramClient
 from telethon.sessions import StringSession
+from telethon.tl import types as tl_types
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 LOG = logging.getLogger("KLAUS.relay")
@@ -113,9 +114,15 @@ def clean_caption_with_entities(text, source_user, entities):
         clone = dict(entity.to_dict()) if hasattr(entity, "to_dict") else {
             key: value for key, value in vars(entity).items() if not key.startswith("_")
         }
+        entity_class_name = clone.pop("_", type(entity).__name__)
         clone["offset"] = utf16_offset(cleaned, mapped[0])
         clone["length"] = utf16_offset(cleaned, mapped[-1] + 1) - clone["offset"]
-        preserved.append(clone)
+        entity_class = getattr(tl_types, entity_class_name, None)
+        if entity_class is not None:
+            try:
+                preserved.append(entity_class(**clone))
+            except (TypeError, ValueError):
+                continue
     return cleaned, preserved
 
 async def relay_one(client, source, target, message, state):
