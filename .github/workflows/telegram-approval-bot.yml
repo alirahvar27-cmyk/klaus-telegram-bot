@@ -15,7 +15,7 @@ concurrency:
 jobs:
   approval-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -43,7 +43,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           ADMIN_USER_ID: ${{ secrets.ADMIN_USER_ID }}
-          POLL_SECONDS: "240"
+          POLL_SECONDS: "210"
           PYTHONUNBUFFERED: "1"
         run: python telegram_approval_bot.py
 
