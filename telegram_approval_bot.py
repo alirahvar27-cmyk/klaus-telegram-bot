@@ -76,6 +76,26 @@ def send_text(chat_id, text, keyboard=None, entities=None):
 def utf16_len(text):
     return len(text.encode("utf-16-le")) // 2
 
+def add_channel_footer(text, entities, channel, limit=None):
+    """Append a clickable destination-channel link at the bottom of a post."""
+    username = channel.lstrip("@")
+    footer = f"📣 کانال: @{username}"
+    separator = "\n\n" if text else ""
+    base = text or ""
+    max_text_len = limit if limit is not None else 4096
+    room = max(0, max_text_len - utf16_len(separator + footer))
+    # Avoid cutting a UTF-16 entity in half when limiting text.
+    base = base[:room]
+    combined = base + separator + footer
+    result_entities = [dict(e) for e in (entities or []) if e.get("offset", 0) + e.get("length", 0) <= utf16_len(base)]
+    result_entities.append({
+        "type": "text_link",
+        "offset": utf16_len(base + separator),
+        "length": utf16_len("@" + username),
+        "url": f"https://t.me/{username}",
+    })
+    return combined, result_entities
+
 def clean_text_and_entities(text, entities):
     """Remove source ads while preserving Telegram text_link entities on their visible labels."""
     text = text or ""
@@ -211,7 +231,7 @@ def preview(chat_id, draft_id):
     channel = draft["channel"]
     title, topic = CHANNELS[channel]
     media = draft.get("media")
-    caption = draft.get("text", "")
+    caption, preview_entities = add_channel_footer(draft.get("text", ""), draft.get("entities", []), channel, limit=3900)
     try:
         if media:
             kind = media["type"]
@@ -225,7 +245,7 @@ def preview(chat_id, draft_id):
             api(method, {"chat_id": chat_id, field: media["file_id"]})
         if caption:
             # A separate text preview keeps all media types and long captions manageable.
-            send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption[:3900], entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in draft.get("entities", []) if e["offset"] + e["length"] <= utf16_len(caption[:3900])])
+            send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in preview_entities])
         elif not media:
             send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
         controls = [
@@ -242,11 +262,11 @@ def preview(chat_id, draft_id):
 def publish(draft):
     channel = draft["channel"]
     media = draft.get("media")
-    text = draft.get("text", "")
+    text, post_entities = add_channel_footer(draft.get("text", ""), draft.get("entities", []), channel, limit=4096 if not media else 1024)
     if not media:
         if not text:
             raise ValueError("پست خالی است")
-        return api("sendMessage", {"chat_id": channel, "text": text[:4096], "entities": draft.get("entities", []), "disable_web_page_preview": False})
+        return api("sendMessage", {"chat_id": channel, "text": text[:4096], "entities": post_entities, "disable_web_page_preview": False})
     kind = media["type"]
     method = {
         "photo": "sendPhoto", "video": "sendVideo", "audio": "sendAudio",
@@ -258,8 +278,7 @@ def publish(draft):
     payload = {"chat_id": channel, field: media["file_id"]}
     if text and kind not in {"sticker", "video_note"}:
         payload["caption"] = text[:1024]
-        if draft.get("entities"):
-            payload["caption_entities"] = [e for e in draft["entities"] if e["offset"] + e["length"] <= utf16_len(text[:1024])]
+        payload["caption_entities"] = [e for e in post_entities if e["offset"] + e["length"] <= utf16_len(text[:1024])]
     return api(method, payload)
 
 def handle_callback(query):
