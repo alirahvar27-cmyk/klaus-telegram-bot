@@ -1,4 +1,4 @@
-name: KLAUS Approval Bot
+name: کلاوس بیدار شو
 
 on:
   workflow_dispatch:
