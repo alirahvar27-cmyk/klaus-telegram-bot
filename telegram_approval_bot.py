@@ -330,9 +330,23 @@ def extract_message(msg):
     if rich:
         walk_rich(rich)
 
-    text, clean_entities = clean_text_and_entities(raw_text, entities)
-    if raw_text.strip() and not text.strip():
-        text = raw_text.strip()
+    # rich_message can carry text segments whose entity offsets are relative to
+    # an inner fragment rather than the reconstructed full text. Applying those
+    # offsets to the whole post can incorrectly delete ordinary paragraphs and
+    # checklist lines. For rich forwards, prioritize preserving the complete
+    # visible text; clean using visible text only, without potentially misaligned
+    # hidden-link entities. Standard Bot API messages keep the full entity cleanup.
+    if rich:
+        text, clean_entities = clean_text_and_entities(raw_text, [])
+    else:
+        text, clean_entities = clean_text_and_entities(raw_text, entities)
+
+    # Never silently return a partially stripped post when the cleaner removes
+    # a substantial part of the original text. Preserve the post rather than
+    # lose educational content; entity offsets are discarded in this fallback.
+    original = raw_text.strip()
+    if original and (not text.strip() or len(text.strip()) < len(original) * 0.70):
+        text = original
         clean_entities = []
     return {"text": text, "entities": clean_entities, "media": media}
 
