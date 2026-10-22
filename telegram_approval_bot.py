@@ -163,16 +163,22 @@ def clean_text_and_entities(text, entities):
         )
         has_nonproxy_visible_link = any(not is_proxy_url(url) for url in visible_urls)
         has_blocked_slogan = bool(re.search("اینترنت\\s*آزاد\\s*برای\\s*همه\\s*یا\\s*هیچکس", stripped, re.IGNORECASE))
-        if has_blocked_slogan or is_promo or is_handle_footer or has_nonproxy_hidden_link or has_nonproxy_visible_link or (ad_words and (line_links or visible_urls)) or (label_only and not has_proxy_link):
+        if has_blocked_slogan or is_promo or is_handle_footer or (ad_words and (line_links or visible_urls)) or (label_only and not has_proxy_link):
             old_pos += len(raw_line)
             continue
         if re.search(r"(?i)(منبع|source|forwarded from|ارسالی از|کانال اصلی|عضویت در کانال)", stripped):
             old_pos += len(raw_line)
             continue
 
+        # Strip non-allowlisted URLs in-place; do not discard the useful text around them.
+        def strip_external_url(match):
+            url = match.group(0).rstrip(".,!?،؛:)")
+            suffix = match.group(0)[len(url):]
+            return ("" if not is_allowed_link(url) else url) + suffix
+
         cleaned_line = re.sub(
-            r"(?i)\b(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/(?!proxy(?:[/?#]|$)|socks(?:[/?#]|$))[A-Za-z0-9_+/=?%&.-]+",
-            "", line
+            r"(?i)(?:https?://|www\.)[^\s<>]+|(?:t\.me|telegram\.me)/[^\s<>]+|tg://[^\s<>]+",
+            strip_external_url, line
         )
         if cleaned_line != line:
             line = cleaned_line
@@ -196,7 +202,7 @@ def clean_text_and_entities(text, entities):
                     "length": utf16_len(visible),
                     "url": ent.get("url", "")
                 }
-                if new_ent["url"]:
+                if new_ent["url"] and is_allowed_link(new_ent["url"]):
                     kept_entities.append(new_ent)
         new_units += utf16_len(line)
         old_pos += len(raw_line)
