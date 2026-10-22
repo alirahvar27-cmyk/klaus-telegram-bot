@@ -95,76 +95,71 @@ def clean_text_and_entities(text, entities):
         end = char_index(int(ent.get("offset", 0)) + int(ent.get("length", 0)))
         spans.append((start, end, ent))
 
-    kept_parts = []
-    kept_entities = []
-    old_pos = 0
-    new_units = 0
+    kept_parts, kept_entities = [], []
+    old_pos, new_units = 0, 0
     promo_line = re.compile(
-        r"(?:خرید|فروش).{0,45}(?:فیلترشکن|فیلتر شکن|آی\\s*پی|\\bip\\b)|"
-        r"(?:فیلترشکن|فیلتر شکن|وی\\s*پی\\s*ان|آی\\s*پی|\\bip\\b).{0,35}(?:اختصاصی|اقتصادی|ارزان|خرید|فروش)",
+        r"(?:خرید|فروش).{0,45}(?:فیلترشکن|فیلتر شکن|آی\s*پی|\bip\b)|"
+        r"(?:فیلترشکن|فیلتر شکن|وی\s*پی\s*ان|آی\s*پی|\bip\b).{0,35}(?:اختصاصی|اقتصادی|ارزان|خرید|فروش)",
         re.IGNORECASE
     )
     for raw_line in text.splitlines(keepends=True):
-        line = raw_line.rstrip("\\r\\n")
+        line = raw_line.rstrip("\r\n")
         line_end = old_pos + len(line)
         line_links = [(a, b, e) for a, b, e in spans if a < line_end and b > old_pos and e.get("type") == "text_link"]
         stripped = line.strip()
-
-        # Remove promo/footer lines, including the account handle usually placed below them.
         is_promo = bool(promo_line.search(stripped))
-        is_handle_footer = bool(re.fullmatch(r"[\\s✅✔️☑️〰️~—–-]*@[A-Za-z0-9_]{4,}[\\s✅✔️☑️〰️~—–-]*", stripped))
+        is_handle_footer = bool(re.fullmatch(r"[\s✅✔️☑️〰️~—–-]*@[A-Za-z0-9_]{4,}[\s✅✔️☑️〰️~—–-]*", stripped))
         has_proxy_link = any(
             re.search(r"پروکسی|proxy|socks|همراه", text[a:b], re.IGNORECASE)
             for a, b, _ in line_links
         )
-        label_only = bool(re.fullmatch(r"[\\s•|·،,ـ]*(?:همراه|پروکسی)(?:[\\s•|·،,ـ]*(?:همراه|پروکسی))*[\\s•|·،,ـ]*", stripped, re.IGNORECASE))
+        label_only = bool(re.fullmatch(r"[\s•|·،,ـ]*(?:همراه|پروکسی)(?:[\s•|·،,ـ]*(?:همراه|پروکسی))*[\s•|·،,ـ]*", stripped, re.IGNORECASE))
         if is_promo or is_handle_footer or (label_only and not has_proxy_link):
             old_pos += len(raw_line)
             continue
-
-        # Remove source attribution lines and ordinary source-channel URLs.
         if re.search(r"(?i)(منبع|source|forwarded from|ارسالی از|کانال اصلی|عضویت در کانال)", stripped):
             old_pos += len(raw_line)
             continue
 
-        # Remove non-proxy Telegram channel links while preserving proxy links.
         cleaned_line = re.sub(
-            r"(?i)\\b(?:https?://)?(?:www\\.)?(?:t\\.me|telegram\\.me)/(?!proxy(?:[/?#]|$)|socks(?:[/?#]|$))[A-Za-z0-9_+/=?%&.-]+",
+            r"(?i)\b(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/(?!proxy(?:[/?#]|$)|socks(?:[/?#]|$))[A-Za-z0-9_+/=?%&.-]+",
             "", line
         )
-        # If the line changed internally, discard entities on that line to avoid bad offsets.
         if cleaned_line != line:
             line = cleaned_line
-            line_end = old_pos + len(line)
             line_links = []
 
         if not line.strip():
             old_pos += len(raw_line)
             continue
-
-        # Trim trailing spaces but keep line breaks between retained lines.
         line = line.rstrip()
         if kept_parts:
-            kept_parts.append("\\n")
+            kept_parts.append("\n")
             new_units += 1
         kept_parts.append(line)
         line_start_new_units = new_units
         for a, b, ent in line_links:
             if a >= old_pos and b <= old_pos + len(line):
                 visible = text[a:b]
-                # Keep the visible word only; Telegram stores the target in the entity.
-                new_offset = line_start_new_units + utf16_len(text[old_pos:a])
-                new_ent = {"type": "text_link", "offset": new_offset, "length": utf16_len(visible), "url": ent.get("url", "")}
+                new_ent = {
+                    "type": "text_link",
+                    "offset": line_start_new_units + utf16_len(text[old_pos:a]),
+                    "length": utf16_len(visible),
+                    "url": ent.get("url", "")
+                }
                 if new_ent["url"]:
                     kept_entities.append(new_ent)
         new_units += utf16_len(line)
         old_pos += len(raw_line)
 
     cleaned = "".join(kept_parts).strip()
-    # Strip any remaining source usernames without touching proxy entity labels.
-    # A source username is normally removed as part of the promo footer above.
     if not cleaned:
         return "", []
+    # Leading whitespace removal shifts entity offsets; adjust them exactly.
+    leading = len("".join(kept_parts)) - len("".join(kept_parts).lstrip())
+    if leading:
+        shift = utf16_len("".join(kept_parts)[:leading])
+        kept_entities = [dict(e, offset=max(0, e["offset"] - shift)) for e in kept_entities]
     return cleaned, sorted(kept_entities, key=lambda e: e["offset"])
 
 def clean_text(text):
