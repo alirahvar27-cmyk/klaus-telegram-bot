@@ -16,17 +16,198 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Apply Telegram media-group patch
+      - name: Repair Telegram media-group patch
         run: |
-          awk '/^          python - <<'"'"'PY'"'"'/{flag=1;next} flag && /^          PY$/{exit} flag{sub(/^          /, ""); print}' .github/workflows/apply_album_patch.yml > /tmp/apply_album_patch.py
-          python /tmp/apply_album_patch.py
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p = Path('telegram_approval_bot.py')
+          s = p.read_text(encoding='utf-8')
+          marker = '# MEDIA_GROUP_FIX_V2'
+          helper_start = s.find(marker)
+          branding_start = s.find('def add_channel_branding', helper_start)
+          if helper_start < 0 or branding_start < 0:
+              raise SystemExit('media-group marker not found')
+          helpers = r'''# MEDIA_GROUP_FIX_V2
+
+def _split_utf16_text(text, entities=None, limit=4096):
+    text = text or ""
+    entities = [dict(e) for e in (entities or [])]
+    if not text:
+        return [("", [])]
+    chunks = []
+    pos = 0
+    while pos < len(text):
+        units = 0
+        end = pos
+        while end < len(text):
+            u = utf16_len(text[end])
+            if units + u > limit:
+                break
+            units += u
+            end += 1
+        if end <= pos:
+            end = pos + 1
+        if end < len(text):
+            cut = max(text.rfind("\n", pos, end), text.rfind(" ", pos, end))
+            if cut > pos + 20:
+                end = cut
+        chunk = text[pos:end]
+        base = utf16_len(text[:pos])
+        chunk_end = base + utf16_len(chunk)
+        chunk_entities = []
+        for ent in entities:
+            a = int(ent.get("offset", 0))
+            b = a + int(ent.get("length", 0))
+            if a >= base and b <= chunk_end:
+                e = dict(ent)
+                e["offset"] = a - base
+                chunk_entities.append(e)
+        chunks.append((chunk, chunk_entities))
+        pos = end
+        while pos < len(text) and text[pos] == "\n":
+            pos += 1
+    return chunks
+
+def _split_caption(text, entities):
+    return _split_utf16_text(text, entities, 1024)
+
+def _media_items(media):
+    if not isinstance(media, list):
+        return [media] if media else []
+    return [m for m in media if isinstance(m, dict) and m.get("type") and m.get("file_id")]
+
+def _send_album(chat_id, media_items, caption_parts=None):
+    caption_parts = caption_parts or []
+    results = []
+    for start in range(0, len(media_items), 10):
+        batch = media_items[start:start + 10]
+        payload_media = []
+        for idx, item in enumerate(batch):
+            kind = item["type"]
+            if kind not in {"photo", "video", "document", "audio"}:
+                raise ValueError(f"Unsupported media-group type: {kind}")
+            obj = {"type": kind, "media": item["file_id"]}
+            if start == 0 and idx == 0 and caption_parts:
+                cap, ents = caption_parts[0]
+                if cap:
+                    obj["caption"] = cap
+                    obj["caption_entities"] = ents
+            payload_media.append(obj)
+        results.extend(api("sendMediaGroup", {"chat_id": chat_id, "media": payload_media}))
+    return results
+
+'''
+          s = s[:helper_start] + helpers + s[branding_start:]
+
+          wrapper = r'''def extract_message(msg):
+    album = msg.get("album_items") if isinstance(msg, dict) else None
+    if not album:
+        return _single_extract_message(msg)
+    parsed = [_single_extract_message(item) for item in album]
+    media, text, entities = [], "", []
+    for item in parsed:
+        one = item.get("media")
+        if one:
+            media.extend(one if isinstance(one, list) else [one])
+        if not text and item.get("text"):
+            text = item.get("text") or ""
+            entities = item.get("entities") or []
+    return {"text": text, "entities": entities, "media": media}
+'''
+          s = re.sub(r'def extract_message\(msg\):.*?(?=\ndef preview)', wrapper + '\n', s, count=1, flags=re.S)
+
+          grouped = '''            grouped_updates = []
+            album_buckets = {}
+            for incoming in updates:
+                imsg = incoming.get("message") or {}
+                gid = imsg.get("media_group_id")
+                if gid:
+                    bucket = album_buckets.setdefault(str(gid), {"first": incoming, "items": []})
+                    bucket["items"].append(imsg)
+                else:
+                    grouped_updates.append(incoming)
+            for bucket in album_buckets.values():
+                first = dict(bucket["first"])
+                first_msg = dict(first.get("message") or {})
+                first_msg["album_items"] = bucket["items"]
+                first["message"] = first_msg
+                grouped_updates.append(first)
+            grouped_updates.sort(key=lambda u: int(u.get("update_id", 0)))
+            for update in grouped_updates:
+'''
+          s = s.replace('            for update in updates:\n', grouped, 1)
+
+          publish = r'''def publish(draft):
+    channel = draft["channel"]
+    media = draft.get("media")
+    text, post_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096)
+    items = _media_items(media)
+    if not items:
+        if not text:
+            raise ValueError("پست خالی است")
+        return api("sendMessage", {"chat_id": channel, "text": text, "entities": post_entities, "disable_web_page_preview": False})
+    if len(items) > 1:
+        parts = _split_caption(text, post_entities) if text else []
+        sent = _send_album(channel, items, parts)
+        for extra_text, extra_entities in parts[1:]:
+            send_text(channel, extra_text, entities=extra_entities)
+        return sent
+    media = items[0]
+    kind = media["type"]
+    method = {
+        "photo": "sendPhoto", "video": "sendVideo", "audio": "sendAudio", "voice": "sendVoice",
+        "document": "sendDocument", "animation": "sendAnimation", "video_note": "sendVideoNote",
+        "sticker": "sendSticker",
+    }[kind]
+    field = "sticker" if kind == "sticker" else kind
+    payload = {"chat_id": channel, field: media["file_id"]}
+    parts = _split_caption(text, post_entities) if text and kind not in {"sticker", "video_note"} else [("", [])]
+    if parts[0][0]:
+        payload["caption"], payload["caption_entities"] = parts[0]
+    result = api(method, payload)
+    for extra_text, extra_entities in parts[1:]:
+        send_text(channel, extra_text, entities=extra_entities)
+    return result
+'''
+          s = re.sub(r'def publish\(draft\):.*?(?=\ndef handle_callback)', publish + '\n', s, count=1, flags=re.S)
+
+          preview_branch = r'''    media = draft.get("media")
+    if isinstance(media, list) and len(media) > 1:
+        caption, preview_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096)
+        parts = _split_caption(caption, preview_entities) if caption else []
+        sent = _send_album(chat_id, _media_items(media), parts)
+        for msg in sent:
+            draft["cleanup_message_ids"].append(msg["message_id"])
+            draft["preview_message_ids"].append(msg["message_id"])
+        for extra_text, extra_entities in parts[1:]:
+            prefix = "📝 ادامه متن پیش‌نمایش:\n\n"
+            msg = send_text(chat_id, prefix + extra_text, entities=[dict(e, offset=e["offset"] + utf16_len(prefix)) for e in extra_entities])
+            draft["cleanup_message_ids"].append(msg["message_id"])
+            draft["preview_message_ids"].append(msg["message_id"])
+        controls = [
+            [{"text": "✅ تأیید و انتشار", "callback_data": f"approve:{draft_id}"}],
+            [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"}, {"text": "🔄 تغییر کانال", "callback_data": f"channels:{draft_id}"}],
+            [{"text": "❌ لغو", "callback_data": f"cancel:{draft_id}"}],
+        ]
+        controls_msg = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})\nموضوع: {topic}\n\nاگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
+        draft["cleanup_message_ids"].append(controls_msg["message_id"])
+        draft["preview_message_ids"].append(controls_msg["message_id"])
+        save_state()
+        return
+'''
+          s = re.sub(r'    media = draft\.get\("media"\)\n    if isinstance\(media, list\) and len\(media\) > 1:.*?        return\n', preview_branch, s, count=1, flags=re.S)
+
+          # A media list is valid input to detect_channel and draft storage.
+          s = s.replace('    channel = detect_channel(content["text"], content["media"]["type"] if content["media"] else "")', '    media_for_channel = content["media"][0] if isinstance(content["media"], list) else content["media"]\n    channel = detect_channel(content["text"], media_for_channel["type"] if media_for_channel else "")')
+
+          p.write_text(s, encoding='utf-8')
+          PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          if ! git diff --quiet -- telegram_approval_bot.py; then
-            git add telegram_approval_bot.py
-            git commit -m 'Fix forwarded media groups and long captions'
-            git push
-          fi
+          git add telegram_approval_bot.py
+          git commit -m 'Repair media-group implementation'
+          git push
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
