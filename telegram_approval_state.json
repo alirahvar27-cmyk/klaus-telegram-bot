@@ -1,5 +1,5 @@
 {
-  "offset": 267987116,
+  "offset": 267987132,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -56,6 +56,115 @@
         118,
         119,
         120
+      ]
+    },
+    "267987122": {
+      "chat_id": 1677869966,
+      "text": "",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAOIatonrmEPcgkBz1RhmhqFgAu5a_kAArEQaxt-qmlSFDj8qixWd8YBAAMCAAN5AAM9BA"
+      },
+      "channel": "@FilmGardFa",
+      "cleanup_message_ids": [
+        136,
+        138,
+        139,
+        140,
+        160,
+        161,
+        162,
+        163
+      ],
+      "preview_message_ids": [
+        161,
+        162,
+        163
+      ]
+    },
+    "267987123": {
+      "chat_id": 1677869966,
+      "text": "آرجی میته، بازیگر Breaking Bad در ۳۴ سالگی درگذشت!\nبازیگر نقش والتر وایت جونیور در سریال Breaking Bad در ۳۴ سالگی درگذشت.\nطبق تأیید نماینده او، علت مرگ خودکشی اعلام شده است. میته از فعالان حقوق افراد دارای معلولیت نیز بود.",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAOJatonrlJ3v1i_DBKh8d8a2iHRqrwAArIQaxt-qmlSN0ULujwgk8kBAAMCAAN5AAM9BA"
+      },
+      "channel": "@FilmGardFa",
+      "cleanup_message_ids": [
+        137,
+        141,
+        142,
+        143
+      ],
+      "preview_message_ids": [
+        141,
+        142,
+        143
+      ]
+    },
+    "267987124": {
+      "chat_id": 1677869966,
+      "text": "🎬 فیلم “Resident Evil” به کارگردانی زک کرگر حالا با کسب امتیاز ۹۶٪ در راتن تومیتوز، به بالاترین امتیاز میان فیلم‌های ترسناک سال تبدیل شده است.\n۱۰ فیلم ترسناک با بالاترین امتیاز راتن تومیتوز در سال ۲۰۲۶ تاکنون:\n• “Resident Evil” — 96%\n• “Obsession” — 93%\n• “Teenage Sx and Dath at Camp Miasma” — 93%\n• “Leviticus” — 93%\n• “Send Help” — 92%\n• “28 Years Later: The Bone Temple” — 91%\n• “Hokum” — 90%\n• “Buddy” — 88%\n• “Backrooms” — 86%",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAOQatont3zclrzupXfmIfs0WLAJhp0AAp8OaxvQHhRSqkPTXtFnNjYBAAMCAAN3AAM9BA"
+      },
+      "channel": "@FilmGardFa",
+      "cleanup_message_ids": [
+        144,
+        145,
+        146,
+        147
+      ],
+      "preview_message_ids": [
+        145,
+        146,
+        147
+      ]
+    },
+    "267987125": {
+      "chat_id": 1677869966,
+      "text": "پوستر جدید اونجرز",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAOUatonu-T7pM3Z55pwFN8eds2q2H8AAgUSaxt1EBBSAVieUMUXDagBAAMCAAN5AAM9BA"
+      },
+      "channel": "@Khndedoon",
+      "cleanup_message_ids": [
+        148,
+        149,
+        150,
+        151
+      ],
+      "preview_message_ids": [
+        149,
+        150,
+        151
+      ]
+    },
+    "267987126": {
+      "chat_id": 1677869966,
+      "text": "داکوتا جانسون 37 ساله شد",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgUAAxkBAAOYatonvYXfHsVNAXtxQXW7TcIpOlsAAm8Uaxte-RlWqxDQwdIkv9QBAAMCAAN5AAM9BA"
+      },
+      "channel": "@Khndedoon",
+      "cleanup_message_ids": [
+        152,
+        153,
+        154,
+        155
+      ],
+      "preview_message_ids": [
+        153,
+        154,
+        155
       ]
     }
   },
