@@ -611,11 +611,9 @@ def handle_update(update):
     if msg.get("text") == "/cancel":
         send_text(chat_id, "برای لغو، دکمه «لغو» زیر پیش‌نویس را بزن.")
         return
-    if message_has_disallowed_link(msg):
-        log.info("Rejected whole incoming message %s: contains a non-allowlisted link", msg.get("message_id"))
-        delete_private_message(chat_id, msg["message_id"])
-        send_text(chat_id, "🚫 پیام رد شد؛ فقط لینک کانال‌های خودمان و لینک‌های پروکسی مجازند. کل پیام دارای لینک دیگر حذف می‌شود.")
-        return
+    # Do not reject a useful post just because it contains an unwanted link.
+    # extract_message/clean_text_and_entities remove the offending link line while
+    # keeping the rest of the post for preview and approval.
     content = extract_message(msg)
     if not content["text"] and not content["media"]:
         # Diagnostic reply prevents guessing when Telegram sends an unsupported
