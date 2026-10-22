@@ -514,7 +514,10 @@ def preview(chat_id, draft_id):
     channel = draft["channel"]
     title, topic = CHANNELS[channel]
     media = draft.get("media")
-    caption, preview_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=3900)
+    # Preview is a normal private-chat text message, not a media caption.
+    # Use Telegram's message limit here; the 1024-unit caption limit applies
+    # only when attaching text directly to media in the destination channel.
+    caption, preview_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096)
     try:
         draft.setdefault("cleanup_message_ids", [])
         # Always preview the cleaned extracted content. Native copyMessage bypasses
