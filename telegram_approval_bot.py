@@ -163,7 +163,7 @@ def clean_text_and_entities(text, entities):
         )
         has_nonproxy_visible_link = any(not is_proxy_url(url) for url in visible_urls)
         has_blocked_slogan = bool(re.search("اینترنت\\s*آزاد\\s*برای\\s*همه\\s*یا\\s*هیچکس", stripped, re.IGNORECASE))
-        if has_blocked_slogan or is_promo or is_handle_footer or (ad_words and (line_links or visible_urls)) or (label_only and not has_proxy_link):
+        if has_blocked_slogan or is_promo or is_handle_footer or (label_only and not has_proxy_link):
             old_pos += len(raw_line)
             continue
         if re.search(r"(?i)(منبع|source|forwarded from|ارسالی از|کانال اصلی|عضویت در کانال)", stripped):
