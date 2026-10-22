@@ -380,9 +380,23 @@ def extract_message(msg):
     # Collect all leaf text runs in order rather than accepting only the first run.
     rich = msg.get("rich_message")
 
-    def collect_rich_text(value, parent_key=""):
-        """Collect only post-body text runs; exclude button/link/menu metadata subtrees."""
+    def collect_rich_content(value):
+        """Flatten rich text runs and rebuild their Telegram entities with global offsets."""
         parts = []
+        rich_entities = []
+        total_units = 0
+        entity_types = {
+            "bold", "italic", "underline", "strikethrough", "spoiler",
+            "code", "pre", "blockquote", "expandable_blockquote",
+            "text_link", "text_mention", "custom_emoji",
+        }
+        style_keys = {
+            "bold": "bold", "italic": "italic", "underline": "underline",
+            "strikethrough": "strikethrough", "spoiler": "spoiler",
+            "code": "code", "mono": "code", "monospace": "code",
+            "pre": "pre", "quote": "blockquote", "blockquote": "blockquote",
+            "expandable_blockquote": "expandable_blockquote",
+        }
         ignored_keys = {
             "entities", "caption_entities", "file_id", "reply_markup",
             "inline_keyboard", "keyboard", "buttons", "button", "url",
@@ -390,42 +404,99 @@ def extract_message(msg):
             "switch_inline_query", "callback_data", "reply_to_markup",
         }
 
-        def metadata_key(key):
-            key = str(key).casefold()
-            # Some forward integrations use custom names such as link_buttons,
-            # social_links, website_buttons, or action_menu for these controls.
-            return (
-                key in ignored_keys
-                or any(token in key for token in (
-                    "button", "keyboard", "markup", "link", "menu",
-                    "website", "social", "web_app", "login_url",
-                    "callback", "action", "cta",
-                ))
-            )
+        def add_entity(entity, base, run_text):
+            try:
+                local_offset = int(entity.get("offset", 0))
+                length = int(entity.get("length", utf16_len(run_text) - local_offset))
+            except (TypeError, ValueError):
+                return
+            if length <= 0 or local_offset < 0 or local_offset + length > utf16_len(run_text):
+                return
+            item = dict(entity)
+            item["offset"] = base + local_offset
+            item["length"] = length
+            rich_entities.append(item)
 
-        if isinstance(value, list):
-            for item in value:
-                parts.extend(collect_rich_text(item, parent_key))
-        elif isinstance(value, dict):
-            for key, child in value.items():
-                if metadata_key(key):
+        def walk(node, inherited=(), parent_key=""):
+            nonlocal total_units
+            if isinstance(node, list):
+                for child in node:
+                    walk(child, inherited, parent_key)
+                return
+            if not isinstance(node, dict):
+                return
+
+            run_text = node.get("text")
+            if not isinstance(run_text, str):
+                run_text = node.get("caption")
+            if isinstance(run_text, str) and run_text:
+                base = total_units
+                parts.append(run_text)
+                total_units += utf16_len(run_text)
+
+                local_entities = node.get("entities") or node.get("caption_entities") or []
+                for entity in local_entities:
+                    if isinstance(entity, dict):
+                        add_entity(entity, base, run_text)
+
+                run_styles = list(inherited)
+                node_type = str(node.get("type", node.get("format", ""))).casefold()
+                if node_type in entity_types:
+                    run_styles.append(node_type)
+                for key, entity_type in style_keys.items():
+                    flag = node.get(key)
+                    if flag is True and entity_type not in run_styles:
+                        run_styles.append(entity_type)
+                for entity_type in dict.fromkeys(run_styles):
+                    entity = {"type": entity_type, "offset": 0, "length": utf16_len(run_text)}
+                    if entity_type == "text_link":
+                        url = node.get("url") or node.get("href")
+                        if url:
+                            entity["url"] = url
+                        else:
+                            continue
+                    if entity_type == "pre" and node.get("language"):
+                        entity["language"] = node["language"]
+                    rich_entities.append(dict(entity, offset=base))
+
+                # Text runs can contain nested metadata, but don't recurse into their
+                # text/entities again or the visible content would be duplicated.
+                for key, child in node.items():
+                    normalized = str(key).casefold()
+                    if normalized in {"text", "caption", "entities", "caption_entities", "file_id"}:
+                        continue
+                    if normalized in ignored_keys or any(token in normalized for token in (
+                        "button", "keyboard", "markup", "menu", "website", "social",
+                        "web_app", "login_url", "callback", "action", "cta",
+                    )):
+                        continue
+                    if isinstance(child, (dict, list)):
+                        mapped = style_keys.get(normalized)
+                        walk(child, tuple(run_styles + ([mapped] if mapped else [])), key)
+                return
+
+            for key, child in node.items():
+                normalized = str(key).casefold()
+                if normalized in ignored_keys or any(token in normalized for token in (
+                    "button", "keyboard", "markup", "menu", "website", "social",
+                    "web_app", "login_url", "callback", "action", "cta",
+                )):
                     continue
-                if key in {"text", "caption"} and isinstance(child, str):
-                    if child:
-                        parts.append(child)
-                elif isinstance(child, (dict, list)):
-                    parts.extend(collect_rich_text(child, key))
-        return parts
+                if isinstance(child, (dict, list)):
+                    mapped = style_keys.get(normalized)
+                    walk(child, tuple(inherited + ((mapped,) if mapped else ())), key)
+
+        walk(value)
+        return "".join(parts), sorted(rich_entities, key=lambda e: (e["offset"], e["length"]))
 
     if rich:
-        rich_parts = collect_rich_text(rich)
-        if rich_parts:
-            # Formatting runs are contiguous pieces of the same visible post;
-            # keep their original whitespace/newlines and concatenate verbatim.
-            raw_text = "".join(rich_parts)
-        # Keep entities discovered from rich text runs. Clearing them here
-        # turns visible proxy labels into plain text and discards their URLs.
+        # Also inspect media metadata; text and formatting are rebuilt from rich runs
+        # so entities belonging to later runs receive correct offsets.
         walk_rich(rich)
+        rich_text, rich_entities = collect_rich_content(rich)
+        if rich_text:
+            raw_text = rich_text
+            entities = rich_entities
 
     # Remove promotional lines and non-allowlisted URLs/handles, while preserving
     # the useful post text and genuine allowlisted Telegram proxy links.
