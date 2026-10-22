@@ -10,7 +10,7 @@ import requests
 TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 ADMIN_ID = os.getenv("ADMIN_USER_ID", "").strip()
 API = f"https://api.telegram.org/bot{TOKEN}" if TOKEN else ""
-STATE_PATH = Path("telegram_approval_state.json")
+STATE_PATH = Path(os.getenv("STATE_PATH", "telegram_approval_state.json"))
 POLL_SECONDS = int(os.getenv("POLL_SECONDS", "240"))
 CHANNELS = {
     "@TechNamaFa": ("تک‌نما", "فناوری و گوشی هوشمند"),
