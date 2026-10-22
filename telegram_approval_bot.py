@@ -73,16 +73,25 @@ def send_text(chat_id, text, keyboard=None):
 
 def clean_text(text):
     text = text or ""
-    # Keep Telegram proxy/SOCKS links, while removing ordinary source-channel links.
-    text = re.sub(r"(?i)\b(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/(?!proxy(?:[/?#]|$)|socks(?:[/?#]|$))[A-Za-z0-9_+/=?%-]+", "", text)
+    # Remove ordinary source-channel links, but never strip proxy/SOCKS URLs.
+    text = re.sub(r"(?i)\\b(?:https?://)?(?:www\\.)?(?:t\\.me|telegram\\.me)/(?!proxy(?:[/?#]|$)|socks(?:[/?#]|$))[A-Za-z0-9_+/=?%&.-]+", "", text)
+    text = re.sub(r"(?i)\\b(?:خرید|فروش)\\s*(?:آی\\s*پی|ip|فیلترشکن|وی\\s*پی\\s*ان)|(?:فیلترشکن|وی\\s*پی\\s*ان)\\s*(?:اختصاصی|ارزان|اقتصادی)|آی\\s*پی\\s*(?:اختصاصی|ارزان|اقتصادی)|ip\\s*(?:اختصاصی|ارزان|اقتصادی)", "", text)
     text = re.sub(r"(?i)@[A-Za-z0-9_]{4,}", "", text)
     lines = []
     for line in text.splitlines():
-        if re.search(r"(?i)(منبع|source|forwarded from|ارسالی از|کانال اصلی|عضویت در کانال)", line.strip()):
+        stripped = line.strip()
+        if not stripped:
+            lines.append("")
+            continue
+        if re.search(r"(?i)(منبع|source|forwarded from|ارسالی از|کانال اصلی|عضویت در کانال)", stripped):
+            continue
+        if re.search(r"(خرید|فروش).{0,25}(فیلترشکن|آی\\s*پی|\\bip\\b)|(?:فیلترشکن|وی\\s*پی\\s*ان).{0,20}(اختصاصی|ارزان|اقتصادی)|(?:آی\\s*پی|\\bip\\b).{0,20}(خرید|اقتصادی|اختصاصی)", stripped):
+            continue
+        # Strip repeated source branding/link-label-only lines; real URLs are kept.
+        if re.fullmatch(r"[\\s•|·،,ـ]*(?:همراه|پروکسی)(?:[\\s•|·،,ـ]*(?:همراه|پروکسی))*[\\s•|·،,ـ]*", stripped, flags=re.IGNORECASE):
             continue
         lines.append(line.rstrip())
-    return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
-
+    return re.sub(r"\\n{3,}", "\\n\\n", "\\n".join(lines)).strip()
 def detect_channel(text, media_type):
     t = (text or "").casefold()
     rules = [
@@ -109,11 +118,10 @@ def detect_channel(text, media_type):
     return "@NbzeKhabar" if len(t) > 180 else "@Khndedoon"
 
 def append_proxy_entity_links(text, entities):
-    """Expose hidden Telegram text-link URLs for proxy/SOCKS links so they survive reposting."""
+    """Make hidden proxy links visible as real URLs, including nonstandard proxy URL hosts."""
     if not text or not entities:
         return text
 
-    # Telegram entity offsets use UTF-16 code units, not Python character indexes.
     def py_index(offset):
         units = 0
         for i, char in enumerate(text):
@@ -127,12 +135,15 @@ def append_proxy_entity_links(text, entities):
         if entity.get("type") != "text_link" or not entity.get("url"):
             continue
         url = entity["url"].strip()
-        if not re.search(r"(?i)(?:t\.me|telegram\.me)/(?:proxy|socks)(?:[/?#]|$)|tg://proxy(?:[/?#]|$)", url):
-            continue
         start = py_index(int(entity.get("offset", 0)))
         end = py_index(int(entity.get("offset", 0)) + int(entity.get("length", 0)))
-        if start < end and url not in text[start:end]:
-            replacements.append((start, end, text[start:end] + " (" + url + ")"))
+        label = text[start:end].strip()
+        # Include all links hidden behind the repeated "پروکسی" labels, as well as
+        # standard Telegram proxy/SOCKS links regardless of their visible label.
+        is_proxy_label = bool(re.search(r"پروکسی|proxy|socks", label, re.IGNORECASE))
+        is_proxy_url = bool(re.search(r"(?i)(?:t\\.me|telegram\\.me)/(?:proxy|socks)(?:[/?#]|$)|tg://proxy(?:[/?#]|$)", url))
+        if start < end and (is_proxy_label or is_proxy_url) and url not in text[start:end]:
+            replacements.append((start, end, label + " — " + url))
     for start, end, replacement in sorted(replacements, reverse=True):
         text = text[:start] + replacement + text[end:]
     return text
