@@ -91,13 +91,29 @@ def utf16_len(text):
     return len(text.encode("utf-16-le")) // 2
 
 def add_channel_branding(text, entities, channel, limit=None):
-    """Preserve the source post verbatim; do not inject channel headers or footers."""
+    """Append a clickable link to the destination channel without changing the source text."""
     text = text or ""
+    entities = list(entities or [])
+    username = str(channel or "").lstrip("@")
+    if username:
+        footer = f"📣 @{username}"
+        channel_url = f"https://t.me/{username}"
+        # Avoid duplicating the footer when a draft is previewed more than once.
+        if not text.rstrip().endswith(footer):
+            separator = "\n\n" if text else ""
+            footer_start = utf16_len(text + separator + "📣 ")
+            text = text + separator + footer
+            entities.append({
+                "type": "text_link",
+                "offset": footer_start,
+                "length": utf16_len("@" + username),
+                "url": channel_url,
+            })
     max_text_len = limit if limit is not None else 4096
     # Telegram limits count UTF-16 code units. Avoid silently truncating the post.
     if utf16_len(text) > max_text_len:
-        raise ValueError("متن از محدودیت تلگرام طولانی‌تر است؛ برای حفظ متن، انتشار متوقف شد.")
-    return text, list(entities or [])
+        raise ValueError("متن به‌همراه لینک کانال از محدودیت تلگرام طولانی‌تر است؛ برای حفظ متن، انتشار متوقف شد.")
+    return text, entities
 
 def clean_text_and_entities(text, entities):
     """Remove source ads while preserving Telegram text_link entities on their visible labels."""
