@@ -1,5 +1,5 @@
 {
-  "offset": 267987104,
+  "offset": 267987107,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -9,6 +9,33 @@
         "file_id": "AgACAgQAAxkBAAMCatoMoZm7rFUZd-NDglTA6_sGG80AAjUPaxuo-dRSZMhQS7q0AAHjAQADAgADeQADPQQ"
       },
       "channel": "@NetPlusFa"
+    },
+    "267987104": {
+      "chat_id": 1677869966,
+      "text": "📝 پیش‌نمایش متن:\n📣 نت‌پلاس\n🕺 کانفیگ پرسرعت نپستر برای تمامی اپراتور ها نامحدود مولتی لوکیشن اختصاصی و آیپی ثابت مخصوص دانلود وب گردی برای اندروید و آیفون\n🔴کانفیگی که توی شرایط بحرانی کشور وصله!\n📌 @NetPlusFa",
+      "entities": [],
+      "media": {
+        "type": "document",
+        "file_id": "BQACAgQAAxkBAANfatodB1ru6sofUGR0i10Uq2TCIdsAApMlAAKXztFSG1zNjqqCPec9BA"
+      },
+      "channel": "@NetPlusFa",
+      "cleanup_message_ids": [
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "preview_message_ids": [
+        102,
+        103,
+        104
+      ]
     }
   },
   "edit_mode": {}
