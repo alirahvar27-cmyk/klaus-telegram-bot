@@ -331,19 +331,21 @@ def extract_message(msg):
     rich = msg.get("rich_message")
 
     def collect_rich_text(value):
-        """Collect visible text fragments in payload order, including formatted runs."""
+        """Collect all visible text, including text runs nested under text/caption keys."""
         parts = []
         if isinstance(value, list):
             for item in value:
                 parts.extend(collect_rich_text(item))
         elif isinstance(value, dict):
             for key, child in value.items():
-                if key in {"text", "caption"}:
-                    if isinstance(child, str) and child:
-                        parts.append(child)
-                elif key in {"entities", "caption_entities", "file_id"}:
+                if key in {"entities", "caption_entities", "file_id"}:
                     continue
+                if key in {"text", "caption"} and isinstance(child, str):
+                    if child:
+                        parts.append(child)
                 elif isinstance(child, (dict, list)):
+                    # Some Telegram wrappers encode formatted text as a list of
+                    # nested runs inside the "text" field. Recurse into those too.
                     parts.extend(collect_rich_text(child))
         return parts
 
