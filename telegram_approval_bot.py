@@ -136,7 +136,7 @@ def clean_text_and_entities(text, entities):
     for raw_line in text.splitlines(keepends=True):
         line = raw_line.rstrip("\r\n")
         line_end = old_pos + len(line)
-        line_links = [(a, b, e) for a, b, e in spans if a < line_end and b > old_pos and e.get("type") == "text_link"]
+        # Keep every Telegram formatting entity (bold, italic, code, spoiler, quote, underline, etc.), not only links.\n        line_links = [(a, b, e) for a, b, e in spans if a < line_end and b > old_pos]
         stripped = line.strip()
         is_promo = bool(promo_line.search(stripped))
         ad_words = re.search(
@@ -214,16 +214,24 @@ def clean_text_and_entities(text, entities):
         kept_parts.append(line)
         line_start_new_units = new_units
         for a, b, ent in line_links:
-            if a >= old_pos and b <= old_pos + len(line):
-                visible = text[a:b]
-                new_ent = {
-                    "type": "text_link",
-                    "offset": line_start_new_units + utf16_len(text[old_pos:a]),
-                    "length": utf16_len(visible),
-                    "url": ent.get("url", "")
-                }
-                if new_ent["url"] and is_allowed_link(new_ent["url"]):
-                    kept_entities.append(new_ent)
+            # Rebuild entities on each retained line segment so multi-line quote
+            # formatting survives text cleanup without leaving invalid offsets.
+            seg_start = max(a, old_pos)
+            seg_end = min(b, old_pos + len(line))
+            if seg_start >= seg_end:
+                continue
+            entity_type = ent.get("type", "")
+            if entity_type == "text_link" and not is_allowed_link(ent.get("url", "")):
+                continue
+            # A source URL removed from this line invalidates its old offsets.
+            if cleaned_line != raw_line.rstrip("\\r\\n"):
+                continue
+            new_ent = dict(ent)
+            new_ent["offset"] = line_start_new_units + utf16_len(text[old_pos:seg_start])
+            new_ent["length"] = utf16_len(text[seg_start:seg_end])
+            if entity_type == "text_link" and not new_ent.get("url"):
+                continue
+            kept_entities.append(new_ent)
         new_units += utf16_len(line)
         old_pos += len(raw_line)
 
