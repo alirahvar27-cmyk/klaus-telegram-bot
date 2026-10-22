@@ -65,33 +65,111 @@ def api(method, payload=None, timeout=35):
 def is_admin(user_id):
     return bool(ADMIN_ID) and str(user_id) == ADMIN_ID
 
-def send_text(chat_id, text, keyboard=None):
+def send_text(chat_id, text, keyboard=None, entities=None):
     payload = {"chat_id": chat_id, "text": text}
     if keyboard:
         payload["reply_markup"] = {"inline_keyboard": keyboard}
+    if entities:
+        payload["entities"] = entities
     return api("sendMessage", payload)
 
-def clean_text(text):
+def utf16_len(text):
+    return len(text.encode("utf-16-le")) // 2
+
+def clean_text_and_entities(text, entities):
+    """Remove source ads while preserving Telegram text_link entities on their visible labels."""
     text = text or ""
-    # Remove ordinary source-channel links, but never strip proxy/SOCKS URLs.
-    text = re.sub(r"(?i)\b(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/(?!proxy(?:[/?#]|$)|socks(?:[/?#]|$))[A-Za-z0-9_+/=?%&.-]+", "", text)
-    text = re.sub(r"(?i)\b(?:خرید|فروش)\s*(?:آی\s*پی|ip|فیلترشکن|وی\s*پی\s*ان)|(?:فیلترشکن|وی\s*پی\s*ان)\s*(?:اختصاصی|ارزان|اقتصادی)|آی\s*پی\s*(?:اختصاصی|ارزان|اقتصادی)|ip\s*(?:اختصاصی|ارزان|اقتصادی)", "", text)
-    text = re.sub(r"(?i)@[A-Za-z0-9_]{4,}", "", text)
-    lines = []
-    for line in text.splitlines():
+    entities = entities or []
+
+    def char_index(offset):
+        units = 0
+        for i, char in enumerate(text):
+            if units >= offset:
+                return i
+            units += len(char.encode("utf-16-le")) // 2
+        return len(text)
+
+    spans = []
+    for ent in entities:
+        start = char_index(int(ent.get("offset", 0)))
+        end = char_index(int(ent.get("offset", 0)) + int(ent.get("length", 0)))
+        spans.append((start, end, ent))
+
+    kept_parts = []
+    kept_entities = []
+    old_pos = 0
+    new_units = 0
+    promo_line = re.compile(
+        r"(?:خرید|فروش).{0,45}(?:فیلترشکن|فیلتر شکن|آی\\s*پی|\\bip\\b)|"
+        r"(?:فیلترشکن|فیلتر شکن|وی\\s*پی\\s*ان|آی\\s*پی|\\bip\\b).{0,35}(?:اختصاصی|اقتصادی|ارزان|خرید|فروش)",
+        re.IGNORECASE
+    )
+    for raw_line in text.splitlines(keepends=True):
+        line = raw_line.rstrip("\\r\\n")
+        line_end = old_pos + len(line)
+        line_links = [(a, b, e) for a, b, e in spans if a < line_end and b > old_pos and e.get("type") == "text_link"]
         stripped = line.strip()
-        if not stripped:
-            lines.append("")
+
+        # Remove promo/footer lines, including the account handle usually placed below them.
+        is_promo = bool(promo_line.search(stripped))
+        is_handle_footer = bool(re.fullmatch(r"[\\s✅✔️☑️〰️~—–-]*@[A-Za-z0-9_]{4,}[\\s✅✔️☑️〰️~—–-]*", stripped))
+        has_proxy_link = any(
+            re.search(r"پروکسی|proxy|socks|همراه", text[a:b], re.IGNORECASE)
+            for a, b, _ in line_links
+        )
+        label_only = bool(re.fullmatch(r"[\\s•|·،,ـ]*(?:همراه|پروکسی)(?:[\\s•|·،,ـ]*(?:همراه|پروکسی))*[\\s•|·،,ـ]*", stripped, re.IGNORECASE))
+        if is_promo or is_handle_footer or (label_only and not has_proxy_link):
+            old_pos += len(raw_line)
             continue
+
+        # Remove source attribution lines and ordinary source-channel URLs.
         if re.search(r"(?i)(منبع|source|forwarded from|ارسالی از|کانال اصلی|عضویت در کانال)", stripped):
+            old_pos += len(raw_line)
             continue
-        if re.search(r"(خرید|فروش).{0,25}(فیلترشکن|آی\s*پی|\bip\b)|(?:فیلترشکن|وی\s*پی\s*ان).{0,20}(اختصاصی|ارزان|اقتصادی)|(?:آی\s*پی|\bip\b).{0,20}(خرید|اقتصادی|اختصاصی)", stripped):
+
+        # Remove non-proxy Telegram channel links while preserving proxy links.
+        cleaned_line = re.sub(
+            r"(?i)\\b(?:https?://)?(?:www\\.)?(?:t\\.me|telegram\\.me)/(?!proxy(?:[/?#]|$)|socks(?:[/?#]|$))[A-Za-z0-9_+/=?%&.-]+",
+            "", line
+        )
+        # If the line changed internally, discard entities on that line to avoid bad offsets.
+        if cleaned_line != line:
+            line = cleaned_line
+            line_end = old_pos + len(line)
+            line_links = []
+
+        if not line.strip():
+            old_pos += len(raw_line)
             continue
-        # Strip repeated source branding/link-label-only lines; real URLs are kept.
-        if re.fullmatch(r"[\s•|·،,ـ]*(?:همراه|پروکسی)(?:[\s•|·،,ـ]*(?:همراه|پروکسی))*[\s•|·،,ـ]*", stripped, flags=re.IGNORECASE):
-            continue
-        lines.append(line.rstrip())
-    return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
+
+        # Trim trailing spaces but keep line breaks between retained lines.
+        line = line.rstrip()
+        if kept_parts:
+            kept_parts.append("\\n")
+            new_units += 1
+        kept_parts.append(line)
+        line_start_new_units = new_units
+        for a, b, ent in line_links:
+            if a >= old_pos and b <= old_pos + len(line):
+                visible = text[a:b]
+                # Keep the visible word only; Telegram stores the target in the entity.
+                new_offset = line_start_new_units + utf16_len(text[old_pos:a])
+                new_ent = {"type": "text_link", "offset": new_offset, "length": utf16_len(visible), "url": ent.get("url", "")}
+                if new_ent["url"]:
+                    kept_entities.append(new_ent)
+        new_units += utf16_len(line)
+        old_pos += len(raw_line)
+
+    cleaned = "".join(kept_parts).strip()
+    # Strip any remaining source usernames without touching proxy entity labels.
+    # A source username is normally removed as part of the promo footer above.
+    if not cleaned:
+        return "", []
+    return cleaned, sorted(kept_entities, key=lambda e: e["offset"])
+
+def clean_text(text):
+    return clean_text_and_entities(text, [])[0]
+
 def detect_channel(text, media_type):
     t = (text or "").casefold()
     rules = [
@@ -117,42 +195,10 @@ def detect_channel(text, media_type):
         return "@Khndedoon"
     return "@NbzeKhabar" if len(t) > 180 else "@Khndedoon"
 
-def append_proxy_entity_links(text, entities):
-    """Make hidden proxy links visible as real URLs, including nonstandard proxy URL hosts."""
-    if not text or not entities:
-        return text
-
-    def py_index(offset):
-        units = 0
-        for i, char in enumerate(text):
-            if units >= offset:
-                return i
-            units += len(char.encode("utf-16-le")) // 2
-        return len(text)
-
-    replacements = []
-    for entity in entities:
-        if entity.get("type") != "text_link" or not entity.get("url"):
-            continue
-        url = entity["url"].strip()
-        start = py_index(int(entity.get("offset", 0)))
-        end = py_index(int(entity.get("offset", 0)) + int(entity.get("length", 0)))
-        label = text[start:end].strip()
-        # Include all links hidden behind the repeated "پروکسی" labels, as well as
-        # standard Telegram proxy/SOCKS links regardless of their visible label.
-        is_proxy_label = bool(re.search(r"پروکسی|proxy|socks", label, re.IGNORECASE))
-        is_proxy_url = bool(re.search(r"(?i)(?:t\.me|telegram\.me)/(?:proxy|socks)(?:[/?#]|$)|tg://proxy(?:[/?#]|$)", url))
-        if start < end and (is_proxy_label or is_proxy_url) and url not in text[start:end]:
-            replacements.append((start, end, label + " — " + url))
-    for start, end, replacement in sorted(replacements, reverse=True):
-        text = text[:start] + replacement + text[end:]
-    return text
-
 def extract_message(msg):
     raw_text = msg.get("text") or msg.get("caption") or ""
     entities = msg.get("entities") or msg.get("caption_entities") or []
-    raw_text = append_proxy_entity_links(raw_text, entities)
-    text = clean_text(raw_text)
+    text, clean_entities = clean_text_and_entities(raw_text, entities)
     media = None
     for kind in ("photo", "video", "audio", "voice", "document", "animation", "video_note", "sticker"):
         value = msg.get(kind)
@@ -161,7 +207,7 @@ def extract_message(msg):
                 value = value[-1]
             media = {"type": kind, "file_id": value.get("file_id")}
             break
-    return {"text": text, "media": media}
+    return {"text": text, "entities": clean_entities, "media": media}
 
 def preview(chat_id, draft_id):
     draft = STATE["pending"].get(draft_id)
@@ -184,7 +230,7 @@ def preview(chat_id, draft_id):
             api(method, {"chat_id": chat_id, field: media["file_id"]})
         if caption:
             # A separate text preview keeps all media types and long captions manageable.
-            send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption[:3900])
+            send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption[:3900], entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in draft.get("entities", []) if e["offset"] + e["length"] <= utf16_len(caption[:3900])])
         elif not media:
             send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
         controls = [
@@ -205,7 +251,7 @@ def publish(draft):
     if not media:
         if not text:
             raise ValueError("پست خالی است")
-        return api("sendMessage", {"chat_id": channel, "text": text[:4096], "disable_web_page_preview": False})
+        return api("sendMessage", {"chat_id": channel, "text": text[:4096], "entities": draft.get("entities", []), "disable_web_page_preview": False})
     kind = media["type"]
     method = {
         "photo": "sendPhoto", "video": "sendVideo", "audio": "sendAudio",
@@ -217,6 +263,8 @@ def publish(draft):
     payload = {"chat_id": channel, field: media["file_id"]}
     if text and kind not in {"sticker", "video_note"}:
         payload["caption"] = text[:1024]
+        if draft.get("entities"):
+            payload["caption_entities"] = [e for e in draft["entities"] if e["offset"] + e["length"] <= utf16_len(text[:1024])]
     return api(method, payload)
 
 def handle_callback(query):
@@ -332,6 +380,7 @@ def handle_update(update):
         if draft:
             new_text = clean_text(msg.get("text") or msg.get("caption") or "")
             draft["text"] = new_text
+            draft["entities"] = []
             save_state()
             send_text(chat_id, "متن پیش‌نویس به‌روزرسانی شد.")
             preview(chat_id, draft_id)
@@ -348,7 +397,7 @@ def handle_update(update):
         return
     draft_id = str(update["update_id"])
     channel = detect_channel(content["text"], content["media"]["type"] if content["media"] else "")
-    STATE["pending"][draft_id] = {"chat_id": chat_id, "text": content["text"], "media": content["media"], "channel": channel}
+    STATE["pending"][draft_id] = {"chat_id": chat_id, "text": content["text"], "entities": content.get("entities", []), "media": content["media"], "channel": channel}
     save_state()
     preview(chat_id, draft_id)
 
