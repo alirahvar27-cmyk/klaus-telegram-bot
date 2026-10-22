@@ -398,7 +398,19 @@ def preview(chat_id, draft_id):
     caption, preview_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=3900)
     try:
         draft.setdefault("cleanup_message_ids", [])
-        if media:
+        # When the user forwards a Telegram message, preview a native copy of that
+        # message so Telegram itself preserves formatting, spoilers, links and media.
+        source_chat_id = draft.get("source_chat_id")
+        source_message_id = draft.get("source_message_id")
+        if source_chat_id is not None and source_message_id is not None and not draft.get("edited_manually"):
+            copied = api("copyMessage", {
+                "chat_id": chat_id,
+                "from_chat_id": source_chat_id,
+                "message_id": source_message_id,
+            })
+            draft["cleanup_message_ids"].append(copied["message_id"])
+            draft["preview_message_ids"].append(copied["message_id"])
+        elif media:
             kind = media["type"]
             method = {
                 "photo": "sendPhoto", "video": "sendVideo", "audio": "sendAudio",
@@ -410,12 +422,13 @@ def preview(chat_id, draft_id):
             sent_media = api(method, {"chat_id": chat_id, field: media["file_id"]})
             draft["cleanup_message_ids"].append(sent_media["message_id"])
             draft["preview_message_ids"].append(sent_media["message_id"])
-        if caption:
-            # A separate text preview keeps all media types and long captions manageable.
-            sent_caption = send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in preview_entities])
-            draft["cleanup_message_ids"].append(sent_caption["message_id"])
-            draft["preview_message_ids"].append(sent_caption["message_id"])
-        elif not media:
+        if not (source_chat_id is not None and source_message_id is not None and not draft.get("edited_manually")):
+            if caption:
+                # Edited/new content uses the text path; forwarded source messages use copyMessage above.
+                sent_caption = send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in preview_entities])
+                draft["cleanup_message_ids"].append(sent_caption["message_id"])
+                draft["preview_message_ids"].append(sent_caption["message_id"])
+            elif not media:
             warning = send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
             draft["cleanup_message_ids"].append(warning["message_id"])
         controls = [
@@ -436,6 +449,15 @@ def preview(chat_id, draft_id):
 
 def publish(draft):
     channel = draft["channel"]
+    source_chat_id = draft.get("source_chat_id")
+    source_message_id = draft.get("source_message_id")
+    if source_chat_id is not None and source_message_id is not None and not draft.get("edited_manually"):
+        # Telegram copyMessage preserves the source message's native formatting and media.
+        return api("copyMessage", {
+            "chat_id": channel,
+            "from_chat_id": source_chat_id,
+            "message_id": source_message_id,
+        })
     media = draft.get("media")
     text, post_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096 if not media else 1024)
     if not media:
@@ -582,6 +604,9 @@ def handle_update(update):
             new_text = clean_text(msg.get("text") or msg.get("caption") or "")
             draft["text"] = new_text
             draft["entities"] = []
+            draft["edited_manually"] = True
+            draft.pop("source_chat_id", None)
+            draft.pop("source_message_id", None)
             save_state()
             updated = send_text(chat_id, "متن پیش‌نویس به‌روزرسانی شد.")
             draft.setdefault("cleanup_message_ids", []).append(updated["message_id"])
@@ -604,7 +629,16 @@ def handle_update(update):
         return
     draft_id = str(update["update_id"])
     channel = detect_channel(content["text"], content["media"]["type"] if content["media"] else "")
-    STATE["pending"][draft_id] = {"chat_id": chat_id, "text": content["text"], "entities": content.get("entities", []), "media": content["media"], "channel": channel, "cleanup_message_ids": [msg["message_id"]]}
+    STATE["pending"][draft_id] = {
+        "chat_id": chat_id,
+        "text": content["text"],
+        "entities": content.get("entities", []),
+        "media": content["media"],
+        "channel": channel,
+        "source_chat_id": chat_id,
+        "source_message_id": msg["message_id"],
+        "cleanup_message_ids": [msg["message_id"]],
+    }
     save_state()
     preview(chat_id, draft_id)
 
