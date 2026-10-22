@@ -2,6 +2,12 @@ name: KLAUS Approval Bot
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/telegram-approval-bot.yml"
+      - "telegram_approval_bot.py"
   schedule:
     - cron: "*/5 * * * *"
 
