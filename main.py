@@ -490,7 +490,7 @@ def image_attribution(image):
         return ""
     parts = []
     if image.get("artist"):
-        artist = re.sub(r"\\s+", " ", image["artist"]).strip()
+        artist = re.sub(r"\s+", " ", image["artist"]).strip()
         parts.append(f"عکس: {artist[:70]}")
     if image.get("license"):
         parts.append(image["license"][:40])
@@ -505,7 +505,7 @@ def image_attribution(image):
 
 def channel_footer(channel):
     username = channel.lstrip("@")
-    return f"\\n\\n📣 مطالب بیشتر: https://t.me/{username}"
+    return f"\n\n📣 مطالب بیشتر: https://t.me/{username}"
 
 
 def publish_post(channel, post, image):
@@ -525,7 +525,7 @@ def publish_post(channel, post, image):
 
     attribution = image_attribution(image)
     # Keep the channel link intact and put image credit at the very end.
-    suffix = footer + (f"\\n\\n📷 {attribution}" if attribution else "")
+    suffix = footer + (f"\n\n📷 {attribution}" if attribution else "")
     caption = post
     if len(caption) + len(suffix) > 1024:
         caption = caption[:max(100, 1024 - len(suffix) - 1)].rstrip() + "…"
