@@ -136,7 +136,8 @@ def clean_text_and_entities(text, entities):
     for raw_line in text.splitlines(keepends=True):
         line = raw_line.rstrip("\r\n")
         line_end = old_pos + len(line)
-        # Keep every Telegram formatting entity (bold, italic, code, spoiler, quote, underline, etc.), not only links.\n        line_links = [(a, b, e) for a, b, e in spans if a < line_end and b > old_pos]
+        # Keep every Telegram formatting entity (bold, italic, code, spoiler, quote, underline, etc.), not only links.
+        line_links = [(a, b, e) for a, b, e in spans if a < line_end and b > old_pos]
         stripped = line.strip()
         is_promo = bool(promo_line.search(stripped))
         ad_words = re.search(
@@ -224,7 +225,7 @@ def clean_text_and_entities(text, entities):
             if entity_type == "text_link" and not is_allowed_link(ent.get("url", "")):
                 continue
             # A source URL removed from this line invalidates its old offsets.
-            if cleaned_line != raw_line.rstrip("\\r\\n"):
+            if cleaned_line != raw_line.rstrip("\r\n"):
                 continue
             new_ent = dict(ent)
             new_ent["offset"] = line_start_new_units + utf16_len(text[old_pos:seg_start])
