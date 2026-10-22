@@ -1,5 +1,5 @@
 {
-  "offset": 267987233,
+  "offset": 267987245,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -56,6 +56,168 @@
         118,
         119,
         120
+      ]
+    },
+    "267987244": {
+      "chat_id": 1677869966,
+      "text": "ریختن آلومینیوم مذاب روی قالب یخ؛ نمایشی خیره‌کننده از قدرت قوانین فیزیک 🧊🔥\nتماس آلومینیوم داغ با یخ در کسری از ثانیه بخار زیادی تولید می‌کنه\nآلومینیوم مذاب انرژی گرمایی زیادی داره که به‌سرعت به یخ منتقل میشه\nیخ اول ذوب و آبِ حاصل در تماس با فلز بسیار داغ به‌ سرعت بخار میشه\nپروکسی | پروکسی  | پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی | پروکسی  | پروکسی",
+      "entities": [
+        {
+          "type": "text_link",
+          "offset": 277,
+          "length": 6,
+          "url": "https://t.me/proxy?server=Suodbo.co.uk.&port=443&secret=eef0eeb0bd9adc4fd4a93994ee3b2a216b63646e2e79656b74616e65742e636f6d"
+        },
+        {
+          "type": "text_link",
+          "offset": 296,
+          "length": 6,
+          "url": "https://t.me/proxy?server=ving.mozitop.co.uk&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 303,
+          "length": 7,
+          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 312,
+          "length": 6,
+          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 321,
+          "length": 6,
+          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 328,
+          "length": 6,
+          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 337,
+          "length": 6,
+          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 346,
+          "length": 6,
+          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 353,
+          "length": 6,
+          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 362,
+          "length": 6,
+          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 371,
+          "length": 6,
+          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 378,
+          "length": 6,
+          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 388,
+          "length": 6,
+          "url": "https://t.me/proxy?server=Rudmoain.co.uk.&port=443&secret=eef0eeb0bd9adc4fd4a93994ee3b2a216b63646e2e79656b74616e65742e636f6d"
+        },
+        {
+          "type": "text_link",
+          "offset": 397,
+          "length": 6,
+          "url": "https://t.me/proxy?server=puot.mozitop.co.uk&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
+        },
+        {
+          "type": "text_link",
+          "offset": 404,
+          "length": 6,
+          "url": "https://t.me/proxy?server=PAyDaR.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
+        },
+        {
+          "type": "text_link",
+          "offset": 414,
+          "length": 6,
+          "url": "https://t.me/proxy?server=nab.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
+        },
+        {
+          "type": "text_link",
+          "offset": 423,
+          "length": 6,
+          "url": "https://t.me/proxy?server=soh5.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
+        },
+        {
+          "type": "text_link",
+          "offset": 430,
+          "length": 6,
+          "url": "https://t.me/proxy?server=vasle.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
+        },
+        {
+          "type": "text_link",
+          "offset": 440,
+          "length": 6,
+          "url": "https://t.me/proxy?server=tassian.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
+        },
+        {
+          "type": "text_link",
+          "offset": 449,
+          "length": 6,
+          "url": "https://t.me/proxy?server=FOR-IRAN.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
+        },
+        {
+          "type": "text_link",
+          "offset": 456,
+          "length": 6,
+          "url": "https://t.me/proxy?server=soheil.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
+        },
+        {
+          "type": "text_link",
+          "offset": 465,
+          "length": 6,
+          "url": "https://t.me/proxy?server=for.you.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
+        },
+        {
+          "type": "text_link",
+          "offset": 475,
+          "length": 6,
+          "url": "https://t.me/proxy?server=AZADI.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
+        }
+      ],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIBAAFq2jYJVyo0kp5t9Tr3DJNmySm49wACNQwAAuFkzFIcV8HHysAhyD0E"
+      },
+      "channel": "@NetPlusFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 334,
+      "cleanup_message_ids": [
+        334,
+        335,
+        336,
+        337
+      ],
+      "preview_message_ids": [
+        335,
+        336,
+        337
       ]
     }
   },
