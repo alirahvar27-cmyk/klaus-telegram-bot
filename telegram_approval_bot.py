@@ -91,29 +91,51 @@ def utf16_len(text):
     return len(text.encode("utf-16-le")) // 2
 
 def add_channel_branding(text, entities, channel, limit=None):
-    """Append a clickable link to the destination channel without changing the source text."""
+    """Add destination channel name above the untouched post and its clickable link below."""
     text = text or ""
-    entities = list(entities or [])
+    entities = [dict(e) for e in (entities or [])]
     username = str(channel or "").lstrip("@")
-    if username:
-        footer = f"📣 @{username}"
-        channel_url = f"https://t.me/{username}"
-        # Avoid duplicating the footer when a draft is previewed more than once.
-        if not text.rstrip().endswith(footer):
-            separator = "\n\n" if text else ""
-            footer_start = utf16_len(text + separator + "📣 ")
-            text = text + separator + footer
-            entities.append({
-                "type": "text_link",
-                "offset": footer_start,
-                "length": utf16_len("@" + username),
-                "url": channel_url,
-            })
+    if not username:
+        if utf16_len(text) > (limit if limit is not None else 4096):
+            raise ValueError("متن از محدودیت طول تلگرام بیشتر است.")
+        return text, entities
+
+    title = CHANNELS.get("@" + username, (username, ""))[0]
+    header = f"📌 {title}"
+    footer = f"📣 @{username}"
+    channel_url = f"https://t.me/{username}"
+
+    # The draft body itself stays untouched; only shift existing entity offsets
+    # when adding the visible header.
+    body = text
+    body_entities = entities
+    header_prefix = header + ("\n\n" if body else "\n\n")
+    if body.startswith(header + "\n\n"):
+        header_prefix = ""
+    else:
+        body_entities = [
+            dict(e, offset=int(e.get("offset", 0)) + utf16_len(header_prefix))
+            for e in body_entities
+        ]
+
+    if body.rstrip().endswith(footer):
+        final_text = header_prefix + body
+        final_entities = body_entities
+    else:
+        separator = "\n\n" if body else ""
+        final_text = header_prefix + body + separator + footer
+        footer_start = utf16_len(header_prefix + body + separator + "📣 ")
+        final_entities = body_entities + [{
+            "type": "text_link",
+            "offset": footer_start,
+            "length": utf16_len("@" + username),
+            "url": channel_url,
+        }]
+
     max_text_len = limit if limit is not None else 4096
-    # Telegram limits count UTF-16 code units. Avoid silently truncating the post.
-    if utf16_len(text) > max_text_len:
-        raise ValueError("متن به‌همراه لینک کانال از محدودیت تلگرام طولانی‌تر است؛ برای حفظ متن، انتشار متوقف شد.")
-    return text, entities
+    if utf16_len(final_text) > max_text_len:
+        raise ValueError("متن همراه سربرگ و لینک کانال از محدودیت تلگرام طولانی‌تر است؛ برای حفظ متن، انتشار متوقف شد.")
+    return final_text, final_entities
 
 def clean_text_and_entities(text, entities):
     """Remove source ads while preserving Telegram text_link entities on their visible labels."""
@@ -368,7 +390,7 @@ def extract_message(msg):
     rich = msg.get("rich_message")
 
     def collect_rich_text(value, parent_key=""):
-        """Collect post body text, excluding buttons/link menus and other metadata."""
+        """Collect only post-body text runs; exclude button/link/menu metadata subtrees."""
         parts = []
         ignored_keys = {
             "entities", "caption_entities", "file_id", "reply_markup",
@@ -376,19 +398,31 @@ def extract_message(msg):
             "link", "links", "button_url", "web_app", "login_url",
             "switch_inline_query", "callback_data", "reply_to_markup",
         }
+
+        def metadata_key(key):
+            key = str(key).casefold()
+            # Some forward integrations use custom names such as link_buttons,
+            # social_links, website_buttons, or action_menu for these controls.
+            return (
+                key in ignored_keys
+                or any(token in key for token in (
+                    "button", "keyboard", "markup", "link", "menu",
+                    "website", "social", "web_app", "login_url",
+                    "callback", "action", "cta",
+                ))
+            )
+
         if isinstance(value, list):
             for item in value:
                 parts.extend(collect_rich_text(item, parent_key))
         elif isinstance(value, dict):
             for key, child in value.items():
-                normalized_key = str(key).casefold()
-                if normalized_key in ignored_keys:
+                if metadata_key(key):
                     continue
                 if key in {"text", "caption"} and isinstance(child, str):
                     if child:
                         parts.append(child)
                 elif isinstance(child, (dict, list)):
-                    # Recurse into nested text runs, but never into link/button metadata.
                     parts.extend(collect_rich_text(child, key))
         return parts
 
