@@ -398,19 +398,11 @@ def preview(chat_id, draft_id):
     caption, preview_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=3900)
     try:
         draft.setdefault("cleanup_message_ids", [])
-        # When the user forwards a Telegram message, preview a native copy of that
-        # message so Telegram itself preserves formatting, spoilers, links and media.
+        # Always preview the cleaned extracted content. Native copyMessage bypasses
+        # clean_text_and_entities and can reintroduce unwanted source links/ads.
         source_chat_id = draft.get("source_chat_id")
         source_message_id = draft.get("source_message_id")
-        if source_chat_id is not None and source_message_id is not None and not draft.get("edited_manually"):
-            copied = api("copyMessage", {
-                "chat_id": chat_id,
-                "from_chat_id": source_chat_id,
-                "message_id": source_message_id,
-            })
-            draft["cleanup_message_ids"].append(copied["message_id"])
-            draft["preview_message_ids"].append(copied["message_id"])
-        elif media:
+        if media:
             kind = media["type"]
             method = {
                 "photo": "sendPhoto", "video": "sendVideo", "audio": "sendAudio",
@@ -422,15 +414,13 @@ def preview(chat_id, draft_id):
             sent_media = api(method, {"chat_id": chat_id, field: media["file_id"]})
             draft["cleanup_message_ids"].append(sent_media["message_id"])
             draft["preview_message_ids"].append(sent_media["message_id"])
-        if not (source_chat_id is not None and source_message_id is not None and not draft.get("edited_manually")):
-            if caption:
-                # Edited/new content uses the text path; forwarded source messages use copyMessage above.
-                sent_caption = send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in preview_entities])
-                draft["cleanup_message_ids"].append(sent_caption["message_id"])
-                draft["preview_message_ids"].append(sent_caption["message_id"])
-            elif not media:
-                warning = send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
-                draft["cleanup_message_ids"].append(warning["message_id"])
+        if caption:
+            sent_caption = send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + caption, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in preview_entities])
+            draft["cleanup_message_ids"].append(sent_caption["message_id"])
+            draft["preview_message_ids"].append(sent_caption["message_id"])
+        elif not media:
+            warning = send_text(chat_id, "پست متنی خالی است؛ متن را ویرایش کن یا لغو کن.")
+            draft["cleanup_message_ids"].append(warning["message_id"])
         controls = [
             [{"text": "✅ تأیید و انتشار", "callback_data": f"approve:{draft_id}"}],
             [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"},
@@ -449,15 +439,8 @@ def preview(chat_id, draft_id):
 
 def publish(draft):
     channel = draft["channel"]
-    source_chat_id = draft.get("source_chat_id")
-    source_message_id = draft.get("source_message_id")
-    if source_chat_id is not None and source_message_id is not None and not draft.get("edited_manually"):
-        # Telegram copyMessage preserves the source message's native formatting and media.
-        return api("copyMessage", {
-            "chat_id": channel,
-            "from_chat_id": source_chat_id,
-            "message_id": source_message_id,
-        })
+    # Publish the cleaned draft rather than native-copying the source message,
+    # which bypasses link/ad cleanup and can reintroduce unwanted source links.
     media = draft.get("media")
     text, post_entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096 if not media else 1024)
     if not media:
