@@ -325,9 +325,40 @@ def extract_message(msg):
             break
 
     # Forwarded posts delivered by this Telegram integration expose rich_message
-    # instead of the standard text/caption/photo fields.
+    # instead of the standard text/caption/photo fields. Rich text may be split
+    # into multiple runs when formatting changes (bold, monospace/code, links).
+    # Collect all leaf text runs in order rather than accepting only the first run.
     rich = msg.get("rich_message")
+
+    def collect_rich_text(value):
+        if isinstance(value, list):
+            parts = []
+            for item in value:
+                parts.extend(collect_rich_text(item))
+            return parts
+        if not isinstance(value, dict):
+            return []
+        child_parts = []
+        for key, child in value.items():
+            if key in {"text", "caption", "entities", "caption_entities", "file_id"}:
+                continue
+            if isinstance(child, (dict, list)):
+                child_parts.extend(collect_rich_text(child))
+        if child_parts:
+            return child_parts
+        for key in ("text", "caption"):
+            candidate = value.get(key)
+            if isinstance(candidate, str) and candidate:
+                return [candidate]
+        return []
+
     if rich:
+        rich_parts = collect_rich_text(rich)
+        if rich_parts:
+            # Formatting runs are contiguous pieces of the same visible post;
+            # keep their original whitespace/newlines and concatenate verbatim.
+            raw_text = "".join(rich_parts)
+            entities = []
         walk_rich(rich)
 
     # rich_message can carry text segments whose entity offsets are relative to
