@@ -258,7 +258,7 @@ def is_allowed_link(url):
 def message_has_disallowed_link(message):
     """Reject the whole post if it contains any visible or hidden non-allowlisted link."""
     urls = []
-    url_pattern = re.compile(r"(?i)(?:https?://|www\\.|t\\.me/|telegram\\.me/)[^\\s<>]+")
+    url_pattern = re.compile(r"(?i)(?:https?://|www\\.|t\\.me/|telegram\\.me/)[^\\s<>]+|(?<![@\\w.-])(?:[a-z0-9-]+\\.)+(?:com|net|org|ir|io|co|me|info|biz|app|dev|xyz|site|online|shop|live|pro|tv|gg|ly|ru|cn|uk|de|fr|us)(?:/[^\\s<>]*)?")
     def walk(value):
         if isinstance(value, dict):
             for key, child in value.items():
