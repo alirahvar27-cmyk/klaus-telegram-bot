@@ -158,13 +158,27 @@ def clean_text_and_entities(text, entities):
         line_links = [(a, b, e) for a, b, e in spans if a < line_end and b > old_pos and e.get("type") == "text_link"]
         stripped = line.strip()
         is_promo = bool(promo_line.search(stripped))
+        ad_words = re.search(
+            r"(?i)(تبلیغ|تبلیغات|اسپانسر|حمایت مالی|عضویت در کانال|کانال ما|دنبال کنید|فالو کنید|"
+            r"خرید از|سفارش دهید|ثبت سفارش|تخفیف ویژه|کد تخفیف|لینک خرید|برای خرید|"
+            r"منبع|source|forwarded from|ارسالی از|کانال اصلی|وب.?سایت ما|سایت ما|"
+            r"join us|follow us|subscribe|advertisement|sponsor|promo code)",
+            stripped
+        )
         is_handle_footer = bool(re.fullmatch(r"[\s✅✔️☑️〰️~—–-]*@[A-Za-z0-9_]{4,}[\s✅✔️☑️〰️~—–-]*", stripped))
         has_proxy_link = any(
             re.search(r"پروکسی|proxy|socks|همراه", text[a:b], re.IGNORECASE)
             for a, b, _ in line_links
         )
         label_only = bool(re.fullmatch(r"[\s•|·،,ـ]*(?:همراه|پروکسی)(?:[\s•|·،,ـ]*(?:همراه|پروکسی))*[\s•|·،,ـ]*", stripped, re.IGNORECASE))
-        if is_promo or is_handle_footer or (label_only and not has_proxy_link):
+        # Drop source-channel links even when Telegram hides the URL behind a label.
+        has_source_channel_link = any(
+            re.search(r"(?i)(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/", str(ent.get("url", "")))
+            and not re.search(r"(?i)(?:t\.me|telegram\.me)/(?:proxy|socks)(?:[/?#]|$)", str(ent.get("url", "")))
+            for _, _, ent in line_links
+        )
+        has_visible_url = bool(re.search(r"(?i)(?:https?://|www\.|t\.me/|telegram\.me/)[^\s]+", stripped))
+        if is_promo or is_handle_footer or has_source_channel_link or (ad_words and (line_links or has_visible_url)) or (label_only and not has_proxy_link):
             old_pos += len(raw_line)
             continue
         if re.search(r"(?i)(منبع|source|forwarded from|ارسالی از|کانال اصلی|عضویت در کانال)", stripped):
