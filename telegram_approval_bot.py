@@ -413,13 +413,7 @@ def extract_message(msg):
     else:
         text, clean_entities = clean_text_and_entities(raw_text, entities)
 
-    # Never silently return a partially stripped post when the cleaner removes
-    # a substantial part of the original text. Preserve the post rather than
-    # lose educational content; entity offsets are discarded in this fallback.
-    original = raw_text.strip()
-    if original and (not text.strip() or len(text.strip()) < len(original) * 0.70):
-        text = original
-        clean_entities = []
+    # Never restore the original after cleanup: doing so could reintroduce ads or links.
     return {"text": text, "entities": clean_entities, "media": media}
 
 def preview(chat_id, draft_id):
