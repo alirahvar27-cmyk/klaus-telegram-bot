@@ -193,7 +193,7 @@ jobs:
                   parts = _split_caption(text, entities) if text else []
                   sent = _send_album(chat_id, items, parts)
                   for extra_text, extra_entities in parts[1:]:
-                      prefix = "📝 ادامه متن پیش‌نمایش:\n\n"
+                      prefix = "📝 ادامه متن پیش‌نمایش:" + chr(10) * 2
                       sent.append(send_text(chat_id, prefix + extra_text, entities=[dict(e, offset=e["offset"] + utf16_len(prefix)) for e in extra_entities]))
               elif items:
                   item = items[0]
@@ -205,10 +205,10 @@ jobs:
                       payload["caption"], payload["caption_entities"] = parts[0]
                   sent.append(api(methods[kind], payload))
                   for extra_text, extra_entities in parts[1:]:
-                      prefix = "📝 ادامه متن پیش‌نمایش:\n\n"
+                      prefix = "📝 ادامه متن پیش‌نمایش:" + chr(10) * 2
                       sent.append(send_text(chat_id, prefix + extra_text, entities=[dict(e, offset=e["offset"] + utf16_len(prefix)) for e in extra_entities]))
               elif text:
-                  sent.append(send_text(chat_id, "📝 پیش‌نمایش متن:\n\n" + text, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:\n\n")) for e in entities]))
+                  sent.append(send_text(chat_id, "📝 پیش‌نمایش متن:" + chr(10) * 2 + text, entities=[dict(e, offset=e["offset"] + utf16_len("📝 پیش‌نمایش متن:" + chr(10) * 2)) for e in entities]))
               else:
                   sent.append(send_text(chat_id, "پست خالی است؛ متن را ویرایش کن یا لغو کن."))
               for item in sent:
