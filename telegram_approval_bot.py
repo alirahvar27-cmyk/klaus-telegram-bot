@@ -267,16 +267,54 @@ def detect_channel(text, media_type):
     return "@NbzeKhabar" if len(t) > 180 else "@Khndedoon"
 
 def extract_message(msg):
-    # Telegram forwards may contain text/captions whose links or source lines
-    # are all removed by the cleanup filter. Never reject a non-empty post
-    # solely because cleanup removed every character; retain the original
-    # visible text as a safe fallback when there is no cleaned text.
+    """Extract ordinary Bot API messages and Telegram's rich_message forward payload."""
+    media_kinds = ("photo", "video", "audio", "voice", "document", "animation", "video_note", "sticker")
     raw_text = msg.get("text") or msg.get("caption") or ""
     entities = msg.get("entities") or msg.get("caption_entities") or []
-    text, clean_entities = clean_text_and_entities(raw_text, entities)
     media = None
-    # Handle standard Telegram media, including forwarded photo+caption posts.
-    for kind in ("photo", "video", "audio", "voice", "document", "animation", "video_note", "sticker"):
+
+    def walk_rich(value, parent_key=""):
+        """Best-effort traversal for rich_message payloads whose schema may vary."""
+        nonlocal raw_text, entities, media
+        if isinstance(value, list):
+            # Telegram photo arrays contain multiple sizes; choose the largest last.
+            if parent_key == "photo" and value and all(isinstance(x, dict) and x.get("file_id") for x in value):
+                media = {"type": "photo", "file_id": value[-1]["file_id"]}
+                return
+            for item in value:
+                walk_rich(item, parent_key)
+            return
+        if not isinstance(value, dict):
+            return
+
+        for text_key in ("text", "caption"):
+            candidate = value.get(text_key)
+            if isinstance(candidate, str) and candidate.strip() and not raw_text:
+                raw_text = candidate
+                entities = value.get("entities") or value.get("caption_entities") or []
+
+        for kind in media_kinds:
+            candidate = value.get(kind)
+            if candidate and media is None:
+                if kind == "photo" and isinstance(candidate, list):
+                    candidate = candidate[-1]
+                if isinstance(candidate, dict) and candidate.get("file_id"):
+                    media = {"type": kind, "file_id": candidate["file_id"]}
+                elif isinstance(candidate, list):
+                    walk_rich(candidate, kind)
+        # Some rich payloads store a media object directly with file_id.
+        if media is None and value.get("file_id"):
+            inferred = parent_key if parent_key in media_kinds else value.get("type")
+            if inferred in media_kinds:
+                media = {"type": inferred, "file_id": value["file_id"]}
+        for key, child in value.items():
+            if key in {"text", "caption", "entities", "caption_entities", "file_id"}:
+                continue
+            if isinstance(child, (dict, list)):
+                walk_rich(child, key)
+
+    # Normal message fields first.
+    for kind in media_kinds:
         value = msg.get(kind)
         if not value:
             continue
@@ -285,7 +323,14 @@ def extract_message(msg):
         if isinstance(value, dict) and value.get("file_id"):
             media = {"type": kind, "file_id": value["file_id"]}
             break
-    # Preserve original caption/text if filtering removed everything.
+
+    # Forwarded posts delivered by this Telegram integration expose rich_message
+    # instead of the standard text/caption/photo fields.
+    rich = msg.get("rich_message")
+    if rich:
+        walk_rich(rich)
+
+    text, clean_entities = clean_text_and_entities(raw_text, entities)
     if raw_text.strip() and not text.strip():
         text = raw_text.strip()
         clean_entities = []
