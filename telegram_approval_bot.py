@@ -396,19 +396,9 @@ def extract_message(msg):
             entities = []
         walk_rich(rich)
 
-    # rich_message can carry text segments whose entity offsets are relative to
-    # an inner fragment rather than the reconstructed full text. Applying those
-    # offsets to the whole post can incorrectly delete ordinary paragraphs and
-    # checklist lines. For rich forwards, prioritize preserving the complete
-    # visible text; clean using visible text only, without potentially misaligned
-    # hidden-link entities. Standard Bot API messages keep the full entity cleanup.
-    if rich:
-        text, clean_entities = clean_text_and_entities(raw_text, [])
-    else:
-        text, clean_entities = clean_text_and_entities(raw_text, entities)
-
-    # Never restore the original after cleanup: doing so could reintroduce ads or links.
-    return {"text": text, "entities": clean_entities, "media": media}
+    # Preserve the post's original visible text and formatting. Non-allowlisted links
+    # are rejected as a whole in handle_update before extraction.
+    return {"text": raw_text, "entities": entities, "media": media}
 
 def preview(chat_id, draft_id):
     draft = STATE["pending"].get(draft_id)
@@ -604,15 +594,22 @@ def handle_update(update):
         if chat_id:
             send_text(chat_id, "⛔ این بات خصوصی است و فقط مدیر می‌تواند از آن استفاده کند.")
         return
+    # Reject the entire incoming message if it contains any non-allowlisted link.
+    # Do this before extraction/cleanup so no partial post can be published.
+    if message_has_disallowed_link(msg):
+        log.info("Rejected whole incoming message %s: contains a non-allowlisted link", msg.get("message_id"))
+        delete_private_message(chat_id, msg["message_id"])
+        send_text(chat_id, "🚫 کل پیام به‌دلیل داشتن لینک غیرمجاز رد شد. فقط لینک کانال‌های خودمان و لینک پروکسی واقعی مجاز است.")
+        return
+
     user_key = str(user["id"])
     if user_key in STATE["edit_mode"]:
         draft_id = STATE["edit_mode"].pop(user_key)
         draft = STATE["pending"].get(draft_id)
         if draft:
             draft.setdefault("cleanup_message_ids", []).append(msg["message_id"])
-            new_text = clean_text(msg.get("text") or msg.get("caption") or "")
-            draft["text"] = new_text
-            draft["entities"] = []
+            draft["text"] = msg.get("text") or msg.get("caption") or ""
+            draft["entities"] = msg.get("entities") or msg.get("caption_entities") or []
             draft["edited_manually"] = True
             draft.pop("source_chat_id", None)
             draft.pop("source_message_id", None)
@@ -628,9 +625,6 @@ def handle_update(update):
     if msg.get("text") == "/cancel":
         send_text(chat_id, "برای لغو، دکمه «لغو» زیر پیش‌نویس را بزن.")
         return
-    # Do not reject a useful post just because it contains an unwanted link.
-    # extract_message/clean_text_and_entities remove the offending link line while
-    # keeping the rest of the post for preview and approval.
     content = extract_message(msg)
     if not content["text"] and not content["media"]:
         # Diagnostic reply prevents guessing when Telegram sends an unsupported
