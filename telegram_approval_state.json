@@ -1,5 +1,5 @@
 {
-  "offset": 267987107,
+  "offset": 267987116,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -35,6 +35,27 @@
         102,
         103,
         104
+      ]
+    },
+    "267987115": {
+      "chat_id": 1677869966,
+      "text": "",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAN1atoe1YV4r2cnpPU2AAHxcVGOiQdgAAJzDmsbUXS4UnqtNIZ7XzHcAQADAgADeAADPQQ"
+      },
+      "channel": "@Khndedoon",
+      "cleanup_message_ids": [
+        117,
+        118,
+        119,
+        120
+      ],
+      "preview_message_ids": [
+        118,
+        119,
+        120
       ]
     }
   },
