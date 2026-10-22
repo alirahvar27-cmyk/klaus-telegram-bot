@@ -147,11 +147,20 @@ def clean_text_and_entities(text, entities):
             stripped
         )
         is_handle_footer = bool(re.fullmatch(r"[\s✅✔️☑️〰️~—–-]*@[A-Za-z0-9_]{4,}[\s✅✔️☑️〰️~—–-]*", stripped))
-        has_proxy_link = any(
-            re.search(r"پروکسی|proxy|socks|همراه", text[a:b], re.IGNORECASE)
-            for a, b, _ in line_links
-        )
-        label_only = bool(re.fullmatch(r"[\s•|·،,ـ]*(?:همراه|پروکسی)(?:[\s•|·،,ـ]*(?:همراه|پروکسی))*[\s•|·،,ـ]*", stripped, re.IGNORECASE))
+        # A proxy label is meaningful only when its Telegram text-link entity
+        # points to a real Telegram proxy/socks URL; the word alone is not a link.
+        def is_proxy_url(url):
+            return bool(re.search(
+                r"(?i)(?:t\\.me|telegram\\.me)/(?:proxy|socks)(?:[/?#]|$)|"
+                r"tg://(?:proxy|socks)(?:[/?#]|$)",
+                str(url or "")
+            ))
+
+        has_proxy_link = any(is_proxy_url(ent.get("url", "")) for _, _, ent in line_links)
+        label_only = bool(re.fullmatch(
+            r"[\\s✅✔️☑️〰️~—–-•|·،,ـ]*(?:همراه|پروکسی)(?:[\\s✅✔️☑️〰️~—–-•|·،,ـ]*(?:همراه|پروکسی))*[\\s✅✔️☑️〰️~—–-•|·،,ـ]*",
+            stripped, re.IGNORECASE
+        ))
         # Remove any line containing a non-proxy URL, including hidden Telegram text links.
         # Proxy links (Telegram proxy/socks URLs or clearly labelled proxy links) are preserved.
         def is_proxy_url(url):
