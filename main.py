@@ -71,7 +71,7 @@ CLOUDFLARE_ACCOUNT_ID = os.getenv("CLOUDFLARE_ACCOUNT_ID", "").strip()
 CLOUDFLARE_MODEL = os.getenv("CLOUDFLARE_MODEL", "@cf/meta/llama-3.3-70b-instruct-fp8-fast").strip() or "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
 AI_ORDER = [
     item.strip().lower()
-    for item in os.getenv("KLAUS_AI_ORDER", "gemini,mistral,groq,openrouter,cloudflare,openai").split(",")
+    for item in (os.getenv("KLAUS_AI_ORDER") or "gemini,mistral,groq,openrouter,cloudflare,openai").split(",")
     if item.strip().lower() in {"gemini", "mistral", "openai", "groq", "openrouter", "cloudflare"}
 ]
 AI = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
