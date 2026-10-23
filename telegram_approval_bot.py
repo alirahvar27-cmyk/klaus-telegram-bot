@@ -637,7 +637,11 @@ def extract_message(msg):
 
 
 def preview(chat_id, draft_id):
-    # Sanitization also runs here so edits and older queued drafts are cleaned before display.\n    draft["text"], draft["entities"] = sanitize_text_and_entities(draft.get("text", ""), draft.get("entities", []))\n    draft = STATE["pending"].get(draft_id)
+    draft = STATE["pending"].get(draft_id)
+    if not draft:
+        return
+    # Sanitize older drafts and edited text before every preview.
+    draft["text"], draft["entities"] = sanitize_text_and_entities(draft.get("text", ""), draft.get("entities", []))
     if not draft:
         return
     for message_id in dict.fromkeys(draft.get("preview_message_ids", [])):
@@ -958,22 +962,21 @@ def publish_due_drafts():
                     send_text(chat_id, f"❌ انتشار زمان‌بندی‌شده انجام نشد: {str(exc)[:500]}")
                 except Exception:
                     log.exception("Could not report scheduled publish failure")
-            # Avoid a tight retry loop; keep draft available for manual action.
             draft["scheduled_approved"] = False
             save_state()
 
 
+def main():
     if not TOKEN:
         raise SystemExit("Missing TELEGRAM_BOT_TOKEN secret.")
     if not ADMIN_ID.isdigit():
         raise SystemExit("Set ADMIN_USER_ID to your numeric Telegram user ID in GitHub Actions secrets or variables.")
-    # Polling requires webhook mode to be disabled; preserve queued updates.
     api("deleteWebhook", {"drop_pending_updates": False})
     started = time.time()
     while time.time() - started < POLL_SECONDS:
         try:
-            updates = api("getUpdates", {"offset": int(STATE.get("offset", 0)), "timeout": 20, "allowed_updates": ["message", "callback_query"]}, timeout=30)
             publish_due_drafts()
+            updates = api("getUpdates", {"offset": int(STATE.get("offset", 0)), "timeout": 20, "allowed_updates": ["message", "callback_query"]}, timeout=30)
             grouped_updates = []
             album_buckets = {}
             for incoming in updates:
@@ -1006,7 +1009,7 @@ def publish_due_drafts():
                     sender = message.get("from") or callback.get("from") or {}
                     if chat_id and is_admin(sender.get("id")):
                         try:
-                            send_text(chat_id, "⚠️ پیام دریافت شد اما پردازش آن خطا داد. دوباره بفرست یا نوع فایل را عوض کن.\nجزئیات: " + str(exc)[:250])
+                            send_text(chat_id, "⚠️ پیام دریافت شد اما پردازش آن خطا داد.\\nجزئیات: " + str(exc)[:250])
                         except Exception:
                             log.exception("Could not notify admin about update failure")
                 STATE["offset"] = max(int(STATE.get("offset", 0)), int(update["update_id"]) + 1)
@@ -1015,6 +1018,7 @@ def publish_due_drafts():
             log.exception("Polling failed")
             time.sleep(5)
     save_state()
+
 
 if __name__ == "__main__":
     main()
