@@ -723,13 +723,20 @@ def preview(chat_id, draft_id):
         if mid:
             draft["cleanup_message_ids"].append(mid)
             draft["preview_message_ids"].append(mid)
-    controls = [
-        [{"text": ("✅ تأیید و زمان‌بندی" if draft.get("scheduled_at") else "✅ تأیید و انتشار"), "callback_data": f"approve:{draft_id}"}],
+    scheduled_ready = bool(draft.get("scheduled_at") and draft.get("scheduled_approved"))
+    controls = []
+    if not scheduled_ready:
+        controls.append([{"text": ("✅ تأیید و زمان‌بندی" if draft.get("scheduled_at") else "✅ تأیید و انتشار"), "callback_data": f"approve:{draft_id}"}])
+    controls.extend([
         [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"}, {"text": "🔄 تغییر کانال", "callback_data": f"channels:{draft_id}"}],
         [{"text": "⏰ تعیین زمان انتشار", "callback_data": f"schedule:{draft_id}"}],
         [{"text": "❌ لغو", "callback_data": f"cancel:{draft_id}"}],
-    ]
-    controls_msg = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})" + chr(10) + f"موضوع: {topic}" + chr(10) * 2 + "اگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
+    ])
+    status_text = ("زمان‌بندی ثبت شد؛ پست در زمان تعیین‌شده خودکار منتشر می‌شود." if scheduled_ready else "اگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.")
+    if scheduled_ready:
+        scheduled_dt = datetime.fromtimestamp(int(draft["scheduled_at"]), ZoneInfo("Asia/Tehran"))
+        status_text += chr(10) + "زمان: " + scheduled_dt.strftime("%Y-%m-%d %H:%M") + " (تهران)"
+    controls_msg = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})" + chr(10) + f"موضوع: {topic}" + chr(10) * 2 + status_text, controls)
     draft["cleanup_message_ids"].append(controls_msg["message_id"])
     draft["preview_message_ids"].append(controls_msg["message_id"])
     save_state()
@@ -873,9 +880,38 @@ def handle_update(update):
             STATE["edit_mode"].pop(str(user["id"]), None)
             save_state()
         elif action == "schedule":
-            STATE["schedule_mode"][str(user["id"])] = {"draft_id": draft_id, "step": "date"}
+            user_key = str(user["id"])
+            today = datetime.now(ZoneInfo("Asia/Tehran")).date()
+            rows = []
+            row = []
+            for day_offset in range(8):
+                chosen_date = today + timedelta(days=day_offset)
+                label = ("امروز" if day_offset == 0 else "فردا" if day_offset == 1 else chosen_date.strftime("%m-%d")) + " · " + chosen_date.isoformat()
+                row.append({"text": label, "callback_data": f"scheduledate:{draft_id}:{chosen_date.isoformat()}"})
+                if len(row) == 2:
+                    rows.append(row)
+                    row = []
+            if row:
+                rows.append(row)
+            STATE["schedule_mode"][user_key] = {"draft_id": draft_id, "step": "date"}
             save_state()
-            prompt = send_text(chat_id, "📅 تاریخ انتشار را به وقت ایران (تهران) بفرست؛ قالب: YYYY-MM-DD\nمثال: 2026-10-25\nفقط امروز تا ۷ روز آینده مجاز است. برای لغو، /cancel بفرست.")
+            prompt = send_text(chat_id, "📅 تاریخ انتشار را از گزینه‌ها انتخاب کن. بعد ساعت و دقیقه را خودت وارد می‌کنی. برای لغو /cancel بفرست.", rows)
+            draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
+            save_state()
+        elif action == "scheduledate" and len(parts) == 3:
+            try:
+                chosen_date = datetime.strptime(parts[2], "%Y-%m-%d").date()
+                today = datetime.now(ZoneInfo("Asia/Tehran")).date()
+                if chosen_date < today or chosen_date > today + timedelta(days=7):
+                    raise ValueError("تاریخ خارج از بازه است.")
+            except ValueError:
+                send_text(chat_id, "این تاریخ معتبر نیست؛ دوباره از گزینه‌های تاریخ انتخاب کن.")
+                return
+            STATE["schedule_mode"][str(user["id"])] = {
+                "draft_id": draft_id, "step": "hour", "date": chosen_date.isoformat()
+            }
+            save_state()
+            prompt = send_text(chat_id, "🕒 ساعت انتشار را به‌صورت عدد ۰ تا ۲۳ بفرست؛ مثلاً 18.")
             draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
             save_state()
         elif action == "edit":
@@ -957,10 +993,10 @@ def handle_update(update):
                     send_text(chat_id, "این ساعت گذشته یا خیلی نزدیک است. ساعت دیگری بین ۰ تا ۲۳ بفرست؛ بعد دوباره دقیقه را می‌پرسم.")
                     return
                 draft["scheduled_at"] = int(scheduled_epoch)
-                draft["scheduled_approved"] = False
+                draft["scheduled_approved"] = True
                 STATE["schedule_mode"].pop(user_key, None)
                 save_state()
-                send_text(chat_id, "✅ تاریخ و ساعت ذخیره شد. برای ثبت نهایی، دکمه «تأیید و زمان‌بندی» زیر پیش‌نمایش را بزن.")
+                send_text(chat_id, "✅ زمان‌بندی ثبت شد؛ دیگر لازم نیست تاریخ و ساعت را جداگانه تأیید کنی.")
                 preview(chat_id, draft_id)
             else:
                 raise ValueError("مرحلهٔ زمان‌بندی نامعتبر است.")
