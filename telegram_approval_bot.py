@@ -832,8 +832,6 @@ def handle_update(update):
             STATE["pending"].pop(draft_id, None)
             STATE["edit_mode"].pop(str(user["id"]), None)
             save_state()
-        elif action == "edit":
-            STATE["edit_mode"][str(user["id"])] = draft_id
         elif action == "schedule":
             STATE["schedule_mode"][str(user["id"])] = draft_id
             save_state()
