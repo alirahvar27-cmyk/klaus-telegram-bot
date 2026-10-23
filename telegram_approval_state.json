@@ -1,5 +1,5 @@
 {
-  "offset": 267987400,
+  "offset": 267987401,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -328,6 +328,27 @@
         372
       ],
       "edited_manually": true
+    },
+    "267987400": {
+      "chat_id": 1677869966,
+      "text": "🎮 بازی Resident Evil Outbreak اکنون به ‌صورت رایگان و از طریق مرورگر قابل تجربه است\n🔻بازی Resident Evil Outbreak که در سال ۲۰۰۳ برای پلی استیشن ۲ منتشر شده بود، اکنون به‌صورت رایگان در مرورگر و وب‌سایت Outbreakweb قابل تجربه است. این پروژه امکان اجرای دنباله آن Resident Evil Outbreak: File #2، پشتیبانی از کنترلر، ذخیره بازی و ساخت اتاق‌های چندنفره را بدون شبیه‌ساز فراهم کرده است. امکان اجرای بازی روی دستگاه‌هایی مانند Retroid Pocket 5 نیز وجود دارد.\n🔻سازنده پروژه فردی به نام Lucas Gonzale Falcon معرفی شده و گفته می‌شود در توسعه آن از روش Vibe Coding و هوش مصنوعی استفاده کرده، اما به دلیل نبود مخزن عمومی در GitHub این ادعا تأیید نشده است. علاوه بر این ابهامات، احتمال اقدام حقوقی شرکت Capcom برای متوقف کردن فعالیت Outbreakweb وجود دارد. برای هماهنگی بازی‌ها سرور اختصاصی در دیسکورد ایجاد شده است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAICg2rbZp6FXzvh9YyLBeMAAaRrBhw1EwACMA9rG9RW3FKNeGIHtmvBlgEAAwIAA3cAAz0E"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 643,
+      "cleanup_message_ids": [
+        643,
+        644,
+        645
+      ],
+      "preview_message_ids": [
+        644,
+        645
+      ]
     }
   },
   "edit_mode": {},
