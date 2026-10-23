@@ -896,7 +896,8 @@ def handle_update(update):
             draft.setdefault("cleanup_message_ids", []).append(msg["message_id"])
             draft["text"] = msg.get("text") or msg.get("caption") or ""
             draft["entities"] = msg.get("entities") or msg.get("caption_entities") or []
-            draft["text"], draft["entities"] = sanitize_text_and_entities(draft["text"], draft["entities"])\n            draft["edited_manually"] = True
+            draft["text"], draft["entities"] = sanitize_text_and_entities(draft["text"], draft["entities"])
+            draft["edited_manually"] = True
             draft.pop("source_chat_id", None)
             draft.pop("source_message_id", None)
             save_state()
