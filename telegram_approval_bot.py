@@ -2,6 +2,7 @@ import json
 import os
 import re
 import time
+import calendar
 import logging
 from pathlib import Path
 
@@ -875,7 +876,7 @@ def handle_update(update):
         draft = STATE["pending"].get(draft_id)
         try:
             scheduled_dt = time.strptime((msg.get("text") or "").strip(), "%Y-%m-%d %H:%M")
-            scheduled_epoch = time.mktime(scheduled_dt) - time.timezone
+            scheduled_epoch = calendar.timegm(scheduled_dt)
             if scheduled_epoch <= time.time() + 30:
                 raise ValueError("زمان باید دست‌کم 30 ثانیه در آینده باشد.")
             if draft:
@@ -890,6 +891,9 @@ def handle_update(update):
             STATE["schedule_mode"][user_key] = draft_id
             send_text(chat_id, "فرمت زمان درست نیست یا زمان گذشته است. به وقت UTC و با قالب YYYY-MM-DD HH:MM بفرست؛ مثلاً 2026-10-25 18:30.")
             save_state()
+        return
+    if msg.get("text") == "/cancel":
+        send_text(chat_id, "برای لغو، دکمه «لغو» زیر پیش‌نویس را بزن.")
         return
     if user_key in STATE["edit_mode"]:
         draft_id = STATE["edit_mode"].pop(user_key)
