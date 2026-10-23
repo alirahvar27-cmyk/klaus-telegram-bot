@@ -330,5 +330,6 @@
       "edited_manually": true
     }
   },
-  "edit_mode": {}
+  "edit_mode": {},
+  "schedule_mode": {}
 }
