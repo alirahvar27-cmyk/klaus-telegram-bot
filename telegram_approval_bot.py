@@ -839,12 +839,6 @@ def handle_update(update):
             prompt = send_text(chat_id, "⏰ زمان انتشار را به وقت UTC بفرست؛ قالب دقیق: YYYY-MM-DD HH:MM\nمثال: 2026-10-25 18:30\nبرای لغو تعیین زمان، /cancel بفرست.")
             draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
             save_state()
-        elif action == "schedule":
-            STATE["schedule_mode"][str(user["id"])] = draft_id
-            save_state()
-            prompt = send_text(chat_id, "⏰ زمان انتشار را به وقت UTC بفرست؛ قالب دقیق: YYYY-MM-DD HH:MM\\nمثال: 2026-10-25 18:30\\nبرای لغو تعیین زمان، /cancel بفرست.")
-            draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
-            save_state()
         elif action == "edit":
             STATE["edit_mode"][str(user["id"])] = draft_id
             save_state()
