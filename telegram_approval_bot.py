@@ -2,7 +2,7 @@ import json
 import os
 import re
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 import logging
 from pathlib import Path
@@ -833,9 +833,9 @@ def handle_update(update):
             STATE["edit_mode"].pop(str(user["id"]), None)
             save_state()
         elif action == "schedule":
-            STATE["schedule_mode"][str(user["id"])] = draft_id
+            STATE["schedule_mode"][str(user["id"])] = {"draft_id": draft_id, "step": "date"}
             save_state()
-            prompt = send_text(chat_id, "⏰ زمان انتشار را به وقت ایران (تهران) بفرست؛ قالب دقیق: YYYY-MM-DD HH:MM\nمثال: 2026-10-25 18:30\nبرای لغو تعیین زمان، /cancel بفرست.")
+            prompt = send_text(chat_id, "📅 تاریخ انتشار را به وقت ایران (تهران) بفرست؛ قالب: YYYY-MM-DD\nمثال: 2026-10-25\nفقط امروز تا ۷ روز آینده مجاز است. برای لغو، /cancel بفرست.")
             draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
             save_state()
         elif action == "edit":
@@ -865,25 +865,75 @@ def handle_update(update):
         send_text(chat_id, "تعیین زمان لغو شد؛ پیش‌نویس قبلی دست‌نخورده است.")
         return
     if user_key in STATE.get("schedule_mode", {}):
-        draft_id = STATE["schedule_mode"].pop(user_key)
+        mode = STATE["schedule_mode"][user_key]
+        # Migrate an in-progress legacy session safely; the draft itself remains unchanged.
+        if isinstance(mode, str):
+            mode = {"draft_id": mode, "step": "date"}
+            STATE["schedule_mode"][user_key] = mode
+        draft_id = mode.get("draft_id", "")
         draft = STATE["pending"].get(draft_id)
+        value = (msg.get("text") or "").strip()
+        step = mode.get("step", "date")
         try:
-            scheduled_dt = datetime.strptime((msg.get("text") or "").strip(), "%Y-%m-%d %H:%M")
-            scheduled_epoch = scheduled_dt.replace(tzinfo=ZoneInfo("Asia/Tehran")).timestamp()
-            if scheduled_epoch <= time.time() + 30:
-                raise ValueError("زمان باید دست‌کم 30 ثانیه در آینده باشد.")
-            if draft:
+            tehran_now = datetime.now(ZoneInfo("Asia/Tehran"))
+            if not draft:
+                STATE["schedule_mode"].pop(user_key, None)
+                save_state()
+                send_text(chat_id, "این پیش‌نویس دیگر در دسترس نیست.")
+                return
+            if step == "date":
+                scheduled_date = datetime.strptime(value, "%Y-%m-%d").date()
+                today = tehran_now.date()
+                if scheduled_date < today or scheduled_date > today + timedelta(days=7):
+                    raise ValueError("تاریخ باید از امروز تا حداکثر ۷ روز آینده باشد.")
+                mode["date"] = scheduled_date.isoformat()
+                mode["step"] = "hour"
+                STATE["schedule_mode"][user_key] = mode
+                save_state()
+                prompt = send_text(chat_id, "🕒 ساعت انتشار را به‌صورت عدد ۰ تا ۲۳ بفرست؛ مثلاً 18.")
+                draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
+                save_state()
+            elif step == "hour":
+                if not re.fullmatch(r"\d{1,2}", value) or not 0 <= int(value) <= 23:
+                    raise ValueError("ساعت باید عددی بین ۰ تا ۲۳ باشد.")
+                mode["hour"] = int(value)
+                mode["step"] = "minute"
+                STATE["schedule_mode"][user_key] = mode
+                save_state()
+                prompt = send_text(chat_id, "⏱ دقیقهٔ انتشار را به‌صورت عدد ۰ تا ۵۹ بفرست؛ مثلاً 05 یا 30.")
+                draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
+                save_state()
+            elif step == "minute":
+                if not re.fullmatch(r"\d{1,2}", value) or not 0 <= int(value) <= 59:
+                    raise ValueError("دقیقه باید عددی بین ۰ تا ۵۹ باشد.")
+                scheduled_dt = datetime.strptime(
+                    f"{mode['date']} {mode['hour']:02d}:{int(value):02d}", "%Y-%m-%d %H:%M"
+                ).replace(tzinfo=ZoneInfo("Asia/Tehran"))
+                scheduled_epoch = scheduled_dt.timestamp()
+                if scheduled_epoch <= time.time() + 30:
+                    mode["step"] = "hour"
+                    STATE["schedule_mode"][user_key] = mode
+                    save_state()
+                    send_text(chat_id, "این ساعت گذشته یا خیلی نزدیک است. ساعت دیگری بین ۰ تا ۲۳ بفرست؛ بعد دوباره دقیقه را می‌پرسم.")
+                    return
                 draft["scheduled_at"] = int(scheduled_epoch)
                 draft["scheduled_approved"] = False
+                STATE["schedule_mode"].pop(user_key, None)
                 save_state()
-                send_text(chat_id, "زمان ذخیره شد. برای ثبت نهایی، دکمه «تأیید و زمان‌بندی» زیر پیش‌نمایش را بزن.")
+                send_text(chat_id, "✅ تاریخ و ساعت ذخیره شد. برای ثبت نهایی، دکمه «تأیید و زمان‌بندی» زیر پیش‌نمایش را بزن.")
                 preview(chat_id, draft_id)
             else:
-                send_text(chat_id, "این پیش‌نویس دیگر در دسترس نیست.")
-        except ValueError:
-            STATE["schedule_mode"][user_key] = draft_id
-            send_text(chat_id, "فرمت زمان درست نیست یا زمان گذشته است. به وقت ایران (تهران) و با قالب YYYY-MM-DD HH:MM بفرست؛ مثلاً 2026-10-25 18:30.")
+                raise ValueError("مرحلهٔ زمان‌بندی نامعتبر است.")
+        except ValueError as exc:
+            STATE["schedule_mode"][user_key] = mode
             save_state()
+            if step == "date":
+                prompt_text = f"❌ {exc}\nتاریخ را با قالب YYYY-MM-DD بفرست؛ فقط امروز تا ۷ روز آینده. برای لغو /cancel."
+            elif step == "hour":
+                prompt_text = f"❌ {exc}\nساعت را به‌صورت عدد ۰ تا ۲۳ بفرست."
+            else:
+                prompt_text = f"❌ {exc}\nدقیقه را به‌صورت عدد ۰ تا ۵۹ بفرست."
+            send_text(chat_id, prompt_text)
         return
     if msg.get("text") == "/cancel":
         send_text(chat_id, "برای لغو، دکمه «لغو» زیر پیش‌نویس را بزن.")
