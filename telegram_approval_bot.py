@@ -2,7 +2,8 @@ import json
 import os
 import re
 import time
-import calendar
+from datetime import datetime
+from zoneinfo import ZoneInfo
 import logging
 from pathlib import Path
 
@@ -836,7 +837,7 @@ def handle_update(update):
         elif action == "schedule":
             STATE["schedule_mode"][str(user["id"])] = draft_id
             save_state()
-            prompt = send_text(chat_id, "⏰ زمان انتشار را به وقت UTC بفرست؛ قالب دقیق: YYYY-MM-DD HH:MM\nمثال: 2026-10-25 18:30\nبرای لغو تعیین زمان، /cancel بفرست.")
+            prompt = send_text(chat_id, "⏰ زمان انتشار را به وقت ایران (تهران) بفرست؛ قالب دقیق: YYYY-MM-DD HH:MM\nمثال: 2026-10-25 18:30\nبرای لغو تعیین زمان، /cancel بفرست.")
             draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
             save_state()
         elif action == "edit":
@@ -869,8 +870,8 @@ def handle_update(update):
         draft_id = STATE["schedule_mode"].pop(user_key)
         draft = STATE["pending"].get(draft_id)
         try:
-            scheduled_dt = time.strptime((msg.get("text") or "").strip(), "%Y-%m-%d %H:%M")
-            scheduled_epoch = calendar.timegm(scheduled_dt)
+            scheduled_dt = datetime.strptime((msg.get("text") or "").strip(), "%Y-%m-%d %H:%M")
+            scheduled_epoch = scheduled_dt.replace(tzinfo=ZoneInfo("Asia/Tehran")).timestamp()
             if scheduled_epoch <= time.time() + 30:
                 raise ValueError("زمان باید دست‌کم 30 ثانیه در آینده باشد.")
             if draft:
@@ -883,7 +884,7 @@ def handle_update(update):
                 send_text(chat_id, "این پیش‌نویس دیگر در دسترس نیست.")
         except ValueError:
             STATE["schedule_mode"][user_key] = draft_id
-            send_text(chat_id, "فرمت زمان درست نیست یا زمان گذشته است. به وقت UTC و با قالب YYYY-MM-DD HH:MM بفرست؛ مثلاً 2026-10-25 18:30.")
+            send_text(chat_id, "فرمت زمان درست نیست یا زمان گذشته است. به وقت ایران (تهران) و با قالب YYYY-MM-DD HH:MM بفرست؛ مثلاً 2026-10-25 18:30.")
             save_state()
         return
     if msg.get("text") == "/cancel":
