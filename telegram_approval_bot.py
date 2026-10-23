@@ -20,7 +20,7 @@ BLOCKED_HANDLES = {
     "@HipFMAd", "@Khodesun", "@Tofan_Admin_124", "@pmscary",
     "@MobhamMovies", "@safar_dordonya", "@lmdbtv", "@JournalTourism",
     "@DiamondProxy", "@Music_Vip12", "@ITSecurityComputer", "@AmoyeTel",
-    "@meme_ol_ski", "@horror_of_house", "@fxtrd_support", "@iRoProxy",
+    "@meme_ol_ski", "@horror_of_house", "@fxtrd_support", "@iRoProxy", "@iProxy",
     "@Diastomii", "@Hesse_Arammesh", "@Gamefa_official", "@Tweetr_khabari",
     "@ProxyMTProtoIR", "@MobhamV2ray", "@HezarGame",
 }
@@ -359,10 +359,50 @@ def sanitize_draft_text(text):
 
 
 def sanitize_text_and_entities(text, entities):
-    cleaned = sanitize_draft_text(text)
-    # Entity offsets are UTF-16 based. If the text changed, discard stale offsets
-    # rather than risking broken formatting or hidden links in the preview.
-    return cleaned, (entities or []) if cleaned == (text or "") else []
+    original = text or ""
+    entities = entities or []
+    cleaned = sanitize_draft_text(original)
+    if cleaned == original:
+        return cleaned, entities
+
+    # Removing blocked handles must not destroy genuine hidden Telegram proxy
+    # links whose visible labels (for example "پروکسی" or "همراه") remain intact.
+    # Keep only actual proxy/socks text links and recalculate their UTF-16 offsets.
+    def is_real_proxy_link(url):
+        return bool(re.match(
+            r"(?i)^(?:(?:https?://)?(?:www\.)?(?:t\.me|telegram\.me)/(?:proxy|socks)(?:[/?#].*)?|tg://(?:proxy|socks)(?:[/?#].*)?)$",
+            str(url or "").strip()
+        ))
+
+    def char_index(value, offset):
+        units = 0
+        for i, char in enumerate(value):
+            if units >= offset:
+                return i
+            units += utf16_len(char)
+        return len(value)
+
+    kept = []
+    search_from = 0
+    for entity in entities:
+        if entity.get("type") != "text_link" or not is_real_proxy_link(entity.get("url")):
+            continue
+        start = char_index(original, int(entity.get("offset", 0)))
+        end = char_index(original, int(entity.get("offset", 0)) + int(entity.get("length", 0)))
+        label = original[start:end]
+        if not label:
+            continue
+        new_start = cleaned.find(label, search_from)
+        if new_start < 0:
+            new_start = cleaned.find(label)
+        if new_start < 0:
+            continue
+        new_entity = dict(entity)
+        new_entity["offset"] = utf16_len(cleaned[:new_start])
+        new_entity["length"] = utf16_len(label)
+        kept.append(new_entity)
+        search_from = new_start + len(label)
+    return cleaned, sorted(kept, key=lambda e: e["offset"])
 
 
 def is_allowed_link(url):
