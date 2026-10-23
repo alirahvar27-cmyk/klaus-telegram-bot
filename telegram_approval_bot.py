@@ -12,6 +12,28 @@ ADMIN_ID = os.getenv("ADMIN_USER_ID", "").strip()
 API = f"https://api.telegram.org/bot{TOKEN}" if TOKEN else ""
 STATE_PATH = Path(os.getenv("STATE_PATH", "telegram_approval_state.json"))
 POLL_SECONDS = int(os.getenv("POLL_SECONDS", "240"))
+BLOCKED_HANDLES = {
+    "@cliptanz00", "@haibekhand", "@khooroosjangi", "@CinemaBoxOrg",
+    "@keyhan_n1", "@𝑮𝒉𝒐𝒔𝒕𝑪𝒆𝒎𝒆𝒕𝒆𝒓𝒚", "@ghost_cemetery", "@hipfm",
+    "@HipFMAd", "@Khodesun", "@Tofan_Admin_124", "@pmscary",
+    "@MobhamMovies", "@safar_dordonya", "@lmdbtv", "@JournalTourism",
+    "@DiamondProxy", "@Music_Vip12", "@ITSecurityComputer", "@AmoyeTel",
+    "@meme_ol_ski", "@horror_of_house", "@fxtrd_support", "@iRoProxy",
+    "@Diastomii", "@Hesse_Arammesh", "@Gamefa_official", "@Tweetr_khabari",
+    "@ProxyMTProtoIR", "@MobhamV2ray", "@HezarGame",
+}
+BLOCKED_URLS = {
+    "https://youtu.be/afK1H0UtBoc",
+    "http://t.me/digiunicos",
+    "https://t.me/tradecity_pro",
+    "https://t.me/+hA56yS7uKNRhNzQ0",
+    "https://telegram.me/+JewA2B2eSAs5Njk0",
+}
+BLOCKED_PHRASES = ("لینک ورود به صرافی", "ورود به VVIP رایگان")
+BLOCKED_PROMO = re.compile(
+    r"TON giveaway:\s*\$100 total,\s*10 winners\.\s*Follow @thesignal24 and like \+ comment on every X news post through Oct 30\.?",
+    re.IGNORECASE,
+)
 CHANNELS = {
     "@TechNamaFa": ("تک‌نما", "فناوری و گوشی هوشمند"),
     "@NbzeKhabar": ("نبض خبر", "خبر و سواد خبری"),
@@ -40,10 +62,11 @@ def load_state():
             data.setdefault("offset", 0)
             data.setdefault("pending", {})
             data.setdefault("edit_mode", {})
+            data.setdefault("schedule_mode", {})
             return data
     except (OSError, json.JSONDecodeError):
         pass
-    return {"offset": 0, "pending": {}, "edit_mode": {}}
+    return {"offset": 0, "pending": {}, "edit_mode": {}, "schedule_mode": {}}
 
 STATE = load_state()
 
@@ -313,6 +336,32 @@ def clean_text_and_entities(text, entities):
 def clean_text(text):
     return clean_text_and_entities(text, [])[0]
 
+def sanitize_draft_text(text):
+    """Remove only the user's explicit blocklist and tidy resulting whitespace."""
+    value = text or ""
+    for url in sorted(BLOCKED_URLS, key=len, reverse=True):
+        value = re.sub(re.escape(url), "", value, flags=re.IGNORECASE)
+    for handle in sorted(BLOCKED_HANDLES, key=len, reverse=True):
+        value = re.sub(re.escape(handle), "", value, flags=re.IGNORECASE)
+    for phrase in BLOCKED_PHRASES:
+        value = re.sub(re.escape(phrase), "", value, flags=re.IGNORECASE)
+    lines = []
+    for line in value.splitlines():
+        if BLOCKED_PROMO.search(line.strip()):
+            continue
+        line = re.sub(r"[ \t]{2,}", " ", line).strip()
+        line = re.sub(r"^[|•·,،;؛:—–-]+\s*|\s*[|•·,،;؛:—–-]+$", "", line).strip()
+        if line:
+            lines.append(line)
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
+
+
+def sanitize_text_and_entities(text, entities):
+    cleaned = sanitize_draft_text(text)
+    # Entity offsets are UTF-16 based. If the text changed, discard stale offsets
+    # rather than risking broken formatting or hidden links in the preview.
+    return cleaned, (entities or []) if cleaned == (text or "") else []
+
 
 def is_allowed_link(url):
     """Allow only our own Telegram channels and actual Telegram proxy links."""
@@ -566,6 +615,7 @@ def _single_extract_message(msg):
     # the useful post text and genuine allowlisted Telegram proxy links.
     raw_text, entities = clean_text_and_entities(raw_text, entities)
     return {"text": raw_text, "entities": entities, "media": media}
+    raw_text, entities = sanitize_text_and_entities(raw_text, entities)
 
 
 
@@ -587,7 +637,7 @@ def extract_message(msg):
 
 
 def preview(chat_id, draft_id):
-    draft = STATE["pending"].get(draft_id)
+    # Sanitization also runs here so edits and older queued drafts are cleaned before display.\n    draft["text"], draft["entities"] = sanitize_text_and_entities(draft.get("text", ""), draft.get("entities", []))\n    draft = STATE["pending"].get(draft_id)
     if not draft:
         return
     for message_id in dict.fromkeys(draft.get("preview_message_ids", [])):
@@ -628,8 +678,9 @@ def preview(chat_id, draft_id):
             draft["cleanup_message_ids"].append(mid)
             draft["preview_message_ids"].append(mid)
     controls = [
-        [{"text": "✅ تأیید و انتشار", "callback_data": f"approve:{draft_id}"}],
+        [{"text": ("✅ تأیید و زمان‌بندی" if draft.get("scheduled_at") else "✅ تأیید و انتشار"), "callback_data": f"approve:{draft_id}"}],
         [{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"}, {"text": "🔄 تغییر کانال", "callback_data": f"channels:{draft_id}"}],
+        [{"text": "⏰ تعیین زمان انتشار", "callback_data": f"schedule:{draft_id}"}],
         [{"text": "❌ لغو", "callback_data": f"cancel:{draft_id}"}],
     ]
     controls_msg = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})" + chr(10) + f"موضوع: {topic}" + chr(10) * 2 + "اگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.", controls)
@@ -749,6 +800,11 @@ def handle_update(update):
             draft.setdefault("cleanup_message_ids", []).append(picker["message_id"])
             save_state()
         elif action == "approve":
+            if draft.get("scheduled_at") and int(draft.get("scheduled_at", 0)) > time.time():
+                draft["scheduled_approved"] = True
+                save_state()
+                send_text(chat_id, "✅ زمان‌بندی ثبت شد. پست در زمان تعیین‌شده منتشر می‌شود.")
+                return
             try:
                 publish(draft)
             except Exception as exc:
@@ -772,6 +828,14 @@ def handle_update(update):
             save_state()
         elif action == "edit":
             STATE["edit_mode"][str(user["id"])] = draft_id
+        elif action == "schedule":
+            STATE["schedule_mode"][str(user["id"])] = draft_id
+            save_state()
+            prompt = send_text(chat_id, "⏰ زمان انتشار را به وقت UTC بفرست؛ قالب دقیق: YYYY-MM-DD HH:MM\nمثال: 2026-10-25 18:30\nبرای لغو تعیین زمان، /cancel بفرست.")
+            draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
+            save_state()
+        elif action == "edit":
+            STATE["edit_mode"][str(user["id"])] = draft_id
             save_state()
             prompt = send_text(chat_id, "متن یا کپشن جدید را در یک پیام بفرست. برای پست متنی، متن کاملاً جایگزین می‌شود.")
             draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"])
@@ -791,6 +855,32 @@ def handle_update(update):
     # remove promotional/external channel lines while retaining real Telegram proxy links.
 
     user_key = str(user["id"])
+    if msg.get("text") == "/cancel" and user_key in STATE.get("schedule_mode", {}):
+        STATE["schedule_mode"].pop(user_key, None)
+        save_state()
+        send_text(chat_id, "تعیین زمان لغو شد؛ پیش‌نویس قبلی دست‌نخورده است.")
+        return
+    if user_key in STATE.get("schedule_mode", {}):
+        draft_id = STATE["schedule_mode"].pop(user_key)
+        draft = STATE["pending"].get(draft_id)
+        try:
+            scheduled_dt = time.strptime((msg.get("text") or "").strip(), "%Y-%m-%d %H:%M")
+            scheduled_epoch = time.mktime(scheduled_dt) - time.timezone
+            if scheduled_epoch <= time.time() + 30:
+                raise ValueError("زمان باید دست‌کم 30 ثانیه در آینده باشد.")
+            if draft:
+                draft["scheduled_at"] = int(scheduled_epoch)
+                draft["scheduled_approved"] = False
+                save_state()
+                send_text(chat_id, "زمان ذخیره شد. برای ثبت نهایی، دکمه «تأیید و زمان‌بندی» زیر پیش‌نمایش را بزن.")
+                preview(chat_id, draft_id)
+            else:
+                send_text(chat_id, "این پیش‌نویس دیگر در دسترس نیست.")
+        except ValueError:
+            STATE["schedule_mode"][user_key] = draft_id
+            send_text(chat_id, "فرمت زمان درست نیست یا زمان گذشته است. به وقت UTC و با قالب YYYY-MM-DD HH:MM بفرست؛ مثلاً 2026-10-25 18:30.")
+            save_state()
+        return
     if user_key in STATE["edit_mode"]:
         draft_id = STATE["edit_mode"].pop(user_key)
         draft = STATE["pending"].get(draft_id)
@@ -798,7 +888,7 @@ def handle_update(update):
             draft.setdefault("cleanup_message_ids", []).append(msg["message_id"])
             draft["text"] = msg.get("text") or msg.get("caption") or ""
             draft["entities"] = msg.get("entities") or msg.get("caption_entities") or []
-            draft["edited_manually"] = True
+            draft["text"], draft["entities"] = sanitize_text_and_entities(draft["text"], draft["entities"])\n            draft["edited_manually"] = True
             draft.pop("source_chat_id", None)
             draft.pop("source_message_id", None)
             save_state()
@@ -809,9 +899,6 @@ def handle_update(update):
             return
     if msg.get("text") == "/start":
         send_text(chat_id, "سلام! متن، عکس، فیلم، موسیقی، صدا یا فایل را برای من بفرست. پیش‌نمایش و کانال مقصد را نشان می‌دهم و فقط بعد از تأیید تو منتشر می‌کنم.")
-        return
-    if msg.get("text") == "/cancel":
-        send_text(chat_id, "برای لغو، دکمه «لغو» زیر پیش‌نویس را بزن.")
         return
     content = extract_message(msg)
     if not content["text"] and not content["media"]:
@@ -844,6 +931,33 @@ def handle_update(update):
     preview(chat_id, draft_id)
 
 def main():
+def publish_due_drafts():
+    now = int(time.time())
+    for draft_id, draft in list(STATE.get("pending", {}).items()):
+        due = int(draft.get("scheduled_at", 0) or 0)
+        if not draft.get("scheduled_approved") or not due or due > now:
+            continue
+        try:
+            publish(draft)
+            chat_id = draft.get("chat_id")
+            cleanup_draft_messages(draft)
+            STATE["pending"].pop(draft_id, None)
+            save_state()
+            if chat_id:
+                send_text(chat_id, f"✅ پست زمان‌بندی‌شده در {draft.get('channel')} منتشر شد.")
+        except Exception as exc:
+            log.exception("Scheduled publish failed for draft %s", draft_id)
+            chat_id = draft.get("chat_id")
+            if chat_id:
+                try:
+                    send_text(chat_id, f"❌ انتشار زمان‌بندی‌شده انجام نشد: {str(exc)[:500]}")
+                except Exception:
+                    log.exception("Could not report scheduled publish failure")
+            # Avoid a tight retry loop; keep draft available for manual action.
+            draft["scheduled_approved"] = False
+            save_state()
+
+
     if not TOKEN:
         raise SystemExit("Missing TELEGRAM_BOT_TOKEN secret.")
     if not ADMIN_ID.isdigit():
@@ -854,6 +968,7 @@ def main():
     while time.time() - started < POLL_SECONDS:
         try:
             updates = api("getUpdates", {"offset": int(STATE.get("offset", 0)), "timeout": 20, "allowed_updates": ["message", "callback_query"]}, timeout=30)
+            publish_due_drafts()
             grouped_updates = []
             album_buckets = {}
             for incoming in updates:
