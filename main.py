@@ -78,7 +78,7 @@ AI_ORDER = [
     for item in (os.getenv("KLAUS_AI_ORDER") or "gemini,mistral,groq,openrouter,cloudflare,openai").split(",")
     if item.strip().lower() in {"gemini", "mistral", "openai", "groq", "openrouter", "cloudflare"}
 ]
-AI = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
+AI = genai.Client(api_key=GEMINI_API_KEY, http_options=genai.types.HttpOptions(timeout=15000)) if GEMINI_API_KEY else None
 
 if not any([GEMINI_API_KEY, OPENAI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY, (CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID)]):
     raise RuntimeError(
@@ -347,7 +347,7 @@ def generate_ai_response(prompt):
                         "temperature": 0.8,
                         "response_format": {"type": "json_object"},
                     },
-                    timeout=90,
+                    timeout=15,
                 )
                 response.raise_for_status()
                 payload = response.json()
@@ -417,7 +417,7 @@ def find_image(query):
                 "iiurlwidth": 1200,
                 "format": "json",
             },
-            timeout=25,
+            timeout=10,
         )
         response.raise_for_status()
 
