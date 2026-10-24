@@ -1,5 +1,5 @@
 {
-  "offset": 267987503,
+  "offset": 267987542,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -775,12 +775,16 @@
         689,
         832,
         833,
-        835
+        835,
+        838,
+        839
       ],
       "preview_message_ids": [
-        688,
-        689
-      ]
+        838,
+        839
+      ],
+      "scheduled_at": 1792859460,
+      "scheduled_approved": true
     },
     "267987437": {
       "chat_id": 1677869966,
@@ -824,61 +828,19 @@
       "cleanup_message_ids": [
         690,
         691,
-        692
+        692,
+        840,
+        841,
+        843,
+        846,
+        847
       ],
       "preview_message_ids": [
-        691,
-        692
-      ]
-    },
-    "267987438": {
-      "chat_id": 1677869966,
-      "text": "چرا old money داریم ولی old cheap نداریم ؟ من از قدیم فقیر بودم ، جدید فقیر نشدم، مثل بعضیا تازه به بدبختی رسیده نیستم، همیشه بدبخت بودم، کلاسم فرق داره با شما نیو فقیرا 😂\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 173,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 182,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 189,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 198,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 207,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
+        846,
+        847
       ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 693,
-      "cleanup_message_ids": [
-        693,
-        694,
-        695
-      ],
-      "preview_message_ids": [
-        694,
-        695
-      ]
+      "scheduled_at": 1792866660,
+      "scheduled_approved": true
     },
     "267987439": {
       "chat_id": 1677869966,
@@ -922,12 +884,19 @@
       "cleanup_message_ids": [
         696,
         697,
-        698
+        698,
+        849,
+        850,
+        852,
+        855,
+        856
       ],
       "preview_message_ids": [
-        697,
-        698
-      ]
+        855,
+        856
+      ],
+      "scheduled_at": 1792870260,
+      "scheduled_approved": true
     },
     "267987440": {
       "chat_id": 1677869966,
@@ -971,12 +940,19 @@
       "cleanup_message_ids": [
         699,
         700,
-        701
+        701,
+        857,
+        858,
+        860,
+        863,
+        864
       ],
       "preview_message_ids": [
-        700,
-        701
-      ]
+        863,
+        864
+      ],
+      "scheduled_at": 1792837860,
+      "scheduled_approved": true
     },
     "267987441": {
       "chat_id": 1677869966,
@@ -1113,48 +1089,47 @@
       "cleanup_message_ids": [
         702,
         703,
-        704
+        704,
+        865,
+        866,
+        868,
+        871,
+        872
       ],
       "preview_message_ids": [
-        703,
-        704
-      ]
+        871,
+        872
+      ],
+      "scheduled_at": 1792845060,
+      "scheduled_approved": true
     },
     "267987442": {
       "chat_id": 1677869966,
       "text": "اکثرنتا\nss://YWVzLTI1Ni1nY206cEtFVzhKUEJ5VFZUTHRN@15.204.247.244:4444#\nvmess://eyJhZGQiOiIzOC4xMTAuMS4yNDYiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJwb3J0IjoiMTgwMDAiLCJwcyI6IkBtZWxpcHJveHkiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9\nss://YWVzLTI1Ni1nY206M2VPRmVOc3NkZTdQWVlNdg@84.247.155.196:443#\nvless://056405e8-de9f-4d0d-8145-956f13cc34da@pl1.h1cloud.net:27591/?type=tcp&encryption=none&flow=&sni=\nss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@15.204.247.175:8008#\nss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@51.79.49.116:8882#\nss://YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2@51.222.141.125:445#\nvless://2c634977-584e-4e1f-b501-1b70c77a6743@81.94.148.232:8443/?type=tcp&encryption=none&flow=&security=tls&sni=windytrout.net&alpn=h2%2Chttp%2F1.1&fp=firefox#\nvless://2c634977-584e-4e1f-b501-1b70c77a6743@81.94.148.232:2053/?type=xhttp&encryption=none&flow=&security=tls&sni=windytrout.net&alpn=h2%2Chttp%2F1.1&fp=firefox#\nvless://9c54d883-97a8-4b49-af23-fe052eff2c3a@193.168.140.237:443/?type=grpc&encryption=none&flow=&sni=ads.x5.ru&fp=chrome&security=reality&pbk=byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM&sid=3e0c480d#\nvless://30572b57-f5ab-4eb8-82d4-a24d399b99f6@46.254.17.88:30065/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=a3.eosapp.net&fp=firefox&security=reality&pbk=Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU&sid=#\nss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5TEhMYTFDazJlUklPbUpPV3AyWFJSQUNnRkdBWV8zZw==@87.107.114.100:902#\nss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5TEhMYTFDazJlUklPbUpPV3AyWFJSQUNnRkdBWV8zZw==@87.107.114.102:904#\nvless://f7008e87-05d3-43e5-ab8b-6515a2af19eb@217.216.82.85:800?encryption=none&type=xhttp&path=%2F%3Fed%3D2048&host=us.samanehha.io&mode=stream-one&security=none#",
       "entities": [],
       "media": null,
-      "channel": "@NbzeKhabar",
+      "channel": "@NetPlusFa",
       "source_chat_id": 1677869966,
       "source_message_id": 705,
       "cleanup_message_ids": [
         705,
         706,
-        707
+        707,
+        873,
+        874,
+        875,
+        876,
+        877,
+        879,
+        882,
+        883
       ],
       "preview_message_ids": [
-        706,
-        707
-      ]
-    },
-    "267987443": {
-      "chat_id": 1677869966,
-      "text": "اکثرنتا\nvless://b9bfa54d-bc44-4592-a6d6-89a9665d286f@edge.bookmai.com:443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=mother-earth.fyi#\nvless://d65cc14c-f53f-4fe2-b262-97856601319c@82.39.171.12:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#\nss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#\nss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.191:8080#\nss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRRld6Q3cydVg5QjlpNnFBWWVGQklF@154.46.31.106:443#\nss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#\ntrojan://humanity@144.31.205.106:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=\nvless://8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435@webdisk.jaggyslawa.org:443?security=reality&encryption=none&pbk=zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=\nss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#\nvless://14c80e0e-f7ce-4991-94fc-99a1db4a9b1e@159.89.87.21:28190?security=reality&encryption=none&pbk=ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=aws.amazon.com#\n﻿﻿﻿﻿﻿﻿﻿🔒🔒کانفیگ",
-      "entities": [],
-      "media": null,
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 708,
-      "cleanup_message_ids": [
-        708,
-        709,
-        710
+        882,
+        883
       ],
-      "preview_message_ids": [
-        709,
-        710
-      ]
+      "scheduled_at": 1792852260,
+      "scheduled_approved": true
     },
     "267987444": {
       "chat_id": 1677869966,
@@ -1291,200 +1266,19 @@
       "cleanup_message_ids": [
         711,
         712,
-        713
+        713,
+        885,
+        886,
+        888,
+        891,
+        892
       ],
       "preview_message_ids": [
-        712,
-        713
-      ]
-    },
-    "267987445": {
-      "chat_id": 1677869966,
-      "text": "دلم یه کلبه‌ی چوبی، توی یه جنگلِ دور افتاده میخواد، کنار اونی که دوسش دارم، هوا سرد و بارونی باشه، بارونِ شدید بیاد طوری که نشه حتی پاتو از کلبه بزاری بیرون، کلبه‌م یه شومینه داشته باشه، داخلش آتیش کنیم و بشینیم کنارش، پتو رو بندازیم رومون فیلم ببینیم و تا صبح از کنارِ آتیش جُم نخوریم...\nهمراه • همراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_",
-      "entities": [
-        {
-          "offset": 289,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 297,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 303,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 312,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 319,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 328,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 335,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 344,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 351,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 360,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 367,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 376,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
+        891,
+        892
       ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAICi2rccoe206W2DPf2j0akQlHLDnRfAALDDgACL0ORUWFt99Zf25VVPQQ"
-      },
-      "channel": "@FilmGardFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 714,
-      "cleanup_message_ids": [
-        714,
-        715,
-        716
-      ],
-      "preview_message_ids": [
-        715,
-        716
-      ]
-    },
-    "267987446": {
-      "chat_id": 1677869966,
-      "text": "🇺🇸❌🇮🇷 ترامپ: می‌توانیم تمام نفت ایران را بگیریم و کل کشور را تصرف کنیم\n🔴 دونالد ترامپ، رئیس‌جمهور آمریکا، درباره ایران گفت: «ایران در حال حاضر توان انجام کار زیادی را ندارد. اگر بخواهیم، می‌توانیم تمام نفت آن را بگیریم؛ حتی می‌توانیم کل کشور را تصرف کنیم.»\n🔴 ترامپ همچنین مدعی شد: «همان‌طور که می‌دانید، تنگه هرمز کاملاً در اختیار ماست.»\nهمراه • همراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_",
-      "entities": [
-        {
-          "offset": 344,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 352,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 358,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 367,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 374,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 383,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 390,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 399,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 406,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 415,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 422,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 431,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAICzWrcct65IQTepRnRuLbA-uI0ccFrAALRHwAC94ThUv89YNUUKaPOPQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 717,
-      "cleanup_message_ids": [
-        717,
-        718,
-        719
-      ],
-      "preview_message_ids": [
-        718,
-        719
-      ]
+      "scheduled_at": 1792859460,
+      "scheduled_approved": true
     },
     "267987447": {
       "chat_id": 1677869966,
@@ -1573,12 +1367,19 @@
       "cleanup_message_ids": [
         720,
         721,
-        722
+        722,
+        894,
+        895,
+        897,
+        900,
+        901
       ],
       "preview_message_ids": [
-        721,
-        722
-      ]
+        900,
+        901
+      ],
+      "scheduled_at": 1792870260,
+      "scheduled_approved": true
     },
     "267987448": {
       "chat_id": 1677869966,
@@ -1667,12 +1468,19 @@
       "cleanup_message_ids": [
         723,
         724,
-        725
+        725,
+        902,
+        903,
+        905,
+        908,
+        909
       ],
       "preview_message_ids": [
-        724,
-        725
-      ]
+        908,
+        909
+      ],
+      "scheduled_at": 1792845060,
+      "scheduled_approved": true
     },
     "267987449": {
       "chat_id": 1677869966,
@@ -2921,12 +2729,5 @@
     }
   },
   "edit_mode": {},
-  "schedule_mode": {
-    "1677869966": {
-      "draft_id": "267987436",
-      "step": "minute",
-      "date": "2026-10-24",
-      "hour": 20
-    }
-  }
+  "schedule_mode": {}
 }
