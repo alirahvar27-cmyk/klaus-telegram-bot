@@ -1,5 +1,5 @@
 {
-  "offset": 267987689,
+  "offset": 267987726,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -3156,8 +3156,429 @@
       ],
       "scheduled_at": 1792837860,
       "scheduled_approved": true
+    },
+    "267987689": {
+      "chat_id": 1677869966,
+      "text": "#OIL",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 4,
+          "type": "hashtag"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIErWrcfZUMc4wPlqPMTfG1CY4vDecUAALgEGsbupnZUsYDSC43pNmgAQADAgADeQADPQQ"
+      },
+      "channel": "@TradePulseFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1197,
+      "cleanup_message_ids": [
+        1197,
+        1207,
+        1208,
+        1228,
+        1237,
+        1238,
+        1253,
+        1261
+      ],
+      "preview_message_ids": [
+        1237,
+        1238
+      ]
+    },
+    "267987690": {
+      "chat_id": 1677869966,
+      "text": "#BTC",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 4,
+          "type": "hashtag"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIErmrcfZULxDVWzES59llYJaBwvMYiAALMDmsbupnpUh3N0ulXDljOAQADAgADeQADPQQ"
+      },
+      "channel": "@TradePulseFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1198,
+      "cleanup_message_ids": [
+        1198,
+        1209,
+        1210,
+        1229,
+        1239,
+        1240,
+        1254
+      ],
+      "preview_message_ids": [
+        1239,
+        1240
+      ]
+    },
+    "267987691": {
+      "chat_id": 1677869966,
+      "text": "#AGT_USDT",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 9,
+          "type": "hashtag"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIEr2rcfZWuqOlesfF2aToqtvfsO9m7AAKLD2sbXu3oUrDgvAweUtJgAQADAgADeQADPQQ"
+      },
+      "channel": "@TradePulseFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1199,
+      "cleanup_message_ids": [
+        1199,
+        1211,
+        1212,
+        1230,
+        1241,
+        1242,
+        1255
+      ],
+      "preview_message_ids": [
+        1241,
+        1242
+      ]
+    },
+    "267987693": {
+      "chat_id": 1677869966,
+      "text": "💵 #AGT_USDT  👑\n🟢 LONG POSITION — BUY\n☄️ Leverage: 30X\n🎯 Entry Zone:0.08300_0.07800\n💎 TAKE PROFIT TARGETS\n🥇 TP1: 0.08510\n🥈 TP2: 0.09000\n🥉 TP3: 0.09900\n🏆 TP4: 0.05600\n🛑 Stop Loss: 0.07000",
+      "entities": [
+        {
+          "offset": 3,
+          "length": 9,
+          "type": "hashtag"
+        }
+      ],
+      "media": null,
+      "channel": "@TradePulseFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1201,
+      "cleanup_message_ids": [
+        1201,
+        1215,
+        1216,
+        1231,
+        1243,
+        1244,
+        1256
+      ],
+      "preview_message_ids": [
+        1243,
+        1244
+      ]
+    },
+    "267987695": {
+      "chat_id": 1677869966,
+      "text": "More trade\n🕯 Short #ORDER at 0.0752 10x",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 10,
+          "type": "bold"
+        },
+        {
+          "offset": 11,
+          "length": 2,
+          "type": "bold"
+        },
+        {
+          "offset": 11,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5451882707875276247"
+        },
+        {
+          "offset": 13,
+          "length": 7,
+          "type": "bold"
+        },
+        {
+          "offset": 20,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 20,
+          "length": 6,
+          "type": "bold"
+        },
+        {
+          "offset": 26,
+          "length": 14,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TradePulseFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1203,
+      "cleanup_message_ids": [
+        1203,
+        1220,
+        1221,
+        1233,
+        1245,
+        1246,
+        1257
+      ],
+      "preview_message_ids": [
+        1245,
+        1246
+      ]
+    },
+    "267987696": {
+      "chat_id": 1677869966,
+      "text": "📉 POSITION: SHORT\n🪙 COIN: ORDER/USDT\n⚡ LEVERAGE: 10x\n🎯 ENTRY: 0.0752\n🛑 SL: 0.0825\n━━━━━━━━━━━━━━━\n💰 TAKE PROFIT TARGETS\n1️⃣ TP1: 0.0720\n2️⃣ TP2: 0.0700\n3️⃣ TP3: 0.0680\n4️⃣ TP4: 0.0640\n5️⃣ TP5: 0.0600\n━━━━━━━━━━━━━━━\nTAKE PROFITS ALWAYS ✔️",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 18,
+          "type": "bold"
+        },
+        {
+          "offset": 19,
+          "length": 19,
+          "type": "bold"
+        },
+        {
+          "offset": 39,
+          "length": 15,
+          "type": "bold"
+        },
+        {
+          "offset": 55,
+          "length": 16,
+          "type": "bold"
+        },
+        {
+          "offset": 72,
+          "length": 13,
+          "type": "bold"
+        },
+        {
+          "offset": 86,
+          "length": 15,
+          "type": "bold"
+        },
+        {
+          "offset": 102,
+          "length": 22,
+          "type": "bold"
+        },
+        {
+          "offset": 125,
+          "length": 15,
+          "type": "bold"
+        },
+        {
+          "offset": 141,
+          "length": 15,
+          "type": "bold"
+        },
+        {
+          "offset": 157,
+          "length": 15,
+          "type": "bold"
+        },
+        {
+          "offset": 173,
+          "length": 15,
+          "type": "bold"
+        },
+        {
+          "offset": 189,
+          "length": 15,
+          "type": "bold"
+        },
+        {
+          "offset": 205,
+          "length": 15,
+          "type": "bold"
+        },
+        {
+          "offset": 221,
+          "length": 20,
+          "type": "bold"
+        },
+        {
+          "offset": 241,
+          "length": 2,
+          "type": "bold"
+        },
+        {
+          "offset": 241,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5206607081334906820"
+        }
+      ],
+      "media": null,
+      "channel": "@TradePulseFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1204,
+      "cleanup_message_ids": [
+        1204,
+        1222,
+        1223,
+        1234,
+        1247,
+        1248,
+        1258
+      ],
+      "preview_message_ids": [
+        1247,
+        1248
+      ]
+    },
+    "267987697": {
+      "chat_id": 1677869966,
+      "text": "Take profits 1 🙂✔️\n+44.57%\n#ORDER",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 15,
+          "type": "bold"
+        },
+        {
+          "offset": 15,
+          "length": 2,
+          "type": "bold"
+        },
+        {
+          "offset": 15,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5461117441612462242"
+        },
+        {
+          "offset": 17,
+          "length": 2,
+          "type": "bold"
+        },
+        {
+          "offset": 17,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5206607081334906820"
+        },
+        {
+          "offset": 20,
+          "length": 7,
+          "type": "bold"
+        },
+        {
+          "offset": 28,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 28,
+          "length": 6,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TradePulseFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1205,
+      "cleanup_message_ids": [
+        1205,
+        1224,
+        1225,
+        1235,
+        1249,
+        1250,
+        1259
+      ],
+      "preview_message_ids": [
+        1249,
+        1250
+      ]
+    },
+    "267987698": {
+      "chat_id": 1677869966,
+      "text": "Take profits 2 🙂✔️\n+61.07%\n#ORDER",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 15,
+          "type": "bold"
+        },
+        {
+          "offset": 15,
+          "length": 2,
+          "type": "bold"
+        },
+        {
+          "offset": 15,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5461117441612462242"
+        },
+        {
+          "offset": 17,
+          "length": 2,
+          "type": "bold"
+        },
+        {
+          "offset": 17,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5206607081334906820"
+        },
+        {
+          "offset": 20,
+          "length": 7,
+          "type": "bold"
+        },
+        {
+          "offset": 28,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 28,
+          "length": 6,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TradePulseFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1206,
+      "cleanup_message_ids": [
+        1206,
+        1226,
+        1227,
+        1236,
+        1251,
+        1252,
+        1260
+      ],
+      "preview_message_ids": [
+        1251,
+        1252
+      ]
     }
   },
   "edit_mode": {},
-  "schedule_mode": {}
+  "schedule_mode": {
+    "1677869966": {
+      "draft_id": "267987689",
+      "step": "hour",
+      "date": "2026-10-24"
+    }
+  }
 }
