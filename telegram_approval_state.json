@@ -1,5 +1,5 @@
 {
-  "offset": 267988145,
+  "offset": 267988195,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -2935,28 +2935,6 @@
       "scheduled_at": 1793070000,
       "scheduled_approved": true
     },
-    "267988095": {
-      "chat_id": 1677869966,
-      "text": ".\nبالاخره تفاوت را میفهمی، بین آدم هایی که دوستت دارند، آدم هایی که دوست دارند کنارت باشند و آدم هایی که کارهایی که میتوانی برایشان انجام دهی را دوست دارند...\n🌸",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIIMmrcyC5M1DUXQdn-Q-iJy4v8FQ8xAAK7D2sbTwXcUjKCNqRGyJO6AQADAgADdwADPQQ"
-      },
-      "channel": "@Khndedoon",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2098,
-      "cleanup_message_ids": [
-        2098,
-        2122,
-        2123,
-        2163
-      ],
-      "preview_message_ids": [
-        2122,
-        2123
-      ]
-    },
     "267988096": {
       "chat_id": 1677869966,
       "text": ".\nتغییر خیلی وقتا قشنگ ترت میکنه..\nاینو پاییز داره میگه🍂\n🌸",
@@ -2965,19 +2943,28 @@
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIIM2rcyC4QGEkL1DZlD13wx5330rAgAAKNCwACzbOsUjgCR6vGR_UcPQQ"
       },
-      "channel": "@Khndedoon",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2099,
       "cleanup_message_ids": [
         2099,
         2124,
         2125,
-        2164
+        2164,
+        2238,
+        2239,
+        2243,
+        2244,
+        2246,
+        2249,
+        2250
       ],
       "preview_message_ids": [
-        2124,
-        2125
-      ]
+        2249,
+        2250
+      ],
+      "scheduled_at": 1792872000,
+      "scheduled_approved": true
     },
     "267988097": {
       "chat_id": 1677869966,
@@ -2987,38 +2974,56 @@
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIINGrcyC62b_LceiBMsnyLqjOeMyScAAL8CwAC40XFUjZ1Lg2v_h1RPQQ"
       },
-      "channel": "@HaleKhoobDaiily",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2100,
       "cleanup_message_ids": [
         2100,
         2126,
         2127,
-        2165
+        2165,
+        2236,
+        2237,
+        2251,
+        2252,
+        2254,
+        2257,
+        2258
       ],
       "preview_message_ids": [
-        2126,
-        2127
-      ]
+        2257,
+        2258
+      ],
+      "scheduled_at": 1792900800,
+      "scheduled_approved": true
     },
     "267988098": {
       "chat_id": 1677869966,
       "text": ".\nرشد، یعنی اجازه دهید دیگران روایتی اشتباه از شما بسازند\nدر حالی که می‌دانید حقیقت، یک روز آشکار می‌شود...\n#نیکول_لپرا\n🌸",
       "entities": [],
       "media": null,
-      "channel": "@Khndedoon",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2101,
       "cleanup_message_ids": [
         2101,
         2128,
         2129,
-        2166
+        2166,
+        2234,
+        2235,
+        2259,
+        2260,
+        2262,
+        2265,
+        2266
       ],
       "preview_message_ids": [
-        2128,
-        2129
-      ]
+        2265,
+        2266
+      ],
+      "scheduled_at": 1792911600,
+      "scheduled_approved": true
     },
     "267988099": {
       "chat_id": 1677869966,
@@ -3028,19 +3033,28 @@
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIINmrcyC5QUlcwXdC-dIwzzpmhTEkpAAKzCQACYk5lUHfYJhVbtfppPQQ"
       },
-      "channel": "@HaleKhoobDaiily",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2102,
       "cleanup_message_ids": [
         2102,
         2130,
         2131,
-        2167
+        2167,
+        2232,
+        2233,
+        2267,
+        2268,
+        2270,
+        2273,
+        2274
       ],
       "preview_message_ids": [
-        2130,
-        2131
-      ]
+        2273,
+        2274
+      ],
+      "scheduled_at": 1792918800,
+      "scheduled_approved": true
     },
     "267988100": {
       "chat_id": 1677869966,
@@ -3050,38 +3064,56 @@
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIIN2rcyC5ACgPxDCtT4inpwCl4L2anAAKMCQACGRMVUALobGdxGTT2PQQ"
       },
-      "channel": "@Khndedoon",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2103,
       "cleanup_message_ids": [
         2103,
         2132,
         2133,
-        2168
+        2168,
+        2230,
+        2231,
+        2275,
+        2278,
+        2280,
+        2283,
+        2284
       ],
       "preview_message_ids": [
-        2132,
-        2133
-      ]
+        2283,
+        2284
+      ],
+      "scheduled_at": 1792926000,
+      "scheduled_approved": true
     },
     "267988101": {
       "chat_id": 1677869966,
       "text": "تا ابد انتخابتون\nآدمی باشه که اولویتش باشید\nآدمی باشه که براتون توضیح بده\nآدمی باشه که نگه داشتن رو بلد باشه\nآدمی باشه که فرق شما با بقیه رو بدونه\nآدمی باشه که ناراحتی شما براش مهم باشه\nآدمی باشه که خواسته‌هاتون رو کوچک نشمره...\n🌸",
       "entities": [],
       "media": null,
-      "channel": "@NbzeKhabar",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2104,
       "cleanup_message_ids": [
         2104,
         2134,
         2135,
-        2169
+        2169,
+        2228,
+        2229,
+        2285,
+        2286,
+        2288,
+        2291,
+        2292
       ],
       "preview_message_ids": [
-        2134,
-        2135
-      ]
+        2291,
+        2292
+      ],
+      "scheduled_at": 1792933200,
+      "scheduled_approved": true
     },
     "267988102": {
       "chat_id": 1677869966,
@@ -3091,19 +3123,28 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAIIOWrcyC6pa3KTxHrsDiVzToctMroJAALCD2sbLKHMUl4ciEFhVwJdAQADAgADeQADPQQ"
       },
-      "channel": "@NbzeKhabar",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2105,
       "cleanup_message_ids": [
         2105,
         2136,
         2137,
-        2170
+        2170,
+        2226,
+        2227,
+        2293,
+        2294,
+        2296,
+        2299,
+        2300
       ],
       "preview_message_ids": [
-        2136,
-        2137
-      ]
+        2299,
+        2300
+      ],
+      "scheduled_at": 1792940400,
+      "scheduled_approved": true
     },
     "267988103": {
       "chat_id": 1677869966,
@@ -3113,18 +3154,20 @@
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIIOmrcyC798JueoukwA7E6dzVaJz2iAALLHgACwX2BUgkNffDuR2H2PQQ"
       },
-      "channel": "@Khndedoon",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2106,
       "cleanup_message_ids": [
         2106,
         2138,
         2139,
-        2171
+        2171,
+        2224,
+        2225
       ],
       "preview_message_ids": [
-        2138,
-        2139
+        2224,
+        2225
       ]
     },
     "267988104": {
@@ -3132,18 +3175,20 @@
       "text": "از چند آدم همیشه دور بمون\nآدمی که پولکیه.\nآدمی که ضعف جنس مخالف داره.\nآدمی که تخریبت میکنه.\nآدمی که بهت انرژی منفی میده.\nآدمی که همیشه نسبت به هدفات ناامیدت میکنی.\nآدمی که محبتتو نمیفهمه و وقتی ۹۹ تا کار براش کردی رو نمیبینه و یه دونه کار رو که طبق سلیقه اش جلو نبردی میبینه.\nآدمی که هر وقت دورش خلوت میشه میاد سمتت=)\n🌸",
       "entities": [],
       "media": null,
-      "channel": "@PoolBalad",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2107,
       "cleanup_message_ids": [
         2107,
         2140,
         2141,
-        2172
+        2172,
+        2222,
+        2223
       ],
       "preview_message_ids": [
-        2140,
-        2141
+        2222,
+        2223
       ]
     },
     "267988105": {
@@ -3151,18 +3196,20 @@
       "text": "متعهد باش\nنه به حرف‌ها\nنه به آدم‌ها\nبه خدا\nبه خودت\nبه رویاهای بزرگت!\n🌸",
       "entities": [],
       "media": null,
-      "channel": "@Khndedoon",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2108,
       "cleanup_message_ids": [
         2108,
         2142,
         2143,
-        2173
+        2173,
+        2220,
+        2221
       ],
       "preview_message_ids": [
-        2142,
-        2143
+        2220,
+        2221
       ]
     },
     "267988106": {
@@ -3173,18 +3220,20 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAIIPWrcyC4J72adva-Ej2uJm8rbnPGyAAJQEmsbSSIwUnne4Z6bv-NrAQADAgADeAADPQQ"
       },
-      "channel": "@Khndedoon",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2109,
       "cleanup_message_ids": [
         2109,
         2144,
         2145,
-        2174
+        2174,
+        2218,
+        2219
       ],
       "preview_message_ids": [
-        2144,
-        2145
+        2218,
+        2219
       ]
     },
     "267988107": {
@@ -3192,18 +3241,20 @@
       "text": ".\nرفتن و دل کندن از آدمایی که دوسشون داریم سخته، تلخه اما‌ گاهی لازمه؛ لازمه که با رفتنشون ما تبدیل شیم به آدمی که وابستگی عجیب و غریبی نداره؛ لازمه که تبدیل شیم به آدمی که برای موندن آدما تو زندگیش اصرار نمیکنه، منت نمیکشه؛ لازمه تبدیل شیم به آدمی که هر رفتاری و هر کسی نمیتونه قلبشو بشکنه و ناراحتش کنه..\nلازمه تبدیل شیم به آدمی که حد و مرزی برای روابط و صمیمیتش تعیین میکنه؛ لازمه تبدیل شیم به آدمی که هدف‌هاش و رویاهاش رو دنبال میکنه\nلازمه تبدیل شیم به آدمی که یاد میگیره قوی باشه و تیکه های شکسته شو محکم کنار هم بزاره و از اول شروع کنه...\n🌸",
       "entities": [],
       "media": null,
-      "channel": "@Khndedoon",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2110,
       "cleanup_message_ids": [
         2110,
         2146,
         2147,
-        2175
+        2175,
+        2216,
+        2217
       ],
       "preview_message_ids": [
-        2146,
-        2147
+        2216,
+        2217
       ]
     },
     "267988108": {
@@ -3244,7 +3295,7 @@
           "file_id": "CQACAgQAAxkBAAIIRmrcyC6EhmgWkay7ZesqAbWTt0AbAAISHQACuOzZUjU3qNswOCzzPQQ"
         }
       ],
-      "channel": "@Khndedoon",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 2111,
       "cleanup_message_ids": [
@@ -3258,18 +3309,27 @@
         2154,
         2155,
         2156,
-        2176
+        2176,
+        2207,
+        2208,
+        2209,
+        2210,
+        2211,
+        2212,
+        2213,
+        2214,
+        2215
       ],
       "preview_message_ids": [
-        2148,
-        2149,
-        2150,
-        2151,
-        2152,
-        2153,
-        2154,
-        2155,
-        2156
+        2207,
+        2208,
+        2209,
+        2210,
+        2211,
+        2212,
+        2213,
+        2214,
+        2215
       ]
     },
     "267988117": {
@@ -3277,7 +3337,7 @@
       "text": "میخوای کمتر اورثینک کنی؟ این سه تا کتابو بخون\n۱. رهایی از نشخوار فکری – هانا ویلیامز\nبرای شناخت چرخه افکار تکراری و یاد گرفتن راه‌هایی برای کمتر درگیر شدن با آن‌ها.\n۲. ذهن‌آگاهی برای مبتدیان – جان کابات زین\nکمکت می‌کنه در لحظه حال زندگی کنی و کمتر درگیر فکرهای گذشته و نگرانی‌های آینده بشی.\n۳. تله شادمانی – راس هریس\nیادت می‌ده به‌جای جنگیدن با افکار منفی، اون‌ها رو بپذیری و اجازه ندی کنترل زندگی‌ات رو به دست بگیرن.",
       "entities": [],
       "media": null,
-      "channel": "@NbzeKhabar",
+      "channel": "@ZehnAgahh",
       "cleanup_message_ids": [
         2120,
         2159,
@@ -3288,11 +3348,13 @@
         2181,
         2182,
         2183,
-        2184
+        2184,
+        2205,
+        2206
       ],
       "preview_message_ids": [
-        2181,
-        2182
+        2205,
+        2206
       ],
       "edited_manually": true
     },
@@ -3317,20 +3379,23 @@
         2190,
         2192,
         2193,
-        2194
+        2194,
+        2196,
+        2198,
+        2201,
+        2202,
+        2203,
+        2204
       ],
       "preview_message_ids": [
-        2192,
-        2193
+        2203,
+        2204
       ],
-      "edited_manually": true
+      "edited_manually": true,
+      "scheduled_at": 1792861200,
+      "scheduled_approved": true
     }
   },
   "edit_mode": {},
-  "schedule_mode": {
-    "1677869966": {
-      "draft_id": "267988118",
-      "step": "date"
-    }
-  }
+  "schedule_mode": {}
 }
