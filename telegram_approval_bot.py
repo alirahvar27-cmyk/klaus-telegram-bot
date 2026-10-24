@@ -50,7 +50,7 @@ CHANNELS = {
     "@LevelUpFa": ("لِوِل‌آپ", "بازی‌های ویدیویی"),
     "@NimeShabHorror": ("نیمه‌شب", "داستان ترسناک"),
     "@TradePulseFa": ("تریدپالس", "آموزش بازار و مدیریت ریسک"),
-    "@NetPlusFa": ("نت‌پلاس", "شبکه و امنیت سایبری"),
+    "@NetPlusFa": ("نت‌پلاس 🔐/پروکسی فیلتر شکن", "شبکه و امنیت سایبری"),
 }
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("KLAUS-Approval")
