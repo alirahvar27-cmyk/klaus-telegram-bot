@@ -1,5 +1,5 @@
 {
-  "offset": 267988195,
+  "offset": 267988243,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -730,112 +730,6 @@
         731
       ]
     },
-    "267987456": {
-      "chat_id": 1677869966,
-      "text": "نهنگ آبی 🐋\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 8,
-          "type": "bold"
-        },
-        {
-          "offset": 9,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5222292529533167322"
-        },
-        {
-          "offset": 12,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pofak.mikhay.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 21,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=refiq.poolaki.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 28,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=dokhtar.nanaz.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 37,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=bastani.mikhay.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 46,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=panir.begir.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 53,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=qadim.zhigool.co.uk&port=22&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 62,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=reyhoon.shambelile.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 71,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noon.begir.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 78,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nooshabe.mikhay.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 87,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pashmak.mikhay.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 96,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=boro.poolaki.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIC7GrccwZraxNPs15IW4IvFmHpEwnvAAL5HwACSD0ZUrBuXqTV3ntvPQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 748,
-      "cleanup_message_ids": [
-        748,
-        749,
-        750,
-        963,
-        964,
-        966,
-        969,
-        970
-      ],
-      "preview_message_ids": [
-        969,
-        970
-      ],
-      "scheduled_at": 1792863060,
-      "scheduled_approved": true
-    },
     "267987457": {
       "chat_id": 1677869966,
       "text": "کلکسیون بهترین آهنگ های سیاوش قمیشی🤍\nهمراه • همراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_",
@@ -935,34 +829,6 @@
         978
       ],
       "scheduled_at": 1792870260,
-      "scheduled_approved": true
-    },
-    "267987765": {
-      "chat_id": 1677869966,
-      "text": "🎮 فروش بازی Astro Bot پس از دو سال به ۴.۷ میلیون نسخه رسید\n🔻بازی Astro Bot روی کنسول پلی استیشن ۵ پس از انتشار در سپتامبر ۲۰۲۴ توانسته به فروش ۴.۷ میلیون نسخه و درآمد ۲۹۱ میلیون دلاری دست یابد. این بازی انحصاری ماهانه بیش از ۱۰۰ هزار نسخه می‌فروشد و ۴۶.۶ درصد از کل فروش آن به نسخه‌های فیزیکی اختصاص دارد. این آمار و ارقام بر اساس تازه‌ترین برآوردهای مؤسسه Alinea Analytics منتشر شده است و هنوز تأییدیه رسمی سونی را دریافت نکرده است.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFOWrcgOD40xyPvoWRBzqUiXmQ4bynAALZtjEbJaSsUeY29MccsNAGAQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1337,
-      "cleanup_message_ids": [
-        1337,
-        1416,
-        1417,
-        1590,
-        1594,
-        1596,
-        1599,
-        1600
-      ],
-      "preview_message_ids": [
-        1599,
-        1600
-      ],
-      "scheduled_at": 1792863060,
       "scheduled_approved": true
     },
     "267987766": {
@@ -2803,6 +2669,31 @@
       "chat_id": 1677869966,
       "message_id": 2389,
       "delete_at": 1792948236
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2393,
+      "delete_at": 1792950051
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2394,
+      "delete_at": 1792950052
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2404,
+      "delete_at": 1792950066
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2405,
+      "delete_at": 1792950071
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2409,
+      "delete_at": 1792950084
     }
   ]
 }
