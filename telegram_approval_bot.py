@@ -842,6 +842,12 @@ def publish_due_drafts():
             draft["scheduled_approved"]=False; save_state()
 
 def main():
+    # Render owns the persistent state disk and is the single Telegram long-polling
+    # instance. GitHub Actions must validate only; a second getUpdates consumer
+    # can steal callbacks and make valid draft buttons appear to reference missing drafts.
+    if os.getenv("GITHUB_ACTIONS", "").lower() == "true":
+        log.info("GitHub Actions validation run: Telegram polling is disabled; Render is the sole poller.")
+        return
     if not TOKEN: raise SystemExit("Missing TELEGRAM_BOT_TOKEN secret.")
     if not ADMIN_ID.isdigit(): raise SystemExit("Set ADMIN_USER_ID to your numeric Telegram user ID in GitHub Actions secrets or variables.")
     api("deleteWebhook", {"drop_pending_updates": False}); started=time.time()
