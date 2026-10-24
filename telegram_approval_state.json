@@ -1,5 +1,5 @@
 {
-  "offset": 267987752,
+  "offset": 267987849,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -3011,34 +3011,6 @@
       "scheduled_at": 1792846800,
       "scheduled_approved": true
     },
-    "267987612": {
-      "chat_id": 1677869966,
-      "text": "این پیام رو یه گوشه نگهدارین\nسهم هر شرکت از طلای تفتان\nتاصیکو: 80%\nکخاک: 10%\nکفرا: 10%\nسهم هر شرکت از طلای کردستان\nتاصیکو: 80%\nکخاک: 10%\nشاملا: 10%\nکفرا: 5%\nبنابراین #کخاک در هر دو معدن سهم 10% داره و مارکتش 32 همته\n#کفرا در معدن تفتان 10 درصد و در معدن کردستان 5 درصد سهم داره با مارکت 12 همت\nهر دو‌جذابن برای سرمایه گذاری بلند مدت ولی #کفرا بیشتر…\n❤️ بورسکده | تحلیل بنیادی | تکنیکال",
-      "entities": [],
-      "media": null,
-      "channel": "@PoolBalad",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1038,
-      "cleanup_message_ids": [
-        1038,
-        1059,
-        1060,
-        1118,
-        1119,
-        1120,
-        1121,
-        1122,
-        1124,
-        1127,
-        1128
-      ],
-      "preview_message_ids": [
-        1127,
-        1128
-      ],
-      "scheduled_at": 1792836000,
-      "scheduled_approved": true
-    },
     "267987613": {
       "chat_id": 1677869966,
       "text": "⭕️⭕️ترامپ ادعا کرد\nگفت‌وگوهای سازنده‌ای با ایران داریم و پیش از انتخابات میان‌دوره‌ای به این کشور حمله نخواهیم کرد\nاثرات نفت ۱۱۷ دلاریه",
@@ -3306,71 +3278,6 @@
       "scheduled_at": 1792848660,
       "scheduled_approved": true
     },
-    "267987695": {
-      "chat_id": 1677869966,
-      "text": "More trade\n🕯 Short #ORDER at 0.0752 10x",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 10,
-          "type": "bold"
-        },
-        {
-          "offset": 11,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 11,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5451882707875276247"
-        },
-        {
-          "offset": 13,
-          "length": 7,
-          "type": "bold"
-        },
-        {
-          "offset": 20,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 20,
-          "length": 6,
-          "type": "bold"
-        },
-        {
-          "offset": 26,
-          "length": 14,
-          "type": "bold"
-        }
-      ],
-      "media": null,
-      "channel": "@TradePulseFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1203,
-      "cleanup_message_ids": [
-        1203,
-        1220,
-        1221,
-        1233,
-        1245,
-        1246,
-        1257,
-        1296,
-        1298,
-        1301,
-        1302
-      ],
-      "preview_message_ids": [
-        1301,
-        1302
-      ],
-      "scheduled_at": 1792836000,
-      "scheduled_approved": true
-    },
     "267987696": {
       "chat_id": 1677869966,
       "text": "📉 POSITION: SHORT\n🪙 COIN: ORDER/USDT\n⚡ LEVERAGE: 10x\n🎯 ENTRY: 0.0752\n🛑 SL: 0.0825\n━━━━━━━━━━━━━━━\n💰 TAKE PROFIT TARGETS\n1️⃣ TP1: 0.0720\n2️⃣ TP2: 0.0700\n3️⃣ TP3: 0.0680\n4️⃣ TP4: 0.0640\n5️⃣ TP5: 0.0600\n━━━━━━━━━━━━━━━\nTAKE PROFITS ALWAYS ✔️",
@@ -3622,8 +3529,1379 @@
       ],
       "scheduled_at": 1792841460,
       "scheduled_approved": true
+    },
+    "267987758": {
+      "chat_id": 1677869966,
+      "text": "🎮 فروش بازی Elden Ring از ۳۶.۴ میلیون نسخه عبور کرد؛ تداوم موفقیت‌های تجاری شاهکار فرام‌سافتور\n🔻مؤسسه تحقیقاتی Alinea Analytics در گزارش جدید خود اعلام کرد که میزان فروش بازی Elden Ring به ۳۶.۴ میلیون نسخه و درآمد آن به بیش از ۲ میلیارد دلار رسیده است. رایانه‌های شخصی با ۵۰ درصد سهم، بیشترین میزان فروش را داشته‌اند و پلی استیشن ۵ با ۳۵ درصد و ایکس باکس با ۱۵ درصد در رتبه‌های بعدی قرار دارند. این بازی در سال ۲۰۲۶ میلادی نیز حدود دو میلیون نسخه دیگر فروخته است.\n🔻بیش از ۹.۸ میلیون بازیکن حداقل ۱۰۰ ساعت از وقت خود را صرف این بازی کرده‌اند و نزدیک به ۳.۵ میلیون نفر نیز تمامی تروفی‌ها و اچیومنت‌ها را به دست آورده‌اند. بازی مستقل Elden Ring Nightreign که در سال ۲۰۲۵ عرضه شد، توانسته ۷.۸ میلیون نسخه بفروشد و ۲۸۲ میلیون دلار درآمد کسب کند. البته این آمار تنها برآوردهای تحلیلی است و هنوز تأییدیه رسمی ناشر را نگرفته است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFMmrcgODLjhcn0KROPFvmZvHOs4H_AAJfD2sbXVLdUlD2Y_4bP8CDAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1330,
+      "cleanup_message_ids": [
+        1330,
+        1402,
+        1403,
+        1531,
+        1532,
+        1534,
+        1537,
+        1538
+      ],
+      "preview_message_ids": [
+        1537,
+        1538
+      ],
+      "scheduled_at": 1792837860,
+      "scheduled_approved": true
+    },
+    "267987759": {
+      "chat_id": 1677869966,
+      "text": "🎮 پشتیبانی رسمی از DLSS 5 به آپدیت نسل نهمی Metro Redux اضافه شد\n🔻به‌روزرسانی نسل نهمی Metro Redux روز گذشته با پشتیبانی رسمی از تکنولوژی DLSS 5 منتشر شد که در تنظیمات بازی با عبارت DLSS-NR دیده می‌شود. این بازی پس از NBA 2K27 دومین عنوانی است که از DLSS 5 پشتیبانی می‌کند و در تست‌های کارت گرافیک GeForce RTX 5090 نرخ فریم را بالای ۱۲۰ فریم بر ثانیه نگه داشته است. این آپدیت همچنین رزولوشن 4K، نرخ فریم بدون محدودیت، FSR و بهبودهای بصری زیادی مانند نورپردازی جهانی و بافت‌های بهتر را به بازی اضافه کرده است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFM2rcgOCFmIDeVqUB9Y6mr5yqZrpaAAKHD2sbERvkUpwpQgQFxdVJAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1331,
+      "cleanup_message_ids": [
+        1331,
+        1404,
+        1405,
+        1539,
+        1541,
+        1543,
+        1546,
+        1547
+      ],
+      "preview_message_ids": [
+        1546,
+        1547
+      ],
+      "scheduled_at": 1792841460,
+      "scheduled_approved": true
+    },
+    "267987760": {
+      "chat_id": 1677869966,
+      "text": "🎮 هوش مصنوعی تاثیرگذارترین اتفاق گیمینگ در سال 2026 است، نه GTA 6! [قسمت اول]\n🔻هوش مصنوعی برخلاف بازی GTA 6 با دگرگونی در فرایند ساخت، سخت‌افزار و نیروی کار، تاثیرگذارترین پدیده صنعت گیم در سال ۲۰۲۶ است. این فناوری الگوهای سنتی تولید و هزینه‌های کل اکوسیستم ویدیوگیم را متحول می‌کند.\n🔻طبق پیش‌بینی ترندفورس، تقاضای مراکز داده قیمت حافظه‌های DRAM را ۱۰ تا ۱۵ درصد و NAND را ۱۵ تا ۲۰ درصد در اواخر ۲۰۲۶ افزایش می‌دهد. همچنین گزارش کنفرانس GDC نشان می‌دهد ۳۶ درصد توسعه‌دهندگان از ابزارهایی نظیر Claude Code و Codex در پروژه‌ها بهره می‌برند.\n🔻این ابزارها با کاهش هزینه‌ها به تیم‌های مستقل امکان ساخت پروژه‌های پیچیده را می‌دهند، هرچند سخت‌افزار را برای گیمرها گران‌تر می‌کنند. در نهایت، هوش مصنوعی فراتر از یک بازی منفرد، خود الگوی بنیادین بازی‌سازی و اقتصاد آن را بازتعریف خواهد کرد.\nمطالعه مطلب در گیمفا »\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFNGrcgOD-iINnSJ9F6P7fdofHbp1QAAKVD2sbTqvlUjj2Q26R0iouAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1332,
+      "cleanup_message_ids": [
+        1332,
+        1406,
+        1407,
+        1540,
+        1548,
+        1550,
+        1553,
+        1554
+      ],
+      "preview_message_ids": [
+        1553,
+        1554
+      ],
+      "scheduled_at": 1792845060,
+      "scheduled_approved": true
+    },
+    "267987761": {
+      "chat_id": 1677869966,
+      "text": "🎮 فروش بازی Clair Obscur: Expedition 33 به ۸.۷ میلیون نسخه رسید\n🔻مؤسسه تحقیقاتی Alinea Analytics اعلام کرد که مجموع فروش بازی Clair Obscur: Expedition 33 ساخته استودیوی Sandfall Interactive به ۸.۷ میلیون نسخه رسیده و درآمدی معادل ۳۶۶ میلیون دلار کسب کرده است. پلتفرم رایانه‌های شخصی با ۵۸.۸ درصد، پلی استیشن ۵ با ۳۵.۷ درصد و ایکس باکس با ۵.۵ درصد در فروش مستقیم این اثر نقش داشته‌اند. قرارداد این بازی روی سرویس گیم پس در تاریخ ۱۶ اکتبر ۲۰۲۶ پس از ۱۸ ماه به پایان رسید و نزدیک به ۴.۳ میلیون نفر از طریق این سرویس به تجربه آن پرداخته‌اند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFNWrcgOBtOeCYV8GCaaHK7IFwKqy-AAL6uDEboJecUEQve6BHc0WFAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1333,
+      "cleanup_message_ids": [
+        1333,
+        1408,
+        1409,
+        1555,
+        1558,
+        1560,
+        1563,
+        1564
+      ],
+      "preview_message_ids": [
+        1563,
+        1564
+      ],
+      "scheduled_at": 1792848660,
+      "scheduled_approved": true
+    },
+    "267987762": {
+      "chat_id": 1677869966,
+      "text": "🎮 منطق شیرجه در ↓\nعناوین GTA 6 - GTA 5 - RDR2\n🗨️ بنظرتون کدوم بهتره؟ فکر میکنم رد دد ۲ اینجا ضعیف عمل کرده.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFNmrcgODpq_oh89QcNFvDk-4TeSwSAAI_JgAC2BPgUvmyEZZBdd2jPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1334,
+      "cleanup_message_ids": [
+        1334,
+        1410,
+        1411,
+        1556,
+        1565,
+        1567,
+        1570,
+        1571
+      ],
+      "preview_message_ids": [
+        1570,
+        1571
+      ],
+      "scheduled_at": 1792852260,
+      "scheduled_approved": true
+    },
+    "267987763": {
+      "chat_id": 1677869966,
+      "text": "🎮 فروش بازی Baldur’s Gate 3 از ۲۳ میلیون نسخه عبور کرد\n🔻مجموع فروش جهانی بازی Baldur’s Gate 3 بر اساس برآوردهای مؤسسه Alinea Analytics از ۲۳.۲ میلیون نسخه عبور کرده و درآمدی بالغ بر ۱.۲ میلیارد دلار به همراه داشته است. از این میزان، حدود ۱۸.۷ میلیون نسخه روی استیم، ۲.۹ میلیون نسخه روی پلی استیشن ۵ و ۱.۶ میلیون نسخه روی کنسول‌های ایکس باکس به فروش رسیده است. این اثر نقش‌آفرینی که در سال ۲۰۲۳ منتشر شد، همچنان در سپتامبر ۲۰۲۶ میزبان حدود ۲.۲ میلیون کاربر فعال ماهانه بوده است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFN2rcgOA4o7TgTE1XmmQRkY6Ru4C3AAJDD2sbqWjkUsRD3ZARz9D4AQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1335,
+      "cleanup_message_ids": [
+        1335,
+        1412,
+        1413,
+        1557,
+        1572,
+        1574,
+        1577,
+        1578
+      ],
+      "preview_message_ids": [
+        1577,
+        1578
+      ],
+      "scheduled_at": 1792855860,
+      "scheduled_approved": true
+    },
+    "267987764": {
+      "chat_id": 1677869966,
+      "text": "🎮 بازی Fatekeeper با تنها ۱۳ توسعه‌دهنده به فروش نیم میلیون نسخه‌ای رسید\n🔻بازی نقش‌آفرینی فانتزی Fatekeeper ساخته استودیوی کوچک Paraglacial و نشر THQ Nordic توانسته است بیش از ۵۰۰ هزار نسخه در فروشگاه استیم بفروشد. این بازی اول‌شخص با داشتن تنها ۱۳ توسعه‌دهنده همچنان در مرحله دسترسی زودهنگام قرار دارد و سیستم مبارزات آن ترکیبی از سلاح‌های سرد و جادو است. تیم سازنده از بازخوردهای جامعه طرفداران برای بهبود کیفیت پروژه و رفع مشکلات استفاده می‌کند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFOGrcgOCPaLQK79JetdzjgizXMwNHAAJoJgAC2BPgUqinfj53QVIxPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1336,
+      "cleanup_message_ids": [
+        1336,
+        1414,
+        1415,
+        1581
+      ],
+      "preview_message_ids": [
+        1414,
+        1415
+      ]
+    },
+    "267987765": {
+      "chat_id": 1677869966,
+      "text": "🎮 فروش بازی Astro Bot پس از دو سال به ۴.۷ میلیون نسخه رسید\n🔻بازی Astro Bot روی کنسول پلی استیشن ۵ پس از انتشار در سپتامبر ۲۰۲۴ توانسته به فروش ۴.۷ میلیون نسخه و درآمد ۲۹۱ میلیون دلاری دست یابد. این بازی انحصاری ماهانه بیش از ۱۰۰ هزار نسخه می‌فروشد و ۴۶.۶ درصد از کل فروش آن به نسخه‌های فیزیکی اختصاص دارد. این آمار و ارقام بر اساس تازه‌ترین برآوردهای مؤسسه Alinea Analytics منتشر شده است و هنوز تأییدیه رسمی سونی را دریافت نکرده است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFOWrcgOD40xyPvoWRBzqUiXmQ4bynAALZtjEbJaSsUeY29MccsNAGAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1337,
+      "cleanup_message_ids": [
+        1337,
+        1416,
+        1417
+      ],
+      "preview_message_ids": [
+        1416,
+        1417
+      ]
+    },
+    "267987766": {
+      "chat_id": 1677869966,
+      "text": "🎮 سازنده سابق GTA 6: بزرگ‌ترین تهدید برای کارکنان راکستار، برآورده نکردن انتظارات است\n🔻جرمی هارتویک، طراح سابق راکستار گیمز که در توسعه Red Dead Redemption 2 و GTA 6 نقش داشته، اعلام کرد بزرگ‌ترین تهدید برای کارکنان این شرکت، فشار طاقت‌فرسا برای برآورده کردن انتظارات کمال‌گرایانه مدیران است، نه بحران مالی یا تعدیل نیرو. او که تا سال ۲۰۲۰ در استودیوی Rockstar North در اسکاتلند کار می‌کرد، به دلیل حجم کاری بالا و دوری از خانواده از این شرکت جدا شد. به گفته وی، با وجود پشتوانه مالی نامحدود راکستار، کارکنانی که نتوانند استانداردهای سخت‌گیرانه شرکت را برآورده کنند، ممکن است جایگاه شغلی خود را از دست بدهند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFOmrcgOAgtLINcc5I1s1rgSlpBlOcAAKlD2sbCnzlUhIHTbK-tYkFAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1338,
+      "cleanup_message_ids": [
+        1338,
+        1418,
+        1419
+      ],
+      "preview_message_ids": [
+        1418,
+        1419
+      ]
+    },
+    "267987767": {
+      "chat_id": 1677869966,
+      "text": "🎮 پدر پلی استیشن: خطر بسیار جدی وجود دارد که هوش مصنوعی و قیمت‌های بالا باعث نابودی کنسول‌ها شوند\n🔻کن کوتاراگی، خالق پلی استیشن، در گفت‌وگو با رسانه The Game Business هشدار داد که رشد فناوری هوش مصنوعی و قیمت‌های سرسام‌آور می‌توانند به نابودی کامل کنسول‌های بازی منجر شوند. بحران حافظه ناشی از هوش مصنوعی باعث افزایش شدید قیمت‌ها شده و طبق گزارش‌های اخیر، قیمت کنسول‌های نسل آینده ممکن است از مرز ۱۰۰۰ دلار عبور کند. این وضعیت بحرانی باعث شده است تا این دستگاه‌ها از دسترس بازار انبوه خارج شوند و آینده صنعت بازی‌های ویدیویی را با خطری جدی روبه‌رو سازند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFO2rcgOAn7oQ2pYh7NYo0jpmFagukAALfDmsbxnrlUnJEVxv75iycAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1339,
+      "cleanup_message_ids": [
+        1339,
+        1420,
+        1421
+      ],
+      "preview_message_ids": [
+        1420,
+        1421
+      ]
+    },
+    "267987768": {
+      "chat_id": 1677869966,
+      "text": "🎮 تعداد بازیکنان همزمان Cyberpunk 2077 در استیم از ۱۱۰ هزار نفر عبور کرد\n🔻تعداد بازیکنان هم‌زمان بازی Cyberpunk 2077 در پلتفرم استیم از مرز ۱۱۰ هزار نفر عبور کرد و به بالاترین سطح خود در سه سال گذشته رسید. این جهش چشمگیر به دلیل پخش فصل دوم انیمه Cyberpunk: Edgerunners در تاریخ ۲۰ اکتبر از شبکه نتفلیکس و انتشار به‌روزرسانی رایگان Edgerunners 2 رخ داده است. همچنین بازی The Witcher 3: Wild Hunt – Remastered پس از عرضه در ۲۹ سپتامبر توانست با عبور از ۱۳۷ هزار کاربر هم‌زمان، رکورد خود را در استیم بشکند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFPGrcgOCIw79ndwGEQIggwWFEbgv7AALsDmsbVBi8UpkMhP4aQdLyAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1340,
+      "cleanup_message_ids": [
+        1340,
+        1422,
+        1423
+      ],
+      "preview_message_ids": [
+        1422,
+        1423
+      ]
+    },
+    "267987769": {
+      "chat_id": 1677869966,
+      "text": "🎥 ایندی ناواراتی برای پیوستن به فیلم Call of Duty چراغ سبز نشان داد\n🔻ایندی ناواراتی، بازیگر فیلم Obsession، در مصاحبه با کولایدر از آمادگی کامل خود برای بازی در اقتباس سینمایی مجموعه Call of Duty خبر داد. این فیلم قرار است با نویسندگی تیلور شریدان و کارگردانی پیتر برگ ساخته شود، اما تاکنون تاریخ اکران و فهرست بازیگران رسمی آن اعلام نشده است. ناواراتی که از کودکی طرفدار این مجموعه بازی است، تأکید کرد که تنها با یک تماس تلفنی آماده پیوستن به این پروژه سینمایی است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFPWrcgOAFuKLMTg8oT845RoXWpFZZAAJKEWsb2BPgUtJFSyDejIsKAQADAgADdwADPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1341,
+      "cleanup_message_ids": [
+        1341,
+        1424,
+        1425
+      ],
+      "preview_message_ids": [
+        1424,
+        1425
+      ]
+    },
+    "267987770": {
+      "chat_id": 1677869966,
+      "text": "🎥 جزئیات تازه‌ای از نقش کاپیتان آمریکا و فالکون در Avengers: Doomsday منتشر شد\n🔻اطلاعات جدیدی از فیلم Avengers: Doomsday منتشر شده که جزئیات نقش سم ویلسون در رهبری گروه جدید انتقام‌جویان و بازگشت واکین تورس با تجهیزات فالکون را مشخص می‌کند. در این اثر که برای اکران در تاریخ ۱۸ دسامبر برنامه‌ریزی شده است، قهرمانانی از سه جهان متفاوت برای مقابله با یک بحران بزرگ گرد هم می‌آیند. کارگردانی این فیلم را آنتونی روسو و جو روسو بر عهده دارند و رابرت داونی جونیور در نقش دکتر دووم در آن حضور خواهد داشت.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFPmrcgOAxBWOT90J5PhfFEGFsJxeuAAJREWsb2BPgUhZmLXCMVr0FAQADAgADdwADPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1342,
+      "cleanup_message_ids": [
+        1342,
+        1426,
+        1427
+      ],
+      "preview_message_ids": [
+        1426,
+        1427
+      ]
+    },
+    "267987771": {
+      "chat_id": 1677869966,
+      "text": "🎮 جزئیات تازه‌ای از بازی لغوشده Mass Effect فاش شد؛ جنگ سرد کهکشانی و بازگشت لیارا\n🔻جزئیات تازه‌ای از پروژه لغوشده Mass Effect با نام رمز Universe فاش شده است که داستان آن بیش از ۶۰۰ سال پس از جنگ با ریپرها روایت می‌شد. در این بازی، بازیکنان در نقش یک مأمور N7 قرار می‌گرفتند و در دل یک جنگ سرد میان انسان‌ها، شورای سیتادل و گث‌ها به فعالیت می‌پرداختند.\n🔻پیرنگ این اثر قرار بود پل ارتباطی میان سه‌گانه اصلی و Mass Effect: Andromeda باشد و شخصیت محبوب لیارا تی‌سونی نیز به عنوان یکی از ماتریارک‌های قدرتمند آساری بازمی‌گشت. مکانیک‌های گیم‌پلی با الهام از آثاری مانند Hitman و Deus Ex آزادی عمل بیشتری در طراحی مراحل و هک محیطی ارائه می‌دادند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFP2rcgODiMbVZFVc8VR-_V2HH_8QYAAJzD2sb8iPcUruX3KJsITjgAQADAgADeQADPQQ"
+      },
+      "channel": "@RazKehann",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1343,
+      "cleanup_message_ids": [
+        1343,
+        1428,
+        1429
+      ],
+      "preview_message_ids": [
+        1428,
+        1429
+      ]
+    },
+    "267987772": {
+      "chat_id": 1677869966,
+      "text": "🎮 چرا منتظر GTA 6 وایسادی\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFQGrcgODwCtKLb4A8Kh-DLJF3GQcMAAJMJgAC2BPgUudEkGHuwErgPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1344,
+      "cleanup_message_ids": [
+        1344,
+        1430,
+        1431
+      ],
+      "preview_message_ids": [
+        1430,
+        1431
+      ]
+    },
+    "267987773": {
+      "chat_id": 1677869966,
+      "text": "🎮 شرکت EA پس از تعطیلی BioWare، محتوای Mass Effect را از Battlefield 6 حذف کرد\n🔻شرکت EA تنها چند روز پس از اعلام تعطیلی استودیوی BioWare و لغو ساخت بازی Mass Effect 5 در ۲۹ مهر (۲۱ اکتبر)، محتوای تزئینی مرتبط با مجموعه Mass Effect را از بازی Battlefield 6 حذف کرد. این آیتم‌ها شامل سلاح‌های علمی‌تخیلی، آویز اسلحه با طرح سفینه Normandy و نشان N7 بودند که هم‌زمان با انتشار فصل پنجم به منوهای بازی اضافه شده بودند.\n🔻تصمیم EA برای لغو ساخت این بازی و تعطیلی BioWare واکنش‌های گسترده‌ای برانگیخت و کارزار طرفداران برای نجات Mass Effect از ۵۰ هزار امضا فراتر رفت. با وجود تعطیلی استودیو، سرویس Prime Video آمازون در گفت‌وگو با IGN تأیید کرده است که ساخت مجموعه تلویزیونی Mass Effect همچنان ادامه دارد.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFQWrcgOCz8hUEfnwW2pdULgPN_rhSAALyD2sbkAblUojVzwL00NKtAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1345,
+      "cleanup_message_ids": [
+        1345,
+        1432,
+        1433
+      ],
+      "preview_message_ids": [
+        1432,
+        1433
+      ]
+    },
+    "267987774": {
+      "chat_id": 1677869966,
+      "text": "🎮 جیسون شرایر: بعید می‌دانم استودیوی آرکین تعطیل شود\n🔻جیسون شرایر، خبرنگار بلومبرگ، اعلام کرد که راهکارهای متعددی برای جلوگیری از تعطیلی استودیوی Arkane Lyon در دست بررسی است و احتمال انحلال آن کمتر از بازتاب‌های رسانه‌ای اخیر به نظر می‌رسد. پیش‌تر روزنامه Le Monde گزارش داده بود که مایکروسافت در ماه ژوئیه کارکنان این استودیو را از احتمال تعطیلی مطلع کرده بود که این تصمیم می‌تواند به از دست رفتن ۲۱۷ موقعیت شغلی منجر شود. مهلت قانونی رایزنی درباره این طرح در تاریخ ۱۳ نوامبر به پایان می‌رسد و مایکروسافت تأیید کرده که فعالانه به‌دنبال یافتن سرمایه‌گذار یا شریکی برای حمایت از پروژه فعلی این استودیو است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFQmrcgOBmRcwP1neuSO6jrwSBEa3cAAKgD2sbDeDkUr7A2g9OOl4iAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1346,
+      "cleanup_message_ids": [
+        1346,
+        1434,
+        1435
+      ],
+      "preview_message_ids": [
+        1434,
+        1435
+      ]
+    },
+    "267987775": {
+      "chat_id": 1677869966,
+      "text": "🔥 به اینفینیت گیم خوش اومدی! 🔥\nاینجا جاییه که گیمرها با خیال راحت خرید می‌کنن 😎\n❤️🧩9⃣🔫🎲🎲🎲🤖🥊🛒❤️👽⚔\n🔥بهترین قیمت در ایران🔥\n🔥 فروشگاه اکانت قانونی بازی PS4 و PS5\n🎮اکانت های ظرفیت کامل برای همکاران با قیمت عمده\n🛡 اکانت های دارای ضمانت\n🔗 قابلیت تعویض آنی\n🔥 اینفینیت گیم | ۳ سال اعتماد 💪\n💠+۴,۰۰۰ رضایت واقعی 🙏\n🕖پشتیبانی سریع و خرید مطمئن💻💻\n🆒بزن بریم سمت بهترین تجربه گیمینگ\n🌐آدرس کانال تلگرام‌ 🔽\n📞 Tell : 09395476517",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFQ2rcgODSntW8cEao3EUh-WpSVUceAAI0EGsbancYUdeJBU7dxIzWAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1347,
+      "cleanup_message_ids": [
+        1347,
+        1436,
+        1437
+      ],
+      "preview_message_ids": [
+        1436,
+        1437
+      ]
+    },
+    "267987776": {
+      "chat_id": 1677869966,
+      "text": "🎮 آپدیت بزرگی برای پورت غیررسمی Uncharted: The Nathan Drake Collection روی کامپیوتر منتشر شد\n🔻به‌روزرسانی بزرگی برای پورت غیررسمی Uncharted: The Nathan Drake Collection روی کامپیوتر منتشر شد که امکان نمایش آیکون‌های کیبورد و کنترلر ایکس‌ باکس را به بازی اضافه می‌کند. با نصب این آپدیت، کاربران می‌توانند بازی Uncharted 3 را از ابتدا تا انتها با نرخ ۶۰ فریم بر ثانیه تجربه کنند، در حالی که نسخه‌های اول و دوم نیز عملکرد بسیار خوبی دارند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFRGrcgOBaTXZwF7N7Nm_5xJOdAxGyAAK1D2sbvULkUsQjm8S012cJAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1348,
+      "cleanup_message_ids": [
+        1348,
+        1438,
+        1439
+      ],
+      "preview_message_ids": [
+        1438,
+        1439
+      ]
+    },
+    "267987777": {
+      "chat_id": 1677869966,
+      "text": "🎮 دیسکورد با تم اختصاصی GTA 6 به استقبال این بازی می‌رود\n🔻همکاری جدیدی میان بازی GTA 6 و پلتفرم دیسکورد از تاریخ ۲۵ آبان (۱۶ نوامبر) آغاز می‌شود که به کاربران اجازه می‌دهد ظاهر این برنامه را با آیکون اختصاصی، فونت ویژه و تمی الهام‌گرفته از این بازی شخصی‌سازی کنند. این بازی بسیار موردانتظار شرکت Rockstar Games قرار است در تاریخ ۲۸ آبان (۱۹ نوامبر) برای پلی استیشن ۵ و ایکس باکس سری ایکس/اس در دسترس قرار گیرد. جزئیات بیشتری درباره رایگان یا پولی بودن این قابلیت‌های دیسکورد هنوز منتشر نشده است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFRWrcgOD8zdaLBuAL_OzLt_0rNJRMAAMPaxvfWeRSY3k4rSLZiIMBAAMCAAN3AAM9BA"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1349,
+      "cleanup_message_ids": [
+        1349,
+        1440,
+        1441
+      ],
+      "preview_message_ids": [
+        1440,
+        1441
+      ]
+    },
+    "267987778": {
+      "chat_id": 1677869966,
+      "text": "🎮 از اون بازی‌های به ظاهر قدیمی، که هنوز توی ذهن کسایی که بازیش کردن شاهکارن.\nبازی: The Elder Scrolls V: Skyrim\nآهنگ: Dawn - جرمی سول\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFRmrcgOCwseQV5zcNYNo9lbCIeBgnAAKOJgAC2BPgUqllSmJPyBSQPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1350,
+      "cleanup_message_ids": [
+        1350,
+        1442,
+        1443
+      ],
+      "preview_message_ids": [
+        1442,
+        1443
+      ]
+    },
+    "267987779": {
+      "chat_id": 1677869966,
+      "text": "🎮 شبتون به زیبایی این شاهکار²\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFR2rcgOA5i4YAAbUSZrLb1U91e9smqgACPSYAAtgT4FI_QA_uJ7_7CT0E"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1351,
+      "cleanup_message_ids": [
+        1351,
+        1444,
+        1445
+      ],
+      "preview_message_ids": [
+        1444,
+        1445
+      ]
+    },
+    "267987780": {
+      "chat_id": 1677869966,
+      "text": "🎮 تجربه بازی‌های Nintendo DS روی گوشی iPhone Duo بازسازی شد\n🔻توسعه‌دهندگان شبیه‌ساز Delta با انتشار نسخه ۲.۰ امکان اجرای بازی‌های کنسول Nintendo DS را روی گوشی تاشوی iPhone Duo فراهم کرده‌اند. این به‌روزرسانی با بهره‌گیری از نمایشگر ۷.۶ اینچی و انعطاف‌پذیر آیفون دوئو که از ۲۳ اکتبر روانه بازار شده، ساختار دوگانه و لولای کنسول نینتندو را با استفاده از چین‌خوردگی میانی دستگاه به‌دقت شبیه‌سازی می‌کند. از دیگر قابلیت‌های این نسخه می‌توان به پشتیبانی از Sega Genesis، اسکین‌های متحرک، تطبیق هوشمند با نمایشگر بیرونی و بازسازی حالت خواب دستگاه اشاره کرد.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFSGrcgOBAXbDP8tal4UAjR55TCPU3AAIZEGsbpGflUhDHpgw7WqfEAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1352,
+      "cleanup_message_ids": [
+        1352,
+        1446,
+        1447
+      ],
+      "preview_message_ids": [
+        1446,
+        1447
+      ]
+    },
+    "267987781": {
+      "chat_id": 1677869966,
+      "text": "🎮 بنیان‌گذار Arrowhead: فعلاً برنامه‌ای برای ساخت Helldivers 3 نداریم\n🔻یوهان پیلستدت، بنیان‌گذار استودیوی Arrowhead Game، اعلام کرد که این شرکت در حال حاضر هیچ برنامه‌ای برای ساخت بازی Helldivers 3 ندارد. به گفته او، ساخت نسخه سوم تنها زمانی توجیه‌پذیر است که تفاوت‌های بنیادین با نسخه دوم داشته باشد و در حال حاضر حدود ۹۵ درصد از توان ۱۵۰ کارمند استودیو معطوف به پشتیبانی از Helldivers 2 است. پیلستدت معتقد است عرضه دنباله جدید ممکن است دستاوردهای بازیکنان را بی‌ارزش کند و تمرکز اصلی تیم همچنان بر ارتقای نسخه فعلی و حفظ جامعه کاربری آن است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFSWrcgOAPfq6NCG7_9-Us7vkaR8FPAALmD2sbf_XkUr3iGubXqeO9AQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1353,
+      "cleanup_message_ids": [
+        1353,
+        1448,
+        1449
+      ],
+      "preview_message_ids": [
+        1448,
+        1449
+      ]
+    },
+    "267987782": {
+      "chat_id": 1677869966,
+      "text": "🎮 شایعه: روند توسعه Mass Effect 5 به‌خوبی پیش می‌رفت و داستان بازی نهایی شده بود\n🔻روند توسعه بازی Mass Effect 5 برخلاف برخی شایعات با بحران جدی مواجه نبوده و بخش‌های کلیدی داستان و ساختار کلی گیم‌پلی آن پیش از توقف پروژه آماده شده بودند. به گفته Shinobi602، ساخت این عنوان از سال ۲۰۲۰ با حضور سازندگان سه‌گانه اصلی کلید خورد و تیم توسعه‌دهنده از چشم‌اندازی شفاف پیروی می‌کرد. تغییر اولویت‌های کلان الکترونیک آرتز و تمرکز بر سودآوری از بازی‌های ورزشی و شوتر، نقشی تعیین‌کننده در سرنوشت این پروژه ایفا کرد.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFSmrcgOAgcZg-g00y9naaliGdi-0RAAKbD2sb0DLkUtOHpwABEvHsEwEAAwIAA3cAAz0E"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1354,
+      "cleanup_message_ids": [
+        1354,
+        1450,
+        1451
+      ],
+      "preview_message_ids": [
+        1450,
+        1451
+      ]
+    },
+    "267987783": {
+      "chat_id": 1677869966,
+      "text": "🎮 خرید کوین FC 27؛ راهنمای ساخت تیم قدرتمند در آلتیمیت تیم\n🔻ساخت یک ترکیب قدرتمند در بخش Ultimate Team بازی FC 27 مستلزم شناسایی نقاط ضعف تیم، تناسب بازیکنان با سبک بازی و مدیریت صحیح بودجه است. بازیکنان برای تقویت خطوط مختلف می‌توانند از طریق انجام مسابقات، فروش آیتم‌های قابل معامله و تکمیل SBCها کوین کسب کنند. البته طبق قوانین EA، خرید کوین از اشخاص یا فروشگاه‌های ثالث مجاز نیست و می‌تواند به محدودیت حساب یا حذف کوین‌ها منجر شود.\n🔻هنگام انتخاب فروشگاه آنلاین، توجه به شفافیت قیمت، پشتیبانی و امنیت حساب اهمیت زیادی دارد. مجموعه BF FC SHOP خدمات مربوط به بازی FC 27 ازجمله کوین، خرید بازیکن، پک و SBC را در وب‌سایت خود ارائه می‌دهد. ارزیابی هزینه گزینه‌های موجود و شناخت بازار نقل‌وانتقالات، مسیر بستن یک تیم قدرتمند در آلتیمیت تیم را هموارتر می‌کند.\nمطالعه مطلب در گیمفا »\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFS2rcgOBxFXayg3T6ZfkfWCiLTkPAAAKYEGsbCNPkUpvEqyOmoMxqAQADAgADeQADPQQ"
+      },
+      "channel": "@RazKehann",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1355,
+      "cleanup_message_ids": [
+        1355,
+        1452,
+        1453
+      ],
+      "preview_message_ids": [
+        1452,
+        1453
+      ]
+    },
+    "267987784": {
+      "chat_id": 1677869966,
+      "text": "🎮 بازی Call of Duty: Modern Warfare 4 خشم قانون‌گذاران کره جنوبی را برانگیخت\n🔻بازی Call of Duty: Modern Warfare 4 برای نخستین بار پس از Advanced Warfare داستان را به کره جنوبی آورده است. در این نسخه، مأموریت سرباز پارک در جبهه کره و تعقیب ماکاروف توسط کاپیتان پرایس نقش پررنگی دارند. این اثر که با الهام از آثاری چون Black Hawk Down و تام کلنسی ساخته شده، تنش‌های سیاسی کره جنوبی با همسایه شمالی‌اش را پررنگ کرده است.\n🔻طبق گزارش ایکس‌باکس نیوز، نمایش ویرانی‌ها باعث شده برخی قانون‌گذاران از رئیس‌جمهور فعلی کره جنوبی بخواهند MW4 را تجربه کند تا پیامدهای قضاوت‌هایش را ببیند. با وجود این حواشی، اعتراض چندانی به محتوای داستانی MW4 مطرح نشده و سرنوشت شخصیت‌های جدید آن در کنار Modern Warfare Redux مشخص خواهد شد.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFTGrcgOCpUuXYWn21x5mNmyj7nVP3AAJzEGsbw-0kUDTrg50vzrwMAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1356,
+      "cleanup_message_ids": [
+        1356,
+        1454,
+        1455
+      ],
+      "preview_message_ids": [
+        1454,
+        1455
+      ]
+    },
+    "267987785": {
+      "chat_id": 1677869966,
+      "text": "🎮 جزئیات تازه‌ای از Mass Effect 5 فاش شد؛ جنگ سرد کهکشانی و ترکیب هر سه پایان نسخه قبلی در یک داستان\n🔻یوتیوبر دانتیکس اطلاعات تازه‌ای درباره پروژه لغو شده Mass Effect 5 منتشر کرده است که داستان آن ۶۰۰ سال پس از جنگ با ریپرها روایت می‌شد. در این نسخه کهکشان به سه بلوک قدرت تقسیم شده بود و تمرکز داستان روی یک جنگ سرد کهکشانی و تنش‌های سیاسی قرار داشت.\n🔻بازیکنان کنترل یک مأمور N7 را بر عهده داشتند و لیارا نیز در قالب یک ماتریارک قدرتمند بازمی‌گشت. تیم سازنده قصد داشت هر سه پایان نسخه قبلی را در داستان لحاظ کند و روابط عاشقانه نیز آزادانه‌تر پرداخت می‌شدند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFTWrcgODPysC_yu5WQRa_aP_TDsSFAAJ-EGsbXd7kUrwY4vT0PGxIAQADAgADdwADPQQ"
+      },
+      "channel": "@RazKehann",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1357,
+      "cleanup_message_ids": [
+        1357,
+        1456,
+        1457
+      ],
+      "preview_message_ids": [
+        1456,
+        1457
+      ]
+    },
+    "267987786": {
+      "chat_id": 1677869966,
+      "text": "🎮 کپکام ظاهرا از سطح دشواری Onimusha: Way of the Sword رضایت دارد\n🔻بازی Onimusha: Way of the Sword از زمان انتشار در ماه گذشته بحث‌های زیادی درباره میزان دشواری خود به همراه داشت. اگرچه قفل بودن درجه سختی بالاتر تا پایان بخش داستانی و کوتاهی مدت زمان بازی مورد انتقاد قرار گرفت، اما کپکام از سطح دشواری آن رضایت دارد.\n🔻ساتورو نیهی، کارگردان بازی، در مصاحبه با پی‌سی گیمر اعلام کرد بررسی داده‌های بازیکنان نشان می‌دهد سطح دشواری بسیار به هدف اولیه تیم سازنده نزدیک است. هدف کپکام ارائه تجربه‌ای حدوداً ۲۰ ساعته و خطی بود که بازیکنان در آن با چالش روبه‌رو شوند اما در نهایت بتوانند بر موانع غلبه کنند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFTmrcgOBV2LWOHUKzShFg5yjBdn_fAAKrEGsbjznlUrQOzYpX2C8BAQADAgADdwADPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1358,
+      "cleanup_message_ids": [
+        1358,
+        1458,
+        1459
+      ],
+      "preview_message_ids": [
+        1458,
+        1459
+      ]
+    },
+    "267987787": {
+      "chat_id": 1677869966,
+      "text": "🎮 بازی‌های Fart Together ،Emberville و ArcheAge Chronicles در صدر فهرست دموهای پرطرفدار Steam Next Fest قرار گرفتند\n🔻شرکت ولو فهرست ۲۰ دموی پرطرفدار رویداد Steam Next Fest را منتشر کرد که این رویداد تا دوشنبه ۴ آبان (۲۶ اکتبر) ادامه دارد. بازی‌های Fart Together ،Emberville و ArcheAge Chronicles در صدر این فهرست متنوع قرار گرفته‌اند. عناوین دیگری مانند Worst Class Ever و Probably Stolen – Cyberpunk Shopkeeper Sim نیز در این فهرست حضور دارند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFT2rcgOBX7LIedFeR_858GweEQ0zSAAJEEGsbaLXlUhb2At4rl7UPAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1359,
+      "cleanup_message_ids": [
+        1359,
+        1460,
+        1461
+      ],
+      "preview_message_ids": [
+        1460,
+        1461
+      ]
+    },
+    "267987788": {
+      "chat_id": 1677869966,
+      "text": "🎮 طراح Zelda: Ocarina of Time می‌خواست ناوی دختری بامزه باشد، اما نینتندو ۶۴ چنین امکانی را فراهم نمی‌کرد\n🔻یوشیاکی کویزومی، طراح بازی Zelda: Ocarina of Time فاش کرده است که ناوی در طرح اولیه قرار بود ظاهری شبیه دختری بامزه و انسان‌مانند داشته باشد. با این حال، محدودیت‌های سخت‌افزاری کنسول نینتندو ۶۴ مانع از اجرای این ایده شد و در نهایت این شخصیت به شکل یک گوی نورانی بال‌دار طراحی شد. کانال یوتیوب Kit & Krysta اخیراً با بازنشر مصاحبه قدیمی سال ۲۰۱۱ این موضوع را یادآوری کرده است. تصاویر پیش از عرضه نشان می‌دهند که ناوی در نسخه ریمیک بازی نیز با همان ظاهر آشنای گوی نورانی و با لبه‌های نرم‌تر حضور خواهد داشت.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFUGrcgOBxP9d1M6SokmNueauaeaFYAAL8D2sbIC7lUqSGooFSh8x1AQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1360,
+      "cleanup_message_ids": [
+        1360,
+        1462,
+        1463
+      ],
+      "preview_message_ids": [
+        1462,
+        1463
+      ]
+    },
+    "267987789": {
+      "chat_id": 1677869966,
+      "text": "🎮 گزارش: مدیران ایکس‌ باکس در ۵ سال از ۶ سال گذشته به اهداف عملکردی خود نرسیده‌اند\n🔻گزارش‌های تازه نشان می‌دهند که مدیران ایکس‌ باکس در پنج سال از شش سال گذشته نتوانسته‎اند به اهداف عملکردی تعیین‌شده برای پاداش‌های مالی خود دست پیدا کنند. شرکت مایکروسافت برای رشد ۴.۳ درصدی درآمد محتوا و خدمات این پلتفرم تا ۳۰ ژوئن ۲۰۲۶ هدف‌گذاری کرده بود، اما عملکرد واقعی با افت ۶ درصدی مواجه شد. از سال ۲۰۲۰ پاداش مدیران ارشد به این شاخص‌ها وابسته بوده و تمرکز آن از تعداد مشترکان گیم پس در سال ۲۰۲۳ به رشد درآمد تغییر یافته است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFUWrcgOADoTA2mtA6E9MqVB47qY4OAAIjD2sb2HTlUvDL7s17aycjAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1361,
+      "cleanup_message_ids": [
+        1361,
+        1464,
+        1465
+      ],
+      "preview_message_ids": [
+        1464,
+        1465
+      ]
+    },
+    "267987790": {
+      "chat_id": 1677869966,
+      "text": "🎮 مدیر ارشد ایکس‌ باکس پس از تنها ۳ ماه از مایکروسافت جدا شد\n🔻هلن چیانگ، مدیر ارشد عملیات ایکس‌ باکس و مدیر پیشین مجموعه Minecraft، پس از ۲۱ سال فعالیت مایکروسافت را ترک کرد. این جدایی غیرمنتظره تنها سه ماه پس از انتصاب او به این سمت و در جریان برنامه‌های بازسازی و تعدیل نیروی شرکت رخ داده است. طبق اعلام آشا شارما، مدیرعامل ایکس‌ باکس، تا زمان انتخاب جایگزین، مسئولیت‌های چیانگ میان دیگر مدیران تقسیم می‌شود. برنامه بازسازی ساختاری ایکس‌ باکس تاکنون به حذف صدها شغل منجر شده و پیش‌بینی می‌شود تعدیل نیروها تا پایان سال مالی ۲۰۲۷ به ۳۲۰۰ موقعیت شغلی برسد.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFUmrcgOA6bI4DJmtYdELHVaerrHfRAAIwEGsbw-nkUgFGDdRsaRenAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1362,
+      "cleanup_message_ids": [
+        1362,
+        1466,
+        1467
+      ],
+      "preview_message_ids": [
+        1466,
+        1467
+      ]
+    },
+    "267987791": {
+      "chat_id": 1677869966,
+      "text": "شمارش معکوس برای بهترین بازی سال شروع شده 😏\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgIAAxkBAAIFU2rcgOAB4Lcl6SIhTSgg3wIONPFjAAL7pQACkV7pSo6yWG_MMmyhPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1363,
+      "cleanup_message_ids": [
+        1363,
+        1468,
+        1469
+      ],
+      "preview_message_ids": [
+        1468,
+        1469
+      ]
+    },
+    "267987792": {
+      "chat_id": 1677869966,
+      "text": "🎮 دیگه کم کم باید باهات خداحافظی کنیم.....💔\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFVGrcgODjhWLwrVrulfZ2Qza6PKFpAAIXDAACuszkUlaSpb-J_EozPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1364,
+      "cleanup_message_ids": [
+        1364,
+        1470,
+        1471
+      ],
+      "preview_message_ids": [
+        1470,
+        1471
+      ]
+    },
+    "267987793": {
+      "chat_id": 1677869966,
+      "text": "🎥 نویسنده Dexter: Resurrection از احتمال ساخت ادامه داستان خبر داد\n🔻اسکات رینولدز، نویسنده Dexter: Resurrection، اعلام کرده است که در صورت ساخت فصل سوم این سریال، فرصت بیش تری برای پرداختن به دکستر مورگان و میراثش وجود خواهد داشت. با این وجود، تمدید رسمی این مجموعه برای فصل سوم هنوز تأیید نشده است و همه چیز به عملکرد فصل دوم بستگی دارد.\n🔻فصل دوم این اثر در تاریخ جمعه ۳۰ اکتبر ۲۰۲۶ معادل ۸ آبان ۱۴۰۵ پخش خواهد شد و شامل ۱۰ قسمت است. مایکل سی. هال در نقش دکستر مورگان بازمی گردد و بازیگرانی چون برایان کاکس، دن استیونز و گابریل لونا در نقش قاتلان زنجیره‌ای به داستان اضافه می شوند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFVWrcgOArolkxyqcmf6C1fsrD6hG-AAIOD2sbUmflUpTtm9yga7dnAQADAgADdwADPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1365,
+      "cleanup_message_ids": [
+        1365,
+        1472,
+        1473
+      ],
+      "preview_message_ids": [
+        1472,
+        1473
+      ]
+    },
+    "267987794": {
+      "chat_id": 1677869966,
+      "text": "🎮 دارک سولز ۲....\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFVmrcgODSorsxDJQ5raGCs9vNh_NGAAKPDAACc6fkUl6M0-B6Q_MqPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1366,
+      "cleanup_message_ids": [
+        1366,
+        1474,
+        1475
+      ],
+      "preview_message_ids": [
+        1474,
+        1475
+      ]
+    },
+    "267987795": {
+      "chat_id": 1677869966,
+      "text": "🎮 پورت غیررسمی Bloodborne با DLSS 5 روی RTX 3070 لپ‌تاپی به ۴۷ فریم بر ثانیه رسید\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFV2rcgOD_7YOUcHXP_CpswyWXOIYnAAKwD2sb5dvlUvHxWmvnULuQAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1367,
+      "cleanup_message_ids": [
+        1367,
+        1476,
+        1477
+      ],
+      "preview_message_ids": [
+        1476,
+        1477
+      ]
+    },
+    "267987796": {
+      "chat_id": 1677869966,
+      "text": "🎮 یک تصادف عادی با موتور در GTA IV😂\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFWGrcgOBl9ZbZJNyM6mekEY1mxo-QAALFDAACdVblUkafnhxvyWqpPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1368,
+      "cleanup_message_ids": [
+        1368,
+        1478,
+        1479
+      ],
+      "preview_message_ids": [
+        1478,
+        1479
+      ]
+    },
+    "267987797": {
+      "chat_id": 1677869966,
+      "text": "🎮 طرفداران Mass Effect از سازندگان Palworld خواستند امتیاز این مجموعه را خریداری کنند\n🔻به دنبال تعطیلی استودیوی BioWare و لغو ساخت بازی Mass Effect 5 توسط الکترونیک آرتز، گروهی از هواداران از استودیوی Pocketpair سازنده بازی Palworld خواستند تا امتیاز این مجموعه را خریداری کند. جان باکلی مدیر ارتباطات پاک‌پییر تأیید کرد که تنها در یک روز حدود ۳۰ پیام خصوصی و ایمیل در این رابطه دریافت کرده است. او توضیح داد که مالکان حقوق بازی‌ها معمولاً تمایلی به فروش ندارند یا مبالغ نجومی درخواست می‌کنند و این معاملات بسیار پیچیده است. باکلی همچنین به طنز اعلام کرد که شخصاً ترجیح می‌دهد امتیاز بازی Jade Empire محصول ۲۰۰۵ را بخرد.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFWWrcgOCtGIURz7TMo844ejdQF7BxAALRDmsbK7PsUrUz9sodWaKAAQADAgADeQADPQQ"
+      },
+      "channel": "@RazKehann",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1369,
+      "cleanup_message_ids": [
+        1369,
+        1480,
+        1481
+      ],
+      "preview_message_ids": [
+        1480,
+        1481
+      ]
+    },
+    "267987798": {
+      "chat_id": 1677869966,
+      "text": "🎮 از خفن‌ترین آهنگ های دنیای گیم 🔥\n🎮GTA San Andreas\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFWmrcgOBGgqei_psWFy1X6QsCsn2wAALRCwACVwTtUkqkXZ6paaWCPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1370,
+      "cleanup_message_ids": [
+        1370,
+        1482,
+        1483
+      ],
+      "preview_message_ids": [
+        1482,
+        1483
+      ]
+    },
+    "267987799": {
+      "chat_id": 1677869966,
+      "text": "❌🧩 هشدار اسپویل Modern Warfare 4\nدیدن اینکه بالاخره پرایس ماکاروف رو گیر می‌ندازه 😃\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFW2rcgOD_HJtL_WqcAAE1d6cWhCLZmQACAiUAAsKw4FJSwrT6fnvxrD0E"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1371,
+      "cleanup_message_ids": [
+        1371,
+        1484,
+        1485
+      ],
+      "preview_message_ids": [
+        1484,
+        1485
+      ]
+    },
+    "267987800": {
+      "chat_id": 1677869966,
+      "text": "🇯🇵 گیم Final Fantasy Resonance تو استیم به 27,933 بازیکن هم‌زمان رسیده و طبق SteamDB، این سومین لانچ بزرگ یه بازی تک‌نفره تو سری Final Fantasy تو استیمه!\nبرای مقایسه، Final Fantasy VII Rebirth با اوج 40,564 بازیکن هم‌زمان اوله، بعد Final Fantasy XV با 29,498 نفر دوم و Final Fantasy XVI با 27,508 نفر سومه. Final Fantasy Resonance با 27,933 نفر تقریبا هم‌رده با Final Fantasy XVI قرار گرفته.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFXGrcgODD2N8Zh-4kn9Dj6dokMX1gAALjEGsbwrDgUrs8FjYBkpmrAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1372,
+      "cleanup_message_ids": [
+        1372,
+        1486,
+        1487
+      ],
+      "preview_message_ids": [
+        1486,
+        1487
+      ]
+    },
+    "267987801": {
+      "chat_id": 1677869966,
+      "text": "⚽️🧩 واکنش مدیر پروژه Mass Effect به تعطیلی استودیو و انتشار GTA 6!\nمایک گمبل، مدیر پروژه Mass Effect 5، در واکنشی به انتشار GTA 6 گفت: «حداقل وقتی GTA 6 منتشر میشه، لازم نیست خودم رو به بیماری بزنم و مرخصی بگیرم!»\nاون همچنین از طرفدارا بابت موج حمایت‌ها و پیام‌های محبت‌آمیزشون بعد از تعطیلی استودیو توسط EA تشکر کرد و گفت این حمایت‌ها براشون اهمیت خیلی زیادی داره.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFXWrcgOAzciVD6Atxi7H04zhVPSLqAALrEGsbwrDgUvfdydufDixiAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1373,
+      "cleanup_message_ids": [
+        1373,
+        1488,
+        1489
+      ],
+      "preview_message_ids": [
+        1488,
+        1489
+      ]
+    },
+    "267987802": {
+      "chat_id": 1677869966,
+      "text": "🕸 گیم Spider-Man 2 با فناوری DLSS 5!\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFXmrcgOAxGUYT_nAdNoZCF37RUu2QAAJKJQACwrDgUrmNKne-3GQoPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1374,
+      "cleanup_message_ids": [
+        1374,
+        1490,
+        1491
+      ],
+      "preview_message_ids": [
+        1490,
+        1491
+      ]
+    },
+    "267987803": {
+      "chat_id": 1677869966,
+      "text": "🧩🎮همکاری Xbox با ارلینگ هالند برای تبلیغ Call of Duty Modern Warfare 4\nچند ماه پیش، ارلینگ هالند گفته بود وقتی مشغول تمرین نیست، یکی از تفریحات موردعلاقه‌اش بازی کردن GTA، Call of Duty و Minecraft هست.\nاون حتی گفته بود Call of Duty: Modern Warfare 2 جزو سه بازی برتر تاریخ از نظرشه!\nحالا Xbox برای تبلیغ Modern Warfare 4 با این ستاره فوتبال همکاری کرده تا علاقه‌اش به بازی‌های ویدیویی رو به بخشی از کمپین تبلیغاتی خودش تبدیل کنه.\n⚽️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFX2rcgOBMaQc_h9LxuMuXW6wa3G6_AAImDAACNMrtUsM5XiF6EAxKPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1375,
+      "cleanup_message_ids": [
+        1375,
+        1492,
+        1493
+      ],
+      "preview_message_ids": [
+        1492,
+        1493
+      ]
+    },
+    "267987804": {
+      "chat_id": 1677869966,
+      "text": "🧩 حجم و لیست تروفی‌های GTA VI ممکنه به‌زودی لو بره!\nطبق گزارش‌ها، قراره نسخه‌های مخصوص بررسی GTA VI اواخر اکتبر برای رسانه‌ها ارسال بشن. اگه این اتفاق بیفته، ممکنه توی همین چند روز آینده برای اولین بار از حجم بازی و لیست تروفی‌هاش باخبر بشیم؛ اونم قبل از انتشار رسمی بازی!\n🔻به نظر شما حجم GTA VI چند گیگابایته؟\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFYGrcgOAdvBNF8EocXAbaSXWlRVdFAAMRaxvCsOBSs1cc9C2d2XYBAAMCAAN5AAM9BA"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1376,
+      "cleanup_message_ids": [
+        1376,
+        1494,
+        1495
+      ],
+      "preview_message_ids": [
+        1494,
+        1495
+      ]
+    },
+    "267987805": {
+      "chat_id": 1677869966,
+      "text": "🧩 این جزئیات دوست‌داشتنی در Red Dead Redemption 2 رو دیده بودید؟\nتوی شهر Valentine، می‌تونید با یه NPC روبه‌رو بشید که فقط یه دست داره و از آرتور می‌خواد بغلش کنه.\nاگه درخواستش رو قبول کنید، Honor آرتور بیشتر می‌شه! اما ماجرا به همین‌جا ختم نمی‌شه؛ اون درباره دوست قدیمیش هم با آرتور صحبت می‌کنه و باعث می‌شه این برخورد ساده، معنای عمیق‌تری پیدا کنه.\nعنوان Red Dead Redemption 2 فقط یه بازی با جزئیات دیوانه‌کننده نیست؛ پر از لحظه‌های کوچیک و قشنگیه که یادمون می‌ندازن با افراد دارای معلولیت، مهربون باشیم و با عزت و احترام باهاشون رفتار کنیم.\nگاهی حتی یه حرکت کوچیک هم می‌تونه برای یه نفر معنای بزرگی داشته باشه.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFYWrcgOArRF3X1nNpQDXqI2w3VIMCAAI8DQACuRflUsgZloFlXoDWPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1377,
+      "cleanup_message_ids": [
+        1377,
+        1496,
+        1497
+      ],
+      "preview_message_ids": [
+        1496,
+        1497
+      ]
+    },
+    "267987806": {
+      "chat_id": 1677869966,
+      "text": "🎮 بازی Battlefield 1 وقتی DLSS 5 خاموش و روشنه!\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFYmrcgOBUnelk64JF8L0PZYzvbJnKAAKcDmsbXs_ZUpGQ6h4pegLSAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1378,
+      "cleanup_message_ids": [
+        1378,
+        1498,
+        1499
+      ],
+      "preview_message_ids": [
+        1498,
+        1499
+      ]
+    },
+    "267987807": {
+      "chat_id": 1677869966,
+      "text": "🧩 کونامی درباره مادسازی برای eFootball هشدار داد، متخلف ها بن می‌شن!\nکونامی اعلام کرده که هرگونه دست‌کاری یا انتشار فایل‌های تغییر‌یافته بازی eFootball، قوانین استفاده از این عنوان رو نقض می‌کنه و می‌تونه به مسدود شدن حساب بازیکن‌ها منجر بشه.\nاین هشدار تو شرایطی منتشر شده که پروژه‌هایی مثل PES 2027 Reborn با هدف بازگردوندن بخش Master League و قابلیت‌های آفلاین به مجموعه PES در حال فعالیتن.\nهنوز مشخص نیست این هشدار چه تأثیری بر ادامه فعالیت پروژه‌های مادسازی خواهدداشت، ولی موضع کونامی نشون میده که این شرکت قصد داره با تغییر و توزیع غیرمجاز فایل‌های بازی برخورد کنه.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFY2rcgOA7L94YCCfYkvIUWPx0lWSTAAIYD2sbwrDYUp0JWn5NHQ3AAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1379,
+      "cleanup_message_ids": [
+        1379,
+        1500,
+        1501
+      ],
+      "preview_message_ids": [
+        1500,
+        1501
+      ]
+    },
+    "267987808": {
+      "chat_id": 1677869966,
+      "text": "🧩 تبلیغ‌های GTA VI واقعا شهرو خوشگل میکنه حالا شهرای ما😂\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFZGrcgODBZ-f4xqvDXYS3i6zlMcibAAKOD2sbwrDYUupmQ0LOeGfNAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1380,
+      "cleanup_message_ids": [
+        1380,
+        1502,
+        1503
+      ],
+      "preview_message_ids": [
+        1502,
+        1503
+      ]
+    },
+    "267987809": {
+      "chat_id": 1677869966,
+      "text": "🎮 موتور سواری تو Sleeping Dogs واقعا فان بود. یکی از بهترین GTA کلون ها!\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFZWrcgOCtwhcGqSMFqZfdkKBUSqxoAAIUHAACXs_ZUn4-rJhSDsfRPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1381,
+      "cleanup_message_ids": [
+        1381,
+        1504,
+        1505
+      ],
+      "preview_message_ids": [
+        1504,
+        1505
+      ]
+    },
+    "267987810": {
+      "chat_id": 1677869966,
+      "text": "🧩 شما تو کدوم دسته اید؟\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFZmrcgOBeCp2F_jFyq_ZPSI2yB107AAKhDmsbXs_ZUiFPE9j7ruEkAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1382,
+      "cleanup_message_ids": [
+        1382,
+        1506,
+        1507
+      ],
+      "preview_message_ids": [
+        1506,
+        1507
+      ]
+    },
+    "267987811": {
+      "chat_id": 1677869966,
+      "text": "🧩🎮 خالق پلی‌استیشن: دوران کنسول‌های بازی ممکنه رو به پایان باشه!\nکوتاراگی، ملقب به پدر پلی‌استیشن، تو گفت‌وگو با The Game Business هشدار داده که صنعت بازی با خطر پایان دوران کنسول‌های سنتی روبه‌رو هست.\nاون معتقده هزینه بالای سخت‌افزارهای بازی به یکی از چالش‌های اصلی این صنعت تبدیل شده، به گفته کوتاراگی، حتی رایانه‌های شخصی قدرتمند هم می‌تونن هزینه‌ای در حد قیمت یه خودرو داشته باشن.\nاون همچنین به پلتفرم‌های هوش مصنوعی مثل Google Gemini اشاره کرده که پردازش‌هاشون رو روی سرورها انجام میدن، نه لزوما روی دستگاه کاربرا، رویکردی که می‌تونه در آینده بر نحوه دسترسی مردم به فناوری و بازی‌ها تأثیر بذاره.\nکوتاراگی تأکید کرده که این دیدگاه‌ها متعلق به خودشه و نباید اونا رو موضع رسمی سونی دونست.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFZ2rcgOCGncJGwcgVx8SQaynPwickAAIZD2sbwrDYUoAL6QnIKBE8AQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1383,
+      "cleanup_message_ids": [
+        1383,
+        1508,
+        1509
+      ],
+      "preview_message_ids": [
+        1508,
+        1509
+      ]
+    },
+    "267987812": {
+      "chat_id": 1677869966,
+      "text": "🧩 در GTA VI یک اپلیکیشن اشتراک محتوای آنلاین به نام Peekhole وجود داره که از OnlyFans الهام گرفته شده!\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFaGrcgOBaHwK_QT2COGufMti0Qb_vAAL-DmsbXs_ZUgQOmoD0oEyZAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1384,
+      "cleanup_message_ids": [
+        1384,
+        1510,
+        1511
+      ],
+      "preview_message_ids": [
+        1510,
+        1511
+      ]
+    },
+    "267987813": {
+      "chat_id": 1677869966,
+      "text": "🔻 بالاترین نمرات ثبت‌ شده برای بازی های Battlefield در Metacritic! کدوم نسخه از نظر شما بهترینه؟\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFaWrcgOASH0Uyr6PPWIREgCf_zKPJAAKzDmsbXs_ZUqpWEb-LPmz8AQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1385,
+      "cleanup_message_ids": [
+        1385,
+        1512,
+        1513
+      ],
+      "preview_message_ids": [
+        1512,
+        1513
+      ]
+    },
+    "267987814": {
+      "chat_id": 1677869966,
+      "text": "🧩🇨🇳 قیمت کارت‌های گرافیک تو چین دوباره داره به طرز وحشتناکی بالا میره!\nکارت گرافیک RTX 5080 با 16 گیگابایت حدود 2000 یوان (حدود 300 دلار) گرون‌تر شده و الان قیمت عمده‌اش حدود 14,500 تا 15,000 یوانه، یعنی چیزی حدود 2,171 تا 2,246 دلار به فروش میرسه.\nهمچنین RTX 5070 Ti هم حدود 600 یوان (حدود 90 دلار) افزایش قیمت داشته.\nایسوس هم سیاست قیمت‌گذاریش رو به‌روز کرده، RTX 5080 16 گیگ 1000 یوان (150 دلار)، RTX 5070 Ti و 5070 و 5060 Ti 16 گیگ هرکدوم 200 یوان (30 دلار) و کارت‌های AMD بین 100 تا 300 یوان گرون‌تر شدن.\nدر حال حاضر ارزون‌ترین RTX 5080 تو بازار آمریکا حدود 1,850 دلاره و ارزون‌ترین RTX 5050 هم 400 دلار، قیمت مسخره‌ای برای کندترین GPU گیمینگ نسل فعلی انویدیا.\nشایعه شده نسخه RTX 5080 24 گیگابایت ممکنه قیمت عمده‌اش به 19,999 یوان (کمی کمتر از 3,000 دلار) برسه.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFamrcgOCq-r_POrgoT4a6iXZ1C34cAAIpEGsbwrDgUhxhQG5Ps2aHAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1386,
+      "cleanup_message_ids": [
+        1386,
+        1514,
+        1515
+      ],
+      "preview_message_ids": [
+        1514,
+        1515
+      ]
+    },
+    "267987815": {
+      "chat_id": 1677869966,
+      "text": "🧩 استوری جدید خواننده آمریکایی travis scott با آهنگی که برای GTA VI خونده!\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFa2rcgOAOSDac4gt-UpF6-DYfPuQgAAJBEGsbwrDgUicT8bioc1w3AQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1387,
+      "cleanup_message_ids": [
+        1387,
+        1516,
+        1517
+      ],
+      "preview_message_ids": [
+        1516,
+        1517
+      ]
+    },
+    "267987816": {
+      "chat_id": 1677869966,
+      "text": "🧩🧩 اگه Red Dead Redemption 2 انقدر پرفکت بود پس تصور کنید GTA VI قراره چطوری باشه!\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFbGrcgOAgeAPC6mscRSQGlMlT3bBHAAJRHAACXs_ZUiFMilthZQ8zPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1388,
+      "cleanup_message_ids": [
+        1388,
+        1518,
+        1519
+      ],
+      "preview_message_ids": [
+        1518,
+        1519
+      ]
+    },
+    "267987817": {
+      "chat_id": 1677869966,
+      "text": "🧩 کره شمالی در واقعیت و در Call of Duty Modern Warfare 4\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIFbWrcgODhi9Y44KBezyumiQyBooxfAAKQDAACULDlUh2yC10xoYtbPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1389,
+      "cleanup_message_ids": [
+        1389,
+        1520,
+        1521
+      ],
+      "preview_message_ids": [
+        1520,
+        1521
+      ]
+    },
+    "267987818": {
+      "chat_id": 1677869966,
+      "text": "🧩 بروزرسانی: نقدها و نمرات بازی Call of Duty Modern Warfare 4 بروزرسانی شد\n🔻Metacritic: 87/100\n🔻Opencritic: 85/100\n⬅متای نسخه PS5 بازی نیز ۹۱ شده است!\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFbmrcgOAG4ViS5fwzuYY_9icniap0AAJFEGsbwrDgUuU6AAGphqQyjQEAAwIAA3kAAz0E"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1390,
+      "cleanup_message_ids": [
+        1390,
+        1522,
+        1523
+      ],
+      "preview_message_ids": [
+        1522,
+        1523
+      ]
+    },
+    "267987819": {
+      "chat_id": 1677869966,
+      "text": "⚪️فروش Clair Obscur: Expedition 33 به ۸.۷ میلیون نسخه رسید\nطبق آمار شرکت Alinea Analytics، فروش بازی Clair Obscur: Expedition 33 تا الان به ۸.۷ میلیون نسخه رسیده. از این مقدار، ۵۸.۸ درصد سهم Steam، حدود ۳۵.۷ درصد سهم PS5 و ۵.۵ درصد هم سهم Xbox Series بوده.\nالبته به نظر می‌رسه بیشتر بازیکن‌های Xbox از طریق Game Pass سراغ بازی رفتن؛ تعداد این بازیکن‌ها به ۴.۳ میلیون نفر رسیده. درآمد بازی هم تا الان حدود ۳۶۶ میلیون دلار بوده.\n⚽️",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIFb2rcgOABzqFkLBAZnMjyXXex_26NAAJLEGsbwrDgUhABEKgGhCxLAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1391,
+      "cleanup_message_ids": [
+        1391,
+        1524,
+        1525
+      ],
+      "preview_message_ids": [
+        1524,
+        1525
+      ]
+    },
+    "267987820": {
+      "chat_id": 1677869966,
+      "text": "🔄 بازی DOOM این بار روی یک ویپ اجرا شده!\nبازی رو اون‌قدر فشرده‌سازی کردن که تونسته توی ۳۲ کیلوبایت رم سیگار الکترونیکی جا بشه.\nحالا می‌شه نسخه کامل این شوتر افسانه‌ای رو مستقیما روی یه ویپ تموم کرد!\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgIAAxkBAAIFcGrcgODVwO62nbO6jRRfcgTSWnn1AAJkpAAC2w3YSmgHVFUHPbLWPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1392,
+      "cleanup_message_ids": [
+        1392,
+        1526,
+        1527
+      ],
+      "preview_message_ids": [
+        1526,
+        1527
+      ]
     }
   },
   "edit_mode": {},
-  "schedule_mode": {}
+  "schedule_mode": {
+    "1677869966": {
+      "draft_id": "267987764",
+      "step": "date"
+    }
+  }
 }
