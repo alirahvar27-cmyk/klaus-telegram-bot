@@ -1,5 +1,5 @@
 {
-  "offset": 267987542,
+  "offset": 267987595,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -1736,12 +1736,18 @@
       "cleanup_message_ids": [
         732,
         733,
-        734
+        734,
+        931,
+        933,
+        936,
+        937
       ],
       "preview_message_ids": [
-        733,
-        734
-      ]
+        936,
+        937
+      ],
+      "scheduled_at": 1792852260,
+      "scheduled_approved": true
     },
     "267987452": {
       "chat_id": 1677869966,
@@ -1812,12 +1818,19 @@
       "cleanup_message_ids": [
         735,
         736,
-        737
+        737,
+        938,
+        939,
+        941,
+        944,
+        945
       ],
       "preview_message_ids": [
-        736,
-        737
-      ]
+        944,
+        945
+      ],
+      "scheduled_at": 1792841460,
+      "scheduled_approved": true
     },
     "267987453": {
       "chat_id": 1677869966,
@@ -1888,12 +1901,19 @@
       "cleanup_message_ids": [
         738,
         739,
-        740
+        740,
+        946,
+        947,
+        949,
+        952,
+        953
       ],
       "preview_message_ids": [
-        739,
-        740
-      ]
+        952,
+        953
+      ],
+      "scheduled_at": 1792848660,
+      "scheduled_approved": true
     },
     "267987454": {
       "chat_id": 1677869966,
@@ -1983,36 +2003,21 @@
         741,
         743,
         744,
-        745
+        745,
+        954,
+        955,
+        957,
+        960,
+        961,
+        962
       ],
       "preview_message_ids": [
-        743,
-        744,
-        745
-      ]
-    },
-    "267987455": {
-      "chat_id": 1677869966,
-      "text": "",
-      "entities": [],
-      "media": [
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAIC5mrccwLNDOuBzNVGEV_bfLEbQ-v3AAL9D2sbqjThUhiBmqJnJzj7AQADAgADeQADPQQ"
-        }
+        960,
+        961,
+        962
       ],
-      "channel": "@Khndedoon",
-      "source_chat_id": 1677869966,
-      "source_message_id": 742,
-      "cleanup_message_ids": [
-        742,
-        746,
-        747
-      ],
-      "preview_message_ids": [
-        746,
-        747
-      ]
+      "scheduled_at": 1792855860,
+      "scheduled_approved": true
     },
     "267987456": {
       "chat_id": 1677869966,
@@ -2106,12 +2111,19 @@
       "cleanup_message_ids": [
         748,
         749,
-        750
+        750,
+        963,
+        964,
+        966,
+        969,
+        970
       ],
       "preview_message_ids": [
-        749,
-        750
-      ]
+        969,
+        970
+      ],
+      "scheduled_at": 1792863060,
+      "scheduled_approved": true
     },
     "267987457": {
       "chat_id": 1677869966,
@@ -2200,12 +2212,19 @@
       "cleanup_message_ids": [
         751,
         752,
-        753
+        753,
+        971,
+        972,
+        974,
+        977,
+        978
       ],
       "preview_message_ids": [
-        752,
-        753
-      ]
+        977,
+        978
+      ],
+      "scheduled_at": 1792870260,
+      "scheduled_approved": true
     },
     "267987458": {
       "chat_id": 1677869966,
@@ -2324,12 +2343,24 @@
       "cleanup_message_ids": [
         754,
         755,
-        756
+        756,
+        979,
+        980,
+        982,
+        985,
+        986,
+        988,
+        989,
+        991,
+        994,
+        995
       ],
       "preview_message_ids": [
-        755,
-        756
-      ]
+        994,
+        995
+      ],
+      "scheduled_at": 1792845060,
+      "scheduled_approved": true
     },
     "267987459": {
       "chat_id": 1677869966,
@@ -2448,12 +2479,19 @@
       "cleanup_message_ids": [
         757,
         758,
-        759
+        759,
+        987,
+        996,
+        998,
+        1001,
+        1002
       ],
       "preview_message_ids": [
-        758,
-        759
-      ]
+        1001,
+        1002
+      ],
+      "scheduled_at": 1792841460,
+      "scheduled_approved": true
     },
     "267987460": {
       "chat_id": 1677869966,
@@ -2569,12 +2607,19 @@
       "cleanup_message_ids": [
         760,
         761,
-        762
+        762,
+        1003,
+        1004,
+        1006,
+        1009,
+        1010
       ],
       "preview_message_ids": [
-        761,
-        762
-      ]
+        1009,
+        1010
+      ],
+      "scheduled_at": 1792855860,
+      "scheduled_approved": true
     },
     "267987461": {
       "chat_id": 1677869966,
@@ -2596,7 +2641,8 @@
       "cleanup_message_ids": [
         763,
         764,
-        765
+        765,
+        1011
       ],
       "preview_message_ids": [
         764,
