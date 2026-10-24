@@ -1157,89 +1157,6 @@
       "scheduled_at": 1792852260,
       "scheduled_approved": true
     },
-    "267987453": {
-      "chat_id": 1677869966,
-      "text": "اگه بری همه میگن عشق منوتو هَوسه، بیا بمون نشون بدیم که عشق ما مُقدسه.\nپروکسی |  پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی | پروکسی  | پروکسی",
-      "entities": [
-        {
-          "offset": 71,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=PAyDaR.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 81,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nab.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 90,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soh5.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 97,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=vasle.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 107,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=tassian.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 116,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=FOR-IRAN.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 123,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soheil.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 132,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=for.you.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 142,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=AZADI.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        }
-      ],
-      "media": {
-        "type": "audio",
-        "file_id": "CQACAgQAAxkBAAIC4mrccvxRQMDoRT4JeMWzH9aae8gFAAJ4IAAC7Q4hUeYcuBoKQQMBPQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 738,
-      "cleanup_message_ids": [
-        738,
-        739,
-        740,
-        946,
-        947,
-        949,
-        952,
-        953
-      ],
-      "preview_message_ids": [
-        952,
-        953
-      ],
-      "scheduled_at": 1792848660,
-      "scheduled_approved": true
-    },
     "267987454": {
       "chat_id": 1677869966,
       "text": "دیگه قبول دارین که پادشاه فصل ها پاییزه؟\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
@@ -1760,37 +1677,6 @@
       "scheduled_at": 1792852260,
       "scheduled_approved": true
     },
-    "267987608": {
-      "chat_id": 1677869966,
-      "text": "یک استارتاپ ادعا کرد جیوه را به طلا تبدیل کرده است!\n◀️شرکت در مقاله‌ای که اواسط ژوئیه (۲۰۲۵) منتشر شد گفته نوترون‌های حاصل از واکنش همجوشی را می‌توان برای تبدیل جیوه به طلا (تراگذاری هسته‌ای) به کار برد\n◀️نویسندگان می‌گویند هر نیروگاه همجوشی آینده می‌تواند بدون کاهش توان خروجی، سالانه ۵ هزار کیلوگرم طلا به ازای هر گیگاوات تولید کند.",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIECmrcexEcu-5zV6gWwJmiVx_7pDNJAAIQJgACbrDYUrnLIicE52VGPQQ"
-      },
-      "channel": "@PoolBalad",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1034,
-      "cleanup_message_ids": [
-        1034,
-        1051,
-        1052,
-        1167,
-        1168,
-        1169,
-        1170,
-        1171,
-        1173,
-        1176,
-        1177
-      ],
-      "preview_message_ids": [
-        1176,
-        1177
-      ],
-      "scheduled_at": 1792848660,
-      "scheduled_approved": true
-    },
     "267987689": {
       "chat_id": 1677869966,
       "text": "#OIL",
@@ -1867,68 +1753,6 @@
         1281
       ],
       "scheduled_at": 1792854000,
-      "scheduled_approved": true
-    },
-    "267987693": {
-      "chat_id": 1677869966,
-      "text": "💵 #AGT_USDT  👑\n🟢 LONG POSITION — BUY\n☄️ Leverage: 30X\n🎯 Entry Zone:0.08300_0.07800\n💎 TAKE PROFIT TARGETS\n🥇 TP1: 0.08510\n🥈 TP2: 0.09000\n🥉 TP3: 0.09900\n🏆 TP4: 0.05600\n🛑 Stop Loss: 0.07000",
-      "entities": [
-        {
-          "offset": 3,
-          "length": 9,
-          "type": "hashtag"
-        }
-      ],
-      "media": null,
-      "channel": "@TradePulseFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1201,
-      "cleanup_message_ids": [
-        1201,
-        1215,
-        1216,
-        1231,
-        1243,
-        1244,
-        1256,
-        1289,
-        1291,
-        1294,
-        1295
-      ],
-      "preview_message_ids": [
-        1294,
-        1295
-      ],
-      "scheduled_at": 1792848660,
-      "scheduled_approved": true
-    },
-    "267987761": {
-      "chat_id": 1677869966,
-      "text": "🎮 فروش بازی Clair Obscur: Expedition 33 به ۸.۷ میلیون نسخه رسید\n🔻مؤسسه تحقیقاتی Alinea Analytics اعلام کرد که مجموع فروش بازی Clair Obscur: Expedition 33 ساخته استودیوی Sandfall Interactive به ۸.۷ میلیون نسخه رسیده و درآمدی معادل ۳۶۶ میلیون دلار کسب کرده است. پلتفرم رایانه‌های شخصی با ۵۸.۸ درصد، پلی استیشن ۵ با ۳۵.۷ درصد و ایکس باکس با ۵.۵ درصد در فروش مستقیم این اثر نقش داشته‌اند. قرارداد این بازی روی سرویس گیم پس در تاریخ ۱۶ اکتبر ۲۰۲۶ پس از ۱۸ ماه به پایان رسید و نزدیک به ۴.۳ میلیون نفر از طریق این سرویس به تجربه آن پرداخته‌اند.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFNWrcgOBtOeCYV8GCaaHK7IFwKqy-AAL6uDEboJecUEQve6BHc0WFAQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1333,
-      "cleanup_message_ids": [
-        1333,
-        1408,
-        1409,
-        1555,
-        1558,
-        1560,
-        1563,
-        1564
-      ],
-      "preview_message_ids": [
-        1563,
-        1564
-      ],
-      "scheduled_at": 1792848660,
       "scheduled_approved": true
     },
     "267987762": {
