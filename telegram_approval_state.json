@@ -1791,37 +1791,6 @@
       "scheduled_at": 1792848660,
       "scheduled_approved": true
     },
-    "267987611": {
-      "chat_id": 1677869966,
-      "text": "#کفرا ، انفجار و‌ تحول عظیم در عملیات شرکت، تغییر فاز سنگین از زیاندهی به سوددهی…\n▪️ رشد سود خالص تابستان نسبت به مدّت مشابه سال قبل: 13,827.1 %\n▪️ کفرا در دوره 6 ماهه منتهی به 1405/06/31 ضمن ثبت افزایش سرمایه 103 درصد، در این دوره به ازای هر سهم 182 ریال سود محقق کرده است.\n▪️ «کفرا» طی عملکرد 6 ماهه منتهی به 1405/06/31 مبلغ 7,956,068 میلیون ریال سود ناخالص شناسایی کرده که نسبت به سال گذشته 611 درصد رشد داشته است.\nتعدیل p/e از -89 به ۷۵",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIEDWrcexEz5V53V829B3rpweo0c0k6AAKfD2sbypvZUr4McZS5nKVBAQADAgADeQADPQQ"
-      },
-      "channel": "@PoolBalad",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1037,
-      "cleanup_message_ids": [
-        1037,
-        1057,
-        1058,
-        1140,
-        1141,
-        1142,
-        1143,
-        1144,
-        1146,
-        1149,
-        1150
-      ],
-      "preview_message_ids": [
-        1149,
-        1150
-      ],
-      "scheduled_at": 1792846800,
-      "scheduled_approved": true
-    },
     "267987689": {
       "chat_id": 1677869966,
       "text": "#OIL",
@@ -1898,43 +1867,6 @@
         1281
       ],
       "scheduled_at": 1792854000,
-      "scheduled_approved": true
-    },
-    "267987691": {
-      "chat_id": 1677869966,
-      "text": "#AGT_USDT",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 9,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIEr2rcfZWuqOlesfF2aToqtvfsO9m7AAKLD2sbXu3oUrDgvAweUtJgAQADAgADeQADPQQ"
-      },
-      "channel": "@TradePulseFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1199,
-      "cleanup_message_ids": [
-        1199,
-        1211,
-        1212,
-        1230,
-        1241,
-        1242,
-        1255,
-        1282,
-        1284,
-        1287,
-        1288
-      ],
-      "preview_message_ids": [
-        1287,
-        1288
-      ],
-      "scheduled_at": 1792846800,
       "scheduled_approved": true
     },
     "267987693": {
