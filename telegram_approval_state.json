@@ -1848,37 +1848,6 @@
       "scheduled_at": 1793070000,
       "scheduled_approved": true
     },
-    "267988096": {
-      "chat_id": 1677869966,
-      "text": ".\nتغییر خیلی وقتا قشنگ ترت میکنه..\nاینو پاییز داره میگه🍂\n🌸",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIIM2rcyC4QGEkL1DZlD13wx5330rAgAAKNCwACzbOsUjgCR6vGR_UcPQQ"
-      },
-      "channel": "@ZehnAgahh",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2099,
-      "cleanup_message_ids": [
-        2099,
-        2124,
-        2125,
-        2164,
-        2238,
-        2239,
-        2243,
-        2244,
-        2246,
-        2249,
-        2250
-      ],
-      "preview_message_ids": [
-        2249,
-        2250
-      ],
-      "scheduled_at": 1792872000,
-      "scheduled_approved": true
-    },
     "267988097": {
       "chat_id": 1677869966,
       "text": ".\nولی به نظرم زندگی رو اونی برد که آرامششو پیدا کرد...\n🌸",
@@ -2330,6 +2299,11 @@
       "chat_id": 1677869966,
       "message_id": 2441,
       "delete_at": 1792956678
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2442,
+      "delete_at": 1792958469
     }
   ]
 }
