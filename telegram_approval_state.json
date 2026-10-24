@@ -1,5 +1,5 @@
 {
-  "offset": 267987937,
+  "offset": 267988038,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -3278,116 +3278,6 @@
       "scheduled_at": 1792848660,
       "scheduled_approved": true
     },
-    "267987696": {
-      "chat_id": 1677869966,
-      "text": "📉 POSITION: SHORT\n🪙 COIN: ORDER/USDT\n⚡ LEVERAGE: 10x\n🎯 ENTRY: 0.0752\n🛑 SL: 0.0825\n━━━━━━━━━━━━━━━\n💰 TAKE PROFIT TARGETS\n1️⃣ TP1: 0.0720\n2️⃣ TP2: 0.0700\n3️⃣ TP3: 0.0680\n4️⃣ TP4: 0.0640\n5️⃣ TP5: 0.0600\n━━━━━━━━━━━━━━━\nTAKE PROFITS ALWAYS ✔️",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 18,
-          "type": "bold"
-        },
-        {
-          "offset": 19,
-          "length": 19,
-          "type": "bold"
-        },
-        {
-          "offset": 39,
-          "length": 15,
-          "type": "bold"
-        },
-        {
-          "offset": 55,
-          "length": 16,
-          "type": "bold"
-        },
-        {
-          "offset": 72,
-          "length": 13,
-          "type": "bold"
-        },
-        {
-          "offset": 86,
-          "length": 15,
-          "type": "bold"
-        },
-        {
-          "offset": 102,
-          "length": 22,
-          "type": "bold"
-        },
-        {
-          "offset": 125,
-          "length": 15,
-          "type": "bold"
-        },
-        {
-          "offset": 141,
-          "length": 15,
-          "type": "bold"
-        },
-        {
-          "offset": 157,
-          "length": 15,
-          "type": "bold"
-        },
-        {
-          "offset": 173,
-          "length": 15,
-          "type": "bold"
-        },
-        {
-          "offset": 189,
-          "length": 15,
-          "type": "bold"
-        },
-        {
-          "offset": 205,
-          "length": 15,
-          "type": "bold"
-        },
-        {
-          "offset": 221,
-          "length": 20,
-          "type": "bold"
-        },
-        {
-          "offset": 241,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 241,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5206607081334906820"
-        }
-      ],
-      "media": null,
-      "channel": "@TradePulseFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1204,
-      "cleanup_message_ids": [
-        1204,
-        1222,
-        1223,
-        1234,
-        1247,
-        1248,
-        1258,
-        1303,
-        1305,
-        1308,
-        1309
-      ],
-      "preview_message_ids": [
-        1308,
-        1309
-      ],
-      "scheduled_at": 1792836900,
-      "scheduled_approved": true
-    },
     "267987697": {
       "chat_id": 1677869966,
       "text": "Take profits 1 🙂✔️\n+44.57%\n#ORDER",
@@ -4486,12 +4376,18 @@
       "cleanup_message_ids": [
         1367,
         1476,
-        1477
+        1477,
+        1851,
+        1853,
+        1856,
+        1857
       ],
       "preview_message_ids": [
-        1476,
-        1477
-      ]
+        1856,
+        1857
+      ],
+      "scheduled_at": 1792965600,
+      "scheduled_approved": true
     },
     "267987796": {
       "chat_id": 1677869966,
@@ -4507,12 +4403,18 @@
       "cleanup_message_ids": [
         1368,
         1478,
-        1479
+        1479,
+        1858,
+        1860,
+        1863,
+        1864
       ],
       "preview_message_ids": [
-        1478,
-        1479
-      ]
+        1863,
+        1864
+      ],
+      "scheduled_at": 1792969200,
+      "scheduled_approved": true
     },
     "267987797": {
       "chat_id": 1677869966,
@@ -4550,12 +4452,18 @@
       "cleanup_message_ids": [
         1370,
         1482,
-        1483
+        1483,
+        1865,
+        1867,
+        1870,
+        1871
       ],
       "preview_message_ids": [
-        1482,
-        1483
-      ]
+        1870,
+        1871
+      ],
+      "scheduled_at": 1792972800,
+      "scheduled_approved": true
     },
     "267987799": {
       "chat_id": 1677869966,
@@ -4571,12 +4479,18 @@
       "cleanup_message_ids": [
         1371,
         1484,
-        1485
+        1485,
+        1872,
+        1875,
+        1878,
+        1879
       ],
       "preview_message_ids": [
-        1484,
-        1485
-      ]
+        1878,
+        1879
+      ],
+      "scheduled_at": 1792976400,
+      "scheduled_approved": true
     },
     "267987800": {
       "chat_id": 1677869966,
@@ -4592,12 +4506,18 @@
       "cleanup_message_ids": [
         1372,
         1486,
-        1487
+        1487,
+        1880,
+        1882,
+        1885,
+        1886
       ],
       "preview_message_ids": [
-        1486,
-        1487
-      ]
+        1885,
+        1886
+      ],
+      "scheduled_at": 1792980000,
+      "scheduled_approved": true
     },
     "267987801": {
       "chat_id": 1677869966,
@@ -4613,12 +4533,19 @@
       "cleanup_message_ids": [
         1373,
         1488,
-        1489
+        1489,
+        1887,
+        1897,
+        1899,
+        1902,
+        1903
       ],
       "preview_message_ids": [
-        1488,
-        1489
-      ]
+        1902,
+        1903
+      ],
+      "scheduled_at": 1792987200,
+      "scheduled_approved": true
     },
     "267987802": {
       "chat_id": 1677869966,
@@ -4634,12 +4561,19 @@
       "cleanup_message_ids": [
         1374,
         1490,
-        1491
+        1491,
+        1888,
+        1904,
+        1906,
+        1909,
+        1910
       ],
       "preview_message_ids": [
-        1490,
-        1491
-      ]
+        1909,
+        1910
+      ],
+      "scheduled_at": 1792990800,
+      "scheduled_approved": true
     },
     "267987803": {
       "chat_id": 1677869966,
@@ -4655,12 +4589,19 @@
       "cleanup_message_ids": [
         1375,
         1492,
-        1493
+        1493,
+        1889,
+        1911,
+        1913,
+        1916,
+        1917
       ],
       "preview_message_ids": [
-        1492,
-        1493
-      ]
+        1916,
+        1917
+      ],
+      "scheduled_at": 1792994400,
+      "scheduled_approved": true
     },
     "267987804": {
       "chat_id": 1677869966,
@@ -4676,12 +4617,23 @@
       "cleanup_message_ids": [
         1376,
         1494,
-        1495
+        1495,
+        1890,
+        1918,
+        1920,
+        1923,
+        1924,
+        1925,
+        1927,
+        1930,
+        1931
       ],
       "preview_message_ids": [
-        1494,
-        1495
-      ]
+        1930,
+        1931
+      ],
+      "scheduled_at": 1793001600,
+      "scheduled_approved": true
     },
     "267987805": {
       "chat_id": 1677869966,
@@ -4697,12 +4649,19 @@
       "cleanup_message_ids": [
         1377,
         1496,
-        1497
+        1497,
+        1891,
+        1932,
+        1934,
+        1937,
+        1938
       ],
       "preview_message_ids": [
-        1496,
-        1497
-      ]
+        1937,
+        1938
+      ],
+      "scheduled_at": 1793008800,
+      "scheduled_approved": true
     },
     "267987806": {
       "chat_id": 1677869966,
@@ -4718,7 +4677,10 @@
       "cleanup_message_ids": [
         1378,
         1498,
-        1499
+        1499,
+        1892,
+        1939,
+        1941
       ],
       "preview_message_ids": [
         1498,
@@ -4739,7 +4701,8 @@
       "cleanup_message_ids": [
         1379,
         1500,
-        1501
+        1501,
+        1893
       ],
       "preview_message_ids": [
         1500,
@@ -4760,7 +4723,8 @@
       "cleanup_message_ids": [
         1380,
         1502,
-        1503
+        1503,
+        1894
       ],
       "preview_message_ids": [
         1502,
@@ -4781,7 +4745,8 @@
       "cleanup_message_ids": [
         1381,
         1504,
-        1505
+        1505,
+        1895
       ],
       "preview_message_ids": [
         1504,
@@ -4802,7 +4767,8 @@
       "cleanup_message_ids": [
         1382,
         1506,
-        1507
+        1507,
+        1896
       ],
       "preview_message_ids": [
         1506,
@@ -5021,5 +4987,12 @@
     }
   },
   "edit_mode": {},
-  "schedule_mode": {}
+  "schedule_mode": {
+    "1677869966": {
+      "draft_id": "267987806",
+      "step": "minute",
+      "date": "2026-10-26",
+      "hour": 14
+    }
+  }
 }
