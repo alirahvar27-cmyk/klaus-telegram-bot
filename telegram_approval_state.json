@@ -2774,43 +2774,6 @@
         2206
       ],
       "edited_manually": true
-    },
-    "267988118": {
-      "chat_id": 1677869966,
-      "text": "یقین دارم با پیاده‌کر‌دنِ همین یه دونه اصل در گفتگوهاتون، رابطه بهتری خواهید داشت",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIISWrcyC7wbqrk4HaCCZgrctZlpCSGAAK_CwACrpRsUZe_dPDcP6cmPQQ"
-      },
-      "channel": "@ZehnAgahh",
-      "cleanup_message_ids": [
-        2121,
-        2161,
-        2162,
-        2185,
-        2186,
-        2187,
-        2188,
-        2189,
-        2190,
-        2192,
-        2193,
-        2194,
-        2196,
-        2198,
-        2201,
-        2202,
-        2203,
-        2204
-      ],
-      "preview_message_ids": [
-        2203,
-        2204
-      ],
-      "edited_manually": true,
-      "scheduled_at": 1792861200,
-      "scheduled_approved": true
     }
   },
   "edit_mode": {},
@@ -2835,6 +2798,11 @@
       "chat_id": 1677869966,
       "message_id": 2388,
       "delete_at": 1792946881
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2389,
+      "delete_at": 1792948236
     }
   ]
 }
