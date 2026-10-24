@@ -1,5 +1,5 @@
 {
-  "offset": 267988095,
+  "offset": 267988145,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -1462,43 +1462,6 @@
         1196
       ],
       "scheduled_at": 1792855860,
-      "scheduled_approved": true
-    },
-    "267987690": {
-      "chat_id": 1677869966,
-      "text": "#BTC",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 4,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIErmrcfZULxDVWzES59llYJaBwvMYiAALMDmsbupnpUh3N0ulXDljOAQADAgADeQADPQQ"
-      },
-      "channel": "@TradePulseFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1198,
-      "cleanup_message_ids": [
-        1198,
-        1209,
-        1210,
-        1229,
-        1239,
-        1240,
-        1254,
-        1275,
-        1277,
-        1280,
-        1281
-      ],
-      "preview_message_ids": [
-        1280,
-        1281
-      ],
-      "scheduled_at": 1792854000,
       "scheduled_approved": true
     },
     "267987763": {
@@ -2971,8 +2934,403 @@
       ],
       "scheduled_at": 1793070000,
       "scheduled_approved": true
+    },
+    "267988095": {
+      "chat_id": 1677869966,
+      "text": ".\nبالاخره تفاوت را میفهمی، بین آدم هایی که دوستت دارند، آدم هایی که دوست دارند کنارت باشند و آدم هایی که کارهایی که میتوانی برایشان انجام دهی را دوست دارند...\n🌸",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIIMmrcyC5M1DUXQdn-Q-iJy4v8FQ8xAAK7D2sbTwXcUjKCNqRGyJO6AQADAgADdwADPQQ"
+      },
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2098,
+      "cleanup_message_ids": [
+        2098,
+        2122,
+        2123,
+        2163
+      ],
+      "preview_message_ids": [
+        2122,
+        2123
+      ]
+    },
+    "267988096": {
+      "chat_id": 1677869966,
+      "text": ".\nتغییر خیلی وقتا قشنگ ترت میکنه..\nاینو پاییز داره میگه🍂\n🌸",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIIM2rcyC4QGEkL1DZlD13wx5330rAgAAKNCwACzbOsUjgCR6vGR_UcPQQ"
+      },
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2099,
+      "cleanup_message_ids": [
+        2099,
+        2124,
+        2125,
+        2164
+      ],
+      "preview_message_ids": [
+        2124,
+        2125
+      ]
+    },
+    "267988097": {
+      "chat_id": 1677869966,
+      "text": ".\nولی به نظرم زندگی رو اونی برد که آرامششو پیدا کرد...\n🌸",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIINGrcyC62b_LceiBMsnyLqjOeMyScAAL8CwAC40XFUjZ1Lg2v_h1RPQQ"
+      },
+      "channel": "@HaleKhoobDaiily",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2100,
+      "cleanup_message_ids": [
+        2100,
+        2126,
+        2127,
+        2165
+      ],
+      "preview_message_ids": [
+        2126,
+        2127
+      ]
+    },
+    "267988098": {
+      "chat_id": 1677869966,
+      "text": ".\nرشد، یعنی اجازه دهید دیگران روایتی اشتباه از شما بسازند\nدر حالی که می‌دانید حقیقت، یک روز آشکار می‌شود...\n#نیکول_لپرا\n🌸",
+      "entities": [],
+      "media": null,
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2101,
+      "cleanup_message_ids": [
+        2101,
+        2128,
+        2129,
+        2166
+      ],
+      "preview_message_ids": [
+        2128,
+        2129
+      ]
+    },
+    "267988099": {
+      "chat_id": 1677869966,
+      "text": "خدایا، شب‌هامو با آرامش پر کن...🤍\nشب بخیر\n🌸",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIINmrcyC5QUlcwXdC-dIwzzpmhTEkpAAKzCQACYk5lUHfYJhVbtfppPQQ"
+      },
+      "channel": "@HaleKhoobDaiily",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2102,
+      "cleanup_message_ids": [
+        2102,
+        2130,
+        2131,
+        2167
+      ],
+      "preview_message_ids": [
+        2130,
+        2131
+      ]
+    },
+    "267988100": {
+      "chat_id": 1677869966,
+      "text": "بزرگترین رازدار زندگیت کیه؟ قلبت\nبزرگترین تصمیم‌گیرنده زندگیت کیه؟ مغزت\nبزرگترین همراه زندگیت کیه؟ پاهات\nمی‌خوام بگم «قهرمان» زندگیت خودتی فقط به خودت تکیه کن.....\nروز بخير🍃☕️\n🌸",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIIN2rcyC5ACgPxDCtT4inpwCl4L2anAAKMCQACGRMVUALobGdxGTT2PQQ"
+      },
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2103,
+      "cleanup_message_ids": [
+        2103,
+        2132,
+        2133,
+        2168
+      ],
+      "preview_message_ids": [
+        2132,
+        2133
+      ]
+    },
+    "267988101": {
+      "chat_id": 1677869966,
+      "text": "تا ابد انتخابتون\nآدمی باشه که اولویتش باشید\nآدمی باشه که براتون توضیح بده\nآدمی باشه که نگه داشتن رو بلد باشه\nآدمی باشه که فرق شما با بقیه رو بدونه\nآدمی باشه که ناراحتی شما براش مهم باشه\nآدمی باشه که خواسته‌هاتون رو کوچک نشمره...\n🌸",
+      "entities": [],
+      "media": null,
+      "channel": "@NbzeKhabar",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2104,
+      "cleanup_message_ids": [
+        2104,
+        2134,
+        2135,
+        2169
+      ],
+      "preview_message_ids": [
+        2134,
+        2135
+      ]
+    },
+    "267988102": {
+      "chat_id": 1677869966,
+      "text": "شفا وقتی اتفاق می‌افته که\nرنج‌هامون دیگه هویت ما رو تعریف نمی‌کنن\nما گذشته‌مون نیستیم\nبلکه همون معنایی هستیم که\nاز اتفاقات گذشته می‌سازیم\nوقتی می‌تونیم از زخم‌هامون حرف بزنیم\nبی‌آنکه برای اثبات درد یا گرفتن تأیید\nدر اون‌ها زندگی کنیم\nیعنی از اسارتِ رنج، به آگاهی رسیده‌ایم...\n🌸",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIIOWrcyC6pa3KTxHrsDiVzToctMroJAALCD2sbLKHMUl4ciEFhVwJdAQADAgADeQADPQQ"
+      },
+      "channel": "@NbzeKhabar",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2105,
+      "cleanup_message_ids": [
+        2105,
+        2136,
+        2137,
+        2170
+      ],
+      "preview_message_ids": [
+        2136,
+        2137
+      ]
+    },
+    "267988103": {
+      "chat_id": 1677869966,
+      "text": ".\nکتاب فوق‌العاده کیمیاگر اثر پائولو کوئلیو در دو دقیقه\n🌸",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIIOmrcyC798JueoukwA7E6dzVaJz2iAALLHgACwX2BUgkNffDuR2H2PQQ"
+      },
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2106,
+      "cleanup_message_ids": [
+        2106,
+        2138,
+        2139,
+        2171
+      ],
+      "preview_message_ids": [
+        2138,
+        2139
+      ]
+    },
+    "267988104": {
+      "chat_id": 1677869966,
+      "text": "از چند آدم همیشه دور بمون\nآدمی که پولکیه.\nآدمی که ضعف جنس مخالف داره.\nآدمی که تخریبت میکنه.\nآدمی که بهت انرژی منفی میده.\nآدمی که همیشه نسبت به هدفات ناامیدت میکنی.\nآدمی که محبتتو نمیفهمه و وقتی ۹۹ تا کار براش کردی رو نمیبینه و یه دونه کار رو که طبق سلیقه اش جلو نبردی میبینه.\nآدمی که هر وقت دورش خلوت میشه میاد سمتت=)\n🌸",
+      "entities": [],
+      "media": null,
+      "channel": "@PoolBalad",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2107,
+      "cleanup_message_ids": [
+        2107,
+        2140,
+        2141,
+        2172
+      ],
+      "preview_message_ids": [
+        2140,
+        2141
+      ]
+    },
+    "267988105": {
+      "chat_id": 1677869966,
+      "text": "متعهد باش\nنه به حرف‌ها\nنه به آدم‌ها\nبه خدا\nبه خودت\nبه رویاهای بزرگت!\n🌸",
+      "entities": [],
+      "media": null,
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2108,
+      "cleanup_message_ids": [
+        2108,
+        2142,
+        2143,
+        2173
+      ],
+      "preview_message_ids": [
+        2142,
+        2143
+      ]
+    },
+    "267988106": {
+      "chat_id": 1677869966,
+      "text": ".\nسبز ماندن در میان ویرانی ها\nریشه می‌خواهد 🪴\n🌸",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIIPWrcyC4J72adva-Ej2uJm8rbnPGyAAJQEmsbSSIwUnne4Z6bv-NrAQADAgADeAADPQQ"
+      },
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2109,
+      "cleanup_message_ids": [
+        2109,
+        2144,
+        2145,
+        2174
+      ],
+      "preview_message_ids": [
+        2144,
+        2145
+      ]
+    },
+    "267988107": {
+      "chat_id": 1677869966,
+      "text": ".\nرفتن و دل کندن از آدمایی که دوسشون داریم سخته، تلخه اما‌ گاهی لازمه؛ لازمه که با رفتنشون ما تبدیل شیم به آدمی که وابستگی عجیب و غریبی نداره؛ لازمه که تبدیل شیم به آدمی که برای موندن آدما تو زندگیش اصرار نمیکنه، منت نمیکشه؛ لازمه تبدیل شیم به آدمی که هر رفتاری و هر کسی نمیتونه قلبشو بشکنه و ناراحتش کنه..\nلازمه تبدیل شیم به آدمی که حد و مرزی برای روابط و صمیمیتش تعیین میکنه؛ لازمه تبدیل شیم به آدمی که هدف‌هاش و رویاهاش رو دنبال میکنه\nلازمه تبدیل شیم به آدمی که یاد میگیره قوی باشه و تیکه های شکسته شو محکم کنار هم بزاره و از اول شروع کنه...\n🌸",
+      "entities": [],
+      "media": null,
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2110,
+      "cleanup_message_ids": [
+        2110,
+        2146,
+        2147,
+        2175
+      ],
+      "preview_message_ids": [
+        2146,
+        2147
+      ]
+    },
+    "267988108": {
+      "chat_id": 1677869966,
+      "text": "",
+      "entities": [],
+      "media": [
+        {
+          "type": "audio",
+          "file_id": "CQACAgQAAxkBAAIIP2rcyC5jNgSz5f7SroLN9mY60NpDAALlKAAC_MeYU_u50eV2ePFrPQQ"
+        },
+        {
+          "type": "audio",
+          "file_id": "CQACAgQAAxkBAAIIQGrcyC4JftzvJQKMpowWK84o5VhRAAKDIgACqrbAUxtNFyuwtXknPQQ"
+        },
+        {
+          "type": "audio",
+          "file_id": "CQACAgIAAxkBAAIIQWrcyC7KXMSL1XFZCfrHSvXfErigAAJAegACpRYJSdlWjmfkvnSKPQQ"
+        },
+        {
+          "type": "audio",
+          "file_id": "CQACAgIAAxkBAAIIQmrcyC63u7ZXUsssr-_wsDlM-SpLAAJEtQACLTjASIY4HLr9NZGYPQQ"
+        },
+        {
+          "type": "audio",
+          "file_id": "CQACAgQAAxkBAAIIQ2rcyC6DCZ6Urz3yA8o7XgfGuhW6AALSHwACjGQYUYg1m4e1JbHnPQQ"
+        },
+        {
+          "type": "audio",
+          "file_id": "CQACAgIAAxkBAAIIRGrcyC5OAy_nm3wDzDdt2qGJirglAALImwACxU8wSUrc-Rl1wEr1PQQ"
+        },
+        {
+          "type": "audio",
+          "file_id": "CQACAgQAAxkBAAIIRWrcyC5x_T9pwip7gNZzx4K_qwbTAAJvHQAC-D_IUngbS0mKWI9mPQQ"
+        },
+        {
+          "type": "audio",
+          "file_id": "CQACAgQAAxkBAAIIRmrcyC6EhmgWkay7ZesqAbWTt0AbAAISHQACuOzZUjU3qNswOCzzPQQ"
+        }
+      ],
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2111,
+      "cleanup_message_ids": [
+        2111,
+        2148,
+        2149,
+        2150,
+        2151,
+        2152,
+        2153,
+        2154,
+        2155,
+        2156,
+        2176
+      ],
+      "preview_message_ids": [
+        2148,
+        2149,
+        2150,
+        2151,
+        2152,
+        2153,
+        2154,
+        2155,
+        2156
+      ]
+    },
+    "267988117": {
+      "chat_id": 1677869966,
+      "text": "میخوای کمتر اورثینک کنی؟ این سه تا کتابو بخون\n۱. رهایی از نشخوار فکری – هانا ویلیامز\nبرای شناخت چرخه افکار تکراری و یاد گرفتن راه‌هایی برای کمتر درگیر شدن با آن‌ها.\n۲. ذهن‌آگاهی برای مبتدیان – جان کابات زین\nکمکت می‌کنه در لحظه حال زندگی کنی و کمتر درگیر فکرهای گذشته و نگرانی‌های آینده بشی.\n۳. تله شادمانی – راس هریس\nیادت می‌ده به‌جای جنگیدن با افکار منفی، اون‌ها رو بپذیری و اجازه ندی کنترل زندگی‌ات رو به دست بگیرن.",
+      "entities": [],
+      "media": null,
+      "channel": "@NbzeKhabar",
+      "cleanup_message_ids": [
+        2120,
+        2159,
+        2160,
+        2178,
+        2179,
+        2180,
+        2181,
+        2182,
+        2183,
+        2184
+      ],
+      "preview_message_ids": [
+        2181,
+        2182
+      ],
+      "edited_manually": true
+    },
+    "267988118": {
+      "chat_id": 1677869966,
+      "text": "یقین دارم با پیاده‌کر‌دنِ همین یه دونه اصل در گفتگوهاتون، رابطه بهتری خواهید داشت",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIISWrcyC7wbqrk4HaCCZgrctZlpCSGAAK_CwACrpRsUZe_dPDcP6cmPQQ"
+      },
+      "channel": "@ZehnAgahh",
+      "cleanup_message_ids": [
+        2121,
+        2161,
+        2162,
+        2185,
+        2186,
+        2187,
+        2188,
+        2189,
+        2190,
+        2192,
+        2193,
+        2194
+      ],
+      "preview_message_ids": [
+        2192,
+        2193
+      ],
+      "edited_manually": true
     }
   },
   "edit_mode": {},
-  "schedule_mode": {}
+  "schedule_mode": {
+    "1677869966": {
+      "draft_id": "267988118",
+      "step": "date"
+    }
+  }
 }
