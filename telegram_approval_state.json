@@ -1,5 +1,5 @@
 {
-  "offset": 267987469,
+  "offset": 267987503,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -420,318 +420,16 @@
         770,
         771,
         773,
-        777
+        777,
+        781,
+        782
       ],
       "preview_message_ids": [
-        652,
-        653
-      ]
-    },
-    "267987426": {
-      "chat_id": 1677869966,
-      "text": "یه پیج املاکی این ویدیو رو برای معرفی یکی از خونه هاش گذاشته.\nو حالا کامنتای مردم زیر پستش\nهمراه • همراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
-      "entities": [
-        {
-          "offset": 91,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 99,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 105,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 114,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 121,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 130,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 137,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 146,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 153,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 162,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 169,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 178,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
+        781,
+        782
       ],
-      "media": [
-        {
-          "type": "video",
-          "file_id": "BAACAgQAAxkBAAICjmrcco4r5nMMVHVghRc-Duxb7Gb2AAJFJwAC71ngUt2XGFHX0J5pPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAICj2rcco7fNmTCd4R1BeQtRHV0KDQdAAIZEGsb71ngUs8OLKZ-QycYAQADAgADeQADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAICkGrcco77fswRAfMpTL22Smypz1vHAAIaEGsb71ngUv0hrhvX2wsZAQADAgADeQADPQQ"
-        }
-      ],
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 654,
-      "cleanup_message_ids": [
-        654,
-        657,
-        658,
-        659,
-        660
-      ],
-      "preview_message_ids": [
-        657,
-        658,
-        659,
-        660
-      ]
-    },
-    "267987427": {
-      "chat_id": 1677869966,
-      "text": "یه پیج املاکی این ویدیو رو برای معرفی یکی از خونه هاش گذاشته.\nو حالا کامنتای مردم زیر پستش\nهمراه • همراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
-      "entities": [
-        {
-          "offset": 91,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 99,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 105,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 114,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 121,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 130,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 137,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 146,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 153,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 162,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 169,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 178,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": [
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAICj2rcco7fNmTCd4R1BeQtRHV0KDQdAAIZEGsb71ngUs8OLKZ-QycYAQADAgADeQADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAICkGrcco77fswRAfMpTL22Smypz1vHAAIaEGsb71ngUv0hrhvX2wsZAQADAgADeQADPQQ"
-        }
-      ],
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 655,
-      "cleanup_message_ids": [
-        655,
-        661,
-        662,
-        663
-      ],
-      "preview_message_ids": [
-        661,
-        662,
-        663
-      ]
-    },
-    "267987428": {
-      "chat_id": 1677869966,
-      "text": "یه پیج املاکی این ویدیو رو برای معرفی یکی از خونه هاش گذاشته.\nو حالا کامنتای مردم زیر پستش\nهمراه • همراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
-      "entities": [
-        {
-          "offset": 91,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 99,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 105,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 114,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 121,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 130,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 137,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 146,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 153,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 162,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 169,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 178,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": [
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAICkGrcco77fswRAfMpTL22Smypz1vHAAIaEGsb71ngUv0hrhvX2wsZAQADAgADeQADPQQ"
-        }
-      ],
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 656,
-      "cleanup_message_ids": [
-        656,
-        664,
-        665
-      ],
-      "preview_message_ids": [
-        664,
-        665
-      ]
+      "scheduled_at": 1792837800,
+      "scheduled_approved": true
     },
     "267987429": {
       "chat_id": 1677869966,
@@ -811,12 +509,19 @@
       "cleanup_message_ids": [
         666,
         667,
-        668
+        668,
+        786,
+        787,
+        789,
+        792,
+        793
       ],
       "preview_message_ids": [
-        667,
-        668
-      ]
+        792,
+        793
+      ],
+      "scheduled_at": 1792845060,
+      "scheduled_approved": true
     },
     "267987430": {
       "chat_id": 1677869966,
@@ -896,176 +601,19 @@
       "cleanup_message_ids": [
         669,
         670,
-        671
+        671,
+        794,
+        795,
+        797,
+        800,
+        801
       ],
       "preview_message_ids": [
-        670,
-        671
-      ]
-    },
-    "267987431": {
-      "chat_id": 1677869966,
-      "text": "باهم بشنویم\nهمراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
-      "entities": [
-        {
-          "offset": 12,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 18,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 27,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 34,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 43,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 50,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 59,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 66,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 75,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 82,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 91,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
+        800,
+        801
       ],
-      "media": {
-        "type": "audio",
-        "file_id": "CQACAgQAAxkBAAICoGrccpY59g03AyxpqqD4LrCAlBBFAALcHgACtrHgUlLUwEyYNhGXPQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 672,
-      "cleanup_message_ids": [
-        672,
-        673,
-        674
-      ],
-      "preview_message_ids": [
-        673,
-        674
-      ]
-    },
-    "267987432": {
-      "chat_id": 1677869966,
-      "text": "باهم بشنویم.\n🎵 Saghareh Hasti\nدریافت شده از @iDownloadersBot",
-      "entities": [
-        {
-          "offset": 45,
-          "length": 16,
-          "type": "mention"
-        }
-      ],
-      "media": {
-        "type": "audio",
-        "file_id": "CQACAgQAAxkBAAICo2rccp1picIySCbBoTtmB0bA3BflAAKpLgAC51nwUN7M-nAsViYNPQQ"
-      },
-      "channel": "@Khndedoon",
-      "source_chat_id": 1677869966,
-      "source_message_id": 675,
-      "cleanup_message_ids": [
-        675,
-        676,
-        677
-      ],
-      "preview_message_ids": [
-        676,
-        677
-      ]
-    },
-    "267987433": {
-      "chat_id": 1677869966,
-      "text": "عجیب ترین دیتم\nوقتی بود که رفتم سر دیت یارو گفت من پنج دقیقه دیگه می رسم\nنشسته بودم\nرسید یه چیزی گفت درست متوجه نشدم\nبلند شدم دست دادم خودمو معرفی کردم\nنشستیم و نوشیدنی سفارش دادیم، سه دقیقه بعد یکی اومد صدام زد،گفتم شما؟\nگفت ما قرار داشتیم، این کیه؟\nاینا شروع کردن بحث کردن. آخر معلوم شد این بنده خدا رد میشده، یه لاسی رندم با من زده منم فکر کردم این اونه، اونم دیده من خودمو معرفی کردم گفته دارم نخ میدم و نشسته.\nتا اینجاش باز اوکی بود،عجیبش اونجا شد که اولی به دومی گفت ما نوشیدنی سفارش دادیم تو برو، دومی گفت ما قبلا با هم آشنا شدیم و چت کردیم تو برو. خلاصه اینا برگشتن به من گفتن کی بره؟\nحالا هیچکدوم هم تایپ من نبودن، خیلی وضعیت آکواردی بود، دیگه من به اون که باهاش قرار داشتم گفتم بمونه چون کلی راه اومده بود و انصاف نبود، اون یکی هم رفت میز بغل با عصبانیت نشست و زل زده بود به ما\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 788,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 797,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 804,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 813,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 822,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 678,
-      "cleanup_message_ids": [
-        678,
-        679,
-        680
-      ],
-      "preview_message_ids": [
-        679,
-        680
-      ]
+      "scheduled_at": 1792837860,
+      "scheduled_approved": true
     },
     "267987434": {
       "chat_id": 1677869966,
@@ -1103,18 +651,28 @@
         }
       ],
       "media": null,
-      "channel": "@LevelUpFa",
+      "channel": "@NetPlusFa",
       "source_chat_id": 1677869966,
       "source_message_id": 681,
       "cleanup_message_ids": [
         681,
         682,
-        683
+        683,
+        813,
+        814,
+        815,
+        816,
+        817,
+        819,
+        822,
+        823
       ],
       "preview_message_ids": [
-        682,
-        683
-      ]
+        822,
+        823
+      ],
+      "scheduled_at": 1792852260,
+      "scheduled_approved": true
     },
     "267987435": {
       "chat_id": 1677869966,
@@ -1158,12 +716,19 @@
       "cleanup_message_ids": [
         684,
         685,
-        686
+        686,
+        824,
+        825,
+        827,
+        830,
+        831
       ],
       "preview_message_ids": [
-        685,
-        686
-      ]
+        830,
+        831
+      ],
+      "scheduled_at": 1792859460,
+      "scheduled_approved": true
     },
     "267987436": {
       "chat_id": 1677869966,
@@ -1207,7 +772,10 @@
       "cleanup_message_ids": [
         687,
         688,
-        689
+        689,
+        832,
+        833,
+        835
       ],
       "preview_message_ids": [
         688,
@@ -3355,10 +2923,10 @@
   "edit_mode": {},
   "schedule_mode": {
     "1677869966": {
-      "draft_id": "267987425",
+      "draft_id": "267987436",
       "step": "minute",
       "date": "2026-10-24",
-      "hour": 14
+      "hour": 20
     }
   }
 }
