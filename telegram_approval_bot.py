@@ -65,10 +65,11 @@ def load_state():
             data.setdefault("pending", {})
             data.setdefault("edit_mode", {})
             data.setdefault("schedule_mode", {})
+            data.setdefault("status_cleanup", [])
             return data
     except (OSError, json.JSONDecodeError):
         pass
-    return {"offset": 0, "pending": {}, "edit_mode": {}, "schedule_mode": {}}
+    return {"offset": 0, "pending": {}, "edit_mode": {}, "schedule_mode": {}, "status_cleanup": []}
 
 STATE = load_state()
 
@@ -106,11 +107,53 @@ def delete_private_message(chat_id, message_id):
         log.warning("Could not delete private chat message %s: %s", message_id, exc)
 
 def cleanup_draft_messages(draft):
+    """Clear all temporary private-chat messages associated with one draft."""
     chat_id = draft.get("chat_id")
+    if chat_id:
+        for message_id in dict.fromkeys(draft.get("cleanup_message_ids", [])):
+            delete_private_message(chat_id, message_id)
+    draft["cleanup_message_ids"] = []
+    draft["preview_message_ids"] = []
+
+
+def send_publish_status(chat_id, text):
+    """Send the final status and start its 24-hour lifetime after Telegram accepts it."""
     if not chat_id:
-        return
-    for message_id in dict.fromkeys(draft.get("cleanup_message_ids", [])):
-        delete_private_message(chat_id, message_id)
+        return None
+    message = send_text(chat_id, text)
+    STATE.setdefault("status_cleanup", []).append({
+        "chat_id": chat_id,
+        "message_id": message["message_id"],
+        "delete_at": int(time.time()) + 24 * 60 * 60,
+    })
+    save_state()
+    return message
+
+
+def cleanup_expired_status_messages():
+    """Delete only expired status messages in the admin's private bot chat."""
+    now = int(time.time())
+    remaining = []
+    changed = False
+    for item in STATE.setdefault("status_cleanup", []):
+        if int(item.get("delete_at", 0)) > now or int(item.get("retry_after", 0)) > now:
+            remaining.append(item)
+            continue
+        try:
+            api("deleteMessage", {
+                "chat_id": item["chat_id"],
+                "message_id": item["message_id"],
+            })
+            changed = True
+            log.info("Deleted expired private status message %s", item["message_id"])
+        except Exception as exc:
+            item["retry_after"] = now + 300
+            remaining.append(item)
+            changed = True
+            log.warning("Could not delete expired status message %s; retrying later: %s", item.get("message_id"), exc)
+    if changed or len(remaining) != len(STATE.get("status_cleanup", [])):
+        STATE["status_cleanup"] = remaining
+        save_state()
 
 def utf16_len(text):
     return len(text.encode("utf-16-le")) // 2
@@ -570,8 +613,8 @@ def preview(chat_id, draft_id):
     if not draft: return
     draft["text"], draft["entities"] = sanitize_text_and_entities(draft.get("text", ""), draft.get("entities", []))
     if not draft: return
-    for message_id in dict.fromkeys(draft.get("preview_message_ids", [])): delete_private_message(chat_id, message_id)
-    draft["preview_message_ids"] = []; draft.setdefault("cleanup_message_ids", [])
+    cleanup_draft_messages(draft)
+    draft.setdefault("preview_message_ids", []); draft.setdefault("cleanup_message_ids", [])
     channel = draft["channel"]; title, topic = CHANNELS[channel]
     text, entities = add_channel_branding(draft.get("text", ""), draft.get("entities", []), channel, limit=4096)
     media = draft.get("media"); items = _media_items(media); sent = []
@@ -630,8 +673,17 @@ def handle_callback(query):
         if chat_id: send_text(chat_id, "این پیش‌نویس دیگر در دسترس نیست.")
         return
     if action == "approve":
-        try: publish(draft); cleanup_draft_messages(draft); STATE["pending"].pop(draft_id, None); STATE["edit_mode"].pop(str(user["id"]), None); save_state()
-        except Exception as exc: log.exception("Publish failed: %s", exc); send_text(chat_id, f"❌ انتشار انجام نشد: {str(exc)[:700]}")
+        try:
+            publish(draft)
+            channel = draft["channel"]
+            cleanup_draft_messages(draft)
+            STATE["pending"].pop(draft_id, None)
+            STATE["edit_mode"].pop(str(user["id"]), None)
+            save_state()
+            send_publish_status(chat_id, f"✅ پست با موفقیت در {channel} منتشر شد.")
+        except Exception as exc:
+            log.exception("Publish failed: %s", exc)
+            send_text(chat_id, f"❌ انتشار انجام نشد: {str(exc)[:700]}")
     elif action == "cancel": cleanup_draft_messages(draft); STATE["pending"].pop(draft_id, None); save_state()
     elif action == "edit":
         STATE["edit_mode"][str(user["id"])] = draft_id; prompt = send_text(chat_id, "متن یا کپشن جدید را در یک پیام بفرست. برای پست متنی، این متن جایگزین کامل می‌شود."); draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"]); save_state()
@@ -663,14 +715,30 @@ def handle_update(update):
             if row: rows.append(row)
             picker = send_text(chat_id, "کانال مقصد جدید را انتخاب کن:", rows); draft.setdefault("cleanup_message_ids", []).append(picker["message_id"]); save_state()
         elif action == "approve":
-            if draft.get("scheduled_at") and int(draft.get("scheduled_at", 0)) > time.time(): draft["scheduled_approved"] = True; save_state(); send_text(chat_id, "✅ زمان‌بندی ثبت شد. پست در زمان تعیین‌شده منتشر می‌شود."); return
-            try: publish(draft)
-            except Exception as exc: log.exception("Publish failed"); send_text(chat_id, f"❌ انتشار انجام نشد: {str(exc)[:700]}"); return
-            cleanup_draft_messages(draft); STATE["pending"].pop(draft_id, None); STATE["edit_mode"].pop(str(user["id"]), None); save_state()
-            try: send_text(chat_id, f"✅ پست با موفقیت در {draft['channel']} منتشر شد.")
-            except Exception: log.exception("Post was published, but success confirmation could not be sent")
+            if draft.get("scheduled_at") and int(draft.get("scheduled_at", 0)) > time.time():
+                draft["scheduled_approved"] = True
+                save_state()
+                cleanup_draft_messages(draft)
+                preview(chat_id, draft_id)
+                return
+            try:
+                publish(draft)
+            except Exception as exc:
+                log.exception("Publish failed")
+                send_text(chat_id, f"❌ انتشار انجام نشد: {str(exc)[:700]}")
+                return
+            channel = draft["channel"]
+            cleanup_draft_messages(draft)
+            STATE["pending"].pop(draft_id, None)
+            STATE["edit_mode"].pop(str(user["id"]), None)
+            save_state()
+            try:
+                send_publish_status(chat_id, f"✅ پست با موفقیت در {channel} منتشر شد.")
+            except Exception:
+                log.exception("Post was published, but success confirmation could not be sent")
         elif action == "cancel": cleanup_draft_messages(draft); STATE["pending"].pop(draft_id, None); STATE["edit_mode"].pop(str(user["id"]), None); save_state()
         elif action == "schedule":
+            cleanup_draft_messages(draft)
             user_key = str(user["id"]); today = datetime.now(ZoneInfo("Asia/Tehran")).date(); rows=[]; row=[]
             for day_offset in range(8):
                 chosen_date = today + timedelta(days=day_offset); label=("امروز" if day_offset == 0 else "فردا" if day_offset == 1 else chosen_date.strftime("%m-%d")) + " · " + chosen_date.isoformat(); row.append({"text": label, "callback_data": f"scheduledate:{draft_id}:{chosen_date.isoformat()}"})
@@ -682,6 +750,7 @@ def handle_update(update):
                 chosen_date=datetime.strptime(parts[2],"%Y-%m-%d").date(); today=datetime.now(ZoneInfo("Asia/Tehran")).date()
                 if chosen_date<today or chosen_date>today+timedelta(days=7): raise ValueError("تاریخ خارج از بازه است.")
             except ValueError: send_text(chat_id,"این تاریخ معتبر نیست؛ دوباره از گزینه‌های تاریخ انتخاب کن."); return
+            cleanup_draft_messages(draft)
             STATE["schedule_mode"][str(user["id"])]={"draft_id":draft_id,"step":"hour","date":chosen_date.isoformat()}; save_state(); prompt=send_text(chat_id,"🕒 ساعت انتشار را به‌صورت عدد ۰ تا ۲۳ بفرست؛ مثلاً 18."); draft.setdefault("cleanup_message_ids",[]).append(prompt["message_id"]); save_state()
         elif action == "edit":
             STATE["edit_mode"][str(user["id"])] = draft_id; save_state(); prompt=send_text(chat_id,"متن یا کپشن جدید را در یک پیام بفرست. برای پست متنی، متن کاملاً جایگزین می‌شود."); draft.setdefault("cleanup_message_ids",[]).append(prompt["message_id"]); save_state()
@@ -693,30 +762,47 @@ def handle_update(update):
         if chat_id: send_text(chat_id,"⛔ این بات خصوصی است و فقط مدیر می‌تواند از آن استفاده کند.")
         return
     user_key=str(user["id"])
-    if msg.get("text")=="/cancel" and user_key in STATE.get("schedule_mode",{}): STATE["schedule_mode"].pop(user_key,None); save_state(); send_text(chat_id,"تعیین زمان لغو شد؛ پیش‌نویس قبلی دست‌نخورده است."); return
+    if msg.get("text")=="/cancel" and user_key in STATE.get("schedule_mode",{}):
+        mode = STATE["schedule_mode"].pop(user_key, {})
+        draft_id = mode.get("draft_id", "") if isinstance(mode, dict) else mode
+        draft = STATE.get("pending", {}).get(draft_id)
+        if draft:
+            draft.setdefault("cleanup_message_ids", []).append(msg["message_id"])
+            cleanup_draft_messages(draft)
+        save_state()
+        cancel_message = send_text(chat_id,"تعیین زمان لغو شد؛ پیش‌نویس قبلی دست‌نخورده است.")
+        if draft:
+            draft.setdefault("cleanup_message_ids", []).append(cancel_message["message_id"])
+            preview(chat_id, draft_id)
+        return
     if user_key in STATE.get("schedule_mode",{}):
         mode=STATE["schedule_mode"][user_key]
         if isinstance(mode,str): mode={"draft_id":mode,"step":"date"}; STATE["schedule_mode"][user_key]=mode
         draft_id=mode.get("draft_id",""); draft=STATE["pending"].get(draft_id); value=(msg.get("text") or "").strip(); step=mode.get("step","date")
+        if draft:
+            draft.setdefault("cleanup_message_ids", []).append(msg["message_id"])
         try:
             tehran_now=datetime.now(ZoneInfo("Asia/Tehran"))
             if not draft: STATE["schedule_mode"].pop(user_key,None); save_state(); send_text(chat_id,"این پیش‌نویس دیگر در دسترس نیست."); return
             if step=="date":
                 scheduled_date=datetime.strptime(value,"%Y-%m-%d").date(); today=tehran_now.date()
                 if scheduled_date<today or scheduled_date>today+timedelta(days=7): raise ValueError("تاریخ باید از امروز تا حداکثر ۷ روز آینده باشد.")
-                mode["date"]=scheduled_date.isoformat(); mode["step"]="hour"; STATE["schedule_mode"][user_key]=mode; save_state(); prompt=send_text(chat_id,"🕒 ساعت انتشار را به‌صورت عدد ۰ تا ۲۳ بفرست؛ مثلاً 18."); draft.setdefault("cleanup_message_ids",[]).append(prompt["message_id"]); save_state()
+                mode["date"]=scheduled_date.isoformat(); mode["step"]="hour"; STATE["schedule_mode"][user_key]=mode; save_state(); cleanup_draft_messages(draft); prompt=send_text(chat_id,"🕒 ساعت انتشار را به‌صورت عدد ۰ تا ۲۳ بفرست؛ مثلاً 18."); draft.setdefault("cleanup_message_ids",[]).append(prompt["message_id"]); save_state()
             elif step=="hour":
                 if not re.fullmatch(r"\d{1,2}",value) or not 0<=int(value)<=23: raise ValueError("ساعت باید عددی بین ۰ تا ۲۳ باشد.")
-                mode["hour"]=int(value); mode["step"]="minute"; STATE["schedule_mode"][user_key]=mode; save_state(); prompt=send_text(chat_id,"⏱ دقیقهٔ انتشار را به‌صورت عدد ۰ تا ۵۹ بفرست؛ مثلاً 05 یا 30."); draft.setdefault("cleanup_message_ids",[]).append(prompt["message_id"]); save_state()
+                mode["hour"]=int(value); mode["step"]="minute"; STATE["schedule_mode"][user_key]=mode; save_state(); cleanup_draft_messages(draft); prompt=send_text(chat_id,"⏱ دقیقهٔ انتشار را به‌صورت عدد ۰ تا ۵۹ بفرست؛ مثلاً 05 یا 30."); draft.setdefault("cleanup_message_ids",[]).append(prompt["message_id"]); save_state()
             elif step=="minute":
                 if not re.fullmatch(r"\d{1,2}",value) or not 0<=int(value)<=59: raise ValueError("دقیقه باید عددی بین ۰ تا ۵۹ باشد.")
                 scheduled_dt=datetime.strptime(f"{mode['date']} {mode['hour']:02d}:{int(value):02d}","%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("Asia/Tehran")); scheduled_epoch=scheduled_dt.timestamp()
                 if scheduled_epoch<=time.time()+30:
                     mode["step"]="hour"; STATE["schedule_mode"][user_key]=mode; save_state(); send_text(chat_id,"این ساعت گذشته یا خیلی نزدیک است. ساعت دیگری بین ۰ تا ۲۳ بفرست؛ بعد دوباره دقیقه را می‌پرسم."); return
-                draft["scheduled_at"]=int(scheduled_epoch); draft["scheduled_approved"]=True; STATE["schedule_mode"].pop(user_key,None); save_state(); send_text(chat_id,"✅ زمان‌بندی ثبت شد؛ دیگر لازم نیست تاریخ و ساعت را جداگانه تأیید کنی."); preview(chat_id,draft_id)
+                draft["scheduled_at"]=int(scheduled_epoch); draft["scheduled_approved"]=True; STATE["schedule_mode"].pop(user_key,None); save_state(); cleanup_draft_messages(draft); preview(chat_id,draft_id)
             else: raise ValueError("مرحلهٔ زمان‌بندی نامعتبر است.")
         except ValueError as exc:
-            STATE["schedule_mode"][user_key]=mode; save_state(); prompt_text=(f"❌ {exc}\nتاریخ را با قالب YYYY-MM-DD بفرست؛ فقط امروز تا ۷ روز آینده. برای لغو /cancel." if step=="date" else f"❌ {exc}\nساعت را به‌صورت عدد ۰ تا ۲۳ بفرست." if step=="hour" else f"❌ {exc}\nدقیقه را به‌صورت عدد ۰ تا ۵۹ بفرست."); send_text(chat_id,prompt_text)
+            STATE["schedule_mode"][user_key]=mode; save_state(); prompt_text=(f"❌ {exc}\nتاریخ را با قالب YYYY-MM-DD بفرست؛ فقط امروز تا ۷ روز آینده. برای لغو /cancel." if step=="date" else f"❌ {exc}\nساعت را به‌صورت عدد ۰ تا ۲۳ بفرست." if step=="hour" else f"❌ {exc}\nدقیقه را به‌صورت عدد ۰ تا ۵۹ بفرست."); error_message=send_text(chat_id,prompt_text)
+            if draft:
+                draft.setdefault("cleanup_message_ids", []).append(error_message["message_id"])
+                save_state()
         return
     if msg.get("text")=="/cancel": send_text(chat_id,"برای لغو، دکمه «لغو» زیر پیش‌نویس را بزن."); return
     if user_key in STATE["edit_mode"]:
@@ -740,8 +826,8 @@ def publish_due_drafts():
         due=int(draft.get("scheduled_at",0) or 0)
         if not draft.get("scheduled_approved") or not due or due>now: continue
         try:
-            publish(draft); chat_id=draft.get("chat_id"); cleanup_draft_messages(draft); STATE["pending"].pop(draft_id,None); save_state()
-            if chat_id: send_text(chat_id,f"✅ پست زمان‌بندی‌شده در {draft.get('channel')} منتشر شد.")
+            publish(draft); chat_id=draft.get("chat_id"); channel=draft.get("channel"); cleanup_draft_messages(draft); STATE["pending"].pop(draft_id,None); save_state()
+            if chat_id: send_publish_status(chat_id,f"✅ پست زمان‌بندی‌شده در {channel} منتشر شد.")
         except Exception as exc:
             log.exception("Scheduled publish failed for draft %s",draft_id); chat_id=draft.get("chat_id")
             if chat_id:
@@ -755,7 +841,7 @@ def main():
     api("deleteWebhook", {"drop_pending_updates": False}); started=time.time()
     while time.time()-started<POLL_SECONDS:
         try:
-            publish_due_drafts(); updates=api("getUpdates", {"offset":int(STATE.get("offset",0)),"timeout":20,"allowed_updates":["message","callback_query"]}, timeout=30); grouped_updates=[]; album_buckets={}
+            cleanup_expired_status_messages(); publish_due_drafts(); updates=api("getUpdates", {"offset":int(STATE.get("offset",0)),"timeout":20,"allowed_updates":["message","callback_query"]}, timeout=30); grouped_updates=[]; album_buckets={}
             for incoming in updates:
                 imsg=incoming.get("message") or {}; gid=imsg.get("media_group_id")
                 if gid:
