@@ -329,118 +329,6 @@
       ],
       "edited_manually": true
     },
-    "267987435": {
-      "chat_id": 1677869966,
-      "text": "دیشب دزد گرفتم که داشت ضبط و کامپیوتر ماشینارو باز می‌کرد. مثل زباله‌گردا که یه گونی بزرگ ترک موتور می‌بندن استتار کرده بود تا کسی شک نکنه. کمین کردم سوییچ موتورشو ورداشتم و ازش فاصله گرفتم داد زدم دززززد اصلا عربده می‌کشیدم:) با تیزی بهم حمله کرد. بالاخره چند نفر اومدن بیرون تا خواست فرار کنه یه جوون صد کیلویی مثل این کشتی‌کج‌کارا از پشت شیرجه زد روش یکی دیگم تیزی رو از دستش کشید بیرون. جالبه تو گونیش ضایعاتم جمع کرده بود تا کلا شک و شبهه‌ای باقی نذاره و حتی پلیسم بهش شک نکنه! سارقینم آپدیت پرو مکس شدن و از شگردهای جدیدی استفاده می‌ کنن!\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 545,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 554,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 561,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 570,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 579,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 684,
-      "cleanup_message_ids": [
-        684,
-        685,
-        686,
-        824,
-        825,
-        827,
-        830,
-        831
-      ],
-      "preview_message_ids": [
-        830,
-        831
-      ],
-      "scheduled_at": 1792859460,
-      "scheduled_approved": true
-    },
-    "267987436": {
-      "chat_id": 1677869966,
-      "text": "هر چی که با پ شروع می شه چیز خوبیه\nپول ، پاییز ، پیتزا ، پتو ، پاستیل ، پلی استیشن ، پنت هاوس\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 94,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 103,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 110,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 119,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 128,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 687,
-      "cleanup_message_ids": [
-        687,
-        688,
-        689,
-        832,
-        833,
-        835,
-        838,
-        839
-      ],
-      "preview_message_ids": [
-        838,
-        839
-      ],
-      "scheduled_at": 1792859460,
-      "scheduled_approved": true
-    },
     "267987437": {
       "chat_id": 1677869966,
       "text": "آدم‌ها با زمان‌گذاشتن برای یکدیگر، از میان هزاران چهره‌ی جهان، خاص می‌شوند. دوست‌داشتن فقط پیدا کردنِ کسی نیست که دوستش داشته باشی؛ پذیرفتنِ مسئولیتِ پیوندی‌ست که میان شما شکل گرفته است...\n✎ آنتوان دو سنت‌اگزوپری\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
@@ -551,155 +439,6 @@
         856
       ],
       "scheduled_at": 1792870260,
-      "scheduled_approved": true
-    },
-    "267987444": {
-      "chat_id": 1677869966,
-      "text": "ترکیب بهشتی:🤤🤤🤤\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی | پروکسی  | پروکسی",
-      "entities": [
-        {
-          "offset": 19,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pofak.mikhay.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 28,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=refiq.poolaki.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 35,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=dokhtar.nanaz.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 44,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=bastani.mikhay.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 53,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=panir.begir.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 60,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=qadim.zhigool.co.uk&port=22&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 69,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=reyhoon.shambelile.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 78,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noon.begir.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 85,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nooshabe.mikhay.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 94,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pashmak.mikhay.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 103,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=boro.poolaki.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 110,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=PAyDaR.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 120,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nab.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 129,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soh5.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 136,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=vasle.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 146,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=tassian.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 155,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=FOR-IRAN.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 162,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soheil.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 171,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=for.you.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 181,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=AZADI.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgEAAxkBAAICx2rcctahR0L3p5mMkvt9uZcsIdjGAAIXsDEbRzY4ROGcqJL1xZo6AQADAgADeQADPQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 711,
-      "cleanup_message_ids": [
-        711,
-        712,
-        713,
-        885,
-        886,
-        888,
-        891,
-        892
-      ],
-      "preview_message_ids": [
-        891,
-        892
-      ],
-      "scheduled_at": 1792859460,
       "scheduled_approved": true
     },
     "267987447": {
@@ -1196,34 +935,6 @@
         978
       ],
       "scheduled_at": 1792870260,
-      "scheduled_approved": true
-    },
-    "267987764": {
-      "chat_id": 1677869966,
-      "text": "🎮 بازی Fatekeeper با تنها ۱۳ توسعه‌دهنده به فروش نیم میلیون نسخه‌ای رسید\n🔻بازی نقش‌آفرینی فانتزی Fatekeeper ساخته استودیوی کوچک Paraglacial و نشر THQ Nordic توانسته است بیش از ۵۰۰ هزار نسخه در فروشگاه استیم بفروشد. این بازی اول‌شخص با داشتن تنها ۱۳ توسعه‌دهنده همچنان در مرحله دسترسی زودهنگام قرار دارد و سیستم مبارزات آن ترکیبی از سلاح‌های سرد و جادو است. تیم سازنده از بازخوردهای جامعه طرفداران برای بهبود کیفیت پروژه و رفع مشکلات استفاده می‌کند.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFOGrcgOCPaLQK79JetdzjgizXMwNHAAJoJgAC2BPgUqinfj53QVIxPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1336,
-      "cleanup_message_ids": [
-        1336,
-        1414,
-        1415,
-        1581,
-        1583,
-        1585,
-        1588,
-        1589
-      ],
-      "preview_message_ids": [
-        1588,
-        1589
-      ],
-      "scheduled_at": 1792859460,
       "scheduled_approved": true
     },
     "267987765": {
@@ -3104,5 +2815,26 @@
   },
   "edit_mode": {},
   "schedule_mode": {},
-  "status_cleanup": []
+  "status_cleanup": [
+    {
+      "chat_id": 1677869966,
+      "message_id": 2385,
+      "delete_at": 1792946875
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2386,
+      "delete_at": 1792946877
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2387,
+      "delete_at": 1792946879
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2388,
+      "delete_at": 1792946881
+    }
+  ]
 }
