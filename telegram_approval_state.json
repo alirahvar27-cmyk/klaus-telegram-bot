@@ -329,62 +329,6 @@
       ],
       "edited_manually": true
     },
-    "267987437": {
-      "chat_id": 1677869966,
-      "text": "آدم‌ها با زمان‌گذاشتن برای یکدیگر، از میان هزاران چهره‌ی جهان، خاص می‌شوند. دوست‌داشتن فقط پیدا کردنِ کسی نیست که دوستش داشته باشی؛ پذیرفتنِ مسئولیتِ پیوندی‌ست که میان شما شکل گرفته است...\n✎ آنتوان دو سنت‌اگزوپری\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 213,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 222,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 229,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 238,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 247,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 690,
-      "cleanup_message_ids": [
-        690,
-        691,
-        692,
-        840,
-        841,
-        843,
-        846,
-        847
-      ],
-      "preview_message_ids": [
-        846,
-        847
-      ],
-      "scheduled_at": 1792866660,
-      "scheduled_approved": true
-    },
     "267987439": {
       "chat_id": 1677869966,
       "text": "ترامپ گفته اگر دموکرات‌ها برنده بشن پسرتون تام به مدرسه میره و پنج روز بعد میاد خونه و اسمش ساراست و شما حتی نمی‌دونید چه اتفاقی افتاده! 😂😂\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
@@ -829,34 +773,6 @@
         978
       ],
       "scheduled_at": 1792870260,
-      "scheduled_approved": true
-    },
-    "267987766": {
-      "chat_id": 1677869966,
-      "text": "🎮 سازنده سابق GTA 6: بزرگ‌ترین تهدید برای کارکنان راکستار، برآورده نکردن انتظارات است\n🔻جرمی هارتویک، طراح سابق راکستار گیمز که در توسعه Red Dead Redemption 2 و GTA 6 نقش داشته، اعلام کرد بزرگ‌ترین تهدید برای کارکنان این شرکت، فشار طاقت‌فرسا برای برآورده کردن انتظارات کمال‌گرایانه مدیران است، نه بحران مالی یا تعدیل نیرو. او که تا سال ۲۰۲۰ در استودیوی Rockstar North در اسکاتلند کار می‌کرد، به دلیل حجم کاری بالا و دوری از خانواده از این شرکت جدا شد. به گفته وی، با وجود پشتوانه مالی نامحدود راکستار، کارکنانی که نتوانند استانداردهای سخت‌گیرانه شرکت را برآورده کنند، ممکن است جایگاه شغلی خود را از دست بدهند.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFOmrcgOAgtLINcc5I1s1rgSlpBlOcAAKlD2sbCnzlUhIHTbK-tYkFAQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1338,
-      "cleanup_message_ids": [
-        1338,
-        1418,
-        1419,
-        1591,
-        1601,
-        1603,
-        1606,
-        1607
-      ],
-      "preview_message_ids": [
-        1606,
-        1607
-      ],
-      "scheduled_at": 1792866660,
       "scheduled_approved": true
     },
     "267987767": {
@@ -2694,6 +2610,16 @@
       "chat_id": 1677869966,
       "message_id": 2409,
       "delete_at": 1792950084
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2412,
+      "delete_at": 1792953110
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2413,
+      "delete_at": 1792953112
     }
   ]
 }
