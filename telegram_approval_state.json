@@ -1,5 +1,5 @@
 {
-  "offset": 267987605,
+  "offset": 267987664,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -2787,6 +2787,359 @@
         1030
       ],
       "scheduled_at": 1792843800,
+      "scheduled_approved": true
+    },
+    "267987605": {
+      "chat_id": 1677869966,
+      "text": "#نبض_بازار\n#تال\n📌لیست نمادهای معامله شده در TAL\n*لازم به ذکر است از معاملات با ارزش پایین صرف نظر شده است.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 10,
+          "type": "hashtag"
+        },
+        {
+          "offset": 11,
+          "length": 4,
+          "type": "hashtag"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIEB2rcexESFt2vNIS3sq6EgKvLpa8uAALOD2sb_RW5UtYqz1nGt_AXAQADAgADeAADPQQ"
+      },
+      "channel": "@PoolBalad",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1031,
+      "cleanup_message_ids": [
+        1031,
+        1045,
+        1046,
+        1129,
+        1130,
+        1131,
+        1132,
+        1133,
+        1135,
+        1138,
+        1139
+      ],
+      "preview_message_ids": [
+        1138,
+        1139
+      ],
+      "scheduled_at": 1792837860,
+      "scheduled_approved": true
+    },
+    "267987606": {
+      "chat_id": 1677869966,
+      "text": "سقوط نفت و صعود طلا و بیت‌کوین بعد از اعلام خبرهایی از نزدیک شدن دیدگاه ایران ‌و آمریکا برای مذاکره",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 99,
+          "type": "bold"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIECGrcexEyrwQRQDi7hwOrnvIDVrecAAIOEWsb76HAUtMhcPy4C03ZAQADAgADeQADPQQ"
+      },
+      "channel": "@TradePulseFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1032,
+      "cleanup_message_ids": [
+        1032,
+        1047,
+        1048
+      ],
+      "preview_message_ids": [
+        1047,
+        1048
+      ]
+    },
+    "267987607": {
+      "chat_id": 1677869966,
+      "text": "◀️ مهم برای پالایشی ها\nتابستان غیر اضطرار اعلام شده و با همان اسپرد و شرایط فرمول گزارش میدن\nبرای نیمه دوم سال شرایط اضطرار اعلام میشه",
+      "entities": [
+        {
+          "offset": 3,
+          "length": 19,
+          "type": "bold"
+        },
+        {
+          "offset": 23,
+          "length": 69,
+          "type": "bold"
+        },
+        {
+          "offset": 93,
+          "length": 41,
+          "type": "bold"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIECWrcexE4nBrd1N_MJZDJqlloNUokAAKXDmsb26PJUkGBv-eJfhhWAQADAgADeQADPQQ"
+      },
+      "channel": "@NbzeKhabar",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1033,
+      "cleanup_message_ids": [
+        1033,
+        1049,
+        1050
+      ],
+      "preview_message_ids": [
+        1049,
+        1050
+      ]
+    },
+    "267987608": {
+      "chat_id": 1677869966,
+      "text": "یک استارتاپ ادعا کرد جیوه را به طلا تبدیل کرده است!\n◀️شرکت در مقاله‌ای که اواسط ژوئیه (۲۰۲۵) منتشر شد گفته نوترون‌های حاصل از واکنش همجوشی را می‌توان برای تبدیل جیوه به طلا (تراگذاری هسته‌ای) به کار برد\n◀️نویسندگان می‌گویند هر نیروگاه همجوشی آینده می‌تواند بدون کاهش توان خروجی، سالانه ۵ هزار کیلوگرم طلا به ازای هر گیگاوات تولید کند.",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIECmrcexEcu-5zV6gWwJmiVx_7pDNJAAIQJgACbrDYUrnLIicE52VGPQQ"
+      },
+      "channel": "@NbzeKhabar",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1034,
+      "cleanup_message_ids": [
+        1034,
+        1051,
+        1052
+      ],
+      "preview_message_ids": [
+        1051,
+        1052
+      ]
+    },
+    "267987609": {
+      "chat_id": 1677869966,
+      "text": "⭕️ طلا اومد به زیر 4000 دلار",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIEC2rcexEth8iFwgMqu5QtCxnssgxRAAKND2sbbrDgUgm4Fk9FtXs7AQADAgADeQADPQQ"
+      },
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1035,
+      "cleanup_message_ids": [
+        1035,
+        1053,
+        1054
+      ],
+      "preview_message_ids": [
+        1053,
+        1054
+      ]
+    },
+    "267987610": {
+      "chat_id": 1677869966,
+      "text": "#نفت_برنت .... آپدیت",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 9,
+          "type": "hashtag"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIEDGrcexEIlFiKfrHUnFVPa7ED4SwhAAKcEGsbb2vZUrjgWRxuQV4PAQADAgADeQADPQQ"
+      },
+      "channel": "@Khndedoon",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1036,
+      "cleanup_message_ids": [
+        1036,
+        1055,
+        1056,
+        1151
+      ],
+      "preview_message_ids": [
+        1055,
+        1056
+      ]
+    },
+    "267987611": {
+      "chat_id": 1677869966,
+      "text": "#کفرا ، انفجار و‌ تحول عظیم در عملیات شرکت، تغییر فاز سنگین از زیاندهی به سوددهی…\n▪️ رشد سود خالص تابستان نسبت به مدّت مشابه سال قبل: 13,827.1 %\n▪️ کفرا در دوره 6 ماهه منتهی به 1405/06/31 ضمن ثبت افزایش سرمایه 103 درصد، در این دوره به ازای هر سهم 182 ریال سود محقق کرده است.\n▪️ «کفرا» طی عملکرد 6 ماهه منتهی به 1405/06/31 مبلغ 7,956,068 میلیون ریال سود ناخالص شناسایی کرده که نسبت به سال گذشته 611 درصد رشد داشته است.\nتعدیل p/e از -89 به ۷۵",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIEDWrcexEz5V53V829B3rpweo0c0k6AAKfD2sbypvZUr4McZS5nKVBAQADAgADeQADPQQ"
+      },
+      "channel": "@PoolBalad",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1037,
+      "cleanup_message_ids": [
+        1037,
+        1057,
+        1058,
+        1140,
+        1141,
+        1142,
+        1143,
+        1144,
+        1146,
+        1149,
+        1150
+      ],
+      "preview_message_ids": [
+        1149,
+        1150
+      ],
+      "scheduled_at": 1792846800,
+      "scheduled_approved": true
+    },
+    "267987612": {
+      "chat_id": 1677869966,
+      "text": "این پیام رو یه گوشه نگهدارین\nسهم هر شرکت از طلای تفتان\nتاصیکو: 80%\nکخاک: 10%\nکفرا: 10%\nسهم هر شرکت از طلای کردستان\nتاصیکو: 80%\nکخاک: 10%\nشاملا: 10%\nکفرا: 5%\nبنابراین #کخاک در هر دو معدن سهم 10% داره و مارکتش 32 همته\n#کفرا در معدن تفتان 10 درصد و در معدن کردستان 5 درصد سهم داره با مارکت 12 همت\nهر دو‌جذابن برای سرمایه گذاری بلند مدت ولی #کفرا بیشتر…\n❤️ بورسکده | تحلیل بنیادی | تکنیکال",
+      "entities": [],
+      "media": null,
+      "channel": "@PoolBalad",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1038,
+      "cleanup_message_ids": [
+        1038,
+        1059,
+        1060,
+        1118,
+        1119,
+        1120,
+        1121,
+        1122,
+        1124,
+        1127,
+        1128
+      ],
+      "preview_message_ids": [
+        1127,
+        1128
+      ],
+      "scheduled_at": 1792836000,
+      "scheduled_approved": true
+    },
+    "267987613": {
+      "chat_id": 1677869966,
+      "text": "⭕️⭕️ترامپ ادعا کرد\nگفت‌وگوهای سازنده‌ای با ایران داریم و پیش از انتخابات میان‌دوره‌ای به این کشور حمله نخواهیم کرد\nاثرات نفت ۱۱۷ دلاریه",
+      "entities": [],
+      "media": null,
+      "channel": "@PoolBalad",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1039,
+      "cleanup_message_ids": [
+        1039,
+        1061,
+        1062,
+        1107,
+        1108,
+        1109,
+        1110,
+        1111,
+        1113,
+        1116,
+        1117
+      ],
+      "preview_message_ids": [
+        1116,
+        1117
+      ],
+      "scheduled_at": 1792843200,
+      "scheduled_approved": true
+    },
+    "267987614": {
+      "chat_id": 1677869966,
+      "text": "اهرمی ها به استقبال دامنه نوسان جدید رفتن و به حباب منفی ۳۰ رسیدن",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIEEGrcexHSc0ob7k8LXcL6Jz9nGLSyAAI6DmsbbrDoUrWVWOHUFswSAQADAgADeQADPQQ"
+      },
+      "channel": "@PoolBalad",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1040,
+      "cleanup_message_ids": [
+        1040,
+        1063,
+        1064,
+        1096,
+        1097,
+        1098,
+        1099,
+        1100,
+        1102,
+        1105,
+        1106
+      ],
+      "preview_message_ids": [
+        1105,
+        1106
+      ],
+      "scheduled_at": 1792841460,
+      "scheduled_approved": true
+    },
+    "267987615": {
+      "chat_id": 1677869966,
+      "text": "پیش بینی موسسات مالی دنیا از قیمت طلا برای سال ۲۰۲۶ میلادی",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIEEWrcexHlnxoZXrWcpFDp7G2f2UotAAI0D2sbIrbgUu8GXBszJTitAQADAgADeAADPQQ"
+      },
+      "channel": "@PoolBalad",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1041,
+      "cleanup_message_ids": [
+        1041,
+        1065,
+        1066,
+        1088,
+        1089,
+        1091,
+        1094,
+        1095
+      ],
+      "preview_message_ids": [
+        1094,
+        1095
+      ],
+      "scheduled_at": 1792839600,
+      "scheduled_approved": true
+    },
+    "267987616": {
+      "chat_id": 1677869966,
+      "text": "روند نسبت P/E بازار سرمایه از سال 1401 تاکنون\n☑️تا قبل از انتشار گزارش‎های فصل تابستان 1405، نسبت P/E بازار سرمایه به محدوده 10 واحد رسیده بود.\n☑️با انتشار گزارش‌‎های فوق‎العاده فصل تابستان هم‎اکنون P/E بازار به حدود 7.4 واحد رسیده است.\nنیکی تحلیل",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIEEmrcexF9MvZJYIJf2mdnEyLXlB-iAAJ6EGsbhiTgUiQPrwAB6Bj0qQEAAwIAA3cAAz0E"
+      },
+      "channel": "@PoolBalad",
+      "source_chat_id": 1677869966,
+      "source_message_id": 1042,
+      "cleanup_message_ids": [
+        1042,
+        1067,
+        1068,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1083,
+        1086,
+        1087
+      ],
+      "preview_message_ids": [
+        1086,
+        1087
+      ],
+      "scheduled_at": 1792837860,
       "scheduled_approved": true
     }
   },
