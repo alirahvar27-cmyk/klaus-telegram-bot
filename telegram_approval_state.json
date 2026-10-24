@@ -2704,34 +2704,6 @@
       "scheduled_at": 1792841460,
       "scheduled_approved": true
     },
-    "267987615": {
-      "chat_id": 1677869966,
-      "text": "پیش بینی موسسات مالی دنیا از قیمت طلا برای سال ۲۰۲۶ میلادی",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIEEWrcexHlnxoZXrWcpFDp7G2f2UotAAI0D2sbIrbgUu8GXBszJTitAQADAgADeAADPQQ"
-      },
-      "channel": "@PoolBalad",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1041,
-      "cleanup_message_ids": [
-        1041,
-        1065,
-        1066,
-        1088,
-        1089,
-        1091,
-        1094,
-        1095
-      ],
-      "preview_message_ids": [
-        1094,
-        1095
-      ],
-      "scheduled_at": 1792839600,
-      "scheduled_approved": true
-    },
     "267987689": {
       "chat_id": 1677869966,
       "text": "#OIL",
