@@ -1,5 +1,5 @@
 {
-  "offset": 267987750,
+  "offset": 267987752,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -3611,20 +3611,19 @@
         1251,
         1252,
         1260,
-        1317
+        1317,
+        1319,
+        1322,
+        1323
       ],
       "preview_message_ids": [
-        1251,
-        1252
-      ]
+        1322,
+        1323
+      ],
+      "scheduled_at": 1792841460,
+      "scheduled_approved": true
     }
   },
   "edit_mode": {},
-  "schedule_mode": {
-    "1677869966": {
-      "draft_id": "267987698",
-      "step": "hour",
-      "date": "2026-10-24"
-    }
-  }
+  "schedule_mode": {}
 }
