@@ -2431,34 +2431,6 @@
       "scheduled_at": 1792846800,
       "scheduled_approved": true
     },
-    "267987613": {
-      "chat_id": 1677869966,
-      "text": "⭕️⭕️ترامپ ادعا کرد\nگفت‌وگوهای سازنده‌ای با ایران داریم و پیش از انتخابات میان‌دوره‌ای به این کشور حمله نخواهیم کرد\nاثرات نفت ۱۱۷ دلاریه",
-      "entities": [],
-      "media": null,
-      "channel": "@PoolBalad",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1039,
-      "cleanup_message_ids": [
-        1039,
-        1061,
-        1062,
-        1107,
-        1108,
-        1109,
-        1110,
-        1111,
-        1113,
-        1116,
-        1117
-      ],
-      "preview_message_ids": [
-        1116,
-        1117
-      ],
-      "scheduled_at": 1792843200,
-      "scheduled_approved": true
-    },
     "267987689": {
       "chat_id": 1677869966,
       "text": "#OIL",
