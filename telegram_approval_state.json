@@ -329,65 +329,6 @@
       ],
       "edited_manually": true
     },
-    "267987434": {
-      "chat_id": 1677869966,
-      "text": "خانوم مسن خیلی شیکی اومده بود با تویوتا کمری، چهارصد کیلو بار زد\nگفتم حاج خانوم چهارصد کیلو زیاده‌هااا\nگفت حاجی باباته، ژاپنی خریدم واسه همین خار××ه بازیا\nهنوز قدرت تکلمم برنگشته🧑‍🦯🧑‍🦯\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 189,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 198,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 205,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 214,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 223,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 681,
-      "cleanup_message_ids": [
-        681,
-        682,
-        683,
-        813,
-        814,
-        815,
-        816,
-        817,
-        819,
-        822,
-        823
-      ],
-      "preview_message_ids": [
-        822,
-        823
-      ],
-      "scheduled_at": 1792852260,
-      "scheduled_approved": true
-    },
     "267987435": {
       "chat_id": 1677869966,
       "text": "دیشب دزد گرفتم که داشت ضبط و کامپیوتر ماشینارو باز می‌کرد. مثل زباله‌گردا که یه گونی بزرگ ترک موتور می‌بندن استتار کرده بود تا کسی شک نکنه. کمین کردم سوییچ موتورشو ورداشتم و ازش فاصله گرفتم داد زدم دززززد اصلا عربده می‌کشیدم:) با تیزی بهم حمله کرد. بالاخره چند نفر اومدن بیرون تا خواست فرار کنه یه جوون صد کیلویی مثل این کشتی‌کج‌کارا از پشت شیرجه زد روش یکی دیگم تیزی رو از دستش کشید بیرون. جالبه تو گونیش ضایعاتم جمع کرده بود تا کلا شک و شبهه‌ای باقی نذاره و حتی پلیسم بهش شک نکنه! سارقینم آپدیت پرو مکس شدن و از شگردهای جدیدی استفاده می‌ کنن!\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
@@ -610,34 +551,6 @@
         856
       ],
       "scheduled_at": 1792870260,
-      "scheduled_approved": true
-    },
-    "267987442": {
-      "chat_id": 1677869966,
-      "text": "اکثرنتا\nss://YWVzLTI1Ni1nY206cEtFVzhKUEJ5VFZUTHRN@15.204.247.244:4444#\nvmess://eyJhZGQiOiIzOC4xMTAuMS4yNDYiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJwb3J0IjoiMTgwMDAiLCJwcyI6IkBtZWxpcHJveHkiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9\nss://YWVzLTI1Ni1nY206M2VPRmVOc3NkZTdQWVlNdg@84.247.155.196:443#\nvless://056405e8-de9f-4d0d-8145-956f13cc34da@pl1.h1cloud.net:27591/?type=tcp&encryption=none&flow=&sni=\nss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@15.204.247.175:8008#\nss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@51.79.49.116:8882#\nss://YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2@51.222.141.125:445#\nvless://2c634977-584e-4e1f-b501-1b70c77a6743@81.94.148.232:8443/?type=tcp&encryption=none&flow=&security=tls&sni=windytrout.net&alpn=h2%2Chttp%2F1.1&fp=firefox#\nvless://2c634977-584e-4e1f-b501-1b70c77a6743@81.94.148.232:2053/?type=xhttp&encryption=none&flow=&security=tls&sni=windytrout.net&alpn=h2%2Chttp%2F1.1&fp=firefox#\nvless://9c54d883-97a8-4b49-af23-fe052eff2c3a@193.168.140.237:443/?type=grpc&encryption=none&flow=&sni=ads.x5.ru&fp=chrome&security=reality&pbk=byjOBWoaPgKQoy7yj91s7Uavs9VNpBns773wt-UeRxM&sid=3e0c480d#\nvless://30572b57-f5ab-4eb8-82d4-a24d399b99f6@46.254.17.88:30065/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=a3.eosapp.net&fp=firefox&security=reality&pbk=Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU&sid=#\nss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5TEhMYTFDazJlUklPbUpPV3AyWFJSQUNnRkdBWV8zZw==@87.107.114.100:902#\nss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5TEhMYTFDazJlUklPbUpPV3AyWFJSQUNnRkdBWV8zZw==@87.107.114.102:904#\nvless://f7008e87-05d3-43e5-ab8b-6515a2af19eb@217.216.82.85:800?encryption=none&type=xhttp&path=%2F%3Fed%3D2048&host=us.samanehha.io&mode=stream-one&security=none#",
-      "entities": [],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 705,
-      "cleanup_message_ids": [
-        705,
-        706,
-        707,
-        873,
-        874,
-        875,
-        876,
-        877,
-        879,
-        882,
-        883
-      ],
-      "preview_message_ids": [
-        882,
-        883
-      ],
-      "scheduled_at": 1792852260,
       "scheduled_approved": true
     },
     "267987444": {
@@ -1077,85 +990,6 @@
         730,
         731
       ]
-    },
-    "267987451": {
-      "chat_id": 1677869966,
-      "text": "اینترنت ایران‌ رو میشه تو کشورهای دیگه به عنوان ابزار شکنجه ازش استفاده کرد\nپروکسی |  پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی | پروکسی  | پروکسی",
-      "entities": [
-        {
-          "offset": 76,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=PAyDaR.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 86,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nab.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 95,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soh5.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 102,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=vasle.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 112,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=tassian.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 121,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=FOR-IRAN.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 128,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soheil.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 137,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=for.you.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 147,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=AZADI.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 732,
-      "cleanup_message_ids": [
-        732,
-        733,
-        734,
-        931,
-        933,
-        936,
-        937
-      ],
-      "preview_message_ids": [
-        936,
-        937
-      ],
-      "scheduled_at": 1792852260,
-      "scheduled_approved": true
     },
     "267987454": {
       "chat_id": 1677869966,
@@ -1630,94 +1464,6 @@
       "scheduled_at": 1792855860,
       "scheduled_approved": true
     },
-    "267987607": {
-      "chat_id": 1677869966,
-      "text": "◀️ مهم برای پالایشی ها\nتابستان غیر اضطرار اعلام شده و با همان اسپرد و شرایط فرمول گزارش میدن\nبرای نیمه دوم سال شرایط اضطرار اعلام میشه",
-      "entities": [
-        {
-          "offset": 3,
-          "length": 19,
-          "type": "bold"
-        },
-        {
-          "offset": 23,
-          "length": 69,
-          "type": "bold"
-        },
-        {
-          "offset": 93,
-          "length": 41,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIECWrcexE4nBrd1N_MJZDJqlloNUokAAKXDmsb26PJUkGBv-eJfhhWAQADAgADeQADPQQ"
-      },
-      "channel": "@PoolBalad",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1033,
-      "cleanup_message_ids": [
-        1033,
-        1049,
-        1050,
-        1178,
-        1179,
-        1180,
-        1181,
-        1182,
-        1184,
-        1187,
-        1188
-      ],
-      "preview_message_ids": [
-        1187,
-        1188
-      ],
-      "scheduled_at": 1792852260,
-      "scheduled_approved": true
-    },
-    "267987689": {
-      "chat_id": 1677869966,
-      "text": "#OIL",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 4,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIErWrcfZUMc4wPlqPMTfG1CY4vDecUAALgEGsbupnZUsYDSC43pNmgAQADAgADeQADPQQ"
-      },
-      "channel": "@TradePulseFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1197,
-      "cleanup_message_ids": [
-        1197,
-        1207,
-        1208,
-        1228,
-        1237,
-        1238,
-        1253,
-        1261,
-        1263,
-        1266,
-        1267,
-        1268,
-        1270,
-        1273,
-        1274
-      ],
-      "preview_message_ids": [
-        1273,
-        1274
-      ],
-      "scheduled_at": 1792852260,
-      "scheduled_approved": true
-    },
     "267987690": {
       "chat_id": 1677869966,
       "text": "#BTC",
@@ -1753,34 +1499,6 @@
         1281
       ],
       "scheduled_at": 1792854000,
-      "scheduled_approved": true
-    },
-    "267987762": {
-      "chat_id": 1677869966,
-      "text": "🎮 منطق شیرجه در ↓\nعناوین GTA 6 - GTA 5 - RDR2\n🗨️ بنظرتون کدوم بهتره؟ فکر میکنم رد دد ۲ اینجا ضعیف عمل کرده.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFNmrcgODpq_oh89QcNFvDk-4TeSwSAAI_JgAC2BPgUvmyEZZBdd2jPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1334,
-      "cleanup_message_ids": [
-        1334,
-        1410,
-        1411,
-        1556,
-        1565,
-        1567,
-        1570,
-        1571
-      ],
-      "preview_message_ids": [
-        1570,
-        1571
-      ],
-      "scheduled_at": 1792852260,
       "scheduled_approved": true
     },
     "267987763": {
