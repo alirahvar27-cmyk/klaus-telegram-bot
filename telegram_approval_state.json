@@ -1,5 +1,5 @@
 {
-  "offset": 267987595,
+  "offset": 267987605,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -2635,19 +2635,28 @@
         "type": "audio",
         "file_id": "CQACAgQAAxkBAAIC-2rccxzHlPkVlzxnfHmSC5CjZb6dAAL5JQACB0bgUjYgkyejWUWBPQQ"
       },
-      "channel": "@Khndedoon",
+      "channel": "@ZehnAgahh",
       "source_chat_id": 1677869966,
       "source_message_id": 763,
       "cleanup_message_ids": [
         763,
         764,
         765,
-        1011
+        1011,
+        1013,
+        1014,
+        1015,
+        1016,
+        1018,
+        1021,
+        1022
       ],
       "preview_message_ids": [
-        764,
-        765
-      ]
+        1021,
+        1022
+      ],
+      "scheduled_at": 1792838040,
+      "scheduled_approved": true
     },
     "267987462": {
       "chat_id": 1677869966,
@@ -2766,12 +2775,19 @@
       "cleanup_message_ids": [
         766,
         767,
-        768
+        768,
+        1023,
+        1024,
+        1026,
+        1029,
+        1030
       ],
       "preview_message_ids": [
-        767,
-        768
-      ]
+        1029,
+        1030
+      ],
+      "scheduled_at": 1792843800,
+      "scheduled_approved": true
     }
   },
   "edit_mode": {},
