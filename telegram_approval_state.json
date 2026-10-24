@@ -1,5 +1,5 @@
 {
-  "offset": 267987664,
+  "offset": 267987689,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -2851,12 +2851,19 @@
       "cleanup_message_ids": [
         1032,
         1047,
-        1048
+        1048,
+        1189,
+        1190,
+        1192,
+        1195,
+        1196
       ],
       "preview_message_ids": [
-        1047,
-        1048
-      ]
+        1195,
+        1196
+      ],
+      "scheduled_at": 1792855860,
+      "scheduled_approved": true
     },
     "267987607": {
       "chat_id": 1677869966,
@@ -2882,18 +2889,28 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAIECWrcexE4nBrd1N_MJZDJqlloNUokAAKXDmsb26PJUkGBv-eJfhhWAQADAgADeQADPQQ"
       },
-      "channel": "@NbzeKhabar",
+      "channel": "@PoolBalad",
       "source_chat_id": 1677869966,
       "source_message_id": 1033,
       "cleanup_message_ids": [
         1033,
         1049,
-        1050
+        1050,
+        1178,
+        1179,
+        1180,
+        1181,
+        1182,
+        1184,
+        1187,
+        1188
       ],
       "preview_message_ids": [
-        1049,
-        1050
-      ]
+        1187,
+        1188
+      ],
+      "scheduled_at": 1792852260,
+      "scheduled_approved": true
     },
     "267987608": {
       "chat_id": 1677869966,
@@ -2903,39 +2920,28 @@
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIECmrcexEcu-5zV6gWwJmiVx_7pDNJAAIQJgACbrDYUrnLIicE52VGPQQ"
       },
-      "channel": "@NbzeKhabar",
+      "channel": "@PoolBalad",
       "source_chat_id": 1677869966,
       "source_message_id": 1034,
       "cleanup_message_ids": [
         1034,
         1051,
-        1052
+        1052,
+        1167,
+        1168,
+        1169,
+        1170,
+        1171,
+        1173,
+        1176,
+        1177
       ],
       "preview_message_ids": [
-        1051,
-        1052
-      ]
-    },
-    "267987609": {
-      "chat_id": 1677869966,
-      "text": "⭕️ طلا اومد به زیر 4000 دلار",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIEC2rcexEth8iFwgMqu5QtCxnssgxRAAKND2sbbrDgUgm4Fk9FtXs7AQADAgADeQADPQQ"
-      },
-      "channel": "@Khndedoon",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1035,
-      "cleanup_message_ids": [
-        1035,
-        1053,
-        1054
+        1176,
+        1177
       ],
-      "preview_message_ids": [
-        1053,
-        1054
-      ]
+      "scheduled_at": 1792848660,
+      "scheduled_approved": true
     },
     "267987610": {
       "chat_id": 1677869966,
@@ -2951,19 +2957,28 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAIEDGrcexEIlFiKfrHUnFVPa7ED4SwhAAKcEGsbb2vZUrjgWRxuQV4PAQADAgADeQADPQQ"
       },
-      "channel": "@Khndedoon",
+      "channel": "@PoolBalad",
       "source_chat_id": 1677869966,
       "source_message_id": 1036,
       "cleanup_message_ids": [
         1036,
         1055,
         1056,
-        1151
+        1151,
+        1153,
+        1154,
+        1155,
+        1156,
+        1158,
+        1161,
+        1162
       ],
       "preview_message_ids": [
-        1055,
-        1056
-      ]
+        1161,
+        1162
+      ],
+      "scheduled_at": 1792837200,
+      "scheduled_approved": true
     },
     "267987611": {
       "chat_id": 1677869966,
