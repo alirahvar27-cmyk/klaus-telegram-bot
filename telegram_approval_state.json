@@ -3103,5 +3103,6 @@
     }
   },
   "edit_mode": {},
-  "schedule_mode": {}
+  "schedule_mode": {},
+  "status_cleanup": []
 }
