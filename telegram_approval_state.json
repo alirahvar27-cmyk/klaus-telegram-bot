@@ -1,5 +1,5 @@
 {
-  "offset": 267988080,
+  "offset": 267988095,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -4927,12 +4927,17 @@
         1518,
         1519,
         1981,
-        2027
+        2027,
+        2029,
+        2032,
+        2033
       ],
       "preview_message_ids": [
-        1518,
-        1519
-      ]
+        2032,
+        2033
+      ],
+      "scheduled_at": 1793055600,
+      "scheduled_approved": true
     },
     "267987817": {
       "chat_id": 1677869966,
@@ -4949,12 +4954,18 @@
         1389,
         1520,
         1521,
-        1982
+        1982,
+        2034,
+        2036,
+        2039,
+        2040
       ],
       "preview_message_ids": [
-        1520,
-        1521
-      ]
+        2039,
+        2040
+      ],
+      "scheduled_at": 1793059200,
+      "scheduled_approved": true
     },
     "267987818": {
       "chat_id": 1677869966,
@@ -4971,12 +4982,18 @@
         1390,
         1522,
         1523,
-        1983
+        1983,
+        2048,
+        2050,
+        2053,
+        2054
       ],
       "preview_message_ids": [
-        1522,
-        1523
-      ]
+        2053,
+        2054
+      ],
+      "scheduled_at": 1793066400,
+      "scheduled_approved": true
     },
     "267987819": {
       "chat_id": 1677869966,
@@ -4993,41 +5010,24 @@
         1391,
         1524,
         1525,
-        1984
+        1984,
+        2041,
+        2043,
+        2046,
+        2047,
+        2055,
+        2057,
+        2060,
+        2061
       ],
       "preview_message_ids": [
-        1524,
-        1525
-      ]
-    },
-    "267987820": {
-      "chat_id": 1677869966,
-      "text": "🔄 بازی DOOM این بار روی یک ویپ اجرا شده!\nبازی رو اون‌قدر فشرده‌سازی کردن که تونسته توی ۳۲ کیلوبایت رم سیگار الکترونیکی جا بشه.\nحالا می‌شه نسخه کامل این شوتر افسانه‌ای رو مستقیما روی یه ویپ تموم کرد!\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgIAAxkBAAIFcGrcgODVwO62nbO6jRRfcgTSWnn1AAJkpAAC2w3YSmgHVFUHPbLWPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1392,
-      "cleanup_message_ids": [
-        1392,
-        1526,
-        1527
+        2060,
+        2061
       ],
-      "preview_message_ids": [
-        1526,
-        1527
-      ]
+      "scheduled_at": 1793070000,
+      "scheduled_approved": true
     }
   },
   "edit_mode": {},
-  "schedule_mode": {
-    "1677869966": {
-      "draft_id": "267987816",
-      "step": "hour",
-      "date": "2026-10-27"
-    }
-  }
+  "schedule_mode": {}
 }
