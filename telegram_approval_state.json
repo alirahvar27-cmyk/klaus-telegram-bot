@@ -1,5 +1,5 @@
 {
-  "offset": 267987894,
+  "offset": 267987937,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -3888,12 +3888,17 @@
         1643,
         1644,
         1649,
-        1665
+        1665,
+        1667,
+        1670,
+        1671
       ],
       "preview_message_ids": [
-        1643,
-        1644
-      ]
+        1670,
+        1671
+      ],
+      "scheduled_at": 1792888260,
+      "scheduled_approved": true
     },
     "267987771": {
       "chat_id": 1677869966,
@@ -3913,12 +3918,18 @@
         1624,
         1645,
         1646,
-        1650
+        1650,
+        1672,
+        1674,
+        1677,
+        1678
       ],
       "preview_message_ids": [
-        1645,
-        1646
-      ]
+        1677,
+        1678
+      ],
+      "scheduled_at": 1792891860,
+      "scheduled_approved": true
     },
     "267987772": {
       "chat_id": 1677869966,
@@ -3995,33 +4006,19 @@
       "cleanup_message_ids": [
         1346,
         1434,
-        1435
+        1435,
+        1679,
+        1682,
+        1684,
+        1687,
+        1688
       ],
       "preview_message_ids": [
-        1434,
-        1435
-      ]
-    },
-    "267987775": {
-      "chat_id": 1677869966,
-      "text": "🔥 به اینفینیت گیم خوش اومدی! 🔥\nاینجا جاییه که گیمرها با خیال راحت خرید می‌کنن 😎\n❤️🧩9⃣🔫🎲🎲🎲🤖🥊🛒❤️👽⚔\n🔥بهترین قیمت در ایران🔥\n🔥 فروشگاه اکانت قانونی بازی PS4 و PS5\n🎮اکانت های ظرفیت کامل برای همکاران با قیمت عمده\n🛡 اکانت های دارای ضمانت\n🔗 قابلیت تعویض آنی\n🔥 اینفینیت گیم | ۳ سال اعتماد 💪\n💠+۴,۰۰۰ رضایت واقعی 🙏\n🕖پشتیبانی سریع و خرید مطمئن💻💻\n🆒بزن بریم سمت بهترین تجربه گیمینگ\n🌐آدرس کانال تلگرام‌ 🔽\n📞 Tell : 09395476517",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFQ2rcgODSntW8cEao3EUh-WpSVUceAAI0EGsbancYUdeJBU7dxIzWAQADAgADeQADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1347,
-      "cleanup_message_ids": [
-        1347,
-        1436,
-        1437
+        1687,
+        1688
       ],
-      "preview_message_ids": [
-        1436,
-        1437
-      ]
+      "scheduled_at": 1792895460,
+      "scheduled_approved": true
     },
     "267987776": {
       "chat_id": 1677869966,
@@ -4037,12 +4034,19 @@
       "cleanup_message_ids": [
         1348,
         1438,
-        1439
+        1439,
+        1680,
+        1689,
+        1691,
+        1694,
+        1695
       ],
       "preview_message_ids": [
-        1438,
-        1439
-      ]
+        1694,
+        1695
+      ],
+      "scheduled_at": 1792899060,
+      "scheduled_approved": true
     },
     "267987777": {
       "chat_id": 1677869966,
@@ -4058,12 +4062,19 @@
       "cleanup_message_ids": [
         1349,
         1440,
-        1441
+        1441,
+        1681,
+        1696,
+        1698,
+        1701,
+        1702
       ],
       "preview_message_ids": [
-        1440,
-        1441
-      ]
+        1701,
+        1702
+      ],
+      "scheduled_at": 1792902660,
+      "scheduled_approved": true
     },
     "267987778": {
       "chat_id": 1677869966,
@@ -4079,12 +4090,19 @@
       "cleanup_message_ids": [
         1350,
         1442,
-        1443
+        1443,
+        1703,
+        1708,
+        1710,
+        1713,
+        1714
       ],
       "preview_message_ids": [
-        1442,
-        1443
-      ]
+        1713,
+        1714
+      ],
+      "scheduled_at": 1792906260,
+      "scheduled_approved": true
     },
     "267987779": {
       "chat_id": 1677869966,
@@ -4100,12 +4118,19 @@
       "cleanup_message_ids": [
         1351,
         1444,
-        1445
+        1445,
+        1704,
+        1715,
+        1717,
+        1720,
+        1721
       ],
       "preview_message_ids": [
-        1444,
-        1445
-      ]
+        1720,
+        1721
+      ],
+      "scheduled_at": 1792909860,
+      "scheduled_approved": true
     },
     "267987780": {
       "chat_id": 1677869966,
@@ -4121,12 +4146,19 @@
       "cleanup_message_ids": [
         1352,
         1446,
-        1447
+        1447,
+        1705,
+        1722,
+        1724,
+        1727,
+        1728
       ],
       "preview_message_ids": [
-        1446,
-        1447
-      ]
+        1727,
+        1728
+      ],
+      "scheduled_at": 1792915200,
+      "scheduled_approved": true
     },
     "267987781": {
       "chat_id": 1677869966,
@@ -4142,12 +4174,19 @@
       "cleanup_message_ids": [
         1353,
         1448,
-        1449
+        1449,
+        1706,
+        1729,
+        1731,
+        1734,
+        1735
       ],
       "preview_message_ids": [
-        1448,
-        1449
-      ]
+        1734,
+        1735
+      ],
+      "scheduled_at": 1792918800,
+      "scheduled_approved": true
     },
     "267987782": {
       "chat_id": 1677869966,
@@ -4163,12 +4202,19 @@
       "cleanup_message_ids": [
         1354,
         1450,
-        1451
+        1451,
+        1707,
+        1736,
+        1738,
+        1741,
+        1742
       ],
       "preview_message_ids": [
-        1450,
-        1451
-      ]
+        1741,
+        1742
+      ],
+      "scheduled_at": 1792922400,
+      "scheduled_approved": true
     },
     "267987783": {
       "chat_id": 1677869966,
@@ -4184,7 +4230,8 @@
       "cleanup_message_ids": [
         1355,
         1452,
-        1453
+        1453,
+        1743
       ],
       "preview_message_ids": [
         1452,
@@ -4226,7 +4273,8 @@
       "cleanup_message_ids": [
         1357,
         1456,
-        1457
+        1457,
+        1744
       ],
       "preview_message_ids": [
         1456,
@@ -4247,7 +4295,8 @@
       "cleanup_message_ids": [
         1358,
         1458,
-        1459
+        1459,
+        1745
       ],
       "preview_message_ids": [
         1458,
@@ -4394,7 +4443,8 @@
       "cleanup_message_ids": [
         1365,
         1472,
-        1473
+        1473,
+        1746
       ],
       "preview_message_ids": [
         1472,
@@ -4478,7 +4528,8 @@
       "cleanup_message_ids": [
         1369,
         1480,
-        1481
+        1481,
+        1747
       ],
       "preview_message_ids": [
         1480,
@@ -4970,11 +5021,5 @@
     }
   },
   "edit_mode": {},
-  "schedule_mode": {
-    "1677869966": {
-      "draft_id": "267987770",
-      "step": "hour",
-      "date": "2026-10-25"
-    }
-  }
+  "schedule_mode": {}
 }
