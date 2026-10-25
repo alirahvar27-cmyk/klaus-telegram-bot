@@ -1581,11 +1581,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2444,
-      "delete_at": 1792960155
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2445,
       "delete_at": 1792964589
     },
