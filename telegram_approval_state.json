@@ -517,34 +517,6 @@
         731
       ]
     },
-    "267987777": {
-      "chat_id": 1677869966,
-      "text": "🎮 دیسکورد با تم اختصاصی GTA 6 به استقبال این بازی می‌رود\n🔻همکاری جدیدی میان بازی GTA 6 و پلتفرم دیسکورد از تاریخ ۲۵ آبان (۱۶ نوامبر) آغاز می‌شود که به کاربران اجازه می‌دهد ظاهر این برنامه را با آیکون اختصاصی، فونت ویژه و تمی الهام‌گرفته از این بازی شخصی‌سازی کنند. این بازی بسیار موردانتظار شرکت Rockstar Games قرار است در تاریخ ۲۸ آبان (۱۹ نوامبر) برای پلی استیشن ۵ و ایکس باکس سری ایکس/اس در دسترس قرار گیرد. جزئیات بیشتری درباره رایگان یا پولی بودن این قابلیت‌های دیسکورد هنوز منتشر نشده است.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFRWrcgOD8zdaLBuAL_OzLt_0rNJRMAAMPaxvfWeRSY3k4rSLZiIMBAAMCAAN3AAM9BA"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1349,
-      "cleanup_message_ids": [
-        1349,
-        1440,
-        1441,
-        1681,
-        1696,
-        1698,
-        1701,
-        1702
-      ],
-      "preview_message_ids": [
-        1701,
-        1702
-      ],
-      "scheduled_at": 1792902660,
-      "scheduled_approved": true
-    },
     "267987778": {
       "chat_id": 1677869966,
       "text": "🎮 از اون بازی‌های به ظاهر قدیمی، که هنوز توی ذهن کسایی که بازیش کردن شاهکارن.\nبازی: The Elder Scrolls V: Skyrim\nآهنگ: Dawn - جرمی سول\n🆔",
@@ -1980,95 +1952,6 @@
       ],
       "edited_manually": true
     },
-    "267988271": {
-      "chat_id": 1677869966,
-      "text": "وقتی برای مادر بزرگت اینستا نصب کردی 🩷\nهمراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
-      "entities": [
-        {
-          "offset": 40,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 46,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 55,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 62,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 71,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 78,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 87,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 94,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 103,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 110,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 119,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIJlWrdK7C3pgfqn6ZwMVnPIufv3lhHAAJlDAACLjisUl5EbKkLTH1DPQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2453,
-      "cleanup_message_ids": [
-        2477,
-        2478
-      ],
-      "preview_message_ids": [
-        2477,
-        2478
-      ],
-      "scheduled_at": 1792904400,
-      "scheduled_approved": true
-    },
     "267988272": {
       "chat_id": 1677869966,
       "text": "آیلین جوانبخت ۱۰ ساله از خورستان، با یه نقاشی از احترام به کره زمین و طبیعت، بین ۱۰ هزار شرکت کننده در سراسر دنیا، نفر اول شد و جایزه جهانی یونیسف رو به خودش اختصاص داد.\nهمراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
@@ -2395,6 +2278,16 @@
       "chat_id": 1677869966,
       "message_id": 2498,
       "delete_at": 1792987201
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2499,
+      "delete_at": 1792990440
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2500,
+      "delete_at": 1792990804
     }
   ]
 }
