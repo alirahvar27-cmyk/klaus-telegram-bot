@@ -1753,56 +1753,6 @@
       ],
       "edited_manually": true
     },
-    "267988292": {
-      "chat_id": 1677869966,
-      "text": "این هفته یه چیزی خوندم که واقعا تکونم داد: «زندگی همین‌طوریه، مجبوری اتاقی که عاشقشی رو ترک کنی و بپذیری که بعد از تو کس دیگه‌ای اون‌جا زندگی می‌کنه که ممکنه اصلاً قدر درخت پشت پنجره‌ رو ندونه. »\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 196,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 205,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 212,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 221,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 230,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2515,
-      "cleanup_message_ids": [
-        2642,
-        2643
-      ],
-      "preview_message_ids": [
-        2642,
-        2643
-      ],
-      "scheduled_at": 1792924260,
-      "scheduled_approved": true
-    },
     "267988293": {
       "chat_id": 1677869966,
       "text": "ما در ایران سال‌ها ذهنمون رو با کوهی از اطلاعات بی‌مصرف عقیدتی و تحلیل‌های بی‌فایده سیاسی پر کردیم. داده‌هایی که نه سفره‌مون رو بزرگ کرد و نه حالمون رو بهتر. چقدر زندگی و خیال‌مون آسوده‌تر بود اگر به‌جای اخبار و مناقشات عقیدتی یا سیاسی، فقط مهارتهای زیستن و آرامش رو یاد می‌ گرفتیم.\n✍کنجکاو کم حوصله\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
@@ -3657,28 +3607,6 @@
       "scheduled_at": 1792953060,
       "scheduled_approved": true
     },
-    "267988411": {
-      "chat_id": 1677869966,
-      "text": "🎮مطمئنی که زنده مونده !؟😂\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIKw2rdyMF78NfeG03eMtSaoTmzwadDAAJeJAACE1npUiYB8774PDe2PQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2755,
-      "cleanup_message_ids": [
-        2824,
-        2825
-      ],
-      "preview_message_ids": [
-        2824,
-        2825
-      ],
-      "scheduled_at": 1792924260,
-      "scheduled_approved": true
-    },
     "267988412": {
       "chat_id": 1677869966,
       "text": "🎮 بازی Splinter Cell : Blacklist یکی از بهترین نسخه های مجموعه 👌\n🆔",
@@ -4054,6 +3982,16 @@
       "chat_id": 1677869966,
       "message_id": 2866,
       "delete_at": 1793009360
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2870,
+      "delete_at": 1793010901
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2871,
+      "delete_at": 1793010902
     }
   ]
 }
