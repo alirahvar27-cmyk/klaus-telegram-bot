@@ -1694,56 +1694,6 @@
       ],
       "edited_manually": true
     },
-    "267988297": {
-      "chat_id": 1677869966,
-      "text": "کمی انتقام چیز خوبی‌ست، فرو خوردن خشم انسان را بیمار می‌ کند.\n👤نیچه\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 69,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 78,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 85,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 94,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 103,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2530,
-      "cleanup_message_ids": [
-        2672,
-        2673
-      ],
-      "preview_message_ids": [
-        2672,
-        2673
-      ],
-      "scheduled_at": 1792935060,
-      "scheduled_approved": true
-    },
     "267988298": {
       "chat_id": 1677869966,
       "text": "به موقع گفتن، مهم‌تر از گفتنه.\nبه موقع بودن، مهم‌تر از بودنه.\nبه موقع شنیدن، مهم‌تر از شنیدنه.\nبه موقع انجام دادن، مهم‌تر از انجام دادنه.\nهرچیزی یه گلدن تایمی داره.\nبه موقع بودن رو جدی بگیرید.\n✍مُ ناخُدایِ دِریایِ خودُمُم !\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
@@ -3678,6 +3628,11 @@
       "chat_id": 1677869966,
       "message_id": 2882,
       "delete_at": 1793019607
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2883,
+      "delete_at": 1793021471
     }
   ]
 }
