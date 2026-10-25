@@ -1663,167 +1663,6 @@
       ],
       "edited_manually": true
     },
-    "267988304": {
-      "chat_id": 1677869966,
-      "text": "ایلان ماسک سال ۲۰۲۶ ماشین پرنده ساخت\nمن تابستون ۸۵\nپروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی | پروکسی  | پروکسی",
-      "entities": [
-        {
-          "offset": 51,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haji.estabonita.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 60,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=on.mishutkin.click&port=443&secret=eebc740653e2e1fd5972b4a92e5a0dd7826f6e2e6d69736875746b696e2e636c69636b"
-        },
-        {
-          "offset": 67,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 76,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 85,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 92,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 101,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 110,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 117,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 126,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 135,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 142,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 151,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=dashi.estabonita.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 160,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=max.kimt.click&port=443&secret=ee1b153cf06dbd43c6085c359a6702eb936d61782e6b696d742e636c69636b"
-        },
-        {
-          "offset": 167,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=PAyDaR.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 177,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nab.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 186,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soh5.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 193,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=vasle.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 203,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=tassian.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 212,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=FOR-IRAN.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 219,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soheil.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 228,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=for.you.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 238,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=AZADI.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIJ8WrdxdQ_MO0WSM8pFVCH-xOektAiAALHIQACPUXpUg3GN9AJAgwrPQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2545,
-      "cleanup_message_ids": [
-        2714,
-        2715
-      ],
-      "preview_message_ids": [
-        2714,
-        2715
-      ],
-      "scheduled_at": 1792947600,
-      "scheduled_approved": true
-    },
     "267988305": {
       "chat_id": 1677869966,
       "text": "اهواز؛ شهری از جنس آفتاب، با قلبی به وسعت جنوب ایران\n🔴: اهواز\nپروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی | پروکسی  | پروکسی",
@@ -2606,31 +2445,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2385,
-      "delete_at": 1792946875
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2386,
-      "delete_at": 1792946877
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2387,
-      "delete_at": 1792946879
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2388,
-      "delete_at": 1792946881
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2389,
-      "delete_at": 1792948236
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2393,
       "delete_at": 1792950051
     },
@@ -2953,6 +2767,11 @@
       "chat_id": 1677869966,
       "message_id": 2891,
       "delete_at": 1793032287
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2892,
+      "delete_at": 1793034156
     }
   ]
 }
