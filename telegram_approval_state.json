@@ -1,5 +1,5 @@
 {
-  "offset": 267988478,
+  "offset": 267988482,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -1954,128 +1954,11 @@
       ],
       "scheduled_at": 1792958400,
       "scheduled_approved": true
-    },
-    "267988312": {
-      "chat_id": 1677869966,
-      "text": "🔴اوباما : بدون شلیک حتی یه موشک، جلوی دستیابی ایران به سلاح هسته‌ ای رو گرفته بودیم!\nتوجیه جنگ با ایران این بود که باید با اقدام نظامی، برنامه هسته‌ایش رو متوقف کنیم؛ در حالی که ایران اصلا سلاح هسته‌ای نداشت.\nمن با یه توافق دیپلماتیک کاری کرده بودم که ایران به سلاح هسته‌ای دست پیدا نکنه. برای این کار حتی لازم نبود یه موشک شلیک کنم؛ فقط مذاکره کردیم.\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\n🔥",
-      "entities": [
-        {
-          "offset": 353,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shoes.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 362,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=silnet.varfootball.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 369,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=api.mangoseason5.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 378,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=silver.ciaude.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 387,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=iro.varfootball2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 394,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fruit.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 403,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=craft.malavanann.co.uk&port=2083&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 412,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=digi.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 419,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=star.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 428,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=name.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 437,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=run.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 444,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=irogallery.golgoli1.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 453,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=great.cipservice.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 462,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hadaf.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIKA2rdxew91MEqlcg5xwABZ26O4zJ5tgACFyUAAjW_6FKjQDAiL9jf6z0E"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2563,
-      "cleanup_message_ids": [
-        2732,
-        2733
-      ],
-      "preview_message_ids": [
-        2732,
-        2733
-      ],
-      "scheduled_at": 1792953060,
-      "scheduled_approved": true
     }
   },
   "edit_mode": {},
   "schedule_mode": {},
   "status_cleanup": [
-    {
-      "chat_id": 1677869966,
-      "message_id": 2412,
-      "delete_at": 1792953110
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2413,
-      "delete_at": 1792953112
-    },
     {
       "chat_id": 1677869966,
       "message_id": 2438,
@@ -2385,6 +2268,16 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2914,
+      "delete_at": 1793039305
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2915,
+      "delete_at": 1793039467
     }
   ]
 }
