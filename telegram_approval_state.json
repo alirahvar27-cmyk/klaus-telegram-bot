@@ -1475,34 +1475,6 @@
       "scheduled_at": 1793070000,
       "scheduled_approved": true
     },
-    "267988101": {
-      "chat_id": 1677869966,
-      "text": "تا ابد انتخابتون\nآدمی باشه که اولویتش باشید\nآدمی باشه که براتون توضیح بده\nآدمی باشه که نگه داشتن رو بلد باشه\nآدمی باشه که فرق شما با بقیه رو بدونه\nآدمی باشه که ناراحتی شما براش مهم باشه\nآدمی باشه که خواسته‌هاتون رو کوچک نشمره...\n🌸",
-      "entities": [],
-      "media": null,
-      "channel": "@ZehnAgahh",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2104,
-      "cleanup_message_ids": [
-        2104,
-        2134,
-        2135,
-        2169,
-        2228,
-        2229,
-        2285,
-        2286,
-        2288,
-        2291,
-        2292
-      ],
-      "preview_message_ids": [
-        2291,
-        2292
-      ],
-      "scheduled_at": 1792933200,
-      "scheduled_approved": true
-    },
     "267988102": {
       "chat_id": 1677869966,
       "text": "شفا وقتی اتفاق می‌افته که\nرنج‌هامون دیگه هویت ما رو تعریف نمی‌کنن\nما گذشته‌مون نیستیم\nبلکه همون معنایی هستیم که\nاز اتفاقات گذشته می‌سازیم\nوقتی می‌تونیم از زخم‌هامون حرف بزنیم\nبی‌آنکه برای اثبات درد یا گرفتن تأیید\nدر اون‌ها زندگی کنیم\nیعنی از اسارتِ رنج، به آگاهی رسیده‌ایم...\n🌸",
@@ -1721,106 +1693,6 @@
         2206
       ],
       "edited_manually": true
-    },
-    "267988295": {
-      "chat_id": 1677869966,
-      "text": "کودکی که فقط وقتی ساکت، مؤدب و بی‌دردسر بوده دوست داشته شده، ممکنه در بزرگسالی از ابراز نیازهاش خجالت‌بکشه. چون جایی در عمق ذهنش هنوز باور داره دوست‌داشتنی بودن، به بی‌نقص و بی‌نیاز بودن وابسته‌ست.\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 198,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 207,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 214,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 223,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 232,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2524,
-      "cleanup_message_ids": [
-        2660,
-        2661
-      ],
-      "preview_message_ids": [
-        2660,
-        2661
-      ],
-      "scheduled_at": 1792931460,
-      "scheduled_approved": true
-    },
-    "267988296": {
-      "chat_id": 1677869966,
-      "text": "بالاخره بشر یه روزی میفهمه اینستاگرام زندگیش رو نابود کرده؛ اسپویل همه لذت ها، احساس ناکافی بودن، تنبلی، بی‌قراری و کم صبر شدن!\nمن ۶ ساله این آفت رو حذف کردم رفته..\n✍اِل‌احمدو!\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 177,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 186,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 193,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 202,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 211,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2527,
-      "cleanup_message_ids": [
-        2666,
-        2667
-      ],
-      "preview_message_ids": [
-        2666,
-        2667
-      ],
-      "scheduled_at": 1792933200,
-      "scheduled_approved": true
     },
     "267988297": {
       "chat_id": 1677869966,
@@ -3476,50 +3348,6 @@
       "scheduled_at": 1792953060,
       "scheduled_approved": true
     },
-    "267988415": {
-      "chat_id": 1677869966,
-      "text": "🧩 پشت‌صحنه موشن‌کپچر های والریا و پرایس درحال کار روی گیم Call of Duty Modern Warfare 4😂\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIK02rdyOhK4LA6dQlSqreWXig2-VpqAAJOJQACwrDgUu_Uz0Eh54wuPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2771,
-      "cleanup_message_ids": [
-        2848,
-        2849
-      ],
-      "preview_message_ids": [
-        2848,
-        2849
-      ],
-      "scheduled_at": 1792931460,
-      "scheduled_approved": true
-    },
-    "267988416": {
-      "chat_id": 1677869966,
-      "text": "🧩 حس واقعی سرعت رو توی گیم فقط میشه با Forza Horizon 6 تجربه کرد و لذتشو برد🔥\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIK1GrdyOhdtXH2GHDVX4-7PObXwbYRAAJPJQACwrDgUmE9utzfsgXfPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2772,
-      "cleanup_message_ids": [
-        2854,
-        2855
-      ],
-      "preview_message_ids": [
-        2854,
-        2855
-      ],
-      "scheduled_at": 1792933200,
-      "scheduled_approved": true
-    },
     "267988418": {
       "chat_id": 1677869966,
       "text": "🧩 سیر تکامل Nukes در Call of Duty\n⚽️‌",
@@ -3825,6 +3653,31 @@
       "chat_id": 1677869966,
       "message_id": 2877,
       "delete_at": 1793016002
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2878,
+      "delete_at": 1793019180
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2879,
+      "delete_at": 1793019181
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2880,
+      "delete_at": 1793019605
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2881,
+      "delete_at": 1793019606
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2882,
+      "delete_at": 1793019607
     }
   ]
 }
