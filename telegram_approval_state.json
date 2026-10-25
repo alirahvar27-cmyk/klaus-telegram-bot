@@ -1475,37 +1475,6 @@
       "scheduled_at": 1793070000,
       "scheduled_approved": true
     },
-    "267988102": {
-      "chat_id": 1677869966,
-      "text": "شفا وقتی اتفاق می‌افته که\nرنج‌هامون دیگه هویت ما رو تعریف نمی‌کنن\nما گذشته‌مون نیستیم\nبلکه همون معنایی هستیم که\nاز اتفاقات گذشته می‌سازیم\nوقتی می‌تونیم از زخم‌هامون حرف بزنیم\nبی‌آنکه برای اثبات درد یا گرفتن تأیید\nدر اون‌ها زندگی کنیم\nیعنی از اسارتِ رنج، به آگاهی رسیده‌ایم...\n🌸",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIIOWrcyC6pa3KTxHrsDiVzToctMroJAALCD2sbLKHMUl4ciEFhVwJdAQADAgADeQADPQQ"
-      },
-      "channel": "@ZehnAgahh",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2105,
-      "cleanup_message_ids": [
-        2105,
-        2136,
-        2137,
-        2170,
-        2226,
-        2227,
-        2293,
-        2294,
-        2296,
-        2299,
-        2300
-      ],
-      "preview_message_ids": [
-        2299,
-        2300
-      ],
-      "scheduled_at": 1792940400,
-      "scheduled_approved": true
-    },
     "267988104": {
       "chat_id": 1677869966,
       "text": "از چند آدم همیشه دور بمون\nآدمی که پولکیه.\nآدمی که ضعف جنس مخالف داره.\nآدمی که تخریبت میکنه.\nآدمی که بهت انرژی منفی میده.\nآدمی که همیشه نسبت به هدفات ناامیدت میکنی.\nآدمی که محبتتو نمیفهمه و وقتی ۹۹ تا کار براش کردی رو نمیبینه و یه دونه کار رو که طبق سلیقه اش جلو نبردی میبینه.\nآدمی که هر وقت دورش خلوت میشه میاد سمتت=)\n🌸",
@@ -1693,56 +1662,6 @@
         2206
       ],
       "edited_manually": true
-    },
-    "267988300": {
-      "chat_id": 1677869966,
-      "text": "من واقعاً ارتباط درست با خانوما رو بلد نیستم. خانومه بهم گفت به‌نظرت چند می‌خوره بهم. گفتم ۳۲-۳۳. یهو زد زیر گریه گفت بابا من ۲۸ سالمه فقط. گفتم مگه می‌شه؟ کارت ملیشو درآورد نشون داد تا باورش کردم. هرچقدر هم سعی کردم این ریدمانو جمع کنم نشد. آخر سرم بهش گفتم بابا قیافه رو ول کن دلت جوون باشه که بعد فهمیدم دوباره ریدم :)\n✍مرئی\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 328,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 337,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 344,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 353,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 362,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2535,
-      "cleanup_message_ids": [
-        2690,
-        2691
-      ],
-      "preview_message_ids": [
-        2690,
-        2691
-      ],
-      "scheduled_at": 1792940400,
-      "scheduled_approved": true
     },
     "267988301": {
       "chat_id": 1677869966,
@@ -3543,6 +3462,16 @@
       "chat_id": 1677869966,
       "message_id": 2885,
       "delete_at": 1793025816
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2886,
+      "delete_at": 1793027304
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2887,
+      "delete_at": 1793027304
     }
   ]
 }
