@@ -1,5 +1,5 @@
 {
-  "offset": 267988409,
+  "offset": 267988464,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -3856,6 +3856,204 @@
       ],
       "scheduled_at": 1792953060,
       "scheduled_approved": true
+    },
+    "267988409": {
+      "chat_id": 1677869966,
+      "text": "🎮 شاهکاری که راکستار هشت سال پیش خلقش کرد...\nبازی: Red Dead Redemption\nسازنده: Rockstar Games\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIKwWrdyMEq9hd12brqF0OOZUpciHrAAAJUHQACcZPpUv69f3nEicRBPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2753,
+      "cleanup_message_ids": [
+        2818,
+        2819
+      ],
+      "preview_message_ids": [
+        2818,
+        2819
+      ],
+      "scheduled_at": 1792922400,
+      "scheduled_approved": true
+    },
+    "267988411": {
+      "chat_id": 1677869966,
+      "text": "🎮مطمئنی که زنده مونده !؟😂\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIKw2rdyMF78NfeG03eMtSaoTmzwadDAAJeJAACE1npUiYB8774PDe2PQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2755,
+      "cleanup_message_ids": [
+        2824,
+        2825
+      ],
+      "preview_message_ids": [
+        2824,
+        2825
+      ],
+      "scheduled_at": 1792924260,
+      "scheduled_approved": true
+    },
+    "267988412": {
+      "chat_id": 1677869966,
+      "text": "🎮 بازی Splinter Cell : Blacklist یکی از بهترین نسخه های مجموعه 👌\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIKxGrdyMHLWnXkRuiA0DbczqJ_2vuxAAIiDAACHGv0Um6ZJmnv15pSPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2756,
+      "cleanup_message_ids": [
+        2830,
+        2831
+      ],
+      "preview_message_ids": [
+        2830,
+        2831
+      ],
+      "scheduled_at": 1792926000,
+      "scheduled_approved": true
+    },
+    "267988413": {
+      "chat_id": 1677869966,
+      "text": "🎮 نیازی به نقشه نیست من ۱۳ سال اینجا زندگی میکردم 😉\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIKxWrdyMFEUYXD06_4SmtbexFe8Qk_AALpDAACQdntUm7Y0x5PlC86PQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2757,
+      "cleanup_message_ids": [
+        2836,
+        2837
+      ],
+      "preview_message_ids": [
+        2836,
+        2837
+      ],
+      "scheduled_at": 1792927860,
+      "scheduled_approved": true
+    },
+    "267988414": {
+      "chat_id": 1677869966,
+      "text": "🎮 این نسخه شاهکار بود 👌\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIKxmrdyMHUjI4i-S0Xv7LWdc9xFJ1kAAIDDAACZgL0UhHm1Cf4Wiy7PQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2758,
+      "cleanup_message_ids": [
+        2842,
+        2843
+      ],
+      "preview_message_ids": [
+        2842,
+        2843
+      ],
+      "scheduled_at": 1792929600,
+      "scheduled_approved": true
+    },
+    "267988415": {
+      "chat_id": 1677869966,
+      "text": "🧩 پشت‌صحنه موشن‌کپچر های والریا و پرایس درحال کار روی گیم Call of Duty Modern Warfare 4😂\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIK02rdyOhK4LA6dQlSqreWXig2-VpqAAJOJQACwrDgUu_Uz0Eh54wuPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2771,
+      "cleanup_message_ids": [
+        2848,
+        2849
+      ],
+      "preview_message_ids": [
+        2848,
+        2849
+      ],
+      "scheduled_at": 1792931460,
+      "scheduled_approved": true
+    },
+    "267988416": {
+      "chat_id": 1677869966,
+      "text": "🧩 حس واقعی سرعت رو توی گیم فقط میشه با Forza Horizon 6 تجربه کرد و لذتشو برد🔥\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIK1GrdyOhdtXH2GHDVX4-7PObXwbYRAAJPJQACwrDgUmE9utzfsgXfPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2772,
+      "cleanup_message_ids": [
+        2854,
+        2855
+      ],
+      "preview_message_ids": [
+        2854,
+        2855
+      ],
+      "scheduled_at": 1792933200,
+      "scheduled_approved": true
+    },
+    "267988418": {
+      "chat_id": 1677869966,
+      "text": "🧩 سیر تکامل Nukes در Call of Duty\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgIAAxkBAAIK1mrdyOgdzRKkUoDpbeXoxdpAP7jMAALbtgACPgToSnoHZ9U55gVpPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2774,
+      "cleanup_message_ids": [
+        2860,
+        2861
+      ],
+      "preview_message_ids": [
+        2860,
+        2861
+      ],
+      "scheduled_at": 1792942260,
+      "scheduled_approved": true
+    },
+    "267988419": {
+      "chat_id": 1677869966,
+      "text": "🇨🇳 منتقد ژاپنی بعد از تجربه Phantom Blade Zero از شدت آدرنالین به لرزه افتاد!\nیه منتقد ژاپنی بعد از تجربه Phantom Blade Zero گفته بود که از شدت آدرنالین واقعا دست و پاش می‌لرزیده! اون بازی رو یه اثر فوق‌العاده خوش‌استایل و دیوونه‌وار با سبک Kung Fu Punk توصیف کرده، ولی در عین حال گفته که بازی حسابی سخته.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgIAAxkBAAIK12rdyOibYqRq65vYPNQWQDPlQjTpAAJWrgACC1PoSq99MAk1OrsqPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2775,
+      "cleanup_message_ids": [
+        2812,
+        2813
+      ],
+      "preview_message_ids": [
+        2812,
+        2813
+      ],
+      "scheduled_at": 1792920660,
+      "scheduled_approved": true
     }
   },
   "edit_mode": {},
@@ -4055,6 +4253,26 @@
       "chat_id": 1677869966,
       "message_id": 2612,
       "delete_at": 1793005647
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2792,
+      "delete_at": 1793006192
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2796,
+      "delete_at": 1793006205
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2806,
+      "delete_at": 1793006244
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2807,
+      "delete_at": 1793006250
     }
   ]
 }
