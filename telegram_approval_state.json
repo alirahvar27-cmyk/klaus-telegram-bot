@@ -707,33 +707,6 @@
         1475
       ]
     },
-    "267987796": {
-      "chat_id": 1677869966,
-      "text": "🎮 یک تصادف عادی با موتور در GTA IV😂\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFWGrcgOBl9ZbZJNyM6mekEY1mxo-QAALFDAACdVblUkafnhxvyWqpPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1368,
-      "cleanup_message_ids": [
-        1368,
-        1478,
-        1479,
-        1858,
-        1860,
-        1863,
-        1864
-      ],
-      "preview_message_ids": [
-        1863,
-        1864
-      ],
-      "scheduled_at": 1792969200,
-      "scheduled_approved": true
-    },
     "267987798": {
       "chat_id": 1677869966,
       "text": "🎮 از خفن‌ترین آهنگ های دنیای گیم 🔥\n🎮GTA San Andreas\n🆔",
@@ -1851,6 +1824,11 @@
       "chat_id": 1677869966,
       "message_id": 2919,
       "delete_at": 1793052005
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2920,
+      "delete_at": 1793055901
     }
   ]
 }
