@@ -1722,56 +1722,6 @@
       ],
       "edited_manually": true
     },
-    "267988294": {
-      "chat_id": 1677869966,
-      "text": "دندانپزشک بی شعور لطفاً از بیمار مدام سوال نکن تا حالا کجا بودی؟چرا رسیدگی نکردی؟ چرا گذاشتی به عصب برسه؟ چرا سالی دو سه بار نیومدی دندانپزشکی؟\nخوب جواب ساده است. نداشته عزیزم. خرج های واجب‌تری داشته. همه قرار نیست روزانه بیان جیب گشاد تو رو پر کنند!\n✍بازرس میم\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 262,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 271,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 278,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 287,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 296,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2521,
-      "cleanup_message_ids": [
-        2654,
-        2655
-      ],
-      "preview_message_ids": [
-        2654,
-        2655
-      ],
-      "scheduled_at": 1792929600,
-      "scheduled_approved": true
-    },
     "267988295": {
       "chat_id": 1677869966,
       "text": "کودکی که فقط وقتی ساکت، مؤدب و بی‌دردسر بوده دوست داشته شده، ممکنه در بزرگسالی از ابراز نیازهاش خجالت‌بکشه. چون جایی در عمق ذهنش هنوز باور داره دوست‌داشتنی بودن، به بی‌نقص و بی‌نیاز بودن وابسته‌ست.\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
@@ -3526,28 +3476,6 @@
       "scheduled_at": 1792953060,
       "scheduled_approved": true
     },
-    "267988414": {
-      "chat_id": 1677869966,
-      "text": "🎮 این نسخه شاهکار بود 👌\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIKxmrdyMHUjI4i-S0Xv7LWdc9xFJ1kAAIDDAACZgL0UhHm1Cf4Wiy7PQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2758,
-      "cleanup_message_ids": [
-        2842,
-        2843
-      ],
-      "preview_message_ids": [
-        2842,
-        2843
-      ],
-      "scheduled_at": 1792929600,
-      "scheduled_approved": true
-    },
     "267988415": {
       "chat_id": 1677869966,
       "text": "🧩 پشت‌صحنه موشن‌کپچر های والریا و پرایس درحال کار روی گیم Call of Duty Modern Warfare 4😂\n⚽️‌",
@@ -3887,6 +3815,16 @@
       "chat_id": 1677869966,
       "message_id": 2875,
       "delete_at": 1793014270
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2876,
+      "delete_at": 1793016001
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2877,
+      "delete_at": 1793016002
     }
   ]
 }
