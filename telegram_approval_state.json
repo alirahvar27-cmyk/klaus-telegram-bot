@@ -1475,37 +1475,6 @@
       "scheduled_at": 1793070000,
       "scheduled_approved": true
     },
-    "267988100": {
-      "chat_id": 1677869966,
-      "text": "بزرگترین رازدار زندگیت کیه؟ قلبت\nبزرگترین تصمیم‌گیرنده زندگیت کیه؟ مغزت\nبزرگترین همراه زندگیت کیه؟ پاهات\nمی‌خوام بگم «قهرمان» زندگیت خودتی فقط به خودت تکیه کن.....\nروز بخير🍃☕️\n🌸",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIIN2rcyC5ACgPxDCtT4inpwCl4L2anAAKMCQACGRMVUALobGdxGTT2PQQ"
-      },
-      "channel": "@ZehnAgahh",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2103,
-      "cleanup_message_ids": [
-        2103,
-        2132,
-        2133,
-        2168,
-        2230,
-        2231,
-        2275,
-        2278,
-        2280,
-        2283,
-        2284
-      ],
-      "preview_message_ids": [
-        2283,
-        2284
-      ],
-      "scheduled_at": 1792926000,
-      "scheduled_approved": true
-    },
     "267988101": {
       "chat_id": 1677869966,
       "text": "تا ابد انتخابتون\nآدمی باشه که اولویتش باشید\nآدمی باشه که براتون توضیح بده\nآدمی باشه که نگه داشتن رو بلد باشه\nآدمی باشه که فرق شما با بقیه رو بدونه\nآدمی باشه که ناراحتی شما براش مهم باشه\nآدمی باشه که خواسته‌هاتون رو کوچک نشمره...\n🌸",
@@ -1752,56 +1721,6 @@
         2206
       ],
       "edited_manually": true
-    },
-    "267988293": {
-      "chat_id": 1677869966,
-      "text": "ما در ایران سال‌ها ذهنمون رو با کوهی از اطلاعات بی‌مصرف عقیدتی و تحلیل‌های بی‌فایده سیاسی پر کردیم. داده‌هایی که نه سفره‌مون رو بزرگ کرد و نه حالمون رو بهتر. چقدر زندگی و خیال‌مون آسوده‌تر بود اگر به‌جای اخبار و مناقشات عقیدتی یا سیاسی، فقط مهارتهای زیستن و آرامش رو یاد می‌ گرفتیم.\n✍کنجکاو کم حوصله\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 300,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 309,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 316,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 325,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 334,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2518,
-      "cleanup_message_ids": [
-        2648,
-        2649
-      ],
-      "preview_message_ids": [
-        2648,
-        2649
-      ],
-      "scheduled_at": 1792926000,
-      "scheduled_approved": true
     },
     "267988294": {
       "chat_id": 1677869966,
@@ -3607,28 +3526,6 @@
       "scheduled_at": 1792953060,
       "scheduled_approved": true
     },
-    "267988412": {
-      "chat_id": 1677869966,
-      "text": "🎮 بازی Splinter Cell : Blacklist یکی از بهترین نسخه های مجموعه 👌\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIKxGrdyMHLWnXkRuiA0DbczqJ_2vuxAAIiDAACHGv0Um6ZJmnv15pSPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2756,
-      "cleanup_message_ids": [
-        2830,
-        2831
-      ],
-      "preview_message_ids": [
-        2830,
-        2831
-      ],
-      "scheduled_at": 1792926000,
-      "scheduled_approved": true
-    },
     "267988413": {
       "chat_id": 1677869966,
       "text": "🎮 نیازی به نقشه نیست من ۱۳ سال اینجا زندگی میکردم 😉\n🆔",
@@ -3992,6 +3889,21 @@
       "chat_id": 1677869966,
       "message_id": 2871,
       "delete_at": 1793010902
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2872,
+      "delete_at": 1793012416
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2873,
+      "delete_at": 1793012417
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2874,
+      "delete_at": 1793012417
     }
   ]
 }
