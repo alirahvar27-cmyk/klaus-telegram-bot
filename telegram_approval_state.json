@@ -1,5 +1,5 @@
 {
-  "offset": 267988464,
+  "offset": 267988466,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -516,34 +516,6 @@
         730,
         731
       ]
-    },
-    "267987782": {
-      "chat_id": 1677869966,
-      "text": "🎮 شایعه: روند توسعه Mass Effect 5 به‌خوبی پیش می‌رفت و داستان بازی نهایی شده بود\n🔻روند توسعه بازی Mass Effect 5 برخلاف برخی شایعات با بحران جدی مواجه نبوده و بخش‌های کلیدی داستان و ساختار کلی گیم‌پلی آن پیش از توقف پروژه آماده شده بودند. به گفته Shinobi602، ساخت این عنوان از سال ۲۰۲۰ با حضور سازندگان سه‌گانه اصلی کلید خورد و تیم توسعه‌دهنده از چشم‌اندازی شفاف پیروی می‌کرد. تغییر اولویت‌های کلان الکترونیک آرتز و تمرکز بر سودآوری از بازی‌های ورزشی و شوتر، نقشی تعیین‌کننده در سرنوشت این پروژه ایفا کرد.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFSmrcgOAgcZg-g00y9naaliGdi-0RAAKbD2sb0DLkUtOHpwABEvHsEwEAAwIAA3cAAz0E"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1354,
-      "cleanup_message_ids": [
-        1354,
-        1450,
-        1451,
-        1707,
-        1736,
-        1738,
-        1741,
-        1742
-      ],
-      "preview_message_ids": [
-        1741,
-        1742
-      ],
-      "scheduled_at": 1792922400,
-      "scheduled_approved": true
     },
     "267987783": {
       "chat_id": 1677869966,
@@ -1780,92 +1752,6 @@
         2206
       ],
       "edited_manually": true
-    },
-    "267988291": {
-      "chat_id": 1677869966,
-      "text": "بالاخره بشر یه روزی میفهمه اینستاگرام زندگیش رو نابود کرده؛ اسپویل همه لذت ها، احساس ناکافی بودن، تنبلی، بی قراری و کم صبر شدن!\nهمراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
-      "entities": [
-        {
-          "offset": 128,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 134,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 143,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 150,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 159,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 166,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 175,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 182,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 191,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 198,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 207,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2512,
-      "cleanup_message_ids": [
-        2636,
-        2637
-      ],
-      "preview_message_ids": [
-        2636,
-        2637
-      ],
-      "scheduled_at": 1792922400,
-      "scheduled_approved": true
     },
     "267988292": {
       "chat_id": 1677869966,
@@ -3771,28 +3657,6 @@
       "scheduled_at": 1792953060,
       "scheduled_approved": true
     },
-    "267988409": {
-      "chat_id": 1677869966,
-      "text": "🎮 شاهکاری که راکستار هشت سال پیش خلقش کرد...\nبازی: Red Dead Redemption\nسازنده: Rockstar Games\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIKwWrdyMEq9hd12brqF0OOZUpciHrAAAJUHQACcZPpUv69f3nEicRBPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2753,
-      "cleanup_message_ids": [
-        2818,
-        2819
-      ],
-      "preview_message_ids": [
-        2818,
-        2819
-      ],
-      "scheduled_at": 1792922400,
-      "scheduled_approved": true
-    },
     "267988411": {
       "chat_id": 1677869966,
       "text": "🎮مطمئنی که زنده مونده !؟😂\n🆔",
@@ -4175,6 +4039,21 @@
       "chat_id": 1677869966,
       "message_id": 2863,
       "delete_at": 1793007953
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2864,
+      "delete_at": 1793009358
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2865,
+      "delete_at": 1793009359
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2866,
+      "delete_at": 1793009360
     }
   ]
 }
