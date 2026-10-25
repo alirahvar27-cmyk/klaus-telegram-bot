@@ -1663,128 +1663,6 @@
       ],
       "edited_manually": true
     },
-    "267988306": {
-      "chat_id": 1677869966,
-      "text": "🔴گفته میشه دو تا از اختیارات بانک مرکزی در بازار آنلاین طلا حذف شد!\nبا تصمیم جدید دولت، بانک مرکزی دیگه مسئول تأیید مجوز پلتفرم‌ های خرید و فروش آنلاین طلا و تعیین ساعت کاری اون‌ ها نیست.\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\n🔥",
-      "entities": [
-        {
-          "offset": 189,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=good.cipservice.co.uk&port=2083&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 198,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mangoseason8.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 205,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=web.mangoseason7.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 214,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shoes.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 223,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=silnet.varfootball.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 230,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=api.mangoseason5.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 239,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=silver.ciaude.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 248,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=iro.varfootball2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 255,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fruit.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 264,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=craft.malavanann.co.uk&port=2083&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 273,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=digi.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 280,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=star.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 289,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=name.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 298,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=run.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 305,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=irogallery.golgoli1.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 314,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=great.cipservice.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 323,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hadaf.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2557,
-      "cleanup_message_ids": [
-        2726,
-        2727
-      ],
-      "preview_message_ids": [
-        2726,
-        2727
-      ],
-      "scheduled_at": 1792951200,
-      "scheduled_approved": true
-    },
     "267988307": {
       "chat_id": 1677869966,
       "text": "چون وا نمی کنی گرهی، خود گره مشو\nابرو گشاده باش چو دستت گشاده نیست\n✎ صائب\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\n🔥",
@@ -2278,31 +2156,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2393,
-      "delete_at": 1792950051
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2394,
-      "delete_at": 1792950052
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2404,
-      "delete_at": 1792950066
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2405,
-      "delete_at": 1792950071
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2409,
-      "delete_at": 1792950084
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2412,
       "delete_at": 1792953110
     },
@@ -2610,6 +2463,11 @@
       "chat_id": 1677869966,
       "message_id": 2893,
       "delete_at": 1793035875
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2894,
+      "delete_at": 1793037610
     }
   ]
 }
