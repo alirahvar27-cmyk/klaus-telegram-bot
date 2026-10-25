@@ -1868,103 +1868,6 @@
       ],
       "edited_manually": true
     },
-    "267988272": {
-      "chat_id": 1677869966,
-      "text": "آیلین جوانبخت ۱۰ ساله از خورستان، با یه نقاشی از احترام به کره زمین و طبیعت، بین ۱۰ هزار شرکت کننده در سراسر دنیا، نفر اول شد و جایزه جهانی یونیسف رو به خودش اختصاص داد.\nهمراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
-      "entities": [
-        {
-          "offset": 170,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 176,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 185,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 192,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 201,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 208,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 217,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 224,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 233,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 240,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 249,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": [
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAIJmGrdK7nL9_qlv_jO0AptcLBFyYVuAAJgEmsbObHpUvB93pMm9v3cAQADAgADeQADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAIJmWrdK7nAek0AAaR3zpZsot6Cou_xOwACYRJrGzmx6VJDXf2D7EaFrAEAAwIAA3kAAz0E"
-        }
-      ],
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2456,
-      "cleanup_message_ids": [
-        2483,
-        2484,
-        2485
-      ],
-      "preview_message_ids": [
-        2483,
-        2484,
-        2485
-      ],
-      "scheduled_at": 1792913460,
-      "scheduled_approved": true
-    },
     "267988273": {
       "chat_id": 1677869966,
       "text": "آیلین جوانبخت ۱۰ ساله از خورستان، با یه نقاشی از احترام به کره زمین و طبیعت، بین ۱۰ هزار شرکت کننده در سراسر دنیا، نفر اول شد و جایزه جهانی یونیسف رو به خودش اختصاص داد.\nهمراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
@@ -2219,6 +2122,11 @@
       "chat_id": 1677869966,
       "message_id": 2503,
       "delete_at": 1792998012
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2504,
+      "delete_at": 1792999879
     }
   ]
 }
