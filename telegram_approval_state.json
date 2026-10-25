@@ -1694,56 +1694,6 @@
       ],
       "edited_manually": true
     },
-    "267988298": {
-      "chat_id": 1677869966,
-      "text": "به موقع گفتن، مهم‌تر از گفتنه.\nبه موقع بودن، مهم‌تر از بودنه.\nبه موقع شنیدن، مهم‌تر از شنیدنه.\nبه موقع انجام دادن، مهم‌تر از انجام دادنه.\nهرچیزی یه گلدن تایمی داره.\nبه موقع بودن رو جدی بگیرید.\n✍مُ ناخُدایِ دِریایِ خودُمُم !\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 224,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 233,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 240,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 249,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 258,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2533,
-      "cleanup_message_ids": [
-        2678,
-        2679
-      ],
-      "preview_message_ids": [
-        2678,
-        2679
-      ],
-      "scheduled_at": 1792938660,
-      "scheduled_approved": true
-    },
     "267988300": {
       "chat_id": 1677869966,
       "text": "من واقعاً ارتباط درست با خانوما رو بلد نیستم. خانومه بهم گفت به‌نظرت چند می‌خوره بهم. گفتم ۳۲-۳۳. یهو زد زیر گریه گفت بابا من ۲۸ سالمه فقط. گفتم مگه می‌شه؟ کارت ملیشو درآورد نشون داد تا باورش کردم. هرچقدر هم سعی کردم این ریدمانو جمع کنم نشد. آخر سرم بهش گفتم بابا قیافه رو ول کن دلت جوون باشه که بعد فهمیدم دوباره ریدم :)\n✍مرئی\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
@@ -3588,6 +3538,11 @@
       "chat_id": 1677869966,
       "message_id": 2884,
       "delete_at": 1793023206
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2885,
+      "delete_at": 1793025816
     }
   ]
 }
