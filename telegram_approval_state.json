@@ -1744,56 +1744,6 @@
       "scheduled_at": 1792938660,
       "scheduled_approved": true
     },
-    "267988299": {
-      "chat_id": 1677869966,
-      "text": "آیا میدانستید فرانسه تو دهه ۶۰ حدود ۱۰۰۰ بسته کنستانتره خون برای بیماران هموفیلی به ایران فروخت بعد اعلام کرد خونها ایدز داشتن؟ حدود ۲۰۰ نفر برای درمان هموفیلی رفته بودن که ایدزم گرفتن، بعد اینا جمع شدن رفتن شکایت کردن پرونده تا همین‌الان هنوز بازه و به نتیجه نرسیده!\n✍نبات\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
-      "entities": [
-        {
-          "offset": 274,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=3etare.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 283,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nocloudnew.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 290,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fresh.t-proxy.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 299,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=mc-ssh.t-proxyru.info.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d"
-        },
-        {
-          "offset": 308,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ssh.meow0.co.uk&port=22&secret=dd79e344818749bd7ac519130220c25d09"
-        }
-      ],
-      "media": null,
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2534,
-      "cleanup_message_ids": [
-        2684,
-        2685
-      ],
-      "preview_message_ids": [
-        2684,
-        2685
-      ],
-      "scheduled_at": 1792936800,
-      "scheduled_approved": true
-    },
     "267988300": {
       "chat_id": 1677869966,
       "text": "من واقعاً ارتباط درست با خانوما رو بلد نیستم. خانومه بهم گفت به‌نظرت چند می‌خوره بهم. گفتم ۳۲-۳۳. یهو زد زیر گریه گفت بابا من ۲۸ سالمه فقط. گفتم مگه می‌شه؟ کارت ملیشو درآورد نشون داد تا باورش کردم. هرچقدر هم سعی کردم این ریدمانو جمع کنم نشد. آخر سرم بهش گفتم بابا قیافه رو ول کن دلت جوون باشه که بعد فهمیدم دوباره ریدم :)\n✍مرئی\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی",
@@ -3633,6 +3583,11 @@
       "chat_id": 1677869966,
       "message_id": 2883,
       "delete_at": 1793021471
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2884,
+      "delete_at": 1793023206
     }
   ]
 }
