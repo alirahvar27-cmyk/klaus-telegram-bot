@@ -1,5 +1,5 @@
 {
-  "offset": 267988322,
+  "offset": 267988409,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -1857,13 +1857,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2509,
       "cleanup_message_ids": [
-        2510,
-        2511
+        2608,
+        2609
       ],
       "preview_message_ids": [
-        2510,
-        2511
-      ]
+        2608,
+        2609
+      ],
+      "scheduled_at": 1792920660,
+      "scheduled_approved": true
     },
     "267988291": {
       "chat_id": 1677869966,
@@ -1941,13 +1943,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2512,
       "cleanup_message_ids": [
-        2513,
-        2514
+        2636,
+        2637
       ],
       "preview_message_ids": [
-        2513,
-        2514
-      ]
+        2636,
+        2637
+      ],
+      "scheduled_at": 1792922400,
+      "scheduled_approved": true
     },
     "267988292": {
       "chat_id": 1677869966,
@@ -1989,13 +1993,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2515,
       "cleanup_message_ids": [
-        2516,
-        2517
+        2642,
+        2643
       ],
       "preview_message_ids": [
-        2516,
-        2517
-      ]
+        2642,
+        2643
+      ],
+      "scheduled_at": 1792924260,
+      "scheduled_approved": true
     },
     "267988293": {
       "chat_id": 1677869966,
@@ -2037,13 +2043,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2518,
       "cleanup_message_ids": [
-        2519,
-        2520
+        2648,
+        2649
       ],
       "preview_message_ids": [
-        2519,
-        2520
-      ]
+        2648,
+        2649
+      ],
+      "scheduled_at": 1792926000,
+      "scheduled_approved": true
     },
     "267988294": {
       "chat_id": 1677869966,
@@ -2085,13 +2093,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2521,
       "cleanup_message_ids": [
-        2522,
-        2523
+        2654,
+        2655
       ],
       "preview_message_ids": [
-        2522,
-        2523
-      ]
+        2654,
+        2655
+      ],
+      "scheduled_at": 1792929600,
+      "scheduled_approved": true
     },
     "267988295": {
       "chat_id": 1677869966,
@@ -2133,13 +2143,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2524,
       "cleanup_message_ids": [
-        2525,
-        2526
+        2660,
+        2661
       ],
       "preview_message_ids": [
-        2525,
-        2526
-      ]
+        2660,
+        2661
+      ],
+      "scheduled_at": 1792931460,
+      "scheduled_approved": true
     },
     "267988296": {
       "chat_id": 1677869966,
@@ -2181,13 +2193,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2527,
       "cleanup_message_ids": [
-        2528,
-        2529
+        2666,
+        2667
       ],
       "preview_message_ids": [
-        2528,
-        2529
-      ]
+        2666,
+        2667
+      ],
+      "scheduled_at": 1792933200,
+      "scheduled_approved": true
     },
     "267988297": {
       "chat_id": 1677869966,
@@ -2229,13 +2243,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2530,
       "cleanup_message_ids": [
-        2531,
-        2532
+        2672,
+        2673
       ],
       "preview_message_ids": [
-        2531,
-        2532
-      ]
+        2672,
+        2673
+      ],
+      "scheduled_at": 1792935060,
+      "scheduled_approved": true
     },
     "267988298": {
       "chat_id": 1677869966,
@@ -2277,13 +2293,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2533,
       "cleanup_message_ids": [
-        2536,
-        2537
+        2678,
+        2679
       ],
       "preview_message_ids": [
-        2536,
-        2537
-      ]
+        2678,
+        2679
+      ],
+      "scheduled_at": 1792938660,
+      "scheduled_approved": true
     },
     "267988299": {
       "chat_id": 1677869966,
@@ -2325,13 +2343,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2534,
       "cleanup_message_ids": [
-        2538,
-        2539
+        2684,
+        2685
       ],
       "preview_message_ids": [
-        2538,
-        2539
-      ]
+        2684,
+        2685
+      ],
+      "scheduled_at": 1792936800,
+      "scheduled_approved": true
     },
     "267988300": {
       "chat_id": 1677869966,
@@ -2373,13 +2393,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2535,
       "cleanup_message_ids": [
-        2540,
-        2541
+        2690,
+        2691
       ],
       "preview_message_ids": [
-        2540,
-        2541
-      ]
+        2690,
+        2691
+      ],
+      "scheduled_at": 1792940400,
+      "scheduled_approved": true
     },
     "267988301": {
       "chat_id": 1677869966,
@@ -2543,13 +2565,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2542,
       "cleanup_message_ids": [
-        2547,
-        2548
+        2696,
+        2697
       ],
       "preview_message_ids": [
-        2547,
-        2548
-      ]
+        2696,
+        2697
+      ],
+      "scheduled_at": 1792942260,
+      "scheduled_approved": true
     },
     "267988302": {
       "chat_id": 1677869966,
@@ -2725,13 +2749,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2543,
       "cleanup_message_ids": [
-        2549,
-        2550
+        2702,
+        2703
       ],
       "preview_message_ids": [
-        2549,
-        2550
-      ]
+        2702,
+        2703
+      ],
+      "scheduled_at": 1792944000,
+      "scheduled_approved": true
     },
     "267988303": {
       "chat_id": 1677869966,
@@ -2884,13 +2910,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2544,
       "cleanup_message_ids": [
-        2551,
-        2552
+        2708,
+        2709
       ],
       "preview_message_ids": [
-        2551,
-        2552
-      ]
+        2708,
+        2709
+      ],
+      "scheduled_at": 1792945860,
+      "scheduled_approved": true
     },
     "267988304": {
       "chat_id": 1677869966,
@@ -3043,13 +3071,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2545,
       "cleanup_message_ids": [
-        2553,
-        2554
+        2714,
+        2715
       ],
       "preview_message_ids": [
-        2553,
-        2554
-      ]
+        2714,
+        2715
+      ],
+      "scheduled_at": 1792947600,
+      "scheduled_approved": true
     },
     "267988305": {
       "chat_id": 1677869966,
@@ -3208,13 +3238,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2546,
       "cleanup_message_ids": [
-        2555,
-        2556
+        2720,
+        2721
       ],
       "preview_message_ids": [
-        2555,
-        2556
-      ]
+        2720,
+        2721
+      ],
+      "scheduled_at": 1792949460,
+      "scheduled_approved": true
     },
     "267988306": {
       "chat_id": 1677869966,
@@ -3328,13 +3360,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2557,
       "cleanup_message_ids": [
-        2569,
-        2570
+        2726,
+        2727
       ],
       "preview_message_ids": [
-        2569,
-        2570
-      ]
+        2726,
+        2727
+      ],
+      "scheduled_at": 1792951200,
+      "scheduled_approved": true
     },
     "267988307": {
       "chat_id": 1677869966,
@@ -3448,13 +3482,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2558,
       "cleanup_message_ids": [
-        2571,
-        2572
+        2738,
+        2739
       ],
       "preview_message_ids": [
-        2571,
-        2572
-      ]
+        2738,
+        2739
+      ],
+      "scheduled_at": 1792954800,
+      "scheduled_approved": true
     },
     "267988308": {
       "chat_id": 1677869966,
@@ -3577,15 +3613,17 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2559,
       "cleanup_message_ids": [
-        2573,
-        2574,
-        2575
+        2744,
+        2745,
+        2746
       ],
       "preview_message_ids": [
-        2573,
-        2574,
-        2575
-      ]
+        2744,
+        2745,
+        2746
+      ],
+      "scheduled_at": 1792956660,
+      "scheduled_approved": true
     },
     "267988310": {
       "chat_id": 1677869966,
@@ -3702,39 +3740,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2561,
       "cleanup_message_ids": [
-        2576,
-        2577
+        2751,
+        2752
       ],
       "preview_message_ids": [
-        2576,
-        2577
-      ]
-    },
-    "267988311": {
-      "chat_id": 1677869966,
-      "text": "«اگر تمام شب را به خاطر از دست دادن خورشید غمگین بمانی، لذت تماشای ستاره‌ها را نیز از دست خواهی داد.»",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 101,
-          "type": "blockquote"
-        }
+        2751,
+        2752
       ],
-      "media": {
-        "type": "audio",
-        "file_id": "CQACAgQAAxkBAAIKAmrdxewb77TFjXFc50lThPkle0DfAALbHQAClGvpUiMhHlsTh28aPQQ"
-      },
-      "channel": "@Khndedoon",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2562,
-      "cleanup_message_ids": [
-        2578,
-        2579
-      ],
-      "preview_message_ids": [
-        2578,
-        2579
-      ]
+      "scheduled_at": 1792958400,
+      "scheduled_approved": true
     },
     "267988312": {
       "chat_id": 1677869966,
@@ -3833,144 +3847,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2563,
       "cleanup_message_ids": [
-        2580,
-        2581
+        2732,
+        2733
       ],
       "preview_message_ids": [
-        2580,
-        2581
-      ]
-    },
-    "267988313": {
-      "chat_id": 1677869966,
-      "text": "به تازگی یه ژانری توی اینستاگرام ترند شده که آهنگ فرانسوی ادیت میکنن رو دیالوگ‌‌ سنگین سریالای ایرانی.\nپروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\nپروکسی | پروکسی | پروکسی\n🔥",
-      "entities": [
-        {
-          "offset": 103,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shoes.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 112,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=silnet.varfootball.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 119,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=api.mangoseason5.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 128,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=silver.ciaude.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 137,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=iro.varfootball2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 144,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=fruit.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 153,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=craft.malavanann.co.uk&port=2083&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 162,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=digi.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 169,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=star.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 178,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=name.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 187,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=run.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 194,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=irogallery.golgoli1.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 203,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=great.cipservice.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 212,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hadaf.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
+        2732,
+        2733
       ],
-      "media": [
-        {
-          "type": "video",
-          "file_id": "BAACAgQAAxkBAAIKBGrdxeyTemKvnUstk2GOXUq8lPn1AAKzIAAC6TfpUqOQho226ZkXPQQ"
-        },
-        {
-          "type": "video",
-          "file_id": "BAACAgQAAxkBAAIKBWrdxey0GQV2jzt9ffsqaNMfv5K7AAK0IAAC6TfpUhhUgWu5tJmrPQQ"
-        },
-        {
-          "type": "video",
-          "file_id": "BAACAgQAAxkBAAIKBmrdxewNDpLPixAswAM2w9-wEXNoAAK1IAAC6TfpUipNmrnXlHJQPQQ"
-        },
-        {
-          "type": "video",
-          "file_id": "BAACAgQAAxkBAAIKB2rdxew832MsBbhxI4Dbn66K6SzZAAK2IAAC6TfpUntu5_8o_iCdPQQ"
-        },
-        {
-          "type": "video",
-          "file_id": "BAACAgQAAxkBAAIKCGrdxewPcFdENsagBm8qMJvZOKaNAAK3IAAC6TfpUkwMRFLcQZUkPQQ"
-        }
-      ],
-      "channel": "@FilmGardFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2564,
-      "cleanup_message_ids": [
-        2582,
-        2583,
-        2584,
-        2585,
-        2586,
-        2587
-      ],
-      "preview_message_ids": [
-        2582,
-        2583,
-        2584,
-        2585,
-        2586,
-        2587
-      ]
+      "scheduled_at": 1792953060,
+      "scheduled_approved": true
     }
   },
   "edit_mode": {},
@@ -4160,6 +4045,16 @@
       "chat_id": 1677869966,
       "message_id": 2508,
       "delete_at": 1793005219
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2610,
+      "delete_at": 1793005581
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2612,
+      "delete_at": 1793005647
     }
   ]
 }
