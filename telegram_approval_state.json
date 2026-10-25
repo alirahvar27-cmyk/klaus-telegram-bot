@@ -2129,95 +2129,6 @@
       ],
       "edited_manually": true
     },
-    "267988270": {
-      "chat_id": 1677869966,
-      "text": "تو ترکیه این بچه گربه منتظر مونده تا نوبتش بشه از مجسمه نوازش بگیره :)))\nهمراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
-      "entities": [
-        {
-          "offset": 73,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 79,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 88,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 95,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 104,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 111,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 120,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 127,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 136,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 143,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 152,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIJkmrdK614O1vJvuAWOE2gmo6KfMFMAAJOD2sbx97lUg7nFeX_v2vhAQADAgADeQADPQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2450,
-      "cleanup_message_ids": [
-        2471,
-        2472
-      ],
-      "preview_message_ids": [
-        2471,
-        2472
-      ],
-      "scheduled_at": 1792886400,
-      "scheduled_approved": true
-    },
     "267988271": {
       "chat_id": 1677869966,
       "text": "وقتی برای مادر بزرگت اینستا نصب کردی 🩷\nهمراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
@@ -2603,6 +2514,11 @@
       "chat_id": 1677869966,
       "message_id": 2492,
       "delete_at": 1792971480
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2493,
+      "delete_at": 1792972812
     }
   ]
 }
