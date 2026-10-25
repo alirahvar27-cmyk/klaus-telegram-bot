@@ -3526,28 +3526,6 @@
       "scheduled_at": 1792953060,
       "scheduled_approved": true
     },
-    "267988413": {
-      "chat_id": 1677869966,
-      "text": "🎮 نیازی به نقشه نیست من ۱۳ سال اینجا زندگی میکردم 😉\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIKxWrdyMFEUYXD06_4SmtbexFe8Qk_AALpDAACQdntUm7Y0x5PlC86PQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2757,
-      "cleanup_message_ids": [
-        2836,
-        2837
-      ],
-      "preview_message_ids": [
-        2836,
-        2837
-      ],
-      "scheduled_at": 1792927860,
-      "scheduled_approved": true
-    },
     "267988414": {
       "chat_id": 1677869966,
       "text": "🎮 این نسخه شاهکار بود 👌\n🆔",
@@ -3904,6 +3882,11 @@
       "chat_id": 1677869966,
       "message_id": 2874,
       "delete_at": 1793012417
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2875,
+      "delete_at": 1793014270
     }
   ]
 }
