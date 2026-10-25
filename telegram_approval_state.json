@@ -517,34 +517,6 @@
         731
       ]
     },
-    "267987778": {
-      "chat_id": 1677869966,
-      "text": "🎮 از اون بازی‌های به ظاهر قدیمی، که هنوز توی ذهن کسایی که بازیش کردن شاهکارن.\nبازی: The Elder Scrolls V: Skyrim\nآهنگ: Dawn - جرمی سول\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFRmrcgOCwseQV5zcNYNo9lbCIeBgnAAKOJgAC2BPgUqllSmJPyBSQPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1350,
-      "cleanup_message_ids": [
-        1350,
-        1442,
-        1443,
-        1703,
-        1708,
-        1710,
-        1713,
-        1714
-      ],
-      "preview_message_ids": [
-        1713,
-        1714
-      ],
-      "scheduled_at": 1792906260,
-      "scheduled_approved": true
-    },
     "267987779": {
       "chat_id": 1677869966,
       "text": "🎮 شبتون به زیبایی این شاهکار²\n🆔",
@@ -2288,6 +2260,11 @@
       "chat_id": 1677869966,
       "message_id": 2500,
       "delete_at": 1792990804
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2501,
+      "delete_at": 1792993656
     }
   ]
 }
