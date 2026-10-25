@@ -707,33 +707,6 @@
         1475
       ]
     },
-    "267987795": {
-      "chat_id": 1677869966,
-      "text": "🎮 پورت غیررسمی Bloodborne با DLSS 5 روی RTX 3070 لپ‌تاپی به ۴۷ فریم بر ثانیه رسید\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFV2rcgOD_7YOUcHXP_CpswyWXOIYnAAKwD2sb5dvlUvHxWmvnULuQAQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1367,
-      "cleanup_message_ids": [
-        1367,
-        1476,
-        1477,
-        1851,
-        1853,
-        1856,
-        1857
-      ],
-      "preview_message_ids": [
-        1856,
-        1857
-      ],
-      "scheduled_at": 1792965600,
-      "scheduled_approved": true
-    },
     "267987796": {
       "chat_id": 1677869966,
       "text": "🎮 یک تصادف عادی با موتور در GTA IV😂\n🆔",
@@ -1581,16 +1554,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2445,
-      "delete_at": 1792964589
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2449,
-      "delete_at": 1792965780
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2492,
       "delete_at": 1792971480
     },
@@ -1883,6 +1846,11 @@
       "chat_id": 1677869966,
       "message_id": 2918,
       "delete_at": 1793044813
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2919,
+      "delete_at": 1793052005
     }
   ]
 }
