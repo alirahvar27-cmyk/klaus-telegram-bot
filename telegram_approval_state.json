@@ -1,5 +1,5 @@
 {
-  "offset": 267988633,
+  "offset": 267988726,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -1354,17 +1354,19 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAILcWrfEqBivcwdVu69VZI6KxvMOINoAALbDmsbcZPxUqEgHqz--hUVAQADAgADdwADPQQ"
       },
-      "channel": "@FilmGardFa",
+      "channel": "@LevelUpFa",
       "source_chat_id": 1677869966,
       "source_message_id": 2929,
       "cleanup_message_ids": [
-        2990,
-        2991
+        3420,
+        3421
       ],
       "preview_message_ids": [
-        2990,
-        2991
-      ]
+        3420,
+        3421
+      ],
+      "scheduled_at": 1793080500,
+      "scheduled_approved": true
     },
     "267988484": {
       "chat_id": 1677869966,
@@ -1418,17 +1420,13 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAILdGrfEqCPiW8VvcgOibF00i565pRKAAJHD2sbjqD0UnbGNrJRmYFBAQADAgADdwADPQQ"
       },
-      "channel": "@RazKehann",
+      "channel": "@LevelUpFa",
       "source_chat_id": 1677869966,
       "source_message_id": 2932,
       "cleanup_message_ids": [
-        2996,
-        2997
+        3407
       ],
-      "preview_message_ids": [
-        2996,
-        2997
-      ]
+      "preview_message_ids": []
     },
     "267988487": {
       "chat_id": 1677869966,
@@ -1592,17 +1590,13 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAILfGrfEqAx2X65ZgURPrf5yFgj_J_CAAJrD2sbcZPxUpBQzAsg-1LEAQADAgADeQADPQQ"
       },
-      "channel": "@FilmGardFa",
+      "channel": "@LevelUpFa",
       "source_chat_id": 1677869966,
       "source_message_id": 2940,
       "cleanup_message_ids": [
-        3012,
-        3013
+        3424
       ],
-      "preview_message_ids": [
-        3012,
-        3013
-      ]
+      "preview_message_ids": []
     },
     "267988495": {
       "chat_id": 1677869966,
@@ -1612,17 +1606,13 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAILfWrfEqDDhIs9DCRYTWSBiETweL-AAAJ4D2sb4z-1UJcrL2YIe4qRAQADAgADeQADPQQ"
       },
-      "channel": "@FilmGardFa",
+      "channel": "@LevelUpFa",
       "source_chat_id": 1677869966,
       "source_message_id": 2941,
       "cleanup_message_ids": [
-        3014,
-        3015
+        3405
       ],
-      "preview_message_ids": [
-        3014,
-        3015
-      ]
+      "preview_message_ids": []
     },
     "267988496": {
       "chat_id": 1677869966,
@@ -1658,9 +1648,25 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2942,
       "cleanup_message_ids": [
-        3105
+        3276,
+        3277,
+        3278,
+        3279,
+        3280,
+        3281,
+        3282
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3276,
+        3277,
+        3278,
+        3279,
+        3280,
+        3281,
+        3282
+      ],
+      "scheduled_at": 1793040300,
+      "scheduled_approved": true
     },
     "267988502": {
       "chat_id": 1677869966,
@@ -1674,9 +1680,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2948,
       "cleanup_message_ids": [
-        3106
+        3347,
+        3348
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3347,
+        3348
+      ],
+      "scheduled_at": 1793055900,
+      "scheduled_approved": true
     },
     "267988503": {
       "chat_id": 1677869966,
@@ -1686,17 +1698,13 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAILhWrfEqCZVxrbpcTTca0ftihC_fSQAAJ-D2sbcY31UgTlz--x5tH6AQADAgADeQADPQQ"
       },
-      "channel": "@FilmGardFa",
+      "channel": "@LevelUpFa",
       "source_chat_id": 1677869966,
       "source_message_id": 2949,
       "cleanup_message_ids": [
-        3025,
-        3026
+        3404
       ],
-      "preview_message_ids": [
-        3025,
-        3026
-      ]
+      "preview_message_ids": []
     },
     "267988504": {
       "chat_id": 1677869966,
@@ -1710,9 +1718,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2950,
       "cleanup_message_ids": [
-        3107
+        3370,
+        3371
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3370,
+        3371
+      ],
+      "scheduled_at": 1793059680,
+      "scheduled_approved": true
     },
     "267988505": {
       "chat_id": 1677869966,
@@ -1726,9 +1740,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2951,
       "cleanup_message_ids": [
-        3108
+        3364,
+        3365
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3364,
+        3365
+      ],
+      "scheduled_at": 1793058480,
+      "scheduled_approved": true
     },
     "267988506": {
       "chat_id": 1677869966,
@@ -1738,17 +1758,13 @@
         "type": "video",
         "file_id": "BAACAgQAAxkBAAILiGrfEqA378TTQWD7Z8F2IPxWyYZ7AAK8IgACcZPxUi0CabCMJUTkPQQ"
       },
-      "channel": "@FilmGardFa",
+      "channel": "@LevelUpFa",
       "source_chat_id": 1677869966,
       "source_message_id": 2952,
       "cleanup_message_ids": [
-        3031,
-        3032
+        3403
       ],
-      "preview_message_ids": [
-        3031,
-        3032
-      ]
+      "preview_message_ids": []
     },
     "267988507": {
       "chat_id": 1677869966,
@@ -1762,9 +1778,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2953,
       "cleanup_message_ids": [
-        3109
+        3335,
+        3336
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3335,
+        3336
+      ],
+      "scheduled_at": 1793052960,
+      "scheduled_approved": true
     },
     "267988508": {
       "chat_id": 1677869966,
@@ -1778,9 +1800,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2954,
       "cleanup_message_ids": [
-        3110
+        3358,
+        3359
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3358,
+        3359
+      ],
+      "scheduled_at": 1793054280,
+      "scheduled_approved": true
     },
     "267988509": {
       "chat_id": 1677869966,
@@ -1794,9 +1822,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2955,
       "cleanup_message_ids": [
-        3111
+        3317,
+        3318
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3317,
+        3318
+      ],
+      "scheduled_at": 1793048760,
+      "scheduled_approved": true
     },
     "267988510": {
       "chat_id": 1677869966,
@@ -1810,9 +1844,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2956,
       "cleanup_message_ids": [
-        3112
+        3329,
+        3330
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3329,
+        3330
+      ],
+      "scheduled_at": 1793051580,
+      "scheduled_approved": true
     },
     "267988511": {
       "chat_id": 1677869966,
@@ -1826,9 +1866,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2957,
       "cleanup_message_ids": [
-        3113
+        3299,
+        3300
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3299,
+        3300
+      ],
+      "scheduled_at": 1793044980,
+      "scheduled_approved": true
     },
     "267988512": {
       "chat_id": 1677869966,
@@ -1842,9 +1888,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2958,
       "cleanup_message_ids": [
-        3114
+        3305,
+        3306
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3305,
+        3306
+      ],
+      "scheduled_at": 1793046240,
+      "scheduled_approved": true
     },
     "267988513": {
       "chat_id": 1677869966,
@@ -1858,9 +1910,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2959,
       "cleanup_message_ids": [
-        3115
+        3311,
+        3312
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3311,
+        3312
+      ],
+      "scheduled_at": 1793047680,
+      "scheduled_approved": true
     },
     "267988514": {
       "chat_id": 1677869966,
@@ -1870,17 +1928,13 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAILkGrfEqDsuAhgsrjI5zrRooDlsmylAAK6Dmsb3ZD8UvgFTBTkR8xFAQADAgADdwADPQQ"
       },
-      "channel": "@FilmGardFa",
+      "channel": "@LevelUpFa",
       "source_chat_id": 1677869966,
       "source_message_id": 2960,
       "cleanup_message_ids": [
-        3047,
-        3048
+        3402
       ],
-      "preview_message_ids": [
-        3047,
-        3048
-      ]
+      "preview_message_ids": []
     },
     "267988515": {
       "chat_id": 1677869966,
@@ -1894,9 +1948,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2961,
       "cleanup_message_ids": [
-        3116
+        3353,
+        3354
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3353,
+        3354
+      ],
+      "scheduled_at": 1793057160,
+      "scheduled_approved": true
     },
     "267988516": {
       "chat_id": 1677869966,
@@ -1910,9 +1970,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2962,
       "cleanup_message_ids": [
-        3117
+        3287,
+        3288
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3287,
+        3288
+      ],
+      "scheduled_at": 1793042040,
+      "scheduled_approved": true
     },
     "267988517": {
       "chat_id": 1677869966,
@@ -1926,9 +1992,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2963,
       "cleanup_message_ids": [
-        3118
+        3323,
+        3324
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3323,
+        3324
+      ],
+      "scheduled_at": 1793050140,
+      "scheduled_approved": true
     },
     "267988518": {
       "chat_id": 1677869966,
@@ -1942,9 +2014,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2964,
       "cleanup_message_ids": [
-        3119
+        3293,
+        3294
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3293,
+        3294
+      ],
+      "scheduled_at": 1793044140,
+      "scheduled_approved": true
     },
     "267988519": {
       "chat_id": 1677869966,
@@ -1964,9 +2042,17 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2965,
       "cleanup_message_ids": [
-        3120
+        3269,
+        3270,
+        3271
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3269,
+        3270,
+        3271
+      ],
+      "scheduled_at": 1793039160,
+      "scheduled_approved": true
     },
     "267988521": {
       "chat_id": 1677869966,
@@ -1980,9 +2066,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2967,
       "cleanup_message_ids": [
-        3121
+        3263,
+        3264
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3263,
+        3264
+      ],
+      "scheduled_at": 1793037900,
+      "scheduled_approved": true
     },
     "267988522": {
       "chat_id": 1677869966,
@@ -1996,9 +2088,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2968,
       "cleanup_message_ids": [
-        3122
+        3257,
+        3258
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3257,
+        3258
+      ],
+      "scheduled_at": 1793036280,
+      "scheduled_approved": true
     },
     "267988523": {
       "chat_id": 1677869966,
@@ -2012,9 +2110,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 2969,
       "cleanup_message_ids": [
-        3247
+        3251,
+        3252
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3251,
+        3252
+      ],
+      "scheduled_at": 1793035740,
+      "scheduled_approved": true
     },
     "267988524": {
       "chat_id": 1677869966,
@@ -2220,17 +2324,13 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAILqWrfEsq-MSTCtx8iGfq0yQ7_ukWfAAI0D2sbuSf5UjP-zaPYl0HdAQADAgADeQADPQQ"
       },
-      "channel": "@FilmGardFa",
+      "channel": "@LevelUpFa",
       "source_chat_id": 1677869966,
       "source_message_id": 2985,
       "cleanup_message_ids": [
-        3088,
-        3089
+        3401
       ],
-      "preview_message_ids": [
-        3088,
-        3089
-      ]
+      "preview_message_ids": []
     },
     "267988540": {
       "chat_id": 1677869966,
@@ -2262,45 +2362,33 @@
         "type": "photo",
         "file_id": "AgACAgQAAxkBAAILq2rfEsraUKKzgdHaFiRBaKv0ucbzAAJGD2sbuSf5Uo5GK1kQGKpwAQADAgADeQADPQQ"
       },
-      "channel": "@RazKehann",
+      "channel": "@LevelUpFa",
       "source_chat_id": 1677869966,
       "source_message_id": 2987,
       "cleanup_message_ids": [
-        3092,
-        3093,
-        3094
+        3413,
+        3414,
+        3415
       ],
       "preview_message_ids": [
-        3092,
-        3093,
-        3094
-      ]
+        3413,
+        3414,
+        3415
+      ],
+      "scheduled_at": 1793077200,
+      "scheduled_approved": true
     }
   },
   "edit_mode": {},
   "schedule_mode": {
     "1677869966": {
-      "draft_id": "267988523",
-      "step": "hour",
-      "date": "2026-10-26"
+      "draft_id": "267988494",
+      "step": "minute",
+      "date": "2026-10-27",
+      "hour": 9
     }
   },
   "status_cleanup": [
-    {
-      "chat_id": 1677869966,
-      "message_id": 2506,
-      "delete_at": 1793005216
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2507,
-      "delete_at": 1793005218
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2508,
-      "delete_at": 1793005219
-    },
     {
       "chat_id": 1677869966,
       "message_id": 2610,
