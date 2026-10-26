@@ -707,33 +707,6 @@
         1475
       ]
     },
-    "267987800": {
-      "chat_id": 1677869966,
-      "text": "🇯🇵 گیم Final Fantasy Resonance تو استیم به 27,933 بازیکن هم‌زمان رسیده و طبق SteamDB، این سومین لانچ بزرگ یه بازی تک‌نفره تو سری Final Fantasy تو استیمه!\nبرای مقایسه، Final Fantasy VII Rebirth با اوج 40,564 بازیکن هم‌زمان اوله، بعد Final Fantasy XV با 29,498 نفر دوم و Final Fantasy XVI با 27,508 نفر سومه. Final Fantasy Resonance با 27,933 نفر تقریبا هم‌رده با Final Fantasy XVI قرار گرفته.\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFXGrcgODD2N8Zh-4kn9Dj6dokMX1gAALjEGsbwrDgUrs8FjYBkpmrAQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1372,
-      "cleanup_message_ids": [
-        1372,
-        1486,
-        1487,
-        1880,
-        1882,
-        1885,
-        1886
-      ],
-      "preview_message_ids": [
-        1885,
-        1886
-      ],
-      "scheduled_at": 1792980000,
-      "scheduled_approved": true
-    },
     "267987801": {
       "chat_id": 1677869966,
       "text": "⚽️🧩 واکنش مدیر پروژه Mass Effect به تعطیلی استودیو و انتشار GTA 6!\nمایک گمبل، مدیر پروژه Mass Effect 5، در واکنشی به انتشار GTA 6 گفت: «حداقل وقتی GTA 6 منتشر میشه، لازم نیست خودم رو به بیماری بزنم و مرخصی بگیرم!»\nاون همچنین از طرفدارا بابت موج حمایت‌ها و پیام‌های محبت‌آمیزشون بعد از تعطیلی استودیو توسط EA تشکر کرد و گفت این حمایت‌ها براشون اهمیت خیلی زیادی داره.\n⚽️‌",
@@ -1765,6 +1738,11 @@
       "chat_id": 1677869966,
       "message_id": 2922,
       "delete_at": 1793062806
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2923,
+      "delete_at": 1793067230
     }
   ]
 }
