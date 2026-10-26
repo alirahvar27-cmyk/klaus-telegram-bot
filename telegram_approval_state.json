@@ -707,33 +707,6 @@
         1475
       ]
     },
-    "267987799": {
-      "chat_id": 1677869966,
-      "text": "❌🧩 هشدار اسپویل Modern Warfare 4\nدیدن اینکه بالاخره پرایس ماکاروف رو گیر می‌ندازه 😃\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFW2rcgOD_HJtL_WqcAAE1d6cWhCLZmQACAiUAAsKw4FJSwrT6fnvxrD0E"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1371,
-      "cleanup_message_ids": [
-        1371,
-        1484,
-        1485,
-        1872,
-        1875,
-        1878,
-        1879
-      ],
-      "preview_message_ids": [
-        1878,
-        1879
-      ],
-      "scheduled_at": 1792976400,
-      "scheduled_approved": true
-    },
     "267987800": {
       "chat_id": 1677869966,
       "text": "🇯🇵 گیم Final Fantasy Resonance تو استیم به 27,933 بازیکن هم‌زمان رسیده و طبق SteamDB، این سومین لانچ بزرگ یه بازی تک‌نفره تو سری Final Fantasy تو استیمه!\nبرای مقایسه، Final Fantasy VII Rebirth با اوج 40,564 بازیکن هم‌زمان اوله، بعد Final Fantasy XV با 29,498 نفر دوم و Final Fantasy XVI با 27,508 نفر سومه. Final Fantasy Resonance با 27,933 نفر تقریبا هم‌رده با Final Fantasy XVI قرار گرفته.\n⚽️‌",
@@ -1500,11 +1473,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2494,
-      "delete_at": 1792976036
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2495,
       "delete_at": 1792978277
     },
@@ -1797,6 +1765,11 @@
       "chat_id": 1677869966,
       "message_id": 2921,
       "delete_at": 1793059438
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2922,
+      "delete_at": 1793062806
     }
   ]
 }
