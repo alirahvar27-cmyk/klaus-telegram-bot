@@ -707,34 +707,6 @@
         1475
       ]
     },
-    "267987802": {
-      "chat_id": 1677869966,
-      "text": "🕸 گیم Spider-Man 2 با فناوری DLSS 5!\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFXmrcgOAxGUYT_nAdNoZCF37RUu2QAAJKJQACwrDgUrmNKne-3GQoPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1374,
-      "cleanup_message_ids": [
-        1374,
-        1490,
-        1491,
-        1888,
-        1904,
-        1906,
-        1909,
-        1910
-      ],
-      "preview_message_ids": [
-        1909,
-        1910
-      ],
-      "scheduled_at": 1792990800,
-      "scheduled_approved": true
-    },
     "267987803": {
       "chat_id": 1677869966,
       "text": "🧩🎮همکاری Xbox با ارلینگ هالند برای تبلیغ Call of Duty Modern Warfare 4\nچند ماه پیش، ارلینگ هالند گفته بود وقتی مشغول تمرین نیست، یکی از تفریحات موردعلاقه‌اش بازی کردن GTA، Call of Duty و Minecraft هست.\nاون حتی گفته بود Call of Duty: Modern Warfare 2 جزو سه بازی برتر تاریخ از نظرشه!\nحالا Xbox برای تبلیغ Modern Warfare 4 با این ستاره فوتبال همکاری کرده تا علاقه‌اش به بازی‌های ویدیویی رو به بخشی از کمپین تبلیغاتی خودش تبدیل کنه.\n⚽️",
@@ -1418,16 +1390,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2499,
-      "delete_at": 1792990440
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2500,
-      "delete_at": 1792990804
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2501,
       "delete_at": 1792993656
     },
@@ -1705,6 +1667,11 @@
       "chat_id": 1677869966,
       "message_id": 2924,
       "delete_at": 1793073609
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2925,
+      "delete_at": 1793077493
     }
   ]
 }
