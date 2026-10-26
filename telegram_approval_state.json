@@ -1281,28 +1281,6 @@
       "scheduled_at": 1793054280,
       "scheduled_approved": true
     },
-    "267988510": {
-      "chat_id": 1677869966,
-      "text": "🎮 نسخه لغوشده بسته الحاقی Not a Hero بازی Resident Evil 7 با پایانی متفاوت کشف شد\n🔻ویدیوهای آرشیوی و گیم‌پلی یک نسخه اولیه و لغوشده از بسته الحاقی Not a Hero برای بازی Resident Evil 7: Biohazard که تاریخ آن به مارس ۲۰۱۷ برمی‌گردد، از هارد دیسک یک کیت توسعه پلی‌استیشن ۴ استخراج شد. این بسته الحاقی ابتدا قرار بود توسط استودیوی HexaDrive توسعه یابد و در بهار ۲۰۱۷ عرضه شود، اما شرکت کپکام به دلیل عدم رضایت از کیفیت، پروژه را به تیم داخلی Division 1 سپرد و آن را تا دسامبر همان سال به تعویق انداخت. نمونه اولیه کشف‌شده تفاوت‌های چشمگیری دارد؛ از جمله اینکه کریس ردفیلد موفق می‌شود هر سه هم‌رزم خود را نجات دهد و برخلاف نسخه نهایی، لوکاس بیکر زنده دستگیر می‌شود تا برای بازجویی به بازداشتگاه منتقل شود.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAILjGrfEqCP16ezHQs8GtOF4oGqHeUbAALbDmsbcsT8UiGu_OM9MJ0xAQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2956,
-      "cleanup_message_ids": [
-        3329,
-        3330
-      ],
-      "preview_message_ids": [
-        3329,
-        3330
-      ],
-      "scheduled_at": 1793051580,
-      "scheduled_approved": true
-    },
     "267988514": {
       "chat_id": 1677869966,
       "text": "🎥 اریک بائوزا، صداپیشه باگز بانی، در ۴۶ سالگی درگذشت\n🔻اریک بائوزا، صداپیشه ۴۶ ساله و برنده جایزه امی که صدای شخصیت‌هایی مانند باگز بانی و دافی داک در مجموعه Looney Tunes بود، روز یکشنبه در خانه خود درگذشت. طبق اعلام پزشکی قانونی لس‌آنجلس، علت مرگ او بیماری قلبی‌عروقی ناشی از فشار خون بالا بوده است. خانواده بائوزا خبر درگذشت ناگهانی این هنرمند را در حساب اینستاگرامی او منتشر کردند.\n🔻بائوزا با بیش از ۴۰۰ عنوان بازیگری از سال ۲۰۰۱، در آثاری چون Space Jam: A New Legacy و Coyote vs. Acme صداپیشگی کرد. او سه جایزه امی کودکان و خانواده را برای مجموعه‌های Teen Titans Go! ،Bugs Bunny Builders و Looney Tunes Cartoons دریافت کرد. او هنگام درگذشت در مرحله پیش‌تولید پروژه‌های Bye Bye Bunny: A Looney Tunes Musical و The Dragon Masters حضور داشت.\n🆔",
@@ -1345,28 +1323,6 @@
         3354
       ],
       "scheduled_at": 1793057160,
-      "scheduled_approved": true
-    },
-    "267988517": {
-      "chat_id": 1677869966,
-      "text": "🧩 گیم GTA Liberty City Stories امروز 21 ساله شد!\nراک‌استار کل Liberty City بازی GTA III رو به همراه یه کست جدید و یه داستان تازه تو یه UMD جا داد.\nبازی یه حالت مولتی‌پلیر کامل هم داشت که تا 6 نفر می‌تونستن روی PSP با هم بازی کنن.\n💬 شما هم سال 2005 با دوستاتون بازیش می‌کردید؟\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAILk2rfEspyNsTWVQ-tP7xbdnPOFiPZAAJTDmsb1rr4Uq3UImNlAp5XAQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2963,
-      "cleanup_message_ids": [
-        3323,
-        3324
-      ],
-      "preview_message_ids": [
-        3323,
-        3324
-      ],
-      "scheduled_at": 1793050140,
       "scheduled_approved": true
     },
     "267988539": {
@@ -3348,7 +3304,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793050030
+      "retry_after": 1793051929
     },
     {
       "chat_id": 1677869966,
@@ -3719,6 +3675,16 @@
       "chat_id": 1677869966,
       "message_id": 4070,
       "delete_at": 1793135828
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4071,
+      "delete_at": 1793137727
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4072,
+      "delete_at": 1793137989
     }
   ],
   "active_channel": null,
