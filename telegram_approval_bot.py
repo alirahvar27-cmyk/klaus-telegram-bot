@@ -494,10 +494,10 @@ def detect_channel(text, media_type):
 def normalize_channel_command(value):
     """Normalize a channel link/name so admin can select a channel in plain chat."""
     value = (value or "").strip().casefold().replace("ك", "ک").replace("ي", "ی").replace("ى", "ی")
-    value = re.sub(r"[\\u200c\\u200d\\ufeff]", "", value)
-    value = re.sub(r"^https?://(?:www\\.)?(?:t\\.me|telegram\\.me)/", "@", value, flags=re.IGNORECASE)
+    value = re.sub(r"[\u200c\u200d\ufeff]", "", value)
+    value = re.sub(r"^https?://(?:www\.)?(?:t\.me|telegram\.me)/", "@", value, flags=re.IGNORECASE)
     value = re.sub(r"^@", "", value)
-    return re.sub(r"[\\W_]+", "", value, flags=re.UNICODE)
+    return re.sub(r"[\W_]+", "", value, flags=re.UNICODE)
 
 
 def resolve_channel_command(text):
