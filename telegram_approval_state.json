@@ -1,5 +1,5 @@
 {
-  "offset": 267990420,
+  "offset": 267990421,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -1113,28 +1113,6 @@
         3371
       ],
       "scheduled_at": 1793059680,
-      "scheduled_approved": true
-    },
-    "267988505": {
-      "chat_id": 1677869966,
-      "text": "🎮 بازی GTA 6 در جریان ال‌کلاسیکوی بارسلونا و رئال مادرید تبلیغ شد\n🔻شرکت راکستار گیمز در جریان مسابقه حساس ال‌کلاسیکو میان تیم‌های بارسلونا و رئال مادرید در تاریخ ۲۵ اکتبر ۲۰۲۶ (۳ آبان ۱۴۰۵) اقدام به تبلیغ بازی موردانتظار GTA 6 کرد. این تابلوهای تبلیغاتی در ورزشگاه اسپاتیفای نیوکمپ و در چارچوب هفته دهم لالیگا به نمایش درآمدند تا این شرکت دامنه تبلیغات خود را فراتر از رسانه‌های تخصصی گسترش دهد. این بازی قرار است در تاریخ ۱۹ نوامبر ۲۰۲۶ (۲۸ آبان ۱۴۰۵) برای کنسول‌های پلی استیشن ۵ و ایکس باکس سری ایکس/اس عرضه شود.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAILh2rfEqAtTc3YDPM8sL27UgnWY_PyAALMDmsb6l78UmjNC4XVhjuFAQADAgADeQADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2951,
-      "cleanup_message_ids": [
-        3364,
-        3365
-      ],
-      "preview_message_ids": [
-        3364,
-        3365
-      ],
-      "scheduled_at": 1793058480,
       "scheduled_approved": true
     },
     "267988506": {
@@ -3151,29 +3129,6 @@
         3602,
         3603
       ]
-    },
-    "267989019": {
-      "chat_id": 1677869966,
-      "text": "درگیری اینترنتی به قتل ختم شد\nیک زن ۲۱ ساله از ماساچوست با زنی ۳۳ ساله به نام آلیسا در فضای مجازی درگیر شده بود. دلیل دقیق این اختلاف مشخص نیست، اما این دو زن یکدیگر را از نزدیک نمی‌شناختند و هرگز همدیگر را حضوری ندیده بودند.\nآن‌ها مدتی طولانی در فضای مجازی به یکدیگر توهین می‌کردند تا اینکه یک روز آلیسا هنگام عبور قربانی از خیابان، همراه با دوستش، او را غافلگیر کرد. آلیسا با چاقو به قلب او ضربه زد و از محل فرار کرد.\nقربانی به بیمارستان منتقل شد، اما جان باخت و یک فرزند خردسال از او به جا ماند. آلیسا نیز خیلی زود بازداشت شد و اخیراً به ۱۵ تا ۲۰ سال زندان محکوم شد.\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIP8Grfzwqv4pMBzCuJ_xh5TqHBS9_HAAKLEWsbFIaQUt8AAdTFUVnr7AEAAwIAA3kAAz0E"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4080,
-      "cleanup_message_ids": [
-        4476,
-        4477
-      ],
-      "scheduled_at": 1793058427,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4476,
-        4477
-      ],
-      "scheduled_approved": true
     },
     "267989020": {
       "chat_id": 1677869966,
@@ -6621,26 +6576,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989277": {
-      "chat_id": 1677869966,
-      "text": "قطر گفته ایران اگر کابل‌های اینترنت توو تنگه هرمز رو قطع کنه، خودش هم ضرر می‌کنه!\nگمونم خبر ندارن ما نصفِ سال اینترنت نداریم",
-      "entities": [],
-      "media": null,
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4733,
-      "cleanup_message_ids": [
-        4890,
-        4891
-      ],
-      "scheduled_at": 1793057860,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4890,
-        4891
-      ],
-      "scheduled_approved": true
-    },
     "267989278": {
       "chat_id": 1677869966,
       "text": "اینترنت ایران‌ رو میشه تو کشورهای دیگه به عنوان ابزار شکنجه ازش استفاده کرد",
@@ -7819,26 +7754,6 @@
       "preview_message_ids": [
         4984,
         4985
-      ],
-      "scheduled_approved": true
-    },
-    "267989380": {
-      "chat_id": 1677869966,
-      "text": "🔴 بسته‌های اینترنت از امروز صبح بین ۲۰_۱۰۰ درصد افزایش قیمت داشتن و هر گیگ اینترنت، به ۳۰ هزار تومن هم رسیده!\n🔴 | اخبار",
-      "entities": [],
-      "media": null,
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4995,
-      "cleanup_message_ids": [
-        5305,
-        5306
-      ],
-      "scheduled_at": 1793058267,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5305,
-        5306
       ],
       "scheduled_approved": true
     },
@@ -11249,29 +11164,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990033": {
-      "chat_id": 1677869966,
-      "text": "🌴استخر طبیعی در روستای ساحلی پرتغال🏖\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaD2rf3YdFMQABioPEyiJi6N99b9DSxAACLRoAAvtbcFAfSB_Mud5ojz0E"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6671,
-      "cleanup_message_ids": [
-        7032,
-        7033
-      ],
-      "scheduled_at": 1793058536,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7032,
-        7033
       ],
       "scheduled_approved": true
     },
@@ -15525,7 +15417,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793057779
+      "retry_after": 1793058803
     },
     {
       "chat_id": 1677869966,
@@ -15981,6 +15873,31 @@
       "chat_id": 1677869966,
       "message_id": 7565,
       "delete_at": 1793143739
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7634,
+      "delete_at": 1793144597
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7635,
+      "delete_at": 1793144679
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7636,
+      "delete_at": 1793144842
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7637,
+      "delete_at": 1793144883
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7638,
+      "delete_at": 1793144945
     }
   ],
   "active_channel": null,
