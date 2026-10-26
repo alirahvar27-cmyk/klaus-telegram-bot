@@ -1,5 +1,5 @@
 {
-  "offset": 267988853,
+  "offset": 267988920,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -2585,9 +2585,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3465,
       "cleanup_message_ids": [
-        3625
+        3812,
+        3813
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3812,
+        3813
+      ],
+      "scheduled_at": 1793032080,
+      "scheduled_approved": true
     },
     "267988747": {
       "chat_id": 1677869966,
@@ -2668,9 +2674,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3466,
       "cleanup_message_ids": [
-        3626
+        3728,
+        3729
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3728,
+        3729
+      ],
+      "scheduled_at": 1793017680,
+      "scheduled_approved": true
     },
     "267988748": {
       "chat_id": 1677869966,
@@ -4245,9 +4257,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3511,
       "cleanup_message_ids": [
-        3642
+        3818,
+        3819
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3818,
+        3819
+      ],
+      "scheduled_at": 1793033280,
+      "scheduled_approved": true
     },
     "267988766": {
       "chat_id": 1677869966,
@@ -4481,9 +4499,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3513,
       "cleanup_message_ids": [
-        3643
+        3716,
+        3717
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3716,
+        3717
+      ],
+      "scheduled_at": 1793014500,
+      "scheduled_approved": true
     },
     "267988768": {
       "chat_id": 1677869966,
@@ -4642,9 +4666,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3514,
       "cleanup_message_ids": [
-        3644
+        3806,
+        3807
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3806,
+        3807
+      ],
+      "scheduled_at": 1793031120,
+      "scheduled_approved": true
     },
     "267988769": {
       "chat_id": 1677869966,
@@ -4803,9 +4833,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3515,
       "cleanup_message_ids": [
-        3645
+        3770,
+        3771
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3770,
+        3771
+      ],
+      "scheduled_at": 1793024040,
+      "scheduled_approved": true
     },
     "267988770": {
       "chat_id": 1677869966,
@@ -4964,9 +5000,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3516,
       "cleanup_message_ids": [
-        3646
+        3794,
+        3795
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3794,
+        3795
+      ],
+      "scheduled_at": 1793028840,
+      "scheduled_approved": true
     },
     "267988771": {
       "chat_id": 1677869966,
@@ -5290,9 +5332,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3518,
       "cleanup_message_ids": [
-        3647
+        3764,
+        3765
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3764,
+        3765
+      ],
+      "scheduled_at": 1793024580,
+      "scheduled_approved": true
     },
     "267988773": {
       "chat_id": 1677869966,
@@ -5451,9 +5499,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3519,
       "cleanup_message_ids": [
-        3648
+        3758,
+        3759
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3758,
+        3759
+      ],
+      "scheduled_at": 1793022720,
+      "scheduled_approved": true
     },
     "267988774": {
       "chat_id": 1677869966,
@@ -5612,9 +5666,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3520,
       "cleanup_message_ids": [
-        3649
+        3734,
+        3735
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3734,
+        3735
+      ],
+      "scheduled_at": 1793018400,
+      "scheduled_approved": true
     },
     "267988775": {
       "chat_id": 1677869966,
@@ -5773,9 +5833,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3521,
       "cleanup_message_ids": [
-        3650
+        3746,
+        3747
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3746,
+        3747
+      ],
+      "scheduled_at": 1793021040,
+      "scheduled_approved": true
     },
     "267988776": {
       "chat_id": 1677869966,
@@ -5934,9 +6000,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3522,
       "cleanup_message_ids": [
-        3651
+        3698,
+        3699
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3698,
+        3699
+      ],
+      "scheduled_at": 1793012100,
+      "scheduled_approved": true
     },
     "267988777": {
       "chat_id": 1677869966,
@@ -6095,9 +6167,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3523,
       "cleanup_message_ids": [
-        3652
+        3740,
+        3741
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3740,
+        3741
+      ],
+      "scheduled_at": 1793019780,
+      "scheduled_approved": true
     },
     "267988778": {
       "chat_id": 1677869966,
@@ -6256,9 +6334,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3524,
       "cleanup_message_ids": [
-        3653
+        3776,
+        3777
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3776,
+        3777
+      ],
+      "scheduled_at": 1793025900,
+      "scheduled_approved": true
     },
     "267988779": {
       "chat_id": 1677869966,
@@ -6417,9 +6501,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3525,
       "cleanup_message_ids": [
-        3654
+        3782,
+        3783
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3782,
+        3783
+      ],
+      "scheduled_at": 1793027220,
+      "scheduled_approved": true
     },
     "267988780": {
       "chat_id": 1677869966,
@@ -6596,9 +6686,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3527,
       "cleanup_message_ids": [
-        3656
+        3752,
+        3753
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3752,
+        3753
+      ],
+      "scheduled_at": 1793021580,
+      "scheduled_approved": true
     },
     "267988782": {
       "chat_id": 1677869966,
@@ -6757,9 +6853,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3528,
       "cleanup_message_ids": [
-        3657
+        3704,
+        3705
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3704,
+        3705
+      ],
+      "scheduled_at": 1793013540,
+      "scheduled_approved": true
     },
     "267988783": {
       "chat_id": 1677869966,
@@ -6941,9 +7043,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3529,
       "cleanup_message_ids": [
-        3658
+        3788,
+        3789
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3788,
+        3789
+      ],
+      "scheduled_at": 1793028000,
+      "scheduled_approved": true
     },
     "267988784": {
       "chat_id": 1677869966,
@@ -7107,9 +7215,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3530,
       "cleanup_message_ids": [
-        3659
+        3692,
+        3693
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3692,
+        3693
+      ],
+      "scheduled_at": 1793010960,
+      "scheduled_approved": true
     },
     "267988785": {
       "chat_id": 1677869966,
@@ -7280,9 +7394,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3531,
       "cleanup_message_ids": [
-        3660
+        3710,
+        3711
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3710,
+        3711
+      ],
+      "scheduled_at": 1793014080,
+      "scheduled_approved": true
     },
     "267988786": {
       "chat_id": 1677869966,
@@ -7381,9 +7501,15 @@
       "source_chat_id": 1677869966,
       "source_message_id": 3585,
       "cleanup_message_ids": [
-        3661
+        3722,
+        3723
       ],
-      "preview_message_ids": []
+      "preview_message_ids": [
+        3722,
+        3723
+      ],
+      "scheduled_at": 1793015820,
+      "scheduled_approved": true
     },
     "267988787": {
       "chat_id": 1677869966,
@@ -7660,35 +7786,21 @@
       ],
       "channel": "@NetPlusFa",
       "cleanup_message_ids": [
-        3666
+        3800,
+        3801
       ],
-      "preview_message_ids": [],
-      "edited_manually": true
+      "preview_message_ids": [
+        3800,
+        3801
+      ],
+      "edited_manually": true,
+      "scheduled_at": 1793030040,
+      "scheduled_approved": true
     }
   },
   "edit_mode": {},
   "schedule_mode": {},
   "status_cleanup": [
-    {
-      "chat_id": 1677869966,
-      "message_id": 2792,
-      "delete_at": 1793006192
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2796,
-      "delete_at": 1793006205
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2806,
-      "delete_at": 1793006244
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2807,
-      "delete_at": 1793006250
-    },
     {
       "chat_id": 1677869966,
       "message_id": 2862,
