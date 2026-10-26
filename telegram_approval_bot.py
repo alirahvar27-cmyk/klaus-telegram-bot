@@ -505,12 +505,17 @@ def resolve_channel_command(text):
     normalized = normalize_channel_command(text)
     if normalized == normalize_channel_command("پایان"):
         return "end", None
+    aliases = {
+        "@LevelUpFa": {"لول آپ", "لول اپ", "لولوپ", "level up"},
+        "@NetPlusFa": {"نت پلاس", "نت‌پلاس", "net plus"},
+    }
     for channel, (name, _) in CHANNELS.items():
         candidates = {
             normalize_channel_command(channel),
             normalize_channel_command(name),
             normalize_channel_command("https://t.me/" + channel.lstrip("@")),
         }
+        candidates.update(normalize_channel_command(alias) for alias in aliases.get(channel, set()))
         if normalized and normalized in candidates:
             return "channel", channel
     return None, None
