@@ -1,5 +1,5 @@
 {
-  "offset": 267989787,
+  "offset": 267990223,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -707,34 +707,6 @@
         1475
       ]
     },
-    "267987816": {
-      "chat_id": 1677869966,
-      "text": "🧩🧩 اگه Red Dead Redemption 2 انقدر پرفکت بود پس تصور کنید GTA VI قراره چطوری باشه!\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFbGrcgOAgeAPC6mscRSQGlMlT3bBHAAJRHAACXs_ZUiFMilthZQ8zPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1388,
-      "cleanup_message_ids": [
-        1388,
-        1518,
-        1519,
-        1981,
-        2027,
-        2029,
-        2032,
-        2033
-      ],
-      "preview_message_ids": [
-        2032,
-        2033
-      ],
-      "scheduled_at": 1793055600,
-      "scheduled_approved": true
-    },
     "267987817": {
       "chat_id": 1677869966,
       "text": "🧩 کره شمالی در واقعیت و در Call of Duty Modern Warfare 4\n⚽️‌",
@@ -1097,28 +1069,6 @@
         3463
       ],
       "scheduled_at": 1793091600,
-      "scheduled_approved": true
-    },
-    "267988502": {
-      "chat_id": 1677869966,
-      "text": "🎮 سخت‌ترین خداحافظی تاریخ گیم... \"😢\"\nاز بین تمام شخصیت‌های Red Dead Redemption 2، پیوند آرتور و سِیدی واقعی‌ترین حس رو داشت. آرتور سیدی رو از خاکستر نجات داد و سیدی تا پایان به او وفادار موند.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAILhGrfEqBPMC9H_3X9sqS1k8nZa86HAAL3D2sbcZPxUr6FSQlkjcmcAQADAgADeQADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2948,
-      "cleanup_message_ids": [
-        3347,
-        3348
-      ],
-      "preview_message_ids": [
-        3347,
-        3348
-      ],
-      "scheduled_at": 1793055900,
       "scheduled_approved": true
     },
     "267988503": {
@@ -3223,40 +3173,6 @@
         3602,
         3603
       ]
-    },
-    "267989017": {
-      "chat_id": 1677869966,
-      "text": "#پست_ویژه #پرونده_جنایی\nپرونده ی Smartschoolboy9 درباره ی مرد بالغیه که خودش رو توی شبکه های اجتماعی جای یه دانش آموز جا میزنه این آدم از دهه ۹۰ فعاله و کلی شایعه درباره ی رفتارای عجیب و ترسناکش وجود داره مثلاً اینکه یونیفرم مدرسه میپوشه و با بچه ها توی اینترنت ارتباط میگیره\nماجرا وقتی حسابی سر و صدا کرد که یوتیوبر نیک کراولی به مستند درباره ش ساخت و نشون داد که این فرد توی پلتفرمهای مختلف به عنوان یه دانش آموز فعالیت میکنه و محتواهای عجیب و بعضاً خطرناک منتشر\nمیکنه توی مستند حدس زده شده که اسم واقعیش دیوید آلتر یا دیوید لندن باشه.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 9,
-          "type": "hashtag"
-        },
-        {
-          "offset": 10,
-          "length": 13,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIP7mrfzwonTJnQuxZZulUL-uzCWLQqAAISJwACFIaQUt6AcdM-zE5IPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4078,
-      "cleanup_message_ids": [
-        4472,
-        4473
-      ],
-      "scheduled_at": 1793056027,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4472,
-        4473
-      ],
-      "scheduled_approved": true
     },
     "267989018": {
       "chat_id": 1677869966,
@@ -6766,32 +6682,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989275": {
-      "chat_id": 1677869966,
-      "text": "مدل Kimi K۳.۱ Pro معرفی شد؛ قدرتمندترین هوش مصنوعی چین\n🔹مدل ۲.۸ تریلیون پارامتری شرکت Moonshot با تکیه بر معماری نوین خود، قادر است متن‌های طولانی را سریع‌تر پردازش کند و در برخی بنچمارک‌ها موفق به پشت سر گذاشتن رقبای سرشناسی مانند GPT-۶ Astra و Claude Fable ۵.۱ شده است.\n🔹شرکت چینی پیش از انتشار نسخه متن‌باز، بخش بزرگی از داده‌های آموزش هک و نفوذ سایبری را برای ایمنی بیشتر حذف کرده است. با وجود این اصلاحات، بازدهی سیستم در آزمون‌های برنامه‌نویسی و حل مسائل فنی در سطحی بسیار نزدیک به برترین مدل‌های غربی از جمله Fable ۵.۵ قرار دارد.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 54,
-          "type": "bold"
-        }
-      ],
-      "media": null,
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4731,
-      "cleanup_message_ids": [
-        4886,
-        4887
-      ],
-      "scheduled_at": 1793055460,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4886,
-        4887
-      ],
-      "scheduled_approved": true
-    },
     "267989276": {
       "chat_id": 1677869966,
       "text": "همراه اول تا اخر شهریور امسال برای فروش اینترنت پرو ۱۷۰۰ میلیارد ناقابل درآمد داشته....",
@@ -8010,26 +7900,6 @@
       "preview_message_ids": [
         4984,
         4985
-      ],
-      "scheduled_approved": true
-    },
-    "267989378": {
-      "chat_id": 1677869966,
-      "text": "🔴 کانال ۱۵ اسرائیل : تمام خانواده های دیپلمات های آمریکایی دارن کشورهای خاورمیانه رو به جز عمان و اسرائیل ترک میکنن.\n🔴 رسانه های وابسته به سپاه : تو ساعات گذشته ج.ا به تمام کشورهای منطقه یک هشدار بی‌سابقه در مورد وقوع جنگ داده.\n🔴 | اخبار",
-      "entities": [],
-      "media": null,
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4993,
-      "cleanup_message_ids": [
-        5301,
-        5302
-      ],
-      "scheduled_at": 1793055867,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5301,
-        5302
       ],
       "scheduled_approved": true
     },
@@ -11482,6 +11352,2715 @@
         5498
       ],
       "scheduled_approved": true
+    },
+    "267990032": {
+      "chat_id": 1677869966,
+      "text": "🌴دوحه قطر از زاویه ای تماشایی☂️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaDmrf3YfHezBFbMNlyRfXODPaPyuvAAIsGgAC-1twUP1Fq-Ar8GRwPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6670,
+      "cleanup_message_ids": [
+        7030,
+        7031
+      ],
+      "scheduled_at": 1793057336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7030,
+        7031
+      ],
+      "scheduled_approved": true
+    },
+    "267990033": {
+      "chat_id": 1677869966,
+      "text": "🌴استخر طبیعی در روستای ساحلی پرتغال🏖\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaD2rf3YdFMQABioPEyiJi6N99b9DSxAACLRoAAvtbcFAfSB_Mud5ojz0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6671,
+      "cleanup_message_ids": [
+        7032,
+        7033
+      ],
+      "scheduled_at": 1793058536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7032,
+        7033
+      ],
+      "scheduled_approved": true
+    },
+    "267990034": {
+      "chat_id": 1677869966,
+      "text": "🌴یکم از زیبایی‌های ترکیه با هم ببینیم🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaEGrf3YcljxbCjli3Y2UopXYacvJLAAJbGAAC-ihgUGqZ06Y3tRvIPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6672,
+      "cleanup_message_ids": [
+        7034,
+        7035
+      ],
+      "scheduled_at": 1793059736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7034,
+        7035
+      ],
+      "scheduled_approved": true
+    },
+    "267990035": {
+      "chat_id": 1677869966,
+      "text": "🌴ده روز هیجان انگیز در چین🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaEWrf3YePgjWxbWtKzgsQrcfCZaTtAAIvGgAC-1twUMGQrtji79IKPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6673,
+      "cleanup_message_ids": [
+        7036,
+        7037
+      ],
+      "scheduled_at": 1793060936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7036,
+        7037
+      ],
+      "scheduled_approved": true
+    },
+    "267990036": {
+      "chat_id": 1677869966,
+      "text": "🌴فکر می‌کردید بلژیک انقدر جذاب و هنری باشه ؟؟\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaEmrf3YeqTzV_q0GmBuGH0zd-PoWnAAIhGwACinN4UbXTbOt1aOdNPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6674,
+      "cleanup_message_ids": [
+        7038,
+        7039
+      ],
+      "scheduled_at": 1793062136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7038,
+        7039
+      ],
+      "scheduled_approved": true
+    },
+    "267990037": {
+      "chat_id": 1677869966,
+      "text": "🌴شهر زیبای ماربلا اسپانیا☀️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaE2rf3Ye8ne1ugzBa4c217P6XqAfBAALvHAACj-qBUZWfiB40fM8IPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6675,
+      "cleanup_message_ids": [
+        7040,
+        7041
+      ],
+      "scheduled_at": 1793063336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7040,
+        7041
+      ],
+      "scheduled_approved": true
+    },
+    "267990038": {
+      "chat_id": 1677869966,
+      "text": "🌴لاس وگاس آمریکا و زیباییهاش🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaFGrf3YdYEV0ywvxp11DYpPoxnjrvAAL3HAACinOAUU2zAAGalHm3CT0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6676,
+      "cleanup_message_ids": [
+        7042,
+        7043
+      ],
+      "scheduled_at": 1793064536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7042,
+        7043
+      ],
+      "scheduled_approved": true
+    },
+    "267990039": {
+      "chat_id": 1677869966,
+      "text": "🌴نپال شگفت انگیز🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaFWrf3YdEndXC9AEHDiGcwWJw7H96AAJ3HAACinOAUXW5vye-us1UPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6677,
+      "cleanup_message_ids": [
+        7045,
+        7046
+      ],
+      "scheduled_at": 1793065736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7045,
+        7046
+      ],
+      "scheduled_approved": true
+    },
+    "267990040": {
+      "chat_id": 1677869966,
+      "text": "🌴زامبیا و زیبایی‌های خارق العاده اش☺️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaFmrf3Yf08Mr5YYJJcKIyfBuwQV2FAALuGgACj-qJUcNutTx9psbUPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6678,
+      "cleanup_message_ids": [
+        7047,
+        7048
+      ],
+      "scheduled_at": 1793066936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7047,
+        7048
+      ],
+      "scheduled_approved": true
+    },
+    "267990041": {
+      "chat_id": 1677869966,
+      "text": "🌴طبیعت فوق العاده و شگفت انگیز پرتغال🐦\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaF2rf3YdKkkr67whvQfKdQsr7K6UyAAJTGgACj-qRUdDdpFwKLx9tPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6679,
+      "cleanup_message_ids": [
+        7049,
+        7050
+      ],
+      "scheduled_at": 1793068136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7049,
+        7050
+      ],
+      "scheduled_approved": true
+    },
+    "267990042": {
+      "chat_id": 1677869966,
+      "text": "🌴دیزنی لند فرانسه چقدر جذابه🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaGGrf3Yd8clqFOv55wgog2QWpGOyZAAJmFwACvn1gUivabj4zBljxPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6680,
+      "cleanup_message_ids": [
+        7051,
+        7052
+      ],
+      "scheduled_at": 1793069336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7051,
+        7052
+      ],
+      "scheduled_approved": true
+    },
+    "267990043": {
+      "chat_id": 1677869966,
+      "text": "🌴بارسلون اسپانیا با معماری منحصر به فردش💛\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaGWrf3YeOBS3Q7tZYmuUi8aivF3ZXAAJAGwAC7kqhUVn-yZOyhNDLPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6681,
+      "cleanup_message_ids": [
+        7053,
+        7054
+      ],
+      "scheduled_at": 1793070536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7053,
+        7054
+      ],
+      "scheduled_approved": true
+    },
+    "267990044": {
+      "chat_id": 1677869966,
+      "text": "🌴کوه تاو تایلند انگار خود بهشت هست🌺\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaGmrf3YekZVwZ6_OxHC26GBeViy11AAI-GgACDvLAUIqAtRvbmfAPPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6682,
+      "cleanup_message_ids": [
+        7055,
+        7056
+      ],
+      "scheduled_at": 1793071736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7055,
+        7056
+      ],
+      "scheduled_approved": true
+    },
+    "267990045": {
+      "chat_id": 1677869966,
+      "text": "🌴آبشار ناچی یکی از بلند ترین و مقدس ترین آبشار های ژاپن🌺\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaG2rf3YcuAAFJH0cvDy_A46RiSCQoJAACcx4AAhDD2VFGcOPZEXSzSD0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6683,
+      "cleanup_message_ids": [
+        7057,
+        7058
+      ],
+      "scheduled_at": 1793072936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7057,
+        7058
+      ],
+      "scheduled_approved": true
+    },
+    "267990046": {
+      "chat_id": 1677869966,
+      "text": "🌴جاده سرسبز و زیبا در هاوایی🐦\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaHGrf3YfYme4E7pkYzpPoMzWYpDelAALQGQACBAPRUfkAAQ77AAGlznY9BA"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6684,
+      "cleanup_message_ids": [
+        7059,
+        7060
+      ],
+      "scheduled_at": 1793074136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7059,
+        7060
+      ],
+      "scheduled_approved": true
+    },
+    "267990047": {
+      "chat_id": 1677869966,
+      "text": "🌴پارک تفریحی نینتنتو ، اوساکا ژاپن🐰\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaHWrf3YdputhqVq0z8Bej_vZ04P3eAAK2HwACEMPZUXWEdWAz2i7pPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6685,
+      "cleanup_message_ids": [
+        7061,
+        7062
+      ],
+      "scheduled_at": 1793075336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7061,
+        7062
+      ],
+      "scheduled_approved": true
+    },
+    "267990048": {
+      "chat_id": 1677869966,
+      "text": "🌴10 مکان افسانه ای در انگلستان🌄\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaHmrf3YcULF7BHTS2a_-Pjqez2OUNAAMtAAJlO3lSEQNNKVIyhtA9BA"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6686,
+      "cleanup_message_ids": [
+        7063,
+        7064
+      ],
+      "scheduled_at": 1793076536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7063,
+        7064
+      ],
+      "scheduled_approved": true
+    },
+    "267990049": {
+      "chat_id": 1677869966,
+      "text": "🌴کافه بسیار زیبا در بانکوک انگار تکه ای از بهشت هست🍵\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaH2rf3Ydpa-A8oiRf0-50G-pkWEkmAAIJLQACZTt5UhrvpV5CRdvCPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6687,
+      "cleanup_message_ids": [
+        7065,
+        7066
+      ],
+      "scheduled_at": 1793077736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7065,
+        7066
+      ],
+      "scheduled_approved": true
+    },
+    "267990050": {
+      "chat_id": 1677869966,
+      "text": "🌴جزیره ی زیبای هنگام قشم☀️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaIGrf3Yc5hE3Fd3_tw59bl4MwvO90AALgGAACwbXxUcKNNKcAAfruOT0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6688,
+      "cleanup_message_ids": [
+        7067,
+        7068
+      ],
+      "scheduled_at": 1793078936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7067,
+        7068
+      ],
+      "scheduled_approved": true
+    },
+    "267990051": {
+      "chat_id": 1677869966,
+      "text": "🌴شهر بن دراشنبرگ آلمان🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaIWrf3YcMWrgDUlUy7O12RuXwrCydAALgGQACHxkRUhteQ9SWwklHPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6689,
+      "cleanup_message_ids": [
+        7069,
+        7070
+      ],
+      "scheduled_at": 1793080136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7069,
+        7070
+      ],
+      "scheduled_approved": true
+    },
+    "267990052": {
+      "chat_id": 1677869966,
+      "text": "🌴وقتی آدما به معماری و طراحی خدا احترام میزارن درختی باستانی نماد شهری در جنوب ایتالیا🪸\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaImrf3Yeh9ugjxKpGYbbbQZQGKfiIAAIxGwACCIL4UVgAARi52rU6pz0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6690,
+      "cleanup_message_ids": [
+        7071,
+        7072
+      ],
+      "scheduled_at": 1793081336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7071,
+        7072
+      ],
+      "scheduled_approved": true
+    },
+    "267990053": {
+      "chat_id": 1677869966,
+      "text": "🌴زیبایی‌های شهر مالاگا اسپانیا🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaI2rf3YeFycoOOXyqez1MW0bVlGaXAAKFHQACjJCRUlx2GK5UhBvXPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6691,
+      "cleanup_message_ids": [
+        7073,
+        7074
+      ],
+      "scheduled_at": 1793082536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7073,
+        7074
+      ],
+      "scheduled_approved": true
+    },
+    "267990054": {
+      "chat_id": 1677869966,
+      "text": "🌴مصر شگفت انگیز🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaJGrf3Ydn4KpcSDnfjFX-UO2RIsoZAAKGGgACHxkBUnjDfWC44BvbPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6692,
+      "cleanup_message_ids": [
+        7075,
+        7076
+      ],
+      "scheduled_at": 1793083736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7075,
+        7076
+      ],
+      "scheduled_approved": true
+    },
+    "267990055": {
+      "chat_id": 1677869966,
+      "text": "🌴قطر هم زیبایی‌های خاص خودش و داره ها با هم بریم ببینیم🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaJWrf3YcLTKLDNxDyAAGSwWvO0ZeAZwACkx0AAoyQkVIcIFrqKq8WED0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6693,
+      "cleanup_message_ids": [
+        7077,
+        7078
+      ],
+      "scheduled_at": 1793084936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7077,
+        7078
+      ],
+      "scheduled_approved": true
+    },
+    "267990056": {
+      "chat_id": 1677869966,
+      "text": "🌴گرجستان سرزمین هزار رنگ در قلب قفقاز🌸\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaJmrf3YcKFzmLZdB0klLQ_o6p9wFTAAL-FwACwbXxUQf3wuh0XJGmPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6694,
+      "cleanup_message_ids": [
+        7079,
+        7080
+      ],
+      "scheduled_at": 1793086136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7079,
+        7080
+      ],
+      "scheduled_approved": true
+    },
+    "267990057": {
+      "chat_id": 1677869966,
+      "text": "🌴وقتی یه اتاق لبه ی آبشار نیاگارا تو کانادا گرفتی عجب ویو شگفت انگیزی داره😊\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaJ2rf3YdHz6MBDWKI__5XuCUI2kG-AAI0GQACTcMYUSfXooCZLvjhPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6695,
+      "cleanup_message_ids": [
+        7081,
+        7082
+      ],
+      "scheduled_at": 1793087336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7081,
+        7082
+      ],
+      "scheduled_approved": true
+    },
+    "267990058": {
+      "chat_id": 1677869966,
+      "text": "🌴۱۰ مکان جذاب و دیدنی در چین🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaKGrf3YfD6E47CJhmvRSZ2t0If2sKAAIKFwACBOKpUtoy_gABeuzaGT0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6696,
+      "cleanup_message_ids": [
+        7083,
+        7084
+      ],
+      "scheduled_at": 1793088536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7083,
+        7084
+      ],
+      "scheduled_approved": true
+    },
+    "267990059": {
+      "chat_id": 1677869966,
+      "text": "🌴زیبایی های بالی فوق العاده هستش🌟\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaKWrf3YfxKiN_q5PhETcf_hr_Ck9OAAI9GQAC0o9JUkiPf75yg1uKPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6697,
+      "cleanup_message_ids": [
+        7085,
+        7086
+      ],
+      "scheduled_at": 1793089736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7085,
+        7086
+      ],
+      "scheduled_approved": true
+    },
+    "267990060": {
+      "chat_id": 1677869966,
+      "text": "🌴غار بلو گروتو در جزیره ی کاپری یکی از شگفتی های طبیعی ایتالیا 🌟\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaKmrf3Ydqf-oWr3ZMpQJ44snqlCEyAAJIGwAC0o9BUoWiK6YjimSEPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6698,
+      "cleanup_message_ids": [
+        7087,
+        7088
+      ],
+      "scheduled_at": 1793090936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7087,
+        7088
+      ],
+      "scheduled_approved": true
+    },
+    "267990061": {
+      "chat_id": 1677869966,
+      "text": "🌴بهشتی به اسم هلند🌸\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaK2rf3YcMWnwPcUtJ-HHi75SmgzOLAAIpHAAC0-B4Uub5yXuJlxvXPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6699,
+      "cleanup_message_ids": [
+        7089,
+        7090
+      ],
+      "scheduled_at": 1793092136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7089,
+        7090
+      ],
+      "scheduled_approved": true
+    },
+    "267990062": {
+      "chat_id": 1677869966,
+      "text": "🌴زیبایی های دیدنی ترکیه 🌸\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaLGrf3Yf1XhA8yhG7Z0D47GEb4Fg2AAIpHgACBLowUaSVHvS67ezDPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6700,
+      "cleanup_message_ids": [
+        7091,
+        7092
+      ],
+      "scheduled_at": 1793093336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7091,
+        7092
+      ],
+      "scheduled_approved": true
+    },
+    "267990063": {
+      "chat_id": 1677869966,
+      "text": "🌴۵ مکان ساحلی قشنگ در ایتالیا🏖\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaLWrf3YdxEjQt4XerVwABK0kk9czZuwACkx0AAgS6MFG066u5SlYhyz0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6701,
+      "cleanup_message_ids": [
+        7093,
+        7094
+      ],
+      "scheduled_at": 1793094536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7093,
+        7094
+      ],
+      "scheduled_approved": true
+    },
+    "267990064": {
+      "chat_id": 1677869966,
+      "text": "🌴چند مکان بسیار زیبا در اسپانیا 🥂🍵\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaLmrf3Yck81DDvMMYT9xA0BGGRmA_AAJdGgACVzCRUjWsVtzREzPLPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6702,
+      "cleanup_message_ids": [
+        7095,
+        7096
+      ],
+      "scheduled_at": 1793095736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7095,
+        7096
+      ],
+      "scheduled_approved": true
+    },
+    "267990065": {
+      "chat_id": 1677869966,
+      "text": "🌴شنای خرس قطبی یا\nPolar Bear Swim\nیکی از سنت‌های قدیمی کاناداست که برای اولین بار در سال 1920 توسط گروهی به رهبری پیتر پان در ونکوور آغاز شد و کم کم این ایده در سراسر کانادا هم محبوب شد و حالا در شهرهای مختلف این کشور و همینطور سایر کشورهای سردسیر هم برگزار میشه و به یک نماد فرهنگی در کانادا تبدیل شده که نشون دهنده شجاعت، روحیه ماجراجویی، و امید برای سال جدیده.🏊🏻\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaL2rf3YfON12cTHxTZg-dWKlh-TbVAAIHIgAClMbRUgJt1rkkVcuhPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6703,
+      "cleanup_message_ids": [
+        7097,
+        7098
+      ],
+      "scheduled_at": 1793096936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7097,
+        7098
+      ],
+      "scheduled_approved": true
+    },
+    "267990066": {
+      "chat_id": 1677869966,
+      "text": "🌴میخوای ارمنستان سفر کنی بهتره این نکات و بدونی زود پولت تموم نشه💳\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaMGrf3Yf14j2ITO1IvaXmUEMC8A-jAAIrHgACBLowUXHqj5qSt_dJPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6704,
+      "cleanup_message_ids": [
+        7099,
+        7100
+      ],
+      "scheduled_at": 1793098136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7099,
+        7100
+      ],
+      "scheduled_approved": true
+    },
+    "267990067": {
+      "chat_id": 1677869966,
+      "text": "🌴چند محله پر از آرامش در آمریکا ایالت نیوجرسی🐦\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaMWrf3Ye57Y3GZiHnyKCdPfHHfPoYAAIKHgACI4pwUWPpLQwnWylNPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6705,
+      "cleanup_message_ids": [
+        7101,
+        7102
+      ],
+      "scheduled_at": 1793099336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7101,
+        7102
+      ],
+      "scheduled_approved": true
+    },
+    "267990068": {
+      "chat_id": 1677869966,
+      "text": "🌴اتوبوس های هلندی روتردام که تبدیل به قایق میشن⛵️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaMmrf3YcJ3SvWfGVrfuywvaHBalCJAALeHAACobXoUrpq5jCImBDyPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6706,
+      "cleanup_message_ids": [
+        7103,
+        7104
+      ],
+      "scheduled_at": 1793100536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7103,
+        7104
+      ],
+      "scheduled_approved": true
+    },
+    "267990069": {
+      "chat_id": 1677869966,
+      "text": "🌴مکان های بسیار زیبایی که قبل از ترک این دنیا حتما باید ببینی🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaM2rf3Ycyr6eVCDD69hzUzJIEh3XtAALfHAACobXoUiPNp6egJ8QzPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6707,
+      "cleanup_message_ids": [
+        7105,
+        7106
+      ],
+      "scheduled_at": 1793101736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7105,
+        7106
+      ],
+      "scheduled_approved": true
+    },
+    "267990070": {
+      "chat_id": 1677869966,
+      "text": "🌴طلوع آفتاب نیویورک عین یک نقاشی زنده هست🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaNGrf3YfrJGmFoO110MnHYkgg1RzPAALcHAACobXoUnpgp2IeMzQvPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6708,
+      "cleanup_message_ids": [
+        7107,
+        7108
+      ],
+      "scheduled_at": 1793102936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7107,
+        7108
+      ],
+      "scheduled_approved": true
+    },
+    "267990071": {
+      "chat_id": 1677869966,
+      "text": "🌴شهر زیبای خرم آباد🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaNWrf3YceFuqLEwMTU8LQq1XK0IXrAAJGHQACMtQgUx_NIlcmxyMhPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6709,
+      "cleanup_message_ids": [
+        7109,
+        7110
+      ],
+      "scheduled_at": 1793104136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7109,
+        7110
+      ],
+      "scheduled_approved": true
+    },
+    "267990072": {
+      "chat_id": 1677869966,
+      "text": "🌴مناظر جذاب اتریش🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaNmrf3YdSmOYrDXUgOkbsVbjyweOjAAIPHAACm6KQUWeQnydzx8jTPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6710,
+      "cleanup_message_ids": [
+        7111,
+        7112
+      ],
+      "scheduled_at": 1793105336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7111,
+        7112
+      ],
+      "scheduled_approved": true
+    },
+    "267990073": {
+      "chat_id": 1677869966,
+      "text": "🌴تفریحات اختاپارک یک روز در سن پترزبورگ☺️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaN2rf3YdGEoa8DIKzGeMbY4hKseJvAALPHAACmAEZUjw08RrvaL0hPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6711,
+      "cleanup_message_ids": [
+        7113,
+        7114
+      ],
+      "scheduled_at": 1793106536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7113,
+        7114
+      ],
+      "scheduled_approved": true
+    },
+    "267990074": {
+      "chat_id": 1677869966,
+      "text": "🌴میدونستی بزرگترین نخلستان تو ایران خودمونه\nنخلستان آبپخش در بوشهر🌴\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaOGrf3YeBGTcZyjm1xjj12IanyK7_AAKEHQACpfb4UjnQUM3S_TntPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6712,
+      "cleanup_message_ids": [
+        7115,
+        7116
+      ],
+      "scheduled_at": 1793107736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7115,
+        7116
+      ],
+      "scheduled_approved": true
+    },
+    "267990075": {
+      "chat_id": 1677869966,
+      "text": "🌴برزیل و زیبایی‌های خارق العاده اش🏖\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaOWrf3YftooTvllF_8aNTE05jAAFoVQACgR0AAqX2-FKeL7aEwUV8VD0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6713,
+      "cleanup_message_ids": [
+        7117,
+        7118
+      ],
+      "scheduled_at": 1793108936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7117,
+        7118
+      ],
+      "scheduled_approved": true
+    },
+    "267990076": {
+      "chat_id": 1677869966,
+      "text": "🌴یکم از میامی آمریکا با هم ببینیم☀️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaOmrf3YeHN2AEAUEJvtsrndZv2LACAAKCHQACpfb4Ut79DNKVA7aGPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6714,
+      "cleanup_message_ids": [
+        7119,
+        7120
+      ],
+      "scheduled_at": 1793110136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7119,
+        7120
+      ],
+      "scheduled_approved": true
+    },
+    "267990077": {
+      "chat_id": 1677869966,
+      "text": "🌴پل معلق ویتنام🌟\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaO2rf3Yds8LDalZjEWW5GAeKaD-aKAAInGQACnYyhUo3XqsE3dJn-PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6715,
+      "cleanup_message_ids": [
+        7121,
+        7122
+      ],
+      "scheduled_at": 1793111336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7121,
+        7122
+      ],
+      "scheduled_approved": true
+    },
+    "267990078": {
+      "chat_id": 1677869966,
+      "text": "🌴مناطقی شگفت انگیز در آلمان🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaPGrf3YcHLAlOQL-hBsj6bP7Nn7mhAAL4IAACNFgxUoIp5F6FepoCPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6716,
+      "cleanup_message_ids": [
+        7123,
+        7124
+      ],
+      "scheduled_at": 1793112536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7123,
+        7124
+      ],
+      "scheduled_approved": true
+    },
+    "267990079": {
+      "chat_id": 1677869966,
+      "text": "🌴زیبایی های دیدنی ترکیه 🌸\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaLGrf3Yf1XhA8yhG7Z0D47GEb4Fg2AAIpHgACBLowUaSVHvS67ezDPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6717,
+      "cleanup_message_ids": [
+        7125,
+        7126
+      ],
+      "scheduled_at": 1793113736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7125,
+        7126
+      ],
+      "scheduled_approved": true
+    },
+    "267990080": {
+      "chat_id": 1677869966,
+      "text": "🌴اسپانیا دلنشین و زیبایی‌های بی نظیرش🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaPmrf3YfQRAfAWrqDz_Pi7JPuhjPVAAILHgACI4pwUZYEdvbpB4GQPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6718,
+      "cleanup_message_ids": [
+        7128,
+        7129
+      ],
+      "scheduled_at": 1793114936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7128,
+        7129
+      ],
+      "scheduled_approved": true
+    },
+    "267990081": {
+      "chat_id": 1677869966,
+      "text": "🌴۱۲ مکان زیبا که حتما باید ببینی🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaP2rf3YeQOo-9lTq46-AJzfjUaTTiAAKpGQAC0o9RUiNScwABg6CBaj0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6719,
+      "cleanup_message_ids": [
+        7130,
+        7131
+      ],
+      "scheduled_at": 1793116136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7130,
+        7131
+      ],
+      "scheduled_approved": true
+    },
+    "267990082": {
+      "chat_id": 1677869966,
+      "text": "🌴ووهان چین چقدر زیباست🌴🐦🌴\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaQGrf3YffbejOYIbNvvojQ8Y6cxZRAAI8GQAC0o9JUoS0KXMxgFe-PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6720,
+      "cleanup_message_ids": [
+        7132,
+        7133
+      ],
+      "scheduled_at": 1793117336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7132,
+        7133
+      ],
+      "scheduled_approved": true
+    },
+    "267990083": {
+      "chat_id": 1677869966,
+      "text": "🌴وقتی خیابان‌های آلمان تبدیل میشن به یه رویا....\nهر سال فقط برای چند روز، خیابون‌های شهر بُن (Bonn) بهشتی می‌شن از شکوفه‌های گیلاس…\nاین شکوفه‌های صورتی‌رنگ که اصلشون به ژاپن برمی‌گرده، تو دهه ۸۰ میلادی توسط ژاپنی‌ها به آلمان هدیه داده شدن و حالا یکی از محبوب‌ترین جاذبه‌های بهاری آلمان به حساب میان.🪸\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaQWrf3YebzKkLSAln68E6AlWP8GDdAAJhGwACeBFZUgUnmjGs1NX6PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6721,
+      "cleanup_message_ids": [
+        7134,
+        7135
+      ],
+      "scheduled_at": 1793118536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7134,
+        7135
+      ],
+      "scheduled_approved": true
+    },
+    "267990084": {
+      "chat_id": 1677869966,
+      "text": "🌴شهری در آمریکا که ماشین ها اجازه ندارند واردش بشن! اینجا فقط میتونید با دوچرخه ، اسب و یا پیاده جابجا بشین🏖\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaQmrf3Ydb454OnrjRQWavONmF0EAaAAKYFwACcPqxU-oQsmldi5V-PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6722,
+      "cleanup_message_ids": [
+        7136,
+        7137
+      ],
+      "scheduled_at": 1793119736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7136,
+        7137
+      ],
+      "scheduled_approved": true
+    },
+    "267990085": {
+      "chat_id": 1677869966,
+      "text": "🌴دوست داری صبح از خواب بیدار میشی این حیوانات زیبا و ببینی ؟❔\nتانزانیا، با طبیعت بکر و حیات وحش شگفت‌انگیز خود، یکی از مقاصد برتر گردشگری در آفریقا است. این کشور با داشتن پارک‌های ملی معروف و مناظر طبیعی خیره‌کننده، سالانه میلیون‌ها گردشگر را به سمت خود جذب می‌کند.🦓🦍🐏\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaQ2rf3Yf1mNKkBzqyQifVhnnwRRh4AAL8FwACulfIU-P9Or9KUFCzPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6723,
+      "cleanup_message_ids": [
+        7138,
+        7139
+      ],
+      "scheduled_at": 1793120936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7138,
+        7139
+      ],
+      "scheduled_approved": true
+    },
+    "267990086": {
+      "chat_id": 1677869966,
+      "text": "🌴۱۵ مکان بسیار زیبا حتما ببینید🌃🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaRGrf3YcKwG3X6uYvq-glMDfjfnBNAALIGAAC8uLRU7aq-7I6zFn8PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6724,
+      "cleanup_message_ids": [
+        7140,
+        7141
+      ],
+      "scheduled_at": 1793122136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7140,
+        7141
+      ],
+      "scheduled_approved": true
+    },
+    "267990087": {
+      "chat_id": 1677869966,
+      "text": "🌴مکان هایی رو زمین که احساس واقعی نمیکنی🤩\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaRWrf3Ycc3DAMRJGWrLDv9-vJo183AAIDGwAC5UgoUlwzof_J6vhHPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6725,
+      "cleanup_message_ids": [
+        7142,
+        7143
+      ],
+      "scheduled_at": 1793123336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7142,
+        7143
+      ],
+      "scheduled_approved": true
+    },
+    "267990088": {
+      "chat_id": 1677869966,
+      "text": "🌴آبشار زیبای بیشه لرستان🐦\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaRmrf3YcjB7Fv0tZ9QGzUGa1EmrQKAAJhGwAC5UgwUnWEi5rOKgliPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6726,
+      "cleanup_message_ids": [
+        7144,
+        7145
+      ],
+      "scheduled_at": 1793124536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7144,
+        7145
+      ],
+      "scheduled_approved": true
+    },
+    "267990089": {
+      "chat_id": 1677869966,
+      "text": "🌴صبح دل انگیز☀️ رو با این ویدئو دل انگیز تر کنیم🏖\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaR2rf3YcVLKbep71V_tr8AAFK6gdDdgACVRoAAh8ZEVL_0YiSaLA0kj0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6727,
+      "cleanup_message_ids": [
+        7146,
+        7147
+      ],
+      "scheduled_at": 1793125736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7146,
+        7147
+      ],
+      "scheduled_approved": true
+    },
+    "267990090": {
+      "chat_id": 1677869966,
+      "text": "🌴زیبایی های بانکوک تایلند عین بهشت هست🤩\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaSGrf3YcXxCfZUnuezAa_1HJQTlzxAAJbGgACHxkRUq4XfSQRuc7APQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6728,
+      "cleanup_message_ids": [
+        7148,
+        7149
+      ],
+      "scheduled_at": 1793126936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7148,
+        7149
+      ],
+      "scheduled_approved": true
+    },
+    "267990091": {
+      "chat_id": 1677869966,
+      "text": "🌴تالش استان گیلان🍵\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaSWrf3Ye0-wp2uc--izNWVLTCe66aAALPGwAC5UggUvACzmlp6z8gPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6729,
+      "cleanup_message_ids": [
+        7150,
+        7151
+      ],
+      "scheduled_at": 1793128136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7150,
+        7151
+      ],
+      "scheduled_approved": true
+    },
+    "267990092": {
+      "chat_id": 1677869966,
+      "text": "🌴تنها مکان دنیا که جاده و آب یکی میشن(چین)🌊\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaSmrf3Yfj6Ik84TgpQAAB_2oheXW2dAACzhsAAuVIIFKJGCTduH4dwz0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6730,
+      "cleanup_message_ids": [
+        7152,
+        7153
+      ],
+      "scheduled_at": 1793129336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7152,
+        7153
+      ],
+      "scheduled_approved": true
+    },
+    "267990093": {
+      "chat_id": 1677869966,
+      "text": "🌴استرالیا و جذابیت هاش🤩\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaS2rf3YffomzP0b7KG0E3jB4HenfOAAIEHwACz48ZUi3cP702YiusPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6731,
+      "cleanup_message_ids": [
+        7154,
+        7155
+      ],
+      "scheduled_at": 1793130536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7154,
+        7155
+      ],
+      "scheduled_approved": true
+    },
+    "267990094": {
+      "chat_id": 1677869966,
+      "text": "🌴اشتباه نکنید اینا برف نیست اینجا آبشار نمکی پتاس تنها آبشار نمکی در جهانه این آبشار در شهرستان خور و بیابانک در شرق اصفهان واقع شده است🌊\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaTGrf3YeK_0jbR7Gj-2SrNQhVJsgvAAI7GQAC0o9JUqr55iuxa8cPPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6732,
+      "cleanup_message_ids": [
+        7156,
+        7157
+      ],
+      "scheduled_at": 1793131736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7156,
+        7157
+      ],
+      "scheduled_approved": true
+    },
+    "267990095": {
+      "chat_id": 1677869966,
+      "text": "🌴۷ شهر جذاب بری اونجا دیگه اصلا دلت نمیاد برگردی 🤩🌟\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaTWrf3YeNViYDguoypKD9EE7Q9sYLAAI2GgAC11w5UuVQV_ZRZ1BgPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6733,
+      "cleanup_message_ids": [
+        7158,
+        7159
+      ],
+      "scheduled_at": 1793132936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7158,
+        7159
+      ],
+      "scheduled_approved": true
+    },
+    "267990096": {
+      "chat_id": 1677869966,
+      "text": "🌴شوشتر پایتخت سازه های آبی تاریخی ، شاهکار فنی و مهندسی ایرانیان قدیم🌩️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaTmrf3Yeb4p3kvFtPB8N4Pky3s5XeAALqGwACeBFZUpI9UGc-JVgLPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6734,
+      "cleanup_message_ids": [
+        7160,
+        7161
+      ],
+      "scheduled_at": 1793134136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7160,
+        7161
+      ],
+      "scheduled_approved": true
+    },
+    "267990097": {
+      "chat_id": 1677869966,
+      "text": "🌴دریاچه زیبای کومو ایتالیا🪷\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaT2rf3Ydm8mSNifpAFWIp2MzXwSlPAAICGwAC5UgoUm_-PXqJ1FEZPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6735,
+      "cleanup_message_ids": [
+        7162,
+        7163
+      ],
+      "scheduled_at": 1793135336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7162,
+        7163
+      ],
+      "scheduled_approved": true
+    },
+    "267990098": {
+      "chat_id": 1677869966,
+      "text": "🌴در شهر یونیانگ (Yunyang) در استان چونگ‌کینگ (Chongqing) چین، تابی به نام “تیانمن” (Tianmen) وجود دارد که به عنوان یکی از ترسناک‌ترین تاب‌های جهان شناخته می‌شود. این تاب در ارتفاع حدود ۷۰۰ متر از سطح دره و در لبه صخره‌ای با ارتفاع ۱۰۰ متر قرار دارد. هنگامی که بر روی این تاب می‌نشینید، با سرعتی حدود ۱۲۰ کیلومتر در ساعت به سمت دره حرکت می‌کنید، که تجربه‌ای هیجان‌انگیز و دلهره‌آور را به ارمغان می‌آورد.\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaUGrf3YeSARNE5nGEdSRuQeWF5MNSAALbGQAC0o9RUiuE3IW6j6hUPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6736,
+      "cleanup_message_ids": [
+        7164,
+        7165
+      ],
+      "scheduled_at": 1793136536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7164,
+        7165
+      ],
+      "scheduled_approved": true
+    },
+    "267990099": {
+      "chat_id": 1677869966,
+      "text": "🌴حواستون به زمان باشه .....\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaUWrf3Yd7csn-eLpzull9fu0a8ZCOAAIsHAAC0-B4UvNxG3xM7buIPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6737,
+      "cleanup_message_ids": [
+        7166,
+        7167
+      ],
+      "scheduled_at": 1793137736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7166,
+        7167
+      ],
+      "scheduled_approved": true
+    },
+    "267990100": {
+      "chat_id": 1677869966,
+      "text": "🌴جاده ی روی آب دریاچه ی هادر سوئیس🌊\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaUmrf3YcjobDe_ZubBR6V6nBSVZhdAAILGQAC02mxU_uvp-TyWRZuPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6738,
+      "cleanup_message_ids": [
+        7168,
+        7169
+      ],
+      "scheduled_at": 1793138936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7168,
+        7169
+      ],
+      "scheduled_approved": true
+    },
+    "267990101": {
+      "chat_id": 1677869966,
+      "text": "🌴کوه نوردی با پله برقی !\nکوه لینگ شان در استان جیانگشی چین\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaU2rf3YfvFdEWhDU6ZGraq179wS-FAAKFFwACPmz4UI9h-mGV9yDTPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6739,
+      "cleanup_message_ids": [
+        6908,
+        6909
+      ],
+      "scheduled_at": 1793140136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6908,
+        6909
+      ]
+    },
+    "267990102": {
+      "chat_id": 1677869966,
+      "text": "🌴سرگرمی های هیجان انگیز و جذاب در بانکوک تایلند🏐🎋\nچه باحاله دلم خواست🐧\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaVGrf3YffgLKfTgaetLypgWlCqv7VAAJzGwAChqnZUx4-wKRL2HZLPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6740,
+      "cleanup_message_ids": [
+        6910,
+        6911
+      ],
+      "scheduled_at": 1793141336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6910,
+        6911
+      ]
+    },
+    "267990103": {
+      "chat_id": 1677869966,
+      "text": "🌴۱۲ مکان در دبی که حتما باید ببیند🏢🏝\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaVWrf3Ye1DjUWrg28rYpYkzgjGAV2AALmGAACulfQU4uJDoQhLmt0PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6741,
+      "cleanup_message_ids": [
+        6912,
+        6913
+      ],
+      "scheduled_at": 1793142536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6912,
+        6913
+      ]
+    },
+    "267990104": {
+      "chat_id": 1677869966,
+      "text": "🌴زیباترین سواحل هرمزگان که باید ببینید🥂🤩\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaVmrf3YeMO-spmNDEsJ_AWhUrYtF4AAIaGQACVzCJUk1v2bnmL4Z0PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6742,
+      "cleanup_message_ids": [
+        6914,
+        6915
+      ],
+      "scheduled_at": 1793143736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6914,
+        6915
+      ]
+    },
+    "267990105": {
+      "chat_id": 1677869966,
+      "text": "🌴چند مکان بسیار زیبا در اسپانیا 🥂🍵\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaLmrf3Yck81DDvMMYT9xA0BGGRmA_AAJdGgACVzCRUjWsVtzREzPLPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6743,
+      "cleanup_message_ids": [
+        6916,
+        6917
+      ],
+      "scheduled_at": 1793144936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6916,
+        6917
+      ]
+    },
+    "267990106": {
+      "chat_id": 1677869966,
+      "text": "🌴گرون ترین هتل زیر آب در مالدیو🏖\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaWGrf3YcR9063m1aTpsfx5IjdjenvAAKfGAACE9_AUuxU6ujja0dwPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6744,
+      "cleanup_message_ids": [
+        6918,
+        6919
+      ],
+      "scheduled_at": 1793146136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6918,
+        6919
+      ]
+    },
+    "267990107": {
+      "chat_id": 1677869966,
+      "text": "🌴وقتی تکنولوژی با فرهنگ بهداشت دست به یکی می‌کنه، نتیجه‌اش میشه شاهکارهایی مثل دستشویی‌های هوشمند هلند!🚽\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaWWrf3YctLBzq1rN-wjXAG5L0UJOFAAKuGAACVzCJUlCSjbXuaBwmPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6745,
+      "cleanup_message_ids": [
+        6920,
+        6921
+      ],
+      "scheduled_at": 1793147336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6920,
+        6921
+      ]
+    },
+    "267990108": {
+      "chat_id": 1677869966,
+      "text": "🌴میامی آمریکا 🌃🌃🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaWmrf3YebsLnuAm_7Y9Mnz78ycWQ3AAKLGgAChqnZUwGBhQuX4P5PPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6746,
+      "cleanup_message_ids": [
+        6922,
+        6923
+      ],
+      "scheduled_at": 1793148536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6922,
+        6923
+      ]
+    },
+    "267990109": {
+      "chat_id": 1677869966,
+      "text": "🌴پل معلق ویتنام🌟\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaO2rf3Yds8LDalZjEWW5GAeKaD-aKAAInGQACnYyhUo3XqsE3dJn-PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6747,
+      "cleanup_message_ids": [
+        6924,
+        6925
+      ],
+      "scheduled_at": 1793149736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6924,
+        6925
+      ]
+    },
+    "267990110": {
+      "chat_id": 1677869966,
+      "text": "🌴قطار هوایی در ووهان چین 🚂\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaXGrf3YcaAAHReXj-RTi5fsYNFYs6mAAC4RcAAj6HeVCAZSyes0ToWz0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6748,
+      "cleanup_message_ids": [
+        6926,
+        6927
+      ],
+      "scheduled_at": 1793150936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6926,
+        6927
+      ]
+    },
+    "267990111": {
+      "chat_id": 1677869966,
+      "text": "🌴روتینگبورگ شهری جذاب در آلمان که هر کوچه اش شبیه به یک کارت پستال هست🌃\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaXWrf3YeFUb61zD3rC1RzRnu7y9P3AALyIAAC0WfRUhjHE-H6eIukPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6749,
+      "cleanup_message_ids": [
+        6928,
+        6929
+      ],
+      "scheduled_at": 1793152136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6928,
+        6929
+      ]
+    },
+    "267990112": {
+      "chat_id": 1677869966,
+      "text": "🌴فروشگاه بسیار زیبا میوه در ترکیه😀\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaXmrf3Ydtj7gBeHiW77vNPvtlcqIaAAL_GAACoOHhUrzmkeeKTQE8PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6750,
+      "cleanup_message_ids": [
+        6930,
+        6931
+      ],
+      "scheduled_at": 1793153336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6930,
+        6931
+      ]
+    },
+    "267990113": {
+      "chat_id": 1677869966,
+      "text": "🌴جزیره یورون (Yoron Island) یکی از جزایر زیبای اوکیناوا در ژاپن است. این جزیره به خاطر سواحل زیبا، آب‌های شفاف و چشم انداز شگفت انگیز شهرت فراوانی در بین تمام ساحل های جهان دارد.🏝️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaX2rf3YdHcvAWcpnQO9DS96-f4WBcAAJTIQAC0WfZUlUE_SZQQFNbPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6751,
+      "cleanup_message_ids": [
+        6932,
+        6933
+      ],
+      "scheduled_at": 1793154536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6932,
+        6933
+      ]
+    },
+    "267990114": {
+      "chat_id": 1677869966,
+      "text": "🌴اول صبحمون رو با این مکان رویایی و شگفت انگیز در آمریکا شروع کنیم☀️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaYGrf3Yc_husgIRWbfYctD2gjJAclAAJXIQAC0WfZUkSGiv5i9iGhPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6752,
+      "cleanup_message_ids": [
+        6934,
+        6935
+      ],
+      "scheduled_at": 1793155736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6934,
+        6935
+      ]
+    },
+    "267990115": {
+      "chat_id": 1677869966,
+      "text": "🌴10 مکان افسانه ای در انگلستان🌄\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaHmrf3YcULF7BHTS2a_-Pjqez2OUNAAMtAAJlO3lSEQNNKVIyhtA9BA"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6753,
+      "cleanup_message_ids": [
+        6936,
+        6937
+      ],
+      "scheduled_at": 1793156936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6936,
+        6937
+      ]
+    },
+    "267990116": {
+      "chat_id": 1677869966,
+      "text": "🌴یه جنگل که رو آب راه میره! یا شاید توی آب زندگی می‌کنه؟! 🤯\nاینجا همون جاییه که طبیعت تصمیم گرفته یه ذره بیشتر هنرنمایی کنه! 🐙\n🐟جنگل آبی، جایی که درختا از دل آب رشد می‌کنن و زمین رو ول کردن!🌺\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaYmrf3YcrYmtsnN25WeG1VvWdcHSQAAIUGAAC43TIU7Ac2mCKX2uTPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6754,
+      "cleanup_message_ids": [
+        6938,
+        6939
+      ],
+      "scheduled_at": 1793158136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6938,
+        6939
+      ]
+    },
+    "267990117": {
+      "chat_id": 1677869966,
+      "text": "🌴یکی از ترسناک ترین ترن هوایی ها در آمریکا🎢\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaY2rf3YdV0UQQSvm1a7i4D0weA9NjAAIBHAACU7hwUQhRGT_7hCa3PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6755,
+      "cleanup_message_ids": [
+        6940,
+        6941
+      ],
+      "scheduled_at": 1793159336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6940,
+        6941
+      ]
+    },
+    "267990118": {
+      "chat_id": 1677869966,
+      "text": "🌴پارک انیمه ژاپن🩷🐭👱‍♀️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaZGrf3YddY2TAEX99k-f5YunjSxIAA_IaAAJTuGhR6azpFcOsh-s9BA"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6756,
+      "cleanup_message_ids": [
+        6942,
+        6943
+      ],
+      "scheduled_at": 1793160536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6942,
+        6943
+      ]
+    },
+    "267990119": {
+      "chat_id": 1677869966,
+      "text": "🌴روستای گیتهورن هلند با طبیعتی دیدنی 🌺\nونیز هلند لقبی است که به این دهکده ی زیبا داده اند.\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaZWrf3YcbUVHwiQJWHSvzAu95o-w3AAKVGwACUl9ZUfpTqU7rBXnIPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6757,
+      "cleanup_message_ids": [
+        6944,
+        6945
+      ],
+      "scheduled_at": 1793161736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6944,
+        6945
+      ]
+    },
+    "267990120": {
+      "chat_id": 1677869966,
+      "text": "🌴تفریحات بی نظیر تایلند 🏖\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaZmrf3YddCCuLpwFu5u3nhYD85YFSAAL3IAACNFgxUqJSVkdPWnaLPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6758,
+      "cleanup_message_ids": [
+        6946,
+        6947
+      ],
+      "scheduled_at": 1793162936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6946,
+        6947
+      ]
+    },
+    "267990121": {
+      "chat_id": 1677869966,
+      "text": "🌴استخر طبیعی در روستای ساحلی پرتغال🏖\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaD2rf3YdFMQABioPEyiJi6N99b9DSxAACLRoAAvtbcFAfSB_Mud5ojz0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6759,
+      "cleanup_message_ids": [
+        6948,
+        6949
+      ],
+      "scheduled_at": 1793164136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6948,
+        6949
+      ]
+    },
+    "267990122": {
+      "chat_id": 1677869966,
+      "text": "🌴دوحه قطر از زاویه ای تماشایی☂️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaDmrf3YfHezBFbMNlyRfXODPaPyuvAAIsGgAC-1twUP1Fq-Ar8GRwPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6760,
+      "cleanup_message_ids": [
+        6950,
+        6951
+      ],
+      "scheduled_at": 1793165336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6950,
+        6951
+      ]
+    },
+    "267990123": {
+      "chat_id": 1677869966,
+      "text": "🌴پوکت تایلند☀️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaaWrf3Yfyw5ZlriHkmuJKAAExIWByYQACmhoAAnjQwVB4EVh2vCwaaD0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6761,
+      "cleanup_message_ids": [
+        6952,
+        6953
+      ],
+      "scheduled_at": 1793166536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6952,
+        6953
+      ]
+    },
+    "267990124": {
+      "chat_id": 1677869966,
+      "text": "🌴دریاچه صورتی لیپار در سیستان و بلوچستان🌊\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaamrf3YeB1bHjtgWTuzQWvR2h9AYJAALxHQACoAk5Udy-Mida0m40PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6762,
+      "cleanup_message_ids": [
+        6954,
+        6955
+      ],
+      "scheduled_at": 1793167736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6954,
+        6955
+      ]
+    },
+    "267990125": {
+      "chat_id": 1677869966,
+      "text": "🌴باورم نمیشه اینجا عربستان هست🏝️\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIaa2rf3Yeu5HQ4mLAksGJxuuJKzLPPAAJIIAACgpNQUInSXUmbrkMHPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6763,
+      "cleanup_message_ids": [
+        6956,
+        6957
+      ],
+      "scheduled_at": 1793168936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6956,
+        6957
+      ]
+    },
+    "267990126": {
+      "chat_id": 1677869966,
+      "text": "🌴فصل صورتی(pink season )کرالا یک پدیده ی طبیعی است که در شالیزارهای آب‌گرفته‌ی منطقه Malarikkal در ایالت کرالا در  هند رخ می‌دهد. در این زمان، هزاران گل نیلوفر  صورتی روی آب شکوفا می‌شوند و منظره‌ای شبیه «دریای صورتی» می‌سازند.\nاوج فصل معمولاً آگوست تا اکتبر است و بهترین زمان دیدن گل‌ها صبح زود است؛ چون در گرما بسته می‌شوند.\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIabGrf3YdtTngk0pZH5lWyi5JsHFRTAAI7HgACm8LwUex9W-yp-wvgPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6764,
+      "cleanup_message_ids": [
+        6958,
+        6959
+      ],
+      "scheduled_at": 1793170136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6958,
+        6959
+      ]
+    },
+    "267990127": {
+      "chat_id": 1677869966,
+      "text": "🌴۱۰ چیز که فقط تو کره جنوبی عادیه🎆\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIabWrf3YcDKnI3Klb9IzDYFVQJ7WgzAAK2HAACoAk5UbQzdVq7gms_PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6765,
+      "cleanup_message_ids": [
+        6960,
+        6961
+      ],
+      "scheduled_at": 1793171336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6960,
+        6961
+      ]
+    },
+    "267990128": {
+      "chat_id": 1677869966,
+      "text": "🌴منطقه ای نزدیک به دریاچه کومو ایتالیا🐦\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIabmrf3YcXDGgGhVR9x2rfb1GT38QqAALsHQACH1zAUMtH58GiBIrlPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6766,
+      "cleanup_message_ids": [
+        6962,
+        6963
+      ],
+      "scheduled_at": 1793172536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6962,
+        6963
+      ]
+    },
+    "267990129": {
+      "chat_id": 1677869966,
+      "text": "🌴مسجد سلیمان و اندیکا جذاب🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIab2rf3YfFCAjRIzZ-PSQ-7mVtJq9cAAIBHgACVl4ZUNdbSJZ1qSdgPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6767,
+      "cleanup_message_ids": [
+        6964,
+        6965
+      ],
+      "scheduled_at": 1793173736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6964,
+        6965
+      ]
+    },
+    "267990130": {
+      "chat_id": 1677869966,
+      "text": "🌴باغی بسیار زیبا در لندن که از بهشت الهام گرفته شده 🌺🌺\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIacGrf3YekOL9ivC-HUeDLRQipoa_RAAL3GQACblOQUAdNKeCaztSvPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6768,
+      "cleanup_message_ids": [
+        6966,
+        6967
+      ],
+      "scheduled_at": 1793174936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6966,
+        6967
+      ]
+    },
+    "267990131": {
+      "chat_id": 1677869966,
+      "text": "🌴جاده رویایی اسالم به خلخال🌈\n➡️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIacWrf3YduVPN364l-zWdA-r6dHsWzAAJcGgACh9npUVXoOrEtvAuYPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6769,
+      "cleanup_message_ids": [
+        6968,
+        6969
+      ],
+      "scheduled_at": 1793176136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6968,
+        6969
+      ]
+    },
+    "267990132": {
+      "chat_id": 1677869966,
+      "text": "🔺 مازندران، دشت لزیر، تلاقی شکوه کوهستان و لطافت بهار.\n======\n#مازندران #دشت_لزیر #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbOmrf3fqpA9skaJGcvCuocrRW0cuxAALQCgACn7RFUcyPXTV-CGh2PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6970,
+      "cleanup_message_ids": [
+        6990,
+        6991
+      ],
+      "scheduled_at": 1793177336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6990,
+        6991
+      ]
+    },
+    "267990133": {
+      "chat_id": 1677869966,
+      "text": "🔺 اشکور.\n========\n#اشکور #گیلان #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbO2rf3fq8iF4mJq6eVZ_uWx05TAWqAAKMIAACu8QwUahp7zJ_16qkPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6971,
+      "cleanup_message_ids": [
+        6992,
+        6993
+      ],
+      "scheduled_at": 1793178536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6992,
+        6993
+      ]
+    },
+    "267990134": {
+      "chat_id": 1677869966,
+      "text": "🔺 تابستان زیبای گیلان، سیاهکل،دیلمان، پیرکوه. 😊\n=========\n#گیلان #سیاهکل #دیلمان #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbPGrf3fptLuPnuJVogPIAAXVP_JsiyQAC0QoAAmxRTVGmw7zDtn4Svz0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6972,
+      "cleanup_message_ids": [
+        6994,
+        6995
+      ],
+      "scheduled_at": 1793179736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6994,
+        6995
+      ]
+    },
+    "267990135": {
+      "chat_id": 1677869966,
+      "text": "🔺 اردبیل، دریاچه نئور.😆\n========\n#اردبیل #دریاچه_نئور #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbPWrf3fqoYZOufhHr850wyBk6JMaKAAKMCgAC5KNMUXWzkdzzQXbMPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6973,
+      "cleanup_message_ids": [
+        6996,
+        6997
+      ],
+      "scheduled_at": 1793180936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6996,
+        6997
+      ]
+    },
+    "267990136": {
+      "chat_id": 1677869966,
+      "text": "🔺 گیلان، رودبار، روستای پلنگ دره.\n========\n#رودبار #گیلان #روستای_پلنگ_دره #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbPmrf3fryxMEFli8HDoL48L5b53i-AAIMFgACreMwUXnSrHthuI7JPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6974,
+      "cleanup_message_ids": [
+        6998,
+        6999
+      ],
+      "scheduled_at": 1793182136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        6998,
+        6999
+      ]
+    },
+    "267990137": {
+      "chat_id": 1677869966,
+      "text": "🔺 سریال شاهنامه.\n📀 فصل اول، قسمت اول.\n🔸 داستان کیومرث نخستین، اولین پادشاه جهان و سیامک در شاهنامه فردوسی.\n🔹 در این قسمت از سریال شاهنامه فردوسی، شما را به سفری هیجان‌انگیز به آغاز اساطیر ایران می‌بریم. با سرگذشت کیومرث، نخستین انسان و پادشاه جهان، و ماجرای تراژیک پسرش سیامک آشنا شوید؛ روایتی پر از شجاعت، نبرد با دیوان و پیدایش نخستین قهرمانان ایران باستان.\n📹\n==========\n#ایران #شاهنامه #فردوسی #شاهنامه_تصویری #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbP2rf3fqO6ldebOBrFT9LkJlnQSeyAAJ9IgACtVkRURdl0c2dac68PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6975,
+      "cleanup_message_ids": [
+        7000,
+        7001
+      ],
+      "scheduled_at": 1793183336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7000,
+        7001
+      ]
+    },
+    "267990138": {
+      "chat_id": 1677869966,
+      "text": "🔺 امروز دلم شکست…\n🔸 درخت سرو زربین رامیان، اون نگهبان سبزِ قدیمی، تبر خورد به دست انسانی که شاید نمی‌دونست چه روح بزرگی رو زخمی می‌کنه.\n🔹 من فقط برای پناه گرفتن از بارون رفته بودم زیر شاخه‌هاش، اما چشم‌هام شاهد ظلمی شدن که هیچ‌وقت فراموشش نمی‌کنم.\n🔸 صحنه‌ای که یه تبر بالا رفت و تکه‌های درخت، مثل آه طبیعت روی زمین ریخت، فقط تونستم داد بزنم “آقا نزن، داری چیکار می‌کنی؟”\n👈 اما اون لحظه فقط فریاد بود و بغض‌، نه فرصت فیلم، نه توان سکوت. از مسئولین و حامیان محیط‌زیست خواهش می‌کنم به داد این درخت برسن. 🌲 و از شما، مردمی که این صدا رو می‌شنوید، صدای سرو زربین رامیان باشید.\n👈 این ویدئو رو بفرستید برای هر کسی که می‌دونه طبیعت بی‌صداست، ولی ما می‌تونیم فریادش باشیم.\n📹 @Tabiat_gardland\n=======\n#سرو_زربین_رامیان #صدای_طبیعت_باشیم #حمایت_از_درختان #رامیان #گلستان #درخت_زندگی",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbQGrf3foDbk0USt89z064roSRPrsIAAJZHwACgKx4UYaeFweGK6liPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6976,
+      "cleanup_message_ids": [
+        7002,
+        7003
+      ],
+      "scheduled_at": 1793184536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7002,
+        7003
+      ]
+    },
+    "267990139": {
+      "chat_id": 1677869966,
+      "text": "🔺دانستنی‌های علمی.\n🔸 ۲ مليون سال باران.\n📹 @OnTenTV\n=========\n#دانستنیهای_علمی #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbQWrf3fru-3uKzETfhPA3_Mm9UU92AAJeHQACq8VAUdJmWFmg1npjPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6977,
+      "cleanup_message_ids": [
+        7004,
+        7005
+      ],
+      "scheduled_at": 1793185736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7004,
+        7005
+      ]
+    },
+    "267990140": {
+      "chat_id": 1677869966,
+      "text": "🔺 پادشاهان ایران.\n📀 قسمت اول: کوروش بزرگ (۱)\n========\n#ایران #تاریخ #پادشاهان_ایران #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbQmrf3frWa_2sc0Ldu6xLRZZePs9oAAK_GwACOCtgUcaOdSKndEPAPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6978,
+      "cleanup_message_ids": [
+        7006,
+        7007
+      ],
+      "scheduled_at": 1793186936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7006,
+        7007
+      ]
+    },
+    "267990141": {
+      "chat_id": 1677869966,
+      "text": "🔺️ گیلان، اشکورات. 🍂🎶\n==========\n#اشکورات #گیلان #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbQ2rf3fqExFk3ijPryndIvoT07kvLAAIeGAAC9sEgU26K1wIUAAEnQj0E"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6979,
+      "cleanup_message_ids": [
+        7008,
+        7009
+      ],
+      "scheduled_at": 1793188136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7008,
+        7009
+      ]
+    },
+    "267990142": {
+      "chat_id": 1677869966,
+      "text": "🔺سرگذشت زرتشت پیامبر\n📀 قسمت‌ اول: تولد\n👈 برای درک بهتر روایت، وارد کانال شده و از قسمت اول شروع به تماشا کنید.\n📌 نکته مهم\n👈 تولید این محتوای سریالی با پژوهش و تحقیق از کتب و منابع و ماخذ معتبر صورت گرفته است. 📚✅\n🔴 منابع پژوهشی این محتوا\nآموزگار، ژاله. کتاب تاریخ اساطیری ایران. 🇮🇷📖\nآموزگار، ژاله. اسطورۀ زندگی زردشت. ✨🕯️\nبهار، مهرداد. از اسطوره تا تاریخ. ⏳📜\nبهار، مهرداد (ترجمه و گزارش). بُندهش. 📜✍️\nکزازی ، میر جلال الدین ، وَخشور ایران، داستانی برپایه سرگذشت زرتشت. 🐉🇮🇷\nشاهرخ، کیخسرو. زرتشت؛ پیامبری که از نو باید شناخت 👁️🙏\n📹\n========\n#زرتشت #سرزمین_مادری #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbRGrf3frV_vI2V_a2tqA7RmeLmcs5AALUHQACXhZBUcmQi48SD9YyPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6980,
+      "cleanup_message_ids": [
+        7010,
+        7011
+      ],
+      "scheduled_at": 1793189336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7010,
+        7011
+      ]
+    },
+    "267990143": {
+      "chat_id": 1677869966,
+      "text": "🔺️ مجموعه‌آبشارهای‌شیرآباد، گلستان.\n============\n#گلستان #آبشار_شیرآباد #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbRWrf3fpWSYFOXwNO4MKBUC08SC54AAKCBAACC2FNU0e26J2H3C87PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6981,
+      "cleanup_message_ids": [
+        7012,
+        7013
+      ],
+      "scheduled_at": 1793190536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7012,
+        7013
+      ]
+    },
+    "267990144": {
+      "chat_id": 1677869966,
+      "text": "🔺 سریال کوروش بزرگ 👑.\n📀 قسمت قسمت اول: خواب شاه. 📜\n👈 استودیو «کهن دیاران» با افتخار تقدیم می‌کند.\n📹\n========\n#ایران #کوروش_بزرگ #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbRmrf3fqstby96k590Cz1xyrUlVAuAAKkHAACEH-xUFXtjtY8mKAtPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6982,
+      "cleanup_message_ids": [
+        7014,
+        7015
+      ],
+      "scheduled_at": 1793191736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7014,
+        7015
+      ]
+    },
+    "267990145": {
+      "chat_id": 1677869966,
+      "text": "🔺 سریال شاهنامه.\n📀 فصل اول، قسمت دوم.\n🔸 داستان انتقام هوشنگ در سریال شاهنامه.\n🔹 در این قسمت از سریال شاهنامه فردوسی، داستان پرشور هوشنگ، پسر دلیر سیامک را می‌شنویم. او که داغ از دست دادن پدر را بر دوش داشت، با سال‌ها تلاش و تمرین به جنگی سرنوشت‌ساز برای خونخواهی برمی‌خیزد. هوشنگ در مسیر انتقام نه تنها با دشمنان سهمگین روبه‌رو می‌شود، بلکه با اراده و شجاعت، نخستین گام‌هایش را برای تبدیل شدن به یکی از پهلوانان جاودان ایران برمی‌دارد.\n📹\n==========\n#ایران #شاهنامه #فردوسی #شاهنامه_تصویری #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbR2rf3fp6qmFID6dy08lNuz3vpt6HAAJ-IgACtVkRURbIVihiwRLNPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6983,
+      "cleanup_message_ids": [
+        7016,
+        7017
+      ],
+      "scheduled_at": 1793192936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7016,
+        7017
+      ]
+    },
+    "267990146": {
+      "chat_id": 1677869966,
+      "text": "🤍💜💚💛🧡❤️\n‏دنبال کسی بگردید که\nتربیت مادرش آدمش کرده نه دارایی پدرش.\n‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌===========\n#شب #شب_بخیر #آتش #آتیش #چای #چایی #چایی_آتیشی #چای_آتیشی #چای_هیزمی #چایی_هیزمی #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbSGrf3fq3onkcQ1U48xXXFCDbgvyUAAL7IAACCr6RUjJkOhoVufVpPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6984,
+      "cleanup_message_ids": [
+        7018,
+        7019
+      ],
+      "scheduled_at": 1793194136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7018,
+        7019
+      ]
+    },
+    "267990147": {
+      "chat_id": 1677869966,
+      "text": "🌺🍀🌼🍃🌸🍃🕊\n🔺️ بفرمایید ناهار‌. 🧡💛\n=========\n#خوراک #غذای_ایرانی #ناهار #آشپزی #آشپزی_ایرانی #ظهر #ظهر_بخیر\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbSWrf3fprq6v1GoaiLu03cqGTz07mAAJBGwAC5ZWpUNmRJ2wYYcr8PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6985,
+      "cleanup_message_ids": [
+        7020,
+        7021
+      ],
+      "scheduled_at": 1793195336,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7020,
+        7021
+      ]
+    },
+    "267990148": {
+      "chat_id": 1677869966,
+      "text": "🔺 شاهنامه موزیکال.\n👈 سفری هیجان‌انگیز به سرزمین افسانه‌های ایران زمین، شاهنامه.\n🔸 این اثر سفری است به دل افسانه‌های کهن ایران، جایی که اسطوره، حماسه و خیال در هم می‌آمیزند.\n🔹 الهام گرفته از شاهنامه و روایت‌های اسطوره‌ای سرزمین ایران، این ویدیو تلاش می‌کند جهان پهلوانان، دیوان و نیروهای باستانی را با فضایی سینمایی و مدرن بازآفرینی کند.\n🔸 در این پروژه، موسیقی و تصویر در کنار هم داستانی حماسی را روایت می‌کنند؛ داستانی از نبرد نور و تاریکی، قدرت و سرنوشت، و شکوه فراموش‌نشدنی تمدن ایرانی.\n👈 اگر به افسانه‌ها، شاهنامه و فضای سینمایی حماسی علاقه داری، این اثر برای تو ساخته شده است.\n📹\n==========\n#ایران #شاهنامه #فردوسی #شاهنامه_موزیکال #شاهنامه_تصویری #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbSmrf3fqs0M5k6goKw_FalOVuO5FCAAI4IwACiXiIUW2CNBX9ZqsrPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6986,
+      "cleanup_message_ids": [
+        7022,
+        7023
+      ],
+      "scheduled_at": 1793196536,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7022,
+        7023
+      ]
+    },
+    "267990149": {
+      "chat_id": 1677869966,
+      "text": "🔺️ آبشار برنجه، لرستان، شهرستان الیگودرز، بخش زز و ماهرو، روستای پیر امام.\n============\n#لرستان #آبشار_برنجه #الیگودرز #روستای_پیر_امام #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbS2rf3foHlLqPJWWRBCGdGcZAWMU5AAI2BQACR9qVUUmXqTtipw84PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6987,
+      "cleanup_message_ids": [
+        7024,
+        7025
+      ],
+      "scheduled_at": 1793197736,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7024,
+        7025
+      ]
+    },
+    "267990150": {
+      "chat_id": 1677869966,
+      "text": "🔺️ سازه‌های آبی شوشتر در استان خوزستان، به‌عنوان بزرگ­ ترین مجموعه مهندسی جهان تا پیش از انقلاب صنعتی، فقط یک جاذبه تاریخی نیست. در این مجموعه می­‌شود نبوغی را یافت که در هیچ جای جهان نظیر ندارد. مجموعه‌ای در هم تنیده از بندها، آبشارها، آسیاب‌ها، پل‌ها، برج‌ها و نهرهای دست کند که قدمتی به اندازه تاریخ ایران زمین دارند.\n=============\n#شوشتر #سازه_های_آبی_شوشتر #خوزستان #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbTGrf3frK0M6YhrXUvOFP_GUOLVffAAIZBwACOGeRUKCLiXMpx5OhPQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6988,
+      "cleanup_message_ids": [
+        7026,
+        7027
+      ],
+      "scheduled_at": 1793198936,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7026,
+        7027
+      ]
+    },
+    "267990151": {
+      "chat_id": 1677869966,
+      "text": "🔺 سریال کوروش بزرگ 👑.\n📀 قسمت قسمت دوم: تولد دوباره. 📜\n👈 استودیو «کهن دیاران» با افتخار تقدیم می‌کند.\n📹\n========\n#ایران #کوروش_بزرگ #مجله_گردشگری\n♻️ 👈♻️",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIbTWrf3fppKrh6LYBPWsAQlhKT5In7AAJJGgAC5WchUZaDkzMFqBJ3PQQ"
+      },
+      "channel": "@SafarkadehFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 6989,
+      "cleanup_message_ids": [
+        7028,
+        7029
+      ],
+      "scheduled_at": 1793200136,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        7028,
+        7029
+      ]
     }
   },
   "edit_mode": {},
@@ -11491,12 +14070,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793055246
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2920,
-      "delete_at": 1793055901
+      "retry_after": 1793056561
     },
     {
       "chat_id": 1677869966,
@@ -11902,12 +14476,38 @@
       "chat_id": 1677869966,
       "message_id": 6016,
       "delete_at": 1793141348
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 6656,
+      "delete_at": 1793142344
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 6657,
+      "delete_at": 1793142345
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 6658,
+      "delete_at": 1793142346
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 6659,
+      "delete_at": 1793142346
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 6667,
+      "delete_at": 1793142431
     }
   ],
-  "active_channel": null,
+  "active_channel": "@SafarkadehFa",
   "channel_schedule_next": {
     "@NimeShabHorror": 1793206027,
     "@TechNamaFa": 1793113060,
-    "@NbzeKhabar": 1793168667
+    "@NbzeKhabar": 1793168667,
+    "@SafarkadehFa": 1793200136
   }
 }
