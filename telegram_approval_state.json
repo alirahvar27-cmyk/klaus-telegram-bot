@@ -1463,28 +1463,6 @@
       "scheduled_at": 1793057160,
       "scheduled_approved": true
     },
-    "267988516": {
-      "chat_id": 1677869966,
-      "text": "🎮 فروش Xbox به بدترین وضعیت تاریخی خودش تو ماه سپتامبر رسید!\nطبق آمار مؤسسه Circana از بازار آمریکا، فروش کنسول‌های Xbox Series X|S تو سپتامبر 27٪ نسبت به سال گذشته کاهش پیدا کرده و این ماه به بدترین سپتامبر تاریخ Xbox از نظر فروش تبدیل شده، رکوردی که سپتامبر سال قبل ثبت شده بود.\nدر طرف مقابل، فروش PS5 تو همین بازه 22٪ افزایش داشته و سونی تونسته ماه قدرتمندی رو پشت سر بذاره.\nنکته عجیب اینه که با وجود نزدیک شدن به انتشار GTA VI، فروش کنسول‌های Xbox همچنان افت کرده.\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAILkmrfEsp-ToQmdPjwxG0WFJnLmxgcAAJHDmsb1rr4Unm1FBobVPrNAQADAgADeQADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2962,
-      "cleanup_message_ids": [
-        3287,
-        3288
-      ],
-      "preview_message_ids": [
-        3287,
-        3288
-      ],
-      "scheduled_at": 1793042040,
-      "scheduled_approved": true
-    },
     "267988517": {
       "chat_id": 1677869966,
       "text": "🧩 گیم GTA Liberty City Stories امروز 21 ساله شد!\nراک‌استار کل Liberty City بازی GTA III رو به همراه یه کست جدید و یه داستان تازه تو یه UMD جا داد.\nبازی یه حالت مولتی‌پلیر کامل هم داشت که تا 6 نفر می‌تونستن روی PSP با هم بازی کنن.\n💬 شما هم سال 2005 با دوستاتون بازیش می‌کردید؟\n⚽️‌",
@@ -1505,28 +1483,6 @@
         3324
       ],
       "scheduled_at": 1793050140,
-      "scheduled_approved": true
-    },
-    "267988518": {
-      "chat_id": 1677869966,
-      "text": "🧩 گیم Call of Duty Modern Warfare 4 با فناوری DLSS 5😍\n💬 ‌ ‌ بنظر شما کدوم بهتره؟با DLSS 5 یا بدون اون رو ترجیح میدید؟\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAILlGrfEsrn5SeK5IsfPUmLUD03xmd_AAIhIgAC1rr4Un2vVcfNa0uOPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2964,
-      "cleanup_message_ids": [
-        3293,
-        3294
-      ],
-      "preview_message_ids": [
-        3293,
-        3294
-      ],
-      "scheduled_at": 1793044140,
       "scheduled_approved": true
     },
     "267988539": {
@@ -3508,17 +3464,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793041871
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2916,
-      "delete_at": 1793042051
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2917,
-      "delete_at": 1793043573
+      "retry_after": 1793044348
     },
     {
       "chat_id": 1677869966,
@@ -3859,6 +3805,16 @@
       "chat_id": 1677869966,
       "message_id": 4063,
       "delete_at": 1793127668
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4064,
+      "delete_at": 1793130146
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4065,
+      "delete_at": 1793130549
     }
   ],
   "active_channel": null,
