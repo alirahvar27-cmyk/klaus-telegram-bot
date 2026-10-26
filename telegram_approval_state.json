@@ -1,5 +1,5 @@
 {
-  "offset": 267989257,
+  "offset": 267989378,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -1207,28 +1207,6 @@
         3457
       ],
       "scheduled_at": 1793088840,
-      "scheduled_approved": true
-    },
-    "267988507": {
-      "chat_id": 1677869966,
-      "text": "🎮 نقدها و نمرات بازی Phantom Blade Zero منتشر شدند\n🔻نقدها و نمرات بازی Phantom Blade Zero منتشر شدند و این اثر توانسته میانگین امتیاز ۸۷ را از ۲۴ نقد در وب‌سایت Metacritic و میانگین امتیاز ۹۱ را از ۲۰ نقد در OpenCritic کسب کند. رسانه‌هایی مانند The Outerhaven امتیاز ۱۰، IGN امتیاز ۹، GameSpot امتیاز ۸، Creative Bloq امتیاز ۷ و Eurogamer امتیاز ۶ را به این بازی اختصاص داده‌اند. منتقدان مبارزات روان، جهان منحصربه‌فرد و طراحی هنری آن را تحسین کرده‌اند، اما برخی مشکلات فنی، موانع نامرئی و تصمیمات طراحی را از نقاط ضعف بازی دانسته‌اند.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAILiWrfEqCkG_XmP-duIz8DfauqrDeFAAIjC2sbuPLkUauKvBWhTiTOAQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2953,
-      "cleanup_message_ids": [
-        3335,
-        3336
-      ],
-      "preview_message_ids": [
-        3335,
-        3336
-      ],
-      "scheduled_at": 1793052960,
       "scheduled_approved": true
     },
     "267988508": {
@@ -6134,15 +6112,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4377,
       "cleanup_message_ids": [
-        4409,
-        4410
+        4694,
+        4695
       ],
       "scheduled_at": 1793173627,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4409,
-        4410
-      ]
+        4694,
+        4695
+      ],
+      "scheduled_approved": true
     },
     "267989118": {
       "chat_id": 1677869966,
@@ -6156,15 +6135,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4378,
       "cleanup_message_ids": [
-        4411,
-        4412
+        4696,
+        4697
       ],
       "scheduled_at": 1793174827,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4411,
-        4412
-      ]
+        4696,
+        4697
+      ],
+      "scheduled_approved": true
     },
     "267989119": {
       "chat_id": 1677869966,
@@ -6178,17 +6158,18 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4379,
       "cleanup_message_ids": [
-        4413,
-        4414,
-        4415
+        4698,
+        4699,
+        4700
       ],
       "scheduled_at": 1793176027,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4413,
-        4414,
-        4415
-      ]
+        4698,
+        4699,
+        4700
+      ],
+      "scheduled_approved": true
     },
     "267989120": {
       "chat_id": 1677869966,
@@ -6236,15 +6217,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4381,
       "cleanup_message_ids": [
-        4417,
-        4418
+        4701,
+        4702
       ],
       "scheduled_at": 1793178427,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4417,
-        4418
-      ]
+        4701,
+        4702
+      ],
+      "scheduled_approved": true
     },
     "267989122": {
       "chat_id": 1677869966,
@@ -6258,15 +6240,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4382,
       "cleanup_message_ids": [
-        4419,
-        4420
+        4703,
+        4704
       ],
       "scheduled_at": 1793179627,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4419,
-        4420
-      ]
+        4703,
+        4704
+      ],
+      "scheduled_approved": true
     },
     "267989123": {
       "chat_id": 1677869966,
@@ -6280,15 +6263,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4383,
       "cleanup_message_ids": [
-        4421,
-        4422
+        4705,
+        4706
       ],
       "scheduled_at": 1793180827,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4421,
-        4422
-      ]
+        4705,
+        4706
+      ],
+      "scheduled_approved": true
     },
     "267989124": {
       "chat_id": 1677869966,
@@ -6314,15 +6298,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4384,
       "cleanup_message_ids": [
-        4423,
-        4424
+        4707,
+        4708
       ],
       "scheduled_at": 1793182027,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4423,
-        4424
-      ]
+        4707,
+        4708
+      ],
+      "scheduled_approved": true
     },
     "267989125": {
       "chat_id": 1677869966,
@@ -6336,15 +6321,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4385,
       "cleanup_message_ids": [
-        4425,
-        4426
+        4709,
+        4710
       ],
       "scheduled_at": 1793183227,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4425,
-        4426
-      ]
+        4709,
+        4710
+      ],
+      "scheduled_approved": true
     },
     "267989126": {
       "chat_id": 1677869966,
@@ -6358,15 +6344,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4386,
       "cleanup_message_ids": [
-        4427,
-        4428
+        4711,
+        4712
       ],
       "scheduled_at": 1793184427,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4427,
-        4428
-      ]
+        4711,
+        4712
+      ],
+      "scheduled_approved": true
     },
     "267989127": {
       "chat_id": 1677869966,
@@ -6386,15 +6373,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4387,
       "cleanup_message_ids": [
-        4429,
-        4430
+        4714,
+        4715
       ],
       "scheduled_at": 1793185627,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4429,
-        4430
-      ]
+        4714,
+        4715
+      ],
+      "scheduled_approved": true
     },
     "267989128": {
       "chat_id": 1677869966,
@@ -6414,15 +6402,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4388,
       "cleanup_message_ids": [
-        4431,
-        4432
+        4716,
+        4717
       ],
       "scheduled_at": 1793186827,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4431,
-        4432
-      ]
+        4716,
+        4717
+      ],
+      "scheduled_approved": true
     },
     "267989129": {
       "chat_id": 1677869966,
@@ -6442,15 +6431,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4389,
       "cleanup_message_ids": [
-        4433,
-        4434
+        4718,
+        4719
       ],
       "scheduled_at": 1793188027,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4433,
-        4434
-      ]
+        4718,
+        4719
+      ],
+      "scheduled_approved": true
     },
     "267989130": {
       "chat_id": 1677869966,
@@ -6495,15 +6485,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4390,
       "cleanup_message_ids": [
-        4435,
-        4436
+        4720,
+        4721
       ],
       "scheduled_at": 1793189227,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4435,
-        4436
-      ]
+        4720,
+        4721
+      ],
+      "scheduled_approved": true
     },
     "267989131": {
       "chat_id": 1677869966,
@@ -6517,39 +6508,16 @@
       "source_chat_id": 1677869966,
       "source_message_id": 4391,
       "cleanup_message_ids": [
-        4437,
-        4438
+        4722,
+        4723
       ],
       "scheduled_at": 1793190427,
       "auto_scheduled": true,
       "preview_message_ids": [
-        4437,
-        4438
-      ]
-    },
-    "267989132": {
-      "chat_id": 1677869966,
-      "text": "تاریخ ۱۴ می ۲۰۰۸ براندون سوانسون ۱۹ ساله در حال رانندگی به خونه از خونه یکی از دوستانش بود که ماشینش از جاده منحرف شد و داخل یه گودال افتاد براندون کمی قبل از ساعت ۲ بامداد با پدر و مادرش تماس گرفت و به اونا گفت که میدونه کجاست و از خونه اونها خیلی دور نیست.\nپدر و مادر براندون به محلی که اون توضیح داده بود رفتن اما نتونستن اونو پیدا کنن هر دو طرف شروع به چشمک زدن چراغهای ماشینشون کردن اما هیچ کدوم چراغ های چشمک زن و ندیدن براندون تصمیم گرفت که به سمت به شهر پیاده روی کنه و به پدر و مادرش گفت که یه سری چراغ روشن میبینه\nاون به پدرش هم گفت که به پارکینگ یه بار محلی بره و اونجا منتظر اون بمونن...\nحدود ۴۷ دقیقه از تماس گذشته بود که براندون یهویی وسط تماس گفت اوه خدای من! و بعد از اون تا پایان تماس سکوت کرد تا اینکه پدر و مادرش تماس و قطع کردن و چندین بار تلاش کردن به اون زنگ بزنن اما براندون جواب نداد\nبراندون سوانسون از اون زمان هیچگاه دیده یا شنیده نشده.... ماشین اون تو گودالی ۲۰ مایل دورتر از جایی که براندون فکر میکرد پیدا شد. پس از سالها جستجوی گسترده هیچ مدرک فیزیکی از محل براندون پیدا نشد و اون هنوز پس از ۱۶ سال بدون هیچ ردی گم شده....\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIRKGrfz0r3HOG1zIDgU_uyTXLxczZ5AAJIIgACYdZoUiVQliqvwQFSPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4392,
-      "cleanup_message_ids": [
-        4439,
-        4440,
-        4441
+        4722,
+        4723
       ],
-      "scheduled_at": 1793191627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4439,
-        4440,
-        4441
-      ]
+      "scheduled_approved": true
     },
     "267989133": {
       "chat_id": 1677869966,
@@ -6876,6 +6844,1310 @@
         4676
       ],
       "scheduled_approved": true
+    },
+    "267989274": {
+      "chat_id": 1677869966,
+      "text": "🔴هوش مصنوعی مایکروسافت در تشخیص بیماری از پزشکان پیشی گرفت\n▪️مایکروسافت اعلام کرد سامانه‌ی چندعاملی تشخیص پزشکی این شرکت در آزمون‌های مبتنی بر پرونده‌های واقعی، دقتی بسیار بالاتر از پزشکان انسانی به دست آورده.\nابزار Microsoft Diagnostic Orchestrator که با مدل GPT-5 کار میکنه، در سناریوهای برگرفته از گزارش‌های The New England Journal of Medicine دقت ۸۳ درصدی داشت، در حالی که پزشکان عمومی با دسترسی به منابع کمکی به ۳۶ درصد و پزشکان بدون منابع به ۲۲ درصد رسیدند.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "4990182601252668309"
+        },
+        {
+          "offset": 2,
+          "length": 57,
+          "type": "bold"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISeGrf0YQXuEuzyggKBnfI7XVk7AABgQACoRJrG66f0VIhcM3vHbK9yQEAAwIAA3cAAz0E"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4728,
+      "cleanup_message_ids": [
+        4884,
+        4885
+      ],
+      "scheduled_at": 1793054260,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4884,
+        4885
+      ],
+      "scheduled_approved": true
+    },
+    "267989275": {
+      "chat_id": 1677869966,
+      "text": "مدل Kimi K۳.۱ Pro معرفی شد؛ قدرتمندترین هوش مصنوعی چین\n🔹مدل ۲.۸ تریلیون پارامتری شرکت Moonshot با تکیه بر معماری نوین خود، قادر است متن‌های طولانی را سریع‌تر پردازش کند و در برخی بنچمارک‌ها موفق به پشت سر گذاشتن رقبای سرشناسی مانند GPT-۶ Astra و Claude Fable ۵.۱ شده است.\n🔹شرکت چینی پیش از انتشار نسخه متن‌باز، بخش بزرگی از داده‌های آموزش هک و نفوذ سایبری را برای ایمنی بیشتر حذف کرده است. با وجود این اصلاحات، بازدهی سیستم در آزمون‌های برنامه‌نویسی و حل مسائل فنی در سطحی بسیار نزدیک به برترین مدل‌های غربی از جمله Fable ۵.۵ قرار دارد.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 54,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4731,
+      "cleanup_message_ids": [
+        4886,
+        4887
+      ],
+      "scheduled_at": 1793055460,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4886,
+        4887
+      ],
+      "scheduled_approved": true
+    },
+    "267989276": {
+      "chat_id": 1677869966,
+      "text": "همراه اول تا اخر شهریور امسال برای فروش اینترنت پرو ۱۷۰۰ میلیارد ناقابل درآمد داشته....",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4732,
+      "cleanup_message_ids": [
+        4888,
+        4889
+      ],
+      "scheduled_at": 1793056660,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4888,
+        4889
+      ],
+      "scheduled_approved": true
+    },
+    "267989277": {
+      "chat_id": 1677869966,
+      "text": "قطر گفته ایران اگر کابل‌های اینترنت توو تنگه هرمز رو قطع کنه، خودش هم ضرر می‌کنه!\nگمونم خبر ندارن ما نصفِ سال اینترنت نداریم",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4733,
+      "cleanup_message_ids": [
+        4890,
+        4891
+      ],
+      "scheduled_at": 1793057860,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4890,
+        4891
+      ],
+      "scheduled_approved": true
+    },
+    "267989278": {
+      "chat_id": 1677869966,
+      "text": "اینترنت ایران‌ رو میشه تو کشورهای دیگه به عنوان ابزار شکنجه ازش استفاده کرد",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4734,
+      "cleanup_message_ids": [
+        4892,
+        4893
+      ],
+      "scheduled_at": 1793059060,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4892,
+        4893
+      ],
+      "scheduled_approved": true
+    },
+    "267989279": {
+      "chat_id": 1677869966,
+      "text": "چطور حافظه و اطلاعات ChatGPT رو به Claude و Gemini منتقل کنیم؟\nیکی از بزرگ‌ترین دغدغه‌ها موقع مهاجرت به چت‌بات‌های دیگه مثل Claude یا Gemini اینه که این هوش‌های مصنوعی شناختی از ما، علایق، لحن و سابقه‌مون ندارن و آموزش دادن دوباره همه‌چیز کار وقت‌گیریه! اما با قابلیت ایمپورت مموری، همه‌چیز توی چند ثانیه انجام میشه\n💬انتقال حافظه به Claude\nوارد Settings کلود بشید و بخش Memory رو باز کنید.\nروی گزینه Import memory from other AI providers کلیک کنید.\nپرامپت آماده‌ای که کلود بهتون میده رو کپی کنید و داخل یک چت جدید در ChatGPT بفرستید.\nچت‌جی‌پی‌تی تمام حافظه و شناختش از شما رو لیست می‌کنه.\nپاسخ خروجی رو کپی کرده، داخل کلود Paste کنید و دکمه Add to memory رو بزنید.\n💬 انتقال حافظه به Gemini\nدر جمینای وارد منوی تنظیمات بشید و روی Import memory بزنید.\nپرامپت اختصاصی جمینای رو بردارید و به چت‌بات قبلی‌تون بدید.\nاطلاعات خلاصه و ساختاریافته دریافتی رو کپی کرده، در کادر مربوطه در Gemini قرار بدید و Add to memory رو ثبت کنید.\n📝 به همین سادگی، دستیار جدیدت دقیقاً مثل قبلی تو رو می‌شناسه و لازم نیست همه‌چیز رو از صفر براش توضیح بدی",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISf2rf0cp9n9v62AmDJ0fu-Cmnnz5nAAIDEWsb_E6xUnDm9Sx3kd1DAQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4735,
+      "cleanup_message_ids": [
+        4894,
+        4895,
+        4896
+      ],
+      "scheduled_at": 1793060260,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4894,
+        4895,
+        4896
+      ],
+      "scheduled_approved": true
+    },
+    "267989280": {
+      "chat_id": 1677869966,
+      "text": "انجمن کسب‌وکارهای اینترنتی: افزایش تعرفه اینترنت بدون بهبود کیفیت و کاهش فیلترینگ غیرقابل‌پذیرش است\n🔹انجمن کسب‌وکارهای اینترنتی تهران در بیانیه‌ای اعلام کرد که افزایش تعرفه اینترنت بدون برنامه‌ای شفاف برای بهبود کیفیت، کاهش محدودیت‌ها و مشخص شدن محل مصرف درآمدها، غیرقابل‌پذیرش است.\n🔹در این بیانیه، پنج مطالبه مطرح شده است. نخستین مطالبه بهبود ملموس کیفیت اینترنت است. دومین مطالبه کاهش محدودیت‌ها و بازنگری در سیاست‌های فیلترینگ است. همچنین، انجمن در سومین مطالبه خود به شفافیت در محل مصرف درآمدهای حاصل از افزایش تعرفه اشاره کرده است.\n🔹مطالبه چهارم شامل پاسخ‌گویی و انتشار گزارش‌های دوره‌ای است. آخرین مطالبه نیز به این موضوع اشاره دارد که تصمیم‌گیران باید آثار مستقیم و غیرمستقیم افزایش هزینه اینترنت بر کسب‌وکارهای اینترنتی، به‌ویژه کسب‌وکارهای کوچک و متوسط، را در نظر بگیرند و از تحمیل فشار مضاعف بر فعالان اقتصاد دیجیتال جلوگیری کنند.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 99,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4736,
+      "cleanup_message_ids": [
+        4897,
+        4898
+      ],
+      "scheduled_at": 1793061460,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4897,
+        4898
+      ],
+      "scheduled_approved": true
+    },
+    "267989281": {
+      "chat_id": 1677869966,
+      "text": "از این به بعد ربات‌های تلگرامی فقط به پسوند bot محدود نمیشن\n💬از این به بعد میتونی پسوند رباتتون رو بجز \"bot\"، \"ai\", \"agent\", \"app\" و \"game\" بزارید.\n➕ برای استفاده از این قابلیت، باید تلگرام پرمیوم داشته باشید. هر نفر هم می‌تونه فقط دوتا تگ بگیره",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgEAAxkBAAISgWrf0cr7xK0DoTqd5EubLuHY2wF5AAKsDGsbzSPBRsJHODMEI_WyAQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4737,
+      "cleanup_message_ids": [
+        4899,
+        4900
+      ],
+      "scheduled_at": 1793062660,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4899,
+        4900
+      ],
+      "scheduled_approved": true
+    },
+    "267989282": {
+      "chat_id": 1677869966,
+      "text": "🔴 فرهنگستان زبان فارسی\nاز این به بعد به‌ جای «هدفون»، واژهٔ «گوشینه» رو به کار می‌بریم.",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4738,
+      "cleanup_message_ids": [
+        4901,
+        4902
+      ],
+      "scheduled_at": 1793063860,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4901,
+        4902
+      ],
+      "scheduled_approved": true
+    },
+    "267989283": {
+      "chat_id": 1677869966,
+      "text": "گوگل برای تأمین انرژی دیتاسنترها به مردم پول می‌دهد\n🔹در طرح مشترک گوگل و شرکت ولتوس، ظرفیت آزاد مصرف‌کنندگان خانگی و کسب‌وکارهای محلی تجمیع می‌شود تا یک نیروگاه مجازی با تأمین مالی گوگل شکل بگیرد. هر زمان که شبکه برق تحت فشار قرار بگیرد، به‌ویژه در زمان‌های اوج مصرف مانند موج گرما، ولتوس از مردم می‌خواهد که مصرف انرژی خود را کاهش دهند.\n🔹خانوارها و کسب‌وکارهای مشارکت‌کننده در این طرح از مزایای مالی برخوردار می‌شوند که شامل کاهش هزینه قبض برق و پرداخت مستقیم پول است. این مشارکت به‌صورت داوطلبانه انجام می‌شود و بخش قابل‌توجهی از کاهش مصرف نیز می‌تواند با استفاده از فناوری‌هایی مانند ترموستات‌ها و باتری‌های هوشمند محقق شود.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 51,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4739,
+      "cleanup_message_ids": [
+        4903,
+        4904
+      ],
+      "scheduled_at": 1793065060,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4903,
+        4904
+      ],
+      "scheduled_approved": true
+    },
+    "267989284": {
+      "chat_id": 1677869966,
+      "text": "🔴دانشمندا دارن با هوش مصنوعی روی ساخت یه تکنولوژی کارمیکنن که میتونه بوی چیزایی مثل عطر، قهوه و هر چیز دیگه ای رو از طریق اینترنت بفرسته و کسی که براش بو ارسال شده میتونه کامل بو رو حس کنه!",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgEAAxkBAAIShGrf0crgokoRia-0i4MjkhjHXLzFAAJCDWsb1TnoRjiP0_SRGn59AQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4740,
+      "cleanup_message_ids": [
+        4905,
+        4906
+      ],
+      "scheduled_at": 1793066260,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4905,
+        4906
+      ],
+      "scheduled_approved": true
+    },
+    "267989285": {
+      "chat_id": 1677869966,
+      "text": "نگرانی از تقویت هک توسط هوش مصنوعی پیشرفته\n🔹استارتاپ چینی مون‌شات ای‌آی اعلام کرد با افزایش نگرانی‌ها مبنی بر اینکه هوش مصنوعی خودمختار می‌تواند هک را به شدت افزایش دهد، قابلیت‌های تهاجمی سایبری جدیدترین مدل خود را افزایش می‌دهد.\n🔹شرکت مون شات مستقر در پکن، این محدودیت‌ها را هنگام معرفی Kimi K۳.۱ Pro اعلام کرد که آن را به عنوان توانمندترین مدل وزن باز کلاس ۳ تریلیون پارامتری خود توصیف می‌کند.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 42,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4741,
+      "cleanup_message_ids": [
+        4907,
+        4908
+      ],
+      "scheduled_at": 1793067460,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4907,
+        4908
+      ],
+      "scheduled_approved": true
+    },
+    "267989286": {
+      "chat_id": 1677869966,
+      "text": "اجرای GTA V روی آیفون ۱۸ پرو مکس با تنظیمات گرافیکی بالا\n🔹بن گسکین، فعال شناخته‌شده حوزه فناوری، تصاویر جدیدی از اجرای بازی GTA V روی گوشی iPhone ۱۸ Pro Max منتشر کرده است که این عنوان را با تنظیمات گرافیکی بالا به نمایش می‌گذارد.\n🔹نکته قابل‌توجه این است که بازی به‌صورت محلی روی خود گوشی اجرا می‌شود و نیازی به سرویس‌های ابری یا استریم از کامپیوتر ندارد. این موضوع توانایی سخت‌افزاری گوشی‌های جدید اپل در اجرای بازی‌های سنگین را نشان می‌دهد.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 56,
+          "type": "bold"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIShmrf0crzPUYqyauQZzOwH7XECx8-AALjDmsbBxzwUnBoWhSgOIGGAQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4742,
+      "cleanup_message_ids": [
+        4909,
+        4910
+      ],
+      "scheduled_at": 1793068660,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4909,
+        4910
+      ],
+      "scheduled_approved": true
+    },
+    "267989287": {
+      "chat_id": 1677869966,
+      "text": "هر کابل مخصوص چه کاری است 🧵🔌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgEAAxkBAAISh2rf0cq3Dz2SwYQIX2evjpy_HEAjAAI7DWsbusDJRTbnlPcY7IR7AQADAgADdwADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4743,
+      "cleanup_message_ids": [
+        4911,
+        4912
+      ],
+      "scheduled_at": 1793069860,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4911,
+        4912
+      ],
+      "scheduled_approved": true
+    },
+    "267989288": {
+      "chat_id": 1677869966,
+      "text": "یک فاجعه امنیتی در اینترنت؛ کلید خصوصی یکی از گواهی‌ها فقط عدد ۴ بود شرکت eMudhra که در زمینه صدور گواهی‌های امنیتی اینترنت فعالیت می‌کند، به‌دلیل ضعف شدید در کلیدهای خصوصی، با یک مشکل امنیتی جدی مواجه شده است.\n💬 ماجرا چیه؟ گواهی‌های میانی TLS این شرکت با کلیدهای خصوصی بسیار ضعیف شناسایی شدند؛ یکی از این کلیدها فقط عدد \"4\" بود چرا این خطرناکه؟ چنین کلیدهایی به‌راحتی قابل حدس هستند و مهاجم می‌تواند با سوءاستفاده از آن‌ها، گواهی امنیتی جعلی برای سایت‌های مختلف صادر کند؛ موضوعی که می‌تواند زمینه حملاتی مثل جعل هویت سایت‌ها را فراهم کند.\n💬 برای محافظت از خودتون چیکار کنید؟\nمرورگر و سیستم‌عامل خودتون رو به آخرین نسخه به‌روز کنید.\nاز مرورگرهای رسمی و به‌روز استفاده کنید و هشدارهای امنیتی اون‌ها رو جدی بگیرید.\nمی‌تونید از لینک زیر برای بررسی وضعیت اعتماد مرورگرتون به گواهی‌های آسیب‌دیده استفاده کنید\nاگر نتیجه \"Connected\" بود، لزوماً به معنی هک شدن یا ناامن بودن کل دستگاه شما نیست؛ اما ممکنه نشون بده مرورگرتون هنوز به گواهی آسیب‌دیده اعتماد می‌کنه. نتیجه رو جدی بگیرید و مرورگرتون رو به‌روز کنید.\n﻿📝این آسیب‌پذیری به معنی هک شدن همه کاربران نیست؛ اما یادآوری می‌کنه که حتی زیرساخت امنیتی اینترنت هم ممکنه دچار اشتباهات فاجعه‌بار بشه.",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISiGrf0cqM5odQ4QXi_Jptjnj71piMAAJqD2sbiozBUtfFPzg8z734AQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4744,
+      "cleanup_message_ids": [
+        4913,
+        4914,
+        4915
+      ],
+      "scheduled_at": 1793071060,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4913,
+        4914,
+        4915
+      ],
+      "scheduled_approved": true
+    },
+    "267989289": {
+      "chat_id": 1677869966,
+      "text": "📱بازکردن لینک‌های ناشناس ممکن است منجر به بن شدن حساب کاربری تلگرام شود!\n💩 یک آسیب‌پذیری خطرناک در این پیام‌رسان شناسایی شده است.\n📰این مشکل مربوط به نسخه‌های قدیمی‌تر تلگرام دسکتاپ بود: یک لینک خاص می‌توانست باعث شود که برنامه، فایل‌ها را از کامپیوتر به هکرها منتقل کند، از جمله داده‌های مربوط به سشن فعال. این امر امکان دسترسی به حساب کاربری را بدون وارد کردن دستی رمز عبور فراهم می‌کرد.\n+ این آسیب‌پذیری در نسخه 7.2.9 برطرف شده بنابراین، اگر هنوز این نسخه را نصب نکرده‌اید، آن را به‌روزرسانی کنید.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5330237710655306682"
+        },
+        {
+          "offset": 2,
+          "length": 71,
+          "type": "bold"
+        },
+        {
+          "offset": 74,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5443140911829644739"
+        },
+        {
+          "offset": 132,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5886437972647088483"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgIAAxkBAAISiWrf0coKDA4X1swV2j7jy_KVpBHIAAK6IWsb5cnoSke_KC8t-5d9AQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4745,
+      "cleanup_message_ids": [
+        4916,
+        4917
+      ],
+      "scheduled_at": 1793072260,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4916,
+        4917
+      ],
+      "scheduled_approved": true
+    },
+    "267989290": {
+      "chat_id": 1677869966,
+      "text": "تبدیل هر پروژه گیت‌هاب به پرامپت هوش مصنوعی در چند ثانیه\n💬 تاحالا شده توی گیت‌هاب پروژه‌ای رو ببینی و بخوای شبیهش رو به یک هوش مصنوعی (مثل کلود یا چت‌جی‌پی‌تی) توضیح بدی تا برات بسازه، ولی ندونی چطوری پرامپتش رو بنویسی؟\n✅با این ترفند خیلی راحت می‌تونی مهندسی معکوس کنی وارد صفحه ریپازیتوری مورد نظرت توی GitHub شو. توی آدرس‌بار مرورگر، عبارت hub رو پاک کن و به جاش بنویس reverse. اینتر بزن سایت GitReverse کل ساختار پروژه رو بررسی می‌کنه و یک پرامپت کامل، دقیق و مهندسی‌شده بهت تحویل میده حالا کافیه پرامپت رو کپی کنی و به هر مدل هوش مصنوعی که می‌خوای بدی تا نسخه مدنظرت رو بسازه.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 56,
+          "type": "bold"
+        },
+        {
+          "offset": 57,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5429411030960711866"
+        },
+        {
+          "offset": 221,
+          "length": 1,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5260726538302660868"
+        },
+        {
+          "offset": 305,
+          "length": 6,
+          "type": "bold"
+        },
+        {
+          "offset": 444,
+          "length": 30,
+          "type": "bold"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISimrf0cqAqzY57xqmmDCAGaa_r93dAAJKD2sbG4ThUuGdeJLNZ85mAQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4746,
+      "cleanup_message_ids": [
+        4918,
+        4919
+      ],
+      "scheduled_at": 1793073460,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4918,
+        4919
+      ],
+      "scheduled_approved": true
+    },
+    "267989291": {
+      "chat_id": 1677869966,
+      "text": "😺 با این ترفندها حرفه‌ای‌تر از ChatGPT استفاده کن!\n📰می‌دونستی می‌تونی با چند دستور ساده، سبک و نوع خروجی ChatGPT رو تغییر بدی و سریع‌تر به نتیجه دلخواهت برسی؟\n🎛از ساخت تصاویر تبلیغاتی و عکاسی حرفه‌ای گرفته تا طراحی‌های مینیمال، تصاویر سینمایی، انیمه و اینفوگرافیک؛ کلی قابلیت جذاب وجود داره که شاید هنوز ازشون خبر نداشته باشی!\n+ توی این پست، مجموعه‌ای از دستورهای کاربردی ChatGPT رو جمع کردیم که می‌تونی برای تولید تصاویر خلاقانه و حرفه‌ای ازشون استفاده کنی.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5796185041717433060"
+        },
+        {
+          "offset": 3,
+          "length": 48,
+          "type": "bold"
+        },
+        {
+          "offset": 52,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5886437972647088483"
+        },
+        {
+          "offset": 161,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5776424837786374634"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISi2rf0cqylj1J0Fat9wSMPKogVsqcAAKjD2sbBxz4UnXPmchAan09AQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4747,
+      "cleanup_message_ids": [
+        4920,
+        4921
+      ],
+      "scheduled_at": 1793074660,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4920,
+        4921
+      ],
+      "scheduled_approved": true
+    },
+    "267989292": {
+      "chat_id": 1677869966,
+      "text": "ادعای پژوهشگر امنیت: تلویزیون‌های سامسونگ صدا و فعالیت شما را ردیابی می‌کنند\n🔹یک پژوهشگر امنیت سایبری با استفاده از روش مهندسی معکوس، سیستم‌عامل تلویزیون‌های سامسونگ را مورد بررسی قرار داده و مدعی شده است که این تلویزیون‌ها اطلاعات گسترده‌ای از رفتار کاربران جمع‌آوری می‌کنند. این اطلاعات شامل صدا، اسکرین‌شات از صفحه و ردیابی تبلیغات ردشده است که به‌نظر می‌رسد هدف از آن نمایش تبلیغات هدفمندتر باشد.\n🔹این کارشناس همچنین اشاره کرده است که تلویزیون‌های فاقد میکروفون داخلی ممکن است به‌دنبال دستگاه‌های متصل دارای میکروفون، مانند ساندبار یا تجهیزات بلوتوثی، بگردند تا بتوانند صدا را ضبط کنند.",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4748,
+      "cleanup_message_ids": [
+        4922,
+        4923
+      ],
+      "scheduled_at": 1793075860,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4922,
+        4923
+      ],
+      "scheduled_approved": true
+    },
+    "267989293": {
+      "chat_id": 1677869966,
+      "text": "📱 بزودی CapCut با ChatGpt ادغام می‌شود!\n▫️فرآیند به این صورت خواهد بود\n⬅️ ایده و ویدیوها یا عکس‌های خودتون زو مستقیماً در چت قرار میدید و امکان استفاده از فایل‌های ذخیره شده در فضای ابری هم وجود خواهد داشت.\n⬅️و بعد ChatGPT یک پیش‌نویس از ویدیو رو ایجاد میکنه و اونو به ویرایشگر وب CapCut منتقل میکنه.\n⬅️بعد از اون امکان کنترل فرآیند ویرایش مستقیماً از طریق چت وجود خواهد داشت، و در نهایت، ویدیو رو میشه به پایان رسوند و منتشر کرد.",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgIAAxkBAAISjWrf0conqapF-dMh0RIRNAq1MAnvAAJWqAACRMzxSvv3SJMuSzYIPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4749,
+      "cleanup_message_ids": [
+        4924,
+        4925
+      ],
+      "scheduled_at": 1793077060,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4924,
+        4925
+      ],
+      "scheduled_approved": true
+    },
+    "267989294": {
+      "chat_id": 1677869966,
+      "text": "چرا حذف یک فایل ۱۰ گیگابایتی در یک ثانیه انجام میشه، ولی کپی کردنش ۳ دقیقه طول میکشه؟! شاید برای شما هم پیش اومده که وقتی یک فایل حجیم رو پاک می‌کنید، در یک چشم به هم زدن ناپدید میشه، اما موقع کپی کردنش باید کلی منتظر بمونید ماجرا چیه؟\n📥 موقع کپی کردن\nسیستم‌عامل مجبوره تک‌تک میلیاردها بیت اطلاعات (صفر و یک‌ها) رو به صورت فیزیکی روی خانه‌های حافظه بنویسه که خب زمان‌بره.\n🗑 موقع حذف کردن (Delete)\nسیستم‌عامل اصلاً کاری به خود فایل نداره! فقط میره توی جدول فهرست (مثل فهرست یک کتاب)، آدرس یا اشاره‌گر (Pointer) اون فایل رو خط می‌زند و اعلام می‌کنه این فضا خالیه. به همین خاطر حذف کردن کمتر از یک ثانیه طول میکشه\n🔎 راز برنامه‌های ریکاوری چیست؟\nچون اطلاعات اصلی فایل هنوز سر جاشون هستند، نرم‌افزارهای ریکاوری می‌تونن اون «خونه‌های بی‌ادرس» رو پیدا کنن و فایل رو برگردونن. اما حواتون باشه؛ اگه فایلی رو به اشتباه پاک کردید، نباید هیچ اطلاعات جدیدی روی هارد بریزید، وگرنه اطلاعات جدید روی فایل قبلی نوشته میشه (Overwrite) و ریکاوری غیرممکن میشه\n💬 تفاوت مهم هارد (HDD) و SSD\nروی هاردهای قدیمی (HDD) فایل‌ها تا وقتی بازنویسی نشن قابل ریکاوری هستن. اما در SSDها دستوری به نام TRIM وجود داره که به محض پاک کردن فایل، اون خانه‌ها رو به‌طور خودکار صفر می‌کنه تا سرعت هارد افت نکنه؛ به همین دلیل ریکاوری در SSDها خیلی سخت‌تره\n📌 قانون طلایی نجات فایل\nاگه چیزی رو اتفاقی پاک کردید، سریعاً سیستم رو خاموش کنید یا از نوشتن فایل جدید جلوگیری کنید تا شانس بازیابی بالا باشه",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISjmrf0cr316w6MOiYQ8JWYyYkt0yNAAJGD2sbYKjoUiYyeAjcgZ5pAQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4750,
+      "cleanup_message_ids": [
+        4926,
+        4927,
+        4928
+      ],
+      "scheduled_at": 1793078260,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4926,
+        4927,
+        4928
+      ],
+      "scheduled_approved": true
+    },
+    "267989296": {
+      "chat_id": 1677869966,
+      "text": "کاهش نویز پیام‌های صوتی در تلگرام ، تلگرام در نسخه آزمایشی اندروید، امکان استفاده از فناوری RNNoise برای کاهش نویز پس‌زمینه هنگام ضبط پیام صوتی را فراهم کرده است. این قابلیت می‌تواند به واضح‌تر شدن صدای شما در محیط‌های شلوغ کمک کند.\n📝 نحوه فعال‌سازی\nتلگرام اندروید را به نسخه 13.0.3 یا نسخه‌ای که این قابلیت را دارد، به‌روزرسانی کنید.\nوارد تنظیمات تلگرام شوید و دو بار روی شماره نسخه در پایین صفحه ضربه بزنید تا منوی مخفی باز شود.\nگزینه Show Experimental Settings را فعال کنید.\nوارد بخش Voice Messages شوید و گزینه Use new recorder را فعال کنید.\nدر بخش Noise suppression، گزینه RNNoise را انتخاب کنید.\nحالا می‌توانید پیام‌های صوتی خود را با کاهش نویز پس‌زمینه ضبط کنید. این قابلیت آزمایشی است و ممکن است در همه نسخه‌ها یا گوشی‌ها در دسترس نباشد. همچنین کاهش نویز به معنی حذف کامل صداهای مزاحم نیست.",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISu2rf0kfccBj1PeE2VA9mX5WsffaqAALID2sbxSWhUqpUQfYLvfIqAQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4795,
+      "cleanup_message_ids": [
+        4929,
+        4930
+      ],
+      "scheduled_at": 1793080660,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4929,
+        4930
+      ],
+      "scheduled_approved": true
+    },
+    "267989297": {
+      "chat_id": 1677869966,
+      "text": "🖥میانبرهای کاربردی کامپیوتر\n🔗که باید بلد باشی!",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5220073852507287243"
+        },
+        {
+          "offset": 29,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5219728382517867490"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISvGrf0kcsF6SGF6e-BV2TzXgF-cgMAAKWEmsbZbSwUr_W2De96asvAQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4796,
+      "cleanup_message_ids": [
+        4931,
+        4932
+      ],
+      "scheduled_at": 1793081860,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4931,
+        4932
+      ],
+      "scheduled_approved": true
+    },
+    "267989298": {
+      "chat_id": 1677869966,
+      "text": "به سلامتی ایشالله ....😂😂😂\nخوش بگذره 😜",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAISvWrf0kfJjpV8Hk25bvooPJIOg6Z8AAJAIQACfge4Uox7-khPcj88PQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4797,
+      "cleanup_message_ids": [
+        4933,
+        4934
+      ],
+      "scheduled_at": 1793083060,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4933,
+        4934
+      ],
+      "scheduled_approved": true
+    },
+    "267989299": {
+      "chat_id": 1677869966,
+      "text": "🔴چند روز پیش بازی کال‌‌آف دیوتی Modern Warfare 4 اومد\nنکته عجیب این‌جاست که داخل اون بازی، رهبر کره‌شمالی🇰🇵 ترور میشه!",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAISvmrf0kcqHgJriDdnUUvNGrjW-eaDAAKWIQACfDSwUkHCKCsBMte2PQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4798,
+      "cleanup_message_ids": [
+        4935,
+        4936
+      ],
+      "scheduled_at": 1793084260,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4935,
+        4936
+      ],
+      "scheduled_approved": true
+    },
+    "267989300": {
+      "chat_id": 1677869966,
+      "text": "یک قدم نزدیک‌تر به همجوشی هسته‌ای؛ جمینای ۴ آرگون معمای ۵۹ ساله را حل کرد\n🔹مدل جمینای ۴ آرگون گوگل به پژوهشگران کمک کرده است تا راه‌حل‌های ریاضی مربوط به میدان‌های مغناطیسی در رآکتورهای آزمایشی همجوشی هسته‌ای را گسترش دهند. این مدل با استفاده از چند ایجنت هوش مصنوعی توانسته در عرض چند ساعت، پیکربندی‌های مغناطیسی جدیدی شناسایی کند که محدودیت‌های هندسی راه‌حل‌های پیشین را نداشتند.\n🔹این دستاورد به مسئله‌ای در ریاضیات فیزیک پلاسما مربوط می‌شود که به حدس علمی مطرح‌شده در سال ۱۹۶۷ بازمی‌گردد. با این حال، پژوهش جدید به معنای حل کامل مسئله همجوشی هسته‌ای یا دستیابی به روشی برای تولید برق تجاری از این فرایند نیست.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 73,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4799,
+      "cleanup_message_ids": [
+        4937,
+        4938
+      ],
+      "scheduled_at": 1793085460,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4937,
+        4938
+      ],
+      "scheduled_approved": true
+    },
+    "267989301": {
+      "chat_id": 1677869966,
+      "text": "غول‌های مخابراتی اروپا برای رقابت با استارلینک متحد شدند\n🔹چهار اپراتور بزرگ اروپایی، از جمله دویچه تلکوم و تلفونیکا، تفاهم‌نامه‌ای برای ارائه خدمات اتصال مستقیم گوشی به ماهواره امضا کردند. در این پروژه، اپراتورها مسئول توسعه زیرساخت‌های زمینی و نظارتی خواهند بود و تأمین و پرتاب ماهواره‌ها به یک شریک مستقل واگذار می‌شود.\n🔹هدف اصلی این ائتلاف، پوشش‌دهی سراسری نقاط کور، حفظ امنیت زیرساخت‌های ارتباطی حساس و کاهش وابستگی اروپا به شبکه‌های آمریکایی، از جمله استارلینک است. این موضوع در حالی اعلام شده که اخیراً سفیر آمریکا هشدار داده بود که محدود کردن فعالیت استارلینک، ممکن است اقدامات تلافی‌جویانه واشنگتن علیه شرکت‌های اروپایی را به همراه داشته باشد.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 56,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4800,
+      "cleanup_message_ids": [
+        4939,
+        4940
+      ],
+      "scheduled_at": 1793086660,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4939,
+        4940
+      ],
+      "scheduled_approved": true
+    },
+    "267989302": {
+      "chat_id": 1677869966,
+      "text": "متا کابل اینترنت ۱۰۰۰ ترابیت‌برثانیه‌ای را در اقیانوس اطلس می‌سازد\n🔹کابل زیردریایی Petal متا با ظرفیت انتقال داده یک پتابیت‌برثانیه، آمریکا و فرانسه را به هم متصل خواهد کرد. راه‌اندازی این کابل که از فناوری فیبر نوری چند‌هسته‌ای بهره می‌برد، برای سال ۲۰۲۹ برنامه‌ریزی شده است و به افزایش ظرفیت انتقال داده بدون نیاز به افزایش ابعاد فیزیکی کابل یا توان بیشتر کمک می‌کند.\nمتا اعلام کرد\n🔹پتال نخستین کابل زیردریایی اقیانوس‌پیمای جهان در رده پتابیت است. ظرفیت انتقال داده این سیستم به یک پتابیت بر ثانیه، معادل هزار ترابیت‌برثانیه، می‌رسد و مسیر آن از بستر اقیانوس اطلس میان فرانسه و ایالات متحده عبور می‌کند.",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4801,
+      "cleanup_message_ids": [
+        4941,
+        4942
+      ],
+      "scheduled_at": 1793087860,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4941,
+        4942
+      ],
+      "scheduled_approved": true
+    },
+    "267989303": {
+      "chat_id": 1677869966,
+      "text": "⏺چت‌جی‌پی‌تی دسترسی کاربران ایرانی رو مسدود کرد؛ حالا بدون فیلترشکن نمیشه بهش دسترسی داشت!",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 1,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5841193060574171492"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISwmrf0kdBGGaQJ40mLmKeIfBiZ0MfAAJKD2sbInvBUsGP2bFHET_JAQADAgADdwADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4802,
+      "cleanup_message_ids": [
+        4943,
+        4944
+      ],
+      "scheduled_at": 1793089060,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4943,
+        4944
+      ],
+      "scheduled_approved": true
+    },
+    "267989304": {
+      "chat_id": 1677869966,
+      "text": "عرضه کارت گرافیک RTX ۶۰۶۰ انویدیا ممکن است تا سال ۲۰۲۹ به تعویق بیفتد\n🔹افشاگر سخت‌افزاری با نام مستعار KeplerL۲ گزارش داده است که کارت گرافیک میان‌رده GeForce RTX ۶۰۶۰ انویدیا ممکن است تا سال ۲۰۲۹ روانه بازار نشود.\n🔹به گفته این افشاگر، دلیل این تاخیر، تداوم کمبود عرضه در بازار نیمه‌رساناها و حافظه‌های GDDR با تراکم بالا است که بخش عمده این قطعات به حوزه هوش مصنوعی اختصاص داده می‌شود. انویدیا در شرایط کمبود قطعات، طبق روال همیشگی خود، عرضه کارت‌های گرافیک رده‌پایین‌تر را به تعویق می‌اندازد و راهکارهای پرچم‌دار با حاشیه سود بالاتر را در اولویت قرار می‌دهد. انتظار می‌رود مدل‌های رده‌بالای خانواده GeForce RTX ۶۰ در سال ۲۰۲۸ معرفی شوند، درحالی‌که عرضه مدل‌های متداول‌تر با فاصله زمانی قابل‌توجهی پس از آن انجام خواهد شد.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 69,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4803,
+      "cleanup_message_ids": [
+        4945,
+        4946
+      ],
+      "scheduled_at": 1793090260,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4945,
+        4946
+      ],
+      "scheduled_approved": true
+    },
+    "267989305": {
+      "chat_id": 1677869966,
+      "text": "🔴 اینترنت بین الملل ایران وضعیتش بشدت افتضاحه و ارتباط UDP قطع و اتصال به TCP بسیار کنده، آخرین باری که وضعیت این طور بود اینترنت برای ماه ها بعدش قطع شد.",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISxGrf0kdiBFD6_8MP4zZ6MNXECvOoAALGEmsb9rvAUmlZ_7g4jYp3AQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4804,
+      "cleanup_message_ids": [
+        4947,
+        4948
+      ],
+      "scheduled_at": 1793091460,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4947,
+        4948
+      ],
+      "scheduled_approved": true
+    },
+    "267989306": {
+      "chat_id": 1677869966,
+      "text": "ایلان ماسک\n« ۶ تا ۱۲ ماه دیگه، اولین چشم‌ های نیورالینک رو می‌کاریم. حتی اگه از روزی که به دنیا اومدی کاملاً نابینا بوده باشی، مستقیم روی قشر بینایی مغزت می‌نویسیم… و برای اولین بار دنیا رو می‌بینی.»\n«ولی این فقط شروع کاره. بعدش وضوح فوق‌العاده بالا می‌گیری و واقعاً قدرت‌های ابرقهرمانی پیدا می‌کنی: فروسرخ می‌بینی، فرابنفش می‌بینی، حتی رادار. دقیقاً مثل شخصیت‌های فیلم‌های علمی‌تخیلی.»",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4805,
+      "cleanup_message_ids": [
+        4949,
+        4950
+      ],
+      "scheduled_at": 1793092660,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4949,
+        4950
+      ],
+      "scheduled_approved": true
+    },
+    "267989307": {
+      "chat_id": 1677869966,
+      "text": "پلیس فرانسه\nاستفاده از پیامرسان‌های بله، ایتا و روبیکا توی فرانسه جرمه😁😁😁",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4806,
+      "cleanup_message_ids": [
+        4951,
+        4952
+      ],
+      "scheduled_at": 1793093860,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4951,
+        4952
+      ],
+      "scheduled_approved": true
+    },
+    "267989308": {
+      "chat_id": 1677869966,
+      "text": "برخی تولیدکنندگان موبایل به بازیافت رم‌های ۵ تا ۶ ساله روی آورده‌اند\n🔹رشد قیمت و کمبود قطعات حافظه موجب شده است که برخی سازندگان موبایل در چین به بازیافت قطعات کارکرده روی آورند. این شرکت‌ها برای جبران افت اهداف تولید، قصد دارند مدل‌های پایه محصولات جدید را به تراشه‌های رم بازیافتی با عمر ۵ تا ۶ سال مجهز کنند.\n🔹هرچند جداسازی و نصب دوباره این قطعات امکان‌پذیر است، اما احتمالاً دستگاه‌های نهایی با افت کارایی حافظه همراه خواهند بود. قراردادهای بلندمدت شرکت‌های کامپیوتری بازار را تحت فشار گذاشته و سازندگان گوشی را در برابر نوسانات قیمتی حافظه بی‌دفاع کرده است.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 68,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4807,
+      "cleanup_message_ids": [
+        4953,
+        4954
+      ],
+      "scheduled_at": 1793095060,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4953,
+        4954
+      ],
+      "scheduled_approved": true
+    },
+    "267989309": {
+      "chat_id": 1677869966,
+      "text": "🔴مرد برزیلی پس از فروش همه دارایی‌اش فهمید زن رویایی‌اش هوش مصنوعی بوده 😭\nمردی ۴۹ ساله از برزیل همه‌ی دارایی خود را فروخت و مسافتی نزدیک به ۱۹۰۰ کیلومتر را طی کرد تا با زن رویایی‌اش دیدار کند؛ اما در مقصد متوجه شد زنی که با او در ارتباط بود، ساخته‌ی هوش مصنوعی بوده است.",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISyGrf0kdq5w0JJVTOrl2PopcfmvXjAAJpD2sbNynAUsDkLJKWMeHvAQADAgADdwADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4808,
+      "cleanup_message_ids": [
+        4955,
+        4956
+      ],
+      "scheduled_at": 1793096260,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4955,
+        4956
+      ],
+      "scheduled_approved": true
+    },
+    "267989310": {
+      "chat_id": 1677869966,
+      "text": "🔴 واکنش پرفسور رائفی پور به ماشین پرنده ایلان ماسک",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISyWrf0kdIJU21ZyguEjWuKbaMZFEOAAJID2sb9rvIUt8BAAGmXlQhbQEAAwIAA3kAAz0E"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4809,
+      "cleanup_message_ids": [
+        4957,
+        4958
+      ],
+      "scheduled_at": 1793097460,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4957,
+        4958
+      ],
+      "scheduled_approved": true
+    },
+    "267989311": {
+      "chat_id": 1677869966,
+      "text": "گوگل شماره سیم‌کارت را به‌صورت خودکار به حساب‌ها متصل می‌کند؛ نگرانی کاربران ایرانی\n🔹گوگل قابلیت جدیدی را معرفی کرده که شماره سیم‌کارت فعال گوشی‌های اندرویدی را به‌طور خودکار به حساب‌های کاربری متصل می‌کند. این تغییر نگرانی‌هایی را درباره احتمال محدود شدن دسترسی کاربران ساکن ایران به اکانت‌های خود ایجاد کرده است.\n🔹مستندات رسمی گوگل تأیید می‌کنند که این فرایند بدون دریافت تأیید مستقیم از کاربر انجام می‌شود. اگرچه ادعای خطر جدی برای کاربران ایرانی چندان دقیق نیست، اما امکان غیرفعال‌سازی این قابلیت برای کسانی که تمایلی به اتصال خودکار ندارند، وجود دارد.\n🔹کارشناسان توصیه می‌کنند کاربران برای جلوگیری از مشکلات احتمالی، روش‌های مستقل و مطمئنی را برای ورود و بازیابی حساب‌های خود تنظیم کنند.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 83,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4810,
+      "cleanup_message_ids": [
+        4959,
+        4960
+      ],
+      "scheduled_at": 1793098660,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4959,
+        4960
+      ],
+      "scheduled_approved": true
+    },
+    "267989312": {
+      "chat_id": 1677869966,
+      "text": "🔴فوری / دولت آلمان مجوز فعالیت شعبه بانک صادرات ایران در شهر هامبورگ را به‌طور رسمی لغو کرد",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4811,
+      "cleanup_message_ids": [
+        4961,
+        4962
+      ],
+      "scheduled_at": 1793099860,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4961,
+        4962
+      ],
+      "scheduled_approved": true
+    },
+    "267989313": {
+      "chat_id": 1677869966,
+      "text": "🖥 تمام کدهای مخفی چت جی پی تی ChatGPT",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAISzGrf0kdxp4Fhp2XPcHrqU-G8UOOuAAJQDmsbiozIUnKNYk-A05TKAQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4812,
+      "cleanup_message_ids": [
+        4963,
+        4964
+      ],
+      "scheduled_at": 1793101060,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4963,
+        4964
+      ],
+      "scheduled_approved": true
+    },
+    "267989314": {
+      "chat_id": 1677869966,
+      "text": "⏺در حال حاضر تقریبا کل مملکت دست ایشون، «مهدی فضلی» مالک: گلرنگ، تپسی، فیلم‌نت، افق کوروش، فامیلا، اکتیو، شون، سافتلن و... هست.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 1,
+          "type": "custom_emoji",
+          "custom_emoji_id": "5841193060574171492"
+        }
+      ],
+      "media": [
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAISzWrf0kcv5FrfODvowyAu3i07VgyQAALED2sbUJ_ZUreBpZOrcS9TAQADAgADeQADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAISzmrf0kdhl_MNcQa64BZdovcXMJhLAALFD2sbUJ_ZUvGE44bTd3QhAQADAgADeQADPQQ"
+        }
+      ],
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4813,
+      "cleanup_message_ids": [
+        4965,
+        4966,
+        4967
+      ],
+      "scheduled_at": 1793102260,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4965,
+        4966,
+        4967
+      ],
+      "scheduled_approved": true
+    },
+    "267989316": {
+      "chat_id": 1677869966,
+      "text": "🔴 ایلان ماسک: هوش مصنوعی ممکن است به تهدیدی وجودی برای بشریت تبدیل شود\nاحتمال دارد هوش مصنوعی به تهدیدی وجودی برای بشر تبدیل شود، اما هیچ کاری از دست من برای جلوگیری از آن برنمی‌آید. بنابراین به این نتیجه رسیدم که دو انتخاب دارم؛ یا در این عرصه مشارکت کنم یا فقط تماشاگر باشم. مشارکت کردن برایم جذاب‌تر از تماشا کردن است.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 2,
+          "type": "custom_emoji",
+          "custom_emoji_id": "4990182601252668309"
+        },
+        {
+          "offset": 3,
+          "length": 68,
+          "type": "bold"
+        },
+        {
+          "offset": 72,
+          "length": 250,
+          "type": "blockquote"
+        }
+      ],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAISz2rf0kdiI7P8GxfU7vVbQ3-X4FsIAAItHwACyTfRUm_x3Vr8OEgXPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4815,
+      "cleanup_message_ids": [
+        4968,
+        4969
+      ],
+      "scheduled_at": 1793103460,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4968,
+        4969
+      ],
+      "scheduled_approved": true
+    },
+    "267989317": {
+      "chat_id": 1677869966,
+      "text": "۷ سایت کاربردی برای دانلود رایگان مقالات و کتاب‌های علمی\n💬 اگه برای پروژه دانشگاهی، تحقیق یا مطالعه به مقاله‌ای برخوردی که برای دانلودش باید پول بدی، این سایت‌ها می‌تونن کمکت کنن نسخه‌های رایگانش رو پیدا کنی\n💬 Unpaywall\nافزونه مرورگر برای پیدا کردن نسخه‌های رایگان و قانونی مقالات علمی.\n💬 Open Access Button\nپیدا کردن نسخه آزاد مقاله با لینک یا شناسه DOI.\n💬 PaperPanda\nافزونه‌ای برای پیدا کردن نسخه‌های رایگان مقالات با چند کلیک.\n💬 DOAJ\nدسترسی به مقالات مجلات علمی با دسترسی آزاد.\n💬 OA.mg\nموتور جست‌وجو برای پیدا کردن مقالات علمی و نسخه‌های قابل دسترس آن‌ها.\n💬 CORE\nجست‌وجو میان میلیون‌ها مقاله و پژوهش منتشرشده در مخازن دانشگاهی.\n💬 Library Genesis (LibGen)\nپایگاهی شناخته‌شده برای پیدا کردن کتاب‌ها و مقالات علمی؛ البته وضعیت حقوقی محتوای آن یکسان نیست و ممکن است شامل نسخه‌های غیرمجاز باشد.\n📝 برای دسترسی قانونی و مطمئن، بهتره اول سراغ منابع Open Access و نسخه‌های منتشرشده در مخازن رسمی دانشگاه‌ها بری.",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIS0Grf0ke92wfkU4-mLjJznxsePdx7AAK4EGsb_E6xUiF4oIdx8U6DAQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4816,
+      "cleanup_message_ids": [
+        4970,
+        4971
+      ],
+      "scheduled_at": 1793104660,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4970,
+        4971
+      ],
+      "scheduled_approved": true
+    },
+    "267989318": {
+      "chat_id": 1677869966,
+      "text": "گرافیک بی‌نظیر نسخه‌ جدید بازی‌کالاف‌ دیوتی😐🔥",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAIS0Wrf0ke4VG24T5tjERekqVWe8BR5AAIhHgACyTfJUoxG6hETC0D8PQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4817,
+      "cleanup_message_ids": [
+        4972,
+        4973
+      ],
+      "scheduled_at": 1793105860,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4972,
+        4973
+      ],
+      "scheduled_approved": true
+    },
+    "267989319": {
+      "chat_id": 1677869966,
+      "text": "قیمت رم در سال‌های آینده افزایش خواهد یافت\n🔹پیش‌فروش گسترده ظرفیت تولید حافظه‌های سامسونگ تا سال ۲۰۲۷، بازار سخت‌افزار را با موج جدیدی از گرانی رم مواجه می‌کند. تقاضای شدید شرکت‌های فعال در حوزه هوش مصنوعی، زنجیره تأمین حافظه برای کامپیوترهای شخصی را تحت فشار قرار داده است.\n🔹طبق گزارش KB Securities، حدود ۸۰ درصد از ظرفیت تولید حافظه‌های دیتاسنتر سامسونگ برای سال ۲۰۲۷ از پیش رزرو شده است. غول‌های فناوری برای تصاحب ۲۰ درصد باقی‌مانده وارد رقابت سنگینی می‌شوند. این وضعیت باعث می‌شود گیمرها و کاربران عادی برای ارتقای سیستم‌های خود با چالش‌های مالی جدی روبرو شوند. با وجود پیش‌بینی جهش ۵۷ درصدی در سود عملیاتی سامسونگ، فشار تورمی بر بازار سخت‌افزار همچنان ادامه خواهد داشت.",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 42,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4818,
+      "cleanup_message_ids": [
+        4974,
+        4975
+      ],
+      "scheduled_at": 1793107060,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4974,
+        4975
+      ],
+      "scheduled_approved": true
+    },
+    "267989320": {
+      "chat_id": 1677869966,
+      "text": "مدیر عامل سایپا\nمردم هوشیار باشن؛ توهین به خودروهای داخلی توهین به نظامه.",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4819,
+      "cleanup_message_ids": [
+        4976,
+        4977
+      ],
+      "scheduled_at": 1793108260,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4976,
+        4977
+      ],
+      "scheduled_approved": true
+    },
+    "267989321": {
+      "chat_id": 1677869966,
+      "text": "افزایش ۱۰۰ درصدی قیمت اینترنت در یک سال\n🔹قیمت اینترنت TD-LTE از تیر ۱۴۰۴ تا امروز چقدر تغییر کرده است؟",
+      "entities": [
+        {
+          "offset": 0,
+          "length": 39,
+          "type": "bold"
+        }
+      ],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAIS1Grf0kfnHa6k2PrvcgWAKYaqRDTcAAIFEWsbMf_ZUr2M2osFRJQqAQADAgADeQADPQQ"
+      },
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4820,
+      "cleanup_message_ids": [
+        4978,
+        4979
+      ],
+      "scheduled_at": 1793109460,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4978,
+        4979
+      ],
+      "scheduled_approved": true
+    },
+    "267989322": {
+      "chat_id": 1677869966,
+      "text": "🔻 تعرفه اینترنت همراه و مکالمه ۴۰ درصد افزایش یافت\n🔹همراه اول و ایرانسل از امروز تعرفه بسته‌های اینترنت همراه، مکالمه و پیامک را ۴۰ درصد افزایش دادند. بسته‌های اینترنتی خریداری‌شده پیش از این تغییر، تا پایان اعتبار با همان شرایط قابل استفاده‌اند.\n🔹 ستار هاشمی، وزیر ارتباطات، پیش‌تر اصلاح تعرفه‌های ارتباطی را ضروری دانسته و ثبات قیمت‌ها را یکی از عوامل ناترازی اقتصادی در این بخش عنوان کرده بود.",
+      "entities": [
+        {
+          "offset": 3,
+          "length": 48,
+          "type": "bold"
+        }
+      ],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4821,
+      "cleanup_message_ids": [
+        4980,
+        4981
+      ],
+      "scheduled_at": 1793110660,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4980,
+        4981
+      ],
+      "scheduled_approved": true
+    },
+    "267989323": {
+      "chat_id": 1677869966,
+      "text": "همراه اول و ایرانسل هرچی دم دستشون بود رو ۴۰ درصد گرون کردن\nاین دو اپراتور همراه علاوه‌بر اینترنت، تعرفه مکالمه و پیامک رو هم ۴۰درصد افزایش دادن.",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4822,
+      "cleanup_message_ids": [
+        4982,
+        4983
+      ],
+      "scheduled_at": 1793111860,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4982,
+        4983
+      ],
+      "scheduled_approved": true
+    },
+    "267989324": {
+      "chat_id": 1677869966,
+      "text": "🔴 معاون دبیرکل شورای عالی آموزش و پرورش : از این به بعد آوردن و استفاده از گوشی هوشمند تو مدارس سراسر کشور آزاده.",
+      "entities": [],
+      "media": null,
+      "channel": "@TechNamaFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4823,
+      "cleanup_message_ids": [
+        4984,
+        4985
+      ],
+      "scheduled_at": 1793113060,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4984,
+        4985
+      ],
+      "scheduled_approved": true
+    },
+    "267989377": {
+      "chat_id": 1677869966,
+      "text": "🔴 پست جدید نتانیاهو تو اینستاگرام به زبان فارسی و حمایت از مردم ایران.\n🔴 | اخبار",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgIAAxkBAAITfmrf0xu_il40UfCDSsbs9zXEv7EJAAIlJ2sbTcvRSmbatm06nzB3AQADAgADeQADPQQ"
+      },
+      "channel": "@NbzeKhabar",
+      "source_chat_id": 1677869966,
+      "source_message_id": 4990,
+      "cleanup_message_ids": [
+        4991,
+        4992
+      ],
+      "scheduled_at": 1793054667,
+      "auto_scheduled": true,
+      "preview_message_ids": [
+        4991,
+        4992
+      ]
     }
   },
   "edit_mode": {},
@@ -6885,7 +8157,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793052968
+      "retry_after": 1793053568
     },
     {
       "chat_id": 1677869966,
@@ -7266,10 +8538,17 @@
       "chat_id": 1677869966,
       "message_id": 4074,
       "delete_at": 1793138768
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4713,
+      "delete_at": 1793139361
     }
   ],
-  "active_channel": "@NimeShabHorror",
+  "active_channel": "@NbzeKhabar",
   "channel_schedule_next": {
-    "@NimeShabHorror": 1793206027
+    "@NimeShabHorror": 1793206027,
+    "@TechNamaFa": 1793113060,
+    "@NbzeKhabar": 1793054667
   }
 }
