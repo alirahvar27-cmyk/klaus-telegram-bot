@@ -707,34 +707,6 @@
         1475
       ]
     },
-    "267987803": {
-      "chat_id": 1677869966,
-      "text": "🧩🎮همکاری Xbox با ارلینگ هالند برای تبلیغ Call of Duty Modern Warfare 4\nچند ماه پیش، ارلینگ هالند گفته بود وقتی مشغول تمرین نیست، یکی از تفریحات موردعلاقه‌اش بازی کردن GTA، Call of Duty و Minecraft هست.\nاون حتی گفته بود Call of Duty: Modern Warfare 2 جزو سه بازی برتر تاریخ از نظرشه!\nحالا Xbox برای تبلیغ Modern Warfare 4 با این ستاره فوتبال همکاری کرده تا علاقه‌اش به بازی‌های ویدیویی رو به بخشی از کمپین تبلیغاتی خودش تبدیل کنه.\n⚽️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFX2rcgOBMaQc_h9LxuMuXW6wa3G6_AAImDAACNMrtUsM5XiF6EAxKPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1375,
-      "cleanup_message_ids": [
-        1375,
-        1492,
-        1493,
-        1889,
-        1911,
-        1913,
-        1916,
-        1917
-      ],
-      "preview_message_ids": [
-        1916,
-        1917
-      ],
-      "scheduled_at": 1792994400,
-      "scheduled_approved": true
-    },
     "267987804": {
       "chat_id": 1677869966,
       "text": "🧩 حجم و لیست تروفی‌های GTA VI ممکنه به‌زودی لو بره!\nطبق گزارش‌ها، قراره نسخه‌های مخصوص بررسی GTA VI اواخر اکتبر برای رسانه‌ها ارسال بشن. اگه این اتفاق بیفته، ممکنه توی همین چند روز آینده برای اولین بار از حجم بازی و لیست تروفی‌هاش باخبر بشیم؛ اونم قبل از انتشار رسمی بازی!\n🔻به نظر شما حجم GTA VI چند گیگابایته؟\n⚽️‌",
@@ -1390,11 +1362,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2501,
-      "delete_at": 1792993656
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2502,
       "delete_at": 1792997769
     },
@@ -1672,6 +1639,11 @@
       "chat_id": 1677869966,
       "message_id": 2925,
       "delete_at": 1793077493
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2926,
+      "delete_at": 1793081431
     }
   ]
 }
