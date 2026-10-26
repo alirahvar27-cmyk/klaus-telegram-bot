@@ -1691,50 +1691,6 @@
       "scheduled_at": 1793037900,
       "scheduled_approved": true
     },
-    "267988522": {
-      "chat_id": 1677869966,
-      "text": "🧩 به مناسبت سالگرد عرضه‌ی Red Dead Redemption 2 ❤️\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "audio",
-        "file_id": "CQACAgIAAxkBAAILmGrfEsrbRNi3YOLNjg88p9e5OcPYAAI9hQACDUYZSsTO70U4Wx4pPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2968,
-      "cleanup_message_ids": [
-        3257,
-        3258
-      ],
-      "preview_message_ids": [
-        3257,
-        3258
-      ],
-      "scheduled_at": 1793036280,
-      "scheduled_approved": true
-    },
-    "267988523": {
-      "chat_id": 1677869966,
-      "text": "🧩 همچنین در چنین روزی 24 سال پیش یکی دیگه از بهترین و خاطره انگیز ترین بازی های تاریخ یعنی GTA San Andreas برای PlayStation 2 عرضه شد!\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAILmWrfEsrnFiNxNvW2bz5dsUm8wPAaAAL7IQACp_DwUgt4ouS3YK1iPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2969,
-      "cleanup_message_ids": [
-        3251,
-        3252
-      ],
-      "preview_message_ids": [
-        3251,
-        3252
-      ],
-      "scheduled_at": 1793035740,
-      "scheduled_approved": true
-    },
     "267988539": {
       "chat_id": 1677869966,
       "text": "🧩 عنوان Resident Evil Requiem برنده جایزه بهترین بازی ویدیویی در FANGORIA Chainsaw Awards 2026 شد\nبازی Resident Evil Requiem تونست جایزه بهترین بازی ویدیویی رو در مراسم FANGORIA Chainsaw Awards 2026 به دست بیاره.\nاین مراسم توسط مجله آمریکایی FANGORIA که روی ژانر ترسناک تمرکز داره برگزار می‌شه و بخش‌های مختلفی از جمله فیلم، سریال و بازی‌های ویدیویی ترسناک رو پوشش می‌ده. برنده‌های این جوایز هم با رای طرفدارها انتخاب می‌شن.\n﻿\n⚽️‌",
@@ -3712,11 +3668,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2893,
-      "delete_at": 1793035875
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2894,
       "delete_at": 1793037610
     },
@@ -4049,6 +4000,16 @@
       "chat_id": 1677869966,
       "message_id": 4011,
       "delete_at": 1793120832
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4012,
+      "delete_at": 1793122727
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4013,
+      "delete_at": 1793122727
     }
   ]
 }
