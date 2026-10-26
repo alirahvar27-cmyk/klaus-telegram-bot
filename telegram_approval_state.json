@@ -707,35 +707,6 @@
         1475
       ]
     },
-    "267987809": {
-      "chat_id": 1677869966,
-      "text": "🎮 موتور سواری تو Sleeping Dogs واقعا فان بود. یکی از بهترین GTA کلون ها!\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFZWrcgOCtwhcGqSMFqZfdkKBUSqxoAAIUHAACXs_ZUn4-rJhSDsfRPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1381,
-      "cleanup_message_ids": [
-        1381,
-        1504,
-        1505,
-        1895,
-        1975,
-        1985,
-        1987,
-        1990,
-        1991
-      ],
-      "preview_message_ids": [
-        1990,
-        1991
-      ],
-      "scheduled_at": 1793030400,
-      "scheduled_approved": true
-    },
     "267987811": {
       "chat_id": 1677869966,
       "text": "🧩🎮 خالق پلی‌استیشن: دوران کنسول‌های بازی ممکنه رو به پایان باشه!\nکوتاراگی، ملقب به پدر پلی‌استیشن، تو گفت‌وگو با The Game Business هشدار داده که صنعت بازی با خطر پایان دوران کنسول‌های سنتی روبه‌رو هست.\nاون معتقده هزینه بالای سخت‌افزارهای بازی به یکی از چالش‌های اصلی این صنعت تبدیل شده، به گفته کوتاراگی، حتی رایانه‌های شخصی قدرتمند هم می‌تونن هزینه‌ای در حد قیمت یه خودرو داشته باشن.\nاون همچنین به پلتفرم‌های هوش مصنوعی مثل Google Gemini اشاره کرده که پردازش‌هاشون رو روی سرورها انجام میدن، نه لزوما روی دستگاه کاربرا، رویکردی که می‌تونه در آینده بر نحوه دسترسی مردم به فناوری و بازی‌ها تأثیر بذاره.\nکوتاراگی تأکید کرده که این دیدگاه‌ها متعلق به خودشه و نباید اونا رو موضع رسمی سونی دونست.\n⚽️‌",
@@ -1222,28 +1193,6 @@
         3433
       ],
       "scheduled_at": 1793082900,
-      "scheduled_approved": true
-    },
-    "267988493": {
-      "chat_id": 1677869966,
-      "text": "🎵 موزیک پست بالا\n🆔",
-      "entities": [],
-      "media": {
-        "type": "audio",
-        "file_id": "CQACAgQAAxkBAAILe2rfEqCpKCq0k2MisvwIYjnjdoL2AALXNQACr_hRUMrRYGRAt6aFPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2939,
-      "cleanup_message_ids": [
-        3205,
-        3206
-      ],
-      "preview_message_ids": [
-        3205,
-        3206
-      ],
-      "scheduled_at": 1793028960,
       "scheduled_approved": true
     },
     "267988494": {
@@ -1932,60 +1881,6 @@
         3227
       ],
       "scheduled_at": 1793032080,
-      "scheduled_approved": true
-    },
-    "267988535": {
-      "chat_id": 1677869966,
-      "text": "🇨🇳 گیم Phantom Blade Zero با نقدهای فوق‌العاده، به یکی از مدعیان بازی اکشن سال تبدیل شده!\n⚪️امتیاز رسانه ها\nرسانه 10 — PCGamesN\nرسانه 10 — The Outerhaven\nرسانه 10 — Wccftech\nرسانه 10 — Steam Deck HQ\nرسانه 10 — Saudi Gamer\nرسانه 9.5 — AreaJugones\nرسانه 9.5 — Combo Infinito\nرسانه 9.5 — CGMagazine\nرسانه 9.5 — DualShockers\nرسانه 9 — IGN\nرسانه 9 — Push Square\nرسانه 9 — Console Creatures\nرسانه 9 — Gameliner\nرسانه 9 — GamesRadar+\nرسانه 9 — Screen Rant\nرسانه 8.5 — GamesCH\nرسانه 8 — GameSpot\nرسانه 8 — VGC\nبازی Phantom Blade Zero نقدهای اولیه‌ش رو دریافت کرده و با امتیاز 88 تو Metacritic و 91 تو OpenCritic عملکرد درخشانی داشته، IGN به بازی نمره 9 از 10 داده و مبارزاتش رو به خاطر روون بودن فوق‌العاده تحسین کرده، GamesRadar هم ازش به عنوان یکی از مدعیان بازی سال یاد کرده.\nالبته همه منتقدها کاملا راضی نبودن، Eurogamer به بازی نمره 6 از 10 داده و معتقده مشکلات تعادل مبارزات و کیفیت فنی، مانع درخشش کامل بازی شدن\n⚽️‌",
-      "entities": [],
-      "media": [
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAILpWrfEsrsAskkCxtp-DSHJzHR_ctSAALbDmsb1rr4Uhc_Si2fAaH0AQADAgADeQADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAILpmrfEsqeQ6CgSmm_iwYOGD8QYQABdwAC2g5rG9a6-FLeFjEGFHcp9QEAAwIAA3kAAz0E"
-        }
-      ],
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2981,
-      "cleanup_message_ids": [
-        3218,
-        3219,
-        3220
-      ],
-      "preview_message_ids": [
-        3218,
-        3219,
-        3220
-      ],
-      "scheduled_at": 1793030700,
-      "scheduled_approved": true
-    },
-    "267988537": {
-      "chat_id": 1677869966,
-      "text": "🎮 کنسول دستی PS6 ممکنه تنها دستگاه دستی‌ای باشه که پردازنده گرافیکی RDNA 5 شرکت AMD رو دریافت می‌کنه!\nطبق گفته‌های ریچارد لیدبتر از Digital Foundry، «بحث‌هایی پشت پرده» وجود داشته که سونی «یه نوع انحصار» برای استفاده از RDNA 5 تو دستگاه دستی خودش با AMD داره.\nاین «انحصار» در واقع به این معناست که AMD دیگه نمی‌خواد منابع مهندسی رو صرف طراحی تراشه‌های نیمه‌سفارشی برای دستگاه‌های کم‌تیراژ کنه، برای شروع طراحی، مشتری باید حداقل 10 میلیون واحد در طول چرخه عمر محصول رو تضمین کنه.\nاز اونجایی که حتی موفق‌ترین دستگاه دستی یعنی Steam Deck هم تخمین زده میشه فقط حدود 6 میلیون واحد فروخته باشه، این آستانه برای اکثر سازنده‌های دستی غیرقابل دسترسه.\nدر نتیجه، به نظر می‌رسه سونی تنها شرکتیه که حاضر به تأمین مالی طراحی یه تراشه سفارشی RDNA 5 برای دستگاه دستی شده، در حالی که Steam Deck 2 و کنسول دستی Xbox احتمالا باید از تراشه‌های آماده مبتنی بر RDNA 3.5/RDNA 4m استفاده کنن.\nتراشه سفارشی PS6 دستی (با اسم رمز Canis) طبق شایعه‌ها با فرآیند TSMC 3nm ساخته میشه، شامل 4 هسته Zen 6c + 2 هسته Zen 6 LP، 16 واحد محاسباتی RDNA 5 و 24 گیگابایت حافظه LPDDR5X با باس 192 بیتی خواهد داشت.\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAILp2rfEsruWZlmnKldnPGKLa4ZUjkTAAIqD2sbuSf5UpAfEQABmCsVLAEAAwIAA3kAAz0E"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2983,
-      "cleanup_message_ids": [
-        3211,
-        3212,
-        3213
-      ],
-      "preview_message_ids": [
-        3211,
-        3212,
-        3213
-      ],
-      "scheduled_at": 1793029680,
       "scheduled_approved": true
     },
     "267988539": {
@@ -3778,340 +3673,6 @@
         3546
       ]
     },
-    "267988768": {
-      "chat_id": 1677869966,
-      "text": "ثبت تصویر یک جفت پلنگ ایرانی در منطقهٔ حفاظت‌شدهٔ هرمود لارستان\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی | پروکسی  | پروکسی",
-      "entities": [
-        {
-          "offset": 64,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=bo0ji.co.uk.&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b"
-        },
-        {
-          "offset": 73,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=im.dumaniltd.co.uk&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 82,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.closcloud.co.uk&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 89,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 98,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 107,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 114,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 123,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 132,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 139,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 148,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 157,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 164,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 173,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=on.mishutkin.click&port=443&secret=eebc740653e2e1fd5972b4a92e5a0dd7826f6e2e6d69736875746b696e2e636c69636b"
-        },
-        {
-          "offset": 182,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=misuga76.mosswren.vip&port=443&secret=ee24c8636b7e946779a023ee708370719b6d697375676137362e6d6f73737772656e2e766970"
-        },
-        {
-          "offset": 189,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=PAyDaR.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 199,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nab.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 208,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soh5.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 215,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=vasle.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 225,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=tassian.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 234,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=FOR-IRAN.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 241,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soheil.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 250,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=for.you.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 260,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=AZADI.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAINumrfGFIXUDO9_mpH4Asz_1ef1ijYAAJkJwACz-rpUtYMPtzfgEW4PQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 3514,
-      "cleanup_message_ids": [
-        3806,
-        3807
-      ],
-      "preview_message_ids": [
-        3806,
-        3807
-      ],
-      "scheduled_at": 1793031120,
-      "scheduled_approved": true
-    },
-    "267988770": {
-      "chat_id": 1677869966,
-      "text": "اگر میخواین شخصیت واقعی یک نفر رو بشناشید به واکنشش در این سه موقعیت خوب دقت کنید\n1- وقتیکه نه میشنوه\n2- وقتیکه اشتباه میکنه\n3- وقتیکه شما موفق میشید\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی | پروکسی  | پروکسی",
-      "entities": [
-        {
-          "offset": 150,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=bo0ji.co.uk.&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b"
-        },
-        {
-          "offset": 159,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=im.dumaniltd.co.uk&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 168,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.closcloud.co.uk&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 175,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 184,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 193,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 200,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 209,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 218,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 225,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 234,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 243,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 250,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 259,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=on.mishutkin.click&port=443&secret=eebc740653e2e1fd5972b4a92e5a0dd7826f6e2e6d69736875746b696e2e636c69636b"
-        },
-        {
-          "offset": 268,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=misuga76.mosswren.vip&port=443&secret=ee24c8636b7e946779a023ee708370719b6d697375676137362e6d6f73737772656e2e766970"
-        },
-        {
-          "offset": 275,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=PAyDaR.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 285,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=nab.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 294,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soh5.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 301,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=vasle.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 311,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=tassian.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 320,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=FOR-IRAN.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 327,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=soheil.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 336,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=for.you.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        },
-        {
-          "offset": 346,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=AZADI.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAINvGrfGFJm8F7t6WtuTk0CsXA8aWJKAALtHQACyuTpUrczhyfGJfVlPQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 3516,
-      "cleanup_message_ids": [
-        3794,
-        3795
-      ],
-      "preview_message_ids": [
-        3794,
-        3795
-      ],
-      "scheduled_at": 1793028840,
-      "scheduled_approved": true
-    },
     "267988771": {
       "chat_id": 1677869966,
       "text": "😇 امروز 25 October، روز جهانی یکی از محبوب‌ترین غذاهای جهان، یعنی پاستاست\n+ این پست رو برای هر کی بفرستی، باید امشب یه پاستا مهمونت کنه😊\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی • پروکسی • پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی |  پروکسی | پروکسی\nپروکسی | پروکسی  | پروکسی",
@@ -4569,49 +4130,11 @@
         3602,
         3603
       ]
-    },
-    "267988794": {
-      "chat_id": 1677869966,
-      "text": "کانفیگ نپستر برای تمامی اپراتور ها نامحدود مولتی لوکیشن اختصاصی و آیپی ثابت مخصوص دانلود وب گردی برای اندروید و آیفون\n🔴کانفیگی که توی شرایط بحرانی کشور وصله!",
-      "entities": [],
-      "media": [
-        {
-          "type": "document",
-          "file_id": "BQACAgEAAxkBAAIOF2rfGHaGnSugzygoBPYlnlU9j9lqAAJpCQACB1n4RpmCRo4d3qDhPQQ"
-        }
-      ],
-      "channel": "@NetPlusFa",
-      "cleanup_message_ids": [
-        3800,
-        3801
-      ],
-      "preview_message_ids": [
-        3800,
-        3801
-      ],
-      "edited_manually": true,
-      "scheduled_at": 1793030040,
-      "scheduled_approved": true
     }
   },
   "edit_mode": {},
   "schedule_mode": {},
   "status_cleanup": [
-    {
-      "chat_id": 1677869966,
-      "message_id": 2888,
-      "delete_at": 1793028831
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2889,
-      "delete_at": 1793028832
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2890,
-      "delete_at": 1793030478
-    },
     {
       "chat_id": 1677869966,
       "message_id": 2891,
@@ -4896,6 +4419,41 @@
       "chat_id": 1677869966,
       "message_id": 3998,
       "delete_at": 1793114473
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 3999,
+      "delete_at": 1793117939
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4000,
+      "delete_at": 1793117939
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4001,
+      "delete_at": 1793117941
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4002,
+      "delete_at": 1793117945
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4003,
+      "delete_at": 1793117946
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4004,
+      "delete_at": 1793117947
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4005,
+      "delete_at": 1793117948
     }
   ]
 }
