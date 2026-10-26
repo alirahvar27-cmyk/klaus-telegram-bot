@@ -733,7 +733,13 @@ def handle_update(update):
         if not draft:
             if chat_id: send_text(chat_id, "این پیش‌نویس دیگر در دسترس نیست.")
             return
-        if action == "setchannel" and len(parts) == 3 and parts[2] in CHANNELS: draft["channel"] = parts[2]; save_state(); preview(chat_id, draft_id)
+        if action == "setchannel" and len(parts) == 3 and parts[2] in CHANNELS:
+            draft["channel"] = parts[2]
+            if draft.get("auto_scheduled") and draft.get("scheduled_at"):
+                queue = STATE.setdefault("channel_schedule_next", {})
+                queue[parts[2]] = max(int(queue.get(parts[2], 0) or 0), int(draft["scheduled_at"]))
+            save_state()
+            preview(chat_id, draft_id)
         elif action == "channels":
             rows, row = [], []
             for target, (name, _) in CHANNELS.items():
@@ -829,7 +835,11 @@ def handle_update(update):
                     mode["step"]="hour"; STATE["schedule_mode"][user_key]=mode; save_state(); cleanup_draft_messages(draft)
                     retry_message=send_text(chat_id,"این ساعت گذشته یا خیلی نزدیک است. ساعت دیگری بین ۰ تا ۲۳ بفرست؛ بعد دوباره دقیقه را می‌پرسم.")
                     draft.setdefault("cleanup_message_ids", []).append(retry_message["message_id"]); save_state(); return
-                draft["scheduled_at"]=int(scheduled_epoch); draft["scheduled_approved"]=True; STATE["schedule_mode"].pop(user_key,None); save_state(); cleanup_draft_messages(draft); preview(chat_id,draft_id)
+                draft["scheduled_at"]=int(scheduled_epoch)
+                if draft.get("auto_scheduled"):
+                    queue = STATE.setdefault("channel_schedule_next", {})
+                    queue[draft["channel"]] = max(int(queue.get(draft["channel"], 0) or 0), int(scheduled_epoch))
+                draft["scheduled_approved"]=True; STATE["schedule_mode"].pop(user_key,None); save_state(); cleanup_draft_messages(draft); preview(chat_id,draft_id)
             else: raise ValueError("مرحلهٔ زمان‌بندی نامعتبر است.")
         except ValueError as exc:
             STATE["schedule_mode"][user_key]=mode; save_state(); prompt_text=(f"❌ {exc}\nتاریخ را با قالب YYYY-MM-DD بفرست؛ فقط امروز تا ۷ روز آینده. برای لغو /cancel." if step=="date" else f"❌ {exc}\nساعت را به‌صورت عدد ۰ تا ۲۳ بفرست." if step=="hour" else f"❌ {exc}\nدقیقه را به‌صورت عدد ۰ تا ۵۹ بفرست."); error_message=send_text(chat_id,prompt_text)
