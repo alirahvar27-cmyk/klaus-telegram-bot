@@ -707,34 +707,6 @@
         1475
       ]
     },
-    "267987801": {
-      "chat_id": 1677869966,
-      "text": "⚽️🧩 واکنش مدیر پروژه Mass Effect به تعطیلی استودیو و انتشار GTA 6!\nمایک گمبل، مدیر پروژه Mass Effect 5، در واکنشی به انتشار GTA 6 گفت: «حداقل وقتی GTA 6 منتشر میشه، لازم نیست خودم رو به بیماری بزنم و مرخصی بگیرم!»\nاون همچنین از طرفدارا بابت موج حمایت‌ها و پیام‌های محبت‌آمیزشون بعد از تعطیلی استودیو توسط EA تشکر کرد و گفت این حمایت‌ها براشون اهمیت خیلی زیادی داره.\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFXWrcgOAzciVD6Atxi7H04zhVPSLqAALrEGsbwrDgUvfdydufDixiAQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1373,
-      "cleanup_message_ids": [
-        1373,
-        1488,
-        1489,
-        1887,
-        1897,
-        1899,
-        1902,
-        1903
-      ],
-      "preview_message_ids": [
-        1902,
-        1903
-      ],
-      "scheduled_at": 1792987200,
-      "scheduled_approved": true
-    },
     "267987802": {
       "chat_id": 1677869966,
       "text": "🕸 گیم Spider-Man 2 با فناوری DLSS 5!\n⚽️‌",
@@ -1446,16 +1418,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2497,
-      "delete_at": 1792986717
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2498,
-      "delete_at": 1792987201
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2499,
       "delete_at": 1792990440
     },
@@ -1738,6 +1700,11 @@
       "chat_id": 1677869966,
       "message_id": 2923,
       "delete_at": 1793067230
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2924,
+      "delete_at": 1793073609
     }
   ]
 }
