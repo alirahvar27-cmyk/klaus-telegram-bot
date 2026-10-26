@@ -707,34 +707,6 @@
         1475
       ]
     },
-    "267987805": {
-      "chat_id": 1677869966,
-      "text": "🧩 این جزئیات دوست‌داشتنی در Red Dead Redemption 2 رو دیده بودید؟\nتوی شهر Valentine، می‌تونید با یه NPC روبه‌رو بشید که فقط یه دست داره و از آرتور می‌خواد بغلش کنه.\nاگه درخواستش رو قبول کنید، Honor آرتور بیشتر می‌شه! اما ماجرا به همین‌جا ختم نمی‌شه؛ اون درباره دوست قدیمیش هم با آرتور صحبت می‌کنه و باعث می‌شه این برخورد ساده، معنای عمیق‌تری پیدا کنه.\nعنوان Red Dead Redemption 2 فقط یه بازی با جزئیات دیوانه‌کننده نیست؛ پر از لحظه‌های کوچیک و قشنگیه که یادمون می‌ندازن با افراد دارای معلولیت، مهربون باشیم و با عزت و احترام باهاشون رفتار کنیم.\nگاهی حتی یه حرکت کوچیک هم می‌تونه برای یه نفر معنای بزرگی داشته باشه.\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFYWrcgOArRF3X1nNpQDXqI2w3VIMCAAI8DQACuRflUsgZloFlXoDWPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1377,
-      "cleanup_message_ids": [
-        1377,
-        1496,
-        1497,
-        1891,
-        1932,
-        1934,
-        1937,
-        1938
-      ],
-      "preview_message_ids": [
-        1937,
-        1938
-      ],
-      "scheduled_at": 1793008800,
-      "scheduled_approved": true
-    },
     "267987806": {
       "chat_id": 1677869966,
       "text": "🎮 بازی Battlefield 1 وقتی DLSS 5 خاموش و روشنه!\n⚽️‌",
@@ -1323,28 +1295,6 @@
         2206
       ],
       "edited_manually": true
-    },
-    "267988482": {
-      "chat_id": 1677869966,
-      "text": "🎮 عشق دومین حس خوبه، اولیش بازی کردن این شاهکار برای اولین بار\nبازی: Resident evil Village\nسازنده: Capcom\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAILcGrfEqA4mfN56wgTLCfpkmhebYdpAAJTIAACcZPxUk6JAAEmR6mrrj0E"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2928,
-      "cleanup_message_ids": [
-        3136,
-        3137
-      ],
-      "preview_message_ids": [
-        3136,
-        3137
-      ],
-      "scheduled_at": 1793007060,
-      "scheduled_approved": true
     },
     "267988483": {
       "chat_id": 1677869966,
@@ -2418,95 +2368,6 @@
         3415
       ],
       "scheduled_at": 1793077200,
-      "scheduled_approved": true
-    },
-    "267988745": {
-      "chat_id": 1677869966,
-      "text": "به او گفتم: «فقط خلوت گزینم»\nبگفتا: «من کنارت می‌نشینم\nبیا با هم در این خلوت بمانیم»\nمگر می‌شد در او دنیا نبینم؟\nهمراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
-      "entities": [
-        {
-          "offset": 113,
-          "length": 5,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 119,
-          "length": 7,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 128,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 135,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 144,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 151,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=se.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 160,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 167,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=shsh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 176,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 183,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        },
-        {
-          "offset": 192,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=noh.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAINiGrfF-ljveEHqjq-7RayCsaaPggtAAKBEmsbxr0gUqMU-eFhTVuyAQADAgADeQADPQQ"
-      },
-      "channel": "@NetPlusFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 3464,
-      "cleanup_message_ids": [
-        3672,
-        3673
-      ],
-      "preview_message_ids": [
-        3672,
-        3673
-      ],
-      "scheduled_at": 1793007180,
       "scheduled_approved": true
     },
     "267988746": {
@@ -7745,35 +7606,6 @@
       "scheduled_at": 1793009640,
       "scheduled_approved": true
     },
-    "267988793": {
-      "chat_id": 1677869966,
-      "text": "🕺 کانفیگ پرسرعت نپستر برای تمامی اپراتور ها نامحدود مولتی لوکیشن اختصاصی و آیپی ثابت مخصوص دانلود وب گردی برای اندروید و آیفون\n🔴کانفیگی که توی شرایط بحرانی کشور وصله!",
-      "entities": [],
-      "media": [
-        {
-          "type": "document",
-          "file_id": "BQACAgQAAxkBAAIOFmrfGHalY42FAbNPVMOXtazcQKSPAALgIQACdlL4UvaO0HSPuUElPQQ"
-        },
-        {
-          "type": "document",
-          "file_id": "BQACAgEAAxkBAAIOF2rfGHaGnSugzygoBPYlnlU9j9lqAAJpCQACB1n4RpmCRo4d3qDhPQQ"
-        }
-      ],
-      "channel": "@NetPlusFa",
-      "cleanup_message_ids": [
-        3678,
-        3679,
-        3680
-      ],
-      "preview_message_ids": [
-        3678,
-        3679,
-        3680
-      ],
-      "edited_manually": true,
-      "scheduled_at": 1793009100,
-      "scheduled_approved": true
-    },
     "267988794": {
       "chat_id": 1677869966,
       "text": "کانفیگ نپستر برای تمامی اپراتور ها نامحدود مولتی لوکیشن اختصاصی و آیپی ثابت مخصوص دانلود وب گردی برای اندروید و آیفون\n🔴کانفیگی که توی شرایط بحرانی کشور وصله!",
@@ -7801,31 +7633,6 @@
   "edit_mode": {},
   "schedule_mode": {},
   "status_cleanup": [
-    {
-      "chat_id": 1677869966,
-      "message_id": 2862,
-      "delete_at": 1793007952
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2863,
-      "delete_at": 1793007953
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2864,
-      "delete_at": 1793009358
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2865,
-      "delete_at": 1793009359
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2866,
-      "delete_at": 1793009360
-    },
     {
       "chat_id": 1677869966,
       "message_id": 2870,
@@ -8035,6 +7842,26 @@
       "chat_id": 1677869966,
       "message_id": 3664,
       "delete_at": 1793092303
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 3963,
+      "delete_at": 1793095468
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 3964,
+      "delete_at": 1793095469
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 3965,
+      "delete_at": 1793095469
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 3966,
+      "delete_at": 1793095510
     }
   ]
 }
