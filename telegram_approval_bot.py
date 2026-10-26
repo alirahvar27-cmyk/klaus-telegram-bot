@@ -66,10 +66,12 @@ def load_state():
             data.setdefault("edit_mode", {})
             data.setdefault("schedule_mode", {})
             data.setdefault("status_cleanup", [])
+            data.setdefault("active_channel", None)
+            data.setdefault("channel_schedule_next", {})
             return data
     except (OSError, json.JSONDecodeError):
         pass
-    return {"offset": 0, "pending": {}, "edit_mode": {}, "schedule_mode": {}, "status_cleanup": []}
+    return {"offset": 0, "pending": {}, "edit_mode": {}, "schedule_mode": {}, "status_cleanup": [], "active_channel": None, "channel_schedule_next": {}}
 
 STATE = load_state()
 
@@ -489,6 +491,31 @@ def detect_channel(text, media_type):
         return "@Khndedoon"
     return "@NbzeKhabar" if len(t) > 180 else "@Khndedoon"
 
+def normalize_channel_command(value):
+    """Normalize a channel link/name so admin can select a channel in plain chat."""
+    value = (value or "").strip().casefold().replace("ك", "ک").replace("ي", "ی").replace("ى", "ی")
+    value = re.sub(r"[\\u200c\\u200d\\ufeff]", "", value)
+    value = re.sub(r"^https?://(?:www\\.)?(?:t\\.me|telegram\\.me)/", "@", value, flags=re.IGNORECASE)
+    value = re.sub(r"^@", "", value)
+    return re.sub(r"[\\W_]+", "", value, flags=re.UNICODE)
+
+
+def resolve_channel_command(text):
+    """Return ('end', None), ('channel', username), or (None, None)."""
+    normalized = normalize_channel_command(text)
+    if normalized == normalize_channel_command("پایان"):
+        return "end", None
+    for channel, (name, _) in CHANNELS.items():
+        candidates = {
+            normalize_channel_command(channel),
+            normalize_channel_command(name),
+            normalize_channel_command("https://t.me/" + channel.lstrip("@")),
+        }
+        if normalized and normalized in candidates:
+            return "channel", channel
+    return None, None
+
+
 def _single_extract_message(msg):
     """Extract ordinary Bot API messages and Telegram's rich_message forward payload."""
     media_kinds = ("photo", "video", "audio", "voice", "document", "animation", "video_note", "sticker")
@@ -638,8 +665,8 @@ def preview(chat_id, draft_id):
     controls = []
     if not scheduled_ready: controls.append([{"text": ("✅ تأیید و زمان‌بندی" if draft.get("scheduled_at") else "✅ تأیید و انتشار"), "callback_data": f"approve:{draft_id}"}])
     controls.extend([[{"text": "✏️ ویرایش متن", "callback_data": f"edit:{draft_id}"}, {"text": "🔄 تغییر کانال", "callback_data": f"channels:{draft_id}"}], [{"text": "⏰ تعیین زمان انتشار", "callback_data": f"schedule:{draft_id}"}], [{"text": "❌ لغو", "callback_data": f"cancel:{draft_id}"}]])
-    status_text = ("زمان‌بندی ثبت شد؛ پست در زمان تعیین‌شده خودکار منتشر می‌شود." if scheduled_ready else "اگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود.")
-    if scheduled_ready:
+    status_text = ("زمان‌بندی ثبت شد؛ پست در زمان تعیین‌شده خودکار منتشر می‌شود." if scheduled_ready else ("زمان پیشنهادی خودکار است؛ با تأیید، زمان‌بندی ثبت می‌شود." if draft.get("scheduled_at") else "اگر درست است تأیید کن؛ تا پیش از تأیید منتشر نمی‌شود."))
+    if draft.get("scheduled_at"):
         scheduled_dt = datetime.fromtimestamp(int(draft["scheduled_at"]), ZoneInfo("Asia/Tehran")); status_text += chr(10) + "زمان: " + scheduled_dt.strftime("%Y-%m-%d %H:%M") + " (تهران)"
     controls_msg = send_text(chat_id, f"📌 مقصد انتشار: {title} ({channel})" + chr(10) + f"موضوع: {topic}" + chr(10) * 2 + status_text, controls)
     draft["cleanup_message_ids"].append(controls_msg["message_id"]); draft["preview_message_ids"].append(controls_msg["message_id"]); save_state()
@@ -815,6 +842,25 @@ def handle_update(update):
         draft_id=STATE["edit_mode"].pop(user_key); draft=STATE["pending"].get(draft_id)
         if draft:
             draft.setdefault("cleanup_message_ids",[]).append(msg["message_id"]); draft["text"]=msg.get("text") or msg.get("caption") or ""; draft["entities"]=msg.get("entities") or msg.get("caption_entities") or []; draft["text"],draft["entities"]=sanitize_text_and_entities(draft["text"],draft["entities"]); draft["edited_manually"]=True; draft.pop("source_chat_id",None); draft.pop("source_message_id",None); save_state(); updated=send_text(chat_id,"متن پیش‌نویس به‌روزرسانی شد."); draft.setdefault("cleanup_message_ids",[]).append(updated["message_id"]); save_state(); preview(chat_id,draft_id); return
+    command, target_channel = resolve_channel_command(msg.get("text") or "")
+    if command == "end":
+        previous_channel = STATE.get("active_channel")
+        STATE["active_channel"] = None
+        save_state()
+        ended_name = CHANNELS.get(previous_channel, (previous_channel or "کانال فعلی", ""))[0]
+        send_text(chat_id, f"✅ صف {ended_name} پایان یافت. برای شروع کانال بعدی، اسم یا لینک آن را بفرست.")
+        return
+    if command == "channel":
+        STATE["active_channel"] = target_channel
+        save_state()
+        channel_name = CHANNELS[target_channel][0]
+        next_time = int(STATE.setdefault("channel_schedule_next", {}).get(target_channel, 0) or 0)
+        note = ""
+        if next_time > time.time():
+            next_dt = datetime.fromtimestamp(next_time, ZoneInfo("Asia/Tehran"))
+            note = chr(10) + "زمان‌بندی مستقل این کانال از قبل وجود دارد؛ صف بعدی از " + next_dt.strftime("%Y-%m-%d %H:%M") + " ادامه پیدا می‌کند."
+        send_text(chat_id, f"📌 کانال فعال شد: {channel_name} ({target_channel})" + chr(10) + "پست‌های جدید این کانال زمان پیشنهادی با فاصلهٔ ۲۰ دقیقه می‌گیرند. برای پایان کار این کانال بنویس «پایان»." + note)
+        return
     if msg.get("text")=="/start": send_text(chat_id,"سلام! متن، عکس، فیلم، موسیقی، صدا یا فایل را برای من بفرست. پیش‌نمایش و کانال مقصد را نشان می‌دهم و فقط بعد از تأیید تو منتشر می‌کنم."); return
     content=extract_message(msg)
     if not content["text"] and not content["media"]:
@@ -823,8 +869,20 @@ def handle_update(update):
     if isinstance(media_value,list): media_type=next((item.get("type","") for item in media_value if isinstance(item,dict) and item.get("type")),"")
     elif isinstance(media_value,dict): media_type=media_value.get("type","")
     else: media_type=""
-    channel=detect_channel(content["text"],media_type)
-    STATE["pending"][draft_id]={"chat_id":chat_id,"text":content["text"],"entities":content.get("entities",[]),"media":content["media"],"channel":channel,"source_chat_id":chat_id,"source_message_id":msg["message_id"],"cleanup_message_ids":[msg["message_id"]]}; save_state(); preview(chat_id,draft_id)
+    active_channel = STATE.get("active_channel")
+    channel = active_channel if active_channel in CHANNELS else detect_channel(content["text"], media_type)
+    draft = {"chat_id": chat_id, "text": content["text"], "entities": content.get("entities", []), "media": content["media"], "channel": channel, "source_chat_id": chat_id, "source_message_id": msg["message_id"], "cleanup_message_ids": [msg["message_id"]]}
+    if active_channel in CHANNELS:
+        now = int(time.time())
+        channel_schedule_next = STATE.setdefault("channel_schedule_next", {})
+        previous_slot = int(channel_schedule_next.get(channel, 0) or 0)
+        scheduled_at = max(now + 20 * 60, previous_slot + 20 * 60) if previous_slot else now + 20 * 60
+        draft["scheduled_at"] = scheduled_at
+        draft["auto_scheduled"] = True
+        channel_schedule_next[channel] = scheduled_at
+    STATE["pending"][draft_id] = draft
+    save_state()
+    preview(chat_id, draft_id)
 
 def publish_due_drafts():
     now=int(time.time())
