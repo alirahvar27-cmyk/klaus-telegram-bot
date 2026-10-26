@@ -1641,28 +1641,6 @@
       "scheduled_at": 1793039160,
       "scheduled_approved": true
     },
-    "267988521": {
-      "chat_id": 1677869966,
-      "text": "🧩 در چنین روزی 8 سال پیش Red Dead Redemption 2 یکی از بهترین بازی های تاریخ برای کنسول های نسل هشتم عرضه شد!\nنمره 97 در Metacritic\nسومین بازی پرفروش‌ تاریخ با فروش بیش از 87 میلیون نسخه\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAILl2rfEsrTcR-EmyAWLbo5Q3lqUvSyAAIOHAACXs_ZUn2lpA2rL8nzPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2967,
-      "cleanup_message_ids": [
-        3263,
-        3264
-      ],
-      "preview_message_ids": [
-        3263,
-        3264
-      ],
-      "scheduled_at": 1793037900,
-      "scheduled_approved": true
-    },
     "267988539": {
       "chat_id": 1677869966,
       "text": "🧩 عنوان Resident Evil Requiem برنده جایزه بهترین بازی ویدیویی در FANGORIA Chainsaw Awards 2026 شد\nبازی Resident Evil Requiem تونست جایزه بهترین بازی ویدیویی رو در مراسم FANGORIA Chainsaw Awards 2026 به دست بیاره.\nاین مراسم توسط مجله آمریکایی FANGORIA که روی ژانر ترسناک تمرکز داره برگزار می‌شه و بخش‌های مختلفی از جمله فیلم، سریال و بازی‌های ویدیویی ترسناک رو پوشش می‌ده. برنده‌های این جوایز هم با رای طرفدارها انتخاب می‌شن.\n﻿\n⚽️‌",
@@ -3641,7 +3619,8 @@
     {
       "chat_id": 1677869966,
       "message_id": 2907,
-      "delete_at": 1793038198
+      "delete_at": 1793038198,
+      "retry_after": 1793039062
     },
     {
       "chat_id": 1677869966,
@@ -3982,6 +3961,11 @@
       "chat_id": 1677869966,
       "message_id": 4014,
       "delete_at": 1793124012
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4060,
+      "delete_at": 1793124859
     }
   ],
   "active_channel": null,
