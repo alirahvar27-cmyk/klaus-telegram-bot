@@ -23,6 +23,9 @@ BLOCKED_HANDLES = {
     "@meme_ol_ski", "@horror_of_house", "@fxtrd_support", "@iRoProxy", "@iProxy",
     "@Diastomii", "@Hesse_Arammesh", "@Gamefa_official", "@Tweetr_khabari",
     "@ProxyMTProtoIR", "@MobhamV2ray", "@HezarGame", "@ZhneAram",
+    "@kohandiarann", "@PersianMythology", "@sky_astronomy_sky", "@Iran",
+    "@gloriatravrl", "@Afsane_Nama1", "@kavianastronomy", "@ZorvanPodcast",
+    "@Ghoghnous_talaei_official",
 }
 BLOCKED_URLS = {
     "https://youtu.be/afK1H0UtBoc",
@@ -30,8 +33,9 @@ BLOCKED_URLS = {
     "https://t.me/tradecity_pro",
     "https://t.me/+hA56yS7uKNRhNzQ0",
     "https://telegram.me/+JewA2B2eSAs5Njk0",
+    "https://www.instagram.com/reel/Delw1WiNGAM/?xtok=OGlndjRzOHQ2engz",
 }
-BLOCKED_PHRASES = ("لینک ورود به صرافی", "ورود به VVIP رایگان", "DIGIUNICOS", "𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬", "★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞")
+BLOCKED_PHRASES = ("لینک ورود به صرافی", "ورود به VVIP رایگان", "DIGIUNICOS", "𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬", "★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞", "#JournalTourism")
 BLOCKED_PROMO = re.compile(
     r"TON giveaway:\s*\$100 total,\s*10 winners\.\s*Follow @thesignal24 and like \+ comment on every X news post through Oct 30\.?",
     re.IGNORECASE,
