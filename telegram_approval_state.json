@@ -1325,50 +1325,6 @@
       "scheduled_at": 1793051580,
       "scheduled_approved": true
     },
-    "267988512": {
-      "chat_id": 1677869966,
-      "text": "🎮 شکنجه های جوکر و بی اعتنایی های بتمن، جیسون تاد رو تبدیل به رد هود کرد 😞\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAILjmrfEqDV411-76TOZFRsje59-YIKAALJIQACp6r5Uq3OPOwmvq1vPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2958,
-      "cleanup_message_ids": [
-        3305,
-        3306
-      ],
-      "preview_message_ids": [
-        3305,
-        3306
-      ],
-      "scheduled_at": 1793046240,
-      "scheduled_approved": true
-    },
-    "267988513": {
-      "chat_id": 1677869966,
-      "text": "🎮 برای تمام کردن بازی Phantom Blade Zero به ۲۵ تا ۳۰ ساعت زمان نیاز دارید\n🔻تکمیل داستان اصلی بازی Phantom Blade Zero بین ۲۵ تا ۳۰ ساعت طول می‌کشد و بازیکنانی که به دنبال انجام مأموریت‌های جانبی هستند، به ۴۵ تا ۵۵ ساعت زمان نیاز دارند. این عنوان ساخته استودیوی S-Game در تاریخ ۷ آبان ۱۴۰۵ (۲۹ اکتبر ۲۰۲۶) برای پلی استیشن ۵ و رایانه‌های شخصی عرضه می‌شود و تاکنون توانسته میانگین نمره ۸۸ را در متاکریتیک کسب کند.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAILj2rfEqB0knYDezKO0fJ5oYV3tUdDAAIFD2sboEr8UrbU6gituC1hAQADAgADeQADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2959,
-      "cleanup_message_ids": [
-        3311,
-        3312
-      ],
-      "preview_message_ids": [
-        3311,
-        3312
-      ],
-      "scheduled_at": 1793047680,
-      "scheduled_approved": true
-    },
     "267988514": {
       "chat_id": 1677869966,
       "text": "🎥 اریک بائوزا، صداپیشه باگز بانی، در ۴۶ سالگی درگذشت\n🔻اریک بائوزا، صداپیشه ۴۶ ساله و برنده جایزه امی که صدای شخصیت‌هایی مانند باگز بانی و دافی داک در مجموعه Looney Tunes بود، روز یکشنبه در خانه خود درگذشت. طبق اعلام پزشکی قانونی لس‌آنجلس، علت مرگ او بیماری قلبی‌عروقی ناشی از فشار خون بالا بوده است. خانواده بائوزا خبر درگذشت ناگهانی این هنرمند را در حساب اینستاگرامی او منتشر کردند.\n🔻بائوزا با بیش از ۴۰۰ عنوان بازیگری از سال ۲۰۰۱، در آثاری چون Space Jam: A New Legacy و Coyote vs. Acme صداپیشگی کرد. او سه جایزه امی کودکان و خانواده را برای مجموعه‌های Teen Titans Go! ،Bugs Bunny Builders و Looney Tunes Cartoons دریافت کرد. او هنگام درگذشت در مرحله پیش‌تولید پروژه‌های Bye Bye Bunny: A Looney Tunes Musical و The Dragon Masters حضور داشت.\n🆔",
@@ -3414,7 +3370,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793046200
+      "retry_after": 1793048321
     },
     {
       "chat_id": 1677869966,
@@ -3770,6 +3726,16 @@
       "chat_id": 1677869966,
       "message_id": 4067,
       "delete_at": 1793131996
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4068,
+      "delete_at": 1793134116
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4069,
+      "delete_at": 1793134117
     }
   ],
   "active_channel": null,
