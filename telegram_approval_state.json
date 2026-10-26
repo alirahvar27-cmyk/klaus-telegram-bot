@@ -707,34 +707,6 @@
         1475
       ]
     },
-    "267987813": {
-      "chat_id": 1677869966,
-      "text": "🔻 بالاترین نمرات ثبت‌ شده برای بازی های Battlefield در Metacritic! کدوم نسخه از نظر شما بهترینه؟\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFaWrcgOASH0Uyr6PPWIREgCf_zKPJAAKzDmsbXs_ZUqpWEb-LPmz8AQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1385,
-      "cleanup_message_ids": [
-        1385,
-        1512,
-        1513,
-        1978,
-        2006,
-        2008,
-        2011,
-        2012
-      ],
-      "preview_message_ids": [
-        2011,
-        2012
-      ],
-      "scheduled_at": 1793041200,
-      "scheduled_approved": true
-    },
     "267987814": {
       "chat_id": 1677869966,
       "text": "🧩🇨🇳 قیمت کارت‌های گرافیک تو چین دوباره داره به طرز وحشتناکی بالا میره!\nکارت گرافیک RTX 5080 با 16 گیگابایت حدود 2000 یوان (حدود 300 دلار) گرون‌تر شده و الان قیمت عمده‌اش حدود 14,500 تا 15,000 یوانه، یعنی چیزی حدود 2,171 تا 2,246 دلار به فروش میرسه.\nهمچنین RTX 5070 Ti هم حدود 600 یوان (حدود 90 دلار) افزایش قیمت داشته.\nایسوس هم سیاست قیمت‌گذاریش رو به‌روز کرده، RTX 5080 16 گیگ 1000 یوان (150 دلار)، RTX 5070 Ti و 5070 و 5060 Ti 16 گیگ هرکدوم 200 یوان (30 دلار) و کارت‌های AMD بین 100 تا 300 یوان گرون‌تر شدن.\nدر حال حاضر ارزون‌ترین RTX 5080 تو بازار آمریکا حدود 1,850 دلاره و ارزون‌ترین RTX 5050 هم 400 دلار، قیمت مسخره‌ای برای کندترین GPU گیمینگ نسل فعلی انویدیا.\nشایعه شده نسخه RTX 5080 24 گیگابایت ممکنه قیمت عمده‌اش به 19,999 یوان (کمی کمتر از 3,000 دلار) برسه.\n⚽️‌",
@@ -1183,60 +1155,6 @@
       "scheduled_at": 1793091600,
       "scheduled_approved": true
     },
-    "267988496": {
-      "chat_id": 1677869966,
-      "text": "🎮 شات‌هایی که از دل The Witcher 3 بیرون اومدن\n🆔",
-      "entities": [],
-      "media": [
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAILfmrfEqBHKT4evu-HCRJtQ4zPkQdeAAKdDmsbcZPxUm39MvwGcpGpAQADAgADdwADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAILf2rfEqDt38-4W0zanCpkl5lmYhgwAAKeDmsbcZPxUtYXhqa6oBsnAQADAgADdwADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAILgGrfEqBCbQRfzFieyd0OfekWdhh0AAKfDmsbcZPxUoTvqxsu5fLUAQADAgADdwADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAILgWrfEqBBueCpvOymWprIMo6ceb9nAAKgDmsbcZPxUjIDY_HnxFCXAQADAgADdwADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAILgmrfEqDHXujQ4CcZAQaBhgFDzl_rAAKhDmsbcZPxUvUxLh32cRPXAQADAgADdwADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAILg2rfEqAICw425OrvmuwBbCowt0mUAAKiDmsbcZPxUue2OflJ5mkHAQADAgADdwADPQQ"
-        }
-      ],
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2942,
-      "cleanup_message_ids": [
-        3276,
-        3277,
-        3278,
-        3279,
-        3280,
-        3281,
-        3282
-      ],
-      "preview_message_ids": [
-        3276,
-        3277,
-        3278,
-        3279,
-        3280,
-        3281,
-        3282
-      ],
-      "scheduled_at": 1793040300,
-      "scheduled_approved": true
-    },
     "267988502": {
       "chat_id": 1677869966,
       "text": "🎮 سخت‌ترین خداحافظی تاریخ گیم... \"😢\"\nاز بین تمام شخصیت‌های Red Dead Redemption 2، پیوند آرتور و سِیدی واقعی‌ترین حس رو داشت. آرتور سیدی رو از خاکستر نجات داد و سیدی تا پایان به او وفادار موند.\n🆔",
@@ -1609,36 +1527,6 @@
         3294
       ],
       "scheduled_at": 1793044140,
-      "scheduled_approved": true
-    },
-    "267988519": {
-      "chat_id": 1677869966,
-      "text": "🧩 تبلیغ GTA VI در جریان الکلاسیکوی امشب 🔥\n⚽️‌",
-      "entities": [],
-      "media": [
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAILlWrfEsoQuKrQoiQZskPUufN9VCvsAAKIDmsb1rr4UpwrReyjcaenAQADAgADdwADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAILlmrfEsr6Ou10o9Q9QA2khYh4Fn75AAKJDmsb1rr4UoKYdVsgmjq1AQADAgADdwADPQQ"
-        }
-      ],
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2965,
-      "cleanup_message_ids": [
-        3269,
-        3270,
-        3271
-      ],
-      "preview_message_ids": [
-        3269,
-        3270,
-        3271
-      ],
-      "scheduled_at": 1793039160,
       "scheduled_approved": true
     },
     "267988539": {
@@ -3620,17 +3508,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793039062
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2914,
-      "delete_at": 1793039305
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2915,
-      "delete_at": 1793039467
+      "retry_after": 1793041871
     },
     {
       "chat_id": 1677869966,
@@ -3966,6 +3844,21 @@
       "chat_id": 1677869966,
       "message_id": 4060,
       "delete_at": 1793124859
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4061,
+      "delete_at": 1793127661
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4062,
+      "delete_at": 1793127664
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4063,
+      "delete_at": 1793127668
     }
   ],
   "active_channel": null,
