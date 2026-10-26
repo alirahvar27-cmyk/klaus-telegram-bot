@@ -31,7 +31,7 @@ BLOCKED_URLS = {
     "https://t.me/+hA56yS7uKNRhNzQ0",
     "https://telegram.me/+JewA2B2eSAs5Njk0",
 }
-BLOCKED_PHRASES = ("لینک ورود به صرافی", "ورود به VVIP رایگان")
+BLOCKED_PHRASES = ("لینک ورود به صرافی", "ورود به VVIP رایگان", "DIGIUNICOS", "𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬", "★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞")
 BLOCKED_PROMO = re.compile(
     r"TON giveaway:\s*\$100 total,\s*10 winners\.\s*Follow @thesignal24 and like \+ comment on every X news post through Oct 30\.?",
     re.IGNORECASE,
