@@ -1,5 +1,5 @@
 {
-  "offset": 267988482,
+  "offset": 267988633,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -1323,10 +1323,968 @@
         2206
       ],
       "edited_manually": true
+    },
+    "267988482": {
+      "chat_id": 1677869966,
+      "text": "🎮 عشق دومین حس خوبه، اولیش بازی کردن این شاهکار برای اولین بار\nبازی: Resident evil Village\nسازنده: Capcom\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILcGrfEqA4mfN56wgTLCfpkmhebYdpAAJTIAACcZPxUk6JAAEmR6mrrj0E"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2928,
+      "cleanup_message_ids": [
+        3136,
+        3137
+      ],
+      "preview_message_ids": [
+        3136,
+        3137
+      ],
+      "scheduled_at": 1793007060,
+      "scheduled_approved": true
+    },
+    "267988483": {
+      "chat_id": 1677869966,
+      "text": "🎮 فیلم Uncharted با بازی تام هالند به یکی از پربیننده‌ترین آثار HBO Max تبدیل شد\n🔻فیلم Uncharted با بازی تام هالند در نقش نیتن دریک و کارگردانی روبن فلیشر، اکنون در میان ۱۰ فیلم پربیننده HBO Max در سراسر جهان قرار دارد. این اقتباس سینمایی که در سال ۲۰۲۲ با بودجه ۱۲۰ میلیون دلاری اکران شد، توانست نزدیک به ۴۰۰ میلیون دلار در گیشه فروش کند. مارک والبرگ و آنتونیو باندراس نیز در این فیلم حضور دارند و موفقیت‌های اخیر تام هالند از جمله فیلم Spider-Man: Brand New Day در سال ۲۰۲۶، بار دیگر توجه مخاطبان را به این اثر جلب کرده است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILcWrfEqBivcwdVu69VZI6KxvMOINoAALbDmsbcZPxUqEgHqz--hUVAQADAgADdwADPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2929,
+      "cleanup_message_ids": [
+        2990,
+        2991
+      ],
+      "preview_message_ids": [
+        2990,
+        2991
+      ]
+    },
+    "267988484": {
+      "chat_id": 1677869966,
+      "text": "🎮 استقبال بازیکنان از Call of Duty: Modern Warfare 4 رکورد Black Ops 7 را شکست\n🔻بازی Call of Duty: Modern Warfare 4 در روزهای ابتدایی عرضه و در دوره دسترسی زودهنگام بخش داستانی، توانست بیش از ۱۰۸ هزار و ۵۰۰ بازیکن هم‌زمان را در استیم جذب کند. این آمار موفق شد رکورد اوج تعداد بازیکنان هم‌زمان برای Call of Duty: Black Ops 7 را که حدود ۱۰۰ هزار نفر بود، در این پلتفرم پشت سر بگذارد. با این وجود، این ساخته اینفینیتی وارد هنوز فاصله زیادی با رکورد حدود ۳۱۳ هزار بازیکن هم‌زمان نسخه Black Ops 6 دارد.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILcmrfEqC2Il1suc7doo7Q1KuYkt8sAAIxD2sbr_N0Uj4J6pQ9yVRWAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2930,
+      "cleanup_message_ids": [
+        3154,
+        3155
+      ],
+      "preview_message_ids": [
+        3154,
+        3155
+      ],
+      "scheduled_at": 1793016000,
+      "scheduled_approved": true
+    },
+    "267988485": {
+      "chat_id": 1677869966,
+      "text": "🎮 «فریم‌های نئونی از نایت‌سیتی، جایی که شهر هرگز نمیخوابه، چراغ‌ها هرگز محو نمیشن و حتی هرج و مرج هم زیبایی خاص خودش رو داره...»\nبازی: Cyberpunk 2077\nتوسعه‌دهنده: CD PROJECT\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILc2rfEqByfriMeST3k3ojGw3c3UXsAAJjIAACcZPxUuo2dGy0JTkTPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2931,
+      "cleanup_message_ids": [
+        3163,
+        3164
+      ],
+      "preview_message_ids": [
+        3163,
+        3164
+      ],
+      "scheduled_at": 1793019000,
+      "scheduled_approved": true
+    },
+    "267988486": {
+      "chat_id": 1677869966,
+      "text": "🎮 گاهی شخصیت‌پردازی نکردن، بهترین راه برای خلق شخصیتی ماندگار است\n🔻شخصیت‌پردازی بیش از حد و توضیح تمام انگیزه‌ها لزوماً به ماندگاری کاراکتر کمک نمی‌کند و گاهی ابهام عاملی کلیدی در جذابیت اثر است. این موضوع در بازی‌های ویدیویی اهمیت دوچندانی دارد، زیرا شخصیت‌ها با شیوه حرکت، مبارزه و حضور بصری خود نیز به مخاطب شناسانده می‌شوند.\n🔻کریتوس در سه‌گانه نخست God of War و دانته در Devil May Cry بدون واکاوی‌های پیچیده روان‌شناختی به چهره‌هایی نمادین بدل شدند. در نقطه مقابل، تلاش ناتی داگ برای اثبات جنبه‌های انسانی ابی اندرسون در The Last of Us Part II و بلاتکلیفی کاراکتر V در Cyberpunk 2077 ساخته سی‌دی پراجکت، به جذابیت آن‌ها آسیب زده است.\n🔻محدود کردن شخصیت‌پردازی انتخابی آگاهانه برای درگیر نگه داشتن تخیل مخاطب است. ماندگاری یک کاراکتر در گرو افشای تمام گذشته او نیست، بلکه ارزش و کاریزمای واقعی گاهی در ندانستن و ناشناخته ماندن نهفته است.\nمطالعه مطلب در گیمفا »\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILdGrfEqCPiW8VvcgOibF00i565pRKAAJHD2sbjqD0UnbGNrJRmYFBAQADAgADdwADPQQ"
+      },
+      "channel": "@RazKehann",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2932,
+      "cleanup_message_ids": [
+        2996,
+        2997
+      ],
+      "preview_message_ids": [
+        2996,
+        2997
+      ]
+    },
+    "267988487": {
+      "chat_id": 1677869966,
+      "text": "🎮 شایعه: مایکروسافت برای موج جدید تعدیل نیرو در بخش ایکس باکس آماده می‌شود\n🔻بر اساس گزارش The Verge و Fortune، شرکت مایکروسافت قصد دارد در ماه‌های آینده موج جدیدی از تعدیل نیرو را در بخش ایکس باکس اجرا کند که نخستین مرحله آن احتمالاً در اکتبر آغاز شده و مراحل بعدی برای نوامبر ۲۰۲۶ و ژانویه ۲۰۲۷ برنامه‌ریزی شده‌اند. این اخراج‌ها در راستای طرح اصلاح ساختار بخش گیمینگ از ژوئیه ۲۰۲۶ کلید خورده و تاکنون ۱۸۶۸ نفر از مجموع ۳۲۰۰ موقعیت شغلی هدف‌گذاری‌شده برای سال مالی ۲۰۲۷ را تحت تاثیر قرار داده است. آشا شارما، مدیرعامل بخش ایکس باکس، هدف از این تغییرات را کاهش هزینه‌ها و بهبود سودآوری عنوان کرده، اما این تصمیمات باعث افت شدید روحیه کارکنان شده است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILdWrfEqC0-2ZImWpaRYrt7FMzN4KjAAIvD2sbHsL0UoXTV8J0LmD2AQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2933,
+      "cleanup_message_ids": [
+        3169,
+        3170
+      ],
+      "preview_message_ids": [
+        3169,
+        3170
+      ],
+      "scheduled_at": 1793020200,
+      "scheduled_approved": true
+    },
+    "267988488": {
+      "chat_id": 1677869966,
+      "text": "🎮 و اکتیویژن پایان این قاب رو رقم زد...\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILdmrfEqBfFWpaNaeJroiXMP_h7b8IAAKXDmsbcZPxUo7MTNVOKrKYAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2934,
+      "cleanup_message_ids": [
+        3175,
+        3176
+      ],
+      "preview_message_ids": [
+        3175,
+        3176
+      ],
+      "scheduled_at": 1793022300,
+      "scheduled_approved": true
+    },
+    "267988489": {
+      "chat_id": 1677869966,
+      "text": "🎮 مایکروسافت از ارائه توضیحات درباره علت جدایی ناگهانی مدیر ارشد عملیات ایکس باکس خودداری کرد\n🔻هلن چانگ، مدیر ارشد عملیات ایکس باکس، پس از حدود سه سال از انتصاب به این سمت و بیش از بیست سال فعالیت در مایکروسافت، به طور ناگهانی از این شرکت جدا شد. آشا شارما، مدیرعامل ایکس باکس، این تصمیم را در یک یادداشت داخلی تایید کرد اما هیچ توضیحی درباره دلیل آن نداد. یوروگیمر گزارش داد که او به دلیل نقض سیاست‌های داخلی اخراج شده، اما مایکروسافت اعلام کرد درباره مسائل پرسنلی اظهار نظر نمی‌کند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILd2rfEqCCmoomJvkRakFHondQNsrPAAJhEGsbUeHEUgpLgqUUUcBBAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2935,
+      "cleanup_message_ids": [
+        3181,
+        3182
+      ],
+      "preview_message_ids": [
+        3181,
+        3182
+      ],
+      "scheduled_at": 1793023500,
+      "scheduled_approved": true
+    },
+    "267988490": {
+      "chat_id": 1677869966,
+      "text": "🎮 طرفداران Mass Effect و Dragon Age خواهان خرید این مجموعه‌ها توسط سازنده The Witcher شدند\n🔻به دنبال تعطیلی رسمی استودیوی BioWare در تاریخ ۲۱ اکتبر ۲۰۲۶ و توقف روند ساخت نسخه جدید Mass Effect، هواداران مجموعه‌های محبوب Mass Effect و Dragon Age از شرکت الکترونیک آرتز خواستند تا امتیاز این دو عنوان را به استودیوی سی‌دی پراجکت رد واگذار کند. این درخواست‌ها در شبکه‌های اجتماعی از سوی کاربرانی مانند SynthPotato و LegacyKillaHD مطرح شده است، در حالی که مارک دارا، تهیه‌کننده اجرایی پیشین بایوور، نیز احتمال فروش این امتیازها را به دلیل خلأ ایجاد شده در روند توسعه مطرح کرده است. با این حال، مالکان جدید الکترونیک آرتز پس از قرارداد ۵۵ میلیارد دلاری در حال بازنگری استراتژی‌های خود هستند و تاکنون هیچ‌گونه مذاکره یا توافق رسمی برای واگذاری این بازی‌ها رسانه‌ای نشده است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILeGrfEqBQItWg5x9WJNDdaFITnmmFAAJxD2sbf2D0UjXPh9Lp23FjAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2936,
+      "cleanup_message_ids": [
+        3187,
+        3188
+      ],
+      "preview_message_ids": [
+        3187,
+        3188
+      ],
+      "scheduled_at": 1793024700,
+      "scheduled_approved": true
+    },
+    "267988491": {
+      "chat_id": 1677869966,
+      "text": "🎮 نخستین نقد بازی Phantom Blade Zero زودتر از موعد منتشر شد؛ یکی شگفتی بزرگ دیگر از چین؟\n🔻پایگاه برزیلی Critical Hits در نخستین نقد زودهنگام، امتیاز ۸.۵ از ۱۰ را به بازی Phantom Blade Zero داد و سیستم مبارزات سریع، تنوع تسلیحات و طراحی هنری آن را تحسین کرد. این بازی اکشن که توسط استودیوی S-Game ساخته شده، در تاریخ ۷ آبان ۱۴۰۵ (۲۹ اکتبر ۲۰۲۶) برای پلتفرم‌های پلی استیشن ۵ و رایانه‌های شخصی منتشر خواهد شد. با این حال، منتقد به ایراداتی نظیر تکراری شدن دشمنان معمولی، طولانی بودن بیش از حد برخی باس‌فایت‌ها و نبود امکان شخصی‌سازی دکمه‌های کنترلر نیز اشاره کرد. اجرای بازی روی کنسول پلی استیشن ۵ در حالت Balanced تجربه‌ای روان ارائه می‌دهد، اما برای برآیند دقیق نظرات باید منتظر نقدهای رسمی ماند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILeWrfEqDwE9i6yMifHwdwPWaJ64y-AAKXD2sbTjz0UiFECkiN5V30AQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2937,
+      "cleanup_message_ids": [
+        3193,
+        3194
+      ],
+      "preview_message_ids": [
+        3193,
+        3194
+      ],
+      "scheduled_at": 1793026800,
+      "scheduled_approved": true
+    },
+    "267988492": {
+      "chat_id": 1677869966,
+      "text": "🎮 \"شما و عنوانی که بهترین عنوان خیلی از پلیرا شد. 😢\"\nبازی: RDR 2\nسازنده: Rockstar Games\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILemrfEqAWfF03wnZ_xwABMe1Y7JsalQACayAAAnGT8VIeE6jRT3_9JT0E"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2938,
+      "cleanup_message_ids": [
+        3199,
+        3200
+      ],
+      "preview_message_ids": [
+        3199,
+        3200
+      ],
+      "scheduled_at": 1793028000,
+      "scheduled_approved": true
+    },
+    "267988493": {
+      "chat_id": 1677869966,
+      "text": "🎵 موزیک پست بالا\n🆔",
+      "entities": [],
+      "media": {
+        "type": "audio",
+        "file_id": "CQACAgQAAxkBAAILe2rfEqCpKCq0k2MisvwIYjnjdoL2AALXNQACr_hRUMrRYGRAt6aFPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2939,
+      "cleanup_message_ids": [
+        3205,
+        3206
+      ],
+      "preview_message_ids": [
+        3205,
+        3206
+      ],
+      "scheduled_at": 1793028960,
+      "scheduled_approved": true
+    },
+    "267988494": {
+      "chat_id": 1677869966,
+      "text": "🎥 نقد و بررسی فیلم سینمایی Unabomber | هر شاهکار، یک کپی بی‌ارزش دارد!\n🔻فیلم سینمایی Unabomber به کارگردانی یانوس متز به داستان زندگی تد کزینسکی، تروریست معروف آمریکایی، در دو خط زمانی می‌پردازد. این اثر سعی دارد با الگوبرداری از فیلم Oppenheimer ساخته کریستوفر نولان و آثار جنایی، مخاطبان را جذب کند اما در خلق هویت مستقل ناکام می‌ماند.\n🔻فیلم‌نامه نوشته سم چالسن و نلسون گریوز فاقد تعلیق است و بازی راسل کرو و جیکوب ترمبلی دستاورد ویژه‌ای ندارد. جلوه‌های ویژه، تدوین زک استینبرگ و تصویربرداری ایو بلانژه نقاط قوت اثر هستند، اما موسیقی مارکو بلترامی تقلیدی ناموفق از لودویگ گورانسون است.\n🔻در نهایت، جدیدترین ساخته یانوس متز به دلیل ضعف در ساختار داستانی و تقلید بی‌کیفیت، نتوانسته به اثری ارزشمند تبدیل شود. این فیلم در مجموع نمره ۴.۵ از ۱۰ را از منتقد دریافت کرده است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILfGrfEqAx2X65ZgURPrf5yFgj_J_CAAJrD2sbcZPxUpBQzAsg-1LEAQADAgADeQADPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2940,
+      "cleanup_message_ids": [
+        3012,
+        3013
+      ],
+      "preview_message_ids": [
+        3012,
+        3013
+      ]
+    },
+    "267988495": {
+      "chat_id": 1677869966,
+      "text": "🎮 ویدیو جدیدی از بازی Tomb Raider: Legacy of Atlantisبه مناسبت سی سالگی این مجموعه منتشر شد\n🔻کانال رسمی مجموعه توم ریدر به مناسبت سی‌سالگی این فرنچایز تریلر تازه‌ای از بازی Tomb Raider: Legacy of Atlantis را منتشر کرد که بازسازی کاملی از نسخه سال ۱۹۹۶ است. این تریلر لحظات مشهور نسخه اورجینال مانند فرار از تخته‌سنگ و مجسمه پادشاه میداس را با گرافیک نسل نهمی به نمایش می‌گذارد. این بازی در تاریخ ۲۳ بهمن ۱۴۰۵ برابر با ۱۲ فوریه ۲۰۲۷ برای پلتفرم‌های پلی استیشن ۵، ایکس باکس سری ایکس/اس، رایانه‌های شخصی و نینتندو سوییچ ۲ عرضه خواهد شد.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILfWrfEqDDhIs9DCRYTWSBiETweL-AAAJ4D2sb4z-1UJcrL2YIe4qRAQADAgADeQADPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2941,
+      "cleanup_message_ids": [
+        3014,
+        3015
+      ],
+      "preview_message_ids": [
+        3014,
+        3015
+      ]
+    },
+    "267988496": {
+      "chat_id": 1677869966,
+      "text": "🎮 شات‌هایی که از دل The Witcher 3 بیرون اومدن\n🆔",
+      "entities": [],
+      "media": [
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILfmrfEqBHKT4evu-HCRJtQ4zPkQdeAAKdDmsbcZPxUm39MvwGcpGpAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILf2rfEqDt38-4W0zanCpkl5lmYhgwAAKeDmsbcZPxUtYXhqa6oBsnAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILgGrfEqBCbQRfzFieyd0OfekWdhh0AAKfDmsbcZPxUoTvqxsu5fLUAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILgWrfEqBBueCpvOymWprIMo6ceb9nAAKgDmsbcZPxUjIDY_HnxFCXAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILgmrfEqDHXujQ4CcZAQaBhgFDzl_rAAKhDmsbcZPxUvUxLh32cRPXAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILg2rfEqAICw425OrvmuwBbCowt0mUAAKiDmsbcZPxUue2OflJ5mkHAQADAgADdwADPQQ"
+        }
+      ],
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2942,
+      "cleanup_message_ids": [
+        3105
+      ],
+      "preview_message_ids": []
+    },
+    "267988502": {
+      "chat_id": 1677869966,
+      "text": "🎮 سخت‌ترین خداحافظی تاریخ گیم... \"😢\"\nاز بین تمام شخصیت‌های Red Dead Redemption 2، پیوند آرتور و سِیدی واقعی‌ترین حس رو داشت. آرتور سیدی رو از خاکستر نجات داد و سیدی تا پایان به او وفادار موند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILhGrfEqBPMC9H_3X9sqS1k8nZa86HAAL3D2sbcZPxUr6FSQlkjcmcAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2948,
+      "cleanup_message_ids": [
+        3106
+      ],
+      "preview_message_ids": []
+    },
+    "267988503": {
+      "chat_id": 1677869966,
+      "text": "🎮 ایکس باکس تریلر زمان عرضه GTA 6 را یک هفته دیرتر از پلی استیشن منتشر کرد\n🔻مایکروسافت تریلر زمان عرضه بازی GTA 6 را در تاریخ ۲۳ اکتبر ۲۰۲۶ (۱ آبان ۱۴۰۵)، یعنی هشت روز پس از انتشار آن توسط پلی استیشن، در کانال‌های رسمی ایکس باکس منتشر کرد. این نسخه تفاوت محتوایی با تریلر اصلی ندارد و فقط نشان تجاری ایکس باکس در انتهای آن جایگزین شده است. بازی GTA 6 در تاریخ ۱۹ نوامبر ۲۰۲۶ (۲۸ آبان ۱۴۰۵) برای کنسول‌های پلی استیشن ۵ و ایکس باکس سری ایکس/اس عرضه خواهد شد.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILhWrfEqCZVxrbpcTTca0ftihC_fSQAAJ-D2sbcY31UgTlz--x5tH6AQADAgADeQADPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2949,
+      "cleanup_message_ids": [
+        3025,
+        3026
+      ],
+      "preview_message_ids": [
+        3025,
+        3026
+      ]
+    },
+    "267988504": {
+      "chat_id": 1677869966,
+      "text": "🎮 شایعه: کنسول دستی PS6 ممکن است از فناوری اختصاصی RDNA 5 بهره ببرد\n🔻بر اساس گزارش‌های دیجیتال فاندری، کنسول دستی احتمالی پلی استیشن ۶ ممکن است به تراشه سفارشی بر پایه معماری RDNA 5 شرکت AMD مجهز شود. ریچارد لیدبتر، تحلیلگر ارشد این رسانه، اعلام کرد که سونی احتمالاً امتیاز انحصاری برای استفاده از این فناوری در دستگاه‌های دستی را به دست آورده است. سونی با سرمایه‌گذاری مستقیم در طراحی این پردازنده، زمینه را برای ارتقای عملکرد گرافیکی و هوش مصنوعی فراهم کرده است. با این حال، سونی تاکنون مشخصات سخت‌افزاری این دستگاه را تأیید نکرده و این اطلاعات در حد شایعه است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILhmrfEqAeqvSnWiY4nez6AAHSJ4g0CwACpg9rG8Yv9FKSEKadobNFFgEAAwIAA3cAAz0E"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2950,
+      "cleanup_message_ids": [
+        3107
+      ],
+      "preview_message_ids": []
+    },
+    "267988505": {
+      "chat_id": 1677869966,
+      "text": "🎮 بازی GTA 6 در جریان ال‌کلاسیکوی بارسلونا و رئال مادرید تبلیغ شد\n🔻شرکت راکستار گیمز در جریان مسابقه حساس ال‌کلاسیکو میان تیم‌های بارسلونا و رئال مادرید در تاریخ ۲۵ اکتبر ۲۰۲۶ (۳ آبان ۱۴۰۵) اقدام به تبلیغ بازی موردانتظار GTA 6 کرد. این تابلوهای تبلیغاتی در ورزشگاه اسپاتیفای نیوکمپ و در چارچوب هفته دهم لالیگا به نمایش درآمدند تا این شرکت دامنه تبلیغات خود را فراتر از رسانه‌های تخصصی گسترش دهد. این بازی قرار است در تاریخ ۱۹ نوامبر ۲۰۲۶ (۲۸ آبان ۱۴۰۵) برای کنسول‌های پلی استیشن ۵ و ایکس باکس سری ایکس/اس عرضه شود.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILh2rfEqAtTc3YDPM8sL27UgnWY_PyAALMDmsb6l78UmjNC4XVhjuFAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2951,
+      "cleanup_message_ids": [
+        3108
+      ],
+      "preview_message_ids": []
+    },
+    "267988506": {
+      "chat_id": 1677869966,
+      "text": "🎮 شایعه: هویت بازیگر نقش جیسون در بازی GTA 6 مشخص شد\n🔻بازی GTA 6 در تاریخ ۱۹ نوامبر ۲۰۲۶ (۲۸ آبان ۱۴۰۵) برای کنسول‌های پلی استیشن ۵ و ایکس باکس سری ایکس/اس عرضه می‌شود و شایعات جدید نشان می‌دهند که راب برینکمن ممکن است صداپیشه و بازیگر نقش جیسون باشد. این گمانه‌زنی‌ها پس از انتشار ویدیویی در ردیت و ایکس شکل گرفت که کاربران در آن به شباهت صوتی برینکمن با دیالوگ‌های جیسون در تریلرها اشاره کرده‌اند. در حالی که برخی همچنان دیلن رورک را گزینه این نقش می‌دانند و مانی ال. پرز محتمل‌ترین گزینه‌ برای نقش لوسیا است، شرکت راکستار گیمز هنوز هویت بازیگران اصلی را به‌صورت رسمی تأیید نکرده است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILiGrfEqA378TTQWD7Z8F2IPxWyYZ7AAK8IgACcZPxUi0CabCMJUTkPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2952,
+      "cleanup_message_ids": [
+        3031,
+        3032
+      ],
+      "preview_message_ids": [
+        3031,
+        3032
+      ]
+    },
+    "267988507": {
+      "chat_id": 1677869966,
+      "text": "🎮 نقدها و نمرات بازی Phantom Blade Zero منتشر شدند\n🔻نقدها و نمرات بازی Phantom Blade Zero منتشر شدند و این اثر توانسته میانگین امتیاز ۸۷ را از ۲۴ نقد در وب‌سایت Metacritic و میانگین امتیاز ۹۱ را از ۲۰ نقد در OpenCritic کسب کند. رسانه‌هایی مانند The Outerhaven امتیاز ۱۰، IGN امتیاز ۹، GameSpot امتیاز ۸، Creative Bloq امتیاز ۷ و Eurogamer امتیاز ۶ را به این بازی اختصاص داده‌اند. منتقدان مبارزات روان، جهان منحصربه‌فرد و طراحی هنری آن را تحسین کرده‌اند، اما برخی مشکلات فنی، موانع نامرئی و تصمیمات طراحی را از نقاط ضعف بازی دانسته‌اند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILiWrfEqCkG_XmP-duIz8DfauqrDeFAAIjC2sbuPLkUauKvBWhTiTOAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2953,
+      "cleanup_message_ids": [
+        3109
+      ],
+      "preview_message_ids": []
+    },
+    "267988508": {
+      "chat_id": 1677869966,
+      "text": "🎮 واقعا عالی بود این مرحله 👌\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILimrfEqB8BCDejmr61QX9Io7ACWV1AAJ7DAACHbv1UrYjy9KI0Mz6PQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2954,
+      "cleanup_message_ids": [
+        3110
+      ],
+      "preview_message_ids": []
+    },
+    "267988509": {
+      "chat_id": 1677869966,
+      "text": "🎮 مشکل ذوب شدن کانکتور کارت‌های RTX 5090 و RTX 4090 همچنان ادامه دارد\n🔻مشکل داغ شدن بیش از حد و ذوب شدن کانکتورهای برق در کارت‌های گرافیک RTX 4090 و RTX 5090 انویدیا همچنان ادامه دارد. به تازگی یک تعمیرکار چینی به نام برادر ژانگ (Brother Zhang) تنها در دو روز ۱۰ کارت آسیب‌دیده از جمله هشت کارت RTX 4090 و دو کارت RTX 5090 دریافت کرده است. این کارت‌ها از برندهای مختلفی مانند MSI، ایسوس (ASUS) و Gainward بوده‌اند که نشان می‌دهد مشکل به برند خاصی محدود نیست.\n🔻در یکی از موارد، کانکتور برق یک کارت Gainward RTX 5090 ذوب شد و دمای کانکتور در آزمایش‌ها به حدود ۸۲ درجه سانتی‌گراد رسید. با وجود معرفی کانکتور جدید 12V-2×6 توسط انویدیا و وجود ابزارهایی مانند Thermal Grizzly WireView Pro II، مدیریت جریان بالای برق در کارت‌های RTX 5090 و RTX 4090 همچنان یک چالش جدی است.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILi2rfEqCmjtBisjfjhNYnsnfLyf9yAAKpDmsbGJj8Umxek3PdDOzoAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2955,
+      "cleanup_message_ids": [
+        3111
+      ],
+      "preview_message_ids": []
+    },
+    "267988510": {
+      "chat_id": 1677869966,
+      "text": "🎮 نسخه لغوشده بسته الحاقی Not a Hero بازی Resident Evil 7 با پایانی متفاوت کشف شد\n🔻ویدیوهای آرشیوی و گیم‌پلی یک نسخه اولیه و لغوشده از بسته الحاقی Not a Hero برای بازی Resident Evil 7: Biohazard که تاریخ آن به مارس ۲۰۱۷ برمی‌گردد، از هارد دیسک یک کیت توسعه پلی‌استیشن ۴ استخراج شد. این بسته الحاقی ابتدا قرار بود توسط استودیوی HexaDrive توسعه یابد و در بهار ۲۰۱۷ عرضه شود، اما شرکت کپکام به دلیل عدم رضایت از کیفیت، پروژه را به تیم داخلی Division 1 سپرد و آن را تا دسامبر همان سال به تعویق انداخت. نمونه اولیه کشف‌شده تفاوت‌های چشمگیری دارد؛ از جمله اینکه کریس ردفیلد موفق می‌شود هر سه هم‌رزم خود را نجات دهد و برخلاف نسخه نهایی، لوکاس بیکر زنده دستگیر می‌شود تا برای بازجویی به بازداشتگاه منتقل شود.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILjGrfEqCP16ezHQs8GtOF4oGqHeUbAALbDmsbcsT8UiGu_OM9MJ0xAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2956,
+      "cleanup_message_ids": [
+        3112
+      ],
+      "preview_message_ids": []
+    },
+    "267988511": {
+      "chat_id": 1677869966,
+      "text": "🎮 توزیع‌کنندگان بازی‌های ایکس باکس را بدون روکش پلاستیکی و با جلدهای وارونه ارسال می‌کنند\n🔻بازی‌های فیزیکی ایکس باکس سری ایکس/اس با تغییراتی عجیب مانند جلدهای وارونه و جابه‌جایی محل دیسک به دست خریداران می‌رسند. فروشگاه کانادایی PNP Games اعلام کرد که محموله‌های جدید بدون روکش پلاستیکی حرارتی و تنها با پلمب کاغذی از توزیع‌کنندگان رسمی دریافت شده‌اند و این روند تا سال ۲۰۲۷ ادامه خواهد داشت. مایکروسافت پیش‌تر در سال ۲۰۲۶ درباره حذف روکش‌های پلاستیکی هشدار داده بود و خریداران نباید نبود این روکش را نشانه کارکرده بودن بازی بدانند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILjWrfEqCwswZR3UG3P9ftiPlMcmLZAALjD2sbGKn9UvKOqCrSetCgAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2957,
+      "cleanup_message_ids": [
+        3113
+      ],
+      "preview_message_ids": []
+    },
+    "267988512": {
+      "chat_id": 1677869966,
+      "text": "🎮 شکنجه های جوکر و بی اعتنایی های بتمن، جیسون تاد رو تبدیل به رد هود کرد 😞\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILjmrfEqDV411-76TOZFRsje59-YIKAALJIQACp6r5Uq3OPOwmvq1vPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2958,
+      "cleanup_message_ids": [
+        3114
+      ],
+      "preview_message_ids": []
+    },
+    "267988513": {
+      "chat_id": 1677869966,
+      "text": "🎮 برای تمام کردن بازی Phantom Blade Zero به ۲۵ تا ۳۰ ساعت زمان نیاز دارید\n🔻تکمیل داستان اصلی بازی Phantom Blade Zero بین ۲۵ تا ۳۰ ساعت طول می‌کشد و بازیکنانی که به دنبال انجام مأموریت‌های جانبی هستند، به ۴۵ تا ۵۵ ساعت زمان نیاز دارند. این عنوان ساخته استودیوی S-Game در تاریخ ۷ آبان ۱۴۰۵ (۲۹ اکتبر ۲۰۲۶) برای پلی استیشن ۵ و رایانه‌های شخصی عرضه می‌شود و تاکنون توانسته میانگین نمره ۸۸ را در متاکریتیک کسب کند.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILj2rfEqB0knYDezKO0fJ5oYV3tUdDAAIFD2sboEr8UrbU6gituC1hAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2959,
+      "cleanup_message_ids": [
+        3115
+      ],
+      "preview_message_ids": []
+    },
+    "267988514": {
+      "chat_id": 1677869966,
+      "text": "🎥 اریک بائوزا، صداپیشه باگز بانی، در ۴۶ سالگی درگذشت\n🔻اریک بائوزا، صداپیشه ۴۶ ساله و برنده جایزه امی که صدای شخصیت‌هایی مانند باگز بانی و دافی داک در مجموعه Looney Tunes بود، روز یکشنبه در خانه خود درگذشت. طبق اعلام پزشکی قانونی لس‌آنجلس، علت مرگ او بیماری قلبی‌عروقی ناشی از فشار خون بالا بوده است. خانواده بائوزا خبر درگذشت ناگهانی این هنرمند را در حساب اینستاگرامی او منتشر کردند.\n🔻بائوزا با بیش از ۴۰۰ عنوان بازیگری از سال ۲۰۰۱، در آثاری چون Space Jam: A New Legacy و Coyote vs. Acme صداپیشگی کرد. او سه جایزه امی کودکان و خانواده را برای مجموعه‌های Teen Titans Go! ،Bugs Bunny Builders و Looney Tunes Cartoons دریافت کرد. او هنگام درگذشت در مرحله پیش‌تولید پروژه‌های Bye Bye Bunny: A Looney Tunes Musical و The Dragon Masters حضور داشت.\n🆔",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILkGrfEqDsuAhgsrjI5zrRooDlsmylAAK6Dmsb3ZD8UvgFTBTkR8xFAQADAgADdwADPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2960,
+      "cleanup_message_ids": [
+        3047,
+        3048
+      ],
+      "preview_message_ids": [
+        3047,
+        3048
+      ]
+    },
+    "267988515": {
+      "chat_id": 1677869966,
+      "text": "🎮 قسطنطنیه 👌🔥\n🎮 Assassin's Creed Revelations\n🆔",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILkWrfEqD1h-v0FHrwLdem7rDWO5epAAIXDAACwcr1Ugmucmot4e7xPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2961,
+      "cleanup_message_ids": [
+        3116
+      ],
+      "preview_message_ids": []
+    },
+    "267988516": {
+      "chat_id": 1677869966,
+      "text": "🎮 فروش Xbox به بدترین وضعیت تاریخی خودش تو ماه سپتامبر رسید!\nطبق آمار مؤسسه Circana از بازار آمریکا، فروش کنسول‌های Xbox Series X|S تو سپتامبر 27٪ نسبت به سال گذشته کاهش پیدا کرده و این ماه به بدترین سپتامبر تاریخ Xbox از نظر فروش تبدیل شده، رکوردی که سپتامبر سال قبل ثبت شده بود.\nدر طرف مقابل، فروش PS5 تو همین بازه 22٪ افزایش داشته و سونی تونسته ماه قدرتمندی رو پشت سر بذاره.\nنکته عجیب اینه که با وجود نزدیک شدن به انتشار GTA VI، فروش کنسول‌های Xbox همچنان افت کرده.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILkmrfEsp-ToQmdPjwxG0WFJnLmxgcAAJHDmsb1rr4Unm1FBobVPrNAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2962,
+      "cleanup_message_ids": [
+        3117
+      ],
+      "preview_message_ids": []
+    },
+    "267988517": {
+      "chat_id": 1677869966,
+      "text": "🧩 گیم GTA Liberty City Stories امروز 21 ساله شد!\nراک‌استار کل Liberty City بازی GTA III رو به همراه یه کست جدید و یه داستان تازه تو یه UMD جا داد.\nبازی یه حالت مولتی‌پلیر کامل هم داشت که تا 6 نفر می‌تونستن روی PSP با هم بازی کنن.\n💬 شما هم سال 2005 با دوستاتون بازیش می‌کردید؟\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILk2rfEspyNsTWVQ-tP7xbdnPOFiPZAAJTDmsb1rr4Uq3UImNlAp5XAQADAgADdwADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2963,
+      "cleanup_message_ids": [
+        3118
+      ],
+      "preview_message_ids": []
+    },
+    "267988518": {
+      "chat_id": 1677869966,
+      "text": "🧩 گیم Call of Duty Modern Warfare 4 با فناوری DLSS 5😍\n💬 ‌ ‌ بنظر شما کدوم بهتره؟با DLSS 5 یا بدون اون رو ترجیح میدید؟\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILlGrfEsrn5SeK5IsfPUmLUD03xmd_AAIhIgAC1rr4Un2vVcfNa0uOPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2964,
+      "cleanup_message_ids": [
+        3119
+      ],
+      "preview_message_ids": []
+    },
+    "267988519": {
+      "chat_id": 1677869966,
+      "text": "🧩 تبلیغ GTA VI در جریان الکلاسیکوی امشب 🔥\n⚽️‌",
+      "entities": [],
+      "media": [
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILlWrfEsoQuKrQoiQZskPUufN9VCvsAAKIDmsb1rr4UpwrReyjcaenAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILlmrfEsr6Ou10o9Q9QA2khYh4Fn75AAKJDmsb1rr4UoKYdVsgmjq1AQADAgADdwADPQQ"
+        }
+      ],
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2965,
+      "cleanup_message_ids": [
+        3120
+      ],
+      "preview_message_ids": []
+    },
+    "267988521": {
+      "chat_id": 1677869966,
+      "text": "🧩 در چنین روزی 8 سال پیش Red Dead Redemption 2 یکی از بهترین بازی های تاریخ برای کنسول های نسل هشتم عرضه شد!\nنمره 97 در Metacritic\nسومین بازی پرفروش‌ تاریخ با فروش بیش از 87 میلیون نسخه\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILl2rfEsrTcR-EmyAWLbo5Q3lqUvSyAAIOHAACXs_ZUn2lpA2rL8nzPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2967,
+      "cleanup_message_ids": [
+        3121
+      ],
+      "preview_message_ids": []
+    },
+    "267988522": {
+      "chat_id": 1677869966,
+      "text": "🧩 به مناسبت سالگرد عرضه‌ی Red Dead Redemption 2 ❤️\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "audio",
+        "file_id": "CQACAgIAAxkBAAILmGrfEsrbRNi3YOLNjg88p9e5OcPYAAI9hQACDUYZSsTO70U4Wx4pPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2968,
+      "cleanup_message_ids": [
+        3122
+      ],
+      "preview_message_ids": []
+    },
+    "267988523": {
+      "chat_id": 1677869966,
+      "text": "🧩 همچنین در چنین روزی 24 سال پیش یکی دیگه از بهترین و خاطره انگیز ترین بازی های تاریخ یعنی GTA San Andreas برای PlayStation 2 عرضه شد!\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILmWrfEsrnFiNxNvW2bz5dsUm8wPAaAAL7IQACp_DwUgt4ouS3YK1iPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2969,
+      "cleanup_message_ids": [
+        3247
+      ],
+      "preview_message_ids": []
+    },
+    "267988524": {
+      "chat_id": 1677869966,
+      "text": "🧩 والپیپر با کيفيت 4k مناسب PC و کنسول از گیم Call of Duty Modern Warfare 4 🔥\n⚽️‌",
+      "entities": [],
+      "media": [
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILmmrfEspdwagZxTvBR8JKDODnBr5AAAKDEWsb1rroUjmHwTQMiKwTAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILm2rfEsqhv5yhyFV-GCbK_RJJT4I9AAKEEWsb1rroUkA7LtOStd-5AQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILnGrfEso3VH8nFnrwFbi065M3zGX-AAKFEWsb1rroUl5dLIXg-MyzAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILnWrfEsoedAylk4w73I9WxNStu4KkAAKGEWsb1rroUvaDYUkZ0O38AQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILnmrfEsrvgKX8I-xJT2qCLhky1fINAAKHEWsb1rroUl87pEf9LdNtAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILn2rfEsp3TPUwekGU7sJsO9yjyIetAAKIEWsb1rroUpiZVLXA350SAQADAgADdwADPQQ"
+        }
+      ],
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2970,
+      "cleanup_message_ids": [
+        3240,
+        3241,
+        3242,
+        3243,
+        3244,
+        3245,
+        3246
+      ],
+      "preview_message_ids": [
+        3240,
+        3241,
+        3242,
+        3243,
+        3244,
+        3245,
+        3246
+      ],
+      "scheduled_at": 1793034420,
+      "scheduled_approved": true
+    },
+    "267988530": {
+      "chat_id": 1677869966,
+      "text": "🧩 تصاویر بیشتر از تبلیغات GTA VI در الکلاسیکوی امشب بین بارسلونا و رئال مادرید!\n⚽️‌",
+      "entities": [],
+      "media": [
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILoGrfEsoguUJgmzmu2qXuQoCag5lkAAKjDmsb1rr4UkXakYqw5QgCAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILoWrfEsqpNKEbN61boSnmuZRK99KpAAKkDmsb1rr4Ui_VwxHrhE0eAQADAgADdwADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILomrfEsr_5cTcpdSwMlUsKDwUlBfTAAKlDmsb1rr4Utj0OzR2Q61WAQADAgADdwADPQQ"
+        }
+      ],
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2976,
+      "cleanup_message_ids": [
+        3232,
+        3233,
+        3234,
+        3235
+      ],
+      "preview_message_ids": [
+        3232,
+        3233,
+        3234,
+        3235
+      ],
+      "scheduled_at": 1793032800,
+      "scheduled_approved": true
+    },
+    "267988533": {
+      "chat_id": 1677869966,
+      "text": "🇨🇳 نمرات گیم Phantom Blade Zero منتشر شد!\n🔴 Metascore: 88\n🔴PS5: 88\n🔴PC: 88\n⚽️‌",
+      "entities": [],
+      "media": [
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILo2rfEsorMoPuH-AKRr3L7YMU4zjMAALcDmsb1rr4Uu8uh6JPcb7AAQADAgADeQADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILpGrfEsq6Um3DG7zRi1BtkZGZ1LkNAALdDmsb1rr4UmWQbaW805AiAQADAgADeQADPQQ"
+        }
+      ],
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2979,
+      "cleanup_message_ids": [
+        3225,
+        3226,
+        3227
+      ],
+      "preview_message_ids": [
+        3225,
+        3226,
+        3227
+      ],
+      "scheduled_at": 1793032080,
+      "scheduled_approved": true
+    },
+    "267988535": {
+      "chat_id": 1677869966,
+      "text": "🇨🇳 گیم Phantom Blade Zero با نقدهای فوق‌العاده، به یکی از مدعیان بازی اکشن سال تبدیل شده!\n⚪️امتیاز رسانه ها\nرسانه 10 — PCGamesN\nرسانه 10 — The Outerhaven\nرسانه 10 — Wccftech\nرسانه 10 — Steam Deck HQ\nرسانه 10 — Saudi Gamer\nرسانه 9.5 — AreaJugones\nرسانه 9.5 — Combo Infinito\nرسانه 9.5 — CGMagazine\nرسانه 9.5 — DualShockers\nرسانه 9 — IGN\nرسانه 9 — Push Square\nرسانه 9 — Console Creatures\nرسانه 9 — Gameliner\nرسانه 9 — GamesRadar+\nرسانه 9 — Screen Rant\nرسانه 8.5 — GamesCH\nرسانه 8 — GameSpot\nرسانه 8 — VGC\nبازی Phantom Blade Zero نقدهای اولیه‌ش رو دریافت کرده و با امتیاز 88 تو Metacritic و 91 تو OpenCritic عملکرد درخشانی داشته، IGN به بازی نمره 9 از 10 داده و مبارزاتش رو به خاطر روون بودن فوق‌العاده تحسین کرده، GamesRadar هم ازش به عنوان یکی از مدعیان بازی سال یاد کرده.\nالبته همه منتقدها کاملا راضی نبودن، Eurogamer به بازی نمره 6 از 10 داده و معتقده مشکلات تعادل مبارزات و کیفیت فنی، مانع درخشش کامل بازی شدن\n⚽️‌",
+      "entities": [],
+      "media": [
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILpWrfEsrsAskkCxtp-DSHJzHR_ctSAALbDmsb1rr4Uhc_Si2fAaH0AQADAgADeQADPQQ"
+        },
+        {
+          "type": "photo",
+          "file_id": "AgACAgQAAxkBAAILpmrfEsqeQ6CgSmm_iwYOGD8QYQABdwAC2g5rG9a6-FLeFjEGFHcp9QEAAwIAA3kAAz0E"
+        }
+      ],
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2981,
+      "cleanup_message_ids": [
+        3218,
+        3219,
+        3220
+      ],
+      "preview_message_ids": [
+        3218,
+        3219,
+        3220
+      ],
+      "scheduled_at": 1793030700,
+      "scheduled_approved": true
+    },
+    "267988537": {
+      "chat_id": 1677869966,
+      "text": "🎮 کنسول دستی PS6 ممکنه تنها دستگاه دستی‌ای باشه که پردازنده گرافیکی RDNA 5 شرکت AMD رو دریافت می‌کنه!\nطبق گفته‌های ریچارد لیدبتر از Digital Foundry، «بحث‌هایی پشت پرده» وجود داشته که سونی «یه نوع انحصار» برای استفاده از RDNA 5 تو دستگاه دستی خودش با AMD داره.\nاین «انحصار» در واقع به این معناست که AMD دیگه نمی‌خواد منابع مهندسی رو صرف طراحی تراشه‌های نیمه‌سفارشی برای دستگاه‌های کم‌تیراژ کنه، برای شروع طراحی، مشتری باید حداقل 10 میلیون واحد در طول چرخه عمر محصول رو تضمین کنه.\nاز اونجایی که حتی موفق‌ترین دستگاه دستی یعنی Steam Deck هم تخمین زده میشه فقط حدود 6 میلیون واحد فروخته باشه، این آستانه برای اکثر سازنده‌های دستی غیرقابل دسترسه.\nدر نتیجه، به نظر می‌رسه سونی تنها شرکتیه که حاضر به تأمین مالی طراحی یه تراشه سفارشی RDNA 5 برای دستگاه دستی شده، در حالی که Steam Deck 2 و کنسول دستی Xbox احتمالا باید از تراشه‌های آماده مبتنی بر RDNA 3.5/RDNA 4m استفاده کنن.\nتراشه سفارشی PS6 دستی (با اسم رمز Canis) طبق شایعه‌ها با فرآیند TSMC 3nm ساخته میشه، شامل 4 هسته Zen 6c + 2 هسته Zen 6 LP، 16 واحد محاسباتی RDNA 5 و 24 گیگابایت حافظه LPDDR5X با باس 192 بیتی خواهد داشت.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILp2rfEsruWZlmnKldnPGKLa4ZUjkTAAIqD2sbuSf5UpAfEQABmCsVLAEAAwIAA3kAAz0E"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2983,
+      "cleanup_message_ids": [
+        3211,
+        3212,
+        3213
+      ],
+      "preview_message_ids": [
+        3211,
+        3212,
+        3213
+      ],
+      "scheduled_at": 1793029680,
+      "scheduled_approved": true
+    },
+    "267988538": {
+      "chat_id": 1677869966,
+      "text": "🧩 به نظر می‌رسه Lana Del Rey حسابی از حضورش تو GTA VI هیجان‌زده‌ست!\nاون همین تازگیا یه ویدیو تو اینستاگرامش منتشر کرده که توش با آهنگ RHYNO از Travis Scott حال می‌کنه و تو کپشن هم از بازی به‌عنوان یه اثر باحال یاد کرده.\nاین اتفاق یه نمونه دیگه از تاثیرگذاری فوق‌العاده بازاریابی Rockstar هم هست. داریم درباره خود Lana Del Rey حرف می‌زنیم؛ هنرمندی که ۲۵ میلیون دنبال‌کننده داره و حالا داره درباره GTA VI پست می‌ذاره، اون هم چون خودش بخشی از بازیه! واقعا عجیبه!\n﻿\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "video",
+        "file_id": "BAACAgQAAxkBAAILqGrfEsqNxKAmhdOXrJOHfBWPoeZVAAKjDAACYs78Uq3e7zWkGK2_PQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2984,
+      "cleanup_message_ids": [
+        3157,
+        3158
+      ],
+      "preview_message_ids": [
+        3157,
+        3158
+      ],
+      "scheduled_at": 1793014260,
+      "scheduled_approved": true
+    },
+    "267988539": {
+      "chat_id": 1677869966,
+      "text": "🧩 عنوان Resident Evil Requiem برنده جایزه بهترین بازی ویدیویی در FANGORIA Chainsaw Awards 2026 شد\nبازی Resident Evil Requiem تونست جایزه بهترین بازی ویدیویی رو در مراسم FANGORIA Chainsaw Awards 2026 به دست بیاره.\nاین مراسم توسط مجله آمریکایی FANGORIA که روی ژانر ترسناک تمرکز داره برگزار می‌شه و بخش‌های مختلفی از جمله فیلم، سریال و بازی‌های ویدیویی ترسناک رو پوشش می‌ده. برنده‌های این جوایز هم با رای طرفدارها انتخاب می‌شن.\n﻿\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILqWrfEsq-MSTCtx8iGfq0yQ7_ukWfAAI0D2sbuSf5UjP-zaPYl0HdAQADAgADeQADPQQ"
+      },
+      "channel": "@FilmGardFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2985,
+      "cleanup_message_ids": [
+        3088,
+        3089
+      ],
+      "preview_message_ids": [
+        3088,
+        3089
+      ]
+    },
+    "267988540": {
+      "chat_id": 1677869966,
+      "text": "🎮شایعه: Gears of War: E-Day شروع یک سه‌گانه هستش\nطبق گفته‌های MrMattyPlays، بازی Gears of War: E-Day اولین قسمت از یه سه‌گانه برنامه‌ریزی‌شده‌ست.\nبه نظر می‌رسه داستان E-Day قراره در ادامه بازی‌های بیشتری دنبال بشه و به اتفاقات پشت پرده Emergence Day و شروع جنگ با لوکاست‌ها بپردازه.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILqmrfEsry1W4I5HFKA_OjcjH3pCC6AAIzD2sbuSf5Uv1QED8wDvabAQADAgADeQADPQQ"
+      },
+      "channel": "@LevelUpFa",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2986,
+      "cleanup_message_ids": [
+        3142,
+        3143
+      ],
+      "preview_message_ids": [
+        3142,
+        3143
+      ],
+      "scheduled_at": 1793012400,
+      "scheduled_approved": true
+    },
+    "267988541": {
+      "chat_id": 1677869966,
+      "text": "🧩 آپدیت جدید Modern Warfare 4 منتشر شد، افزایش XP و رفع مشکلات DMZ!\nآپدیت 25 اکتبر 2026 بازی Modern Warfare 4 با مجموعه‌ای از اصلاحات و تغییرات برای بخش چندنفره و DMZ منتشر شده.\n⚪️تغییرات بخش Multiplayer\n🔻 ‌ ‌  مقدار XP هر کیل تو حالت‌های Search and Destroy و Collateral از 100 به 300 افزایش پیدا کرده.\n🔻 ‌ ‌‌ مشکلات مربوط به بمب تو نقشه Collateral و هنگ کردن بازی هنگام اولین تغییر کلاس تو مسابقه برطرف شده.\n🔻  ‌ اعلان‌های شروع مسابقه تو حالت‌های Frontline و Hijack اصلاح شدن.\n🔻  ‌همچنین Infinity Ward اعلام کرده تغییرات بیشتری برای تعادل سلاح‌ها در دست بررسیه.\n⚪️ ‌تغییرات DMZ\n🔻 ‌  باگ مربوط به دور زدن یکی از اهداف مأموریت بیمارستان رفع شده.\n🔻 ‌  آسیب Chargeهای حفاری به دشمن‌های Colossus کاهش پیدا کرده.\n🔻 ‌ ‌ مشکلات وسایل نقلیه، نقشه تاکتیکی و هوش مصنوعی اصلاح شدن.\n🔻 ‌ ‌ مشکل قیمت‌گذاری هنگام خرید لوداوت‌های ذخیره‌شده برطرف شده.\n🔻 ‌  بازیکن‌ها حالا باید قبل از اعزام، فضای ذخیره‌سازی اضافی رو خالی کنن.\n🔻  ‌ چندین باگ مأموریت آموزشی Breaking New Ground هم رفع شده.\nمشکلات رابط کاربری، نمایش اطلاعات، سیستم Prestige و اسلحه‌خانه اصلاح شدن. همچنین باگی که مانع اجرای Black Ops 7 از داخل MW4 برای بعضی کاربرای Xbox و PC با تنظیمات زبان کره‌ای میشد، برطرف شده.\n⚽️‌",
+      "entities": [],
+      "media": {
+        "type": "photo",
+        "file_id": "AgACAgQAAxkBAAILq2rfEsraUKKzgdHaFiRBaKv0ucbzAAJGD2sbuSf5Uo5GK1kQGKpwAQADAgADeQADPQQ"
+      },
+      "channel": "@RazKehann",
+      "source_chat_id": 1677869966,
+      "source_message_id": 2987,
+      "cleanup_message_ids": [
+        3092,
+        3093,
+        3094
+      ],
+      "preview_message_ids": [
+        3092,
+        3093,
+        3094
+      ]
     }
   },
   "edit_mode": {},
-  "schedule_mode": {},
+  "schedule_mode": {
+    "1677869966": {
+      "draft_id": "267988523",
+      "step": "hour",
+      "date": "2026-10-26"
+    }
+  },
   "status_cleanup": [
     {
       "chat_id": 1677869966,
