@@ -1,5 +1,5 @@
 {
-  "offset": 267989580,
+  "offset": 267989787,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -1207,28 +1207,6 @@
         3457
       ],
       "scheduled_at": 1793088840,
-      "scheduled_approved": true
-    },
-    "267988508": {
-      "chat_id": 1677869966,
-      "text": "🎮 واقعا عالی بود این مرحله 👌\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAILimrfEqB8BCDejmr61QX9Io7ACWV1AAJ7DAACHbv1UrYjy9KI0Mz6PQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2954,
-      "cleanup_message_ids": [
-        3358,
-        3359
-      ],
-      "preview_message_ids": [
-        3358,
-        3359
-      ],
-      "scheduled_at": 1793054280,
       "scheduled_approved": true
     },
     "267988514": {
@@ -3245,40 +3223,6 @@
         3602,
         3603
       ]
-    },
-    "267989016": {
-      "chat_id": 1677869966,
-      "text": "با خطرناك ترین ڪشور در سراسر دنیا آشنا شوید و هرگز به این ڪشور نیز سفر نڪنید\nپیشنهاد میڪنم حتما این #کلیپ رو ببینید\nجهت حمایت و دیدن ویدئو با ڪیفیت بهتر از ڪانال جعبه سیاه در یوتیوب مشاهده ڪنید\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [
-        {
-          "offset": 100,
-          "length": 5,
-          "type": "hashtag"
-        },
-        {
-          "offset": 100,
-          "length": 5,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIP7WrfzwrBdou4n-jOzkB9Bf0kCFPnAAIgzAACyprgUYjZtgumo1VLPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4077,
-      "cleanup_message_ids": [
-        4470,
-        4471
-      ],
-      "scheduled_at": 1793054827,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4470,
-        4471
-      ],
-      "scheduled_approved": true
     },
     "267989017": {
       "chat_id": 1677869966,
@@ -8069,29 +8013,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989377": {
-      "chat_id": 1677869966,
-      "text": "🔴 پست جدید نتانیاهو تو اینستاگرام به زبان فارسی و حمایت از مردم ایران.\n🔴 | اخبار",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgIAAxkBAAITfmrf0xu_il40UfCDSsbs9zXEv7EJAAIlJ2sbTcvRSmbatm06nzB3AQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4990,
-      "cleanup_message_ids": [
-        5299,
-        5300
-      ],
-      "scheduled_at": 1793054667,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5299,
-        5300
-      ],
-      "scheduled_approved": true
-    },
     "267989378": {
       "chat_id": 1677869966,
       "text": "🔴 کانال ۱۵ اسرائیل : تمام خانواده های دیپلمات های آمریکایی دارن کشورهای خاورمیانه رو به جز عمان و اسرائیل ترک میکنن.\n🔴 رسانه های وابسته به سپاه : تو ساعات گذشته ج.ا به تمام کشورهای منطقه یک هشدار بی‌سابقه در مورد وقوع جنگ داده.\n🔴 | اخبار",
@@ -11570,7 +11491,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793054345
+      "retry_after": 1793055246
     },
     {
       "chat_id": 1677869966,
@@ -11966,6 +11887,21 @@
       "chat_id": 1677869966,
       "message_id": 5501,
       "delete_at": 1793140667
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 6014,
+      "delete_at": 1793141347
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 6015,
+      "delete_at": 1793141347
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 6016,
+      "delete_at": 1793141348
     }
   ],
   "active_channel": null,
