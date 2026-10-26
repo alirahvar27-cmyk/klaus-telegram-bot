@@ -707,34 +707,6 @@
         1475
       ]
     },
-    "267987812": {
-      "chat_id": 1677869966,
-      "text": "🧩 در GTA VI یک اپلیکیشن اشتراک محتوای آنلاین به نام Peekhole وجود داره که از OnlyFans الهام گرفته شده!\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFaGrcgOBaHwK_QT2COGufMti0Qb_vAAL-DmsbXs_ZUgQOmoD0oEyZAQADAgADeQADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1384,
-      "cleanup_message_ids": [
-        1384,
-        1510,
-        1511,
-        1977,
-        1999,
-        2001,
-        2004,
-        2005
-      ],
-      "preview_message_ids": [
-        2004,
-        2005
-      ],
-      "scheduled_at": 1793037600,
-      "scheduled_approved": true
-    },
     "267987813": {
       "chat_id": 1677869966,
       "text": "🔻 بالاترین نمرات ثبت‌ شده برای بازی های Battlefield در Metacritic! کدوم نسخه از نظر شما بهترینه؟\n⚽️‌",
@@ -3668,11 +3640,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2894,
-      "delete_at": 1793037610
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198
     },
@@ -4010,6 +3977,11 @@
       "chat_id": 1677869966,
       "message_id": 4013,
       "delete_at": 1793122727
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 4014,
+      "delete_at": 1793124012
     }
   ],
   "active_channel": null,
