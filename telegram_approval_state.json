@@ -4011,5 +4011,7 @@
       "message_id": 4013,
       "delete_at": 1793122727
     }
-  ]
+  ],
+  "active_channel": null,
+  "channel_schedule_next": {}
 }
