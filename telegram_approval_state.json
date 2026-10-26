@@ -707,33 +707,6 @@
         1475
       ]
     },
-    "267987798": {
-      "chat_id": 1677869966,
-      "text": "🎮 از خفن‌ترین آهنگ های دنیای گیم 🔥\n🎮GTA San Andreas\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFWmrcgOBGgqei_psWFy1X6QsCsn2wAALRCwACVwTtUkqkXZ6paaWCPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1370,
-      "cleanup_message_ids": [
-        1370,
-        1482,
-        1483,
-        1865,
-        1867,
-        1870,
-        1871
-      ],
-      "preview_message_ids": [
-        1870,
-        1871
-      ],
-      "scheduled_at": 1792972800,
-      "scheduled_approved": true
-    },
     "267987799": {
       "chat_id": 1677869966,
       "text": "❌🧩 هشدار اسپویل Modern Warfare 4\nدیدن اینکه بالاخره پرایس ماکاروف رو گیر می‌ندازه 😃\n⚽️‌",
@@ -1527,11 +1500,6 @@
   "status_cleanup": [
     {
       "chat_id": 1677869966,
-      "message_id": 2493,
-      "delete_at": 1792972812
-    },
-    {
-      "chat_id": 1677869966,
       "message_id": 2494,
       "delete_at": 1792976036
     },
@@ -1824,6 +1792,11 @@
       "chat_id": 1677869966,
       "message_id": 2920,
       "delete_at": 1793055901
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 2921,
+      "delete_at": 1793059438
     }
   ]
 }
