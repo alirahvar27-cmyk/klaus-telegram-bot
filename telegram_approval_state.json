@@ -2820,59 +2820,6 @@
         3603
       ]
     },
-    "267989069": {
-      "chat_id": 1677869966,
-      "text": "تصویری از استلا K در قرن 1800 میلادی از سایت باستانی کویرِیگوا ، واقع در نزدیکی رودخانه موتاگوا در ایزابل ، گواتمالا\nاین استلا یکی از آثار برجسته تمدن مایا است که بر روی سنگ به دقت حکاکی شده است ، در این تصویر تاریخی ، نقش‌های پیچیده و جزییات برجسته‌ای به وضوح دیده می‌شود که داستان‌هایی از تاریخ و آیین‌های مایا را روایت می‌کنند\nآیا تاکنون چیزی درباره این استلا یا سایت‌های مایا شنیده‌اید؟! ، ممکن است جزئیاتی در این آثار نهفته باشد که هنوز برای ما قابل کشف نباشد\nپروڪسی\n★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞",
-      "entities": [
-        {
-          "offset": 465,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=77.232.43.253&port=23&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQImrfzwoszmclmSfUJo0Tr1vx8cl2AAI4Dmsb0aBRUlRCLfqHeHj1AQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4130,
-      "cleanup_message_ids": [
-        4576,
-        4577
-      ],
-      "scheduled_at": 1793118427,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4576,
-        4577
-      ],
-      "scheduled_approved": true
-    },
-    "267989070": {
-      "chat_id": 1677869966,
-      "text": "یه گروه از دوستان وقتی به کوهنوردی رفته بودن و یک عکس انداختند اولش عادی بود ولی بعدش که متوجه نکته عجیبش شدند اونو در ردیت منتشر کردند...!\nدر سمت چپ بین دو دختر یک صورت سیاه وجود دارد...\n★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQI2rfzwodycjH_SQZ41H0CptEQWQZAAKnFmsbr0K5Uovuv5_V6ucYAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4131,
-      "cleanup_message_ids": [
-        4578,
-        4579
-      ],
-      "scheduled_at": 1793119627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4578,
-        4579
-      ],
-      "scheduled_approved": true
-    },
     "267989071": {
       "chat_id": 1677869966,
       "text": "عمارت شاتو Château De Brissac در فرانسه\nشاتو دو بریساك بدون شك از ترسناك ترین مقاصد گردشگران اروپا به شمار میرود اگر از آن دسته افراد هستید که در مورد واقعیت داشتن فعالیت پارانرمال پیش آمده در آنها تردید دارید جهت گذراندن یك شب کامل در این قلعه نیاز به نیت ویژه و جرات بسیار بالا خواهید داشت براساس گفته مردمان فرانسه شارلوت دختر پادشاه چارلز هفتم بعد از اینکه شوهرش از رابطه نامشروع او آگاه شد توسط شوهرش به قتل رسید بعد از این حادثه ، تعداد بسیار از میهمانان این قلعه ادعا میکنند که روحش را در یك لباس سبز و در حالیکه در طول شب در راهروها قدم میزند را دیده اند و در این عمارت سر و صدا مانند ناله و جیغ زدن و همچنین باز بسته شدن درها و پنجره ها به گوش میرسد\n★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞",
@@ -4744,119 +4691,6 @@
       "preview_message_ids": [
         4675,
         4676
-      ],
-      "scheduled_approved": true
-    },
-    "267989434": {
-      "chat_id": 1677869966,
-      "text": "🛢🇺🇸❌آمریکا از آزادسازی اضطراری ۴۰۰ هزار بشکه نفت از ذخایر راهبردی خود خبر داد.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5436341901290658109"
-        },
-        {
-          "offset": 2,
-          "length": 4,
-          "type": "bold"
-        },
-        {
-          "offset": 2,
-          "length": 4,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5341531636397783393"
-        },
-        {
-          "offset": 6,
-          "length": 1,
-          "type": "bold"
-        },
-        {
-          "offset": 6,
-          "length": 1,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5963261563044371393"
-        },
-        {
-          "offset": 7,
-          "length": 74,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAITuWrf0-qXQd-4AAHCzdYllCZcCD1iPQAC3w9rGwiB2VLTKpW5aPQu7AEAAwIAA3gAAz0E"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5049,
-      "cleanup_message_ids": [
-        5407,
-        5408
-      ],
-      "scheduled_at": 1793118267,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5407,
-        5408
-      ],
-      "scheduled_approved": true
-    },
-    "267989435": {
-      "chat_id": 1677869966,
-      "text": "‼️‼️کاربر آمریکایی: آخرین کشوری که به دیپلماسی آمریکا اعتماد کرد و از برنامه تسلیحاتی خود دست کشید",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5981186162377629743"
-        },
-        {
-          "offset": 2,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 2,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5879804554572209818"
-        },
-        {
-          "offset": 4,
-          "length": 94,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAITumrf0-qn215ch64bqQn-yBVrtlWxAAKUEmsbgCzhUp2N4oHbaKTaAQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5050,
-      "cleanup_message_ids": [
-        5409,
-        5410
-      ],
-      "scheduled_at": 1793119467,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5409,
-        5410
       ],
       "scheduled_approved": true
     },
@@ -7028,52 +6862,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990083": {
-      "chat_id": 1677869966,
-      "text": "🌴وقتی خیابان‌های آلمان تبدیل میشن به یه رویا....\nهر سال فقط برای چند روز، خیابون‌های شهر بُن (Bonn) بهشتی می‌شن از شکوفه‌های گیلاس…\nاین شکوفه‌های صورتی‌رنگ که اصلشون به ژاپن برمی‌گرده، تو دهه ۸۰ میلادی توسط ژاپنی‌ها به آلمان هدیه داده شدن و حالا یکی از محبوب‌ترین جاذبه‌های بهاری آلمان به حساب میان.🪸\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaQWrf3YebzKkLSAln68E6AlWP8GDdAAJhGwACeBFZUgUnmjGs1NX6PQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6721,
-      "cleanup_message_ids": [
-        7134,
-        7135
-      ],
-      "scheduled_at": 1793118536,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7134,
-        7135
-      ],
-      "scheduled_approved": true
-    },
-    "267990084": {
-      "chat_id": 1677869966,
-      "text": "🌴شهری در آمریکا که ماشین ها اجازه ندارند واردش بشن! اینجا فقط میتونید با دوچرخه ، اسب و یا پیاده جابجا بشین🏖\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaQmrf3Ydb454OnrjRQWavONmF0EAaAAKYFwACcPqxU-oQsmldi5V-PQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6722,
-      "cleanup_message_ids": [
-        7136,
-        7137
-      ],
-      "scheduled_at": 1793119736,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7136,
-        7137
       ],
       "scheduled_approved": true
     },
@@ -10154,42 +9942,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793117858
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 3999,
-      "delete_at": 1793117939
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4000,
-      "delete_at": 1793117939
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4001,
-      "delete_at": 1793117941
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4002,
-      "delete_at": 1793117945
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4003,
-      "delete_at": 1793117946
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4004,
-      "delete_at": 1793117947
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4005,
-      "delete_at": 1793117948
+      "retry_after": 1793120438
     },
     {
       "chat_id": 1677869966,
@@ -11440,6 +11193,36 @@
       "chat_id": 1677869966,
       "message_id": 7854,
       "delete_at": 1793203736
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7855,
+      "delete_at": 1793206230
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7856,
+      "delete_at": 1793206231
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7857,
+      "delete_at": 1793206232
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7858,
+      "delete_at": 1793206232
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7859,
+      "delete_at": 1793206233
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7860,
+      "delete_at": 1793206235
     }
   ],
   "active_channel": null,
