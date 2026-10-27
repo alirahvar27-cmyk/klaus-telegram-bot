@@ -1036,6 +1036,12 @@ def main():
             save_state()
         except Exception:
             log.exception("Polling failed"); time.sleep(5)
+    # Final drain: a draft may become due during the last getUpdates long-poll.
+    # Publish it before the workflow exits, then persist the resulting state.
+    try:
+        publish_due_drafts()
+    except Exception:
+        log.exception("Final scheduled-publish drain failed")
     save_state()
 
 if __name__ == "__main__": main()
