@@ -707,38 +707,6 @@
         1475
       ]
     },
-    "267987819": {
-      "chat_id": 1677869966,
-      "text": "⚪️فروش Clair Obscur: Expedition 33 به ۸.۷ میلیون نسخه رسید\nطبق آمار شرکت Alinea Analytics، فروش بازی Clair Obscur: Expedition 33 تا الان به ۸.۷ میلیون نسخه رسیده. از این مقدار، ۵۸.۸ درصد سهم Steam، حدود ۳۵.۷ درصد سهم PS5 و ۵.۵ درصد هم سهم Xbox Series بوده.\nالبته به نظر می‌رسه بیشتر بازیکن‌های Xbox از طریق Game Pass سراغ بازی رفتن؛ تعداد این بازیکن‌ها به ۴.۳ میلیون نفر رسیده. درآمد بازی هم تا الان حدود ۳۶۶ میلیون دلار بوده.\n⚽️",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFb2rcgOABzqFkLBAZnMjyXXex_26NAAJLEGsbwrDgUhABEKgGhCxLAQADAgADeQADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1391,
-      "cleanup_message_ids": [
-        1391,
-        1524,
-        1525,
-        1984,
-        2041,
-        2043,
-        2046,
-        2047,
-        2055,
-        2057,
-        2060,
-        2061
-      ],
-      "preview_message_ids": [
-        2060,
-        2061
-      ],
-      "scheduled_at": 1793070000,
-      "scheduled_approved": true
-    },
     "267988104": {
       "chat_id": 1677869966,
       "text": "از چند آدم همیشه دور بمون\nآدمی که پولکیه.\nآدمی که ضعف جنس مخالف داره.\nآدمی که تخریبت میکنه.\nآدمی که بهت انرژی منفی میده.\nآدمی که همیشه نسبت به هدفات ناامیدت میکنی.\nآدمی که محبتتو نمیفهمه و وقتی ۹۹ تا کار براش کردی رو نمیبینه و یه دونه کار رو که طبق سلیقه اش جلو نبردی میبینه.\nآدمی که هر وقت دورش خلوت میشه میاد سمتت=)\n🌸",
@@ -3051,52 +3019,6 @@
         3602,
         3603
       ]
-    },
-    "267989028": {
-      "chat_id": 1677869966,
-      "text": "وقتی کارآگاه و مظنون هردو باهوشن (اتاق بازجویی)\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIP-WrfzwpLnRr5GKUQivksi8twLG7BAAKcFwACT9bpUFXoYecpVteXPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4089,
-      "cleanup_message_ids": [
-        4494,
-        4495
-      ],
-      "scheduled_at": 1793069227,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4494,
-        4495
-      ],
-      "scheduled_approved": true
-    },
-    "267989029": {
-      "chat_id": 1677869966,
-      "text": "مردی در تگزاس به‌طور مخفیانه باعث سقط جنین دوست‌دخترش شد\nمردی ۲۵ ساله در تگزاس وقتی فهمید دوست‌دخترش باردار شده، از او خواست سقط جنین کند؛ اما زن تصمیم داشت کودک را به دنیا بیاورد.\nمرد سپس داروی غیرمجاز سقط جنین را از اینترنت تهیه کرد و بدون اطلاع او، دارو را داخل نوشیدنی‌اش ریخت. زن پس از مصرف آن دچار سقط جنین شد.\nپزشکان به موضوع مشکوک شدند و پلیس را در جریان گذاشتند. تحقیقات نشان داد که مرد در این ماجرا دست داشته و او بازداشت شد.\nدر صورت محکومیت، ممکن است با حبس ابد روبه‌رو شود.\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIP-mrfzwqMAAFG8NPbXWZzOAP9B4kHRwAChA9rG6aGoFLiuWi-p9ifIAEAAwIAA3kAAz0E"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4090,
-      "cleanup_message_ids": [
-        4496,
-        4497
-      ],
-      "scheduled_at": 1793070427,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4496,
-        4497
-      ],
-      "scheduled_approved": true
     },
     "267989030": {
       "chat_id": 1677869966,
@@ -6301,54 +6223,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989287": {
-      "chat_id": 1677869966,
-      "text": "هر کابل مخصوص چه کاری است 🧵🔌",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgEAAxkBAAISh2rf0cq3Dz2SwYQIX2evjpy_HEAjAAI7DWsbusDJRTbnlPcY7IR7AQADAgADdwADPQQ"
-      },
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4743,
-      "cleanup_message_ids": [
-        4911,
-        4912
-      ],
-      "scheduled_at": 1793069860,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4911,
-        4912
-      ],
-      "scheduled_approved": true
-    },
-    "267989288": {
-      "chat_id": 1677869966,
-      "text": "یک فاجعه امنیتی در اینترنت؛ کلید خصوصی یکی از گواهی‌ها فقط عدد ۴ بود شرکت eMudhra که در زمینه صدور گواهی‌های امنیتی اینترنت فعالیت می‌کند، به‌دلیل ضعف شدید در کلیدهای خصوصی، با یک مشکل امنیتی جدی مواجه شده است.\n💬 ماجرا چیه؟ گواهی‌های میانی TLS این شرکت با کلیدهای خصوصی بسیار ضعیف شناسایی شدند؛ یکی از این کلیدها فقط عدد \"4\" بود چرا این خطرناکه؟ چنین کلیدهایی به‌راحتی قابل حدس هستند و مهاجم می‌تواند با سوءاستفاده از آن‌ها، گواهی امنیتی جعلی برای سایت‌های مختلف صادر کند؛ موضوعی که می‌تواند زمینه حملاتی مثل جعل هویت سایت‌ها را فراهم کند.\n💬 برای محافظت از خودتون چیکار کنید؟\nمرورگر و سیستم‌عامل خودتون رو به آخرین نسخه به‌روز کنید.\nاز مرورگرهای رسمی و به‌روز استفاده کنید و هشدارهای امنیتی اون‌ها رو جدی بگیرید.\nمی‌تونید از لینک زیر برای بررسی وضعیت اعتماد مرورگرتون به گواهی‌های آسیب‌دیده استفاده کنید\nاگر نتیجه \"Connected\" بود، لزوماً به معنی هک شدن یا ناامن بودن کل دستگاه شما نیست؛ اما ممکنه نشون بده مرورگرتون هنوز به گواهی آسیب‌دیده اعتماد می‌کنه. نتیجه رو جدی بگیرید و مرورگرتون رو به‌روز کنید.\n﻿📝این آسیب‌پذیری به معنی هک شدن همه کاربران نیست؛ اما یادآوری می‌کنه که حتی زیرساخت امنیتی اینترنت هم ممکنه دچار اشتباهات فاجعه‌بار بشه.",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAISiGrf0cqM5odQ4QXi_Jptjnj71piMAAJqD2sbiozBUtfFPzg8z734AQADAgADeQADPQQ"
-      },
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4744,
-      "cleanup_message_ids": [
-        4913,
-        4914,
-        4915
-      ],
-      "scheduled_at": 1793071060,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4913,
-        4914,
-        4915
-      ],
-      "scheduled_approved": true
-    },
     "267989289": {
       "chat_id": 1677869966,
       "text": "📱بازکردن لینک‌های ناشناس ممکن است منجر به بن شدن حساب کاربری تلگرام شود!\n💩 یک آسیب‌پذیری خطرناک در این پیام‌رسان شناسایی شده است.\n📰این مشکل مربوط به نسخه‌های قدیمی‌تر تلگرام دسکتاپ بود: یک لینک خاص می‌توانست باعث شود که برنامه، فایل‌ها را از کامپیوتر به هکرها منتقل کند، از جمله داده‌های مربوط به سشن فعال. این امر امکان دسترسی به حساب کاربری را بدون وارد کردن دستی رمز عبور فراهم می‌کرد.\n+ این آسیب‌پذیری در نسخه 7.2.9 برطرف شده بنابراین، اگر هنوز این نسخه را نصب نکرده‌اید، آن را به‌روزرسانی کنید.",
@@ -7261,46 +7135,6 @@
       "preview_message_ids": [
         4984,
         4985
-      ],
-      "scheduled_approved": true
-    },
-    "267989391": {
-      "chat_id": 1677869966,
-      "text": "🔴 دبیر انجمن شرکت‌های هواپیمایی : قیمت بلیت هواپیما رو ۴۰ درصد دیگه گرون کردیم.\n🔴العربیه : ج.ا از طریق پاکستان به آمریکا گفته ما تنگه هرمز رو باز میکنیم و شماهم محاصره رو بردارید و همچنین برای از سرگیری مذاکرات آماده‌ایم.\n🔴 دکتر موسوی : این اینترنت نیست که جامعه رو به فساد کشیده؛ بلکه این فساد جامعه ست که اینترنت داره نشونش میده. مشکل از سیستمه نه اینترنت.\n🔴 | اخبار",
-      "entities": [],
-      "media": null,
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5006,
-      "cleanup_message_ids": [
-        5325,
-        5326
-      ],
-      "scheduled_at": 1793069067,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5325,
-        5326
-      ],
-      "scheduled_approved": true
-    },
-    "267989392": {
-      "chat_id": 1677869966,
-      "text": "🔴 طالبان تو مسابقات کشتی، به شخص برنده اسلحه جایزه داد.\n🔴اعتراضات به اسپانیا رسید\nغارت فروشگاه‌ها در شهر بارسلون یک روز مانده به الکلاسیکو.\n🔴 گزارشاتی از قطعی برق در جزیره کیش.\n🔴 | اخبار",
-      "entities": [],
-      "media": null,
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5007,
-      "cleanup_message_ids": [
-        5327,
-        5328
-      ],
-      "scheduled_at": 1793070267,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5327,
-        5328
       ],
       "scheduled_approved": true
     },
@@ -10488,52 +10322,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990042": {
-      "chat_id": 1677869966,
-      "text": "🌴دیزنی لند فرانسه چقدر جذابه🌈\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaGGrf3Yd8clqFOv55wgog2QWpGOyZAAJmFwACvn1gUivabj4zBljxPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6680,
-      "cleanup_message_ids": [
-        7051,
-        7052
-      ],
-      "scheduled_at": 1793069336,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7051,
-        7052
-      ],
-      "scheduled_approved": true
-    },
-    "267990043": {
-      "chat_id": 1677869966,
-      "text": "🌴بارسلون اسپانیا با معماری منحصر به فردش💛\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaGWrf3YeOBS3Q7tZYmuUi8aivF3ZXAAJAGwAC7kqhUVn-yZOyhNDLPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6681,
-      "cleanup_message_ids": [
-        7053,
-        7054
-      ],
-      "scheduled_at": 1793070536,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7053,
-        7054
       ],
       "scheduled_approved": true
     },
@@ -14557,7 +14345,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793069019
+      "retry_after": 1793071199
     },
     {
       "chat_id": 1677869966,
@@ -15203,6 +14991,51 @@
       "chat_id": 1677869966,
       "message_id": 7675,
       "delete_at": 1793155079
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7676,
+      "delete_at": 1793156992
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7677,
+      "delete_at": 1793156993
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7678,
+      "delete_at": 1793156994
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7679,
+      "delete_at": 1793156994
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7680,
+      "delete_at": 1793156995
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7681,
+      "delete_at": 1793156995
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7682,
+      "delete_at": 1793156996
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7683,
+      "delete_at": 1793156997
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7684,
+      "delete_at": 1793157460
     }
   ],
   "active_channel": null,
