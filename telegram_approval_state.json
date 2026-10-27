@@ -3020,29 +3020,6 @@
         3603
       ]
     },
-    "267989032": {
-      "chat_id": 1677869966,
-      "text": "دختر ۱۶ ساله والدین ناتنی و مادربزرگش را کشت\nدختر ۱۶ ساله‌ای در کارولینای شمالی، والدین ناتنی و مادربزرگش را با شلیک گلوله کشت و سپس همراه مردی ۲۸ ساله به ایالت همسایه فرار کرد.\nاجساد چند روز در خانه ماندند تا اینکه پلیس آن‌ها را پیدا کرد و دختر نوجوان نیز کمی بعد دستگیر شد.\nتحقیقات نشان داد این دختر مدتی با مرد ۲۸ ساله در ارتباط بوده و او حتی برای اینکه مخفیانه با دختر صحبت کند، یک تلفن همراه برایش خریده بود. والدین ناتنی دختر تلاش کرده بودند مانع این ارتباط شوند و حتی موضوع را به پلیس اطلاع داده بودند.\nدختر با اتهام قتل روبه‌رو شده و قرار است مانند یک بزرگسال محاکمه شود. مرد ۲۸ ساله نیز با اتهامات مشابهی روبه‌رو است، اما نقش دقیق او در این ماجرا هنوز مشخص نشده است.\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIP_WrfzwqJuSvQijaATQuYr8RaKv2gAAKFD2sbpoagUtOXr2LQfSZvAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4093,
-      "cleanup_message_ids": [
-        4502,
-        4503
-      ],
-      "scheduled_at": 1793074027,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4502,
-        4503
-      ],
-      "scheduled_approved": true
-    },
     "267989033": {
       "chat_id": 1677869966,
       "text": "🔺تصویر فوق متعلق به بنیانگذار حوزه علمیه قم، \"جرج کرزن\" (George Nathaniel Curzon) در حدود 120 سال پیش است.\nاو سیاست استعمار فرهنگی (The culture of cultural colonialism) را برای کنترل بیشتر ایران و خاور میانه، به دولت انگلستان پیشنهاد\nداد !!!\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
@@ -6166,104 +6143,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989290": {
-      "chat_id": 1677869966,
-      "text": "تبدیل هر پروژه گیت‌هاب به پرامپت هوش مصنوعی در چند ثانیه\n💬 تاحالا شده توی گیت‌هاب پروژه‌ای رو ببینی و بخوای شبیهش رو به یک هوش مصنوعی (مثل کلود یا چت‌جی‌پی‌تی) توضیح بدی تا برات بسازه، ولی ندونی چطوری پرامپتش رو بنویسی؟\n✅با این ترفند خیلی راحت می‌تونی مهندسی معکوس کنی وارد صفحه ریپازیتوری مورد نظرت توی GitHub شو. توی آدرس‌بار مرورگر، عبارت hub رو پاک کن و به جاش بنویس reverse. اینتر بزن سایت GitReverse کل ساختار پروژه رو بررسی می‌کنه و یک پرامپت کامل، دقیق و مهندسی‌شده بهت تحویل میده حالا کافیه پرامپت رو کپی کنی و به هر مدل هوش مصنوعی که می‌خوای بدی تا نسخه مدنظرت رو بسازه.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 56,
-          "type": "bold"
-        },
-        {
-          "offset": 57,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5429411030960711866"
-        },
-        {
-          "offset": 221,
-          "length": 1,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5260726538302660868"
-        },
-        {
-          "offset": 305,
-          "length": 6,
-          "type": "bold"
-        },
-        {
-          "offset": 444,
-          "length": 30,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAISimrf0cqAqzY57xqmmDCAGaa_r93dAAJKD2sbG4ThUuGdeJLNZ85mAQADAgADeQADPQQ"
-      },
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4746,
-      "cleanup_message_ids": [
-        4918,
-        4919
-      ],
-      "scheduled_at": 1793073460,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4918,
-        4919
-      ],
-      "scheduled_approved": true
-    },
-    "267989291": {
-      "chat_id": 1677869966,
-      "text": "😺 با این ترفندها حرفه‌ای‌تر از ChatGPT استفاده کن!\n📰می‌دونستی می‌تونی با چند دستور ساده، سبک و نوع خروجی ChatGPT رو تغییر بدی و سریع‌تر به نتیجه دلخواهت برسی؟\n🎛از ساخت تصاویر تبلیغاتی و عکاسی حرفه‌ای گرفته تا طراحی‌های مینیمال، تصاویر سینمایی، انیمه و اینفوگرافیک؛ کلی قابلیت جذاب وجود داره که شاید هنوز ازشون خبر نداشته باشی!\n+ توی این پست، مجموعه‌ای از دستورهای کاربردی ChatGPT رو جمع کردیم که می‌تونی برای تولید تصاویر خلاقانه و حرفه‌ای ازشون استفاده کنی.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5796185041717433060"
-        },
-        {
-          "offset": 3,
-          "length": 48,
-          "type": "bold"
-        },
-        {
-          "offset": 52,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5886437972647088483"
-        },
-        {
-          "offset": 161,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5776424837786374634"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAISi2rf0cqylj1J0Fat9wSMPKogVsqcAAKjD2sbBxz4UnXPmchAan09AQADAgADeQADPQQ"
-      },
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4747,
-      "cleanup_message_ids": [
-        4920,
-        4921
-      ],
-      "scheduled_at": 1793074660,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4920,
-        4921
-      ],
-      "scheduled_approved": true
-    },
     "267989292": {
       "chat_id": 1677869966,
       "text": "ادعای پژوهشگر امنیت: تلویزیون‌های سامسونگ صدا و فعالیت شما را ردیابی می‌کنند\n🔹یک پژوهشگر امنیت سایبری با استفاده از روش مهندسی معکوس، سیستم‌عامل تلویزیون‌های سامسونگ را مورد بررسی قرار داده و مدعی شده است که این تلویزیون‌ها اطلاعات گسترده‌ای از رفتار کاربران جمع‌آوری می‌کنند. این اطلاعات شامل صدا، اسکرین‌شات از صفحه و ردیابی تبلیغات ردشده است که به‌نظر می‌رسد هدف از آن نمایش تبلیغات هدفمندتر باشد.\n🔹این کارشناس همچنین اشاره کرده است که تلویزیون‌های فاقد میکروفون داخلی ممکن است به‌دنبال دستگاه‌های متصل دارای میکروفون، مانند ساندبار یا تجهیزات بلوتوثی، بگردند تا بتوانند صدا را ضبط کنند.",
@@ -7031,26 +6910,6 @@
       "preview_message_ids": [
         4984,
         4985
-      ],
-      "scheduled_approved": true
-    },
-    "267989395": {
-      "chat_id": 1677869966,
-      "text": "🔴 الحدث: ارتش آمریکا در بالاترین سطح آمادگی قرار داره و منتظر اولین دستور از ترامپ برای حمله ایرانه.\n🔴 شرکت فرآورده‌های نفتی : بنزین سوپر تولید خودمون رو توی ۵۰ جایگاه سوخت کشور عرضه کردیم و هر لیترش ۱۰۳ هزارتومنه.\n+ یعنی ۵۰ لیتر بنزین سوپر بزنی حدود ۵ میلیون تومن میشه.\n🔴 ترامپ درباره ج.ا به فاکس‌نیوز : الان سوالم اینه باهاشون توافق کنم یا کارشون رو تموم کنم؟ تموم کردن کار اونا خیلی آسونه.\n🔴 ترامپ : من امشب به ایران حمله نخواهم کرد.\nترامپ قبلاً گفته بود که\nمن هرکاری بخوام انجام بدم؛ برعکسش رو میگم. مثلا اگه دیوار بخوام؛ میام میگم به هیچ عنوان دیواری نمیسازم.\n🔴 | اخبار",
-      "entities": [],
-      "media": null,
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5010,
-      "cleanup_message_ids": [
-        5333,
-        5334
-      ],
-      "scheduled_at": 1793073867,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5333,
-        5334
       ],
       "scheduled_approved": true
     },
@@ -10178,52 +10037,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990045": {
-      "chat_id": 1677869966,
-      "text": "🌴آبشار ناچی یکی از بلند ترین و مقدس ترین آبشار های ژاپن🌺\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaG2rf3YcuAAFJH0cvDy_A46RiSCQoJAACcx4AAhDD2VFGcOPZEXSzSD0E"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6683,
-      "cleanup_message_ids": [
-        7057,
-        7058
-      ],
-      "scheduled_at": 1793072936,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7057,
-        7058
-      ],
-      "scheduled_approved": true
-    },
-    "267990046": {
-      "chat_id": 1677869966,
-      "text": "🌴جاده سرسبز و زیبا در هاوایی🐦\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaHGrf3YfYme4E7pkYzpPoMzWYpDelAALQGQACBAPRUfkAAQ77AAGlznY9BA"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6684,
-      "cleanup_message_ids": [
-        7059,
-        7060
-      ],
-      "scheduled_at": 1793074136,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7059,
-        7060
       ],
       "scheduled_approved": true
     },
@@ -14178,12 +13991,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793072976
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2924,
-      "delete_at": 1793073609
+      "retry_after": 1793075074
     },
     {
       "chat_id": 1677869966,
@@ -14899,6 +14707,36 @@
       "chat_id": 1677869966,
       "message_id": 7690,
       "delete_at": 1793159238
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7691,
+      "delete_at": 1793160868
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7692,
+      "delete_at": 1793160869
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7693,
+      "delete_at": 1793160870
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7694,
+      "delete_at": 1793160870
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7695,
+      "delete_at": 1793160871
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7696,
+      "delete_at": 1793161073
     }
   ],
   "active_channel": null,
