@@ -895,28 +895,6 @@
       ],
       "edited_manually": true
     },
-    "267988483": {
-      "chat_id": 1677869966,
-      "text": "🎮 فیلم Uncharted با بازی تام هالند به یکی از پربیننده‌ترین آثار HBO Max تبدیل شد\n🔻فیلم Uncharted با بازی تام هالند در نقش نیتن دریک و کارگردانی روبن فلیشر، اکنون در میان ۱۰ فیلم پربیننده HBO Max در سراسر جهان قرار دارد. این اقتباس سینمایی که در سال ۲۰۲۲ با بودجه ۱۲۰ میلیون دلاری اکران شد، توانست نزدیک به ۴۰۰ میلیون دلار در گیشه فروش کند. مارک والبرگ و آنتونیو باندراس نیز در این فیلم حضور دارند و موفقیت‌های اخیر تام هالند از جمله فیلم Spider-Man: Brand New Day در سال ۲۰۲۶، بار دیگر توجه مخاطبان را به این اثر جلب کرده است.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAILcWrfEqBivcwdVu69VZI6KxvMOINoAALbDmsbcZPxUqEgHqz--hUVAQADAgADdwADPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2929,
-      "cleanup_message_ids": [
-        3420,
-        3421
-      ],
-      "preview_message_ids": [
-        3420,
-        3421
-      ],
-      "scheduled_at": 1793080500,
-      "scheduled_approved": true
-    },
     "267988486": {
       "chat_id": 1677869966,
       "text": "🎮 گاهی شخصیت‌پردازی نکردن، بهترین راه برای خلق شخصیتی ماندگار است\n🔻شخصیت‌پردازی بیش از حد و توضیح تمام انگیزه‌ها لزوماً به ماندگاری کاراکتر کمک نمی‌کند و گاهی ابهام عاملی کلیدی در جذابیت اثر است. این موضوع در بازی‌های ویدیویی اهمیت دوچندانی دارد، زیرا شخصیت‌ها با شیوه حرکت، مبارزه و حضور بصری خود نیز به مخاطب شناسانده می‌شوند.\n🔻کریتوس در سه‌گانه نخست God of War و دانته در Devil May Cry بدون واکاوی‌های پیچیده روان‌شناختی به چهره‌هایی نمادین بدل شدند. در نقطه مقابل، تلاش ناتی داگ برای اثبات جنبه‌های انسانی ابی اندرسون در The Last of Us Part II و بلاتکلیفی کاراکتر V در Cyberpunk 2077 ساخته سی‌دی پراجکت، به جذابیت آن‌ها آسیب زده است.\n🔻محدود کردن شخصیت‌پردازی انتخابی آگاهانه برای درگیر نگه داشتن تخیل مخاطب است. ماندگاری یک کاراکتر در گرو افشای تمام گذشته او نیست، بلکه ارزش و کاریزمای واقعی گاهی در ندانستن و ناشناخته ماندن نهفته است.\nمطالعه مطلب در گیمفا »\n🆔",
@@ -2995,84 +2973,6 @@
         3602,
         3603
       ]
-    },
-    "267989036": {
-      "chat_id": 1677869966,
-      "text": "میدونید چقدر از افراد تصمیم به سفر داشتن اما به دلایل وحشتناك در بین راه ناپدید شدن ؛ واقعا اسرار سر به مهر مشهور ترین ناپدید شدگان در تمام ادوار چیه ؟ #کلیپ رو ببینید تا حقیقت رو بدونید\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [
-        {
-          "offset": 150,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 152,
-          "length": 5,
-          "type": "hashtag"
-        },
-        {
-          "offset": 152,
-          "length": 5,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIQAWrfzwqKPc7kxx2YWyCvL6YRTi8TAALHzgACKvUAAVLBp2SroriAlT0E"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4097,
-      "cleanup_message_ids": [
-        4510,
-        4511
-      ],
-      "scheduled_at": 1793078827,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4510,
-        4511
-      ],
-      "scheduled_approved": true
-    },
-    "267989037": {
-      "chat_id": 1677869966,
-      "text": "از ساعاتی قبل گزارش‌های تأیید نشده‌ای در مورد مرگ کیم جونگ اون، رهبر کره شمالی منتشر شده!\nاخباری در حال انتشاره که کیم، دچار خون‌ریزی مغزی شده و به کما رفته، سپس برای درمان به چین منتقل شده و درگذشته!\nبرای همین چین ۹۰۰۰ نیروی نظامی به پایتخت کره شمالی اعزام کرده تا در وضعیت آماده باش قرار بگیرن!\nهمچنین در حال آماده‌سازی برای انتقال رهبری به جو آئه، دختر کیم جونگ اون هستن!",
-      "entities": [
-        {
-          "offset": 90,
-          "length": 110,
-          "type": "blockquote"
-        },
-        {
-          "offset": 201,
-          "length": 95,
-          "type": "blockquote"
-        },
-        {
-          "offset": 297,
-          "length": 77,
-          "type": "blockquote"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgEAAxkBAAIQAmrfzwpZA4b3ugwg82J7hbd7M4WtAAIEDWsbO8SwRj4ufthJPgTDAQADAgADdwADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4098,
-      "cleanup_message_ids": [
-        4512,
-        4513
-      ],
-      "scheduled_at": 1793080027,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4512,
-        4513
-      ],
-      "scheduled_approved": true
     },
     "267989038": {
       "chat_id": 1677869966,
@@ -6023,29 +5923,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989296": {
-      "chat_id": 1677869966,
-      "text": "کاهش نویز پیام‌های صوتی در تلگرام ، تلگرام در نسخه آزمایشی اندروید، امکان استفاده از فناوری RNNoise برای کاهش نویز پس‌زمینه هنگام ضبط پیام صوتی را فراهم کرده است. این قابلیت می‌تواند به واضح‌تر شدن صدای شما در محیط‌های شلوغ کمک کند.\n📝 نحوه فعال‌سازی\nتلگرام اندروید را به نسخه 13.0.3 یا نسخه‌ای که این قابلیت را دارد، به‌روزرسانی کنید.\nوارد تنظیمات تلگرام شوید و دو بار روی شماره نسخه در پایین صفحه ضربه بزنید تا منوی مخفی باز شود.\nگزینه Show Experimental Settings را فعال کنید.\nوارد بخش Voice Messages شوید و گزینه Use new recorder را فعال کنید.\nدر بخش Noise suppression، گزینه RNNoise را انتخاب کنید.\nحالا می‌توانید پیام‌های صوتی خود را با کاهش نویز پس‌زمینه ضبط کنید. این قابلیت آزمایشی است و ممکن است در همه نسخه‌ها یا گوشی‌ها در دسترس نباشد. همچنین کاهش نویز به معنی حذف کامل صداهای مزاحم نیست.",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAISu2rf0kfccBj1PeE2VA9mX5WsffaqAALID2sbxSWhUqpUQfYLvfIqAQADAgADeQADPQQ"
-      },
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4795,
-      "cleanup_message_ids": [
-        4929,
-        4930
-      ],
-      "scheduled_at": 1793080660,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4929,
-        4930
-      ],
-      "scheduled_approved": true
-    },
     "267989297": {
       "chat_id": 1677869966,
       "text": "🖥میانبرهای کاربردی کامپیوتر\n🔗که باید بلد باشی!",
@@ -6722,26 +6599,6 @@
       "preview_message_ids": [
         4984,
         4985
-      ],
-      "scheduled_approved": true
-    },
-    "267989400": {
-      "chat_id": 1677869966,
-      "text": "دیشب دولت صربستان بعد از ۱۴ سال با اعتراضات نسل Z سرنگون شد\n🔴 | اخبار",
-      "entities": [],
-      "media": null,
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5015,
-      "cleanup_message_ids": [
-        5343,
-        5344
-      ],
-      "scheduled_at": 1793079867,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5343,
-        5344
       ],
       "scheduled_approved": true
     },
@@ -9769,52 +9626,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990050": {
-      "chat_id": 1677869966,
-      "text": "🌴جزیره ی زیبای هنگام قشم☀️\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaIGrf3Yc5hE3Fd3_tw59bl4MwvO90AALgGAACwbXxUcKNNKcAAfruOT0E"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6688,
-      "cleanup_message_ids": [
-        7067,
-        7068
-      ],
-      "scheduled_at": 1793078936,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7067,
-        7068
-      ],
-      "scheduled_approved": true
-    },
-    "267990051": {
-      "chat_id": 1677869966,
-      "text": "🌴شهر بن دراشنبرگ آلمان🌃\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaIWrf3YcMWrgDUlUy7O12RuXwrCydAALgGQACHxkRUhteQ9SWwklHPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6689,
-      "cleanup_message_ids": [
-        7069,
-        7070
-      ],
-      "scheduled_at": 1793080136,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7069,
-        7070
       ],
       "scheduled_approved": true
     },
@@ -13654,7 +13465,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793078871
+      "retry_after": 1793080856
     },
     {
       "chat_id": 1677869966,
@@ -14465,6 +14276,41 @@
       "chat_id": 1677869966,
       "message_id": 7710,
       "delete_at": 1793165073
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7711,
+      "delete_at": 1793166650
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7712,
+      "delete_at": 1793166651
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7713,
+      "delete_at": 1793166652
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7714,
+      "delete_at": 1793166652
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7715,
+      "delete_at": 1793166653
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7716,
+      "delete_at": 1793166915
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7717,
+      "delete_at": 1793167077
     }
   ],
   "active_channel": null,
