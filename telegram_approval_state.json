@@ -707,34 +707,6 @@
         1475
       ]
     },
-    "267987818": {
-      "chat_id": 1677869966,
-      "text": "🧩 بروزرسانی: نقدها و نمرات بازی Call of Duty Modern Warfare 4 بروزرسانی شد\n🔻Metacritic: 87/100\n🔻Opencritic: 85/100\n⬅متای نسخه PS5 بازی نیز ۹۱ شده است!\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIFbmrcgOAG4ViS5fwzuYY_9icniap0AAJFEGsbwrDgUuU6AAGphqQyjQEAAwIAA3kAAz0E"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1390,
-      "cleanup_message_ids": [
-        1390,
-        1522,
-        1523,
-        1983,
-        2048,
-        2050,
-        2053,
-        2054
-      ],
-      "preview_message_ids": [
-        2053,
-        2054
-      ],
-      "scheduled_at": 1793066400,
-      "scheduled_approved": true
-    },
     "267987819": {
       "chat_id": 1677869966,
       "text": "⚪️فروش Clair Obscur: Expedition 33 به ۸.۷ میلیون نسخه رسید\nطبق آمار شرکت Alinea Analytics، فروش بازی Clair Obscur: Expedition 33 تا الان به ۸.۷ میلیون نسخه رسیده. از این مقدار، ۵۸.۸ درصد سهم Steam، حدود ۳۵.۷ درصد سهم PS5 و ۵.۵ درصد هم سهم Xbox Series بوده.\nالبته به نظر می‌رسه بیشتر بازیکن‌های Xbox از طریق Game Pass سراغ بازی رفتن؛ تعداد این بازیکن‌ها به ۴.۳ میلیون نفر رسیده. درآمد بازی هم تا الان حدود ۳۶۶ میلیون دلار بوده.\n⚽️",
@@ -3079,52 +3051,6 @@
         3602,
         3603
       ]
-    },
-    "267989025": {
-      "chat_id": 1677869966,
-      "text": "اگر شهاب سنگ به زمین بخور نتیجه حاصله میشه این ویدئو ، ببینید برگاتون بریزه\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIP9mrfzwrgwLBDwmToDKzM1U5IC19GAALpDgACBiIZUV0oyaNzdQF2PQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4086,
-      "cleanup_message_ids": [
-        4488,
-        4489
-      ],
-      "scheduled_at": 1793065627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4488,
-        4489
-      ],
-      "scheduled_approved": true
-    },
-    "267989026": {
-      "chat_id": 1677869966,
-      "text": "برای خواندن داستان‌ پست زیر را بخوانید",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIP92rfzwpBwDa0r0a2MaxZ1DbwIWrFAAIlEmsbT0o4UuA4lKs_w8qxAQADAgADeAADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4087,
-      "cleanup_message_ids": [
-        4490,
-        4491
-      ],
-      "scheduled_at": 1793066827,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4490,
-        4491
-      ],
-      "scheduled_approved": true
     },
     "267989027": {
       "chat_id": 1677869966,
@@ -6395,55 +6321,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989283": {
-      "chat_id": 1677869966,
-      "text": "گوگل برای تأمین انرژی دیتاسنترها به مردم پول می‌دهد\n🔹در طرح مشترک گوگل و شرکت ولتوس، ظرفیت آزاد مصرف‌کنندگان خانگی و کسب‌وکارهای محلی تجمیع می‌شود تا یک نیروگاه مجازی با تأمین مالی گوگل شکل بگیرد. هر زمان که شبکه برق تحت فشار قرار بگیرد، به‌ویژه در زمان‌های اوج مصرف مانند موج گرما، ولتوس از مردم می‌خواهد که مصرف انرژی خود را کاهش دهند.\n🔹خانوارها و کسب‌وکارهای مشارکت‌کننده در این طرح از مزایای مالی برخوردار می‌شوند که شامل کاهش هزینه قبض برق و پرداخت مستقیم پول است. این مشارکت به‌صورت داوطلبانه انجام می‌شود و بخش قابل‌توجهی از کاهش مصرف نیز می‌تواند با استفاده از فناوری‌هایی مانند ترموستات‌ها و باتری‌های هوشمند محقق شود.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 51,
-          "type": "bold"
-        }
-      ],
-      "media": null,
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4739,
-      "cleanup_message_ids": [
-        4903,
-        4904
-      ],
-      "scheduled_at": 1793065060,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4903,
-        4904
-      ],
-      "scheduled_approved": true
-    },
-    "267989284": {
-      "chat_id": 1677869966,
-      "text": "🔴دانشمندا دارن با هوش مصنوعی روی ساخت یه تکنولوژی کارمیکنن که میتونه بوی چیزایی مثل عطر، قهوه و هر چیز دیگه ای رو از طریق اینترنت بفرسته و کسی که براش بو ارسال شده میتونه کامل بو رو حس کنه!",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgEAAxkBAAIShGrf0crgokoRia-0i4MjkhjHXLzFAAJCDWsb1TnoRjiP0_SRGn59AQADAgADeQADPQQ"
-      },
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4740,
-      "cleanup_message_ids": [
-        4905,
-        4906
-      ],
-      "scheduled_at": 1793066260,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4905,
-        4906
-      ],
-      "scheduled_approved": true
-    },
     "267989285": {
       "chat_id": 1677869966,
       "text": "نگرانی از تقویت هک توسط هوش مصنوعی پیشرفته\n🔹استارتاپ چینی مون‌شات ای‌آی اعلام کرد با افزایش نگرانی‌ها مبنی بر اینکه هوش مصنوعی خودمختار می‌تواند هک را به شدت افزایش دهد، قابلیت‌های تهاجمی سایبری جدیدترین مدل خود را افزایش می‌دهد.\n🔹شرکت مون شات مستقر در پکن، این محدودیت‌ها را هنگام معرفی Kimi K۳.۱ Pro اعلام کرد که آن را به عنوان توانمندترین مدل وزن باز کلاس ۳ تریلیون پارامتری خود توصیف می‌کند.",
@@ -7459,49 +7336,6 @@
       "preview_message_ids": [
         4984,
         4985
-      ],
-      "scheduled_approved": true
-    },
-    "267989388": {
-      "chat_id": 1677869966,
-      "text": "🔴 یه صفحه نزدیک به ارتش آمریکا دیشب مدعی شده که ترامپ ۲۴ ساعت به ج.ا مهلت داده. با توجه صحبت های (نادری) نماینده مجلس مبنی بر اینکه ترامپ هفته گذشته؛ ۸ روز‌ مهلت داده بوده و این مهلت امروز تموم شده؛ درنتیجه امشب مهلت ج.ا برای توافق به پایان رسیده.\n🔴 طبق گزارشات؛ دیشب انفجار بسیار سنگین تو کرج رخ داده\nدلیل انفجار: طبق گزارشات افراد نزدیک محل حادثه یه کامیون با بار میلگرد سوخت داخل باکش ترکیده آتیش گرفته.\n🔴 اسکات بسنت وزیر خزانه داری آمریکا : با وجود تلاش‌های ج.ا برای مختل کردن محموله‌های انرژی، صادرات نفت از خلیج فارس دوباره رونق گرفته و از سطح قبل از درگیری‌ها هم بیشتر شده. پیام روشنه : تهدیدهای ج ا نتونسته جریان انرژی به بازارهای جهانی رو متوقف کنه.\n🔴سی‌ان‌ان : آمریکا داره دیپلمات‌ها و خانواده‌هاشونو از بحرین، کویت، اردن، قطر و امارات خارج میکنه.\n🔴 بابک زنجانی : با زدن کابل‌های اینترنت منطقه، بیت کوین به زیر ۲۰ هزار دلار میرسه.\n🔴 | اخبار",
-      "entities": [],
-      "media": null,
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5003,
-      "cleanup_message_ids": [
-        5319,
-        5320
-      ],
-      "scheduled_at": 1793065467,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5319,
-        5320
-      ],
-      "scheduled_approved": true
-    },
-    "267989389": {
-      "chat_id": 1677869966,
-      "text": "🔴 رائفی‌پور : اینترنت جهانی رو قطع کنید و تو کف قیمت تا میتوانید بیت کوین ها رو بخرید و بعد از افزایش مجدد قیمت، اونها رو بفروشید.\n🔴 | اخبار",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAITjGrf01m5N4tj4N6XPIgyP37aHSEmAALvEWsbAQHgUr1dx2vme0sLAQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5004,
-      "cleanup_message_ids": [
-        5321,
-        5322
-      ],
-      "scheduled_at": 1793066667,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5321,
-        5322
       ],
       "scheduled_approved": true
     },
@@ -10749,52 +10583,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990039": {
-      "chat_id": 1677869966,
-      "text": "🌴نپال شگفت انگیز🌃\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaFWrf3YdEndXC9AEHDiGcwWJw7H96AAJ3HAACinOAUXW5vye-us1UPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6677,
-      "cleanup_message_ids": [
-        7045,
-        7046
-      ],
-      "scheduled_at": 1793065736,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7045,
-        7046
-      ],
-      "scheduled_approved": true
-    },
-    "267990040": {
-      "chat_id": 1677869966,
-      "text": "🌴زامبیا و زیبایی‌های خارق العاده اش☺️\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaFmrf3Yf08Mr5YYJJcKIyfBuwQV2FAALuGgACj-qJUcNutTx9psbUPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6678,
-      "cleanup_message_ids": [
-        7047,
-        7048
-      ],
-      "scheduled_at": 1793066936,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7047,
-        7048
       ],
       "scheduled_approved": true
     },
@@ -14887,12 +14675,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793065095
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2923,
-      "delete_at": 1793067230
+      "retry_after": 1793067315
     },
     {
       "chat_id": 1677869966,
@@ -15468,6 +15251,51 @@
       "chat_id": 1677869966,
       "message_id": 7661,
       "delete_at": 1793150953
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7662,
+      "delete_at": 1793153108
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7663,
+      "delete_at": 1793153108
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7664,
+      "delete_at": 1793153109
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7665,
+      "delete_at": 1793153110
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7666,
+      "delete_at": 1793153110
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7667,
+      "delete_at": 1793153111
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7668,
+      "delete_at": 1793153112
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7669,
+      "delete_at": 1793153233
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7670,
+      "delete_at": 1793153354
     }
   ],
   "active_channel": null,
