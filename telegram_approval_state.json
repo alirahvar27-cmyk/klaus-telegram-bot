@@ -2820,52 +2820,6 @@
         3603
       ]
     },
-    "267989079": {
-      "chat_id": 1677869966,
-      "text": "اگر فقط روزی ده تا سنگ از اهرام ثلاثه ی مصر رو برداریم ۶۶۴ سال طول میکشد تا بتوانیم دوباره هرم را بسازیم ، ساخت اهرام مصر همچنان به عنوان یک راز باقی مانده است...!\nلازم به ذکر است که وزن هر سنگ دو تن میباشد...!\n★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQLGrfzwqR1l6e9WQWK_K_YmfEZEtrAAKfFmsbr0K5UvPeLROxvDi-AQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4140,
-      "cleanup_message_ids": [
-        4596,
-        4597
-      ],
-      "scheduled_at": 1793130427,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4596,
-        4597
-      ],
-      "scheduled_approved": true
-    },
-    "267989080": {
-      "chat_id": 1677869966,
-      "text": "«آبشار خون» تو قطب جنوب...!\nجایی تو یخچال «تیلور» ، تو دره‌های خشک «مک‌موردوئه» ، رنگ خون به خاطر آب شوری که پر از آهنه و سال‌ها زیر یخ گیر کرده بوده ، وقتی این آب میاد بیرون و با هوا برخورد می‌کنه ، آهنش زنگ می‌زنه و این رنگ باحال رو درست می‌کنه\n★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQLWrfzwrSdJs3JgIpekIBjIA_e6AQAAKrFmsbr0K5UsZrykBsYgABZwEAAwIAA3kAAz0E"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4141,
-      "cleanup_message_ids": [
-        4598,
-        4599
-      ],
-      "scheduled_at": 1793131627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4598,
-        4599
-      ],
-      "scheduled_approved": true
-    },
     "267989081": {
       "chat_id": 1677869966,
       "text": "ماموریت OSIRIS-REx ناسا به‌تازگی تاریخ‌ساز شد ، دانشمندان تمام مواد شیمیایی سازنده DNA و RNA ، به‌همراه ۱۴ اسید آمینه کلیدی را روی سیارک \"بِنو\" کشف کردند\nاین کشف ، نظریه منشا کیهانی حیات را تقویت می‌کند — اینکه شاید مواد اولیه زندگی از فضا به زمین آمده باشند ، نه اینکه صرفا روی زمین شکل گرفته باشند\nآیا ممکن است عناصر سازنده حیات ، با صخره‌های باستانی در سراسر فضا سفر کرده باشند؟! ، به‌نظر می‌رسد جهان ، بسیار جالب‌تر از آن چیزی‌ست که فکر می‌کردیم\n★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞",
@@ -4503,119 +4457,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989444": {
-      "chat_id": 1677869966,
-      "text": "🚨‼️فارس: انفجار یک نفتکش غول‌پیکر در هرمز",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5949743153480212294"
-        },
-        {
-          "offset": 2,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 2,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5981186162377629743"
-        },
-        {
-          "offset": 4,
-          "length": 38,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAITw2rf0-rWmUlPZe51R5HvmIauhLp_AALoD2sbNw7pUmNKnxNdVg7_AQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5059,
-      "cleanup_message_ids": [
-        5427,
-        5428
-      ],
-      "scheduled_at": 1793130267,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5427,
-        5428
-      ],
-      "scheduled_approved": true
-    },
-    "267989445": {
-      "chat_id": 1677869966,
-      "text": "🛢🇺🇸❌ترامپ: قیمت نفت به زودی کاهش خواهد یافت و همین الان هم به سرعت در حال کاهش است",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5436341901290658109"
-        },
-        {
-          "offset": 2,
-          "length": 4,
-          "type": "bold"
-        },
-        {
-          "offset": 2,
-          "length": 4,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5949349077345901761"
-        },
-        {
-          "offset": 6,
-          "length": 1,
-          "type": "bold"
-        },
-        {
-          "offset": 6,
-          "length": 1,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5963261563044371393"
-        },
-        {
-          "offset": 7,
-          "length": 78,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAITxGrf0-okLzXSPIXiXQurChrzMeHNAAI5EGsb5UrhUs_NHmorVPL-AQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5060,
-      "cleanup_message_ids": [
-        5429,
-        5430
-      ],
-      "scheduled_at": 1793131467,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5429,
-        5430
-      ],
-      "scheduled_approved": true
-    },
     "267989446": {
       "chat_id": 1677869966,
       "text": "🚨🔸🔸🔸✈️یک فروند هواپیمای نظامی ترابری C-130 متعلق به پاکستان وارد شهر ظهران در عربستان سعودی شد.",
@@ -6184,52 +6025,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990093": {
-      "chat_id": 1677869966,
-      "text": "🌴استرالیا و جذابیت هاش🤩\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaS2rf3YffomzP0b7KG0E3jB4HenfOAAIEHwACz48ZUi3cP702YiusPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6731,
-      "cleanup_message_ids": [
-        7154,
-        7155
-      ],
-      "scheduled_at": 1793130536,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7154,
-        7155
-      ],
-      "scheduled_approved": true
-    },
-    "267990094": {
-      "chat_id": 1677869966,
-      "text": "🌴اشتباه نکنید اینا برف نیست اینجا آبشار نمکی پتاس تنها آبشار نمکی در جهانه این آبشار در شهرستان خور و بیابانک در شرق اصفهان واقع شده است🌊\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaTGrf3YeK_0jbR7Gj-2SrNQhVJsgvAAI7GQAC0o9JUqr55iuxa8cPPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6732,
-      "cleanup_message_ids": [
-        7156,
-        7157
-      ],
-      "scheduled_at": 1793131736,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7156,
-        7157
       ],
       "scheduled_approved": true
     },
@@ -9080,22 +8875,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793130272
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4065,
-      "delete_at": 1793130549
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4066,
-      "delete_at": 1793131995
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4067,
-      "delete_at": 1793131996
+      "retry_after": 1793132613
     },
     {
       "chat_id": 1677869966,
@@ -10411,6 +10191,36 @@
       "chat_id": 1677869966,
       "message_id": 7884,
       "delete_at": 1793216069
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7885,
+      "delete_at": 1793218409
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7886,
+      "delete_at": 1793218410
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7887,
+      "delete_at": 1793218410
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7888,
+      "delete_at": 1793218411
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7889,
+      "delete_at": 1793218411
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7890,
+      "delete_at": 1793218412
     }
   ],
   "active_channel": null,
