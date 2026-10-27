@@ -2820,58 +2820,6 @@
         3603
       ]
     },
-    "267989089": {
-      "chat_id": 1677869966,
-      "text": "در بولیوی، خفاش‌ها گاهی به‌عنوان «داروی سنتی» خریدوفروش می‌شوند! 🦇\nدر برخی مناطق بولیوی، باوری قدیمی وجود دارد که نوشیدن خون تازهٔ خفاش می‌تواند به درمان بیماری‌هایی مانند صرع کمک کند. گزارش‌ها از فروش هزاران خفاش در بازارهای این کشور برای همین باور حکایت دارند.\nاما نکته مهم اینجاست: هیچ شواهد علمی معتبری وجود ندارد که خون خفاش خاصیت درمانی برای صرع داشته باشد. همچنین تماس با خون حیوانات وحشی می‌تواند خطر انتقال عوامل بیماری‌زا را به همراه داشته باشد.",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQNmrfzwqTiD_yf7dLZAjVSFNifh2UAAIvD2sbgY3QUVt_RhIV2AVhAQADAgADeAADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4150,
-      "cleanup_message_ids": [
-        4616,
-        4617
-      ],
-      "scheduled_at": 1793142427,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4616,
-        4617
-      ],
-      "scheduled_approved": true
-    },
-    "267989090": {
-      "chat_id": 1677869966,
-      "text": "#دره_بی_سرها 😐\nدره‌ای در کانادا که نامش با چند ناپدیدشدن مرموز گره خورده است...\nدر اواخر قرن نوزدهم، با کشف طلا در این منطقه، جویندگان طلا راهی دره شدند. در سال ۱۸۹۸، شش معدنچی ناپدید شدند و هیچ اثری از آن‌ها پیدا نشد.\nچند سال بعد، دو برادر به نام‌های مکلئود به همراه دوستشان رابرت ویر نیز در همین منطقه ناپدید شدند.\nسال‌ها بعد، بقایای ۹ نفر در دره پیدا شد و همین ماجرا باعث شد این مکان به نام «دره بی‌سرها» شهرت پیدا کند. 🌫️",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 12,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQN2rfzwqptfVHVVzp7h6uOw8dNX3iAAIED2sbWdXYUV6zXr8IBSo0AQADAgADeAADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4151,
-      "cleanup_message_ids": [
-        4618,
-        4619
-      ],
-      "scheduled_at": 1793143627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4618,
-        4619
-      ],
-      "scheduled_approved": true
-    },
     "267989091": {
       "chat_id": 1677869966,
       "text": "#فکت_ترسناک 🐻\nاز خرس نمی‌شود به‌سادگی فرار کرد! 😐\nبعضی خرس‌ها می‌توانند با سرعتی نزدیک به ۵۰ کیلومتر بر ساعت بدوند؛ یعنی در مسافت کوتاه، از یک انسان خیلی سریع‌ترند.",
@@ -4231,48 +4179,6 @@
       "preview_message_ids": [
         4675,
         4676
-      ],
-      "scheduled_approved": true
-    },
-    "267989458": {
-      "chat_id": 1677869966,
-      "text": "🇮🇱‼️‼️نتانیاهو: اگه به من رای بدید حقوق‌ها زیاد می‌کنم!",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 4,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5465559039091944862"
-        },
-        {
-          "offset": 4,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5981186162377629743"
-        },
-        {
-          "offset": 6,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5879804554572209818"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIT0Wrf0-oYjCirtR3AzDEV0lVXd7HNAAJ7D2sb4xD4Ul1VHfDSQWCWAQADAgADeAADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5073,
-      "cleanup_message_ids": [
-        5452,
-        5453
-      ],
-      "scheduled_at": 1793143467,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5452,
-        5453
       ],
       "scheduled_approved": true
     },
@@ -7902,37 +7808,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793142431
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 6667,
-      "delete_at": 1793142431
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7424,
-      "delete_at": 1793143564
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7425,
-      "delete_at": 1793143564
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7426,
-      "delete_at": 1793143565
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7529,
-      "delete_at": 1793143639
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7565,
-      "delete_at": 1793143739
+      "retry_after": 1793143920
     },
     {
       "chat_id": 1677869966,
@@ -9283,6 +9159,21 @@
       "chat_id": 1677869966,
       "message_id": 7913,
       "delete_at": 1793228673
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7914,
+      "delete_at": 1793229717
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7915,
+      "delete_at": 1793229879
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7916,
+      "delete_at": 1793230041
     }
   ],
   "active_channel": null,
