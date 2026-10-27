@@ -707,34 +707,6 @@
         1475
       ]
     },
-    "267987817": {
-      "chat_id": 1677869966,
-      "text": "🧩 کره شمالی در واقعیت و در Call of Duty Modern Warfare 4\n⚽️‌",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIFbWrcgODhi9Y44KBezyumiQyBooxfAAKQDAACULDlUh2yC10xoYtbPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 1389,
-      "cleanup_message_ids": [
-        1389,
-        1520,
-        1521,
-        1982,
-        2034,
-        2036,
-        2039,
-        2040
-      ],
-      "preview_message_ids": [
-        2039,
-        2040
-      ],
-      "scheduled_at": 1793059200,
-      "scheduled_approved": true
-    },
     "267987818": {
       "chat_id": 1677869966,
       "text": "🧩 بروزرسانی: نقدها و نمرات بازی Call of Duty Modern Warfare 4 بروزرسانی شد\n🔻Metacritic: 87/100\n🔻Opencritic: 85/100\n⬅متای نسخه PS5 بازی نیز ۹۱ شده است!\n⚽️‌",
@@ -1091,28 +1063,6 @@
         3445
       ],
       "scheduled_at": 1793085780,
-      "scheduled_approved": true
-    },
-    "267988504": {
-      "chat_id": 1677869966,
-      "text": "🎮 شایعه: کنسول دستی PS6 ممکن است از فناوری اختصاصی RDNA 5 بهره ببرد\n🔻بر اساس گزارش‌های دیجیتال فاندری، کنسول دستی احتمالی پلی استیشن ۶ ممکن است به تراشه سفارشی بر پایه معماری RDNA 5 شرکت AMD مجهز شود. ریچارد لیدبتر، تحلیلگر ارشد این رسانه، اعلام کرد که سونی احتمالاً امتیاز انحصاری برای استفاده از این فناوری در دستگاه‌های دستی را به دست آورده است. سونی با سرمایه‌گذاری مستقیم در طراحی این پردازنده، زمینه را برای ارتقای عملکرد گرافیکی و هوش مصنوعی فراهم کرده است. با این حال، سونی تاکنون مشخصات سخت‌افزاری این دستگاه را تأیید نکرده و این اطلاعات در حد شایعه است.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAILhmrfEqAeqvSnWiY4nez6AAHSJ4g0CwACpg9rG8Yv9FKSEKadobNFFgEAAwIAA3cAAz0E"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2950,
-      "cleanup_message_ids": [
-        3370,
-        3371
-      ],
-      "preview_message_ids": [
-        3370,
-        3371
-      ],
-      "scheduled_at": 1793059680,
       "scheduled_approved": true
     },
     "267988506": {
@@ -3129,29 +3079,6 @@
         3602,
         3603
       ]
-    },
-    "267989020": {
-      "chat_id": 1677869966,
-      "text": "شاید براتون جالب باشه بدونید در ایالات متحده اینقدر موارد آزار و اذیت توسط ارواح در منازل گزارش شده که در چند شهر مثل نیویورك ، تگزاس و شیکاگو فروش یك خانه جن زده یا تسخیر شده بدون اطلاع مالك به خریدار و مشاورین خرید املاك جرم محسوب میشه و جریمه یا زندان به همراه خواهد داشت\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIP8Wrfzwqu94PYgl6uvchUF4fr8k8NAAICvjEbX5HgUbmw4RLQ8aZdAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4081,
-      "cleanup_message_ids": [
-        4478,
-        4479
-      ],
-      "scheduled_at": 1793059627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4478,
-        4479
-      ],
-      "scheduled_approved": true
     },
     "267989021": {
       "chat_id": 1677869966,
@@ -6576,51 +6503,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989278": {
-      "chat_id": 1677869966,
-      "text": "اینترنت ایران‌ رو میشه تو کشورهای دیگه به عنوان ابزار شکنجه ازش استفاده کرد",
-      "entities": [],
-      "media": null,
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4734,
-      "cleanup_message_ids": [
-        4892,
-        4893
-      ],
-      "scheduled_at": 1793059060,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4892,
-        4893
-      ],
-      "scheduled_approved": true
-    },
-    "267989279": {
-      "chat_id": 1677869966,
-      "text": "چطور حافظه و اطلاعات ChatGPT رو به Claude و Gemini منتقل کنیم؟\nیکی از بزرگ‌ترین دغدغه‌ها موقع مهاجرت به چت‌بات‌های دیگه مثل Claude یا Gemini اینه که این هوش‌های مصنوعی شناختی از ما، علایق، لحن و سابقه‌مون ندارن و آموزش دادن دوباره همه‌چیز کار وقت‌گیریه! اما با قابلیت ایمپورت مموری، همه‌چیز توی چند ثانیه انجام میشه\n💬انتقال حافظه به Claude\nوارد Settings کلود بشید و بخش Memory رو باز کنید.\nروی گزینه Import memory from other AI providers کلیک کنید.\nپرامپت آماده‌ای که کلود بهتون میده رو کپی کنید و داخل یک چت جدید در ChatGPT بفرستید.\nچت‌جی‌پی‌تی تمام حافظه و شناختش از شما رو لیست می‌کنه.\nپاسخ خروجی رو کپی کرده، داخل کلود Paste کنید و دکمه Add to memory رو بزنید.\n💬 انتقال حافظه به Gemini\nدر جمینای وارد منوی تنظیمات بشید و روی Import memory بزنید.\nپرامپت اختصاصی جمینای رو بردارید و به چت‌بات قبلی‌تون بدید.\nاطلاعات خلاصه و ساختاریافته دریافتی رو کپی کرده، در کادر مربوطه در Gemini قرار بدید و Add to memory رو ثبت کنید.\n📝 به همین سادگی، دستیار جدیدت دقیقاً مثل قبلی تو رو می‌شناسه و لازم نیست همه‌چیز رو از صفر براش توضیح بدی",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAISf2rf0cp9n9v62AmDJ0fu-Cmnnz5nAAIDEWsb_E6xUnDm9Sx3kd1DAQADAgADeQADPQQ"
-      },
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4735,
-      "cleanup_message_ids": [
-        4894,
-        4895,
-        4896
-      ],
-      "scheduled_at": 1793060260,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4894,
-        4895,
-        4896
-      ],
-      "scheduled_approved": true
-    },
     "267989280": {
       "chat_id": 1677869966,
       "text": "انجمن کسب‌وکارهای اینترنتی: افزایش تعرفه اینترنت بدون بهبود کیفیت و کاهش فیلترینگ غیرقابل‌پذیرش است\n🔹انجمن کسب‌وکارهای اینترنتی تهران در بیانیه‌ای اعلام کرد که افزایش تعرفه اینترنت بدون برنامه‌ای شفاف برای بهبود کیفیت، کاهش محدودیت‌ها و مشخص شدن محل مصرف درآمدها، غیرقابل‌پذیرش است.\n🔹در این بیانیه، پنج مطالبه مطرح شده است. نخستین مطالبه بهبود ملموس کیفیت اینترنت است. دومین مطالبه کاهش محدودیت‌ها و بازنگری در سیاست‌های فیلترینگ است. همچنین، انجمن در سومین مطالبه خود به شفافیت در محل مصرف درآمدهای حاصل از افزایش تعرفه اشاره کرده است.\n🔹مطالبه چهارم شامل پاسخ‌گویی و انتشار گزارش‌های دوره‌ای است. آخرین مطالبه نیز به این موضوع اشاره دارد که تصمیم‌گیران باید آثار مستقیم و غیرمستقیم افزایش هزینه اینترنت بر کسب‌وکارهای اینترنتی، به‌ویژه کسب‌وکارهای کوچک و متوسط، را در نظر بگیرند و از تحمیل فشار مضاعف بر فعالان اقتصاد دیجیتال جلوگیری کنند.",
@@ -7754,26 +7636,6 @@
       "preview_message_ids": [
         4984,
         4985
-      ],
-      "scheduled_approved": true
-    },
-    "267989381": {
-      "chat_id": 1677869966,
-      "text": "تعرفه مکالمه و پیامک هم 40 درصد گرون‌تر شده.\n🔴 پسر پزشکیان : نخستین هدف اسرائیل تو جنگ بعدی رو من میدونم ولی بهتون نمیگم.\n🔴 | اخبار",
-      "entities": [],
-      "media": null,
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4996,
-      "cleanup_message_ids": [
-        5307,
-        5308
-      ],
-      "scheduled_at": 1793059467,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5307,
-        5308
       ],
       "scheduled_approved": true
     },
@@ -11164,29 +11026,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990034": {
-      "chat_id": 1677869966,
-      "text": "🌴یکم از زیبایی‌های ترکیه با هم ببینیم🌈\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaEGrf3YcljxbCjli3Y2UopXYacvJLAAJbGAAC-ihgUGqZ06Y3tRvIPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6672,
-      "cleanup_message_ids": [
-        7034,
-        7035
-      ],
-      "scheduled_at": 1793059736,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7034,
-        7035
       ],
       "scheduled_approved": true
     },
@@ -15417,12 +15256,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793058803
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 2921,
-      "delete_at": 1793059438
+      "retry_after": 1793060344
     },
     {
       "chat_id": 1677869966,
@@ -15898,6 +15732,41 @@
       "chat_id": 1677869966,
       "message_id": 7638,
       "delete_at": 1793144945
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7640,
+      "delete_at": 1793146138
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7641,
+      "delete_at": 1793146139
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7642,
+      "delete_at": 1793146140
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7643,
+      "delete_at": 1793146140
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7644,
+      "delete_at": 1793146141
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7645,
+      "delete_at": 1793146142
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7646,
+      "delete_at": 1793146666
     }
   ],
   "active_channel": null,
