@@ -917,28 +917,6 @@
       "scheduled_at": 1793091600,
       "scheduled_approved": true
     },
-    "267988506": {
-      "chat_id": 1677869966,
-      "text": "🎮 شایعه: هویت بازیگر نقش جیسون در بازی GTA 6 مشخص شد\n🔻بازی GTA 6 در تاریخ ۱۹ نوامبر ۲۰۲۶ (۲۸ آبان ۱۴۰۵) برای کنسول‌های پلی استیشن ۵ و ایکس باکس سری ایکس/اس عرضه می‌شود و شایعات جدید نشان می‌دهند که راب برینکمن ممکن است صداپیشه و بازیگر نقش جیسون باشد. این گمانه‌زنی‌ها پس از انتشار ویدیویی در ردیت و ایکس شکل گرفت که کاربران در آن به شباهت صوتی برینکمن با دیالوگ‌های جیسون در تریلرها اشاره کرده‌اند. در حالی که برخی همچنان دیلن رورک را گزینه این نقش می‌دانند و مانی ال. پرز محتمل‌ترین گزینه‌ برای نقش لوسیا است، شرکت راکستار گیمز هنوز هویت بازیگران اصلی را به‌صورت رسمی تأیید نکرده است.\n🆔",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAILiGrfEqA378TTQWD7Z8F2IPxWyYZ7AAK8IgACcZPxUi0CabCMJUTkPQQ"
-      },
-      "channel": "@LevelUpFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 2952,
-      "cleanup_message_ids": [
-        3456,
-        3457
-      ],
-      "preview_message_ids": [
-        3456,
-        3457
-      ],
-      "scheduled_at": 1793088840,
-      "scheduled_approved": true
-    },
     "267988748": {
       "chat_id": 1677869966,
       "text": "الکلاسیکو به مرور زمان...\nساعت ۲۳:۳۰ امشب\nهمراه\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\nپروکسی • پروکسی\n_\n🥀",
@@ -2863,65 +2841,6 @@
         3602,
         3603
       ]
-    },
-    "267989045": {
-      "chat_id": 1677869966,
-      "text": "پرونده بسیار مرموز و ترسناك جسد گمشده هِل ڪِرفت\n.\n.\n.\n☠️ #پادڪست_ترسناك ☠️\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [
-        {
-          "offset": 48,
-          "length": 1,
-          "type": "bold"
-        },
-        {
-          "offset": 50,
-          "length": 1,
-          "type": "bold"
-        },
-        {
-          "offset": 52,
-          "length": 1,
-          "type": "bold"
-        },
-        {
-          "offset": 54,
-          "length": 3,
-          "type": "bold"
-        },
-        {
-          "offset": 57,
-          "length": 14,
-          "type": "hashtag"
-        },
-        {
-          "offset": 57,
-          "length": 14,
-          "type": "bold"
-        },
-        {
-          "offset": 71,
-          "length": 3,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIQCmrfzwqx1ihD7BXicWQrJKmzKarKAAKgbAIAAQVIUVMhxhYWFEfJ0z0E"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4106,
-      "cleanup_message_ids": [
-        4528,
-        4529
-      ],
-      "scheduled_at": 1793089627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4528,
-        4529
-      ],
-      "scheduled_approved": true
     },
     "267989046": {
       "chat_id": 1677869966,
@@ -5581,62 +5500,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989303": {
-      "chat_id": 1677869966,
-      "text": "⏺چت‌جی‌پی‌تی دسترسی کاربران ایرانی رو مسدود کرد؛ حالا بدون فیلترشکن نمیشه بهش دسترسی داشت!",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 1,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5841193060574171492"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAISwmrf0kdBGGaQJ40mLmKeIfBiZ0MfAAJKD2sbInvBUsGP2bFHET_JAQADAgADdwADPQQ"
-      },
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4802,
-      "cleanup_message_ids": [
-        4943,
-        4944
-      ],
-      "scheduled_at": 1793089060,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4943,
-        4944
-      ],
-      "scheduled_approved": true
-    },
-    "267989304": {
-      "chat_id": 1677869966,
-      "text": "عرضه کارت گرافیک RTX ۶۰۶۰ انویدیا ممکن است تا سال ۲۰۲۹ به تعویق بیفتد\n🔹افشاگر سخت‌افزاری با نام مستعار KeplerL۲ گزارش داده است که کارت گرافیک میان‌رده GeForce RTX ۶۰۶۰ انویدیا ممکن است تا سال ۲۰۲۹ روانه بازار نشود.\n🔹به گفته این افشاگر، دلیل این تاخیر، تداوم کمبود عرضه در بازار نیمه‌رساناها و حافظه‌های GDDR با تراکم بالا است که بخش عمده این قطعات به حوزه هوش مصنوعی اختصاص داده می‌شود. انویدیا در شرایط کمبود قطعات، طبق روال همیشگی خود، عرضه کارت‌های گرافیک رده‌پایین‌تر را به تعویق می‌اندازد و راهکارهای پرچم‌دار با حاشیه سود بالاتر را در اولویت قرار می‌دهد. انتظار می‌رود مدل‌های رده‌بالای خانواده GeForce RTX ۶۰ در سال ۲۰۲۸ معرفی شوند، درحالی‌که عرضه مدل‌های متداول‌تر با فاصله زمانی قابل‌توجهی پس از آن انجام خواهد شد.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 69,
-          "type": "bold"
-        }
-      ],
-      "media": null,
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4803,
-      "cleanup_message_ids": [
-        4945,
-        4946
-      ],
-      "scheduled_at": 1793090260,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4945,
-        4946
-      ],
-      "scheduled_approved": true
-    },
     "267989305": {
       "chat_id": 1677869966,
       "text": "🔴 اینترنت بین الملل ایران وضعیتش بشدت افتضاحه و ارتباط UDP قطع و اتصال به TCP بسیار کنده، آخرین باری که وضعیت این طور بود اینترنت برای ماه ها بعدش قطع شد.",
@@ -6103,29 +5966,6 @@
       "preview_message_ids": [
         4984,
         4985
-      ],
-      "scheduled_approved": true
-    },
-    "267989408": {
-      "chat_id": 1677869966,
-      "text": "🇺🇸🇮🇷⚡️ اسکات بسنت درباره مقام‌های ایرانی\n«ما آماده‌ایم تحریم‌ها را از افرادی که با ما همکاری کنند، لغو کنیم.\nهدف ما این است که رژیم را به میز مذاکره بکشانیم.\nاگر آن‌ها بخواهند به سراغ ما بیایند و همکاری کنند، می‌توانند ۳۰ درصد از دارایی‌هایی را که برای رژیم نگه می‌دارند، به خود اختصاص دهند.»",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAITn2rf06ts2NA9tFcUjgy3hLCZVlMvAAIsIQACjGQAAVNXHiBVRTehmj0E"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5023,
-      "cleanup_message_ids": [
-        5359,
-        5360
-      ],
-      "scheduled_at": 1793089467,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5359,
-        5360
       ],
       "scheduled_approved": true
     },
@@ -8975,52 +8815,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990058": {
-      "chat_id": 1677869966,
-      "text": "🌴۱۰ مکان جذاب و دیدنی در چین🌈\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaKGrf3YfD6E47CJhmvRSZ2t0If2sKAAIKFwACBOKpUtoy_gABeuzaGT0E"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6696,
-      "cleanup_message_ids": [
-        7083,
-        7084
-      ],
-      "scheduled_at": 1793088536,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7083,
-        7084
-      ],
-      "scheduled_approved": true
-    },
-    "267990059": {
-      "chat_id": 1677869966,
-      "text": "🌴زیبایی های بالی فوق العاده هستش🌟\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaKWrf3YfxKiN_q5PhETcf_hr_Ck9OAAI9GQAC0o9JUkiPf75yg1uKPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6697,
-      "cleanup_message_ids": [
-        7085,
-        7086
-      ],
-      "scheduled_at": 1793089736,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7085,
-        7086
       ],
       "scheduled_approved": true
     },
@@ -12676,7 +12470,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793088564
+      "retry_after": 1793090688
     },
     {
       "chat_id": 1677869966,
@@ -13667,6 +13461,41 @@
       "chat_id": 1677869966,
       "message_id": 7748,
       "delete_at": 1793174848
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7749,
+      "delete_at": 1793176481
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7750,
+      "delete_at": 1793176482
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7751,
+      "delete_at": 1793176483
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7752,
+      "delete_at": 1793176483
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7753,
+      "delete_at": 1793176484
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7754,
+      "delete_at": 1793176485
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7755,
+      "delete_at": 1793176667
     }
   ],
   "active_channel": null,
