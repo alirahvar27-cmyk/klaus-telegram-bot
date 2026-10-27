@@ -2820,35 +2820,6 @@
         3603
       ]
     },
-    "267989049": {
-      "chat_id": 1677869966,
-      "text": "در این ویدئو تغییرات چهره یك فرد در اثر مصرف مداوم مواد مخدر در زمان 5 سال را مشاهده میکنید\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [
-        {
-          "offset": 69,
-          "length": 1,
-          "type": "code"
-        }
-      ],
-      "media": {
-        "type": "document",
-        "file_id": "CgACAgQAAxkBAAIQDmrfzwolK2xSMT3D5jePJAIjqyxoAAJ-AQACA_6TBbBbENv0sIxDPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4110,
-      "cleanup_message_ids": [
-        4536,
-        4537
-      ],
-      "scheduled_at": 1793094427,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4536,
-        4537
-      ],
-      "scheduled_approved": true
-    },
     "267989050": {
       "chat_id": 1677869966,
       "text": "باز هم یه پیشنهاد بینظیر این بار واسه اون دسته از دوستان ڪه به سبك آخرالزمان علاقه دارن ، این فیلم در مورد یك دروغ هست ڪه ناسا سالها اون رو از مردم دنیا پنهان کرده و حالا همون دروغ داره جهان را نابود میکنه خلاصه اگر دنبال هیجان هستید دیدن Moonfall رو هرگز از دست ندید\n🎬 #پیشنهاد_فیلم\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
@@ -8546,29 +8517,6 @@
       ],
       "scheduled_approved": true
     },
-    "267990063": {
-      "chat_id": 1677869966,
-      "text": "🌴۵ مکان ساحلی قشنگ در ایتالیا🏖\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaLWrf3YdxEjQt4XerVwABK0kk9czZuwACkx0AAgS6MFG066u5SlYhyz0E"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6701,
-      "cleanup_message_ids": [
-        7093,
-        7094
-      ],
-      "scheduled_at": 1793094536,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7093,
-        7094
-      ],
-      "scheduled_approved": true
-    },
     "267990064": {
       "chat_id": 1677869966,
       "text": "🌴چند مکان بسیار زیبا در اسپانیا 🥂🍵\n➡️",
@@ -12129,7 +12077,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793094459
+      "retry_after": 1793095079
     },
     {
       "chat_id": 1677869966,
@@ -13225,6 +13173,16 @@
       "chat_id": 1677869966,
       "message_id": 7780,
       "delete_at": 1793180681
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7781,
+      "delete_at": 1793180835
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7782,
+      "delete_at": 1793180937
     }
   ],
   "active_channel": null,
