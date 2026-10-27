@@ -2820,36 +2820,6 @@
         3603
       ]
     },
-    "267989085": {
-      "chat_id": 1677869966,
-      "text": "بدون شك یکی از عجیب ترین مراسم جهان که در هند قديم انجام میشد ، Sati نام داشت این مراسم به این صورت بود که اگر یك مرد جانش را از دست میداد همسر او نیز باید خود را در مراسم خاکسپاریش زنده زنده نیز ميسوزاند\nپروڪسی\n★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞",
-      "entities": [
-        {
-          "offset": 205,
-          "length": 6,
-          "type": "text_link",
-          "url": "https://t.me/proxy?server=77.232.43.253&port=23&secret=eeNEgYdJvXrFGRMCIMJdCQ"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQMmrfzwogz2tkA56xNMWn6zQldgwGAAIiEGsb5b_gUtxeA5L106vFAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4146,
-      "cleanup_message_ids": [
-        4608,
-        4609
-      ],
-      "scheduled_at": 1793137627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4608,
-        4609
-      ],
-      "scheduled_approved": true
-    },
     "267989086": {
       "chat_id": 1677869966,
       "text": "دانشمندان چهره یک مومیایی باستانی را بازسازی کردند\n🔹 دانشمندان دانشگاه ایالتی مسکو با کمک توموگرافی کامپیوتری ، تاریخ‌گذاری رادیوکربن و سایر مطالعات ، توانستند ظاهر مردی را که بیش از سه هزار سال پیش در مصر درگذشته بود ، بازسازی کنند\n🔹 این مومیایی از قرن نوزدهم در موزه مردم‌شناسی نگهداری می‌شود ، مشخص شد که این مرد حدود ۴۰ تا ۶۰ سال عمر کرده و در طول عمر خود ۱۶۷ سانتی‌متر قد داشته است\n🔹عکس ، چهره یک مصری باستان را نشان می‌دهد که با توجه به ترکیب مواد مومیایی‌کننده ، جایگاه نسبتا بالایی در جامعه داشته است\nپروڪسی\n★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞",
@@ -4344,68 +4314,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989453": {
-      "chat_id": 1677869966,
-      "text": "🇮🇷🇺🇸🎥ترامپ درباره ایران: باید یه مقدار من‌باب کشتن رهبران ایران صبر کنم و دست بکشم، چون باید بفهمم اصلاً داریم با چه کسی مذاکره می‌کنیم.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 4,
-          "type": "bold"
-        },
-        {
-          "offset": 0,
-          "length": 4,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5341817251722968986"
-        },
-        {
-          "offset": 4,
-          "length": 4,
-          "type": "bold"
-        },
-        {
-          "offset": 4,
-          "length": 4,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5949349077345901761"
-        },
-        {
-          "offset": 8,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 8,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "6046374780859327160"
-        },
-        {
-          "offset": 10,
-          "length": 131,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIJ72rdxdSOSP_-YNcWgoZfpanjxttXAAKYHwAC9C_pUnAyBziorrEaPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5068,
-      "cleanup_message_ids": [
-        5442,
-        5443
-      ],
-      "scheduled_at": 1793137467,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5442,
-        5443
-      ],
-      "scheduled_approved": true
-    },
     "267989454": {
       "chat_id": 1677869966,
       "text": "❌خبرگزاری الطریق العربی از مجروح شدن برد کوپر فرمانده سنتکام از ناحیه کتف و قفسه سینه در حملۀ یک سرباز خبر داد",
@@ -5577,52 +5485,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990098": {
-      "chat_id": 1677869966,
-      "text": "🌴در شهر یونیانگ (Yunyang) در استان چونگ‌کینگ (Chongqing) چین، تابی به نام “تیانمن” (Tianmen) وجود دارد که به عنوان یکی از ترسناک‌ترین تاب‌های جهان شناخته می‌شود. این تاب در ارتفاع حدود ۷۰۰ متر از سطح دره و در لبه صخره‌ای با ارتفاع ۱۰۰ متر قرار دارد. هنگامی که بر روی این تاب می‌نشینید، با سرعتی حدود ۱۲۰ کیلومتر در ساعت به سمت دره حرکت می‌کنید، که تجربه‌ای هیجان‌انگیز و دلهره‌آور را به ارمغان می‌آورد.\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaUGrf3YeSARNE5nGEdSRuQeWF5MNSAALbGQAC0o9RUiuE3IW6j6hUPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6736,
-      "cleanup_message_ids": [
-        7164,
-        7165
-      ],
-      "scheduled_at": 1793136536,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7164,
-        7165
-      ],
-      "scheduled_approved": true
-    },
-    "267990099": {
-      "chat_id": 1677869966,
-      "text": "🌴حواستون به زمان باشه .....\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaUWrf3Yd7csn-eLpzull9fu0a8ZCOAAIsHAAC0-B4UvNxG3xM7buIPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6737,
-      "cleanup_message_ids": [
-        7166,
-        7167
-      ],
-      "scheduled_at": 1793137736,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7166,
-        7167
       ],
       "scheduled_approved": true
     },
@@ -8358,17 +8220,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793136551
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4071,
-      "delete_at": 1793137727
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 4072,
-      "delete_at": 1793137989
+      "retry_after": 1793138604
     },
     {
       "chat_id": 1677869966,
@@ -9744,6 +9596,26 @@
       "chat_id": 1677869966,
       "message_id": 7901,
       "delete_at": 1793222834
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7902,
+      "delete_at": 1793224400
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7903,
+      "delete_at": 1793224400
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7904,
+      "delete_at": 1793224401
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7905,
+      "delete_at": 1793224402
     }
   ],
   "active_channel": null,
