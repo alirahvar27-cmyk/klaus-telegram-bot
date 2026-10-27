@@ -2820,29 +2820,6 @@
         3603
       ]
     },
-    "267989056": {
-      "chat_id": 1677869966,
-      "text": "🔺اینجا مرز ایران و جمهوری آذربایجان است\nسمت راست جنگل‌های جمهوری آذربایجان و سمت چپ جنگلهای ایران!\nهمین عکس به تنهایی گویای همه‌چیز است\nبا محیط زیست خود چه کردیم؟\nچه آینده‌ای در انتظار ماست؟ ...\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQFWrfzwqpVNXw2DC7ONqZrUZ7OAgEAAJcszEb_3RwU73yIdoAAe0cbAEAAwIAA3kAAz0E"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4117,
-      "cleanup_message_ids": [
-        4550,
-        4551
-      ],
-      "scheduled_at": 1793102827,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4550,
-        4551
-      ],
-      "scheduled_approved": true
-    },
     "267989057": {
       "chat_id": 1677869966,
       "text": "چگوآرا یه جمله داره لامصب میشینه رو قلب و مغز آدم\nشما میتونید تمام گل‌ ها را بچینید اما قطعا نمیتونید مانع اومدن بهار بشید چون بهار بالاخره از راه میرسه\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
@@ -5101,84 +5078,6 @@
       ],
       "scheduled_approved": true
     },
-    "267989314": {
-      "chat_id": 1677869966,
-      "text": "⏺در حال حاضر تقریبا کل مملکت دست ایشون، «مهدی فضلی» مالک: گلرنگ، تپسی، فیلم‌نت، افق کوروش، فامیلا، اکتیو، شون، سافتلن و... هست.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 1,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5841193060574171492"
-        }
-      ],
-      "media": [
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAISzWrf0kcv5FrfODvowyAu3i07VgyQAALED2sbUJ_ZUreBpZOrcS9TAQADAgADeQADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAISzmrf0kdhl_MNcQa64BZdovcXMJhLAALFD2sbUJ_ZUvGE44bTd3QhAQADAgADeQADPQQ"
-        }
-      ],
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4813,
-      "cleanup_message_ids": [
-        4965,
-        4966,
-        4967
-      ],
-      "scheduled_at": 1793102260,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4965,
-        4966,
-        4967
-      ],
-      "scheduled_approved": true
-    },
-    "267989316": {
-      "chat_id": 1677869966,
-      "text": "🔴 ایلان ماسک: هوش مصنوعی ممکن است به تهدیدی وجودی برای بشریت تبدیل شود\nاحتمال دارد هوش مصنوعی به تهدیدی وجودی برای بشر تبدیل شود، اما هیچ کاری از دست من برای جلوگیری از آن برنمی‌آید. بنابراین به این نتیجه رسیدم که دو انتخاب دارم؛ یا در این عرصه مشارکت کنم یا فقط تماشاگر باشم. مشارکت کردن برایم جذاب‌تر از تماشا کردن است.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "4990182601252668309"
-        },
-        {
-          "offset": 3,
-          "length": 68,
-          "type": "bold"
-        },
-        {
-          "offset": 72,
-          "length": 250,
-          "type": "blockquote"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAISz2rf0kdiI7P8GxfU7vVbQ3-X4FsIAAItHwACyTfRUm_x3Vr8OEgXPQQ"
-      },
-      "channel": "@TechNamaFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4815,
-      "cleanup_message_ids": [
-        4968,
-        4969
-      ],
-      "scheduled_at": 1793103460,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4968,
-        4969
-      ],
-      "scheduled_approved": true
-    },
     "267989317": {
       "chat_id": 1677869966,
       "text": "۷ سایت کاربردی برای دانلود رایگان مقالات و کتاب‌های علمی\n💬 اگه برای پروژه دانشگاهی، تحقیق یا مطالعه به مقاله‌ای برخوردی که برای دانلودش باید پول بدی، این سایت‌ها می‌تونن کمکت کنن نسخه‌های رایگانش رو پیدا کنی\n💬 Unpaywall\nافزونه مرورگر برای پیدا کردن نسخه‌های رایگان و قانونی مقالات علمی.\n💬 Open Access Button\nپیدا کردن نسخه آزاد مقاله با لینک یا شناسه DOI.\n💬 PaperPanda\nافزونه‌ای برای پیدا کردن نسخه‌های رایگان مقالات با چند کلیک.\n💬 DOAJ\nدسترسی به مقالات مجلات علمی با دسترسی آزاد.\n💬 OA.mg\nموتور جست‌وجو برای پیدا کردن مقالات علمی و نسخه‌های قابل دسترس آن‌ها.\n💬 CORE\nجست‌وجو میان میلیون‌ها مقاله و پژوهش منتشرشده در مخازن دانشگاهی.\n💬 Library Genesis (LibGen)\nپایگاهی شناخته‌شده برای پیدا کردن کتاب‌ها و مقالات علمی؛ البته وضعیت حقوقی محتوای آن یکسان نیست و ممکن است شامل نسخه‌های غیرمجاز باشد.\n📝 برای دسترسی قانونی و مطمئن، بهتره اول سراغ منابع Open Access و نسخه‌های منتشرشده در مخازن رسمی دانشگاه‌ها بری.",
@@ -5363,29 +5262,6 @@
       "preview_message_ids": [
         4984,
         4985
-      ],
-      "scheduled_approved": true
-    },
-    "267989421": {
-      "chat_id": 1677869966,
-      "text": "🇺🇸🇮🇷⚡️ بسنت درباره ایران\nبسیاری از فرماندهان سپاه پاسداران مانند موش‌هایی در فاضلاب پنهان شده‌اند. آن‌ها در مخفیگاه‌ها و مکان‌های عمیق و تاریک به سر می‌برند و از آنچه بر مردم ایران می‌گذرد، بی‌خبرند.\nآیت‌الله به‌شدت منزوی شده است.\nبسیاری از این رهبران درک نمی‌کنند که چه اتفاقی برای مردم ایران در حال رخ دادن است.",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAITrGrf06uTveCH0KMOPbBkwH4GVzZ4AAIvIQACjGQAAVPch2DO-Ovk8D0E"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5036,
-      "cleanup_message_ids": [
-        5383,
-        5384
-      ],
-      "scheduled_at": 1793102667,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5383,
-        5384
       ],
       "scheduled_approved": true
     },
@@ -7968,52 +7844,6 @@
       "preview_message_ids": [
         5497,
         5498
-      ],
-      "scheduled_approved": true
-    },
-    "267990069": {
-      "chat_id": 1677869966,
-      "text": "🌴مکان های بسیار زیبایی که قبل از ترک این دنیا حتما باید ببینی🌈\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaM2rf3Ycyr6eVCDD69hzUzJIEh3XtAALfHAACobXoUiPNp6egJ8QzPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6707,
-      "cleanup_message_ids": [
-        7105,
-        7106
-      ],
-      "scheduled_at": 1793101736,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7105,
-        7106
-      ],
-      "scheduled_approved": true
-    },
-    "267990070": {
-      "chat_id": 1677869966,
-      "text": "🌴طلوع آفتاب نیویورک عین یک نقاشی زنده هست🌃\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaNGrf3YfrJGmFoO110MnHYkgg1RzPAALcHAACobXoUnpgp2IeMzQvPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 6708,
-      "cleanup_message_ids": [
-        7107,
-        7108
-      ],
-      "scheduled_at": 1793102936,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7107,
-        7108
       ],
       "scheduled_approved": true
     },
@@ -11416,7 +11246,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793101660
+      "retry_after": 1793103796
     },
     {
       "chat_id": 1677869966,
@@ -12577,6 +12407,36 @@
       "chat_id": 1677869966,
       "message_id": 7805,
       "delete_at": 1793188045
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7806,
+      "delete_at": 1793189588
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7807,
+      "delete_at": 1793189590
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7808,
+      "delete_at": 1793189590
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7809,
+      "delete_at": 1793189591
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7810,
+      "delete_at": 1793189592
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7811,
+      "delete_at": 1793189875
     }
   ],
   "active_channel": null,
