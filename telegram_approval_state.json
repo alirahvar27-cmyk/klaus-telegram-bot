@@ -2820,29 +2820,6 @@
         3603
       ]
     },
-    "267989088": {
-      "chat_id": 1677869966,
-      "text": "یتیم 2: اولین قتل Orphan: First Kill\nژانر: ترسناک، جنایی، درام\nسال ساخت: 2022 | کشور: آمریکا | رده سنی: R\nکارگردان: William Brent Bell\nبازیگران: Isabelle Fuhrman, Julia Stiles, Rossif Sutherland\nخلاصه داستان\nفیلم یتیم اولین قتل 2022 داستان در مورد دختری به نام لینا کلامر (با بازی ایزابل فورمن) است که پس از فرار از یک مرکز روانپزشکی در استونی، با جعل هویت دختر گمشده یک خانواده ثروتمند به آمریکا سفر می‌کند. با این حال زمانی که این خانواده به گذشته تاریک و ترسناک لینا پی می‌برند، همه چیز تغییر کرده و لینا در مقابل مادری قرار می‌گیرد که می‌خواهد به هر قیمتی از خانواده‌اش در برابر این قاتل وحشتناک محافظت کند و…\n★𝐒𝐜𝐚𝐫𝐲_𝐬𝐭𝐫𝐚𝐧𝐠𝐞",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQNWrfzwozE_fMyh9o7upohiLU6j8BAAKeFmsbr0K5UtgOtUXD-YYFAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4149,
-      "cleanup_message_ids": [
-        4614,
-        4615
-      ],
-      "scheduled_at": 1793141227,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4614,
-        4615
-      ],
-      "scheduled_approved": true
-    },
     "267989089": {
       "chat_id": 1677869966,
       "text": "در بولیوی، خفاش‌ها گاهی به‌عنوان «داروی سنتی» خریدوفروش می‌شوند! 🦇\nدر برخی مناطق بولیوی، باوری قدیمی وجود دارد که نوشیدن خون تازهٔ خفاش می‌تواند به درمان بیماری‌هایی مانند صرع کمک کند. گزارش‌ها از فروش هزاران خفاش در بازارهای این کشور برای همین باور حکایت دارند.\nاما نکته مهم اینجاست: هیچ شواهد علمی معتبری وجود ندارد که خون خفاش خاصیت درمانی برای صرع داشته باشد. همچنین تماس با خون حیوانات وحشی می‌تواند خطر انتقال عوامل بیماری‌زا را به همراه داشته باشد.",
@@ -4254,108 +4231,6 @@
       "preview_message_ids": [
         4675,
         4676
-      ],
-      "scheduled_approved": true
-    },
-    "267989456": {
-      "chat_id": 1677869966,
-      "text": "🔸🔸🎥رشیدی کوچی: در جنگ بعدی، ایران خاک بحرین را تصرف خواهد کرد!",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5886418237272367662"
-        },
-        {
-          "offset": 2,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 2,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5888526391904837733"
-        },
-        {
-          "offset": 4,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 4,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "6046374780859327160"
-        },
-        {
-          "offset": 6,
-          "length": 59,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAITz2rf0-rhgjNxyUK1OvDHeIJkP_mMAAKRHgACJbv5UhTQNmRMuTbWPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5071,
-      "cleanup_message_ids": [
-        5448,
-        5449
-      ],
-      "scheduled_at": 1793141067,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5448,
-        5449
-      ],
-      "scheduled_approved": true
-    },
-    "267989457": {
-      "chat_id": 1677869966,
-      "text": "🌧 بارش تگرگ بندرعباسی‌ها را غافل‌گیر کرد",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "4909380548289365141"
-        },
-        {
-          "offset": 2,
-          "length": 39,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIT0Grf0-oc6o3vsksjsChS5Zi1qcSJAAIMIgACKpX4UtY9co6ZEbDxPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5072,
-      "cleanup_message_ids": [
-        5450,
-        5451
-      ],
-      "scheduled_at": 1793142267,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5450,
-        5451
       ],
       "scheduled_approved": true
     },
@@ -8027,47 +7902,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793140471
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 5501,
-      "delete_at": 1793140667
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 6014,
-      "delete_at": 1793141347
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 6015,
-      "delete_at": 1793141347
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 6016,
-      "delete_at": 1793141348
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 6656,
-      "delete_at": 1793142344
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 6657,
-      "delete_at": 1793142345
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 6658,
-      "delete_at": 1793142346
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 6659,
-      "delete_at": 1793142346
+      "retry_after": 1793142431
     },
     {
       "chat_id": 1677869966,
@@ -9433,6 +9268,21 @@
       "chat_id": 1677869966,
       "message_id": 7910,
       "delete_at": 1793226430
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7911,
+      "delete_at": 1793228228
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7912,
+      "delete_at": 1793228229
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7913,
+      "delete_at": 1793228673
     }
   ],
   "active_channel": null,
