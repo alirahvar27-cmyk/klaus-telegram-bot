@@ -16,7 +16,8 @@ permissions:
 
 concurrency:
   group: klaus-approval-bot
-  cancel-in-progress: true
+  # Keep a run alive until its scheduled publish and state save finish.
+  cancel-in-progress: false
 
 jobs:
   approval-bot:

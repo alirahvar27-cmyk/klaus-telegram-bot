@@ -84,6 +84,23 @@ def save_state():
     temp.write_text(json.dumps(STATE, ensure_ascii=False, indent=2), encoding="utf-8")
     temp.replace(STATE_PATH)
 
+def refresh_channel_schedule_next():
+    """Rebuild per-channel queue tails from drafts that still exist."""
+    queue = {}
+    for draft in STATE.get("pending", {}).values():
+        if not draft.get("auto_scheduled"):
+            continue
+        channel = draft.get("channel")
+        try:
+            scheduled_at = int(draft.get("scheduled_at", 0) or 0)
+        except (TypeError, ValueError):
+            continue
+        if channel in CHANNELS and scheduled_at > 0:
+            queue[channel] = max(queue.get(channel, 0), scheduled_at)
+    STATE["channel_schedule_next"] = queue
+
+refresh_channel_schedule_next()
+
 def api(method, payload=None, timeout=35):
     if not API:
         raise RuntimeError("Missing TELEGRAM_BOT_TOKEN")
@@ -711,16 +728,30 @@ def handle_callback(query):
     if action == "approve":
         try:
             publish(draft)
-            channel = draft["channel"]
-            cleanup_draft_messages(draft)
-            STATE["pending"].pop(draft_id, None)
-            STATE["edit_mode"].pop(str(user["id"]), None)
-            save_state()
-            send_publish_status(chat_id, f"✅ پست با موفقیت در {channel} منتشر شد.")
         except Exception as exc:
             log.exception("Publish failed: %s", exc)
             send_text(chat_id, f"❌ انتشار انجام نشد: {str(exc)[:700]}")
-    elif action == "cancel": cleanup_draft_messages(draft); STATE["pending"].pop(draft_id, None); save_state()
+            return
+        channel = draft["channel"]
+        STATE["pending"].pop(draft_id, None)
+        refresh_channel_schedule_next()
+        save_state()
+        try:
+            cleanup_draft_messages(draft)
+        except Exception:
+            log.exception("Post was published, but draft cleanup failed")
+        try:
+            send_publish_status(chat_id, f"✅ پست با موفقیت در {channel} منتشر شد.")
+        except Exception:
+            log.exception("Post was published, but success confirmation failed")
+    elif action == "cancel":
+        STATE["pending"].pop(draft_id, None)
+        refresh_channel_schedule_next()
+        save_state()
+        try:
+            cleanup_draft_messages(draft)
+        except Exception:
+            log.exception("Draft was cancelled, but cleanup failed")
     elif action == "edit":
         STATE["edit_mode"][str(user["id"])] = draft_id; prompt = send_text(chat_id, "متن یا کپشن جدید را در یک پیام بفرست. برای پست متنی، این متن جایگزین کامل می‌شود."); draft.setdefault("cleanup_message_ids", []).append(prompt["message_id"]); save_state()
     elif action == "channels":
@@ -743,10 +774,19 @@ def handle_update(update):
             if chat_id: send_text(chat_id, "این پیش‌نویس دیگر در دسترس نیست.")
             return
         if action == "setchannel" and len(parts) == 3 and parts[2] in CHANNELS:
-            draft["channel"] = parts[2]
-            if draft.get("auto_scheduled") and draft.get("scheduled_at"):
-                queue = STATE.setdefault("channel_schedule_next", {})
-                queue[parts[2]] = max(int(queue.get(parts[2], 0) or 0), int(draft["scheduled_at"]))
+            new_channel = parts[2]
+            draft["channel"] = new_channel
+            if draft.get("auto_scheduled"):
+                draft["scheduled_at"] = 0
+                refresh_channel_schedule_next()
+                queue = STATE["channel_schedule_next"]
+                now = int(time.time())
+                previous_slot = int(queue.get(new_channel, 0) or 0)
+                scheduled_at = max(now + 20 * 60, previous_slot + 20 * 60) if previous_slot else now + 20 * 60
+                draft["scheduled_at"] = scheduled_at
+                queue[new_channel] = scheduled_at
+            else:
+                refresh_channel_schedule_next()
             save_state()
             preview(chat_id, draft_id)
         elif action == "channels":
@@ -770,15 +810,27 @@ def handle_update(update):
                 send_text(chat_id, f"❌ انتشار انجام نشد: {str(exc)[:700]}")
                 return
             channel = draft["channel"]
-            cleanup_draft_messages(draft)
             STATE["pending"].pop(draft_id, None)
             STATE["edit_mode"].pop(str(user["id"]), None)
+            refresh_channel_schedule_next()
             save_state()
+            try:
+                cleanup_draft_messages(draft)
+            except Exception:
+                log.exception("Post was published, but draft cleanup failed")
             try:
                 send_publish_status(chat_id, f"✅ پست با موفقیت در {channel} منتشر شد.")
             except Exception:
                 log.exception("Post was published, but success confirmation could not be sent")
-        elif action == "cancel": cleanup_draft_messages(draft); STATE["pending"].pop(draft_id, None); STATE["edit_mode"].pop(str(user["id"]), None); save_state()
+        elif action == "cancel":
+            STATE["pending"].pop(draft_id, None)
+            STATE["edit_mode"].pop(str(user["id"]), None)
+            refresh_channel_schedule_next()
+            save_state()
+            try:
+                cleanup_draft_messages(draft)
+            except Exception:
+                log.exception("Draft was cancelled, but cleanup failed")
         elif action == "schedule":
             cleanup_draft_messages(draft)
             user_key = str(user["id"]); today = datetime.now(ZoneInfo("Asia/Tehran")).date(); rows=[]; row=[]
@@ -844,11 +896,14 @@ def handle_update(update):
                     mode["step"]="hour"; STATE["schedule_mode"][user_key]=mode; save_state(); cleanup_draft_messages(draft)
                     retry_message=send_text(chat_id,"این ساعت گذشته یا خیلی نزدیک است. ساعت دیگری بین ۰ تا ۲۳ بفرست؛ بعد دوباره دقیقه را می‌پرسم.")
                     draft.setdefault("cleanup_message_ids", []).append(retry_message["message_id"]); save_state(); return
-                draft["scheduled_at"]=int(scheduled_epoch)
+                draft["scheduled_at"] = int(scheduled_epoch)
                 if draft.get("auto_scheduled"):
-                    queue = STATE.setdefault("channel_schedule_next", {})
-                    queue[draft["channel"]] = max(int(queue.get(draft["channel"], 0) or 0), int(scheduled_epoch))
-                draft["scheduled_approved"]=True; STATE["schedule_mode"].pop(user_key,None); save_state(); cleanup_draft_messages(draft); preview(chat_id,draft_id)
+                    refresh_channel_schedule_next()
+                draft["scheduled_approved"] = True
+                STATE["schedule_mode"].pop(user_key, None)
+                save_state()
+                cleanup_draft_messages(draft)
+                preview(chat_id, draft_id)
             else: raise ValueError("مرحلهٔ زمان‌بندی نامعتبر است.")
         except ValueError as exc:
             STATE["schedule_mode"][user_key]=mode; save_state(); prompt_text=(f"❌ {exc}\nتاریخ را با قالب YYYY-MM-DD بفرست؛ فقط امروز تا ۷ روز آینده. برای لغو /cancel." if step=="date" else f"❌ {exc}\nساعت را به‌صورت عدد ۰ تا ۲۳ بفرست." if step=="hour" else f"❌ {exc}\nدقیقه را به‌صورت عدد ۰ تا ۵۹ بفرست."); error_message=send_text(chat_id,prompt_text)
@@ -905,18 +960,38 @@ def handle_update(update):
 
 def publish_due_drafts():
     now=int(time.time())
-    for draft_id,draft in list(STATE.get("pending",{}).items()):
-        due=int(draft.get("scheduled_at",0) or 0)
-        if not draft.get("scheduled_approved") or not due or due>now: continue
+    for draft_id, draft in list(STATE.get("pending", {}).items()):
+        due = int(draft.get("scheduled_at", 0) or 0)
+        if not draft.get("scheduled_approved") or not due or due > now:
+            continue
         try:
-            publish(draft); chat_id=draft.get("chat_id"); channel=draft.get("channel"); cleanup_draft_messages(draft); STATE["pending"].pop(draft_id,None); save_state()
-            if chat_id: send_publish_status(chat_id,f"✅ پست زمان‌بندی‌شده در {channel} منتشر شد.")
+            publish(draft)
         except Exception as exc:
-            log.exception("Scheduled publish failed for draft %s",draft_id); chat_id=draft.get("chat_id")
+            log.exception("Scheduled publish failed for draft %s", draft_id)
+            chat_id = draft.get("chat_id")
             if chat_id:
-                try: send_text(chat_id,f"❌ انتشار زمان‌بندی‌شده انجام نشد: {str(exc)[:500]}")
-                except Exception: log.exception("Could not report scheduled publish failure")
-            draft["scheduled_approved"]=False; save_state()
+                try:
+                    send_text(chat_id, f"❌ انتشار زمان‌بندی‌شده انجام نشد: {str(exc)[:500]}")
+                except Exception:
+                    log.exception("Could not report scheduled publish failure")
+            draft["scheduled_approved"] = False
+            save_state()
+            continue
+
+        chat_id = draft.get("chat_id")
+        channel = draft.get("channel")
+        STATE["pending"].pop(draft_id, None)
+        refresh_channel_schedule_next()
+        save_state()
+        try:
+            cleanup_draft_messages(draft)
+        except Exception:
+            log.exception("Published scheduled draft %s but cleanup failed", draft_id)
+        if chat_id:
+            try:
+                send_publish_status(chat_id, f"✅ پست زمان‌بندی‌شده در {channel} منتشر شد.")
+            except Exception:
+                log.exception("Scheduled post was published, but confirmation failed")
 
 def main():
     if not TOKEN: raise SystemExit("Missing TELEGRAM_BOT_TOKEN secret.")
@@ -926,13 +1001,26 @@ def main():
         try:
             cleanup_expired_status_messages(); publish_due_drafts(); updates=api("getUpdates", {"offset":int(STATE.get("offset",0)),"timeout":20,"allowed_updates":["message","callback_query"]}, timeout=30); grouped_updates=[]; album_buckets={}
             for incoming in updates:
-                imsg=incoming.get("message") or {}; gid=imsg.get("media_group_id")
+                imsg = incoming.get("message") or {}
+                gid = imsg.get("media_group_id")
                 if gid:
-                    bucket=album_buckets.setdefault(str(gid),{"first":incoming,"items":[]}); bucket["items"].append(imsg)
-                else: grouped_updates.append(incoming)
+                    bucket_key = f"{imsg.get('chat', {}).get('id')}:{gid}"
+                    bucket = album_buckets.setdefault(
+                        bucket_key,
+                        {"first": incoming, "items": [], "max_update_id": int(incoming.get("update_id", 0))}
+                    )
+                    bucket["items"].append(imsg)
+                    bucket["max_update_id"] = max(bucket["max_update_id"], int(incoming.get("update_id", 0)))
+                else:
+                    grouped_updates.append(incoming)
             for bucket in album_buckets.values():
-                first=dict(bucket["first"]); first_msg=dict(first.get("message") or {}); first_msg["album_items"]=bucket["items"]; first["message"]=first_msg; grouped_updates.append(first)
-            grouped_updates.sort(key=lambda u:int(u.get("update_id",0)))
+                first = dict(bucket["first"])
+                first_msg = dict(first.get("message") or {})
+                first_msg["album_items"] = bucket["items"]
+                first["message"] = first_msg
+                first["_max_update_id"] = bucket["max_update_id"]
+                grouped_updates.append(first)
+            grouped_updates.sort(key=lambda u: int(u.get("update_id", 0)))
             for update in grouped_updates:
                 try:
                     message=update.get("message") or {}; callback=update.get("callback_query") or {}; sender=message.get("from") or callback.get("from") or {}; log.info("Received update=%s type=%s sender=%s",update.get("update_id"),"callback_query" if callback else ("message" if message else "other"),sender.get("id","unknown")); handle_update(update)
@@ -941,7 +1029,10 @@ def main():
                     if chat_id and is_admin(sender.get("id")):
                         try: send_text(chat_id,"⚠️ پیام دریافت شد اما پردازش آن خطا داد.\nجزئیات: "+str(exc)[:250])
                         except Exception: log.exception("Could not notify admin about update failure")
-                STATE["offset"]=max(int(STATE.get("offset",0)),int(update["update_id"])+1)
+                STATE["offset"] = max(
+                    int(STATE.get("offset", 0)),
+                    int(update.get("_max_update_id", update["update_id"])) + 1
+                )
             save_state()
         except Exception:
             log.exception("Polling failed"); time.sleep(5)
