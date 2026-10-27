@@ -22,10 +22,14 @@ concurrency:
 jobs:
   approval-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Resolve main after this run acquires the concurrency lock, so it
+          # loads state committed by the previous run instead of a stale event SHA.
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -50,7 +54,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           ADMIN_USER_ID: ${{ secrets.ADMIN_USER_ID }}
-          POLL_SECONDS: "540"
+          POLL_SECONDS: "570"
           PYTHONUNBUFFERED: "1"
         run: python telegram_approval_bot.py
 
