@@ -3955,52 +3955,6 @@
         7029
       ]
     },
-    "267990321": {
-      "chat_id": 1677869966,
-      "text": "🌴گرون ترین هتل زیر آب در مالدیو🏖\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaWGrf3YcR9063m1aTpsfx5IjdjenvAAKfGAACE9_AUuxU6ujja0dwPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 7379,
-      "cleanup_message_ids": [
-        7616,
-        7617
-      ],
-      "scheduled_at": 1793207336,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7616,
-        7617
-      ],
-      "scheduled_approved": true
-    },
-    "267990322": {
-      "chat_id": 1677869966,
-      "text": "🌴وقتی تکنولوژی با فرهنگ بهداشت دست به یکی می‌کنه، نتیجه‌اش میشه شاهکارهایی مثل دستشویی‌های هوشمند هلند!🚽\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaWWrf3YctLBzq1rN-wjXAG5L0UJOFAAKuGAACVzCJUlCSjbXuaBwmPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 7380,
-      "cleanup_message_ids": [
-        7614,
-        7615
-      ],
-      "scheduled_at": 1793208536,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7614,
-        7615
-      ],
-      "scheduled_approved": true
-    },
     "267990323": {
       "chat_id": 1677869966,
       "text": "🌴میامی آمریکا 🌃🌃🌃\n➡️",
@@ -5427,37 +5381,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793206886
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7861,
-      "delete_at": 1793208818
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7862,
-      "delete_at": 1793208819
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7863,
-      "delete_at": 1793208819
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7864,
-      "delete_at": 1793208820
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7865,
-      "delete_at": 1793208820
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7866,
-      "delete_at": 1793208821
+      "retry_after": 1793209351
     },
     {
       "chat_id": 1677869966,
@@ -6083,6 +6007,16 @@
       "chat_id": 1677869966,
       "message_id": 7991,
       "delete_at": 1793292684
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7992,
+      "delete_at": 1793295148
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7993,
+      "delete_at": 1793295148
     }
   ],
   "active_channel": null,
