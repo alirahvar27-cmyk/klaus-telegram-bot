@@ -2833,29 +2833,6 @@
       "auto_scheduled": true,
       "preview_message_ids": []
     },
-    "267989143": {
-      "chat_id": 1677869966,
-      "text": "🔴 تو تهران ی دختری قرار بود با ی پسری این هفته مراسم نامزدیش برگزار بشه، میرن پیش رفیق پسره که طلافروشی داشت تا حلقه بگیرن، رفیق پسره تا قیافه و تتوهای دختره رو میبینه میشناسش بعد پسره رو میکشونه بیرون میگه این فیلم سکس و نوداش تو تلگرام پخش شده بخاطر آبروت قیدشو بزن، پسره خرید طلارو کنسل میکنه، درجا به پدر دختره جریانو میگه پدر دختره سکته میکنه و حالش وخیمه، دختره ام از شدت ناراحتی قرص میخوره خودکشی میکنه و آخر هفته مراسم هفتمش برگزار میشه.\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIRM2rfz0qqaxu5cQjPlhANQhDejRh5AAJvEGsbFIaQUgABKKJ4scWHzgEAAwIAA3gAAz0E"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4403,
-      "cleanup_message_ids": [
-        4675,
-        4676
-      ],
-      "scheduled_at": 1793204827,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4675,
-        4676
-      ],
-      "scheduled_approved": true
-    },
     "267990101": {
       "chat_id": 1677869966,
       "text": "🌴کوه نوردی با پله برقی !\nکوه لینگ شان در استان جیانگشی چین\n➡️",
@@ -3977,52 +3954,6 @@
         7028,
         7029
       ]
-    },
-    "267990319": {
-      "chat_id": 1677869966,
-      "text": "🌴زیباترین سواحل هرمزگان که باید ببینید🥂🤩\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaVmrf3YeMO-spmNDEsJ_AWhUrYtF4AAIaGQACVzCJUk1v2bnmL4Z0PQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 7377,
-      "cleanup_message_ids": [
-        7620,
-        7621
-      ],
-      "scheduled_at": 1793204936,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7620,
-        7621
-      ],
-      "scheduled_approved": true
-    },
-    "267990320": {
-      "chat_id": 1677869966,
-      "text": "🌴چند مکان بسیار زیبا در اسپانیا 🥂🍵\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaLmrf3Yck81DDvMMYT9xA0BGGRmA_AAJdGgACVzCRUjWsVtzREzPLPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 7378,
-      "cleanup_message_ids": [
-        7618,
-        7619
-      ],
-      "scheduled_at": 1793206136,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7618,
-        7619
-      ],
-      "scheduled_approved": true
     },
     "267990321": {
       "chat_id": 1677869966,
@@ -5496,37 +5427,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793204061
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7855,
-      "delete_at": 1793206230
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7856,
-      "delete_at": 1793206231
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7857,
-      "delete_at": 1793206232
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7858,
-      "delete_at": 1793206232
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7859,
-      "delete_at": 1793206233
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7860,
-      "delete_at": 1793206235
+      "retry_after": 1793206886
     },
     {
       "chat_id": 1677869966,
@@ -6167,11 +6068,26 @@
       "chat_id": 1677869966,
       "message_id": 7988,
       "delete_at": 1793290141
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7989,
+      "delete_at": 1793292683
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7990,
+      "delete_at": 1793292683
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7991,
+      "delete_at": 1793292684
     }
   ],
   "active_channel": null,
   "channel_schedule_next": {
-    "@NimeShabHorror": 1793204827,
+    "@NimeShabHorror": 1793177227,
     "@SafarkadehFa": 1793260136
   }
 }
