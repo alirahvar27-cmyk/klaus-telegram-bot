@@ -2820,66 +2820,6 @@
         3603
       ]
     },
-    "267989110": {
-      "chat_id": 1677869966,
-      "text": "جالبه که بدونید در واقع خودکشی نقشه قتلیه که مغزتون براتون میکشه!!😐",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQS2rfzwouinhxgOIPYyL8EJ2SnI2XAALBEGsbUZWIUno0Vd_luRDYAQADAgADeAADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4171,
-      "cleanup_message_ids": [
-        4659,
-        4660
-      ],
-      "scheduled_at": 1793167627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4659,
-        4660
-      ],
-      "scheduled_approved": true
-    },
-    "267989111": {
-      "chat_id": 1677869966,
-      "text": "🦷👁 دندان‌هایی که در چشم رشد کردند!\nیک نوجوان ۱۶ ساله هندی با پدیده‌ای بسیار نادر روبه‌رو شد؛ ابتدا پلک چشم چپ او متورم شد، اما چند ماه بعد، دو توده سفید و نوک‌تیز از زیر بافت پلک بیرون زدند!\nبررسی‌های پزشکی نشان داد که یک دندان به‌جای رشد در دهان، در ناحیه کاسه چشم او شکل گرفته است. پزشکان این وضعیت نادر را «دندان اکتوپیک» نامیدند و با موفقیت آن را خارج کردند.\n🧠 باورکردنی نیست، اما دندان‌ها همیشه در دهان رشد نمی‌کنند!",
-      "entities": [],
-      "media": [
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAIQTGrfzwpYSqRU1BITlBL-mlb-k_JFAAJeEGsbvaqRUqEyaQl9GE9cAQADAgADeQADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAIQTWrfzwprLEbJ4qESqTLi-ajJ1X5GAAJfEGsbvaqRUvCKTCs5xMDqAQADAgADeQADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAIQTmrfzwojaxvGvnKL3Qb9iMjn7kpcAAJdEGsbvaqRUsa800JMyZ_9AQADAgADeQADPQQ"
-        }
-      ],
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4172,
-      "cleanup_message_ids": [
-        4661,
-        4662,
-        4663,
-        4664
-      ],
-      "scheduled_at": 1793168827,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4661,
-        4662,
-        4663,
-        4664
-      ],
-      "scheduled_approved": true
-    },
     "267989114": {
       "chat_id": 1677869966,
       "text": "تصویر رابرت مک‌گی - مردی که پس از اینکه در سن ۱۳ سالگی توسط سرخپوستان پوست سرش کنده شد، زنده ماند.🤯 سال ۱۸۶۴.",
@@ -3707,69 +3647,6 @@
       "preview_message_ids": [
         4675,
         4676
-      ],
-      "scheduled_approved": true
-    },
-    "267989481": {
-      "chat_id": 1677869966,
-      "text": "نمای کلی بازار امروز",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 20,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgEAAxkBAAIT6Grf1BS4WKtRZTBYMGAnaqGE3VTGAAKjDWsbPqD5Rolsanfme9H_AQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5096,
-      "cleanup_message_ids": [
-        5495,
-        5496
-      ],
-      "scheduled_at": 1793167467,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5495,
-        5496
-      ],
-      "scheduled_approved": true
-    },
-    "267989482": {
-      "chat_id": 1677869966,
-      "text": "۲ تا شورت پنبه‌ای\nدادن به بیرانوند",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 17,
-          "type": "bold"
-        },
-        {
-          "offset": 18,
-          "length": 16,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgEAAxkBAAIT6Wrf1BRNCkO9QIpP8TaofXNW9WBDAALmDWsbPqD5RpkXhm3vQLFGAQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5097,
-      "cleanup_message_ids": [
-        5497,
-        5498
-      ],
-      "scheduled_at": 1793168667,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5497,
-        5498
       ],
       "scheduled_approved": true
     },
@@ -6482,57 +6359,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793166785
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7716,
-      "delete_at": 1793166915
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7717,
-      "delete_at": 1793167077
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7718,
-      "delete_at": 1793168595
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7719,
-      "delete_at": 1793168596
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7720,
-      "delete_at": 1793168597
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7721,
-      "delete_at": 1793168597
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7722,
-      "delete_at": 1793168598
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7723,
-      "delete_at": 1793168680
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7724,
-      "delete_at": 1793168842
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7725,
-      "delete_at": 1793168944
+      "retry_after": 1793168986
     },
     {
       "chat_id": 1677869966,
@@ -7633,12 +7460,31 @@
       "chat_id": 1677869966,
       "message_id": 7954,
       "delete_at": 1793252845
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7955,
+      "delete_at": 1793254783
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7956,
+      "delete_at": 1793254783
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7957,
+      "delete_at": 1793255086
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7958,
+      "delete_at": 1793255228
     }
   ],
   "active_channel": null,
   "channel_schedule_next": {
     "@NimeShabHorror": 1793204827,
-    "@NbzeKhabar": 1793168667,
     "@SafarkadehFa": 1793260136
   }
 }
