@@ -2833,112 +2833,6 @@
       "auto_scheduled": true,
       "preview_message_ids": []
     },
-    "267989140": {
-      "chat_id": 1677869966,
-      "text": "مردی که از اخراجش از بریتانیا جلوگیری شده بود، دوباره مرتکب جرم شد\nمردی نیجریه‌ای که در بریتانیا زندگی می‌کرد، به دلیل حبس غیرقانونی یک زن به دو سال زندان محکوم شد. پس از آزادی، دولت قصد داشت او را به نیجریه بازگرداند، اما این مرد درخواست تجدیدنظر داد و مدعی شد در بریتانیا خانواده و نامزدش زندگی می‌کنند و تمام زندگی‌اش در این کشور است.\nدادگاه تجدیدنظر با درخواست او موافقت کرد و مانع اخراجش شد؛ چراکه به گفته او در نیجریه هیچ خانواده یا آشنایی نداشت و بازگشت برایش دشوار بود.\nاما مدت کوتاهی پس از آزادی، او یک دختر ۱۹ ساله را به زور به جنگل کشاند و به او تجاوز کرد.\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQBmrfzwqrk_jtjcAq6uyGS1EdIMPsAAL7EGsbEChRUhQCF38kpMzKAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4400,
-      "cleanup_message_ids": [
-        4669,
-        4670
-      ],
-      "scheduled_at": 1793201227,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4669,
-        4670
-      ],
-      "scheduled_approved": true
-    },
-    "267989141": {
-      "chat_id": 1677869966,
-      "text": "این داستان وقتی کونت میخاره\nیک جوان فرانسوی ۱۸ ساله که در سنگاپور تحصیل می‌کند، به‌دلیل لیس زدن یک نی پلاستیکی از دستگاه نوشیدنی و برگرداندن آن سر جایش، راهی گونی شد\nاین جوان از کارش فیلم گرفت و آن را در شبکه‌های اجتماعی منتشر کرد. ویدئو خیلی زود در سنگاپور وایرال شد و اعتراض مردم را به دنبال داشت. او مدت کوتاهی بعد بازداشت شد و به اقدام خلاف نظم عمومی (تا ۲ سال زندان) و برهم زدن نظم عمومی (تا ۳ ماه زندان) متهم شد.\nعلاوه بر این، دانشگاه محل تحصیلش نیز در حال بررسی اخراج او از دانشگاه است.\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 27,
-          "type": "bold"
-        },
-        {
-          "offset": 334,
-          "length": 20,
-          "type": "bold"
-        },
-        {
-          "offset": 374,
-          "length": 18,
-          "type": "bold"
-        },
-        {
-          "offset": 469,
-          "length": 19,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIRMWrfz0qkCHsE9TqDFxtYL97Cp_StAAJUEGsbkwNhUlBvE05XwscgAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4401,
-      "cleanup_message_ids": [
-        4671,
-        4672
-      ],
-      "scheduled_at": 1793202427,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4671,
-        4672
-      ],
-      "scheduled_approved": true
-    },
-    "267989142": {
-      "chat_id": 1677869966,
-      "text": "Klown Skool | Short Horror Film\n#فیلم_ڪوتاه_ترسناك\nتنها بودن در منزل و ناگهان روشن شدن تلویزیون 😨\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 31,
-          "type": "code"
-        },
-        {
-          "offset": 32,
-          "length": 18,
-          "type": "hashtag"
-        },
-        {
-          "offset": 32,
-          "length": 18,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIRMmrfz0qAR6niX5mrJGIGr1_6_cfcAAJxZwACFscgU7tiBW1koCtUPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4402,
-      "cleanup_message_ids": [
-        4673,
-        4674
-      ],
-      "scheduled_at": 1793203627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4673,
-        4674
-      ],
-      "scheduled_approved": true
-    },
     "267989143": {
       "chat_id": 1677869966,
       "text": "🔴 تو تهران ی دختری قرار بود با ی پسری این هفته مراسم نامزدیش برگزار بشه، میرن پیش رفیق پسره که طلافروشی داشت تا حلقه بگیرن، رفیق پسره تا قیافه و تتوهای دختره رو میبینه میشناسش بعد پسره رو میکشونه بیرون میگه این فیلم سکس و نوداش تو تلگرام پخش شده بخاطر آبروت قیدشو بزن، پسره خرید طلارو کنسل میکنه، درجا به پدر دختره جریانو میگه پدر دختره سکته میکنه و حالش وخیمه، دختره ام از شدت ناراحتی قرص میخوره خودکشی میکنه و آخر هفته مراسم هفتمش برگزار میشه.\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
@@ -4083,75 +3977,6 @@
         7028,
         7029
       ]
-    },
-    "267990316": {
-      "chat_id": 1677869966,
-      "text": "🌴کوه نوردی با پله برقی !\nکوه لینگ شان در استان جیانگشی چین\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaU2rf3YfvFdEWhDU6ZGraq179wS-FAAKFFwACPmz4UI9h-mGV9yDTPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 7374,
-      "cleanup_message_ids": [
-        7626,
-        7627
-      ],
-      "scheduled_at": 1793201336,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7626,
-        7627
-      ],
-      "scheduled_approved": true
-    },
-    "267990317": {
-      "chat_id": 1677869966,
-      "text": "🌴سرگرمی های هیجان انگیز و جذاب در بانکوک تایلند🏐🎋\nچه باحاله دلم خواست🐧\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaVGrf3YffgLKfTgaetLypgWlCqv7VAAJzGwAChqnZUx4-wKRL2HZLPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 7375,
-      "cleanup_message_ids": [
-        7624,
-        7625
-      ],
-      "scheduled_at": 1793202536,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7624,
-        7625
-      ],
-      "scheduled_approved": true
-    },
-    "267990318": {
-      "chat_id": 1677869966,
-      "text": "🌴۱۲ مکان در دبی که حتما باید ببیند🏢🏝\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaVWrf3Ye1DjUWrg28rYpYkzgjGAV2AALmGAACulfQU4uJDoQhLmt0PQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 7376,
-      "cleanup_message_ids": [
-        7622,
-        7623
-      ],
-      "scheduled_at": 1793203736,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7622,
-        7623
-      ],
-      "scheduled_approved": true
     },
     "267990319": {
       "chat_id": 1677869966,
@@ -5671,47 +5496,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793201180
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7847,
-      "delete_at": 1793201239
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7848,
-      "delete_at": 1793201340
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7849,
-      "delete_at": 1793203652
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7850,
-      "delete_at": 1793203653
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7851,
-      "delete_at": 1793203654
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7852,
-      "delete_at": 1793203655
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7853,
-      "delete_at": 1793203655
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7854,
-      "delete_at": 1793203736
+      "retry_after": 1793204061
     },
     {
       "chat_id": 1677869966,
@@ -6352,6 +6137,36 @@
       "chat_id": 1677869966,
       "message_id": 7982,
       "delete_at": 1793286978
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7983,
+      "delete_at": 1793289854
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7984,
+      "delete_at": 1793289855
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7985,
+      "delete_at": 1793289855
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7986,
+      "delete_at": 1793289856
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7987,
+      "delete_at": 1793290038
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7988,
+      "delete_at": 1793290141
     }
   ],
   "active_channel": null,
