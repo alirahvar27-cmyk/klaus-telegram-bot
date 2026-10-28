@@ -2820,68 +2820,6 @@
         3603
       ]
     },
-    "267989097": {
-      "chat_id": 1677869966,
-      "text": "🦠 یکی از مرگبارترین بیماری‌های تاریخ، با کمک یک حشره منتشر شد!\nکک‌های آلوده، که اغلب از جوندگان تغذیه می‌کردند، می‌توانستند باکتری عامل طاعون را به انسان منتقل کنند. این بیماری در قرن چهاردهم باعث «مرگ سیاه» شد؛ همه‌گیری‌ای که در بخش‌هایی از اروپا حدود یک‌سوم تا نیمی از جمعیت را از بین برد.\nنکته ترسناک ماجرا این است که موجودی به اندازه یک کک، در انتقال یکی از مرگبارترین همه‌گیری‌های تاریخ نقش داشت. 🪳☠️",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQPmrfzwqdlDnPA35Dj_Ai0DAUcCzFAALmD2sb5uYRUumrPTvYULx7AQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4158,
-      "cleanup_message_ids": [
-        4632,
-        4633
-      ],
-      "scheduled_at": 1793152027,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4632,
-        4633
-      ],
-      "scheduled_approved": true
-    },
-    "267989098": {
-      "chat_id": 1677869966,
-      "text": "🚨شاید باورتون نشه یه ویروس ناشناخته از آزمایشگاه طاعونِ روسیه پخش شده، چندصد نفر قرنطینه شدن و چند بیمارستان هم بسته شدن.\nنشت عفونت ناشناخته از آزمایشگاه روسیه؛ احتمال شیوع طاعون ۲۰۰ نفر را به قرنطینه فرستاد\nیک کارمند ۲۸ ساله در مؤسسه تحقیقات ضدطاعون روسیه در شهر شلخوف پس از ابتلا به نوعی ذات‌الریه با منشأ ناشناخته جان باخته است و مقام‌های محلی اقدامات قرنطینه‌ای و پزشکی را برای افرادی که با او در تماس بوده‌اند، اجرا کرده‌اند.\nاین زن پیش از مرگ به کارکنان پزشکی گفته بود که هنگام کار در آزمایشگاه به‌طور تصادفی لوله آزمایشی حاوی نمونه‌های زیستی زنده را شکسته است. او پس از آن به ذات‌الریه شدید با منشأ ناشناخته مبتلا و به دستگاه تنفس مصنوعی متصل شد. اکنون به‌دلیل تخصص این مرکز در زمینه عوامل بیماری‌زای خطرناک، احتمال ابتلا به طاعون ریوی مطرح است.",
-      "entities": [
-        {
-          "offset": 123,
-          "length": 85,
-          "type": "expandable_blockquote"
-        },
-        {
-          "offset": 209,
-          "length": 222,
-          "type": "expandable_blockquote"
-        },
-        {
-          "offset": 432,
-          "length": 321,
-          "type": "expandable_blockquote"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQP2rfzwqd98fHJ8hLYCH_HvEFI1cwAALbD2sbGrMZUlrQTglTKIsbAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4159,
-      "cleanup_message_ids": [
-        4634,
-        4635
-      ],
-      "scheduled_at": 1793153227,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4634,
-        4635
-      ],
-      "scheduled_approved": true
-    },
     "267989099": {
       "chat_id": 1677869966,
       "text": "یک زندانی آمریکایی آن‌قدر در سلولش رها شده بود که حشرات به بدنش هجوم آورده بودند...\n«لاشون تامپسون» در زندانی در ایالت جورجیا نگهداری می‌شد؛ اما زمانی که مأموران سرانجام او را پیدا کردند، وضعیت سلول آن‌قدر آلوده و اسفناک بود که برای ورود به آن به تجهیزات محافظتی نیاز داشتند.\nگزارش‌ها از آلودگی شدید سلول و وجود تعداد زیادی حشره خبر می‌دادند و بدن او نیز آثار گسترده‌ای از گزش و آسیب‌های ناشی از هجوم حشرات داشت.\nتلخ‌تر از همه اینکه کارکنان زندان پیش از مرگ او متوجه وخامت وضعیتش نشده بودند و تلاش‌ها برای احیایش بی‌نتیجه ماند.\nخانواده‌اش بعداً گفتند شرایطی که با آن مواجه شدند، حتی تصورش را هم نمی‌کردند...",
@@ -4032,97 +3970,6 @@
       "preview_message_ids": [
         4675,
         4676
-      ],
-      "scheduled_approved": true
-    },
-    "267989465": {
-      "chat_id": 1677869966,
-      "text": "❌مدیر روابط عمومی برق: ممکن است در زمستان، هم گاز و هم برق بعضی شهرها قطع شود.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 1,
-          "type": "bold"
-        },
-        {
-          "offset": 0,
-          "length": 1,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5963261563044371393"
-        },
-        {
-          "offset": 1,
-          "length": 77,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgIAAxkBAAIT2Grf0-qDfv7SDeYkgal3pxe-hYSeAAKyIGsbgqYBS0f_zfktfOjlAQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5080,
-      "cleanup_message_ids": [
-        5466,
-        5467
-      ],
-      "scheduled_at": 1793151867,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5466,
-        5467
-      ],
-      "scheduled_approved": true
-    },
-    "267989466": {
-      "chat_id": 1677869966,
-      "text": "🛢❌قیمت نفت خام برنت به ۱۱۶ دلار برای هر بشکه افزایش یافت.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5436341901290658109"
-        },
-        {
-          "offset": 2,
-          "length": 1,
-          "type": "bold"
-        },
-        {
-          "offset": 2,
-          "length": 1,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5963261563044371393"
-        },
-        {
-          "offset": 3,
-          "length": 55,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIT2Wrf0-rwoih0S1qMXkbrBjNVUS0MAAJ3D2sbRTYBUyg1Gdzoj71xAQADAgADdwADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5081,
-      "cleanup_message_ids": [
-        5468,
-        5469
-      ],
-      "scheduled_at": 1793153067,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5468,
-        5469
       ],
       "scheduled_approved": true
     },
@@ -7275,52 +7122,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793151504
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7662,
-      "delete_at": 1793153108
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7663,
-      "delete_at": 1793153108
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7664,
-      "delete_at": 1793153109
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7665,
-      "delete_at": 1793153110
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7666,
-      "delete_at": 1793153110
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7667,
-      "delete_at": 1793153111
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7668,
-      "delete_at": 1793153112
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7669,
-      "delete_at": 1793153233
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7670,
-      "delete_at": 1793153354
+      "retry_after": 1793154264
     },
     {
       "chat_id": 1677869966,
@@ -8566,6 +8368,26 @@
       "chat_id": 1677869966,
       "message_id": 7928,
       "delete_at": 1793237301
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7929,
+      "delete_at": 1793240061
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7930,
+      "delete_at": 1793240061
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7931,
+      "delete_at": 1793240062
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7932,
+      "delete_at": 1793240062
     }
   ],
   "active_channel": null,
