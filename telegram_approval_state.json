@@ -2833,52 +2833,6 @@
       "auto_scheduled": true,
       "preview_message_ids": []
     },
-    "267989122": {
-      "chat_id": 1677869966,
-      "text": "آیا هیولاها در اقیانوسها واقعیت دارند ⁉️\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIRHmrfz0q5C1YpIE3QIMtlnglsk-SCAAIrSQEAAZEW8VL4wcMcohx4rj0E"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4382,
-      "cleanup_message_ids": [
-        4703,
-        4704
-      ],
-      "scheduled_at": 1793179627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4703,
-        4704
-      ],
-      "scheduled_approved": true
-    },
-    "267989123": {
-      "chat_id": 1677869966,
-      "text": "مالک سابق خانه فیلم «تنها در خانه» پس از بازداشت به زندگی خود پایان داد\nجان آبندشاین، ۷۹ ساله، در زمان فیلم‌برداری «تنها در خانه» مالک همان خانه معروف فیلم بود و همراه خانواده‌اش در آن زندگی می‌کرد. او در سال ۲۰۱۲ خانه را به قیمت ۱.۵۸ میلیون دلار فروخت و به شهری دیگر در همان ایالت نقل مکان کرد. او حتی کتابی درباره تجربه زندگی در این خانه هنگام فیلم‌برداری نوشته بود.\nچند روز پیش، پلیس او را به اتهام نگهداری محتوای غیرقانونی مربوط به کودکان بازداشت کرد و تعداد اسناد به بیش از ۱۰۰ تصویر میرسید. او پس از پرداخت وثیقه آزاد شد، اما پس از ازادی به زندگی خود پایان داد.\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIRH2rfz0rHvLPUPHCIbvObOVmF_QsPAAJcEGsbkwNhUsBiy1gBS102AQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4383,
-      "cleanup_message_ids": [
-        4705,
-        4706
-      ],
-      "scheduled_at": 1793180827,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4705,
-        4706
-      ],
-      "scheduled_approved": true
-    },
     "267989124": {
       "chat_id": 1677869966,
       "text": "🖥زن ۴۰ ساله‌ای که از یه پسر ۱۵ ساله بچه‌دار شد!\nسارا کمپبل، زن ۴۰ ساله بریتانیایی، یه پسر ۱۵ ساله رو تبدیل به برده ج.نسی خودش کرد. اول با جلب اعتمادش جلو اومد، بعد با کوکائی.ن و ماری‌ج.وانا معتادش کرد و مجبورش کرد وارد رابطه‌ای بشه که یه سال ادامه داشت.\nرابطه فقط تو خونه نبود؛ حتی شب‌ها یواشکی تو زمین گلف هم ازش سوءاستفاده می‌کرد!\nآخرش کمپبل از همون پسر باردار شد و بچه‌شو به دنیا آورد!\nدادگاه لیورپول هم بدون هیچ شوخی، به جرم کودک‌آزاری و ت.جاوز، فرستادش ۹ سال زندان.\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
@@ -6159,102 +6113,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793178825
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7756,
-      "delete_at": 1793178973
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7757,
-      "delete_at": 1793178973
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7758,
-      "delete_at": 1793178974
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7759,
-      "delete_at": 1793178975
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7760,
-      "delete_at": 1793178975
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7761,
-      "delete_at": 1793178976
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7762,
-      "delete_at": 1793178977
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7763,
-      "delete_at": 1793178978
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7764,
-      "delete_at": 1793179079
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7771,
-      "delete_at": 1793179229
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7775,
-      "delete_at": 1793179250
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7776,
-      "delete_at": 1793179473
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7777,
-      "delete_at": 1793180257
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7778,
-      "delete_at": 1793180257
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7779,
-      "delete_at": 1793180278
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7780,
-      "delete_at": 1793180681
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7781,
-      "delete_at": 1793180835
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7782,
-      "delete_at": 1793180937
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7783,
-      "delete_at": 1793181477
+      "retry_after": 1793181587
     },
     {
       "chat_id": 1677869966,
@@ -7165,6 +7024,16 @@
       "chat_id": 1677869966,
       "message_id": 7965,
       "delete_at": 1793264845
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7966,
+      "delete_at": 1793267384
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7967,
+      "delete_at": 1793267385
     }
   ],
   "active_channel": null,
