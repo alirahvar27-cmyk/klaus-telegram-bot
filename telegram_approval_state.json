@@ -2820,52 +2820,6 @@
         3603
       ]
     },
-    "267989101": {
-      "chat_id": 1677869966,
-      "text": "🔬 ظاهر عجیب مورچه در بزرگ‌نمایی میکروسکوپی!\nاین تصویر شگفت‌انگیز توسط «اوگنیوس کاوالیاوسکاس»، عکاس لیتوانیایی، برای مسابقه عکاسی میکروسکوپی Nikon Small World 2022 ثبت شده است.\nچیزی که در نگاه اول شبیه یک موجود فضایی به نظر می‌رسد، در واقع سر یک مورچه است که جزئیات عجیب و کمتر دیده‌شده‌ی آن با بزرگ‌نمایی میکروسکوپی آشکار شده‌اند! 🐜🔬\nطبیعت گاهی ترسناک‌ترین چهره‌هایش را در کوچک‌ترین موجودات پنهان می‌کند...",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQQmrfzwqPm-hZBUQMnOtE2OsZYReZAALyDmsbQi9IUhagYXMP4DFUAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4162,
-      "cleanup_message_ids": [
-        4640,
-        4641
-      ],
-      "scheduled_at": 1793156827,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4640,
-        4641
-      ],
-      "scheduled_approved": true
-    },
-    "267989102": {
-      "chat_id": 1677869966,
-      "text": "🌲 جنگلی که به مثلث برمودای ترانسیلوانیا معروف است!\nجنگل «هویا باچو» در رومانی، نزدیک شهر کلوژ-ناپوکا، یکی از مرموزترین جنگل‌های جهان محسوب می‌شود.\n🕯️ مردم محلی به آن لقب «مثلث برمودای ترانسیلوانیا» داده‌اند؛ چون روایت‌های عجیبی درباره ناپدیدشدن افراد، مشاهده نورهای ناشناس و اتفاقات توضیح‌ناپذیر در این منطقه وجود دارد.\nبرخی بازدیدکنندگان ادعا کرده‌اند که در این جنگل احساس اضطراب ناگهانی داشته‌اند یا صداهای عجیبی شنیده‌اند؛ حتی شکل غیرعادی درختان آن، فضای وهم‌آلودی به وجود آورده است.\nاما سؤال اصلی اینجاست: آیا هویا باچو واقعاً رازهای ناشناخته‌ای در دل خود پنهان کرده، یا همه‌چیز نتیجه افسانه‌ها و فضای وهم‌آلود آن است؟ 👁️",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQQ2rfzwr43VrrjF9xhc7Txii9so53AAIEFGsbYeBJUpLNRcgDRRMvAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4163,
-      "cleanup_message_ids": [
-        4642,
-        4643
-      ],
-      "scheduled_at": 1793158027,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4642,
-        4643
-      ],
-      "scheduled_approved": true
-    },
     "267989103": {
       "chat_id": 1677869966,
       "text": "لحظاتی ترسناک و باورنکردنی که امواج عظیم زیر رعد و برق یک کشتی باری غول‌پیکر را ناچیز نشان می‌ دهد.",
@@ -3924,29 +3878,6 @@
       "preview_message_ids": [
         4675,
         4676
-      ],
-      "scheduled_approved": true
-    },
-    "267989470": {
-      "chat_id": 1677869966,
-      "text": "ایجاد الگوی آشنای افقی!! در نمادهای مثبت و منفی",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgEAAxkBAAIT3Wrf1BSYkAi8pvQry7mcNwL-mf-jAAI-D2sbPqDxRgMX9Zwp7K79AQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5085,
-      "cleanup_message_ids": [
-        5476,
-        5477
-      ],
-      "scheduled_at": 1793157867,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5476,
-        5477
       ],
       "scheduled_approved": true
     },
@@ -7001,72 +6932,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793156822
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7676,
-      "delete_at": 1793156992
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7677,
-      "delete_at": 1793156993
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7678,
-      "delete_at": 1793156994
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7679,
-      "delete_at": 1793156994
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7680,
-      "delete_at": 1793156995
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7681,
-      "delete_at": 1793156995
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7682,
-      "delete_at": 1793156996
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7683,
-      "delete_at": 1793156997
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7684,
-      "delete_at": 1793157460
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7685,
-      "delete_at": 1793158772
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7686,
-      "delete_at": 1793158772
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7687,
-      "delete_at": 1793158773
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7688,
-      "delete_at": 1793158774
+      "retry_after": 1793158900
     },
     {
       "chat_id": 1677869966,
@@ -8267,6 +8133,21 @@
       "chat_id": 1677869966,
       "message_id": 7937,
       "delete_at": 1793243083
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7938,
+      "delete_at": 1793244697
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7939,
+      "delete_at": 1793244697
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7940,
+      "delete_at": 1793244698
     }
   ],
   "active_channel": null,
