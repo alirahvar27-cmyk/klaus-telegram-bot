@@ -2820,35 +2820,6 @@
         3603
       ]
     },
-    "267989091": {
-      "chat_id": 1677869966,
-      "text": "#فکت_ترسناک 🐻\nاز خرس نمی‌شود به‌سادگی فرار کرد! 😐\nبعضی خرس‌ها می‌توانند با سرعتی نزدیک به ۵۰ کیلومتر بر ساعت بدوند؛ یعنی در مسافت کوتاه، از یک انسان خیلی سریع‌ترند.",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 11,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQOGrfzwoY050d2i0BN7sc6ztXPgYqAAIeD2sbWdXYUaWVOHOaEzUmAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4152,
-      "cleanup_message_ids": [
-        4620,
-        4621
-      ],
-      "scheduled_at": 1793144827,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4620,
-        4621
-      ],
-      "scheduled_approved": true
-    },
     "267989092": {
       "chat_id": 1677869966,
       "text": "فکت پزشکی 😨\nگاهی پس از یک حادثه در آب، علائم مشکلات تنفسی ممکن است با تأخیر ظاهر شوند. به همین دلیل اگر کسی پس از غرق‌شدن یا نزدیک‌به‌غرق‌شدن دچار سرفه، تنگی نفس، درد قفسه سینه یا خستگی غیرعادی شود، باید سریع ارزیابی پزشکی شود.\nاصطلاحاتی مثل «غرق‌شدن خشک» یا «غرق‌شدن ثانویه» امروزه از نظر پزشکی دقیق محسوب نمی‌شوند.",
@@ -4179,79 +4150,6 @@
       "preview_message_ids": [
         4675,
         4676
-      ],
-      "scheduled_approved": true
-    },
-    "267989459": {
-      "chat_id": 1677869966,
-      "text": "🚨🔸🔸❌هواپیمای حامل هیئت امنیتی ترکیه‌ای وارد تهران شد",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 0,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5949743153480212294"
-        },
-        {
-          "offset": 2,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 2,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5886418237272367662"
-        },
-        {
-          "offset": 4,
-          "length": 2,
-          "type": "bold"
-        },
-        {
-          "offset": 4,
-          "length": 2,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5888528097006854068"
-        },
-        {
-          "offset": 6,
-          "length": 1,
-          "type": "bold"
-        },
-        {
-          "offset": 6,
-          "length": 1,
-          "type": "custom_emoji",
-          "custom_emoji_id": "5963261563044371393"
-        },
-        {
-          "offset": 7,
-          "length": 48,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIT0mrf0-pCDQZsJTzfGH9V_pV1tQbeAALAD2sboXr5UkkMZWtO5R96AQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5074,
-      "cleanup_message_ids": [
-        5454,
-        5455
-      ],
-      "scheduled_at": 1793144667,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5454,
-        5455
       ],
       "scheduled_approved": true
     },
@@ -7808,32 +7706,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793143920
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7634,
-      "delete_at": 1793144597
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7635,
-      "delete_at": 1793144679
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7636,
-      "delete_at": 1793144842
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7637,
-      "delete_at": 1793144883
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7638,
-      "delete_at": 1793144945
+      "retry_after": 1793145811
     },
     {
       "chat_id": 1677869966,
@@ -9174,6 +9047,16 @@
       "chat_id": 1677869966,
       "message_id": 7916,
       "delete_at": 1793230041
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7917,
+      "delete_at": 1793231609
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7918,
+      "delete_at": 1793231609
     }
   ],
   "active_channel": null,
