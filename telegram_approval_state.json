@@ -3955,52 +3955,6 @@
         7029
       ]
     },
-    "267990323": {
-      "chat_id": 1677869966,
-      "text": "🌴میامی آمریکا 🌃🌃🌃\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaWmrf3YebsLnuAm_7Y9Mnz78ycWQ3AAKLGgAChqnZUwGBhQuX4P5PPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 7381,
-      "cleanup_message_ids": [
-        7612,
-        7613
-      ],
-      "scheduled_at": 1793209736,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7612,
-        7613
-      ],
-      "scheduled_approved": true
-    },
-    "267990324": {
-      "chat_id": 1677869966,
-      "text": "🌴پل معلق ویتنام🌟\n➡️",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIaO2rf3Yds8LDalZjEWW5GAeKaD-aKAAInGQACnYyhUo3XqsE3dJn-PQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 7382,
-      "cleanup_message_ids": [
-        7610,
-        7611
-      ],
-      "scheduled_at": 1793210936,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        7610,
-        7611
-      ],
-      "scheduled_approved": true
-    },
     "267990325": {
       "chat_id": 1677869966,
       "text": "🌴قطار هوایی در ووهان چین 🚂\n➡️",
@@ -5381,42 +5335,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793209351
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7867,
-      "delete_at": 1793211320
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7868,
-      "delete_at": 1793211321
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7869,
-      "delete_at": 1793211321
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7870,
-      "delete_at": 1793211322
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7871,
-      "delete_at": 1793211323
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7872,
-      "delete_at": 1793211324
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7873,
-      "delete_at": 1793211868
+      "retry_after": 1793212070
     },
     {
       "chat_id": 1677869966,
@@ -6017,6 +5936,16 @@
       "chat_id": 1677869966,
       "message_id": 7993,
       "delete_at": 1793295148
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7994,
+      "delete_at": 1793297868
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7995,
+      "delete_at": 1793297868
     }
   ],
   "active_channel": null,
