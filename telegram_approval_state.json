@@ -2820,83 +2820,6 @@
         3603
       ]
     },
-    "267989103": {
-      "chat_id": 1677869966,
-      "text": "لحظاتی ترسناک و باورنکردنی که امواج عظیم زیر رعد و برق یک کشتی باری غول‌پیکر را ناچیز نشان می‌ دهد.",
-      "entities": [],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIQRGrfzwqEmarx5W6ZXTLWVnHY4Oi2AAJ0HgACYeBRUmAcOyBmGhayPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4164,
-      "cleanup_message_ids": [
-        4644,
-        4645
-      ],
-      "scheduled_at": 1793159227,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4644,
-        4645
-      ],
-      "scheduled_approved": true
-    },
-    "267989104": {
-      "chat_id": 1677869966,
-      "text": "#داستان\nانتقام 💀🕯️\nچند روز پیش، مردی در آپارتمان ما به طرز عجیبی مرد. گفتند قلبش پاره شده بود؛ با اینکه هیچ سابقه‌ی بیماری قلبی نداشت.\nبعد از مرگش، خواهرش از همسایه‌ها خواست به آپارتمانش سر بزنند و به گل‌هایش آب بدهند.\nوقتی نوبت من شد، وارد خانه شدم، گل‌ها را آب دادم و پنجره را باز کردم. اما هنگام خروج، کلیدم ناپدید شده بود.\nبه اتاق برگشتم...\nپنجره دوباره باز بود و دختری با لباس خواب سفید کنار آن ایستاده بود. موهایش آشفته بود و جای زخم‌هایی روی گردن و مچ دست‌هایش دیده می‌شد.\nبا صدایی لرزان برگشت و پرسید\n«چرا با من این کار رو کرد؟»\nهنوز فرصت نکرده بودم جواب بدهم که دو مرد از اتاق کناری بیرون پریدند. یکی به طرف من دوید و دیگری به سمت دختر رفت.\nدختر جیغ کشید، اما مرد بدون اینکه حتی به او برخورد کند، از میان بدنش گذشت!\nچند لحظه بعد، همه‌چیز سیاه شد.\nسه روز بعد، در بیمارستان به هوش آمدم. پزشکان می‌گفتند زنده ماندنم غیرمنتظره بوده است.\nوقتی ماجرا را تعریف کردم، یکی از افراد حاضر در اتاق حقیقتی را برایم فاش کرد.\nسال‌ها قبل، خانواده‌ای ثروتمند در همان آپارتمان زندگی می‌کردند. یک شب، دو مرد برای سرقت وارد خانه شدند. دختر خانواده بیدار شد و یکی از آن‌ها او را به قتل رساند.\nقاتل اصلی دستگیر شد، اما همدستش از مجازات فرار کرد.\nو حدس بزنید چه کسی بعدها آن آپارتمان را خرید؟\nهمان مردی که چند روز پیش، قلبش به طرز مرموزی از کار افتاده بود.\nوقتی از بیمارستان مرخص شدم، به آپارتمان برگشتم و یک گلدان گل کنار پنجره گذاشتم؛ شاید برای آرامش روح آن دختر.\nاما درست وقتی می‌خواستم از خانه خارج شوم، صدای دختری را از پشت سرم شنیدم\n«تو هم دیدیش؟»\nخشکم زد.\nچون این بار، صدا از داخل گلدان می‌آمد...",
-      "entities": [],
-      "media": null,
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4165,
-      "cleanup_message_ids": [
-        4646,
-        4647
-      ],
-      "scheduled_at": 1793160427,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4646,
-        4647
-      ],
-      "scheduled_approved": true
-    },
-    "267989105": {
-      "chat_id": 1677869966,
-      "text": "🚨 مهمانان هتلی که بیش از دو هفته از آبِ آلوده به جسد استفاده می‌کردند!\nدر سال ۲۰۱۳، مهمانان هتل سسیل در لس‌آنجلس از طعم عجیب آب و فشار کم آن شکایت کردند.\nوقتی یکی از کارکنان برای بررسی مخازن آب روی پشت‌بام رفت، با صحنه‌ای غیرمنتظره روبه‌رو شد: جسد الیزا لم، دختر ۲۱ ساله‌ای که ناپدید شدنش خبرساز شده بود، داخل یکی از مخازن آب پیدا شد.\nبررسی‌ها نشان داد که مهمانان هتل ممکن است برای مدتی از آبی استفاده کرده باشند که جسد در آن مخزن قرار داشت.\n👁️ ترسناک‌ترین بخش ماجرا؟ مهمانان از تغییر طعم و فشار آب شکایت می‌کردند، بی‌آنکه بدانند چه اتفاقی افتاده است.",
-      "entities": [
-        {
-          "offset": 3,
-          "length": 68,
-          "type": "bold"
-        },
-        {
-          "offset": 447,
-          "length": 106,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQRmrfzwpgkPntGN3ABpnqvvZyNCKdAAKSEWsbsFtgUlMQcN1fxJq2AQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4166,
-      "cleanup_message_ids": [
-        4648,
-        4649
-      ],
-      "scheduled_at": 1793161627,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4648,
-        4649
-      ],
-      "scheduled_approved": true
-    },
     "267989106": {
       "chat_id": 1677869966,
       "text": "🧠 گاهی پزشکان تومورهایی پیدا می‌کنند که داخل آن‌ها دندان، مو و حتی بافت استخوانی وجود دارد!\nاین تومورهای عجیب «تراتوم» (Teratoma) نام دارند. آن‌ها از سلول‌هایی تشکیل می‌شوند که توانایی تبدیل شدن به انواع مختلف بافت‌های بدن را دارند.\nدر موارد نادر، حتی ممکن است بافت‌هایی شبیه به بخش‌هایی از چشم یا مغز نیز درون این تومورها تشکیل شوند!",
@@ -3878,148 +3801,6 @@
       "preview_message_ids": [
         4675,
         4676
-      ],
-      "scheduled_approved": true
-    },
-    "267989471": {
-      "chat_id": 1677869966,
-      "text": "اعلام وضعیت سهامداران",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 21,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgEAAxkBAAIT3mrf1BRG91M-ZYG2h--CMT66Nj3fAAJJDWsbSyfpRmCt5EIGC19PAQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5086,
-      "cleanup_message_ids": [
-        5478,
-        5479
-      ],
-      "scheduled_at": 1793159067,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5478,
-        5479
-      ],
-      "scheduled_approved": true
-    },
-    "267989472": {
-      "chat_id": 1677869966,
-      "text": "شکایت سهامداران بابت بند اضطرار در دیوان عدالت",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 46,
-          "type": "bold"
-        }
-      ],
-      "media": [
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAIT32rf1BRwcvlgxTbf-MLaSpWJqGC3AAJuEmsbg1LxUkdh3IFfuiYyAQADAgADeQADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAIT4Grf1BQ86RRgPe4RVaA_izPi5EScAAJvEmsbg1LxUhBe3FRot0mwAQADAgADeQADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAIT4Wrf1BR138wgk-NnyFBhVH-U-dspAAJwEmsbg1LxUtfPQifNOFvuAQADAgADeQADPQQ"
-        },
-        {
-          "type": "photo",
-          "file_id": "AgACAgQAAxkBAAIT4mrf1BQUwR93QVfSBkCJPcVd3H_3AAJxEmsbg1LxUkcV_HpP4dWzAQADAgADeQADPQQ"
-        }
-      ],
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5087,
-      "cleanup_message_ids": [
-        5480,
-        5481,
-        5482,
-        5483,
-        5484
-      ],
-      "scheduled_at": 1793160267,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5480,
-        5481,
-        5482,
-        5483,
-        5484
-      ],
-      "scheduled_approved": true
-    },
-    "267989476": {
-      "chat_id": 1677869966,
-      "text": "هیچ قلبی\nدوبار و دقیقا به یک شکل\nنمی‌تپد.\n#لئو_تولستوی (۱۹۱۰-۱۸۲۸)\nفیلسوف و نویسنده‌ی برجسته‌ی روس\nصبح‌تون بخیر عزیزانم 💜\n‌",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 8,
-          "type": "bold"
-        },
-        {
-          "offset": 9,
-          "length": 23,
-          "type": "bold"
-        },
-        {
-          "offset": 33,
-          "length": 8,
-          "type": "bold"
-        },
-        {
-          "offset": 42,
-          "length": 12,
-          "type": "hashtag"
-        },
-        {
-          "offset": 42,
-          "length": 12,
-          "type": "bold"
-        },
-        {
-          "offset": 67,
-          "length": 31,
-          "type": "bold"
-        },
-        {
-          "offset": 99,
-          "length": 23,
-          "type": "bold"
-        },
-        {
-          "offset": 123,
-          "length": 1,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgEAAxkBAAIT42rf1BR6ecaLB2iS34RHFXWXFvfXAAJLqzEbIU8BR4WuqjXJk6aPAQADAgADeAADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5091,
-      "cleanup_message_ids": [
-        5485,
-        5486
-      ],
-      "scheduled_at": 1793161467,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5485,
-        5486
       ],
       "scheduled_approved": true
     },
@@ -6932,47 +6713,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793158900
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7689,
-      "delete_at": 1793159076
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7690,
-      "delete_at": 1793159238
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7691,
-      "delete_at": 1793160868
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7692,
-      "delete_at": 1793160869
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7693,
-      "delete_at": 1793160870
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7694,
-      "delete_at": 1793160870
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7695,
-      "delete_at": 1793160871
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7696,
-      "delete_at": 1793161073
+      "retry_after": 1793161722
     },
     {
       "chat_id": 1677869966,
@@ -8148,6 +7889,36 @@
       "chat_id": 1677869966,
       "message_id": 7940,
       "delete_at": 1793244698
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7941,
+      "delete_at": 1793247518
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7942,
+      "delete_at": 1793247519
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7943,
+      "delete_at": 1793247519
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7944,
+      "delete_at": 1793247520
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7945,
+      "delete_at": 1793247883
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7946,
+      "delete_at": 1793248044
     }
   ],
   "active_channel": null,
