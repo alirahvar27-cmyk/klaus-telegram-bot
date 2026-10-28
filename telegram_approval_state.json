@@ -2833,65 +2833,6 @@
       "auto_scheduled": true,
       "preview_message_ids": []
     },
-    "267989133": {
-      "chat_id": 1677869966,
-      "text": "یك فصل گم‌ شده و یا بهتر بگم حذف شده در کتاب Charlie And The Chocolate Factory وجود داره و در آن بچه‌ ها تصادف میکنند ، له‌ و لورده میشن و از باقیمانده اجساد آنها شکلات درست میکنند\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [
-        {
-          "offset": 45,
-          "length": 15,
-          "type": "bold"
-        },
-        {
-          "offset": 61,
-          "length": 17,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIRKWrfz0pKFJpaXrUWG9dYVmOPu6plAAJmvjEb6VJAUETEX1gWpBxVAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4393,
-      "cleanup_message_ids": [
-        4690,
-        4691
-      ],
-      "scheduled_at": 1793192827,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4690,
-        4691
-      ],
-      "scheduled_approved": true
-    },
-    "267989134": {
-      "chat_id": 1677869966,
-      "text": "فکر کن فقط به خاطر اخراج شدن از یه فروشگاه تصمیم بگیری از مدیرت انتقام بگیری... اما ماجرا به قتل ختم بشه ..\nسال ۲۰۱۴ کارتر سروانتز و دیوید مالوری بعد از اینکه به خاطر دزدیدن حدود ۱۸ هزار دلار از فروشگاه American Eagle اخراج شدن اشلی هریس رو مقصر لو رفتنشون میدونستن\nچند ماه بعد شب بلک فرایدی وقتی اشلی به خونه برگشت این دو نفر وارد آپارتمانش شدن و بهش حمله کردن اشلی رو با نوار چسب بستند، به شدت مورد ضرب و جرح قرار دادند و در نهایت با خفه کردن به قتل رسوندن حتی بعد از قتل کلیدهای اشلی رو هم برداشتن\nاما دلیل این کار فقط انتقام نبود... اونا میخواستن با کلیدهای اشلی دوباره وارد فروشگاه بشن و پول بدزدن\nصبح روز بعد کارتر و دیوید به سمت فروشگاه رفتن اما قفل ها عوض شده بود و نقشه شون شکست خورد پلیس هم خیلی زود هر دوشون رو دستگیر کرد.\nکارتر در بازجویی ادعا کرد که دیوید مجبورش کرده در حمله شرکت کنه اما شواهد دادگاه چیز دیگه ای نشون داد؛ مشخص شد خودش هم در برنامه ریزی و اجرای حمله نقش فعال داشته\nدر نهایت هر دو به جرم Capital Murder مجرم شناخته شدن و به حبس ابد بدون امکان آزادی مشروط محکوم شدن.\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIRKmrfz0p7TmO0EkM6gKEB57pYO_h8AAKMD2sbYdZwUgofM5oBpk7qAQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4394,
-      "cleanup_message_ids": [
-        4687,
-        4688,
-        4689
-      ],
-      "scheduled_at": 1793194027,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4687,
-        4688,
-        4689
-      ],
-      "scheduled_approved": true
-    },
     "267989135": {
       "chat_id": 1677869966,
       "text": "این ویدئو تو یوتیوب بازدید وحشتناك داشته و نشون دهنده یك قتل توسط اسلندرمن میباشد\nدوستان این ویدئو نه تائید میشه و نه تکذیب\n𝐉𝐨𝐢𝐧 𝐔𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : 𝐒𝐜𝐚𝐫𝐲 𝐖𝐨𝐫𝐥𝐝 𝐅𝐚𝐜𝐭𝐬",
@@ -5868,62 +5809,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793191082
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7812,
-      "delete_at": 1793192434
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7813,
-      "delete_at": 1793192435
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7814,
-      "delete_at": 1793192435
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7815,
-      "delete_at": 1793192436
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7816,
-      "delete_at": 1793192437
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7817,
-      "delete_at": 1793192437
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7818,
-      "delete_at": 1793192438
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7819,
-      "delete_at": 1793192439
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7820,
-      "delete_at": 1793192682
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7821,
-      "delete_at": 1793192844
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7822,
-      "delete_at": 1793192945
+      "retry_after": 1793194798
     },
     {
       "chat_id": 1677869966,
@@ -6689,6 +6575,16 @@
       "chat_id": 1677869966,
       "message_id": 7975,
       "delete_at": 1793276880
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7976,
+      "delete_at": 1793280595
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7977,
+      "delete_at": 1793280596
     }
   ],
   "active_channel": null,
