@@ -3105,37 +3105,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793219848
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7891,
-      "delete_at": 1793220517
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7892,
-      "delete_at": 1793220518
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7893,
-      "delete_at": 1793220518
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7894,
-      "delete_at": 1793220519
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7895,
-      "delete_at": 1793220520
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7896,
-      "delete_at": 1793220541
+      "retry_after": 1793222376
     },
     {
       "chat_id": 1677869966,
