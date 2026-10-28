@@ -2820,54 +2820,6 @@
         3603
       ]
     },
-    "267989108": {
-      "chat_id": 1677869966,
-      "text": "🃏 قاتل کارت‌باز؛ آلفردو گالان\nدر سال ۲۰۰۳، موجی از قتل‌های مرموز در اطراف مادرید اسپانیا به راه افتاد. قربانیان با شلیک گلوله کشته می‌شدند و قاتل در نزدیکی هر جسد، یک کارت بازی به‌جا می‌گذاشت؛ کارتی که بعدها به امضای جنایات او تبدیل شد.\nاولین قتل در ۲۴ ژانویه اتفاق افتاد. خوان فرانسیسکو لدسما، مردی ۵۰ ساله، در مقابل چشمان پسر دوساله‌اش به قتل رسید.\nچند روز بعد، قربانی دیگری به نام خوان کارلوس مارتین استاسیو، ۲۸ ساله، با شلیک گلوله کشته شد.\nدر نزدیکی هر دو قربانی، یک کارت یک جام (Ace of Cups) پیدا شد.\nبا تکرار این الگو، رسانه‌ها لقب «قاتل کارت‌باز» را برای این قاتل ناشناس انتخاب کردند. او در مجموع شش نفر را به قتل رساند و پلیس ماه‌ها به دنبال هویتش بود.\nاما اتفاقی افتاد که همه را غافلگیر کرد.\nدر سوم ژوئیه ۲۰۰۳، مردی به نام آلفردو گالان خودش را به پلیس معرفی کرد و به قتل‌ها اعتراف کرد.\nباورکردنی نبود؛ او یک سرباز اسپانیایی بود که حتی در مأموریت‌های بشردوستانه در بوسنی خدمت کرده بود.\nاما شاید هولناک‌ترین بخش ماجرا، دلیلی بود که خودش برای این قتل‌ها مطرح کرد\n«فقط می‌خواستم بدانم کشتن چه حسی دارد.»",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQSWrfzwqWAAHpH3Zo_VvDbKOTYvY73gAC4A9rG1GVeFIyulxCDrtDLwEAAwIAA3kAAz0E"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4169,
-      "cleanup_message_ids": [
-        4654,
-        4655,
-        4656
-      ],
-      "scheduled_at": 1793165227,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4654,
-        4655,
-        4656
-      ],
-      "scheduled_approved": true
-    },
-    "267989109": {
-      "chat_id": 1677869966,
-      "text": "🐺 در دنیای وحش، گرسنگی می‌تواند حتی خطرناک‌ترین شکارچیان را هم به چالش بکشد.\nگرگ‌ها معمولاً به‌صورت گروهی زندگی و شکار می‌کنند؛ اما وقتی رقابت بر سر غذا شدید می‌شود، درگیری میان آن‌ها هم ممکن است اتفاق بیفتد.\nدر طبیعت، گاهی مرز میان بقا و شکست، به شرایطی بستگی دارد که هیچ‌کس نمی‌تواند برای همیشه از آن فرار کند...",
-      "entities": [],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIQSmrfzwoc2xaMChqwItBsrrTmvlT5AALAEGsbUZWIUjMWy93I_K-1AQADAgADeQADPQQ"
-      },
-      "channel": "@NimeShabHorror",
-      "source_chat_id": 1677869966,
-      "source_message_id": 4170,
-      "cleanup_message_ids": [
-        4657,
-        4658
-      ],
-      "scheduled_at": 1793166427,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        4657,
-        4658
-      ],
-      "scheduled_approved": true
-    },
     "267989110": {
       "chat_id": 1677869966,
       "text": "جالبه که بدونید در واقع خودکشی نقشه قتلیه که مغزتون براتون میکشه!!😐",
@@ -3755,64 +3707,6 @@
       "preview_message_ids": [
         4675,
         4676
-      ],
-      "scheduled_approved": true
-    },
-    "267989479": {
-      "chat_id": 1677869966,
-      "text": "وضعیت امروز بازار",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 17,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgEAAxkBAAIT5mrf1BQEOXUIbJyn5P-rImrFz65-AAKiDWsbPqD5RtEq198D5rxLAQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5094,
-      "cleanup_message_ids": [
-        5491,
-        5492
-      ],
-      "scheduled_at": 1793165067,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5491,
-        5492
-      ],
-      "scheduled_approved": true
-    },
-    "267989480": {
-      "chat_id": 1677869966,
-      "text": "اعلام وضعیت سهامداران",
-      "entities": [
-        {
-          "offset": 0,
-          "length": 21,
-          "type": "bold"
-        }
-      ],
-      "media": {
-        "type": "photo",
-        "file_id": "AgACAgQAAxkBAAIT52rf1BQ0PmyNIttyfGJZwFY6aMAkAAJOE2sbJ1T5Uom8SUnp6dTbAQADAgADeQADPQQ"
-      },
-      "channel": "@NbzeKhabar",
-      "source_chat_id": 1677869966,
-      "source_message_id": 5095,
-      "cleanup_message_ids": [
-        5493,
-        5494
-      ],
-      "scheduled_at": 1793166267,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        5493,
-        5494
       ],
       "scheduled_approved": true
     },
@@ -6588,67 +6482,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793164320
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7704,
-      "delete_at": 1793164666
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7705,
-      "delete_at": 1793164667
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7706,
-      "delete_at": 1793164668
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7707,
-      "delete_at": 1793164668
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7708,
-      "delete_at": 1793164669
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7709,
-      "delete_at": 1793164670
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7710,
-      "delete_at": 1793165073
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7711,
-      "delete_at": 1793166650
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7712,
-      "delete_at": 1793166651
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7713,
-      "delete_at": 1793166652
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7714,
-      "delete_at": 1793166652
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7715,
-      "delete_at": 1793166653
+      "retry_after": 1793166785
     },
     {
       "chat_id": 1677869966,
@@ -7779,6 +7613,26 @@
       "chat_id": 1677869966,
       "message_id": 7950,
       "delete_at": 1793250441
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7951,
+      "delete_at": 1793252581
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7952,
+      "delete_at": 1793252582
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7953,
+      "delete_at": 1793252683
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 7954,
+      "delete_at": 1793252845
     }
   ],
   "active_channel": null,
