@@ -1,5 +1,5 @@
 {
-  "offset": 267990506,
+  "offset": 267990548,
   "pending": {
     "267987063": {
       "chat_id": 1677869966,
@@ -2833,269 +2833,578 @@
       "auto_scheduled": true,
       "preview_message_ids": []
     },
-    "267990140": {
+    "267990509": {
       "chat_id": 1677869966,
       "text": "🔺 پادشاهان ایران.\n📀 قسمت اول: کوروش بزرگ (۱)\n========\n#ایران #تاریخ #پادشاهان_ایران #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 56,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 63,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 70,
+          "length": 15,
+          "type": "hashtag"
+        },
+        {
+          "offset": 86,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbQmrf3frWa_2sc0Ldu6xLRZZePs9oAAK_GwACOCtgUcaOdSKndEPAPQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6978,
+      "source_message_id": 8003,
       "cleanup_message_ids": [
-        7006,
-        7007
+        8039,
+        8040
       ],
-      "scheduled_at": 1793186936,
+      "scheduled_at": 1793268709,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7006,
-        7007
-      ]
+        8039,
+        8040
+      ],
+      "scheduled_approved": true
     },
-    "267990141": {
+    "267990510": {
       "chat_id": 1677869966,
       "text": "🔺️ گیلان، اشکورات. 🍂🎶\n==========\n#اشکورات #گیلان #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 36,
+          "length": 8,
+          "type": "hashtag"
+        },
+        {
+          "offset": 45,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 52,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbQ2rf3fqExFk3ijPryndIvoT07kvLAAIeGAAC9sEgU26K1wIUAAEnQj0E"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6979,
+      "source_message_id": 8004,
       "cleanup_message_ids": [
-        7008,
-        7009
+        8041,
+        8042
       ],
-      "scheduled_at": 1793188136,
+      "scheduled_at": 1793269909,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7008,
-        7009
-      ]
+        8041,
+        8042
+      ],
+      "scheduled_approved": true
     },
-    "267990142": {
+    "267990511": {
       "chat_id": 1677869966,
       "text": "🔺سرگذشت زرتشت پیامبر\n📀 قسمت‌ اول: تولد\n👈 برای درک بهتر روایت، وارد کانال شده و از قسمت اول شروع به تماشا کنید.\n📌 نکته مهم\n👈 تولید این محتوای سریالی با پژوهش و تحقیق از کتب و منابع و ماخذ معتبر صورت گرفته است. 📚✅\n🔴 منابع پژوهشی این محتوا\nآموزگار، ژاله. کتاب تاریخ اساطیری ایران. 🇮🇷📖\nآموزگار، ژاله. اسطورۀ زندگی زردشت. ✨🕯️\nبهار، مهرداد. از اسطوره تا تاریخ. ⏳📜\nبهار، مهرداد (ترجمه و گزارش). بُندهش. 📜✍️\nکزازی ، میر جلال الدین ، وَخشور ایران، داستانی برپایه سرگذشت زرتشت. 🐉🇮🇷\nشاهرخ، کیخسرو. زرتشت؛ پیامبری که از نو باید شناخت 👁️🙏\n📹\n========\n#زرتشت #سرزمین_مادری #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 556,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 563,
+          "length": 13,
+          "type": "hashtag"
+        },
+        {
+          "offset": 577,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbRGrf3frV_vI2V_a2tqA7RmeLmcs5AALUHQACXhZBUcmQi48SD9YyPQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6980,
+      "source_message_id": 8005,
       "cleanup_message_ids": [
-        7010,
-        7011
+        8043,
+        8044
       ],
-      "scheduled_at": 1793189336,
+      "scheduled_at": 1793271109,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7010,
-        7011
-      ]
+        8043,
+        8044
+      ],
+      "scheduled_approved": true
     },
-    "267990143": {
+    "267990512": {
       "chat_id": 1677869966,
       "text": "🔺️ مجموعه‌آبشارهای‌شیرآباد، گلستان.\n============\n#گلستان #آبشار_شیرآباد #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 50,
+          "length": 7,
+          "type": "hashtag"
+        },
+        {
+          "offset": 58,
+          "length": 14,
+          "type": "hashtag"
+        },
+        {
+          "offset": 73,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbRWrf3fpWSYFOXwNO4MKBUC08SC54AAKCBAACC2FNU0e26J2H3C87PQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6981,
+      "source_message_id": 8006,
       "cleanup_message_ids": [
-        7012,
-        7013
+        8045,
+        8046
       ],
-      "scheduled_at": 1793190536,
+      "scheduled_at": 1793272309,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7012,
-        7013
-      ]
+        8045,
+        8046
+      ],
+      "scheduled_approved": true
     },
-    "267990144": {
+    "267990513": {
       "chat_id": 1677869966,
       "text": "🔺 سریال کوروش بزرگ 👑.\n📀 قسمت قسمت اول: خواب شاه. 📜\n👈 استودیو «کهن دیاران» با افتخار تقدیم می‌کند.\n📹\n========\n#ایران #کوروش_بزرگ #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 115,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 122,
+          "length": 11,
+          "type": "hashtag"
+        },
+        {
+          "offset": 134,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbRmrf3fqstby96k590Cz1xyrUlVAuAAKkHAACEH-xUFXtjtY8mKAtPQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6982,
+      "source_message_id": 8007,
       "cleanup_message_ids": [
-        7014,
-        7015
+        8047,
+        8048
       ],
-      "scheduled_at": 1793191736,
+      "scheduled_at": 1793273509,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7014,
-        7015
-      ]
+        8047,
+        8048
+      ],
+      "scheduled_approved": true
     },
-    "267990145": {
+    "267990514": {
       "chat_id": 1677869966,
       "text": "🔺 سریال شاهنامه.\n📀 فصل اول، قسمت دوم.\n🔸 داستان انتقام هوشنگ در سریال شاهنامه.\n🔹 در این قسمت از سریال شاهنامه فردوسی، داستان پرشور هوشنگ، پسر دلیر سیامک را می‌شنویم. او که داغ از دست دادن پدر را بر دوش داشت، با سال‌ها تلاش و تمرین به جنگی سرنوشت‌ساز برای خونخواهی برمی‌خیزد. هوشنگ در مسیر انتقام نه تنها با دشمنان سهمگین روبه‌رو می‌شود، بلکه با اراده و شجاعت، نخستین گام‌هایش را برای تبدیل شدن به یکی از پهلوانان جاودان ایران برمی‌دارد.\n📹\n==========\n#ایران #شاهنامه #فردوسی #شاهنامه_تصویری #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 454,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 461,
+          "length": 8,
+          "type": "hashtag"
+        },
+        {
+          "offset": 470,
+          "length": 7,
+          "type": "hashtag"
+        },
+        {
+          "offset": 478,
+          "length": 15,
+          "type": "hashtag"
+        },
+        {
+          "offset": 494,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbR2rf3fp6qmFID6dy08lNuz3vpt6HAAJ-IgACtVkRURbIVihiwRLNPQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6983,
+      "source_message_id": 8008,
       "cleanup_message_ids": [
-        7016,
-        7017
+        8049,
+        8050
       ],
-      "scheduled_at": 1793192936,
+      "scheduled_at": 1793274709,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7016,
-        7017
-      ]
+        8049,
+        8050
+      ],
+      "scheduled_approved": true
     },
-    "267990146": {
+    "267990515": {
       "chat_id": 1677869966,
       "text": "🤍💜💚💛🧡❤️\n‏دنبال کسی بگردید که\nتربیت مادرش آدمش کرده نه دارایی پدرش.\n‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌===========\n#شب #شب_بخیر #آتش #آتیش #چای #چایی #چایی_آتیشی #چای_آتیشی #چای_هیزمی #چایی_هیزمی #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 221,
+          "length": 3,
+          "type": "hashtag"
+        },
+        {
+          "offset": 225,
+          "length": 8,
+          "type": "hashtag"
+        },
+        {
+          "offset": 234,
+          "length": 4,
+          "type": "hashtag"
+        },
+        {
+          "offset": 239,
+          "length": 5,
+          "type": "hashtag"
+        },
+        {
+          "offset": 245,
+          "length": 4,
+          "type": "hashtag"
+        },
+        {
+          "offset": 250,
+          "length": 5,
+          "type": "hashtag"
+        },
+        {
+          "offset": 256,
+          "length": 11,
+          "type": "hashtag"
+        },
+        {
+          "offset": 268,
+          "length": 10,
+          "type": "hashtag"
+        },
+        {
+          "offset": 279,
+          "length": 10,
+          "type": "hashtag"
+        },
+        {
+          "offset": 290,
+          "length": 11,
+          "type": "hashtag"
+        },
+        {
+          "offset": 302,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbSGrf3fq3onkcQ1U48xXXFCDbgvyUAAL7IAACCr6RUjJkOhoVufVpPQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6984,
+      "source_message_id": 8009,
       "cleanup_message_ids": [
-        7018,
-        7019
+        8051,
+        8052
       ],
-      "scheduled_at": 1793194136,
+      "scheduled_at": 1793275909,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7018,
-        7019
-      ]
+        8051,
+        8052
+      ],
+      "scheduled_approved": true
     },
-    "267990147": {
+    "267990516": {
       "chat_id": 1677869966,
       "text": "🌺🍀🌼🍃🌸🍃🕊\n🔺️ بفرمایید ناهار‌. 🧡💛\n=========\n#خوراک #غذای_ایرانی #ناهار #آشپزی #آشپزی_ایرانی #ظهر #ظهر_بخیر\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 51,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 58,
+          "length": 12,
+          "type": "hashtag"
+        },
+        {
+          "offset": 71,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 78,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 85,
+          "length": 13,
+          "type": "hashtag"
+        },
+        {
+          "offset": 99,
+          "length": 4,
+          "type": "hashtag"
+        },
+        {
+          "offset": 104,
+          "length": 9,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbSWrf3fprq6v1GoaiLu03cqGTz07mAAJBGwAC5ZWpUNmRJ2wYYcr8PQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6985,
+      "source_message_id": 8010,
       "cleanup_message_ids": [
-        7020,
-        7021
+        8053,
+        8054
       ],
-      "scheduled_at": 1793195336,
+      "scheduled_at": 1793277109,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7020,
-        7021
-      ]
+        8053,
+        8054
+      ],
+      "scheduled_approved": true
     },
-    "267990148": {
+    "267990517": {
       "chat_id": 1677869966,
       "text": "🔺 شاهنامه موزیکال.\n👈 سفری هیجان‌انگیز به سرزمین افسانه‌های ایران زمین، شاهنامه.\n🔸 این اثر سفری است به دل افسانه‌های کهن ایران، جایی که اسطوره، حماسه و خیال در هم می‌آمیزند.\n🔹 الهام گرفته از شاهنامه و روایت‌های اسطوره‌ای سرزمین ایران، این ویدیو تلاش می‌کند جهان پهلوانان، دیوان و نیروهای باستانی را با فضایی سینمایی و مدرن بازآفرینی کند.\n🔸 در این پروژه، موسیقی و تصویر در کنار هم داستانی حماسی را روایت می‌کنند؛ داستانی از نبرد نور و تاریکی، قدرت و سرنوشت، و شکوه فراموش‌نشدنی تمدن ایرانی.\n👈 اگر به افسانه‌ها، شاهنامه و فضای سینمایی حماسی علاقه داری، این اثر برای تو ساخته شده است.\n📹\n==========\n#ایران #شاهنامه #فردوسی #شاهنامه_موزیکال #شاهنامه_تصویری #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 601,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 608,
+          "length": 8,
+          "type": "hashtag"
+        },
+        {
+          "offset": 617,
+          "length": 7,
+          "type": "hashtag"
+        },
+        {
+          "offset": 625,
+          "length": 16,
+          "type": "hashtag"
+        },
+        {
+          "offset": 642,
+          "length": 15,
+          "type": "hashtag"
+        },
+        {
+          "offset": 658,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbSmrf3fqs0M5k6goKw_FalOVuO5FCAAI4IwACiXiIUW2CNBX9ZqsrPQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6986,
+      "source_message_id": 8011,
       "cleanup_message_ids": [
-        7022,
-        7023
+        8055,
+        8056
       ],
-      "scheduled_at": 1793196536,
+      "scheduled_at": 1793278309,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7022,
-        7023
-      ]
+        8055,
+        8056
+      ],
+      "scheduled_approved": true
     },
-    "267990149": {
+    "267990518": {
       "chat_id": 1677869966,
       "text": "🔺️ آبشار برنجه، لرستان، شهرستان الیگودرز، بخش زز و ماهرو، روستای پیر امام.\n============\n#لرستان #آبشار_برنجه #الیگودرز #روستای_پیر_امام #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 89,
+          "length": 7,
+          "type": "hashtag"
+        },
+        {
+          "offset": 97,
+          "length": 12,
+          "type": "hashtag"
+        },
+        {
+          "offset": 110,
+          "length": 9,
+          "type": "hashtag"
+        },
+        {
+          "offset": 120,
+          "length": 16,
+          "type": "hashtag"
+        },
+        {
+          "offset": 137,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbS2rf3foHlLqPJWWRBCGdGcZAWMU5AAI2BQACR9qVUUmXqTtipw84PQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6987,
+      "source_message_id": 8012,
       "cleanup_message_ids": [
-        7024,
-        7025
+        8057,
+        8058
       ],
-      "scheduled_at": 1793197736,
+      "scheduled_at": 1793279509,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7024,
-        7025
-      ]
+        8057,
+        8058
+      ],
+      "scheduled_approved": true
     },
-    "267990150": {
+    "267990519": {
       "chat_id": 1677869966,
       "text": "🔺️ سازه‌های آبی شوشتر در استان خوزستان، به‌عنوان بزرگ­ ترین مجموعه مهندسی جهان تا پیش از انقلاب صنعتی، فقط یک جاذبه تاریخی نیست. در این مجموعه می­‌شود نبوغی را یافت که در هیچ جای جهان نظیر ندارد. مجموعه‌ای در هم تنیده از بندها، آبشارها، آسیاب‌ها، پل‌ها، برج‌ها و نهرهای دست کند که قدمتی به اندازه تاریخ ایران زمین دارند.\n=============\n#شوشتر #سازه_های_آبی_شوشتر #خوزستان #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 336,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 343,
+          "length": 19,
+          "type": "hashtag"
+        },
+        {
+          "offset": 363,
+          "length": 8,
+          "type": "hashtag"
+        },
+        {
+          "offset": 372,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbTGrf3frK0M6YhrXUvOFP_GUOLVffAAIZBwACOGeRUKCLiXMpx5OhPQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6988,
+      "source_message_id": 8013,
       "cleanup_message_ids": [
-        7026,
-        7027
+        8059,
+        8060
       ],
-      "scheduled_at": 1793198936,
+      "scheduled_at": 1793280709,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7026,
-        7027
-      ]
+        8059,
+        8060
+      ],
+      "scheduled_approved": true
     },
-    "267990151": {
+    "267990520": {
       "chat_id": 1677869966,
       "text": "🔺 سریال کوروش بزرگ 👑.\n📀 قسمت قسمت دوم: تولد دوباره. 📜\n👈 استودیو «کهن دیاران» با افتخار تقدیم می‌کند.\n📹\n========\n#ایران #کوروش_بزرگ #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [],
+      "entities": [
+        {
+          "offset": 118,
+          "length": 6,
+          "type": "hashtag"
+        },
+        {
+          "offset": 125,
+          "length": 11,
+          "type": "hashtag"
+        },
+        {
+          "offset": 137,
+          "length": 13,
+          "type": "hashtag"
+        }
+      ],
       "media": {
         "type": "video",
         "file_id": "BAACAgQAAxkBAAIbTWrf3fppKrh6LYBPWsAQlhKT5In7AAJJGgAC5WchUZaDkzMFqBJ3PQQ"
       },
       "channel": "@SafarkadehFa",
       "source_chat_id": 1677869966,
-      "source_message_id": 6989,
+      "source_message_id": 8014,
       "cleanup_message_ids": [
-        7028,
-        7029
+        8061,
+        8062
       ],
-      "scheduled_at": 1793200136,
+      "scheduled_at": 1793281909,
       "auto_scheduled": true,
       "preview_message_ids": [
-        7028,
-        7029
-      ]
+        8061,
+        8062
+      ],
+      "scheduled_approved": true
     }
   },
   "edit_mode": {},
@@ -3105,17 +3414,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793266504
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7966,
-      "delete_at": 1793267384
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7967,
-      "delete_at": 1793267385
+      "retry_after": 1793268069
     },
     {
       "chat_id": 1677869966,
@@ -3271,6 +3570,6 @@
   "active_channel": null,
   "channel_schedule_next": {
     "@NimeShabHorror": 1793177227,
-    "@SafarkadehFa": 1793200136
+    "@SafarkadehFa": 1793281909
   }
 }
