@@ -2833,84 +2833,6 @@
       "auto_scheduled": true,
       "preview_message_ids": []
     },
-    "267990510": {
-      "chat_id": 1677869966,
-      "text": "🔺️ گیلان، اشکورات. 🍂🎶\n==========\n#اشکورات #گیلان #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [
-        {
-          "offset": 36,
-          "length": 8,
-          "type": "hashtag"
-        },
-        {
-          "offset": 45,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 52,
-          "length": 13,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIbQ2rf3fqExFk3ijPryndIvoT07kvLAAIeGAAC9sEgU26K1wIUAAEnQj0E"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 8004,
-      "cleanup_message_ids": [
-        8041,
-        8042
-      ],
-      "scheduled_at": 1793269909,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        8041,
-        8042
-      ],
-      "scheduled_approved": true
-    },
-    "267990511": {
-      "chat_id": 1677869966,
-      "text": "🔺سرگذشت زرتشت پیامبر\n📀 قسمت‌ اول: تولد\n👈 برای درک بهتر روایت، وارد کانال شده و از قسمت اول شروع به تماشا کنید.\n📌 نکته مهم\n👈 تولید این محتوای سریالی با پژوهش و تحقیق از کتب و منابع و ماخذ معتبر صورت گرفته است. 📚✅\n🔴 منابع پژوهشی این محتوا\nآموزگار، ژاله. کتاب تاریخ اساطیری ایران. 🇮🇷📖\nآموزگار، ژاله. اسطورۀ زندگی زردشت. ✨🕯️\nبهار، مهرداد. از اسطوره تا تاریخ. ⏳📜\nبهار، مهرداد (ترجمه و گزارش). بُندهش. 📜✍️\nکزازی ، میر جلال الدین ، وَخشور ایران، داستانی برپایه سرگذشت زرتشت. 🐉🇮🇷\nشاهرخ، کیخسرو. زرتشت؛ پیامبری که از نو باید شناخت 👁️🙏\n📹\n========\n#زرتشت #سرزمین_مادری #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [
-        {
-          "offset": 556,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 563,
-          "length": 13,
-          "type": "hashtag"
-        },
-        {
-          "offset": 577,
-          "length": 13,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIbRGrf3frV_vI2V_a2tqA7RmeLmcs5AALUHQACXhZBUcmQi48SD9YyPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 8005,
-      "cleanup_message_ids": [
-        8043,
-        8044
-      ],
-      "scheduled_at": 1793271109,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        8043,
-        8044
-      ],
-      "scheduled_approved": true
-    },
     "267990512": {
       "chat_id": 1677869966,
       "text": "🔺️ مجموعه‌آبشارهای‌شیرآباد، گلستان.\n============\n#گلستان #آبشار_شیرآباد #مجله_گردشگری\n♻️ 👈♻️",
@@ -3370,17 +3292,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793269462
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7968,
-      "delete_at": 1793269711
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7969,
-      "delete_at": 1793269711
+      "retry_after": 1793272115
     },
     {
       "chat_id": 1677869966,
@@ -3526,6 +3438,16 @@
       "chat_id": 1677869966,
       "message_id": 8067,
       "delete_at": 1793355260
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 8068,
+      "delete_at": 1793357913
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 8069,
+      "delete_at": 1793357913
     }
   ],
   "active_channel": null,
