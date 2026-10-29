@@ -2833,84 +2833,6 @@
       "auto_scheduled": true,
       "preview_message_ids": []
     },
-    "267990512": {
-      "chat_id": 1677869966,
-      "text": "🔺️ مجموعه‌آبشارهای‌شیرآباد، گلستان.\n============\n#گلستان #آبشار_شیرآباد #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [
-        {
-          "offset": 50,
-          "length": 7,
-          "type": "hashtag"
-        },
-        {
-          "offset": 58,
-          "length": 14,
-          "type": "hashtag"
-        },
-        {
-          "offset": 73,
-          "length": 13,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIbRWrf3fpWSYFOXwNO4MKBUC08SC54AAKCBAACC2FNU0e26J2H3C87PQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 8006,
-      "cleanup_message_ids": [
-        8045,
-        8046
-      ],
-      "scheduled_at": 1793272309,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        8045,
-        8046
-      ],
-      "scheduled_approved": true
-    },
-    "267990513": {
-      "chat_id": 1677869966,
-      "text": "🔺 سریال کوروش بزرگ 👑.\n📀 قسمت قسمت اول: خواب شاه. 📜\n👈 استودیو «کهن دیاران» با افتخار تقدیم می‌کند.\n📹\n========\n#ایران #کوروش_بزرگ #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [
-        {
-          "offset": 115,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 122,
-          "length": 11,
-          "type": "hashtag"
-        },
-        {
-          "offset": 134,
-          "length": 13,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIbRmrf3fqstby96k590Cz1xyrUlVAuAAKkHAACEH-xUFXtjtY8mKAtPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 8007,
-      "cleanup_message_ids": [
-        8047,
-        8048
-      ],
-      "scheduled_at": 1793273509,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        8047,
-        8048
-      ],
-      "scheduled_approved": true
-    },
     "267990514": {
       "chat_id": 1677869966,
       "text": "🔺 سریال شاهنامه.\n📀 فصل اول، قسمت دوم.\n🔸 داستان انتقام هوشنگ در سریال شاهنامه.\n🔹 در این قسمت از سریال شاهنامه فردوسی، داستان پرشور هوشنگ، پسر دلیر سیامک را می‌شنویم. او که داغ از دست دادن پدر را بر دوش داشت، با سال‌ها تلاش و تمرین به جنگی سرنوشت‌ساز برای خونخواهی برمی‌خیزد. هوشنگ در مسیر انتقام نه تنها با دشمنان سهمگین روبه‌رو می‌شود، بلکه با اراده و شجاعت، نخستین گام‌هایش را برای تبدیل شدن به یکی از پهلوانان جاودان ایران برمی‌دارد.\n📹\n==========\n#ایران #شاهنامه #فردوسی #شاهنامه_تصویری #مجله_گردشگری\n♻️ 👈♻️",
@@ -3292,17 +3214,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793272115
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7970,
-      "delete_at": 1793272265
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7971,
-      "delete_at": 1793272266
+      "retry_after": 1793274202
     },
     {
       "chat_id": 1677869966,
@@ -3448,6 +3360,16 @@
       "chat_id": 1677869966,
       "message_id": 8069,
       "delete_at": 1793357913
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 8070,
+      "delete_at": 1793360000
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 8071,
+      "delete_at": 1793360001
     }
   ],
   "active_channel": null,
