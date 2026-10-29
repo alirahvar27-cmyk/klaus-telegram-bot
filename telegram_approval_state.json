@@ -2833,50 +2833,6 @@
       "auto_scheduled": true,
       "preview_message_ids": []
     },
-    "267990509": {
-      "chat_id": 1677869966,
-      "text": "🔺 پادشاهان ایران.\n📀 قسمت اول: کوروش بزرگ (۱)\n========\n#ایران #تاریخ #پادشاهان_ایران #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [
-        {
-          "offset": 56,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 63,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 70,
-          "length": 15,
-          "type": "hashtag"
-        },
-        {
-          "offset": 86,
-          "length": 13,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIbQmrf3frWa_2sc0Ldu6xLRZZePs9oAAK_GwACOCtgUcaOdSKndEPAPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 8003,
-      "cleanup_message_ids": [
-        8039,
-        8040
-      ],
-      "scheduled_at": 1793268709,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        8039,
-        8040
-      ],
-      "scheduled_approved": true
-    },
     "267990510": {
       "chat_id": 1677869966,
       "text": "🔺️ گیلان، اشکورات. 🍂🎶\n==========\n#اشکورات #گیلان #مجله_گردشگری\n♻️ 👈♻️",
@@ -3414,7 +3370,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793268069
+      "retry_after": 1793269462
     },
     {
       "chat_id": 1677869966,
@@ -3565,6 +3521,11 @@
       "chat_id": 1677869966,
       "message_id": 7997,
       "delete_at": 1793300401
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 8067,
+      "delete_at": 1793355260
     }
   ],
   "active_channel": null,
