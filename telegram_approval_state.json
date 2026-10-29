@@ -2832,89 +2832,6 @@
       "scheduled_at": 1793177227,
       "auto_scheduled": true,
       "preview_message_ids": []
-    },
-    "267990519": {
-      "chat_id": 1677869966,
-      "text": "🔺️ سازه‌های آبی شوشتر در استان خوزستان، به‌عنوان بزرگ­ ترین مجموعه مهندسی جهان تا پیش از انقلاب صنعتی، فقط یک جاذبه تاریخی نیست. در این مجموعه می­‌شود نبوغی را یافت که در هیچ جای جهان نظیر ندارد. مجموعه‌ای در هم تنیده از بندها، آبشارها، آسیاب‌ها، پل‌ها، برج‌ها و نهرهای دست کند که قدمتی به اندازه تاریخ ایران زمین دارند.\n=============\n#شوشتر #سازه_های_آبی_شوشتر #خوزستان #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [
-        {
-          "offset": 336,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 343,
-          "length": 19,
-          "type": "hashtag"
-        },
-        {
-          "offset": 363,
-          "length": 8,
-          "type": "hashtag"
-        },
-        {
-          "offset": 372,
-          "length": 13,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIbTGrf3frK0M6YhrXUvOFP_GUOLVffAAIZBwACOGeRUKCLiXMpx5OhPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 8013,
-      "cleanup_message_ids": [
-        8059,
-        8060
-      ],
-      "scheduled_at": 1793280709,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        8059,
-        8060
-      ],
-      "scheduled_approved": true
-    },
-    "267990520": {
-      "chat_id": 1677869966,
-      "text": "🔺 سریال کوروش بزرگ 👑.\n📀 قسمت قسمت دوم: تولد دوباره. 📜\n👈 استودیو «کهن دیاران» با افتخار تقدیم می‌کند.\n📹\n========\n#ایران #کوروش_بزرگ #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [
-        {
-          "offset": 118,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 125,
-          "length": 11,
-          "type": "hashtag"
-        },
-        {
-          "offset": 137,
-          "length": 13,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIbTWrf3fppKrh6LYBPWsAQlhKT5In7AAJJGgAC5WchUZaDkzMFqBJ3PQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 8014,
-      "cleanup_message_ids": [
-        8061,
-        8062
-      ],
-      "scheduled_at": 1793281909,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        8061,
-        8062
-      ],
-      "scheduled_approved": true
     }
   },
   "edit_mode": {},
@@ -2924,27 +2841,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793280163
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7976,
-      "delete_at": 1793280595
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7977,
-      "delete_at": 1793280596
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7978,
-      "delete_at": 1793283741
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7979,
-      "delete_at": 1793283742
+      "retry_after": 1793283844
     },
     {
       "chat_id": 1677869966,
@@ -3085,11 +2982,20 @@
       "chat_id": 1677869966,
       "message_id": 8076,
       "delete_at": 1793365961
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 8077,
+      "delete_at": 1793369641
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 8078,
+      "delete_at": 1793369642
     }
   ],
   "active_channel": null,
   "channel_schedule_next": {
-    "@NimeShabHorror": 1793177227,
-    "@SafarkadehFa": 1793281909
+    "@NimeShabHorror": 1793177227
   }
 }
