@@ -2833,168 +2833,6 @@
       "auto_scheduled": true,
       "preview_message_ids": []
     },
-    "267990516": {
-      "chat_id": 1677869966,
-      "text": "🌺🍀🌼🍃🌸🍃🕊\n🔺️ بفرمایید ناهار‌. 🧡💛\n=========\n#خوراک #غذای_ایرانی #ناهار #آشپزی #آشپزی_ایرانی #ظهر #ظهر_بخیر\n♻️ 👈♻️",
-      "entities": [
-        {
-          "offset": 51,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 58,
-          "length": 12,
-          "type": "hashtag"
-        },
-        {
-          "offset": 71,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 78,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 85,
-          "length": 13,
-          "type": "hashtag"
-        },
-        {
-          "offset": 99,
-          "length": 4,
-          "type": "hashtag"
-        },
-        {
-          "offset": 104,
-          "length": 9,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIbSWrf3fprq6v1GoaiLu03cqGTz07mAAJBGwAC5ZWpUNmRJ2wYYcr8PQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 8010,
-      "cleanup_message_ids": [
-        8053,
-        8054
-      ],
-      "scheduled_at": 1793277109,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        8053,
-        8054
-      ],
-      "scheduled_approved": true
-    },
-    "267990517": {
-      "chat_id": 1677869966,
-      "text": "🔺 شاهنامه موزیکال.\n👈 سفری هیجان‌انگیز به سرزمین افسانه‌های ایران زمین، شاهنامه.\n🔸 این اثر سفری است به دل افسانه‌های کهن ایران، جایی که اسطوره، حماسه و خیال در هم می‌آمیزند.\n🔹 الهام گرفته از شاهنامه و روایت‌های اسطوره‌ای سرزمین ایران، این ویدیو تلاش می‌کند جهان پهلوانان، دیوان و نیروهای باستانی را با فضایی سینمایی و مدرن بازآفرینی کند.\n🔸 در این پروژه، موسیقی و تصویر در کنار هم داستانی حماسی را روایت می‌کنند؛ داستانی از نبرد نور و تاریکی، قدرت و سرنوشت، و شکوه فراموش‌نشدنی تمدن ایرانی.\n👈 اگر به افسانه‌ها، شاهنامه و فضای سینمایی حماسی علاقه داری، این اثر برای تو ساخته شده است.\n📹\n==========\n#ایران #شاهنامه #فردوسی #شاهنامه_موزیکال #شاهنامه_تصویری #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [
-        {
-          "offset": 601,
-          "length": 6,
-          "type": "hashtag"
-        },
-        {
-          "offset": 608,
-          "length": 8,
-          "type": "hashtag"
-        },
-        {
-          "offset": 617,
-          "length": 7,
-          "type": "hashtag"
-        },
-        {
-          "offset": 625,
-          "length": 16,
-          "type": "hashtag"
-        },
-        {
-          "offset": 642,
-          "length": 15,
-          "type": "hashtag"
-        },
-        {
-          "offset": 658,
-          "length": 13,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIbSmrf3fqs0M5k6goKw_FalOVuO5FCAAI4IwACiXiIUW2CNBX9ZqsrPQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 8011,
-      "cleanup_message_ids": [
-        8055,
-        8056
-      ],
-      "scheduled_at": 1793278309,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        8055,
-        8056
-      ],
-      "scheduled_approved": true
-    },
-    "267990518": {
-      "chat_id": 1677869966,
-      "text": "🔺️ آبشار برنجه، لرستان، شهرستان الیگودرز، بخش زز و ماهرو، روستای پیر امام.\n============\n#لرستان #آبشار_برنجه #الیگودرز #روستای_پیر_امام #مجله_گردشگری\n♻️ 👈♻️",
-      "entities": [
-        {
-          "offset": 89,
-          "length": 7,
-          "type": "hashtag"
-        },
-        {
-          "offset": 97,
-          "length": 12,
-          "type": "hashtag"
-        },
-        {
-          "offset": 110,
-          "length": 9,
-          "type": "hashtag"
-        },
-        {
-          "offset": 120,
-          "length": 16,
-          "type": "hashtag"
-        },
-        {
-          "offset": 137,
-          "length": 13,
-          "type": "hashtag"
-        }
-      ],
-      "media": {
-        "type": "video",
-        "file_id": "BAACAgQAAxkBAAIbS2rf3foHlLqPJWWRBCGdGcZAWMU5AAI2BQACR9qVUUmXqTtipw84PQQ"
-      },
-      "channel": "@SafarkadehFa",
-      "source_chat_id": 1677869966,
-      "source_message_id": 8012,
-      "cleanup_message_ids": [
-        8057,
-        8058
-      ],
-      "scheduled_at": 1793279509,
-      "auto_scheduled": true,
-      "preview_message_ids": [
-        8057,
-        8058
-      ],
-      "scheduled_approved": true
-    },
     "267990519": {
       "chat_id": 1677869966,
       "text": "🔺️ سازه‌های آبی شوشتر در استان خوزستان، به‌عنوان بزرگ­ ترین مجموعه مهندسی جهان تا پیش از انقلاب صنعتی، فقط یک جاذبه تاریخی نیست. در این مجموعه می­‌شود نبوغی را یافت که در هیچ جای جهان نظیر ندارد. مجموعه‌ای در هم تنیده از بندها، آبشارها، آسیاب‌ها، پل‌ها، برج‌ها و نهرهای دست کند که قدمتی به اندازه تاریخ ایران زمین دارند.\n=============\n#شوشتر #سازه_های_آبی_شوشتر #خوزستان #مجله_گردشگری\n♻️ 👈♻️",
@@ -3086,17 +2924,7 @@
       "chat_id": 1677869966,
       "message_id": 2907,
       "delete_at": 1793038198,
-      "retry_after": 1793276738
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7974,
-      "delete_at": 1793276879
-    },
-    {
-      "chat_id": 1677869966,
-      "message_id": 7975,
-      "delete_at": 1793276880
+      "retry_after": 1793280163
     },
     {
       "chat_id": 1677869966,
@@ -3242,6 +3070,21 @@
       "chat_id": 1677869966,
       "message_id": 8073,
       "delete_at": 1793362536
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 8074,
+      "delete_at": 1793365959
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 8075,
+      "delete_at": 1793365960
+    },
+    {
+      "chat_id": 1677869966,
+      "message_id": 8076,
+      "delete_at": 1793365961
     }
   ],
   "active_channel": null,
